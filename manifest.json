@@ -1,0 +1,1723 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/LambdaSharp/LambdaSharpTool/src/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/FolderStructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/FolderStructure.html",
+          "hash": "LjWoUGN2lL/LEylgt8hocA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Glossary.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Glossary.html",
+          "hash": "/Hv4ZmgpxL0nAcIcvQ3ZVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Acrion.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Acrion.html",
+          "hash": "iQwmjPnj3Gfr0ACxPWN0aQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Brontinus.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Brontinus.html",
+          "hash": "Klc6PYRSIwmfm6Jqkrh81A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Cebes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Cebes.html",
+          "hash": "Dz5UVJWnVpVpX1pKYP81cg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Damo.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Damo.html",
+          "hash": "COXsK6ZpzJnzwEtpDjUTsg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Eurytus.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Eurytus.html",
+          "hash": "Hr+bFDAo/sMovBa7DMeZCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes-Favorinus.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes-Favorinus.html",
+          "hash": "zS3W+M3iCH4Zl6ZMnIg15A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ReleaseNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ReleaseNotes.html",
+          "hash": "9MD+dz7qwWY3eCikR5rHmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Setup.html",
+          "hash": "ZOVbE+33MBjlyKJlhNkFtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "a+6gqH+inVqCBz1BnoK/Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/ReadMe.html",
+          "hash": "fxAsx4ewTmvMLfPzDOpC9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Build.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Build.html",
+          "hash": "Eu1qlJ9CKhh9iyHiJ82WGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Config.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Config.html",
+          "hash": "soo9ig4pSceQKRybdjxF5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Deploy.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Deploy.html",
+          "hash": "VyYeIK5fiXghBeC2kZO8Xw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Encrypt.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Encrypt.html",
+          "hash": "JiDQ3HiRW+cQOkOhaH+KZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Info.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Info.html",
+          "hash": "4SX/Yy3XmyZjk/6k4nN71w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Init.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Init.html",
+          "hash": "TC350/MaOV76yF1DS8OUDQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-List.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-List.html",
+          "hash": "Gt/JHlibH9K1vxvO6f2ogg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-NewFunction.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-NewFunction.html",
+          "hash": "ELiqEOGBYz+2oYzOyd6R+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-NewModule.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-NewModule.html",
+          "hash": "h4epRFZTiuazB68prqOnHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-NewResource.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-NewResource.html",
+          "hash": "rtYkLK2FPypOlMhPvO9A9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Publish.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Publish.html",
+          "hash": "eQ9MjL5p/B6AlffdxLEnUg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-UtilCreateInvokeMethodsSchema.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-UtilCreateInvokeMethodsSchema.html",
+          "hash": "M8auVUt7yrjBuKXEVcO2Sw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-UtilDeleteOrphanLambdaLogs.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-UtilDeleteOrphanLambdaLogs.html",
+          "hash": "9MxWo73azbUgZCDiE7mfCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-UtilDownloadCloudFormationSpec.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-UtilDownloadCloudFormationSpec.html",
+          "hash": "QIjU42VU+5Bk1rI2e0BUbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "cli/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "cli/toc.html",
+          "hash": "qSrNSkKxld9wxijtg6DbSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LambdaSharpLogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/LambdaSharpLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LambdaSharpLogo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LambdaSharpLogo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/LashAnsiColor-WIP.gif",
+      "output": {
+        "resource": {
+          "relative_path": "images/LashAnsiColor-WIP.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/rollbar-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/rollbar-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/slack-card.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/slack-card.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "712w35JjzkJZIGGC8V9qOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Condition.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Condition.html",
+          "hash": "1Bw0t4rtICypXPawakuXzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Pragmas.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Pragmas.html",
+          "hash": "WEeK9+C3nQoekFsZh3yMdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-APIGateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-APIGateway.html",
+          "hash": "+TVu6EoptkYbLdY6lm/nag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-Alexa.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-Alexa.html",
+          "hash": "B8F66R5bQWvKUESi2FOkmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-DynamoDB.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-DynamoDB.html",
+          "hash": "Yu/X5qSRKNqzEVOYGE2P6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-Kinesis.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-Kinesis.html",
+          "hash": "xOZ7yUqf11G+sYQLJeOjxQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-S3.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-S3.html",
+          "hash": "azVOc0xpk9rtSKh9YDBhYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-SNS.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-SNS.html",
+          "hash": "+QkE80oAx9Q/mxi5RR8P5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-SQS.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-SQS.html",
+          "hash": "ecA63HuwrMVwga75H9gPbw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-Schedule.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-Schedule.html",
+          "hash": "wNWEc+sPiCInRi2w+/yx6A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-SlackCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-SlackCommand.html",
+          "hash": "gxxcJMMAIPkABgXrxjsuVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources-WebSocket.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources-WebSocket.html",
+          "hash": "LHa7WXxzQw+AvwBcumJQjw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function-Sources.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function-Sources.html",
+          "hash": "9DWthoT8j079852JDypbng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Function.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Function.html",
+          "hash": "7N5ZTkik/P/Acq/CqRzVxA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Global-Variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Global-Variables.html",
+          "hash": "nYpoFmBztUQRQ+Du4jI4lw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Import.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Import.html",
+          "hash": "gJiHSOtwzLOrcNAmtxZ6fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Items.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Items.html",
+          "hash": "E92ylE2XiqPv1An6dthGPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Macro.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Macro.html",
+          "hash": "taTq7hXkUIkGAvzZEElOqg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Mapping.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Mapping.html",
+          "hash": "SSvT7YxOB/YJMFT4w6scXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Namespace.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Namespace.html",
+          "hash": "/qewUjej5oYNyvHsIGlXkA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Nested.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Nested.html",
+          "hash": "sJo+QKcJb6a/UInQs2OPxQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Package.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Package.html",
+          "hash": "Pcf5ffJMrMTyjBwSzNQs9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Parameter.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Parameter.html",
+          "hash": "nG1apC8W58zzOkPT6Ts+TA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Pragmas.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Pragmas.html",
+          "hash": "TX1HmU85duho14LpFzSWBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Requires.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Requires.html",
+          "hash": "Z2SfoaPPCY0LE14uIdHuGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Resource-Pragmas.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Resource-Pragmas.html",
+          "hash": "TREa+xlkDxTwvP0+1A0AZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Resource.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Resource.html",
+          "hash": "1wEVV0rSXCPsE4BGEdmGuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-ResourceType-Attribute.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-ResourceType-Attribute.html",
+          "hash": "cCw3WYjOpHqC/aCDn71V+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-ResourceType-Property.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-ResourceType-Property.html",
+          "hash": "1ueCvGpTm4yq54vga16lZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-ResourceType.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-ResourceType.html",
+          "hash": "/J1iDoyVyRJksyOCSGFfpA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Secrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Secrets.html",
+          "hash": "DV6JyDW7L7Z+CAuVpgUmoA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module-Variable.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module-Variable.html",
+          "hash": "9ewbHFaIAqdaGVYTsRV9hA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "module/Module.md",
+      "output": {
+        ".html": {
+          "relative_path": "module/Module.html",
+          "hash": "iNM0tdnvg7EMvVCG/ZAvtg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "module/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "module/toc.html",
+          "hash": "6hFX8zenBrzpLyZby981hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ALambdaFunction-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ALambdaFunction-2.html",
+          "hash": "dNSJz074Jci2MypEBGoBWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ALambdaFunction.FunctionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html",
+          "hash": "IfvYJMd26JrkClRs3Z13wQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ALambdaFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ALambdaFunction.html",
+          "hash": "/tolx6CX5Mn5cycsf+SZuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html",
+          "hash": "Exy9CqWKt9TYGvnMjQRXrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.html",
+          "hash": "avVYw9cSLu0Y4mUYPWKZVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate.html",
+          "hash": "GESzWpR2JdU7gol+EQW8Yw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate.html",
+          "hash": "DLwiEHfvCoKU7YVtcFzFCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html",
+          "hash": "KXtiL526Ff5CyK+YVLjEmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.html",
+          "hash": "b1jrXKJSVr/kxZFkRPibww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.FromBodyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.FromBodyAttribute.html",
+          "hash": "A4AU4a4ZrqHehv+mnnyW5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.FromUriAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.FromUriAttribute.html",
+          "hash": "tzZWdZIiy8FmGG7pbSOQAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html",
+          "hash": "iUsjRU5jn5lHdVH+nbh8OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html",
+          "hash": "tOeJvSmyArI3Qq7lVf8XNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ApiGateway.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ApiGateway.html",
+          "hash": "IOERHOE6IuSjBbLbUnVyTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.AwsConverters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.AwsConverters.html",
+          "hash": "9mMmSnQ5G+MUMXWPz+2PXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ConfigSource.EmptyLambdaConfigSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ConfigSource.EmptyLambdaConfigSource.html",
+          "hash": "3seQRJWzWU1o0YiLV9EDhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ConfigSource.ILambdaConfigSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ConfigSource.ILambdaConfigSource.html",
+          "hash": "rxKG6ne1fWzwj70jGS2sOQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.html",
+          "hash": "6tOEYpnZEQeTJ8ooQBKDhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.html",
+          "hash": "yFeGw+0y/Lk9P9xZZCWukQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ConfigSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ConfigSource.html",
+          "hash": "wFGn/7rj8WCYZ5qhttf6Ng=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html",
+          "hash": "5YpfDXwp/AxNOSa9moBkJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html",
+          "hash": "oKRgjeEKkZmGTp/0p52eyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html",
+          "hash": "a+8zWJdN7rQgG7qd4UnhMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.html",
+          "hash": "qrOGi+89Rqg1onoMZ+dGZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Internal.html",
+          "hash": "saTm71dqqE9lpFT8xN3/pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.LambdaCustomResourceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.LambdaCustomResourceException.html",
+          "hash": "ArudBFPK3r0xK/ZwfYpb6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Request-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Request-1.html",
+          "hash": "lRAlYW9gl0qDLlWhrUYTOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.RequestType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.RequestType.html",
+          "hash": "sxMOE/CGJrmuq08xULMBPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.Response-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.Response-1.html",
+          "hash": "S3HhdHGGHsEWg68BMdM9jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.CustomResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.CustomResource.html",
+          "hash": "cEB+flXy0QNVjMwV1kRjtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.ALambdaConfigException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.ALambdaConfigException.html",
+          "hash": "GALDSzHRZSYOCw23rjBXnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.ALambdaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.ALambdaException.html",
+          "hash": "3oK2wmXbGyHWeIXxS3PCrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaAbortException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaAbortException.html",
+          "hash": "qx1Ci8y2Y4aL/cjf7DxyGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html",
+          "hash": "zb1UtrqPQvmN8L2eOMWK7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.html",
+          "hash": "fbCCIdFlN31JnV7H04z6Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigMissingKeyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html",
+          "hash": "+q56hsE59NsucaQH7j8XxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html",
+          "hash": "HhHfTDT4N3Bx0XYvUPCGxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.html",
+          "hash": "RDz143QGkMvO5Ng/Mibo3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaFunctionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaFunctionException.html",
+          "hash": "LD9YjWpHgzEhnAVp/dTWbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.LambdaRetriableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.LambdaRetriableException.html",
+          "hash": "EGM6LtM/01qmqDmGZzaHUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Exceptions.html",
+          "hash": "KcxIVybZuTwduoiNJqxD7A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html",
+          "hash": "bKteTrADSvHCxranAKiT/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Finalizer.FinalizerRequestProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Finalizer.FinalizerRequestProperties.html",
+          "hash": "kII1jMf6d/4/Z3gACVx2pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Finalizer.FinalizerResponseProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Finalizer.FinalizerResponseProperties.html",
+          "hash": "kMhDejhyctW7NIH+pqbJiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Finalizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Finalizer.html",
+          "hash": "JOh3GhQlOAKJiaYhD1PvFg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ILambdaExceptionFingerprinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ILambdaExceptionFingerprinter.html",
+          "hash": "fNdNl1irGmCEoNEZh0DS2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ILambdaFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html",
+          "hash": "ChuHmoxs9/Jeh7wR9QlRTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ILambdaLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ILambdaLogger.html",
+          "hash": "ePu4l9AqXpubkHqHXr3pVg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.ILambdaLoggerEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.ILambdaLoggerEx.html",
+          "hash": "pksqOfZV2OJen2C6j0x4mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaConfig.html",
+          "hash": "X4iRjUmCRKBNYcI9TDSKvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaConfigEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaConfigEx.html",
+          "hash": "RHnCeBBSv6VEM2HYh3CsHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaConfigValidate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaConfigValidate.html",
+          "hash": "JQ00zGKDH+VKx94ALswLJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaFunctionDependencyProvider.html",
+          "hash": "aKhrKnnlurlidsMZvw2eQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaLogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaLogLevel.html",
+          "hash": "xYBn93JCfObXSR0xK6tK8A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.LambdaScheduleEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.LambdaScheduleEvent.html",
+          "hash": "bcCRJBbZG+wU+0Pd9DjYCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.ErrorReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.ErrorReport.html",
+          "hash": "gIHczp9JTmWzk45YCDmmdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html",
+          "hash": "jivDvj4WrhmGKuu26txDpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.ErrorReportStackFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.ErrorReportStackFrame.html",
+          "hash": "HqEFOwW73jAwvYTOUv1HpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.ErrorReportStackTrace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.ErrorReportStackTrace.html",
+          "hash": "vJjjdKE0UX1SMkwFVHQZIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.ErrorReporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.ErrorReporter.html",
+          "hash": "KKwd1TiKwzfvX/I1VwZ5Yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.Reports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.Reports.html",
+          "hash": "BXXFd4DNSnh7uRHShQnsrA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html",
+          "hash": "Xs2iGOD1tiH4wuoV4jrLQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleNotificationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleNotificationService.html",
+          "hash": "xo97yb3/90aLHP3JeGdjvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html",
+          "hash": "w4ZvSU3A36QCOt/3B85DAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html",
+          "hash": "ahxq1PfFCWAS1BJd7AcTNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html",
+          "hash": "udQy00QuzotXWOZtWggeRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.SimpleQueueService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.SimpleQueueService.html",
+          "hash": "uU7ifH5WmMlGzvpc3tob4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.html",
+          "hash": "slXUeB8LLBq5To/7eEkcmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/index.html",
+          "hash": "YAVRzkVNstWDs6CcLWd9Sw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdk/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/toc.html",
+          "hash": "ZEgTbUqlMd22LMsF2as/pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "l5OOwHbZKC6v64xmijyUlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 20
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 60,
+          "skipped_file_count": 60
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

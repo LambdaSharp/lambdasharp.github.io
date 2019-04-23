@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#955;# - Cebes (v0.3) - 2018-09-19 | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#955;# - Cebes (v0.3) - 2018-09-19 | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="λ---cebes-v03---2018-09-19">λ# - Cebes (v0.3) - 2018-09-19</h1>
+
+<blockquote>
+<p>Cebes was a disciple of Socrates and Philolaus, and a friend of Simmias of Thebes. He is one of the speakers in the Phaedo of Plato, in which he is represented as an earnest seeker after virtue and truth, keen in argument and cautious in decision. Xenophon says he was a member of Socrates' inner circle, and a frequent visitor to the hetaera, Theodote, in Athens.[1] He is also mentioned by Plato in the Crito and Epistle XIII. <a href="https://en.wikipedia.org/wiki/Cebes">(Wikipedia)</a></p>
+</blockquote>
+<h2 id="breaking-changes">BREAKING CHANGES</h2>
+<p>The following change may impact modules you have created using previous releases.</p>
+<h3 id="bootstrap">Bootstrap</h3>
+<p>The bootstrap procedure has been updated to include a new custom resource to handle S3 bucket subscriptions (see below). The new bootstrap procedure must be run to update the λ# environment.</p>
+<h3 id="default-module-filename">Default Module Filename</h3>
+<p>The default module filename was changed from <code>Deploy.yml</code> to <code>Module.yml</code> to make it more consistent with the new terminology adopted since the v0.2 release.</p>
+<p>A work-around to avoid being impacted by this change is to specify the module filename explicitly.</p>
+<pre><code class="lang-bash">lash deploy Deploy.yml
+</code></pre>
+<h3 id="s3-bucket-notifications-as-lambda-source">S3 Bucket Notifications as Lambda Source</h3>
+<p>This release introduces a custom resource to handle subscribing to S3 bucket notifications. In previous releases, it was only possible to subscribe to S3 notifications for S3 buckets that were created in the same λ# module. With the addition of the <code>S3Subscriber</code> custom resource, it now possible to subscribe to both new and existing S3 buckets. However, this change is not backwards compatible with how previous implementation handled S3 bucket subscriptions and requires the old S3 bucket to be deleted.</p>
+<h3 id="λ-environment-variable">λ# Environment Variable</h3>
+<p>The name of the deployment tier environment variable was changed to <code>LAMBDASHARP_TIER</code>. The <code>LAMBDASHARP_PROFILE</code> was added to allow selecting a different, default AWS profile for λ# deployments.</p>
+<h2 id="new-λ-tool-features">New λ# Tool Features</h2>
+<h3 id="updated-new-command">Updated <code>New</code> Command</h3>
+<p>The λ# tool has a new command to create a new module file. This command creates a <code>Module.yml</code> file in the current directory.</p>
+<p>To invoke the new command:</p>
+<pre><code class="lang-bash">lash new module MyNewModule
+</code></pre>
+<p>Similarly, the existing <code>new function</code> command was updated to match.</p>
+<pre><code class="lang-bash">lash new function MyFunction
+</code></pre>
+<p>Additionally, the <code>new function</code> command now updates the <code>Module.yml</code> file by adding a function definition.</p>
+<h3 id="artifact-output-directory">Artifact Output Directory</h3>
+<p>The λ# tool now generates all artifacts in a dedicated output directory. By default, the output directory is called <code>bin</code> and co-located with the input <code>Module.yml</code> file.</p>
+<p>The location of the output directory can be overwritten with the <code>--output</code> option.</p>
+<pre><code class="lang-bash">lash deploy --output MyOutputFolder
+</code></pre>
+<h3 id="validate-λ-assembly-references">Validate λ# Assembly References</h3>
+<p>The λ# tool now checks the version of all λ# assembly references in the function project files. If an assembly version mismatch is found, an error is emitted and deployment operation is cancelled. This behavior can be suppressed with the <code>--skip-assembly-validation</code> option.</p>
+<pre><code class="lang-bash">lash deploy --skip-assembly-validation
+</code></pre>
+<p>To validate assembly references without deploying, use the <code>--dryrun</code> option.</p>
+<pre><code class="lang-bash">lash deploy --dryrun
+</code></pre>
+<h2 id="new-λ-module-features">New λ# Module Features</h2>
+<h3 id="short-form-cloudformation-intrinsic-functions">Short-Form CloudFormation Intrinsic Functions</h3>
+<p>It is now possible to use the YAML short form for <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a>. The short form for the following functions is now supported:
+<code>!And</code>, <code>!Base64</code>, <code>!Cidr</code>, <code>!Equals</code>, <code>!FindInMap</code>, <code>!GetAtt</code>, <code>!GetAZs</code>, <code>!If</code>, <code>!ImportValue</code>, <code>!Join</code>, <code>!Not</code>, <code>!Or</code>, <code>!Ref</code>, <code>!Select</code>, <code>!Split</code>, <code>!Sub</code>, <code>!Transform</code>.</p>
+<p>The short form functions can be used for resources, parameters, and Lambda environment variables.</p>
+<p><strong>Resource</strong></p>
+<p>Create an SNS topic that uses the AWS region and CloudFormation stack name as display name.</p>
+<pre><code class="lang-yaml">Parameters:
+  - Name: MyResource
+    Resource:
+      Type: AWS::SNS::Topic
+      Properties:
+        DisplayName: !Sub &quot;${AWS::Region}-${AWS::StackName}&quot;
+</code></pre>
+<p><strong>Parameters</strong></p>
+<p>Capture the CloudFormation stack name as a Lambda parameter.</p>
+<pre><code class="lang-yaml">Parameters:
+  - Name: MyParameter
+    Value: !Ref AWS::StackName
+</code></pre>
+<p><strong>Environment Variables</strong></p>
+<p>Make the AWS region available as a Lambda environment variable.</p>
+<pre><code class="lang-yaml">Functions:
+  - Name: MyFunction
+    Memory: 128
+    Timeout: 30
+    Environment:
+        MyVariable: !Ref AWS::Region
+</code></pre>
+<h3 id="kinesis-stream-as-lambda-source">Kinesis Stream as Lambda Source</h3>
+<p>Lambda functions can now use Kinesis streams as event sources.
+See <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/KinesisSample/">Kinesis Stream</a> sample.</p>
+<pre><code class="lang-yaml">Parameters:
+  - Name: MyKinesisStream
+    Resource:
+      Type: AWS::Kinesis::Stream
+      Properties:
+        ShardCount: 1
+
+Functions:
+  - Name: MyFunction
+    Memory: 128
+    Timeout: 15
+    Sources:
+      - Kinesis: MyKinesisStream
+        BatchSize: 15
+</code></pre>
+<h3 id="dynamodb-stream-as-lambda-source">DynamoDB Stream as Lambda Source</h3>
+<p>Lambda functions can now use DynamoDB streams as event sources. See <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/DynamoDBSample/">DynamoDB Stream</a> sample.</p>
+<pre><code class="lang-yaml">Parameters:
+  - Name: MyDynamoDBTable
+    Resource:
+      Type: AWS::DynamoDB::Table
+      Allow: Subscribe
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: MessageId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: MessageId
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+Functions:
+  - Name: MyFunction
+    Memory: 128
+    Timeout: 15
+    Sources:
+      - DynamoDB: MyDynamoDBTable
+        BatchSize: 15
+</code></pre>
+<h3 id="export-lambda-functions">Export Lambda Functions</h3>
+<p>It is now possible to export a Lambda function to the parameter store in a similar way as parameters. This makes it possible for other modules to reference exported Lambda functions.</p>
+<pre><code class="lang-yaml">Functions:
+  - Name: MyFunction
+    Memory: 128
+    Timeout: 15
+    Export: MyExportedFunction
+</code></pre>
+<h3 id="collection-of-lambda-parameters">Collection of Lambda Parameters</h3>
+<p>Parameters can now have nested collections of parameters. This is useful when a variable number of parameters is required by a Lambda function.</p>
+<pre><code class="lang-yaml">Parameters:
+  - Name: MyCollection
+    Parameters:
+
+      - Name: First
+        Value: 1st Parameter
+
+      - Name: Second
+        Value: 2nd Parameter
+</code></pre>
+<p>The Lambda function can retrieve the names of the nested parameters by using the <code>Keys</code> property during initialization.</p>
+<pre><code class="lang-csharp">public override Task InitializeAsync(LambdaConfig config) {
+    var collection = config[&quot;MyCollection&quot;];
+    foreach(var key in collection.Keys) {
+        _parameters[key] = collection.ReadText(key);
+    }
+    return Task.CompletedTask;
+}
+</code></pre>
+<h3 id="support-cloudformation-macros-experimental">Support CloudFormation Macros (Experimental)</h3>
+<p>This release includes experimental support for creating <a href="https://aws.amazon.com/blogs/aws/cloudformation-macros/">CloudFormation Macros</a>. See <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MacroSample/">CloudFormation Macro</a> sample.</p>
+<p>Note that while macros can be defined by a λ# module, they cannot be invoked by a λ# module, because they require CloudFormation stack updates to use change sets, which is not yet supported.</p>
+<p>The following function definition creates a new macro called <code>{{Tier}}-MyMacro</code> that can be invoked by other CloudFormation change sets.</p>
+<pre><code class="lang-yaml">Functions:
+  - Name: Function
+    Memory: 128
+    Timeout: 30
+    Sources:
+      - Macro: MyMacro
+</code></pre>
+<h2 id="fixes">Fixes</h2>
+<ul>
+<li>Fixed an issue where some CloudFormation properties needed to suffixed with <code>_</code> to work with <a href="https://github.com/jakejscott/Humidifier">Humidifier</a> library for generating CloudFormation templates correctly.</li>
+</ul>
+<h2 id="internal-changes">Internal Changes</h2>
+<ul>
+<li>Improved how Lambda function parameters are passed in. Instead of relying on an embedded <code>parameters.json</code> file, parameters are now passed in via environment variables. This means that Lambda function packages no longer need to be re-uploaded because of parameter changes.</li>
+<li>Included <code>Sid</code> attribute for all built-in, automatic permissions being added to provide more context.</li>
+<li>Switched to native AWS Lambda <code>JsonSerializer</code> class for serializing/deserializing data.</li>
+<li>Upgraded <a href="https://github.com/aaubry/YamlDotNet">YamlDotNet</a> library to 5.0.1</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

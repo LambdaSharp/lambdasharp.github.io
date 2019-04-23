@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Glossary | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Glossary | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="glossary">Glossary</h1>
+
+<blockquote>
+<p>TODO: WIP for capturing λ# terminology</p>
+</blockquote>
+<dl>
+<dt><b>Asset</b></dt>
+<dd>
+A file that is part of the published module.
+</dd>
+<dt><b>Attribute</b></dt>
+<dd>
+A YAML mapping for a single value or list of values.
+</dd>
+<dt><b>Build Process</b></dt>
+<dd>
+The process by which the λ# CLI converts the source YAML module file into a CloudFormation JSON template file. The contents of the source are analyzed during the build process to detect errors, such as missing properties required to initialize a resource or references to undefined variables.
+</dd>
+<dt><b>Core</b></dt>
+<dd>
+The foundational CloudFormation template required to deploy and run modules.
+</dd>
+<dt><b>Cross-Module Reference</b></dt>
+<dd>
+A value imported from another module using <code>!ImportValue</code> where the source module is configurable. Optionally, the source module can also be replaced with a fixed value.
+</dd>
+<dt><b>Deployment Process</b></dt>
+<dd>
+The process by which the λ# CLI creates a CloudFormation stack from a CloudFormation template that was created from a λ# module. The deployment process checks for dependencies and installs them if needed. During the deployment process, the λ# CLI uses interactive prompts for obtain values for missing parameters. In addition, the λ# CLI supplies required parameters, such as the deployment bucket name and deployment tier prefix to launch the CloudFormation stack.
+</dd>
+<dt><b>Deployment Tier</b></dt>
+<dd>
+A deployment tier is used to isolate deployments from each other on a single AWS account. Deployment tiers are use commonly used to segment deployment between <i>production</i>, <i>staging</i>, and <i>test</i>.
+</dd>
+<dt><b>Import</b></dt>
+<dd>
+(see <i>Cross-Module Reference</i>)
+</dd>
+<dt><b>Module Definition</b></dt>
+<dd>
+> TODO
+</dd>
+<dt><b>Output Value</b></dt>
+<dd>
+> TODO
+</dd>
+<dt><b>Resource Type</b></dt>
+<dd>
+A resource type is the definition for a custom resource. Similar to built-in AWS CloudFormation types, it provides the list of <i>properties</i> that can be set and <i>attributes</i> that can be retrieved.
+</dd>
+<dt><b>Package</b></dt>
+<dd>
+A package is a compressed zip archive of files.
+</dd>
+<dt><b>Parameter</b></dt>
+<dd>
+A parameter is a variable that is set at module deployment time. A parameter can be optional by providing a default value. A parameter can constrained by a list of values or a regular expression. See documentation about <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a> for more information.
+</dd>
+<dt><b>Publishing Process</b></dt>
+<dd>
+> TODO
+</dd>
+<dt><b>Section</b></dt>
+<dd>
+A YAML mapping for another YAML mapping.
+</dd>
+<dt><b>Tier</b></dt>
+<dd>
+(see <i>Deployment Tier</i>)
+</dd>
+</dl>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

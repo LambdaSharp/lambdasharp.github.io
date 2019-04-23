@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Parameter | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Parameter | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="parameter">Parameter</h1>
+
+<p>The <code>Parameter</code> definition specifies a value that is supplied at module deployment time either by the λ# CLI or a parent module. Module parameters can be modified subsequently by updating the CloudFormation stack in the AWS console.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Parameter: String
+Description: String
+Section: String
+Label: String
+Scope: ScopeDefinition
+NoEcho: Boolean
+Default: String
+AllowedValues:
+  - String
+AllowedPattern: String
+ConstraintDescription: String
+MaxLength: Int
+MaxValue: Int
+MinLength: Int
+MinValue: Int
+Pragmas:
+  - PragmaDefinition
+Type: String
+Allow: AllowDefinition
+DefaultAttribute: String
+Properties:
+  ResourceProperties
+EncryptionContext:
+  Key-Value Mapping
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>Allow</code></dt>
+<dd>
+The <code>Allow</code> attribute can be either a comma-separated, single string value, or a list of string values. String values that contain a colon (<code>:</code>) are interpreted as IAM permission and used as is (e.g. <code>dynamodb:GetItem</code>, <code>s3:GetObject*</code>, etc.). Otherwise, the value is interpreted as a λ# shorthand (see <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/src/LambdaSharp.Tool/Resources/IAM-Mappings.yml">λ# Shorthand by Resource Type</a>). Both notations can be used simultaneously within a single <code>Allow</code> section. Duplicate IAM permissions, after λ# shorthand resolution, are removed.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Either String or List of String</p>
+</dd>
+<dt><code>AllowedPattern</code></dt>
+<dd>
+The <code>AllowedPattern</code> attribute specifies a regular expression that represents the patterns to allow for <code>String</code> types.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>AllowedValues</code></dt>
+<dd>
+The <code>AllowedValues</code> attribute specifies a list of allowed values for the parameter.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: List of String</p>
+</dd>
+<dt><code>ConstraintDescription</code></dt>
+<dd>
+The <code>ConstraintDescription</code> is used to explain a constraint when the constraint is violated.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Default</code></dt>
+<dd>
+The <code>Default</code> attribute specifies a value to use when no value is provided for a module deployment. If the parameter defines value constraints, the default value must adhere to those constraints.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>DefaultAttribute</code></dt>
+<dd>
+The <code>DefaultAttribute</code> attribute specifies the resource attribute to use when exporting the resource from the module or to a Lambda function. By default, the λ# CLI automatically selects the <code>Arn</code> attribute when available. Otherwise, it uses the return value of a <code>!Ref</code> expressions. This behavior can be overwritten by specifying a <code>DefaultAttribute</code> attribute.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Description</code></dt>
+<dd>
+The <code>Description</code> attribute specifies the parameter description. The description is shown in the AWS Console when creating or updating the CloudFormation stack.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>EncryptionContext</code></dt>
+<dd>
+The <code>EncryptionContext</code> section is an optional mapping of key-value pairs used for decrypting a variable of type <code>Secret</code>. For all other types, specifying <code>EncryptionContext</code> will produce a compilation error.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Key-Value Pair Mapping</p>
+</dd>
+<dt><code>Label</code></dt>
+<dd>
+The <code>Label</code> specifies a human readable label for the parameter. This label is used instead of the parameter name by the AWS Console when updating a CloudFormation stack.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>MaxLength</code></dt>
+<dd>
+The <code>MaxLength</code> attribute specifies an integer value that determines the largest number of characters you want to allow for <code>String</code> types.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>MaxValue</code></dt>
+<dd>
+The <code>MaxValue</code> attribute specifies a numeric value that determines the largest numeric value you want to allow for <code>Number</code> types.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>MinLength</code></dt>
+<dd>
+The <code>MinLength</code> attribute specifies an integer value that determines the smallest number of characters you want to allow for <code>String</code> types.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>MinValue</code></dt>
+<dd>
+The <code>MinValue</code> attribute specifies a numeric value that determines the smallest numeric value you want to allow for <code>Number</code> types.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>NoEcho</code></dt>
+<dd>
+The <code>NoEcho</code> attribute specifies whether to mask the parameter value when a call is made that describes the stack. If you set the value to <code>true</code>, the parameter value is masked with asterisks (*****).
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Parameter</code></dt>
+<dd>
+The <code>Parameter</code> attribute specifies the parameter name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Pragmas</code></dt>
+<dd>
+The <code>Pragmas</code> section specifies directives that change the default compiler behavior.
+<p><i>Required:</i> No</p>
+<p><i>Type:</i> List of <a href="Module-Pragmas.html">Pragma Definition</a></p>
+</dd>
+<dt><code>Properties</code></dt>
+<dd>
+The <code>Properties</code> section specifies additional options that can be specified for a managed resource. This section is copied verbatim into the CloudFormation template and can use <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a> (e.g. <code>!Ref</code>, <code>!Join</code>, <code>!Sub</code>, etc.) for referencing other resources.
+<p>The <code>Properties</code> section cannot be specified for referenced resources. For a list of all additional options, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">AWS Resource Types Reference</a>.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Map</p>
+</dd>
+<dt><code>Scope</code></dt>
+<dd>
+The <code>Scope</code> attribute specifies which functions need to have access to this item. The <code>Scope</code> attribute can be a comma-separated list or a YAML list of function names. If all function need the item, then <code>all</code> can be used as a wildcard. In addition, the <code>public</code> can be used to export the item from the module.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Comma-delimited String or List of String</p>
+</dd>
+<dt><code>Section</code></dt>
+<dd>
+The <code>Section</code> attribute specifies a title for grouping related module inputs together. The AWS Console uses the title for laying out module inputs into sections. The order of the sections and the order of the module inputs in the section is determined by the order in which they occur in the module definition.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Type</code></dt>
+<dd>
+The <code>Type</code> attribute specifies the data type for the parameter. When omitted, the type is assumed to be <code>String</code>.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+<p>The following parameter types are supported by CloudFormation. When using other AWS resource types, λ# automatically declares them as <code>String</code> type.</p>
+<dl>
+<dt><code>String</code></dt>
+<dd>A literal string.</dd>
+<dt><code>Secret</code></dt>
+<dd>An encrypted string.</dd>
+<dt><code>Number</code></dt>
+<dd>An integer or float. The parameter value is validated as a number. However, when you use the parameter elsewhere in your module (for example, by using the <code>!Ref</code> function), the parameter value becomes a string.</dd>
+<dt><code>List&lt;Number&gt;</code></dt>
+<dd>An array of integers or floats that are separated by commas. The parameter value is validated as numbers. However, when you use the parameter elsewhere in your module (for example, by using the <code>!Ref</code> function), the parameter value becomes a list of strings.</dd>
+<dt><code>CommaDelimitedList</code></dt>
+<dd>An array of literal strings that are separated by commas. The total number of strings should be one more than the total number of commas. Also, each member string is space trimmed.</dd>
+<dt>AWS-Specific Parameter Types</dt>
+<dd>AWS values such as Amazon EC2 key pair names and VPC IDs. For more information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#aws-specific-parameter-types">AWS-Specific Parameter Types</a>.</dd>
+<dt>SSM Parameter Types</dt>
+<dd>Parameters that correspond to existing parameters in Systems Manager Parameter Store. You specify a Systems Manager parameter key as the value of the SSM parameter, and AWS CloudFormation fetches the latest value from Parameter Store to use for the stack. For more information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#aws-ssm-parameter-types">SSM Parameter Types</a>.</dd>
+</dl>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="a-parameter">A parameter</h3>
+<pre><code class="lang-yaml">- Parameter: MyParameter
+  Description: A module parameter
+</code></pre>
+<h3 id="an-optional-parameter">An optional parameter</h3>
+<pre><code class="lang-yaml">- Parameter: MyParameter
+  Description: A module parameter
+  Default: no value provided
+</code></pre>
+<h3 id="a-parameter-with-associated-iam-permissions">A parameter with associated IAM permissions</h3>
+<pre><code class="lang-yaml">- Parameter: MyTopic
+  Description: A topic ARN
+  Type: AWS::SNS::Topic
+  Allow: Publish
+</code></pre>
+<h3 id="an-optional-parameter-that-generates-a-resource-on-default-value">An optional parameter that generates a resource on default value</h3>
+<pre><code class="lang-yaml">- Parameter: MyTopic
+  Description: A topic ARN
+  Type: AWS::SNS::Topic
+  Allow: Publish
+  Default: &quot;&quot;
+  Properties:
+    DisplayName: New topic display name
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

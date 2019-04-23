@@ -1,0 +1,1266 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ALambdaFunction
+   | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ALambdaFunction
+   | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.ALambdaFunction">
+  
+  
+  <h1 id="LambdaSharp_ALambdaFunction" data-uid="LambdaSharp.ALambdaFunction" class="text-break">Class ALambdaFunction
+  </h1>
+  <div class="markdown level0 summary"><p><code>ALambdaFunction</code> is the abstract base class for all AWS Lambda functions. This class takes care of initializing the function from
+environment variables, before invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ALambdaFunction</span></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction&lt;TMessage&gt;</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
+  <h5 id="LambdaSharp_ALambdaFunction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaFunction : object, ILambdaLogger</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="LambdaSharp_ALambdaFunction__ctor_" data-uid="LambdaSharp.ALambdaFunction.#ctor*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction__ctor" data-uid="LambdaSharp.ALambdaFunction.#ctor">ALambdaFunction()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaFunction()</code></pre>
+  </div>
+  <a id="LambdaSharp_ALambdaFunction__ctor_" data-uid="LambdaSharp.ALambdaFunction.#ctor*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.ALambdaFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaFunction(ILambdaFunctionDependencyProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaFunction(ILambdaFunctionDependencyProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="LambdaSharp_ALambdaFunction_CurrentContext_" data-uid="LambdaSharp.ALambdaFunction.CurrentContext*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_CurrentContext" data-uid="LambdaSharp.ALambdaFunction.CurrentContext">CurrentContext</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILambdaContext CurrentContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.Lambda.Core.ILambdaContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_ErrorReporter_" data-uid="LambdaSharp.ALambdaFunction.ErrorReporter*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_ErrorReporter" data-uid="LambdaSharp.ALambdaFunction.ErrorReporter">ErrorReporter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ErrorReporter ErrorReporter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Reports.ErrorReporter.html">ErrorReporter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_Info_" data-uid="LambdaSharp.ALambdaFunction.Info*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_Info" data-uid="LambdaSharp.ALambdaFunction.Info">Info</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaFunction.FunctionInfo Info { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ALambdaFunction.FunctionInfo.html">ALambdaFunction.FunctionInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_JsonSerializer_" data-uid="LambdaSharp.ALambdaFunction.JsonSerializer*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_JsonSerializer" data-uid="LambdaSharp.ALambdaFunction.JsonSerializer">JsonSerializer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILambdaSerializer JsonSerializer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_Logger_" data-uid="LambdaSharp.ALambdaFunction.Logger*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_Logger" data-uid="LambdaSharp.ALambdaFunction.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILambdaLogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_Provider_" data-uid="LambdaSharp.ALambdaFunction.Provider*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_Provider" data-uid="LambdaSharp.ALambdaFunction.Provider">Provider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILambdaFunctionDependencyProvider Provider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_UtcNow_" data-uid="LambdaSharp.ALambdaFunction.UtcNow*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_UtcNow" data-uid="LambdaSharp.ALambdaFunction.UtcNow">UtcNow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected DateTime UtcNow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_ALambdaFunction_DecryptSecretAsync_" data-uid="LambdaSharp.ALambdaFunction.DecryptSecretAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">DecryptSecretAsync(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; DecryptSecretAsync(string secret, Dictionary&lt;string, string&gt; encryptionContext = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">secret</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">encryptionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_DeserializeJson_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson``1(System.IO.Stream)">DeserializeJson&lt;T&gt;(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T DeserializeJson&lt;T&gt;(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_DeserializeJson_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_DeserializeJson__1_System_String_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson``1(System.String)">DeserializeJson&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T DeserializeJson&lt;T&gt;(string json)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">json</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_EncryptSecretAsync_" data-uid="LambdaSharp.ALambdaFunction.EncryptSecretAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; EncryptSecretAsync(string text, string encryptionKeyId = null, Dictionary&lt;string, string&gt; encryptionContext = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encryptionKeyId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">encryptionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync_" data-uid="LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync" data-uid="LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync">EndInitializeFunctionAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task EndInitializeFunctionAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)">FunctionHandlerAsync(Stream, ILambdaContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; FunctionHandlerAsync(Stream stream, ILambdaContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Amazon.Lambda.Core.ILambdaContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_" data-uid="LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(System.IO.Stream)">HandleFailedInitializationAsync(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task HandleFailedInitializationAsync(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_InitializeAsync_" data-uid="LambdaSharp.ALambdaFunction.InitializeAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_InitializeAsync_LambdaSharp_LambdaConfig_" data-uid="LambdaSharp.ALambdaFunction.InitializeAsync(LambdaSharp.LambdaConfig)">InitializeAsync(LambdaConfig)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task InitializeAsync(LambdaConfig config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogError_" data-uid="LambdaSharp.ALambdaFunction.LogError*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogError_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.LogError(System.Exception)">LogError(Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as an error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogError(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogError_" data-uid="LambdaSharp.ALambdaFunction.LogError*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogError_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogError(System.Exception,System.String,System.Object[])">LogError(Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as an error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogError(Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogErrorAsInfo_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsInfo*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception)">LogErrorAsInfo(Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as an information message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception has no operational impact.
+Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_">LogError(Exception)</a> or <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_">LogErrorAsWarning(Exception)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogErrorAsInfo(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogErrorAsInfo_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsInfo*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception,System.String,System.Object[])">LogErrorAsInfo(Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as an information message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception has no operational impact.
+Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_System_String_System_Object___">LogError(Exception, String, Object[])</a> or <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_System_String_System_Object___">LogErrorAsWarning(Exception, String, Object[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogErrorAsInfo(Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogErrorAsWarning_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsWarning*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception)">LogErrorAsWarning(Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as a warning. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception had likely no impact on the successful outcome of the request.
+Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_">LogError(Exception)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogErrorAsWarning(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogErrorAsWarning_" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsWarning*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception,System.String,System.Object[])">LogErrorAsWarning(Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as a warning. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception had likely no impact on the successful outcome of the request.
+Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_System_String_System_Object___">LogError(Exception, String, Object[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogErrorAsWarning(Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogFatal_" data-uid="LambdaSharp.ALambdaFunction.LogFatal*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogFatal_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogFatal(System.Exception,System.String,System.Object[])">LogFatal(Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogFatal(Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogInfo_" data-uid="LambdaSharp.ALambdaFunction.LogInfo*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogInfo_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogInfo(System.String,System.Object[])">LogInfo(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an informational message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogInfo(string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The message format string. If not arguments are supplied, the message format string will be printed as a plain string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the message string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogWarn_" data-uid="LambdaSharp.ALambdaFunction.LogWarn*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogWarn_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogWarn(System.String,System.Object[])">LogWarn(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log a warning message. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogWarn(string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The message format string. If not arguments are supplied, the message format string will be printed as a plain string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the message string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_" data-uid="LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;object&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_RecordErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Reports_ErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Reports.ErrorReport)">RecordErrorReport(ErrorReport)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RecordErrorReport(ErrorReport report)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Reports.ErrorReport.html">ErrorReport</a></td>
+        <td><span class="parametername">report</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_RecordException_" data-uid="LambdaSharp.ALambdaFunction.RecordException*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordException_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordException(System.Exception)">RecordException(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RecordException(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_LambdaLogLevel_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.LambdaLogLevel,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task RecordFailedMessageAsync(LambdaLogLevel level, string body, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">body</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_SerializeJson_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_SerializeJson_System_Object_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson(System.Object)">SerializeJson(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string SerializeJson(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_" data-uid="LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">StartInitializeFunctionAsync(ILambdaConfigSource)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task StartInitializeFunctionAsync(ILambdaConfigSource envSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
+        <td><span class="parametername">envSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_LambdaSharp_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log a message wit the given severity level. The <code>format</code> string is used to create a unique signature for errors.
+Therefore, any error information that varies between occurrences should be provided in the <code>arguments</code> parameter.</p>
+<p><strong>NOTE:</strong> Nothing is logged if both <code>format</code> and <code>exception</code> are null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ILambdaLogger.Log(LambdaLogLevel level, Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>The severity level of the log message. See <a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>Optional exception to log. The exception is logged with its description and stacktrace. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

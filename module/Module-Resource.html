@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Resource | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Resource | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="resource">Resource</h1>
+
+<p>The <code>Resource</code> definition is used to create new resources and/or specify access for the Lambda function in the module to existing resources.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Resource: String
+Description: String
+Scope: ScopeDefinition
+If: Condition
+Type: String
+Allow: AllowDefinition
+DefaultAttribute: String
+Pragmas:
+  - PragmaDefinition
+Properties:
+  ResourceProperties
+Value: Expression
+DependsOn:
+  - String
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>Allow</code></dt>
+<dd>
+The <code>Allow</code> attribute can be either a comma-separated, single string value, or a list of string values. String values that contain a colon (<code>:</code>) are interpreted as IAM permission and used as is (e.g. <code>dynamodb:GetItem</code>, <code>s3:GetObject*</code>, etc.). Otherwise, the value is interpreted as a λ# shorthand (see <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/src/LambdaSharp.Tool/Resources/IAM-Mappings.yml">λ# Shorthand by Resource Type</a>). Both notations can be used simultaneously within a single <code>Allow</code> section. Duplicate IAM permissions, after λ# shorthand resolution, are removed.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Either String or List of String</p>
+</dd>
+<dt><code>DefaultAttribute</code></dt>
+<dd>
+The <code>DefaultAttribute</code> attribute specifies the resource attribute to use when exporting the resource from the module or to a Lambda function. By default, the λ# CLI automatically selects the <code>Arn</code> attribute when available. Otherwise, it uses the return value of a <code>!Ref</code> expressions. This behavior can be overwritten by specifying a <code>DefaultAttribute</code> attribute.
+<p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>DependsOn</code></dt>
+<dd>
+The <code>DependsOn</code> attribute identifies items that must be created prior. For additional information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html">CloudFormation DependsOn Attribute</a>.
+<p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type</i>: List of String</p>
+</dd>
+<dt><code>Description</code></dt>
+<dd>
+The <code>Description</code> attribute specifies the variable description.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>If</code></dt>
+<dd>
+The <code>If</code> attribute specifies a condition that must be met for the Lambda function to be included in the deployment. The condition can either the name of a <code>Condition</code> item or a logical expression.
+<p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type</i>: String or Expression</p>
+</dd>
+<dt><code>Pragmas</code></dt>
+<dd>
+The <code>Pragmas</code> section specifies directives that change the default compiler behavior.
+<p><i>Required:</i> No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type:</i> List of <a href="Module-Pragmas.html">Pragma Definition</a></p>
+</dd>
+<dt><code>Properties</code></dt>
+<dd>
+The <code>Properties</code> section specifies additional options that can be specified for a new resource. This section is copied verbatim into the CloudFormation template and can use <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a> (e.g. <code>!Ref</code>, <code>!Join</code>, <code>!Sub</code>, etc.) for referencing other resources.
+<p>The <code>Properties</code> section cannot be specified for referenced resources. For a list of all additional options, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">AWS Resource Types Reference</a>.</p>
+<p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type</i>: Map</p>
+</dd>
+<dt><code>Resource</code></dt>
+<dd>
+The <code>Resource</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Scope</code></dt>
+<dd>
+The <code>Scope</code> attribute specifies which functions need to have access to this item. The <code>Scope</code> attribute can be a comma-separated list or a YAML list of function names. If all function need the item, then <code>all</code> can be used as a wildcard. In addition, the <code>public</code> can be used to export the item from the module.
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Comma-delimited String or List of String</p>
+</dd>
+<dt><code>Type</code></dt>
+<dd>
+The <code>Type</code> attribute identifies the AWS resource type that is being created or referenced. For example, <code>AWS::SNS::Topic</code> declares an SNS topic. For a list of all resource types, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">AWS Resource Types Reference</a>.
+<p><i>Required</i>: Conditional. The <code>Type</code> attribute is required for new resources and when using the λ# shorthand notation in the <code>Allow</code> attribute. The <code>Type</code> attribute can be omitted for referenced resources that only list native IAM permissions in their <code>Allow</code> attribute.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Value</code></dt>
+<dd>
+The <code>Value</code> attribute specifies the value for the parameter. If the <code>Value</code> attribute is a list of resource names, the IAM permissions are requested for all of them.
+<p><i>Required</i>: Conditional. The <code>Value</code> attribute is required for referenced resources. Otherwise, it must be omitted.</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="create-an-sns-topic">Create an SNS topic</h3>
+<pre><code class="lang-yaml">- Resource: MyTopic
+  Type: AWS::SNS::Topic
+  Allow: Publish
+</code></pre>
+<h3 id="create-a-dynamodb-table">Create a DynamoDB Table</h3>
+<pre><code class="lang-yaml">- Resource: MyDynamoDBTable
+  Scope: all
+  Type: AWS::DynamoDB::Table
+  Allow: Subscribe
+  Properties:
+    BillingMode: PAY_PER_REQUEST
+    AttributeDefinitions:
+      - AttributeName: MessageId
+        AttributeType: S
+    KeySchema:
+      - AttributeName: MessageId
+        KeyType: HASH
+</code></pre>
+<h3 id="create-a-dynamodb-table-configured-by-module-parameters">Create a DynamoDB Table configured by module parameters</h3>
+<pre><code class="lang-yaml">- Parameter: DynamoReadCapacity
+  Type: Number
+  Default: 1
+
+- Parameter: DynamoWriteCapacity
+  Type: Number
+  Default: 1
+
+- Resource: MyDynamoDBTable
+  Scope: all
+  Type: AWS::DynamoDB::Table
+  Allow: Subscribe
+  Properties:
+    AttributeDefinitions:
+      - AttributeName: MessageId
+        AttributeType: S
+    KeySchema:
+      - AttributeName: MessageId
+        KeyType: HASH
+    ProvisionedThroughput:
+      ReadCapacityUnits: !Ref DynamoReadCapacity
+      WriteCapacityUnits: !Ref DynamoWriteCapacity
+</code></pre>
+<h3 id="request-full-access-to-all-s3-buckets">Request full access to all S3 buckets</h3>
+<pre><code class="lang-yaml">- Resource: GrantBucketAccess
+  Type: AWS::S3::Bucket
+  Allow: Full
+  Value:
+    - arn:aws:s3:::*
+    - arn:aws:s3:::*/*
+</code></pre>
+<h3 id="request-access-to-aws-rekognition">Request access to AWS Rekognition</h3>
+<pre><code class="lang-yaml">- Resource: RekognitionService
+  Description: Permissions required for using AWS Rekognition
+  Value: &quot;*&quot;
+  Allow:
+    - &quot;rekognition:DetectFaces&quot;
+    - &quot;rekognition:IndexFaces&quot;
+    - &quot;rekognition:SearchFacesByImage&quot;
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

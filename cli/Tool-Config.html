@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Config Command Line | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Config Command Line | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="config-command-line">Config Command Line</h1>
+
+<p>The <code>config</code> command is used to configure the λ# CLI. The configuration step optionally creates resources for deploying λ# modules and captures deployment preferences. The λ# CLI configuration options are stored in <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-paramstore.html">AWS System Manager Parameter Store</a>, so they can be shared across teams on the same AWS account.</p>
+<h2 id="options">Options</h2>
+<dl>
+<dt><code>--existing-s3-bucket-name &lt;NAME&gt;</code></dt>
+<dd>(optional) Existing S3 bucket name for module deployments (blank value creates new bucket)</dd>
+<dt><code>--requested-s3-bucket-name &lt;NAME&gt;</code></dt>
+<dd>(optional) Requested S3 bucket name for module deployments (blank value assigns automatic name)</dd>
+<dt><code>--cloudformation-notifications-topic &lt;ARN&gt;</code></dt>
+<dd>(optional) Existing SNS topic ARN for CloudFormation notifications (blank value creates new topic)</dd>
+<dt><code>--protect</code></dt>
+<dd>(optional) Enable termination protection for the CloudFormation stack</dd>
+<dt><code>--force-update</code></dt>
+<dd>(optional) Force CLI profile update</dd>
+<dt><code>--cli-profile|-C &lt;NAME&gt;</code></dt>
+<dd>(optional) Use a specific LambdaSharp CLI profile (default: Default)</dd>
+<dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
+<dd>(optional) Use a specific AWS profile from the AWS credentials file</dd>
+<dt><code>--verbose|-V:&lt;LEVEL&gt;</code></dt>
+<dd>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="configure-a-new-cli-profile-with-interactive-prompts">Configure a new CLI profile with interactive prompts</h3>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash config
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.5) - Configure LambdaSharp CLI
+Configuring a new profile for LambdaSharp CLI
+|=&gt; CLI profile name: [Default]
+
+Configuring LambdaSharp Tool (v0.5) Parameters
+|=&gt; Name of an existing S3 bucket for LambdaSharp deployments (if blank, a new S3 bucket is created):
+|=&gt; (optional) Name of newly created S3 bucket (if blank, a unique name is generated):
+|=&gt; ARN of existing SNS topic for CloudFormation notifications (if blank, an SNS topic is created):
+
+=&gt; Stack creation initiated for LambdaSharpTool-Default
+CREATE_IN_PROGRESS                  AWS::CloudFormation::Stack                              LambdaSharpTool-Default (User Initiated)
+CREATE_IN_PROGRESS                  AWS::SNS::Topic                                         DeploymentNotificationTopicResource
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     VersionSsmParameter
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     StackNameSsmParameter
+CREATE_IN_PROGRESS                  AWS::SNS::Topic                                         DeploymentNotificationTopicResource (Resource creation Initiated)
+...
+CREATE_COMPLETE                     AWS::S3::BucketPolicy                                   DeploymentBucketPolicy
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     DeploymentBucketNameSsmParameter (Resource creation Initiated)
+CREATE_COMPLETE                     AWS::SSM::Parameter                                     DeploymentBucketNameSsmParameter
+CREATE_COMPLETE                     AWS::CloudFormation::Stack                              LambdaSharpTool-Default
+=&gt; Stack creation finished
+
+Done (finished: 1/18/2019 9:55:27 AM; duration: 00:00:42.6786101)
+</code></pre>
+<h3 id="configure-a-new-cli-profile-without-prompts">Configure a new CLI profile without prompts</h3>
+<p><strong>Using Bash:</strong></p>
+<pre><code class="lang-bash">lash config \
+    --cli-profile Team \
+    --existing-s3-bucket-name &quot;&quot; \
+    --requested-s3-bucket-name &quot;&quot; \
+    --cloudformation-notifications-topic &quot;&quot;
+</code></pre>
+<p><strong>Using PowerShell:</strong></p>
+<pre><code class="lang-powershell">lash config ^
+    --cli-profile Team ^
+    --existing-s3-bucket-name &quot;&quot; ^
+    --requested-s3-bucket-name &quot;&quot; ^
+    --cloudformation-notifications-topic &quot;&quot;
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.5) - Configure LambdaSharp CLI
+Configuring a new profile for LambdaSharp CLI
+Creating CLI profile: Team
+=&gt; Stack creation initiated for LambdaSharpTool-Team
+CREATE_IN_PROGRESS                  AWS::CloudFormation::Stack                              LambdaSharpTool-Team (User Initiated)
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     VersionSsmParameter
+CREATE_IN_PROGRESS                  AWS::SNS::Topic                                         DeploymentNotificationTopicResource
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     StackNameSsmParameter
+CREATE_IN_PROGRESS                  AWS::SNS::Topic                                         DeploymentNotificationTopicResource (Resource creation Initiated)
+...
+CREATE_COMPLETE                     AWS::SSM::Parameter                                     DeploymentBucketNameSsmParameter
+CREATE_IN_PROGRESS                  AWS::SSM::Parameter                                     DeploymentNotificationTopicSsmParameter (Resource creation Initiated)
+CREATE_COMPLETE                     AWS::SSM::Parameter                                     DeploymentNotificationTopicSsmParameter
+CREATE_COMPLETE                     AWS::CloudFormation::Stack                              LambdaSharpTool-Team
+=&gt; Stack creation finished
+
+Done (finished: 1/18/2019 10:06:41 AM; duration: 00:00:48.0435689)
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

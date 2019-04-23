@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>LambdaSharp - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaSharp - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="images/LambdaSharpLogo.png" alt="λ#"></p>
+<h1 id="lambdasharp---serverless-net-on-aws">LambdaSharp - Serverless .NET on AWS</h1>
+<p><strong><a href="articles/ReleaseNotes-Favorinus.html">Read what's new in the 0.6 &quot;Favorinus&quot; release.</a></strong></p>
+<p>λ# is a command line tool and a framework for serverless application development. λ# uses a simple declarative syntax to generate sophisticated CloudFormation templates that provide simple, yet flexible, deployment options.</p>
+<p>The objective of λ# is to accelerate the development pace of serverless solutions while helping developers adhere consistently to best practices to create scalable, observable, and modular systems.</p>
+<h2 id="give-a-star-">Give a Star! ⭐</h2>
+<p>If you like or are using this project, please <a href="https://github.com/LambdaSharp/LambdaSharpTool">give it a star on GitHub</a>. Thanks!</p>
+<p><img src="images/LashAnsiColor-WIP.gif" alt="λ# CLI"></p>
+<h2 id="install-λ-cli">Install λ# CLI</h2>
+<p>The λ# CLI is installed as a .NET Global Tool.</p>
+<pre><code class="lang-bash">dotnet tool install -g LambdaSharp.Tool
+</code></pre>
+<p>Once installed, the λ# CLI needs to be configured.</p>
+<pre><code class="lang-bash">lash config
+</code></pre>
+<p>Finally, a deployment tier must be initialized with the λ# Core.</p>
+<pre><code class="lang-bash">lash init --tier Sandbox
+</code></pre>
+<h2 id="deploy-a-λ-module">Deploy a λ# Module</h2>
+<p>Creating modules with Lambda functions and deploying them only requires a few steps.</p>
+<pre><code class="lang-bash"># Create a new λ# module
+lash new module MySampleModule
+
+# Add a function to the λ# module
+lash new function MyFunction
+
+# Deploy the λ# module
+lash deploy
+</code></pre>
+<p>The λ# CLI uses a YAML file to compile the C# projects, upload assets, and deploy the CloudFormation stack in one step. The YAML file describes the entire module including the inputs, outputs, variables, resources, and functions.</p>
+<pre><code class="lang-yaml">Module: MySampleModule
+Items:
+
+ - Function: MyFunction
+   Memory: 128
+   Timeout: 30
+</code></pre>
+<p>The C# project contains the Lambda handler.</p>
+<pre><code class="lang-csharp">namespace MySampleModule.MyFunction {
+
+    public class FunctionRequest {
+
+        // add request fields
+    }
+
+    public class FunctionResponse {
+
+        // add response fields
+    }
+
+    public class Function : ALambdaFunction&lt;FunctionRequest, FunctionResponse&gt; {
+
+        //--- Methods ---
+        public override Task InitializeAsync(LambdaConfig config)
+            =&gt; Task.CompletedTask;
+
+        public override async Task&lt;FunctionResponse&gt; ProcessMessageAsync(FunctionRequest request) {
+
+            // add business logic
+
+            return new FunctionResponse();
+        }
+    }
+}
+</code></pre>
+<h2 id="license">License</h2>
+<pre><code>Copyright (c) 2018,2019 MindTouch
+
+Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

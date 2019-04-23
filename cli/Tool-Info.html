@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Show Information | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Show Information | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="show-information">Show Information</h1>
+
+<p>The <code>info</code> command is used to show information about the current CLI profile, λ# environment, and installed command line tools.</p>
+<h2 id="options">Options</h2>
+<dl>
+<dt><code>--show-sensitive</code></dt>
+<dd>(optional) Show sensitive information</dd>
+<dt><code>--tier|-T &lt;NAME&gt;</code></dt>
+<dd>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</dd>
+<dt><code>--cli-profile|-C &lt;NAME&gt;</code></dt>
+<dd>(optional) Use a specific LambdaSharp CLI profile (default: Default)</dd>
+<dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
+<dd>(optional) Use a specific AWS profile from the AWS credentials file</dd>
+<dt><code>--verbose|-V:&lt;LEVEL&gt;</code></dt>
+<dd>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="show-information-for-default-profile-and-sandbox-tier">Show information for Default profile and Sandbox tier</h3>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash info --tier Sandbox
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.5) - Show LambdaSharp information
+LambdaSharp CLI
+    Profile: Sandbox
+    Version: 0.5
+    Module Deployment S3 Bucket: lambdasharp-bucket-name
+    Deployment Notifications Topic: arn:aws:sns:us-east-1:************:LambdaSharpTool-Sandbox-DeploymentNotificationTopicResource-QMM6DIP3K4N4
+    Module S3 Buckets:
+        - lambdasharp-bucket-name
+        - lambdasharp-us-east-1
+LambdaSharp Deployment Tier
+    Name: Sandbox
+    Version: 0.5
+Git
+    Branch: Docs
+    SHA: ae537bc2214710eed89f5c3b5819d809c065856f
+AWS
+    Region: us-east-1
+    Account Id: ************
+Tools
+    .NET Core CLI Version: 2.1.403
+    Git CLI Version: 2.18.0.windows.1
+
+Done (finished: 1/17/2019 4:27:54 PM; duration: 00:00:06.2172050)
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
