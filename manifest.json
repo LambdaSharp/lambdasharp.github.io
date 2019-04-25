@@ -863,7 +863,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction-2.html",
-          "hash": "iFlPNchKo7dC0VMh9PK5mA=="
+          "hash": "1bC9mqMfZB7nxoIyi/J2Dg=="
         }
       },
       "is_incremental": false,
@@ -871,11 +871,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/LambdaSharp.ALambdaFunction.FunctionInfo.yml",
+      "source_relative_path": "sdk/LambdaSharp.ALambdaFunction.InfoStruct.yml",
       "output": {
         ".html": {
-          "relative_path": "sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html",
-          "hash": "3nHJN1oNaJacscDwEc/nEA=="
+          "relative_path": "sdk/LambdaSharp.ALambdaFunction.InfoStruct.html",
+          "hash": "vVT6mu9kD7TczTVAlkm/nQ=="
         }
       },
       "is_incremental": false,
@@ -887,7 +887,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.html",
-          "hash": "NdxVk7v2sP74YczuPRHfPg=="
+          "hash": "RXGiMxKVHhyUKqHvT0ZzwA=="
         }
       },
       "is_incremental": false,
@@ -971,7 +971,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.AwsConverters.html",
-          "hash": "1ji83OIKr2FOPlR1v+FLOA=="
+          "hash": "CweV2IlXvuvAIH2RgQagVQ=="
         }
       },
       "is_incremental": false,
@@ -1367,7 +1367,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html",
-          "hash": "9v54SFJ9fG2+JGeho1zrqQ=="
+          "hash": "QWpuB2bpN5heeFrFn9Ab3w=="
         }
       },
       "is_incremental": false,
@@ -1379,7 +1379,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaConfig.html",
-          "hash": "iZRwfwvuG+dSIxpF4rZdwQ=="
+          "hash": "TIwVvK5Ka8llWdFEvFX96g=="
         }
       },
       "is_incremental": false,
@@ -1391,7 +1391,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaFunctionDependencyProvider.html",
-          "hash": "WEpeimgn8A9I0Q09ZnIr1A=="
+          "hash": "uJXHMkbpHjzu/PAGtJOxxQ=="
         }
       },
       "is_incremental": false,
@@ -1403,7 +1403,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html",
-          "hash": "0VL080M+MNTrM1JLf6h94Q=="
+          "hash": "lgHpbZSprHJY1/6AVtiPRQ=="
         }
       },
       "is_incremental": false,
@@ -1415,7 +1415,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html",
-          "hash": "YYb5yMjO/zCvaa/DJy2w6A=="
+          "hash": "W0LWZPY/xSjiMuEwQR/Hrw=="
         }
       },
       "is_incremental": false,
@@ -1559,7 +1559,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.html",
-          "hash": "ZqxrZM/JjVQuczeUZOiKCg=="
+          "hash": "L+UVEfXUOme1qmOtrgftaA=="
         }
       },
       "is_incremental": false,
@@ -1583,7 +1583,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/toc.html",
-          "hash": "udJp81vwDT1vEnFeTzbbgQ=="
+          "hash": "PKvCJH9rKLyUeQvoL6gbgg=="
         }
       },
       "is_incremental": false,
@@ -1613,13 +1613,6 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1627,16 +1620,23 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 60,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 59,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 60,
           "skipped_file_count": 0
         }
       }

@@ -73,7 +73,14 @@
   
   <h1 id="LambdaSharp_LambdaConfig" data-uid="LambdaSharp.LambdaConfig" class="text-break">Class LambdaConfig
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> class is used by the Lambda function to read
+its configuration settings. <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> provides hiearachical
+access to scoped module values using the
+<a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Item_System_String_">Item[String]</a> operator.
+Individual values can be retrieved using the basic
+<a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0__">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</a> method
+or one of the <code>Read*</code> methods.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -90,7 +97,8 @@
   </h3>
   <a id="LambdaSharp_LambdaConfig__ctor_" data-uid="LambdaSharp.LambdaConfig.#ctor*"></a>
   <h4 id="LambdaSharp_LambdaConfig__ctor_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.LambdaConfig.#ctor(LambdaSharp.ConfigSource.ILambdaConfigSource)">LambdaConfig(ILambdaConfigSource)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new instance using the provided <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance to read configuration values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -109,7 +117,24 @@
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance to read configuration values from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">source</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -117,7 +142,9 @@
   </h3>
   <a id="LambdaSharp_LambdaConfig_Item_" data-uid="LambdaSharp.LambdaConfig.Item*"></a>
   <h4 id="LambdaSharp_LambdaConfig_Item_System_String_" data-uid="LambdaSharp.LambdaConfig.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> scoped to a sub-hierarchy of values
+by appending the given key to the current path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -136,7 +163,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>Key to append to current hierarchy path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,13 +179,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a></td>
-        <td></td>
+        <td><p>A newly scoped <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_Keys_" data-uid="LambdaSharp.LambdaConfig.Keys*"></a>
   <h4 id="LambdaSharp_LambdaConfig_Keys" data-uid="LambdaSharp.LambdaConfig.Keys">Keys</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Enumerate all child keys at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,13 +204,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Enumeration of all nested keys.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_Path_" data-uid="LambdaSharp.LambdaConfig.Path*"></a>
   <h4 id="LambdaSharp_LambdaConfig_Path" data-uid="LambdaSharp.LambdaConfig.Path">Path</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieve the current hierarchy path.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,7 +229,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Current path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,7 +238,8 @@
   </h3>
   <a id="LambdaSharp_LambdaConfig_Read_" data-uid="LambdaSharp.LambdaConfig.Read*"></a>
   <h4 id="LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0__" data-uid="LambdaSharp.LambdaConfig.Read``1(System.String,System.Func{System.String,``0},System.Func{System.String,``0},System.Action{``0})">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the value for a key from <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -224,22 +258,26 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
         <td><span class="parametername">fallback</span></td>
-        <td></td>
+        <td><p>An optional callback when the value could not be found at the current path.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
         <td><span class="parametername">convert</span></td>
-        <td></td>
+        <td><p>An optional conversion from string to another type when the value was found.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;T&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the converted value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,7 +292,8 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The found value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -269,13 +308,41 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the value after conversion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should rarely be invoked directly. Instead use <a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__">ReadText(String, Action&lt;String&gt;)</a>
+and the other convenience methods.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></td>
+        <td><p>Thrown when no value is found at <code data-dev-comment-type="paramref" class="paramref">key</code> and <code data-dev-comment-type="paramref" class="paramref">fallback</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})">ReadCommaDelimitedList(String, Action&lt;IEnumerable&lt;String&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read an enumeration of comma-delimited <code>string</code> values for a
+key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -294,12 +361,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -314,13 +383,36 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>The found enumeration of <code>string</code> values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></td>
+        <td><p>Thrown when no value is found at <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})">ReadInt(String, Action&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>int</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -339,12 +431,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -359,13 +453,36 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The found <code>int</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></td>
+        <td><p>Thrown when no value is found at <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})">ReadInt(String, Int32, Action&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>int</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,17 +501,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>A value to return if <code data-dev-comment-type="paramref" class="paramref">key</code> doesn't exist.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -409,13 +529,31 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The found <code>int</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})">ReadText(String, Action&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>string</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -434,12 +572,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -454,13 +594,36 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The found <code>string</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></td>
+        <td><p>Thrown when no value is found at <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})">ReadText(String, String, Action&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>string</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -479,17 +642,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>A value to return if <code data-dev-comment-type="paramref" class="paramref">key</code> doesn't exist.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -504,13 +670,31 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The found <code>string</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})">ReadTimeSpan(String, Action&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>TimeSpan</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -529,12 +713,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -549,13 +735,36 @@
     <tbody>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
-        <td></td>
+        <td><p>The found <code>TimeSpan</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></td>
+        <td><p>Thrown when no value is found at <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_TimeSpan_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})">ReadTimeSpan(String, TimeSpan, Action&lt;TimeSpan&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read the <code>TimeSpan</code> value for a key at the current path in the hierarchy.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -574,17 +783,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The name of the value to read.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>A value to return if <code data-dev-comment-type="paramref" class="paramref">key</code> doesn't exist.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
-        <td></td>
+        <td><p>An optional callback to validate the value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -599,17 +811,36 @@
     <tbody>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
-        <td></td>
+        <td><p>The found <code>TimeSpan</code> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ValidateIsInRange_" data-uid="LambdaSharp.LambdaConfig.ValidateIsInRange*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ValidateIsInRange_System_Int32_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsInRange(System.Int32,System.Int32)">ValidateIsInRange(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a callback that validates that a value is in range
+of the specified lower and upper bounds, inclusively.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Action&lt;int&gt; ValidateIsInRange(int low, int high)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Action&lt;int&gt; ValidateIsInRange(int lowerValue, int upperValues)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -623,13 +854,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">low</span></td>
-        <td></td>
+        <td><span class="parametername">lowerValue</span></td>
+        <td><p>Lower bound in range.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">high</span></td>
-        <td></td>
+        <td><span class="parametername">upperValues</span></td>
+        <td><p>Upper bound in range.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -644,13 +877,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
+        <td><p>The validation callback to validate that a value is within the provided lower and upper bounds.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ValidateIsNegative_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNegative*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ValidateIsNegative_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNegative(System.Int32)">ValidateIsNegative(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates that the value is negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -669,13 +904,31 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Value to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ValidateIsNonNegative_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonNegative*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ValidateIsNonNegative_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonNegative(System.Int32)">ValidateIsNonNegative(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates that the value is non-negative.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -694,13 +947,31 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Value to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ValidateIsNonPositive_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonPositive*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ValidateIsNonPositive_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonPositive(System.Int32)">ValidateIsNonPositive(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates that the value is non-positive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -719,13 +990,31 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Value to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ValidateIsPositive_" data-uid="LambdaSharp.LambdaConfig.ValidateIsPositive*"></a>
   <h4 id="LambdaSharp_LambdaConfig_ValidateIsPositive_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsPositive(System.Int32)">ValidateIsPositive(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Validates that the value is positive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -744,7 +1033,24 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>Value to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a></td>
+        <td><p>Thrown when the value fails validation.</p>
+</td>
       </tr>
     </tbody>
   </table>

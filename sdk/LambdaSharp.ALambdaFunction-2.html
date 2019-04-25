@@ -73,7 +73,9 @@
   
   <h1 id="LambdaSharp_ALambdaFunction_2" data-uid="LambdaSharp.ALambdaFunction`2" class="text-break">Class ALambdaFunction&lt;TRequest, TResponse&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a> builds on the <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>
+by adding request and response types which are automatically deserialized and serialized, respectively.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -197,11 +199,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">TRequest</span></td>
-        <td></td>
+        <td><p>The request payload type.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TResponse</span></td>
-        <td></td>
+        <td><p>The response payload type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,7 +213,9 @@
   </h3>
   <a id="LambdaSharp_ALambdaFunction_2__ctor_" data-uid="LambdaSharp.ALambdaFunction`2.#ctor*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_2__ctor" data-uid="LambdaSharp.ALambdaFunction`2.#ctor">ALambdaFunction()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a> instance using the default
+implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,7 +223,9 @@
   </div>
   <a id="LambdaSharp_ALambdaFunction_2__ctor_" data-uid="LambdaSharp.ALambdaFunction`2.#ctor*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_2__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.ALambdaFunction`2.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaFunction(ILambdaFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a> instance using a
+custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -236,7 +244,8 @@
       <tr>
         <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
-        <td></td>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -244,7 +253,9 @@
   </h3>
   <a id="LambdaSharp_ALambdaFunction_2_ProcessMessageAsync_" data-uid="LambdaSharp.ALambdaFunction`2.ProcessMessageAsync*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_2_ProcessMessageAsync__0_" data-uid="LambdaSharp.ALambdaFunction`2.ProcessMessageAsync(`0)">ProcessMessageAsync(TRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageAsync__0_">ProcessMessageAsync(TRequest)</a> method is invoked for every deserialized request. It is
+responsible for processing the request and returning a response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -263,7 +274,8 @@
       <tr>
         <td><span class="xref">TRequest</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The deserialized request.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -278,13 +290,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResponse&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_" data-uid="LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> deserializes the request stream into
+a <typeparam name="TRequest"></typeparam> instance and invokes the <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageAsync__0_">ProcessMessageAsync(TRequest)</a> method.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,7 +318,8 @@
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream with the request payload.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -318,12 +334,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction.ProcessMessageStreamAsync(Stream)</a></div>
+  <h5 id="LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is <code>sealed</code> and cannot be overridden.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>
