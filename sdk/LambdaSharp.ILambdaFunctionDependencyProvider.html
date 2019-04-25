@@ -73,7 +73,10 @@
   
   <h1 id="LambdaSharp_ILambdaFunctionDependencyProvider" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider" class="text-break">Interface ILambdaFunctionDependencyProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>  interface provides all the required dependencies
+for <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> instances. This interface follows the <em>Dependency Provider</em> pattern
+where all side-effecting methods and properties mus be provided by an outside implementation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
@@ -85,7 +88,8 @@
   </h3>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_ConfigSource_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.ConfigSource*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_ConfigSource" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.ConfigSource">ConfigSource</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance used for initializing the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -102,13 +106,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td></td>
+        <td><p>The configured <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_JsonSerializer_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.JsonSerializer*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_JsonSerializer" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.JsonSerializer">JsonSerializer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance used for serializing/deserializing JSON data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -125,13 +131,15 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
-        <td></td>
+        <td><p>The configured <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_UtcNow_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.UtcNow*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_UtcNow" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.UtcNow">UtcNow</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the current date-time in UTC timezone.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -148,7 +156,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
-        <td></td>
+        <td><p>Current <span class="xref">System.DateTime</span> in UTC timezone</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -156,7 +165,10 @@
   </h3>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})">DecryptSecretAsync(Byte[], Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Decrypt a sequence of bytes with an optional encryption context. The Lambda function
+requires permission to use the <code>kms:Decrypt</code> operation on the KMS key used to
+encrypt the original message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -175,12 +187,14 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">secretBytes</span></td>
-        <td></td>
+        <td><p>Array containing the encrypted bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
-        <td></td>
+        <td><p>An optional encryption context. Can be <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -195,13 +209,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})">EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Encrypt a sequence of bytes using the specified KMS key. The Lambda function requires
+permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,17 +237,20 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">plaintextBytes</span></td>
-        <td></td>
+        <td><p>Array containing plaintext byte to encrypt.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">encryptionKeyId</span></td>
-        <td></td>
+        <td><p>The KMS key ID used encrypt the plaintext bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
-        <td></td>
+        <td><p>An optional encryption context. Can be <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -245,13 +265,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_Log_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.Log*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_Log_System_String_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.Log(System.String)">Log(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Write a message to the log stream. In production, this should be the CloudWatch log associated with
+the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,13 +293,16 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message to write to the log stream.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)">SendMessageToQueueAsync(String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the specified SQS queue. The Lambda function requires <code>sqs:SendMessage</code> permission
+on the specified SQS queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -295,12 +321,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">queueUrl</span></td>
-        <td></td>
+        <td><p>A SQS queue URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>A message to send.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -315,7 +343,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

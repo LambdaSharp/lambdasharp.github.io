@@ -316,24 +316,24 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.JsonSerializer
   nameWithType: ALambdaFunction.JsonSerializer
-- uid: LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])
-  name: ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_LambdaSharp_LambdaLogLevel_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])
-  name.vb: LambdaSharp.ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel, System.Exception, System.String, System.Object())
-  nameWithType: ALambdaFunction.ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object[])
-  nameWithType.vb: ALambdaFunction.LambdaSharp.ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object())
-- uid: LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log*
-  name: ILambdaLogger.Log
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_
-  commentId: Overload:LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log
+- uid: LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
+  name: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
+  name.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
+  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object())
+  nameWithType: ALambdaFunction.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
+  nameWithType.vb: ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
+- uid: LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*
+  name: ILambdaLogLevelLogger.Log
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_
+  commentId: Overload:LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log
   isSpec: "True"
-  name.vb: LambdaSharp.ILambdaLogger.Log
-  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.ILambdaLogger.Log
-  nameWithType: ALambdaFunction.ILambdaLogger.Log
-  nameWithType.vb: ALambdaFunction.LambdaSharp.ILambdaLogger.Log
+  name.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log
+  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log
+  nameWithType: ALambdaFunction.ILambdaLogLevelLogger.Log
+  nameWithType.vb: ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log
 - uid: LambdaSharp.ALambdaFunction.LogError(System.Exception)
   name: LogError(Exception)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_
@@ -487,11 +487,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.Provider
   nameWithType: ALambdaFunction.Provider
-- uid: LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Reports.ErrorReport)
+- uid: LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.ErrorReport)
   name: RecordErrorReport(ErrorReport)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Reports_ErrorReport_
-  commentId: M:LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Reports.ErrorReport)
-  fullName: LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Reports.ErrorReport)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_
+  commentId: M:LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.ErrorReport)
+  fullName: LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.ErrorReport)
   nameWithType: ALambdaFunction.RecordErrorReport(ErrorReport)
 - uid: LambdaSharp.ALambdaFunction.RecordErrorReport*
   name: RecordErrorReport
@@ -513,11 +513,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordException
   nameWithType: ALambdaFunction.RecordException
-- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.LambdaLogLevel,System.String,System.Exception)
+- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)
   name: RecordFailedMessageAsync(LambdaLogLevel, String, Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_LambdaLogLevel_System_String_System_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.LambdaLogLevel,System.String,System.Exception)
-  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.LambdaLogLevel, System.String, System.Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel, System.String, System.Exception)
   nameWithType: ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, String, Exception)
 - uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*
   name: RecordFailedMessageAsync
@@ -888,110 +888,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
   nameWithType: ALambdaApiGatewayFunction.WebSocketUrl
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException
-  name: ApiGatewayInvocationTargetBadParameterException
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.html
-  commentId: T:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException
-  nameWithType: ApiGatewayInvocationTargetBadParameterException
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.#ctor(System.String,System.String)
-  name: ApiGatewayInvocationTargetBadParameterException(String, String)
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetBadParameterException__ctor_System_String_System_String_
-  commentId: M:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.#ctor(System.String,System.String)
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.ApiGatewayInvocationTargetBadParameterException(System.String, System.String)
-  nameWithType: ApiGatewayInvocationTargetBadParameterException.ApiGatewayInvocationTargetBadParameterException(String, String)
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.#ctor*
-  name: ApiGatewayInvocationTargetBadParameterException
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetBadParameterException__ctor_
-  commentId: Overload:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.ApiGatewayInvocationTargetBadParameterException
-  nameWithType: ApiGatewayInvocationTargetBadParameterException.ApiGatewayInvocationTargetBadParameterException
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.ParameterName
-  name: ParameterName
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetBadParameterException_ParameterName
-  commentId: F:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.ParameterName
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetBadParameterException.ParameterName
-  nameWithType: ApiGatewayInvocationTargetBadParameterException.ParameterName
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory
-  name: ApiGatewayInvocationTargetDirectory
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html
-  commentId: T:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory
-  nameWithType: ApiGatewayInvocationTargetDirectory
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.#ctor(LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate)
-  name: ApiGatewayInvocationTargetDirectory(ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate)
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory__ctor_LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_CreateTargetInstanceDelegate_
-  commentId: M:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.#ctor(LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate)
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.ApiGatewayInvocationTargetDirectory(LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate)
-  nameWithType: ApiGatewayInvocationTargetDirectory.ApiGatewayInvocationTargetDirectory(ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate)
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.#ctor*
-  name: ApiGatewayInvocationTargetDirectory
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory__ctor_
-  commentId: Overload:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.ApiGatewayInvocationTargetDirectory
-  nameWithType: ApiGatewayInvocationTargetDirectory.ApiGatewayInvocationTargetDirectory
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add(System.String,System.String)
-  name: Add(String, String)
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_Add_System_String_System_String_
-  commentId: M:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add(System.String,System.String)
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add(System.String, System.String)
-  nameWithType: ApiGatewayInvocationTargetDirectory.Add(String, String)
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add*
-  name: Add
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_Add_
-  commentId: Overload:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.Add
-  nameWithType: ApiGatewayInvocationTargetDirectory.Add
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate
-  name: ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate.html
-  commentId: T:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate
-  nameWithType: ApiGatewayInvocationTargetDirectory.CreateTargetInstanceDelegate
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate
-  name: ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate.html
-  commentId: T:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate
-  nameWithType: ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(System.String,LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate@)
-  name: TryGetInvocationTarget(String, out ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_TryGetInvocationTarget_System_String_LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_InvocationTargetDelegate__
-  commentId: M:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(System.String,LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate@)
-  name.vb: TryGetInvocationTarget(String, ByRef ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(System.String, out LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-  fullName.vb: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(System.String, ByRef LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-  nameWithType: ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(String, out ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-  nameWithType.vb: ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget(String, ByRef ApiGatewayInvocationTargetDirectory.InvocationTargetDelegate)
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget*
-  name: TryGetInvocationTarget
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetDirectory_TryGetInvocationTarget_
-  commentId: Overload:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget
-  nameWithType: ApiGatewayInvocationTargetDirectory.TryGetInvocationTarget
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException
-  name: ApiGatewayInvocationTargetUnsupportedException
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.html
-  commentId: T:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException
-  nameWithType: ApiGatewayInvocationTargetUnsupportedException
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.#ctor(System.String,System.String)
-  name: ApiGatewayInvocationTargetUnsupportedException(String, String)
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetUnsupportedException__ctor_System_String_System_String_
-  commentId: M:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.#ctor(System.String,System.String)
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.ApiGatewayInvocationTargetUnsupportedException(System.String, System.String)
-  nameWithType: ApiGatewayInvocationTargetUnsupportedException.ApiGatewayInvocationTargetUnsupportedException(String, String)
-- uid: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.#ctor*
-  name: ApiGatewayInvocationTargetUnsupportedException
-  href: sdk/LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.html#LambdaSharp_ApiGateway_ApiGatewayInvocationTargetUnsupportedException__ctor_
-  commentId: Overload:LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ApiGatewayInvocationTargetUnsupportedException.ApiGatewayInvocationTargetUnsupportedException
-  nameWithType: ApiGatewayInvocationTargetUnsupportedException.ApiGatewayInvocationTargetUnsupportedException
 - uid: LambdaSharp.ApiGateway.FromBodyAttribute
   name: FromBodyAttribute
   href: sdk/LambdaSharp.ApiGateway.FromBodyAttribute.html
@@ -1528,341 +1424,6 @@ references:
   fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TRequestProperties, TResponseProperties).ProcessUpdateResourceAsync
   nameWithType: ALambdaCustomResourceFunction<TRequestProperties, TResponseProperties>.ProcessUpdateResourceAsync
   nameWithType.vb: ALambdaCustomResourceFunction(Of TRequestProperties, TResponseProperties).ProcessUpdateResourceAsync
-- uid: LambdaSharp.CustomResource.Internal
-  name: LambdaSharp.CustomResource.Internal
-  href: sdk/LambdaSharp.CustomResource.Internal.html
-  commentId: N:LambdaSharp.CustomResource.Internal
-  fullName: LambdaSharp.CustomResource.Internal
-  nameWithType: LambdaSharp.CustomResource.Internal
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1
-  name: CloudFormationResourceRequest<TProperties>
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html
-  commentId: T:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1
-  name.vb: CloudFormationResourceRequest(Of TProperties)
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties)
-  nameWithType: CloudFormationResourceRequest<TProperties>
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties)
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.LogicalResourceId
-  name: LogicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_LogicalResourceId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.LogicalResourceId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.LogicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).LogicalResourceId
-  nameWithType: CloudFormationResourceRequest<TProperties>.LogicalResourceId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).LogicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.LogicalResourceId*
-  name: LogicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_LogicalResourceId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.LogicalResourceId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.LogicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).LogicalResourceId
-  nameWithType: CloudFormationResourceRequest<TProperties>.LogicalResourceId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).LogicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.OldResourceProperties
-  name: OldResourceProperties
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_OldResourceProperties
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.OldResourceProperties
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.OldResourceProperties
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).OldResourceProperties
-  nameWithType: CloudFormationResourceRequest<TProperties>.OldResourceProperties
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).OldResourceProperties
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.OldResourceProperties*
-  name: OldResourceProperties
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_OldResourceProperties_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.OldResourceProperties
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.OldResourceProperties
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).OldResourceProperties
-  nameWithType: CloudFormationResourceRequest<TProperties>.OldResourceProperties
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).OldResourceProperties
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.PhysicalResourceId
-  name: PhysicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_PhysicalResourceId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.PhysicalResourceId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.PhysicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).PhysicalResourceId
-  nameWithType: CloudFormationResourceRequest<TProperties>.PhysicalResourceId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).PhysicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.PhysicalResourceId*
-  name: PhysicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_PhysicalResourceId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.PhysicalResourceId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.PhysicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).PhysicalResourceId
-  nameWithType: CloudFormationResourceRequest<TProperties>.PhysicalResourceId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).PhysicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestId
-  name: RequestId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_RequestId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.RequestId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).RequestId
-  nameWithType: CloudFormationResourceRequest<TProperties>.RequestId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).RequestId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestId*
-  name: RequestId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_RequestId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.RequestId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).RequestId
-  nameWithType: CloudFormationResourceRequest<TProperties>.RequestId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).RequestId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestType
-  name: RequestType
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_RequestType
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestType
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.RequestType
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).RequestType
-  nameWithType: CloudFormationResourceRequest<TProperties>.RequestType
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).RequestType
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestType*
-  name: RequestType
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_RequestType_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.RequestType
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.RequestType
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).RequestType
-  nameWithType: CloudFormationResourceRequest<TProperties>.RequestType
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).RequestType
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceProperties
-  name: ResourceProperties
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResourceProperties
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceProperties
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResourceProperties
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResourceProperties
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResourceProperties
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResourceProperties
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceProperties*
-  name: ResourceProperties
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResourceProperties_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceProperties
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResourceProperties
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResourceProperties
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResourceProperties
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResourceProperties
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceType
-  name: ResourceType
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResourceType
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceType
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResourceType
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResourceType
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResourceType
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResourceType
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceType*
-  name: ResourceType
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResourceType_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResourceType
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResourceType
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResourceType
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResourceType
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResourceType
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResponseURL
-  name: ResponseURL
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResponseURL
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResponseURL
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResponseURL
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResponseURL
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResponseURL
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResponseURL
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResponseURL*
-  name: ResponseURL
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_ResponseURL_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.ResponseURL
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.ResponseURL
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).ResponseURL
-  nameWithType: CloudFormationResourceRequest<TProperties>.ResponseURL
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).ResponseURL
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.StackId
-  name: StackId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_StackId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.StackId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.StackId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).StackId
-  nameWithType: CloudFormationResourceRequest<TProperties>.StackId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).StackId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.StackId*
-  name: StackId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceRequest_1_StackId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest`1.StackId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest<TProperties>.StackId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceRequest(Of TProperties).StackId
-  nameWithType: CloudFormationResourceRequest<TProperties>.StackId
-  nameWithType.vb: CloudFormationResourceRequest(Of TProperties).StackId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1
-  name: CloudFormationResourceResponse<TProperties>
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html
-  commentId: T:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1
-  name.vb: CloudFormationResourceResponse(Of TProperties)
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties)
-  nameWithType: CloudFormationResourceResponse<TProperties>
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties)
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Data
-  name: Data
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_Data
-  commentId: F:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Data
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.Data
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).Data
-  nameWithType: CloudFormationResourceResponse<TProperties>.Data
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).Data
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.LogicalResourceId
-  name: LogicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_LogicalResourceId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.LogicalResourceId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.LogicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).LogicalResourceId
-  nameWithType: CloudFormationResourceResponse<TProperties>.LogicalResourceId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).LogicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.LogicalResourceId*
-  name: LogicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_LogicalResourceId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.LogicalResourceId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.LogicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).LogicalResourceId
-  nameWithType: CloudFormationResourceResponse<TProperties>.LogicalResourceId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).LogicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.NoEcho
-  name: NoEcho
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_NoEcho
-  commentId: F:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.NoEcho
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.NoEcho
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).NoEcho
-  nameWithType: CloudFormationResourceResponse<TProperties>.NoEcho
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).NoEcho
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.PhysicalResourceId
-  name: PhysicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_PhysicalResourceId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.PhysicalResourceId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.PhysicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).PhysicalResourceId
-  nameWithType: CloudFormationResourceResponse<TProperties>.PhysicalResourceId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).PhysicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.PhysicalResourceId*
-  name: PhysicalResourceId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_PhysicalResourceId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.PhysicalResourceId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.PhysicalResourceId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).PhysicalResourceId
-  nameWithType: CloudFormationResourceResponse<TProperties>.PhysicalResourceId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).PhysicalResourceId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Reason
-  name: Reason
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_Reason
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Reason
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.Reason
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).Reason
-  nameWithType: CloudFormationResourceResponse<TProperties>.Reason
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).Reason
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Reason*
-  name: Reason
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_Reason_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Reason
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.Reason
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).Reason
-  nameWithType: CloudFormationResourceResponse<TProperties>.Reason
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).Reason
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.RequestId
-  name: RequestId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_RequestId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.RequestId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.RequestId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).RequestId
-  nameWithType: CloudFormationResourceResponse<TProperties>.RequestId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).RequestId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.RequestId*
-  name: RequestId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_RequestId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.RequestId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.RequestId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).RequestId
-  nameWithType: CloudFormationResourceResponse<TProperties>.RequestId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).RequestId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.StackId
-  name: StackId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_StackId
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.StackId
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.StackId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).StackId
-  nameWithType: CloudFormationResourceResponse<TProperties>.StackId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).StackId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.StackId*
-  name: StackId
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_StackId_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.StackId
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.StackId
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).StackId
-  nameWithType: CloudFormationResourceResponse<TProperties>.StackId
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).StackId
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Status
-  name: Status
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_Status
-  commentId: P:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Status
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.Status
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).Status
-  nameWithType: CloudFormationResourceResponse<TProperties>.Status
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).Status
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Status*
-  name: Status
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse-1.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponse_1_Status_
-  commentId: Overload:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse`1.Status
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse<TProperties>.Status
-  fullName.vb: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponse(Of TProperties).Status
-  nameWithType: CloudFormationResourceResponse<TProperties>.Status
-  nameWithType.vb: CloudFormationResourceResponse(Of TProperties).Status
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus
-  name: CloudFormationResourceResponseStatus
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.html
-  commentId: T:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus
-  nameWithType: CloudFormationResourceResponseStatus
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.FAILED
-  name: FAILED
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponseStatus_FAILED
-  commentId: F:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.FAILED
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.FAILED
-  nameWithType: CloudFormationResourceResponseStatus.FAILED
-- uid: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.SUCCESS
-  name: SUCCESS
-  href: sdk/LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.html#LambdaSharp_CustomResource_Internal_CloudFormationResourceResponseStatus_SUCCESS
-  commentId: F:LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.SUCCESS
-  fullName: LambdaSharp.CustomResource.Internal.CloudFormationResourceResponseStatus.SUCCESS
-  nameWithType: CloudFormationResourceResponseStatus.SUCCESS
-- uid: LambdaSharp.CustomResource.LambdaCustomResourceException
-  name: LambdaCustomResourceException
-  href: sdk/LambdaSharp.CustomResource.LambdaCustomResourceException.html
-  commentId: T:LambdaSharp.CustomResource.LambdaCustomResourceException
-  fullName: LambdaSharp.CustomResource.LambdaCustomResourceException
-  nameWithType: LambdaCustomResourceException
-- uid: LambdaSharp.CustomResource.LambdaCustomResourceException.#ctor(System.String,System.Object[])
-  name: LambdaCustomResourceException(String, Object[])
-  href: sdk/LambdaSharp.CustomResource.LambdaCustomResourceException.html#LambdaSharp_CustomResource_LambdaCustomResourceException__ctor_System_String_System_Object___
-  commentId: M:LambdaSharp.CustomResource.LambdaCustomResourceException.#ctor(System.String,System.Object[])
-  name.vb: LambdaCustomResourceException(String, Object())
-  fullName: LambdaSharp.CustomResource.LambdaCustomResourceException.LambdaCustomResourceException(System.String, System.Object[])
-  fullName.vb: LambdaSharp.CustomResource.LambdaCustomResourceException.LambdaCustomResourceException(System.String, System.Object())
-  nameWithType: LambdaCustomResourceException.LambdaCustomResourceException(String, Object[])
-  nameWithType.vb: LambdaCustomResourceException.LambdaCustomResourceException(String, Object())
-- uid: LambdaSharp.CustomResource.LambdaCustomResourceException.#ctor*
-  name: LambdaCustomResourceException
-  href: sdk/LambdaSharp.CustomResource.LambdaCustomResourceException.html#LambdaSharp_CustomResource_LambdaCustomResourceException__ctor_
-  commentId: Overload:LambdaSharp.CustomResource.LambdaCustomResourceException.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.CustomResource.LambdaCustomResourceException.LambdaCustomResourceException
-  nameWithType: LambdaCustomResourceException.LambdaCustomResourceException
 - uid: LambdaSharp.CustomResource.Request`1
   name: Request<TProperties>
   href: sdk/LambdaSharp.CustomResource.Request-1.html
@@ -2040,6 +1601,438 @@ references:
   fullName.vb: LambdaSharp.CustomResource.Response(Of TProperties).Properties
   nameWithType: Response<TProperties>.Properties
   nameWithType.vb: Response(Of TProperties).Properties
+- uid: LambdaSharp.ErrorReports
+  name: LambdaSharp.ErrorReports
+  href: sdk/LambdaSharp.ErrorReports.html
+  commentId: N:LambdaSharp.ErrorReports
+  fullName: LambdaSharp.ErrorReports
+  nameWithType: LambdaSharp.ErrorReports
+- uid: LambdaSharp.ErrorReports.ErrorReport
+  name: ErrorReport
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html
+  commentId: T:LambdaSharp.ErrorReports.ErrorReport
+  fullName: LambdaSharp.ErrorReports.ErrorReport
+  nameWithType: ErrorReport
+- uid: LambdaSharp.ErrorReports.ErrorReport.Fingerprint
+  name: Fingerprint
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Fingerprint
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Fingerprint
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Fingerprint
+  nameWithType: ErrorReport.Fingerprint
+- uid: LambdaSharp.ErrorReports.ErrorReport.Fingerprint*
+  name: Fingerprint
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Fingerprint_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Fingerprint
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Fingerprint
+  nameWithType: ErrorReport.Fingerprint
+- uid: LambdaSharp.ErrorReports.ErrorReport.Framework
+  name: Framework
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Framework
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Framework
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Framework
+  nameWithType: ErrorReport.Framework
+- uid: LambdaSharp.ErrorReports.ErrorReport.Framework*
+  name: Framework
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Framework_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Framework
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Framework
+  nameWithType: ErrorReport.Framework
+- uid: LambdaSharp.ErrorReports.ErrorReport.FunctionId
+  name: FunctionId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_FunctionId
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.FunctionId
+  fullName: LambdaSharp.ErrorReports.ErrorReport.FunctionId
+  nameWithType: ErrorReport.FunctionId
+- uid: LambdaSharp.ErrorReports.ErrorReport.FunctionId*
+  name: FunctionId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_FunctionId_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.FunctionId
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.FunctionId
+  nameWithType: ErrorReport.FunctionId
+- uid: LambdaSharp.ErrorReports.ErrorReport.FunctionName
+  name: FunctionName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_FunctionName
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.FunctionName
+  fullName: LambdaSharp.ErrorReports.ErrorReport.FunctionName
+  nameWithType: ErrorReport.FunctionName
+- uid: LambdaSharp.ErrorReports.ErrorReport.FunctionName*
+  name: FunctionName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_FunctionName_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.FunctionName
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.FunctionName
+  nameWithType: ErrorReport.FunctionName
+- uid: LambdaSharp.ErrorReports.ErrorReport.GitBranch
+  name: GitBranch
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_GitBranch
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.GitBranch
+  fullName: LambdaSharp.ErrorReports.ErrorReport.GitBranch
+  nameWithType: ErrorReport.GitBranch
+- uid: LambdaSharp.ErrorReports.ErrorReport.GitBranch*
+  name: GitBranch
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_GitBranch_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.GitBranch
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.GitBranch
+  nameWithType: ErrorReport.GitBranch
+- uid: LambdaSharp.ErrorReports.ErrorReport.GitSha
+  name: GitSha
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_GitSha
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.GitSha
+  fullName: LambdaSharp.ErrorReports.ErrorReport.GitSha
+  nameWithType: ErrorReport.GitSha
+- uid: LambdaSharp.ErrorReports.ErrorReport.GitSha*
+  name: GitSha
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_GitSha_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.GitSha
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.GitSha
+  nameWithType: ErrorReport.GitSha
+- uid: LambdaSharp.ErrorReports.ErrorReport.Language
+  name: Language
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Language
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Language
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Language
+  nameWithType: ErrorReport.Language
+- uid: LambdaSharp.ErrorReports.ErrorReport.Language*
+  name: Language
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Language_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Language
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Language
+  nameWithType: ErrorReport.Language
+- uid: LambdaSharp.ErrorReports.ErrorReport.Level
+  name: Level
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Level
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Level
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Level
+  nameWithType: ErrorReport.Level
+- uid: LambdaSharp.ErrorReports.ErrorReport.Level*
+  name: Level
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Level_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Level
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Level
+  nameWithType: ErrorReport.Level
+- uid: LambdaSharp.ErrorReports.ErrorReport.Message
+  name: Message
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Message
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Message
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Message
+  nameWithType: ErrorReport.Message
+- uid: LambdaSharp.ErrorReports.ErrorReport.Message*
+  name: Message
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Message_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Message
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Message
+  nameWithType: ErrorReport.Message
+- uid: LambdaSharp.ErrorReports.ErrorReport.Module
+  name: Module
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Module
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Module
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Module
+  nameWithType: ErrorReport.Module
+- uid: LambdaSharp.ErrorReports.ErrorReport.Module*
+  name: Module
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Module_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Module
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Module
+  nameWithType: ErrorReport.Module
+- uid: LambdaSharp.ErrorReports.ErrorReport.ModuleId
+  name: ModuleId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_ModuleId
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.ModuleId
+  fullName: LambdaSharp.ErrorReports.ErrorReport.ModuleId
+  nameWithType: ErrorReport.ModuleId
+- uid: LambdaSharp.ErrorReports.ErrorReport.ModuleId*
+  name: ModuleId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_ModuleId_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.ModuleId
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.ModuleId
+  nameWithType: ErrorReport.ModuleId
+- uid: LambdaSharp.ErrorReports.ErrorReport.Platform
+  name: Platform
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Platform
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Platform
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Platform
+  nameWithType: ErrorReport.Platform
+- uid: LambdaSharp.ErrorReports.ErrorReport.Platform*
+  name: Platform
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Platform_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Platform
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Platform
+  nameWithType: ErrorReport.Platform
+- uid: LambdaSharp.ErrorReports.ErrorReport.Raw
+  name: Raw
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Raw
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Raw
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Raw
+  nameWithType: ErrorReport.Raw
+- uid: LambdaSharp.ErrorReports.ErrorReport.Raw*
+  name: Raw
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Raw_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Raw
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Raw
+  nameWithType: ErrorReport.Raw
+- uid: LambdaSharp.ErrorReports.ErrorReport.RequestId
+  name: RequestId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_RequestId
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.RequestId
+  fullName: LambdaSharp.ErrorReports.ErrorReport.RequestId
+  nameWithType: ErrorReport.RequestId
+- uid: LambdaSharp.ErrorReports.ErrorReport.RequestId*
+  name: RequestId
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_RequestId_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.RequestId
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.RequestId
+  nameWithType: ErrorReport.RequestId
+- uid: LambdaSharp.ErrorReports.ErrorReport.Source
+  name: Source
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Source
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Source
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Source
+  nameWithType: ErrorReport.Source
+- uid: LambdaSharp.ErrorReports.ErrorReport.Source*
+  name: Source
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Source_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Source
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Source
+  nameWithType: ErrorReport.Source
+- uid: LambdaSharp.ErrorReports.ErrorReport.Timestamp
+  name: Timestamp
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Timestamp
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Timestamp
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Timestamp
+  nameWithType: ErrorReport.Timestamp
+- uid: LambdaSharp.ErrorReports.ErrorReport.Timestamp*
+  name: Timestamp
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Timestamp_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Timestamp
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Timestamp
+  nameWithType: ErrorReport.Timestamp
+- uid: LambdaSharp.ErrorReports.ErrorReport.Traces
+  name: Traces
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Traces
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Traces
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Traces
+  nameWithType: ErrorReport.Traces
+- uid: LambdaSharp.ErrorReports.ErrorReport.Traces*
+  name: Traces
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Traces_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Traces
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Traces
+  nameWithType: ErrorReport.Traces
+- uid: LambdaSharp.ErrorReports.ErrorReport.Version
+  name: Version
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Version
+  commentId: P:LambdaSharp.ErrorReports.ErrorReport.Version
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Version
+  nameWithType: ErrorReport.Version
+- uid: LambdaSharp.ErrorReports.ErrorReport.Version*
+  name: Version
+  href: sdk/LambdaSharp.ErrorReports.ErrorReport.html#LambdaSharp_ErrorReports_ErrorReport_Version_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReport.Version
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReport.Version
+  nameWithType: ErrorReport.Version
+- uid: LambdaSharp.ErrorReports.ErrorReporter
+  name: ErrorReporter
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html
+  commentId: T:LambdaSharp.ErrorReports.ErrorReporter
+  fullName: LambdaSharp.ErrorReports.ErrorReporter
+  nameWithType: ErrorReporter
+- uid: LambdaSharp.ErrorReports.ErrorReporter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  name: ErrorReporter(String, String, String, String, String, String, String)
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:LambdaSharp.ErrorReports.ErrorReporter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.ErrorReporter(System.String, System.String, System.String, System.String, System.String, System.String, System.String)
+  nameWithType: ErrorReporter.ErrorReporter(String, String, String, String, String, String, String)
+- uid: LambdaSharp.ErrorReports.ErrorReporter.#ctor*
+  name: ErrorReporter
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter__ctor_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReporter.#ctor
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.ErrorReporter
+  nameWithType: ErrorReporter.ErrorReporter
+- uid: LambdaSharp.ErrorReports.ErrorReporter.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
+  name: CreateReport(String, String, Exception, String, Object[])
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ErrorReports.ErrorReporter.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
+  name.vb: CreateReport(String, String, Exception, String, Object())
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.CreateReport(System.String, System.String, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ErrorReports.ErrorReporter.CreateReport(System.String, System.String, System.Exception, System.String, System.Object())
+  nameWithType: ErrorReporter.CreateReport(String, String, Exception, String, Object[])
+  nameWithType.vb: ErrorReporter.CreateReport(String, String, Exception, String, Object())
+- uid: LambdaSharp.ErrorReports.ErrorReporter.CreateReport*
+  name: CreateReport
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter_CreateReport_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReporter.CreateReport
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.CreateReport
+  nameWithType: ErrorReporter.CreateReport
+- uid: LambdaSharp.ErrorReports.ErrorReporter.FormatMessage(System.String,System.Object[])
+  name: FormatMessage(String, Object[])
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter_FormatMessage_System_String_System_Object___
+  commentId: M:LambdaSharp.ErrorReports.ErrorReporter.FormatMessage(System.String,System.Object[])
+  name.vb: FormatMessage(String, Object())
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.FormatMessage(System.String, System.Object[])
+  fullName.vb: LambdaSharp.ErrorReports.ErrorReporter.FormatMessage(System.String, System.Object())
+  nameWithType: ErrorReporter.FormatMessage(String, Object[])
+  nameWithType.vb: ErrorReporter.FormatMessage(String, Object())
+- uid: LambdaSharp.ErrorReports.ErrorReporter.FormatMessage*
+  name: FormatMessage
+  href: sdk/LambdaSharp.ErrorReports.ErrorReporter.html#LambdaSharp_ErrorReports_ErrorReporter_FormatMessage_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReporter.FormatMessage
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReporter.FormatMessage
+  nameWithType: ErrorReporter.FormatMessage
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo
+  name: ErrorReportExceptionInfo
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html
+  commentId: T:LambdaSharp.ErrorReports.ErrorReportExceptionInfo
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo
+  nameWithType: ErrorReportExceptionInfo
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message
+  name: Message
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_Message
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message
+  nameWithType: ErrorReportExceptionInfo.Message
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message*
+  name: Message
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_Message_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Message
+  nameWithType: ErrorReportExceptionInfo.Message
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace
+  name: StackTrace
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_StackTrace
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace
+  nameWithType: ErrorReportExceptionInfo.StackTrace
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace*
+  name: StackTrace
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_StackTrace_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.StackTrace
+  nameWithType: ErrorReportExceptionInfo.StackTrace
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type
+  name: Type
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_Type
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type
+  nameWithType: ErrorReportExceptionInfo.Type
+- uid: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type*
+  name: Type
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html#LambdaSharp_ErrorReports_ErrorReportExceptionInfo_Type_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportExceptionInfo.Type
+  nameWithType: ErrorReportExceptionInfo.Type
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame
+  name: ErrorReportStackFrame
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html
+  commentId: T:LambdaSharp.ErrorReports.ErrorReportStackFrame
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame
+  nameWithType: ErrorReportStackFrame
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber
+  name: ColumnNumber
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_ColumnNumber
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber
+  nameWithType: ErrorReportStackFrame.ColumnNumber
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber*
+  name: ColumnNumber
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_ColumnNumber_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.ColumnNumber
+  nameWithType: ErrorReportStackFrame.ColumnNumber
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName
+  name: FileName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_FileName
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName
+  nameWithType: ErrorReportStackFrame.FileName
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName*
+  name: FileName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_FileName_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.FileName
+  nameWithType: ErrorReportStackFrame.FileName
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber
+  name: LineNumber
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_LineNumber
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber
+  nameWithType: ErrorReportStackFrame.LineNumber
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber*
+  name: LineNumber
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_LineNumber_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.LineNumber
+  nameWithType: ErrorReportStackFrame.LineNumber
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName
+  name: MethodName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_MethodName
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName
+  nameWithType: ErrorReportStackFrame.MethodName
+- uid: LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName*
+  name: MethodName
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackFrame.html#LambdaSharp_ErrorReports_ErrorReportStackFrame_MethodName_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackFrame.MethodName
+  nameWithType: ErrorReportStackFrame.MethodName
+- uid: LambdaSharp.ErrorReports.ErrorReportStackTrace
+  name: ErrorReportStackTrace
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackTrace.html
+  commentId: T:LambdaSharp.ErrorReports.ErrorReportStackTrace
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackTrace
+  nameWithType: ErrorReportStackTrace
+- uid: LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception
+  name: Exception
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackTrace.html#LambdaSharp_ErrorReports_ErrorReportStackTrace_Exception
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception
+  nameWithType: ErrorReportStackTrace.Exception
+- uid: LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception*
+  name: Exception
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackTrace.html#LambdaSharp_ErrorReports_ErrorReportStackTrace_Exception_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackTrace.Exception
+  nameWithType: ErrorReportStackTrace.Exception
+- uid: LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames
+  name: Frames
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackTrace.html#LambdaSharp_ErrorReports_ErrorReportStackTrace_Frames
+  commentId: P:LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames
+  nameWithType: ErrorReportStackTrace.Frames
+- uid: LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames*
+  name: Frames
+  href: sdk/LambdaSharp.ErrorReports.ErrorReportStackTrace.html#LambdaSharp_ErrorReports_ErrorReportStackTrace_Frames_
+  commentId: Overload:LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames
+  isSpec: "True"
+  fullName: LambdaSharp.ErrorReports.ErrorReportStackTrace.Frames
+  nameWithType: ErrorReportStackTrace.Frames
 - uid: LambdaSharp.Exceptions
   name: LambdaSharp.Exceptions
   href: sdk/LambdaSharp.Exceptions.html
@@ -2102,23 +2095,42 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Exceptions.ALambdaException.ALambdaException
   nameWithType: ALambdaException.ALambdaException
-- uid: LambdaSharp.Exceptions.ALambdaException.LambdaSharp#ILambdaExceptionFingerprinter#FingerprintValue
+- uid: LambdaSharp.Exceptions.ALambdaException.LambdaSharp#Exceptions#ILambdaExceptionFingerprinter#FingerprintValue
   name: ILambdaExceptionFingerprinter.FingerprintValue
-  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException_LambdaSharp_ILambdaExceptionFingerprinter_FingerprintValue
-  commentId: P:LambdaSharp.Exceptions.ALambdaException.LambdaSharp#ILambdaExceptionFingerprinter#FingerprintValue
-  name.vb: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  fullName: LambdaSharp.Exceptions.ALambdaException.LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
+  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException_LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue
+  commentId: P:LambdaSharp.Exceptions.ALambdaException.LambdaSharp#Exceptions#ILambdaExceptionFingerprinter#FingerprintValue
+  name.vb: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  fullName: LambdaSharp.Exceptions.ALambdaException.LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
   nameWithType: ALambdaException.ILambdaExceptionFingerprinter.FingerprintValue
-  nameWithType.vb: ALambdaException.LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-- uid: LambdaSharp.Exceptions.ALambdaException.LambdaSharp#ILambdaExceptionFingerprinter#FingerprintValue*
+  nameWithType.vb: ALambdaException.LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+- uid: LambdaSharp.Exceptions.ALambdaException.LambdaSharp#Exceptions#ILambdaExceptionFingerprinter#FingerprintValue*
   name: ILambdaExceptionFingerprinter.FingerprintValue
-  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException_LambdaSharp_ILambdaExceptionFingerprinter_FingerprintValue_
-  commentId: Overload:LambdaSharp.Exceptions.ALambdaException.LambdaSharp#ILambdaExceptionFingerprinter#FingerprintValue
+  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException_LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue_
+  commentId: Overload:LambdaSharp.Exceptions.ALambdaException.LambdaSharp#Exceptions#ILambdaExceptionFingerprinter#FingerprintValue
   isSpec: "True"
-  name.vb: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  fullName: LambdaSharp.Exceptions.ALambdaException.LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
+  name.vb: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  fullName: LambdaSharp.Exceptions.ALambdaException.LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
   nameWithType: ALambdaException.ILambdaExceptionFingerprinter.FingerprintValue
-  nameWithType.vb: ALambdaException.LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
+  nameWithType.vb: ALambdaException.LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+- uid: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter
+  name: ILambdaExceptionFingerprinter
+  href: sdk/LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html
+  commentId: T:LambdaSharp.Exceptions.ILambdaExceptionFingerprinter
+  fullName: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter
+  nameWithType: ILambdaExceptionFingerprinter
+- uid: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  name: FingerprintValue
+  href: sdk/LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue
+  commentId: P:LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  fullName: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  nameWithType: ILambdaExceptionFingerprinter.FingerprintValue
+- uid: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue*
+  name: FingerprintValue
+  href: sdk/LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue_
+  commentId: Overload:LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  isSpec: "True"
+  fullName: LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue
+  nameWithType: ILambdaExceptionFingerprinter.FingerprintValue
 - uid: LambdaSharp.Exceptions.LambdaAbortException
   name: LambdaAbortException
   href: sdk/LambdaSharp.Exceptions.LambdaAbortException.html
@@ -2429,25 +2441,6 @@ references:
   commentId: T:LambdaSharp.Finalizer.FinalizerResponseProperties
   fullName: LambdaSharp.Finalizer.FinalizerResponseProperties
   nameWithType: FinalizerResponseProperties
-- uid: LambdaSharp.ILambdaExceptionFingerprinter
-  name: ILambdaExceptionFingerprinter
-  href: sdk/LambdaSharp.ILambdaExceptionFingerprinter.html
-  commentId: T:LambdaSharp.ILambdaExceptionFingerprinter
-  fullName: LambdaSharp.ILambdaExceptionFingerprinter
-  nameWithType: ILambdaExceptionFingerprinter
-- uid: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  name: FingerprintValue
-  href: sdk/LambdaSharp.ILambdaExceptionFingerprinter.html#LambdaSharp_ILambdaExceptionFingerprinter_FingerprintValue
-  commentId: P:LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  fullName: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  nameWithType: ILambdaExceptionFingerprinter.FingerprintValue
-- uid: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue*
-  name: FingerprintValue
-  href: sdk/LambdaSharp.ILambdaExceptionFingerprinter.html#LambdaSharp_ILambdaExceptionFingerprinter_FingerprintValue_
-  commentId: Overload:LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaExceptionFingerprinter.FingerprintValue
-  nameWithType: ILambdaExceptionFingerprinter.FingerprintValue
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider
   name: ILambdaFunctionDependencyProvider
   href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html
@@ -2551,148 +2544,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.UtcNow
   nameWithType: ILambdaFunctionDependencyProvider.UtcNow
-- uid: LambdaSharp.ILambdaLogger
-  name: ILambdaLogger
-  href: sdk/LambdaSharp.ILambdaLogger.html
-  commentId: T:LambdaSharp.ILambdaLogger
-  fullName: LambdaSharp.ILambdaLogger
-  nameWithType: ILambdaLogger
-- uid: LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])
-  name: Log(LambdaLogLevel, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLogger.html#LambdaSharp_ILambdaLogger_Log_LambdaSharp_LambdaLogLevel_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])
-  name.vb: Log(LambdaLogLevel, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLogger.Log(LambdaSharp.LambdaLogLevel, System.Exception, System.String, System.Object())
-  nameWithType: ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object[])
-  nameWithType.vb: ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object())
-- uid: LambdaSharp.ILambdaLogger.Log*
-  name: Log
-  href: sdk/LambdaSharp.ILambdaLogger.html#LambdaSharp_ILambdaLogger_Log_
-  commentId: Overload:LambdaSharp.ILambdaLogger.Log
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLogger.Log
-  nameWithType: ILambdaLogger.Log
-- uid: LambdaSharp.ILambdaLoggerEx
-  name: ILambdaLoggerEx
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html
-  commentId: T:LambdaSharp.ILambdaLoggerEx
-  fullName: LambdaSharp.ILambdaLoggerEx
-  nameWithType: ILambdaLoggerEx
-- uid: LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger,System.Exception)
-  name: LogError(ILambdaLogger, Exception)
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogError_LambdaSharp_ILambdaLogger_System_Exception_
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger,System.Exception)
-  fullName: LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger, System.Exception)
-  nameWithType: ILambdaLoggerEx.LogError(ILambdaLogger, Exception)
-- uid: LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name: LogError(ILambdaLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogError_LambdaSharp_ILambdaLogger_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name.vb: LogError(ILambdaLogger, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogError(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogError(ILambdaLogger, Exception, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogError(ILambdaLogger, Exception, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogError*
-  name: LogError
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogError_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogError
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogError
-  nameWithType: ILambdaLoggerEx.LogError
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger,System.Exception)
-  name: LogErrorAsInfo(ILambdaLogger, Exception)
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsInfo_LambdaSharp_ILambdaLogger_System_Exception_
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger,System.Exception)
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger, System.Exception)
-  nameWithType: ILambdaLoggerEx.LogErrorAsInfo(ILambdaLogger, Exception)
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name: LogErrorAsInfo(ILambdaLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsInfo_LambdaSharp_ILambdaLogger_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name.vb: LogErrorAsInfo(ILambdaLogger, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogErrorAsInfo(ILambdaLogger, Exception, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogErrorAsInfo(ILambdaLogger, Exception, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo*
-  name: LogErrorAsInfo
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsInfo_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsInfo
-  nameWithType: ILambdaLoggerEx.LogErrorAsInfo
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger,System.Exception)
-  name: LogErrorAsWarning(ILambdaLogger, Exception)
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsWarning_LambdaSharp_ILambdaLogger_System_Exception_
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger,System.Exception)
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger, System.Exception)
-  nameWithType: ILambdaLoggerEx.LogErrorAsWarning(ILambdaLogger, Exception)
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name: LogErrorAsWarning(ILambdaLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsWarning_LambdaSharp_ILambdaLogger_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name.vb: LogErrorAsWarning(ILambdaLogger, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogErrorAsWarning(ILambdaLogger, Exception, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogErrorAsWarning(ILambdaLogger, Exception, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning*
-  name: LogErrorAsWarning
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogErrorAsWarning_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogErrorAsWarning
-  nameWithType: ILambdaLoggerEx.LogErrorAsWarning
-- uid: LambdaSharp.ILambdaLoggerEx.LogFatal(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name: LogFatal(ILambdaLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogFatal_LambdaSharp_ILambdaLogger_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogFatal(LambdaSharp.ILambdaLogger,System.Exception,System.String,System.Object[])
-  name.vb: LogFatal(ILambdaLogger, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogFatal(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogFatal(LambdaSharp.ILambdaLogger, System.Exception, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogFatal(ILambdaLogger, Exception, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogFatal(ILambdaLogger, Exception, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogFatal*
-  name: LogFatal
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogFatal_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogFatal
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogFatal
-  nameWithType: ILambdaLoggerEx.LogFatal
-- uid: LambdaSharp.ILambdaLoggerEx.LogInfo(LambdaSharp.ILambdaLogger,System.String,System.Object[])
-  name: LogInfo(ILambdaLogger, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogInfo_LambdaSharp_ILambdaLogger_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogInfo(LambdaSharp.ILambdaLogger,System.String,System.Object[])
-  name.vb: LogInfo(ILambdaLogger, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogInfo(LambdaSharp.ILambdaLogger, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogInfo(LambdaSharp.ILambdaLogger, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogInfo(ILambdaLogger, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogInfo(ILambdaLogger, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogInfo*
-  name: LogInfo
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogInfo_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogInfo
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogInfo
-  nameWithType: ILambdaLoggerEx.LogInfo
-- uid: LambdaSharp.ILambdaLoggerEx.LogWarn(LambdaSharp.ILambdaLogger,System.String,System.Object[])
-  name: LogWarn(ILambdaLogger, String, Object[])
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogWarn_LambdaSharp_ILambdaLogger_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaLoggerEx.LogWarn(LambdaSharp.ILambdaLogger,System.String,System.Object[])
-  name.vb: LogWarn(ILambdaLogger, String, Object())
-  fullName: LambdaSharp.ILambdaLoggerEx.LogWarn(LambdaSharp.ILambdaLogger, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaLoggerEx.LogWarn(LambdaSharp.ILambdaLogger, System.String, System.Object())
-  nameWithType: ILambdaLoggerEx.LogWarn(ILambdaLogger, String, Object[])
-  nameWithType.vb: ILambdaLoggerEx.LogWarn(ILambdaLogger, String, Object())
-- uid: LambdaSharp.ILambdaLoggerEx.LogWarn*
-  name: LogWarn
-  href: sdk/LambdaSharp.ILambdaLoggerEx.html#LambdaSharp_ILambdaLoggerEx_LogWarn_
-  commentId: Overload:LambdaSharp.ILambdaLoggerEx.LogWarn
-  isSpec: "True"
-  fullName: LambdaSharp.ILambdaLoggerEx.LogWarn
-  nameWithType: ILambdaLoggerEx.LogWarn
 - uid: LambdaSharp.LambdaConfig
   name: LambdaConfig
   href: sdk/LambdaSharp.LambdaConfig.html
@@ -2770,174 +2621,162 @@ references:
   fullName.vb: LambdaSharp.LambdaConfig.Read(Of T)(System.String, System.Func(Of System.String, T), System.Func(Of System.String, T), System.Action(Of T))
   nameWithType: LambdaConfig.Read<T>(String, Func<String, T>, Func<String, T>, Action<T>)
   nameWithType.vb: LambdaConfig.Read(Of T)(String, Func(Of String, T), Func(Of String, T), Action(Of T))
-- uid: LambdaSharp.LambdaConfigEx
-  name: LambdaConfigEx
-  href: sdk/LambdaSharp.LambdaConfigEx.html
-  commentId: T:LambdaSharp.LambdaConfigEx
-  fullName: LambdaSharp.LambdaConfigEx
-  nameWithType: LambdaConfigEx
-- uid: LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList(LambdaSharp.LambdaConfig,System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
-  name: ReadCommaDelimitedList(LambdaConfig, String, Action<IEnumerable<String>>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadCommaDelimitedList_LambdaSharp_LambdaConfig_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList(LambdaSharp.LambdaConfig,System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
-  name.vb: ReadCommaDelimitedList(LambdaConfig, String, Action(Of IEnumerable(Of String)))
-  fullName: LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList(LambdaSharp.LambdaConfig, System.String, System.Action<System.Collections.Generic.IEnumerable<System.String>>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList(LambdaSharp.LambdaConfig, System.String, System.Action(Of System.Collections.Generic.IEnumerable(Of System.String)))
-  nameWithType: LambdaConfigEx.ReadCommaDelimitedList(LambdaConfig, String, Action<IEnumerable<String>>)
-  nameWithType.vb: LambdaConfigEx.ReadCommaDelimitedList(LambdaConfig, String, Action(Of IEnumerable(Of String)))
-- uid: LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList*
+- uid: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
+  name: ReadCommaDelimitedList(String, Action<IEnumerable<String>>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___
+  commentId: M:LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
+  name.vb: ReadCommaDelimitedList(String, Action(Of IEnumerable(Of String)))
+  fullName: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, System.Action<System.Collections.Generic.IEnumerable<System.String>>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, System.Action(Of System.Collections.Generic.IEnumerable(Of System.String)))
+  nameWithType: LambdaConfig.ReadCommaDelimitedList(String, Action<IEnumerable<String>>)
+  nameWithType.vb: LambdaConfig.ReadCommaDelimitedList(String, Action(Of IEnumerable(Of String)))
+- uid: LambdaSharp.LambdaConfig.ReadCommaDelimitedList*
   name: ReadCommaDelimitedList
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadCommaDelimitedList_
-  commentId: Overload:LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadCommaDelimitedList_
+  commentId: Overload:LambdaSharp.LambdaConfig.ReadCommaDelimitedList
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigEx.ReadCommaDelimitedList
-  nameWithType: LambdaConfigEx.ReadCommaDelimitedList
-- uid: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig,System.String,System.Action{System.Int32})
-  name: ReadInt(LambdaConfig, String, Action<Int32>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadInt_LambdaSharp_LambdaConfig_System_String_System_Action_System_Int32__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig,System.String,System.Action{System.Int32})
-  name.vb: ReadInt(LambdaConfig, String, Action(Of Int32))
-  fullName: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig, System.String, System.Action<System.Int32>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig, System.String, System.Action(Of System.Int32))
-  nameWithType: LambdaConfigEx.ReadInt(LambdaConfig, String, Action<Int32>)
-  nameWithType.vb: LambdaConfigEx.ReadInt(LambdaConfig, String, Action(Of Int32))
-- uid: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig,System.String,System.Int32,System.Action{System.Int32})
-  name: ReadInt(LambdaConfig, String, Int32, Action<Int32>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadInt_LambdaSharp_LambdaConfig_System_String_System_Int32_System_Action_System_Int32__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig,System.String,System.Int32,System.Action{System.Int32})
-  name.vb: ReadInt(LambdaConfig, String, Int32, Action(Of Int32))
-  fullName: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig, System.String, System.Int32, System.Action<System.Int32>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadInt(LambdaSharp.LambdaConfig, System.String, System.Int32, System.Action(Of System.Int32))
-  nameWithType: LambdaConfigEx.ReadInt(LambdaConfig, String, Int32, Action<Int32>)
-  nameWithType.vb: LambdaConfigEx.ReadInt(LambdaConfig, String, Int32, Action(Of Int32))
-- uid: LambdaSharp.LambdaConfigEx.ReadInt*
+  fullName: LambdaSharp.LambdaConfig.ReadCommaDelimitedList
+  nameWithType: LambdaConfig.ReadCommaDelimitedList
+- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})
+  name: ReadInt(String, Action<Int32>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_System_Action_System_Int32__
+  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})
+  name.vb: ReadInt(String, Action(Of Int32))
+  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Action<System.Int32>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Action(Of System.Int32))
+  nameWithType: LambdaConfig.ReadInt(String, Action<Int32>)
+  nameWithType.vb: LambdaConfig.ReadInt(String, Action(Of Int32))
+- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})
+  name: ReadInt(String, Int32, Action<Int32>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_System_Action_System_Int32__
+  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})
+  name.vb: ReadInt(String, Int32, Action(Of Int32))
+  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, System.Action<System.Int32>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, System.Action(Of System.Int32))
+  nameWithType: LambdaConfig.ReadInt(String, Int32, Action<Int32>)
+  nameWithType.vb: LambdaConfig.ReadInt(String, Int32, Action(Of Int32))
+- uid: LambdaSharp.LambdaConfig.ReadInt*
   name: ReadInt
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadInt_
-  commentId: Overload:LambdaSharp.LambdaConfigEx.ReadInt
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_
+  commentId: Overload:LambdaSharp.LambdaConfig.ReadInt
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigEx.ReadInt
-  nameWithType: LambdaConfigEx.ReadInt
-- uid: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig,System.String,System.Action{System.String})
-  name: ReadText(LambdaConfig, String, Action<String>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadText_LambdaSharp_LambdaConfig_System_String_System_Action_System_String__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig,System.String,System.Action{System.String})
-  name.vb: ReadText(LambdaConfig, String, Action(Of String))
-  fullName: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig, System.String, System.Action<System.String>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig, System.String, System.Action(Of System.String))
-  nameWithType: LambdaConfigEx.ReadText(LambdaConfig, String, Action<String>)
-  nameWithType.vb: LambdaConfigEx.ReadText(LambdaConfig, String, Action(Of String))
-- uid: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig,System.String,System.String,System.Action{System.String})
-  name: ReadText(LambdaConfig, String, String, Action<String>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadText_LambdaSharp_LambdaConfig_System_String_System_String_System_Action_System_String__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig,System.String,System.String,System.Action{System.String})
-  name.vb: ReadText(LambdaConfig, String, String, Action(Of String))
-  fullName: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig, System.String, System.String, System.Action<System.String>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadText(LambdaSharp.LambdaConfig, System.String, System.String, System.Action(Of System.String))
-  nameWithType: LambdaConfigEx.ReadText(LambdaConfig, String, String, Action<String>)
-  nameWithType.vb: LambdaConfigEx.ReadText(LambdaConfig, String, String, Action(Of String))
-- uid: LambdaSharp.LambdaConfigEx.ReadText*
+  fullName: LambdaSharp.LambdaConfig.ReadInt
+  nameWithType: LambdaConfig.ReadInt
+- uid: LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})
+  name: ReadText(String, Action<String>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__
+  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})
+  name.vb: ReadText(String, Action(Of String))
+  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, System.Action<System.String>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, System.Action(Of System.String))
+  nameWithType: LambdaConfig.ReadText(String, Action<String>)
+  nameWithType.vb: LambdaConfig.ReadText(String, Action(Of String))
+- uid: LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})
+  name: ReadText(String, String, Action<String>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_String_System_Action_System_String__
+  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})
+  name.vb: ReadText(String, String, Action(Of String))
+  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, System.Action<System.String>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, System.Action(Of System.String))
+  nameWithType: LambdaConfig.ReadText(String, String, Action<String>)
+  nameWithType.vb: LambdaConfig.ReadText(String, String, Action(Of String))
+- uid: LambdaSharp.LambdaConfig.ReadText*
   name: ReadText
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadText_
-  commentId: Overload:LambdaSharp.LambdaConfigEx.ReadText
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_
+  commentId: Overload:LambdaSharp.LambdaConfig.ReadText
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigEx.ReadText
-  nameWithType: LambdaConfigEx.ReadText
-- uid: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig,System.String,System.Action{System.TimeSpan})
-  name: ReadTimeSpan(LambdaConfig, String, Action<TimeSpan>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadTimeSpan_LambdaSharp_LambdaConfig_System_String_System_Action_System_TimeSpan__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig,System.String,System.Action{System.TimeSpan})
-  name.vb: ReadTimeSpan(LambdaConfig, String, Action(Of TimeSpan))
-  fullName: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig, System.String, System.Action<System.TimeSpan>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig, System.String, System.Action(Of System.TimeSpan))
-  nameWithType: LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, Action<TimeSpan>)
-  nameWithType.vb: LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, Action(Of TimeSpan))
-- uid: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig,System.String,System.TimeSpan,System.Action{System.TimeSpan})
-  name: ReadTimeSpan(LambdaConfig, String, TimeSpan, Action<TimeSpan>)
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadTimeSpan_LambdaSharp_LambdaConfig_System_String_System_TimeSpan_System_Action_System_TimeSpan__
-  commentId: M:LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig,System.String,System.TimeSpan,System.Action{System.TimeSpan})
-  name.vb: ReadTimeSpan(LambdaConfig, String, TimeSpan, Action(Of TimeSpan))
-  fullName: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig, System.String, System.TimeSpan, System.Action<System.TimeSpan>)
-  fullName.vb: LambdaSharp.LambdaConfigEx.ReadTimeSpan(LambdaSharp.LambdaConfig, System.String, System.TimeSpan, System.Action(Of System.TimeSpan))
-  nameWithType: LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, TimeSpan, Action<TimeSpan>)
-  nameWithType.vb: LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, TimeSpan, Action(Of TimeSpan))
-- uid: LambdaSharp.LambdaConfigEx.ReadTimeSpan*
+  fullName: LambdaSharp.LambdaConfig.ReadText
+  nameWithType: LambdaConfig.ReadText
+- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})
+  name: ReadTimeSpan(String, Action<TimeSpan>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_Action_System_TimeSpan__
+  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})
+  name.vb: ReadTimeSpan(String, Action(Of TimeSpan))
+  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.Action<System.TimeSpan>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.Action(Of System.TimeSpan))
+  nameWithType: LambdaConfig.ReadTimeSpan(String, Action<TimeSpan>)
+  nameWithType.vb: LambdaConfig.ReadTimeSpan(String, Action(Of TimeSpan))
+- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})
+  name: ReadTimeSpan(String, TimeSpan, Action<TimeSpan>)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_TimeSpan_System_Action_System_TimeSpan__
+  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})
+  name.vb: ReadTimeSpan(String, TimeSpan, Action(Of TimeSpan))
+  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.TimeSpan, System.Action<System.TimeSpan>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.TimeSpan, System.Action(Of System.TimeSpan))
+  nameWithType: LambdaConfig.ReadTimeSpan(String, TimeSpan, Action<TimeSpan>)
+  nameWithType.vb: LambdaConfig.ReadTimeSpan(String, TimeSpan, Action(Of TimeSpan))
+- uid: LambdaSharp.LambdaConfig.ReadTimeSpan*
   name: ReadTimeSpan
-  href: sdk/LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadTimeSpan_
-  commentId: Overload:LambdaSharp.LambdaConfigEx.ReadTimeSpan
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_
+  commentId: Overload:LambdaSharp.LambdaConfig.ReadTimeSpan
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigEx.ReadTimeSpan
-  nameWithType: LambdaConfigEx.ReadTimeSpan
-- uid: LambdaSharp.LambdaConfigValidate
-  name: LambdaConfigValidate
-  href: sdk/LambdaSharp.LambdaConfigValidate.html
-  commentId: T:LambdaSharp.LambdaConfigValidate
-  fullName: LambdaSharp.LambdaConfigValidate
-  nameWithType: LambdaConfigValidate
-- uid: LambdaSharp.LambdaConfigValidate.IsInRange(System.Int32,System.Int32)
-  name: IsInRange(Int32, Int32)
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsInRange_System_Int32_System_Int32_
-  commentId: M:LambdaSharp.LambdaConfigValidate.IsInRange(System.Int32,System.Int32)
-  fullName: LambdaSharp.LambdaConfigValidate.IsInRange(System.Int32, System.Int32)
-  nameWithType: LambdaConfigValidate.IsInRange(Int32, Int32)
-- uid: LambdaSharp.LambdaConfigValidate.IsInRange*
-  name: IsInRange
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsInRange_
-  commentId: Overload:LambdaSharp.LambdaConfigValidate.IsInRange
+  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan
+  nameWithType: LambdaConfig.ReadTimeSpan
+- uid: LambdaSharp.LambdaConfig.ValidateIsInRange(System.Int32,System.Int32)
+  name: ValidateIsInRange(Int32, Int32)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsInRange_System_Int32_System_Int32_
+  commentId: M:LambdaSharp.LambdaConfig.ValidateIsInRange(System.Int32,System.Int32)
+  fullName: LambdaSharp.LambdaConfig.ValidateIsInRange(System.Int32, System.Int32)
+  nameWithType: LambdaConfig.ValidateIsInRange(Int32, Int32)
+- uid: LambdaSharp.LambdaConfig.ValidateIsInRange*
+  name: ValidateIsInRange
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsInRange_
+  commentId: Overload:LambdaSharp.LambdaConfig.ValidateIsInRange
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigValidate.IsInRange
-  nameWithType: LambdaConfigValidate.IsInRange
-- uid: LambdaSharp.LambdaConfigValidate.IsNegative(System.Int32)
-  name: IsNegative(Int32)
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNegative_System_Int32_
-  commentId: M:LambdaSharp.LambdaConfigValidate.IsNegative(System.Int32)
-  fullName: LambdaSharp.LambdaConfigValidate.IsNegative(System.Int32)
-  nameWithType: LambdaConfigValidate.IsNegative(Int32)
-- uid: LambdaSharp.LambdaConfigValidate.IsNegative*
-  name: IsNegative
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNegative_
-  commentId: Overload:LambdaSharp.LambdaConfigValidate.IsNegative
+  fullName: LambdaSharp.LambdaConfig.ValidateIsInRange
+  nameWithType: LambdaConfig.ValidateIsInRange
+- uid: LambdaSharp.LambdaConfig.ValidateIsNegative(System.Int32)
+  name: ValidateIsNegative(Int32)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNegative_System_Int32_
+  commentId: M:LambdaSharp.LambdaConfig.ValidateIsNegative(System.Int32)
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNegative(System.Int32)
+  nameWithType: LambdaConfig.ValidateIsNegative(Int32)
+- uid: LambdaSharp.LambdaConfig.ValidateIsNegative*
+  name: ValidateIsNegative
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNegative_
+  commentId: Overload:LambdaSharp.LambdaConfig.ValidateIsNegative
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigValidate.IsNegative
-  nameWithType: LambdaConfigValidate.IsNegative
-- uid: LambdaSharp.LambdaConfigValidate.IsNonNegative(System.Int32)
-  name: IsNonNegative(Int32)
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNonNegative_System_Int32_
-  commentId: M:LambdaSharp.LambdaConfigValidate.IsNonNegative(System.Int32)
-  fullName: LambdaSharp.LambdaConfigValidate.IsNonNegative(System.Int32)
-  nameWithType: LambdaConfigValidate.IsNonNegative(Int32)
-- uid: LambdaSharp.LambdaConfigValidate.IsNonNegative*
-  name: IsNonNegative
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNonNegative_
-  commentId: Overload:LambdaSharp.LambdaConfigValidate.IsNonNegative
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNegative
+  nameWithType: LambdaConfig.ValidateIsNegative
+- uid: LambdaSharp.LambdaConfig.ValidateIsNonNegative(System.Int32)
+  name: ValidateIsNonNegative(Int32)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNonNegative_System_Int32_
+  commentId: M:LambdaSharp.LambdaConfig.ValidateIsNonNegative(System.Int32)
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNonNegative(System.Int32)
+  nameWithType: LambdaConfig.ValidateIsNonNegative(Int32)
+- uid: LambdaSharp.LambdaConfig.ValidateIsNonNegative*
+  name: ValidateIsNonNegative
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNonNegative_
+  commentId: Overload:LambdaSharp.LambdaConfig.ValidateIsNonNegative
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigValidate.IsNonNegative
-  nameWithType: LambdaConfigValidate.IsNonNegative
-- uid: LambdaSharp.LambdaConfigValidate.IsNonPositive(System.Int32)
-  name: IsNonPositive(Int32)
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNonPositive_System_Int32_
-  commentId: M:LambdaSharp.LambdaConfigValidate.IsNonPositive(System.Int32)
-  fullName: LambdaSharp.LambdaConfigValidate.IsNonPositive(System.Int32)
-  nameWithType: LambdaConfigValidate.IsNonPositive(Int32)
-- uid: LambdaSharp.LambdaConfigValidate.IsNonPositive*
-  name: IsNonPositive
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsNonPositive_
-  commentId: Overload:LambdaSharp.LambdaConfigValidate.IsNonPositive
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNonNegative
+  nameWithType: LambdaConfig.ValidateIsNonNegative
+- uid: LambdaSharp.LambdaConfig.ValidateIsNonPositive(System.Int32)
+  name: ValidateIsNonPositive(Int32)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNonPositive_System_Int32_
+  commentId: M:LambdaSharp.LambdaConfig.ValidateIsNonPositive(System.Int32)
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNonPositive(System.Int32)
+  nameWithType: LambdaConfig.ValidateIsNonPositive(Int32)
+- uid: LambdaSharp.LambdaConfig.ValidateIsNonPositive*
+  name: ValidateIsNonPositive
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsNonPositive_
+  commentId: Overload:LambdaSharp.LambdaConfig.ValidateIsNonPositive
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigValidate.IsNonPositive
-  nameWithType: LambdaConfigValidate.IsNonPositive
-- uid: LambdaSharp.LambdaConfigValidate.IsPositive(System.Int32)
-  name: IsPositive(Int32)
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsPositive_System_Int32_
-  commentId: M:LambdaSharp.LambdaConfigValidate.IsPositive(System.Int32)
-  fullName: LambdaSharp.LambdaConfigValidate.IsPositive(System.Int32)
-  nameWithType: LambdaConfigValidate.IsPositive(Int32)
-- uid: LambdaSharp.LambdaConfigValidate.IsPositive*
-  name: IsPositive
-  href: sdk/LambdaSharp.LambdaConfigValidate.html#LambdaSharp_LambdaConfigValidate_IsPositive_
-  commentId: Overload:LambdaSharp.LambdaConfigValidate.IsPositive
+  fullName: LambdaSharp.LambdaConfig.ValidateIsNonPositive
+  nameWithType: LambdaConfig.ValidateIsNonPositive
+- uid: LambdaSharp.LambdaConfig.ValidateIsPositive(System.Int32)
+  name: ValidateIsPositive(Int32)
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsPositive_System_Int32_
+  commentId: M:LambdaSharp.LambdaConfig.ValidateIsPositive(System.Int32)
+  fullName: LambdaSharp.LambdaConfig.ValidateIsPositive(System.Int32)
+  nameWithType: LambdaConfig.ValidateIsPositive(Int32)
+- uid: LambdaSharp.LambdaConfig.ValidateIsPositive*
+  name: ValidateIsPositive
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ValidateIsPositive_
+  commentId: Overload:LambdaSharp.LambdaConfig.ValidateIsPositive
   isSpec: "True"
-  fullName: LambdaSharp.LambdaConfigValidate.IsPositive
-  nameWithType: LambdaConfigValidate.IsPositive
+  fullName: LambdaSharp.LambdaConfig.ValidateIsPositive
+  nameWithType: LambdaConfig.ValidateIsPositive
 - uid: LambdaSharp.LambdaFunctionDependencyProvider
   name: LambdaFunctionDependencyProvider
   href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html
@@ -3083,513 +2922,267 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.UtcNow
   nameWithType: LambdaFunctionDependencyProvider.UtcNow
-- uid: LambdaSharp.LambdaLogLevel
+- uid: LambdaSharp.Logger
+  name: LambdaSharp.Logger
+  href: sdk/LambdaSharp.Logger.html
+  commentId: N:LambdaSharp.Logger
+  fullName: LambdaSharp.Logger
+  nameWithType: LambdaSharp.Logger
+- uid: LambdaSharp.Logger.ILambdaLogLevelLogger
+  name: ILambdaLogLevelLogger
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html
+  commentId: T:LambdaSharp.Logger.ILambdaLogLevelLogger
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLogger
+  nameWithType: ILambdaLogLevelLogger
+- uid: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
+  name: Log(LambdaLogLevel, Exception, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html#LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
+  name.vb: Log(LambdaLogLevel, Exception, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLogger.Log*
+  name: Log
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html#LambdaSharp_Logger_ILambdaLogLevelLogger_Log_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLogger.Log
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLogger.Log
+  nameWithType: ILambdaLogLevelLogger.Log
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx
+  name: ILambdaLogLevelLoggerEx
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html
+  commentId: T:LambdaSharp.Logger.ILambdaLogLevelLoggerEx
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx
+  nameWithType: ILambdaLogLevelLoggerEx
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  name: LogError(ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
+  nameWithType: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name: LogError(ILambdaLogLevelLogger, Exception, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name.vb: LogError(ILambdaLogLevelLogger, Exception, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError*
+  name: LogError
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError
+  nameWithType: ILambdaLogLevelLoggerEx.LogError
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  name: LogErrorAsInfo(ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name: LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name.vb: LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo*
+  name: LogErrorAsInfo
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  name: LogErrorAsWarning(ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name: LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name.vb: LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning*
+  name: LogErrorAsWarning
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning
+  nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name: LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
+  name.vb: LogFatal(ILambdaLogLevelLogger, Exception, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal*
+  name: LogFatal
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal
+  nameWithType: ILambdaLogLevelLoggerEx.LogFatal
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])
+  name: LogInfo(ILambdaLogLevelLogger, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])
+  name.vb: LogInfo(ILambdaLogLevelLogger, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo*
+  name: LogInfo
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo
+  nameWithType: ILambdaLogLevelLoggerEx.LogInfo
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])
+  name: LogWarn(ILambdaLogLevelLogger, String, Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])
+  name.vb: LogWarn(ILambdaLogLevelLogger, String, Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Object())
+  nameWithType: ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object[])
+  nameWithType.vb: ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object())
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn*
+  name: LogWarn
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_
+  commentId: Overload:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn
+  isSpec: "True"
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn
+  nameWithType: ILambdaLogLevelLoggerEx.LogWarn
+- uid: LambdaSharp.Logger.LambdaLogLevel
   name: LambdaLogLevel
-  href: sdk/LambdaSharp.LambdaLogLevel.html
-  commentId: T:LambdaSharp.LambdaLogLevel
-  fullName: LambdaSharp.LambdaLogLevel
+  href: sdk/LambdaSharp.Logger.LambdaLogLevel.html
+  commentId: T:LambdaSharp.Logger.LambdaLogLevel
+  fullName: LambdaSharp.Logger.LambdaLogLevel
   nameWithType: LambdaLogLevel
-- uid: LambdaSharp.LambdaLogLevel.ERROR
+- uid: LambdaSharp.Logger.LambdaLogLevel.ERROR
   name: ERROR
-  href: sdk/LambdaSharp.LambdaLogLevel.html#LambdaSharp_LambdaLogLevel_ERROR
-  commentId: F:LambdaSharp.LambdaLogLevel.ERROR
-  fullName: LambdaSharp.LambdaLogLevel.ERROR
+  href: sdk/LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_ERROR
+  commentId: F:LambdaSharp.Logger.LambdaLogLevel.ERROR
+  fullName: LambdaSharp.Logger.LambdaLogLevel.ERROR
   nameWithType: LambdaLogLevel.ERROR
-- uid: LambdaSharp.LambdaLogLevel.FATAL
+- uid: LambdaSharp.Logger.LambdaLogLevel.FATAL
   name: FATAL
-  href: sdk/LambdaSharp.LambdaLogLevel.html#LambdaSharp_LambdaLogLevel_FATAL
-  commentId: F:LambdaSharp.LambdaLogLevel.FATAL
-  fullName: LambdaSharp.LambdaLogLevel.FATAL
+  href: sdk/LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_FATAL
+  commentId: F:LambdaSharp.Logger.LambdaLogLevel.FATAL
+  fullName: LambdaSharp.Logger.LambdaLogLevel.FATAL
   nameWithType: LambdaLogLevel.FATAL
-- uid: LambdaSharp.LambdaLogLevel.INFO
+- uid: LambdaSharp.Logger.LambdaLogLevel.INFO
   name: INFO
-  href: sdk/LambdaSharp.LambdaLogLevel.html#LambdaSharp_LambdaLogLevel_INFO
-  commentId: F:LambdaSharp.LambdaLogLevel.INFO
-  fullName: LambdaSharp.LambdaLogLevel.INFO
+  href: sdk/LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_INFO
+  commentId: F:LambdaSharp.Logger.LambdaLogLevel.INFO
+  fullName: LambdaSharp.Logger.LambdaLogLevel.INFO
   nameWithType: LambdaLogLevel.INFO
-- uid: LambdaSharp.LambdaLogLevel.WARNING
+- uid: LambdaSharp.Logger.LambdaLogLevel.WARNING
   name: WARNING
-  href: sdk/LambdaSharp.LambdaLogLevel.html#LambdaSharp_LambdaLogLevel_WARNING
-  commentId: F:LambdaSharp.LambdaLogLevel.WARNING
-  fullName: LambdaSharp.LambdaLogLevel.WARNING
+  href: sdk/LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_WARNING
+  commentId: F:LambdaSharp.Logger.LambdaLogLevel.WARNING
+  fullName: LambdaSharp.Logger.LambdaLogLevel.WARNING
   nameWithType: LambdaLogLevel.WARNING
-- uid: LambdaSharp.LambdaScheduleEvent
+- uid: LambdaSharp.Schedule
+  name: LambdaSharp.Schedule
+  href: sdk/LambdaSharp.Schedule.html
+  commentId: N:LambdaSharp.Schedule
+  fullName: LambdaSharp.Schedule
+  nameWithType: LambdaSharp.Schedule
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction
+  name: ALambdaScheduleFunction
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html
+  commentId: T:LambdaSharp.Schedule.ALambdaScheduleFunction
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction
+  nameWithType: ALambdaScheduleFunction
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  name: ProcessEventAsync(LambdaScheduleEvent)
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessEventAsync_LambdaSharp_Schedule_LambdaScheduleEvent_
+  commentId: M:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  nameWithType: ALambdaScheduleFunction.ProcessEventAsync(LambdaScheduleEvent)
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync*
+  name: ProcessEventAsync
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessEventAsync_
+  commentId: Overload:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync
+  isSpec: "True"
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync
+  nameWithType: ALambdaScheduleFunction.ProcessEventAsync
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  name: ProcessMessageAsync(LambdaScheduleEvent)
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageAsync_LambdaSharp_Schedule_LambdaScheduleEvent_
+  commentId: M:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync(LambdaSharp.Schedule.LambdaScheduleEvent)
+  nameWithType: ALambdaScheduleFunction.ProcessMessageAsync(LambdaScheduleEvent)
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync*
+  name: ProcessMessageAsync
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageAsync_
+  commentId: Overload:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync
+  isSpec: "True"
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync
+  nameWithType: ALambdaScheduleFunction.ProcessMessageAsync
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent
   name: LambdaScheduleEvent
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html
-  commentId: T:LambdaSharp.LambdaScheduleEvent
-  fullName: LambdaSharp.LambdaScheduleEvent
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html
+  commentId: T:LambdaSharp.Schedule.LambdaScheduleEvent
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent
   nameWithType: LambdaScheduleEvent
-- uid: LambdaSharp.LambdaScheduleEvent.Id
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Id
   name: Id
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Id
-  commentId: P:LambdaSharp.LambdaScheduleEvent.Id
-  fullName: LambdaSharp.LambdaScheduleEvent.Id
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Id
+  commentId: P:LambdaSharp.Schedule.LambdaScheduleEvent.Id
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Id
   nameWithType: LambdaScheduleEvent.Id
-- uid: LambdaSharp.LambdaScheduleEvent.Id*
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Id*
   name: Id
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Id_
-  commentId: Overload:LambdaSharp.LambdaScheduleEvent.Id
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Id_
+  commentId: Overload:LambdaSharp.Schedule.LambdaScheduleEvent.Id
   isSpec: "True"
-  fullName: LambdaSharp.LambdaScheduleEvent.Id
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Id
   nameWithType: LambdaScheduleEvent.Id
-- uid: LambdaSharp.LambdaScheduleEvent.Name
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Name
   name: Name
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Name
-  commentId: P:LambdaSharp.LambdaScheduleEvent.Name
-  fullName: LambdaSharp.LambdaScheduleEvent.Name
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Name
+  commentId: P:LambdaSharp.Schedule.LambdaScheduleEvent.Name
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Name
   nameWithType: LambdaScheduleEvent.Name
-- uid: LambdaSharp.LambdaScheduleEvent.Name*
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Name*
   name: Name
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Name_
-  commentId: Overload:LambdaSharp.LambdaScheduleEvent.Name
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Name_
+  commentId: Overload:LambdaSharp.Schedule.LambdaScheduleEvent.Name
   isSpec: "True"
-  fullName: LambdaSharp.LambdaScheduleEvent.Name
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Name
   nameWithType: LambdaScheduleEvent.Name
-- uid: LambdaSharp.LambdaScheduleEvent.Time
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Time
   name: Time
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Time
-  commentId: P:LambdaSharp.LambdaScheduleEvent.Time
-  fullName: LambdaSharp.LambdaScheduleEvent.Time
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Time
+  commentId: P:LambdaSharp.Schedule.LambdaScheduleEvent.Time
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Time
   nameWithType: LambdaScheduleEvent.Time
-- uid: LambdaSharp.LambdaScheduleEvent.Time*
+- uid: LambdaSharp.Schedule.LambdaScheduleEvent.Time*
   name: Time
-  href: sdk/LambdaSharp.LambdaScheduleEvent.html#LambdaSharp_LambdaScheduleEvent_Time_
-  commentId: Overload:LambdaSharp.LambdaScheduleEvent.Time
+  href: sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html#LambdaSharp_Schedule_LambdaScheduleEvent_Time_
+  commentId: Overload:LambdaSharp.Schedule.LambdaScheduleEvent.Time
   isSpec: "True"
-  fullName: LambdaSharp.LambdaScheduleEvent.Time
+  fullName: LambdaSharp.Schedule.LambdaScheduleEvent.Time
   nameWithType: LambdaScheduleEvent.Time
-- uid: LambdaSharp.Reports
-  name: LambdaSharp.Reports
-  href: sdk/LambdaSharp.Reports.html
-  commentId: N:LambdaSharp.Reports
-  fullName: LambdaSharp.Reports
-  nameWithType: LambdaSharp.Reports
-- uid: LambdaSharp.Reports.ErrorReport
-  name: ErrorReport
-  href: sdk/LambdaSharp.Reports.ErrorReport.html
-  commentId: T:LambdaSharp.Reports.ErrorReport
-  fullName: LambdaSharp.Reports.ErrorReport
-  nameWithType: ErrorReport
-- uid: LambdaSharp.Reports.ErrorReport.Fingerprint
-  name: Fingerprint
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Fingerprint
-  commentId: P:LambdaSharp.Reports.ErrorReport.Fingerprint
-  fullName: LambdaSharp.Reports.ErrorReport.Fingerprint
-  nameWithType: ErrorReport.Fingerprint
-- uid: LambdaSharp.Reports.ErrorReport.Fingerprint*
-  name: Fingerprint
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Fingerprint_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Fingerprint
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Fingerprint
-  nameWithType: ErrorReport.Fingerprint
-- uid: LambdaSharp.Reports.ErrorReport.Framework
-  name: Framework
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Framework
-  commentId: P:LambdaSharp.Reports.ErrorReport.Framework
-  fullName: LambdaSharp.Reports.ErrorReport.Framework
-  nameWithType: ErrorReport.Framework
-- uid: LambdaSharp.Reports.ErrorReport.Framework*
-  name: Framework
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Framework_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Framework
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Framework
-  nameWithType: ErrorReport.Framework
-- uid: LambdaSharp.Reports.ErrorReport.FunctionId
-  name: FunctionId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_FunctionId
-  commentId: P:LambdaSharp.Reports.ErrorReport.FunctionId
-  fullName: LambdaSharp.Reports.ErrorReport.FunctionId
-  nameWithType: ErrorReport.FunctionId
-- uid: LambdaSharp.Reports.ErrorReport.FunctionId*
-  name: FunctionId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_FunctionId_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.FunctionId
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.FunctionId
-  nameWithType: ErrorReport.FunctionId
-- uid: LambdaSharp.Reports.ErrorReport.FunctionName
-  name: FunctionName
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_FunctionName
-  commentId: P:LambdaSharp.Reports.ErrorReport.FunctionName
-  fullName: LambdaSharp.Reports.ErrorReport.FunctionName
-  nameWithType: ErrorReport.FunctionName
-- uid: LambdaSharp.Reports.ErrorReport.FunctionName*
-  name: FunctionName
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_FunctionName_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.FunctionName
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.FunctionName
-  nameWithType: ErrorReport.FunctionName
-- uid: LambdaSharp.Reports.ErrorReport.GitBranch
-  name: GitBranch
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_GitBranch
-  commentId: P:LambdaSharp.Reports.ErrorReport.GitBranch
-  fullName: LambdaSharp.Reports.ErrorReport.GitBranch
-  nameWithType: ErrorReport.GitBranch
-- uid: LambdaSharp.Reports.ErrorReport.GitBranch*
-  name: GitBranch
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_GitBranch_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.GitBranch
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.GitBranch
-  nameWithType: ErrorReport.GitBranch
-- uid: LambdaSharp.Reports.ErrorReport.GitSha
-  name: GitSha
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_GitSha
-  commentId: P:LambdaSharp.Reports.ErrorReport.GitSha
-  fullName: LambdaSharp.Reports.ErrorReport.GitSha
-  nameWithType: ErrorReport.GitSha
-- uid: LambdaSharp.Reports.ErrorReport.GitSha*
-  name: GitSha
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_GitSha_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.GitSha
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.GitSha
-  nameWithType: ErrorReport.GitSha
-- uid: LambdaSharp.Reports.ErrorReport.Language
-  name: Language
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Language
-  commentId: P:LambdaSharp.Reports.ErrorReport.Language
-  fullName: LambdaSharp.Reports.ErrorReport.Language
-  nameWithType: ErrorReport.Language
-- uid: LambdaSharp.Reports.ErrorReport.Language*
-  name: Language
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Language_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Language
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Language
-  nameWithType: ErrorReport.Language
-- uid: LambdaSharp.Reports.ErrorReport.Level
-  name: Level
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Level
-  commentId: P:LambdaSharp.Reports.ErrorReport.Level
-  fullName: LambdaSharp.Reports.ErrorReport.Level
-  nameWithType: ErrorReport.Level
-- uid: LambdaSharp.Reports.ErrorReport.Level*
-  name: Level
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Level_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Level
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Level
-  nameWithType: ErrorReport.Level
-- uid: LambdaSharp.Reports.ErrorReport.Message
-  name: Message
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Message
-  commentId: P:LambdaSharp.Reports.ErrorReport.Message
-  fullName: LambdaSharp.Reports.ErrorReport.Message
-  nameWithType: ErrorReport.Message
-- uid: LambdaSharp.Reports.ErrorReport.Message*
-  name: Message
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Message_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Message
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Message
-  nameWithType: ErrorReport.Message
-- uid: LambdaSharp.Reports.ErrorReport.Module
-  name: Module
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Module
-  commentId: P:LambdaSharp.Reports.ErrorReport.Module
-  fullName: LambdaSharp.Reports.ErrorReport.Module
-  nameWithType: ErrorReport.Module
-- uid: LambdaSharp.Reports.ErrorReport.Module*
-  name: Module
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Module_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Module
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Module
-  nameWithType: ErrorReport.Module
-- uid: LambdaSharp.Reports.ErrorReport.ModuleId
-  name: ModuleId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_ModuleId
-  commentId: P:LambdaSharp.Reports.ErrorReport.ModuleId
-  fullName: LambdaSharp.Reports.ErrorReport.ModuleId
-  nameWithType: ErrorReport.ModuleId
-- uid: LambdaSharp.Reports.ErrorReport.ModuleId*
-  name: ModuleId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_ModuleId_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.ModuleId
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.ModuleId
-  nameWithType: ErrorReport.ModuleId
-- uid: LambdaSharp.Reports.ErrorReport.Platform
-  name: Platform
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Platform
-  commentId: P:LambdaSharp.Reports.ErrorReport.Platform
-  fullName: LambdaSharp.Reports.ErrorReport.Platform
-  nameWithType: ErrorReport.Platform
-- uid: LambdaSharp.Reports.ErrorReport.Platform*
-  name: Platform
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Platform_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Platform
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Platform
-  nameWithType: ErrorReport.Platform
-- uid: LambdaSharp.Reports.ErrorReport.Raw
-  name: Raw
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Raw
-  commentId: P:LambdaSharp.Reports.ErrorReport.Raw
-  fullName: LambdaSharp.Reports.ErrorReport.Raw
-  nameWithType: ErrorReport.Raw
-- uid: LambdaSharp.Reports.ErrorReport.Raw*
-  name: Raw
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Raw_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Raw
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Raw
-  nameWithType: ErrorReport.Raw
-- uid: LambdaSharp.Reports.ErrorReport.RequestId
-  name: RequestId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_RequestId
-  commentId: P:LambdaSharp.Reports.ErrorReport.RequestId
-  fullName: LambdaSharp.Reports.ErrorReport.RequestId
-  nameWithType: ErrorReport.RequestId
-- uid: LambdaSharp.Reports.ErrorReport.RequestId*
-  name: RequestId
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_RequestId_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.RequestId
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.RequestId
-  nameWithType: ErrorReport.RequestId
-- uid: LambdaSharp.Reports.ErrorReport.Source
-  name: Source
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Source
-  commentId: P:LambdaSharp.Reports.ErrorReport.Source
-  fullName: LambdaSharp.Reports.ErrorReport.Source
-  nameWithType: ErrorReport.Source
-- uid: LambdaSharp.Reports.ErrorReport.Source*
-  name: Source
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Source_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Source
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Source
-  nameWithType: ErrorReport.Source
-- uid: LambdaSharp.Reports.ErrorReport.Timestamp
-  name: Timestamp
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Timestamp
-  commentId: P:LambdaSharp.Reports.ErrorReport.Timestamp
-  fullName: LambdaSharp.Reports.ErrorReport.Timestamp
-  nameWithType: ErrorReport.Timestamp
-- uid: LambdaSharp.Reports.ErrorReport.Timestamp*
-  name: Timestamp
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Timestamp_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Timestamp
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Timestamp
-  nameWithType: ErrorReport.Timestamp
-- uid: LambdaSharp.Reports.ErrorReport.Traces
-  name: Traces
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Traces
-  commentId: P:LambdaSharp.Reports.ErrorReport.Traces
-  fullName: LambdaSharp.Reports.ErrorReport.Traces
-  nameWithType: ErrorReport.Traces
-- uid: LambdaSharp.Reports.ErrorReport.Traces*
-  name: Traces
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Traces_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Traces
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Traces
-  nameWithType: ErrorReport.Traces
-- uid: LambdaSharp.Reports.ErrorReport.Version
-  name: Version
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Version
-  commentId: P:LambdaSharp.Reports.ErrorReport.Version
-  fullName: LambdaSharp.Reports.ErrorReport.Version
-  nameWithType: ErrorReport.Version
-- uid: LambdaSharp.Reports.ErrorReport.Version*
-  name: Version
-  href: sdk/LambdaSharp.Reports.ErrorReport.html#LambdaSharp_Reports_ErrorReport_Version_
-  commentId: Overload:LambdaSharp.Reports.ErrorReport.Version
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReport.Version
-  nameWithType: ErrorReport.Version
-- uid: LambdaSharp.Reports.ErrorReporter
-  name: ErrorReporter
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html
-  commentId: T:LambdaSharp.Reports.ErrorReporter
-  fullName: LambdaSharp.Reports.ErrorReporter
-  nameWithType: ErrorReporter
-- uid: LambdaSharp.Reports.ErrorReporter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name: ErrorReporter(String, String, String, String, String, String, String)
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:LambdaSharp.Reports.ErrorReporter.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  fullName: LambdaSharp.Reports.ErrorReporter.ErrorReporter(System.String, System.String, System.String, System.String, System.String, System.String, System.String)
-  nameWithType: ErrorReporter.ErrorReporter(String, String, String, String, String, String, String)
-- uid: LambdaSharp.Reports.ErrorReporter.#ctor*
-  name: ErrorReporter
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter__ctor_
-  commentId: Overload:LambdaSharp.Reports.ErrorReporter.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReporter.ErrorReporter
-  nameWithType: ErrorReporter.ErrorReporter
-- uid: LambdaSharp.Reports.ErrorReporter.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
-  name: CreateReport(String, String, Exception, String, Object[])
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Reports.ErrorReporter.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
-  name.vb: CreateReport(String, String, Exception, String, Object())
-  fullName: LambdaSharp.Reports.ErrorReporter.CreateReport(System.String, System.String, System.Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Reports.ErrorReporter.CreateReport(System.String, System.String, System.Exception, System.String, System.Object())
-  nameWithType: ErrorReporter.CreateReport(String, String, Exception, String, Object[])
-  nameWithType.vb: ErrorReporter.CreateReport(String, String, Exception, String, Object())
-- uid: LambdaSharp.Reports.ErrorReporter.CreateReport*
-  name: CreateReport
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter_CreateReport_
-  commentId: Overload:LambdaSharp.Reports.ErrorReporter.CreateReport
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReporter.CreateReport
-  nameWithType: ErrorReporter.CreateReport
-- uid: LambdaSharp.Reports.ErrorReporter.FormatMessage(System.String,System.Object[])
-  name: FormatMessage(String, Object[])
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter_FormatMessage_System_String_System_Object___
-  commentId: M:LambdaSharp.Reports.ErrorReporter.FormatMessage(System.String,System.Object[])
-  name.vb: FormatMessage(String, Object())
-  fullName: LambdaSharp.Reports.ErrorReporter.FormatMessage(System.String, System.Object[])
-  fullName.vb: LambdaSharp.Reports.ErrorReporter.FormatMessage(System.String, System.Object())
-  nameWithType: ErrorReporter.FormatMessage(String, Object[])
-  nameWithType.vb: ErrorReporter.FormatMessage(String, Object())
-- uid: LambdaSharp.Reports.ErrorReporter.FormatMessage*
-  name: FormatMessage
-  href: sdk/LambdaSharp.Reports.ErrorReporter.html#LambdaSharp_Reports_ErrorReporter_FormatMessage_
-  commentId: Overload:LambdaSharp.Reports.ErrorReporter.FormatMessage
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReporter.FormatMessage
-  nameWithType: ErrorReporter.FormatMessage
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo
-  name: ErrorReportExceptionInfo
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html
-  commentId: T:LambdaSharp.Reports.ErrorReportExceptionInfo
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo
-  nameWithType: ErrorReportExceptionInfo
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.Message
-  name: Message
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_Message
-  commentId: P:LambdaSharp.Reports.ErrorReportExceptionInfo.Message
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.Message
-  nameWithType: ErrorReportExceptionInfo.Message
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.Message*
-  name: Message
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_Message_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportExceptionInfo.Message
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.Message
-  nameWithType: ErrorReportExceptionInfo.Message
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace
-  name: StackTrace
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_StackTrace
-  commentId: P:LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace
-  nameWithType: ErrorReportExceptionInfo.StackTrace
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace*
-  name: StackTrace
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_StackTrace_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.StackTrace
-  nameWithType: ErrorReportExceptionInfo.StackTrace
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.Type
-  name: Type
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_Type
-  commentId: P:LambdaSharp.Reports.ErrorReportExceptionInfo.Type
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.Type
-  nameWithType: ErrorReportExceptionInfo.Type
-- uid: LambdaSharp.Reports.ErrorReportExceptionInfo.Type*
-  name: Type
-  href: sdk/LambdaSharp.Reports.ErrorReportExceptionInfo.html#LambdaSharp_Reports_ErrorReportExceptionInfo_Type_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportExceptionInfo.Type
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportExceptionInfo.Type
-  nameWithType: ErrorReportExceptionInfo.Type
-- uid: LambdaSharp.Reports.ErrorReportStackFrame
-  name: ErrorReportStackFrame
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html
-  commentId: T:LambdaSharp.Reports.ErrorReportStackFrame
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame
-  nameWithType: ErrorReportStackFrame
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber
-  name: ColumnNumber
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_ColumnNumber
-  commentId: P:LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber
-  nameWithType: ErrorReportStackFrame.ColumnNumber
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber*
-  name: ColumnNumber
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_ColumnNumber_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.ColumnNumber
-  nameWithType: ErrorReportStackFrame.ColumnNumber
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.FileName
-  name: FileName
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_FileName
-  commentId: P:LambdaSharp.Reports.ErrorReportStackFrame.FileName
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.FileName
-  nameWithType: ErrorReportStackFrame.FileName
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.FileName*
-  name: FileName
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_FileName_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackFrame.FileName
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.FileName
-  nameWithType: ErrorReportStackFrame.FileName
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.LineNumber
-  name: LineNumber
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_LineNumber
-  commentId: P:LambdaSharp.Reports.ErrorReportStackFrame.LineNumber
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.LineNumber
-  nameWithType: ErrorReportStackFrame.LineNumber
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.LineNumber*
-  name: LineNumber
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_LineNumber_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackFrame.LineNumber
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.LineNumber
-  nameWithType: ErrorReportStackFrame.LineNumber
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.MethodName
-  name: MethodName
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_MethodName
-  commentId: P:LambdaSharp.Reports.ErrorReportStackFrame.MethodName
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.MethodName
-  nameWithType: ErrorReportStackFrame.MethodName
-- uid: LambdaSharp.Reports.ErrorReportStackFrame.MethodName*
-  name: MethodName
-  href: sdk/LambdaSharp.Reports.ErrorReportStackFrame.html#LambdaSharp_Reports_ErrorReportStackFrame_MethodName_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackFrame.MethodName
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackFrame.MethodName
-  nameWithType: ErrorReportStackFrame.MethodName
-- uid: LambdaSharp.Reports.ErrorReportStackTrace
-  name: ErrorReportStackTrace
-  href: sdk/LambdaSharp.Reports.ErrorReportStackTrace.html
-  commentId: T:LambdaSharp.Reports.ErrorReportStackTrace
-  fullName: LambdaSharp.Reports.ErrorReportStackTrace
-  nameWithType: ErrorReportStackTrace
-- uid: LambdaSharp.Reports.ErrorReportStackTrace.Exception
-  name: Exception
-  href: sdk/LambdaSharp.Reports.ErrorReportStackTrace.html#LambdaSharp_Reports_ErrorReportStackTrace_Exception
-  commentId: P:LambdaSharp.Reports.ErrorReportStackTrace.Exception
-  fullName: LambdaSharp.Reports.ErrorReportStackTrace.Exception
-  nameWithType: ErrorReportStackTrace.Exception
-- uid: LambdaSharp.Reports.ErrorReportStackTrace.Exception*
-  name: Exception
-  href: sdk/LambdaSharp.Reports.ErrorReportStackTrace.html#LambdaSharp_Reports_ErrorReportStackTrace_Exception_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackTrace.Exception
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackTrace.Exception
-  nameWithType: ErrorReportStackTrace.Exception
-- uid: LambdaSharp.Reports.ErrorReportStackTrace.Frames
-  name: Frames
-  href: sdk/LambdaSharp.Reports.ErrorReportStackTrace.html#LambdaSharp_Reports_ErrorReportStackTrace_Frames
-  commentId: P:LambdaSharp.Reports.ErrorReportStackTrace.Frames
-  fullName: LambdaSharp.Reports.ErrorReportStackTrace.Frames
-  nameWithType: ErrorReportStackTrace.Frames
-- uid: LambdaSharp.Reports.ErrorReportStackTrace.Frames*
-  name: Frames
-  href: sdk/LambdaSharp.Reports.ErrorReportStackTrace.html#LambdaSharp_Reports_ErrorReportStackTrace_Frames_
-  commentId: Overload:LambdaSharp.Reports.ErrorReportStackTrace.Frames
-  isSpec: "True"
-  fullName: LambdaSharp.Reports.ErrorReportStackTrace.Frames
-  nameWithType: ErrorReportStackTrace.Frames
 - uid: LambdaSharp.SimpleNotificationService
   name: LambdaSharp.SimpleNotificationService
   href: sdk/LambdaSharp.SimpleNotificationService.html

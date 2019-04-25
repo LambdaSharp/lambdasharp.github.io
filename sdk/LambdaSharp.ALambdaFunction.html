@@ -73,7 +73,7 @@
   
   <h1 id="LambdaSharp_ALambdaFunction" data-uid="LambdaSharp.ALambdaFunction" class="text-break">Class ALambdaFunction
   </h1>
-  <div class="markdown level0 summary"><p><code>ALambdaFunction</code> is the abstract base class for all AWS Lambda functions. This class takes care of initializing the function from
+  <div class="markdown level0 summary"><p><a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> is the abstract base class for all AWS Lambda functions. This class takes care of initializing the function from
 environment variables, before invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -88,13 +88,13 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a></div>
+    <div><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ALambdaFunction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaFunction : object, ILambdaLogger</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaFunction : ILambdaLogLevelLogger</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -174,7 +174,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Reports.ErrorReporter.html">ErrorReporter</a></td>
+        <td><a class="xref" href="LambdaSharp.ErrorReports.ErrorReporter.html">ErrorReporter</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -231,7 +231,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILambdaLogger Logger { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILambdaLogLevelLogger Logger { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,7 +243,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a></td>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1000,7 +1000,7 @@ Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaShar
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Reports_ErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Reports.ErrorReport)">RecordErrorReport(ErrorReport)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.ErrorReport)">RecordErrorReport(ErrorReport)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1018,7 +1018,7 @@ Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaShar
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Reports.ErrorReport.html">ErrorReport</a></td>
+        <td><a class="xref" href="LambdaSharp.ErrorReports.ErrorReport.html">ErrorReport</a></td>
         <td><span class="parametername">report</span></td>
         <td></td>
       </tr>
@@ -1050,7 +1050,7 @@ Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaShar
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_LambdaLogLevel_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.LambdaLogLevel,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1068,7 +1068,7 @@ Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaShar
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
         <td></td>
       </tr>
@@ -1181,8 +1181,8 @@ Otherwise, use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaShar
   </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
-  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_ILambdaLogger_Log_LambdaSharp_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#ILambdaLogger#Log(LambdaSharp.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a message wit the given severity level. The <code>format</code> string is used to create a unique signature for errors.
 Therefore, any error information that varies between occurrences should be provided in the <code>arguments</code> parameter.</p>
 <p><strong>NOTE:</strong> Nothing is logged if both <code>format</code> and <code>exception</code> are null.</p>
@@ -1190,7 +1190,7 @@ Therefore, any error information that varies between occurrences should be provi
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ILambdaLogger.Log(LambdaLogLevel level, Exception exception, string format, params object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">void ILambdaLogLevelLogger.Log(LambdaLogLevel level, Exception exception, string format, params object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1203,9 +1203,9 @@ Therefore, any error information that varies between occurrences should be provi
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
-        <td><p>The severity level of the log message. See <a class="xref" href="LambdaSharp.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+        <td><p>The severity level of the log message. See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
 </td>
       </tr>
       <tr>
@@ -1230,7 +1230,35 @@ Therefore, any error information that varies between occurrences should be provi
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="LambdaSharp.ILambdaLogger.html">ILambdaLogger</a>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])</a>
   </div>
 </article>
           </div>

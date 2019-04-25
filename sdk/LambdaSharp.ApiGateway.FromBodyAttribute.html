@@ -78,13 +78,15 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FromBodyAttribute</span></div>
+    <div class="level1"><span class="xref">System.Attribute</span></div>
+    <div class="level2"><span class="xref">FromBodyAttribute</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ApiGateway.html">LambdaSharp.ApiGateway</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ApiGateway_FromBodyAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FromBodyAttribute : Attribute</code></pre>
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
+public class FromBodyAttribute : Attribute</code></pre>
   </div>
 </article>
           </div>

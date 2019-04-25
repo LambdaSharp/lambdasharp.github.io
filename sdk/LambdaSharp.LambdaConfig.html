@@ -84,7 +84,7 @@
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_LambdaConfig_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LambdaConfig : object</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LambdaConfig</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -273,6 +273,481 @@
       </tr>
     </tbody>
   </table>
+  <a id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})">ReadCommaDelimitedList(String, Action&lt;IEnumerable&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ReadCommaDelimitedList(string key, Action&lt;IEnumerable&lt;string&gt;&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})">ReadInt(String, Action&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadInt(string key, Action&lt;int&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})">ReadInt(String, Int32, Action&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadInt(string key, int defaultValue, Action&lt;int&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})">ReadText(String, Action&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadText(string key, Action&lt;string&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})">ReadText(String, String, Action&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReadText(string key, string defaultValue, Action&lt;string&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})">ReadTimeSpan(String, Action&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ReadTimeSpan(string key, Action&lt;TimeSpan&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_TimeSpan_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})">ReadTimeSpan(String, TimeSpan, Action&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan ReadTimeSpan(string key, TimeSpan defaultValue, Action&lt;TimeSpan&gt; validate = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">validate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ValidateIsInRange_" data-uid="LambdaSharp.LambdaConfig.ValidateIsInRange*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ValidateIsInRange_System_Int32_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsInRange(System.Int32,System.Int32)">ValidateIsInRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;int&gt; ValidateIsInRange(int low, int high)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">low</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">high</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ValidateIsNegative_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNegative*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ValidateIsNegative_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNegative(System.Int32)">ValidateIsNegative(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateIsNegative(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ValidateIsNonNegative_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonNegative*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ValidateIsNonNegative_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonNegative(System.Int32)">ValidateIsNonNegative(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateIsNonNegative(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ValidateIsNonPositive_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonPositive*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ValidateIsNonPositive_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsNonPositive(System.Int32)">ValidateIsNonPositive(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateIsNonPositive(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_LambdaConfig_ValidateIsPositive_" data-uid="LambdaSharp.LambdaConfig.ValidateIsPositive*"></a>
+  <h4 id="LambdaSharp_LambdaConfig_ValidateIsPositive_System_Int32_" data-uid="LambdaSharp.LambdaConfig.ValidateIsPositive(System.Int32)">ValidateIsPositive(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ValidateIsPositive(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="LambdaSharp.AwsConverters.html#LambdaSharp_AwsConverters_ReadSqsQueueUrl_LambdaSharp_LambdaConfig_System_String_">AwsConverters.ReadSqsQueueUrl(LambdaConfig, String)</a>
@@ -285,27 +760,6 @@
   </div>
   <div>
       <a class="xref" href="LambdaSharp.AwsConverters.html#LambdaSharp_AwsConverters_ReadDynamoDBTableName_LambdaSharp_LambdaConfig_System_String_">AwsConverters.ReadDynamoDBTableName(LambdaConfig, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadText_LambdaSharp_LambdaConfig_System_String_System_Action_System_String__">LambdaConfigEx.ReadText(LambdaConfig, String, Action&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadText_LambdaSharp_LambdaConfig_System_String_System_String_System_Action_System_String__">LambdaConfigEx.ReadText(LambdaConfig, String, String, Action&lt;String&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadCommaDelimitedList_LambdaSharp_LambdaConfig_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___">LambdaConfigEx.ReadCommaDelimitedList(LambdaConfig, String, Action&lt;IEnumerable&lt;String&gt;&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadInt_LambdaSharp_LambdaConfig_System_String_System_Action_System_Int32__">LambdaConfigEx.ReadInt(LambdaConfig, String, Action&lt;Int32&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadInt_LambdaSharp_LambdaConfig_System_String_System_Int32_System_Action_System_Int32__">LambdaConfigEx.ReadInt(LambdaConfig, String, Int32, Action&lt;Int32&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadTimeSpan_LambdaSharp_LambdaConfig_System_String_System_Action_System_TimeSpan__">LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, Action&lt;TimeSpan&gt;)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.LambdaConfigEx.html#LambdaSharp_LambdaConfigEx_ReadTimeSpan_LambdaSharp_LambdaConfig_System_String_System_TimeSpan_System_Action_System_TimeSpan__">LambdaConfigEx.ReadTimeSpan(LambdaConfig, String, TimeSpan, Action&lt;TimeSpan&gt;)</a>
   </div>
 </article>
           </div>

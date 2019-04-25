@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ILambdaLogLevelLoggerEx
+   | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ILambdaLogLevelLoggerEx
+   | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx">
+  
+  
+  <h1 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx" class="text-break">Class ILambdaLogLevelLoggerEx
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html">ILambdaLogLevelLoggerEx</a> adds logging functionality as extension methods to the <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ILambdaLogLevelLoggerEx</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Logger.html">LambdaSharp.Logger</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ILambdaLogLevelLoggerEx</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)">LogError(ILambdaLogLevelLogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as an error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(this ILambdaLogLevelLogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])">LogError(ILambdaLogLevelLogger, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as an error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogError(this ILambdaLogLevelLogger logger, Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)">LogErrorAsInfo(ILambdaLogLevelLogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as an information message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception has no operational impact.
+Otherwise, either use <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">LogError(ILambdaLogLevelLogger, Exception)</a> or <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogErrorAsInfo(this ILambdaLogLevelLogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])">LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as an information message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception has no operational impact.
+Otherwise, either use <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a> or <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogErrorAsInfo(this ILambdaLogLevelLogger logger, Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)">LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</h4>
+  <div class="markdown level1 summary"><p>Log an exception as a warning. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception had likely no impact on the successful outcome of the request.
+Otherwise, use <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">LogError(ILambdaLogLevelLogger, Exception)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogErrorAsWarning(this ILambdaLogLevelLogger logger, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])">LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an exception with a custom message as a warning. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+<p><strong>NOTE:</strong> Only use this method when the exception had likely no impact on the successful outcome of the request.
+Otherwise, use <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogErrorAsWarning(this ILambdaLogLevelLogger logger, Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])">LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log a fatal exception with a custom message. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogFatal(this ILambdaLogLevelLogger logger, Exception exception, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception to log. The exception is logged with its message, stacktrace, and any nested exceptions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])">LogInfo(ILambdaLogLevelLogger, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log an informational message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogInfo(this ILambdaLogLevelLogger logger, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The message format string. If not arguments are supplied, the message format string will be printed as a plain string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the message string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])">LogWarn(ILambdaLogLevelLogger, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log a warning message. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogWarn(this ILambdaLogLevelLogger logger, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The message format string. If not arguments are supplied, the message format string will be printed as a plain string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the message string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ALambdaScheduleFunction
+   | &#955;# - Serverless .NET for AWS </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ALambdaScheduleFunction
+   | &#955;# - Serverless .NET for AWS ">
+    <meta name="generator" content="docfx 2.42.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction">
+  
+  
+  <h1 id="LambdaSharp_Schedule_ALambdaScheduleFunction" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction" class="text-break">Class ALambdaScheduleFunction
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a></div>
+    <div class="level2"><a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction</a>&lt;<a class="xref" href="LambdaSharp.Schedule.LambdaScheduleEvent.html">LambdaScheduleEvent</a>, <span class="xref">System.String</span>&gt;</div>
+    <div class="level3"><span class="xref">ALambdaScheduleFunction</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageAsync__0_">ALambdaFunction&lt;LambdaScheduleEvent, String&gt;.ProcessMessageAsync(LambdaScheduleEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction&lt;LambdaScheduleEvent, String&gt;.ProcessMessageStreamAsync(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Provider">ALambdaFunction.Provider</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_UtcNow">ALambdaFunction.UtcNow</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_JsonSerializer">ALambdaFunction.JsonSerializer</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info">ALambdaFunction.Info</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ALambdaFunction.ErrorReporter</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Logger">ALambdaFunction.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_CurrentContext">ALambdaFunction.CurrentContext</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeAsync_LambdaSharp_LambdaConfig_">ALambdaFunction.InitializeAsync(LambdaConfig)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction.ProcessMessageStreamAsync(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_">ALambdaFunction.FunctionHandlerAsync(Stream, ILambdaContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">ALambdaFunction.StartInitializeFunctionAsync(ILambdaConfigSource)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync">ALambdaFunction.EndInitializeFunctionAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_">ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">ALambdaFunction.DeserializeJson&lt;T&gt;(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_String_">ALambdaFunction.DeserializeJson&lt;T&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">ALambdaFunction.SerializeJson(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.DecryptSecretAsync(String, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">ALambdaFunction.RecordErrorReport(ErrorReport)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogInfo_System_String_System_Object___">ALambdaFunction.LogInfo(String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogWarn_System_String_System_Object___">ALambdaFunction.LogWarn(String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_">ALambdaFunction.LogError(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_System_String_System_Object___">ALambdaFunction.LogError(Exception, String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_">ALambdaFunction.LogErrorAsInfo(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_System_String_System_Object___">ALambdaFunction.LogErrorAsInfo(Exception, String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_">ALambdaFunction.LogErrorAsWarning(Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_System_String_System_Object___">ALambdaFunction.LogErrorAsWarning(Exception, String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogFatal_System_Exception_System_String_System_Object___">ALambdaFunction.LogFatal(Exception, String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___">ALambdaFunction.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Schedule.html">LambdaSharp.Schedule</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
+  <h5 id="LambdaSharp_Schedule_ALambdaScheduleFunction_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaScheduleFunction : ALambdaFunction&lt;LambdaScheduleEvent, string&gt;, ILambdaLogLevelLogger</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessEventAsync_" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync*"></a>
+  <h4 id="LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessEventAsync_LambdaSharp_Schedule_LambdaScheduleEvent_" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync(LambdaSharp.Schedule.LambdaScheduleEvent)">ProcessEventAsync(LambdaScheduleEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task ProcessEventAsync(LambdaScheduleEvent schedule)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Schedule.LambdaScheduleEvent.html">LambdaScheduleEvent</a></td>
+        <td><span class="parametername">schedule</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageAsync_" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync*"></a>
+  <h4 id="LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageAsync_LambdaSharp_Schedule_LambdaScheduleEvent_" data-uid="LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageAsync(LambdaSharp.Schedule.LambdaScheduleEvent)">ProcessMessageAsync(LambdaScheduleEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;string&gt; ProcessMessageAsync(LambdaScheduleEvent schedule)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Schedule.LambdaScheduleEvent.html">LambdaScheduleEvent</a></td>
+        <td><span class="parametername">schedule</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">LambdaSharp.ALambdaFunction&lt;LambdaSharp.Schedule.LambdaScheduleEvent, System.String&gt;.ProcessMessageAsync(LambdaSharp.Schedule.LambdaScheduleEvent)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
