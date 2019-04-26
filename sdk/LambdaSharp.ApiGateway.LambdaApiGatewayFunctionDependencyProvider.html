@@ -73,7 +73,9 @@
   
   <h1 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider" class="text-break">Class LambdaApiGatewayFunctionDependencyProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html">LambdaApiGatewayFunctionDependencyProvider</a> class provides all the default, runtime dependencies
+for <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instances.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -126,11 +128,12 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider__ctor_" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider__ctor_System_Func_System_DateTime__System_Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_Amazon_Lambda_Core_ILambdaSerializer_Amazon_KeyManagementService_IAmazonKeyManagementService_Amazon_SQS_IAmazonSQS_System_Func_System_String_Amazon_ApiGatewayManagementApi_IAmazonApiGatewayManagementApi__" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS,System.Func{System.String,Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi})">LambdaApiGatewayFunctionDependencyProvider(Func&lt;DateTime&gt;, Action&lt;String&gt;, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, Func&lt;String, IAmazonApiGatewayManagementApi&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create new instance of <a class="xref" href="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html">LambdaApiGatewayFunctionDependencyProvider</a>, which provides the implementation for the required dependencies for <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaApiGatewayFunctionDependencyProvider(Func&lt;DateTime&gt; utcNowCallback = null, Action&lt;string&gt; logCallback = null, ILambdaConfigSource configSource = null, ILambdaSerializer jsonSerializer = null, IAmazonKeyManagementService kmsClient = null, IAmazonSQS sqsClient = null, Func&lt;string, IAmazonApiGatewayManagementApi&gt; initializeAmaClient = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public LambdaApiGatewayFunctionDependencyProvider(Func&lt;DateTime&gt; utcNowCallback = null, Action&lt;string&gt; logCallback = null, ILambdaConfigSource configSource = null, ILambdaSerializer jsonSerializer = null, IAmazonKeyManagementService kmsClient = null, IAmazonSQS sqsClient = null, Func&lt;string, IAmazonApiGatewayManagementApi&gt; credateAmaClient = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,37 +148,44 @@
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
         <td><span class="parametername">utcNowCallback</span></td>
-        <td></td>
+        <td><p>A function that return the current <code>DateTime</code> in UTC timezone. Defaults to <span class="xref">System.DateTime.UtcNow</span> when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">logCallback</span></td>
-        <td></td>
+        <td><p>An action that logs a string message. Defaults to <span class="xref">Amazon.Lambda.Core.LambdaLogger.Log(System.String)</span> when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
         <td><span class="parametername">configSource</span></td>
-        <td></td>
+        <td><p>A <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance from which the Lambda function configuration is read. Defaults to <a class="xref" href="LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.html">LambdaSystemEnvironmentSource</a> instance when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
         <td><span class="parametername">jsonSerializer</span></td>
-        <td></td>
+        <td><p>A <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance for serializing and deserializing JSON data. Defaults to <span class="xref">Amazon.Lambda.Core.LambdaLogger.Log(System.String)</span> when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Amazon.KeyManagementService.IAmazonKeyManagementService</span></td>
         <td><span class="parametername">kmsClient</span></td>
-        <td></td>
+        <td><p>A <span class="xref">Amazon.KeyManagementService.IAmazonKeyManagementService</span> client instance. Defaults to <span class="xref">Amazon.KeyManagementService.AmazonKeyManagementServiceClient</span> when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">Amazon.SQS.IAmazonSQS</span></td>
         <td><span class="parametername">sqsClient</span></td>
-        <td></td>
+        <td><p>A <span class="xref">Amazon.SQS.IAmazonSQS</span> client instance. Defaults to <span class="xref">Amazon.SQS.AmazonSQSClient</span> when <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span>&gt;</td>
-        <td><span class="parametername">initializeAmaClient</span></td>
-        <td></td>
+        <td><span class="parametername">credateAmaClient</span></td>
+        <td><p>A callback to create a <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> from a web-socket URL. Defaults to creating a <span class="xref">Amazon.ApiGatewayManagementApi.AmazonApiGatewayManagementApiClient</span> instance when <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -183,7 +193,9 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_AmaClient_" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient*"></a>
   <h4 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_AmaClient" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient">AmaClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> instance used for communicating with the
+<a href="https://aws.amazon.com/kms/">Amazon API Gateway V2</a> service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,7 +212,8 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -208,7 +221,9 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, String, Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection. The Lambda function requires <code>execute-api:ManageConnections</code> permission
+on the specified web-socket.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,17 +242,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">webSocketUrl</span></td>
-        <td></td>
+        <td><p>Web-socket management URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">connectionId</span></td>
-        <td></td>
+        <td><p>Web-socket connection ID.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">messageBytes</span></td>
-        <td></td>
+        <td><p>Array containing the messages bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -252,10 +270,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> is used to create a <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> instance. The most recently created
+instance is reused if the value of <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> matches the previously created instance.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>

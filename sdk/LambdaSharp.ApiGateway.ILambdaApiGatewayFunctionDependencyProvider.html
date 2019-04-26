@@ -73,7 +73,10 @@
   
   <h1 id="LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider" data-uid="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider" class="text-break">Interface ILambdaApiGatewayFunctionDependencyProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a> interface provides all the required dependencies
+for <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instances. This interface follows the <em>Dependency Provider</em> pattern
+where all side-effecting methods and properties must be provided by an outside implementation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,7 +112,9 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, String, Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection. The Lambda function requires <code>execute-api:ManageConnections</code> permission
+on the specified web-socket.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -128,17 +133,20 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">webSocketUrl</span></td>
-        <td></td>
+        <td><p>Web-socket management URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">connectionId</span></td>
-        <td></td>
+        <td><p>Web-socket connection ID.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">messageBytes</span></td>
-        <td></td>
+        <td><p>Array containing the messages bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -153,10 +161,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> is used to create a <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> instance. The most recently created
+instance is reused if the value of <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> matches the previously created instance.</p>
+</div>
 </article>
           </div>
           

@@ -80,25 +80,25 @@ Suffix: String
 <dl>
 <dt><code>Events</code></dt>
 <dd>
-The <code>Events</code> section specifies the S3 events that trigger an invocation of the Lambda function. By default, the Lambda function only reacts to <code>s3:ObjectCreated:*</code> events. See <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations">S3 Event Notification Types and Destinations</a> for a complete list of S3 events.
+<p>The <code>Events</code> section specifies the S3 events that trigger an invocation of the Lambda function. By default, the Lambda function only reacts to <code>s3:ObjectCreated:*</code> events. See <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations">S3 Event Notification Types and Destinations</a> for a complete list of S3 events.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: List of String</p>
 </dd>
 <dt><code>Prefix</code></dt>
 <dd>
-The <code>Prefix</code> attribute specifies a filter to limit invocations to object key names that begin with the attribute value.
+<p>The <code>Prefix</code> attribute specifies a filter to limit invocations to object key names that begin with the attribute value.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>S3</code></dt>
 <dd>
-The <code>S3</code> attribute specifies the name of a resource parameter of type <code>AWS::S3::Bucket</code> that is the origin of the events.
+<p>The <code>S3</code> attribute specifies the name of a resource parameter of type <code>AWS::S3::Bucket</code> that is the origin of the events.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String or Expression</p>
 </dd>
 <dt><code>Suffix</code></dt>
 <dd>
-The <code>Suffix</code> attribute specifies a filter to limit invocations to object key names that end with the attribute value.
+<p>The <code>Suffix</code> attribute specifies a filter to limit invocations to object key names that end with the attribute value.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>

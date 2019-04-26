@@ -73,33 +73,61 @@
 <h2 id="options">Options</h2>
 <dl>
 <dt><code>--allow-data-loss</code></dt>
-<dd>(optional) Allow CloudFormation resource update operations that could lead to data loss</dd>
+<dd>
+<p>(optional) Allow CloudFormation resource update operations that could lead to data loss</p>
+</dd>
 <dt><code>--protect</code></dt>
-<dd>(optional) Enable termination protection for the CloudFormation stack</dd>
+<dd>
+<p>(optional) Enable termination protection for the CloudFormation stack</p>
+</dd>
 <dt><code>--force-deploy</code></dt>
-<dd>(optional) Force module deployment</dd>
+<dd>
+<p>(optional) Force module deployment</p>
+</dd>
 <dt><code>--version &lt;VERSION&gt;</code></dt>
-<dd>(optional) Specify version for LambdaSharp modules (default: same as CLI version)</dd>
+<dd>
+<p>(optional) Specify version for LambdaSharp modules (default: same as CLI version)</p>
+</dd>
 <dt><code>--local &lt;PATH&gt;</code></dt>
-<dd>(optional) Provide a path to a local check-out of the LambdaSharp modules (default: LAMBDASHARP environment variable)</dd>
+<dd>
+<p>(optional) Provide a path to a local check-out of the LambdaSharp modules (default: LAMBDASHARP environment variable)</p>
+</dd>
 <dt><code>--use-published</code></dt>
-<dd>(optional) Force the init command to use the published LambdaSharp modules</dd>
+<dd>
+<p>(optional) Force the init command to use the published LambdaSharp modules</p>
+</dd>
 <dt><code>--parameters &lt;FILE&gt;</code></dt>
-<dd>(optional) Specify filename to read module parameters from (default: none)</dd>
+<dd>
+<p>(optional) Specify filename to read module parameters from (default: none)</p>
+</dd>
 <dt><code>--force-publish</code></dt>
-<dd>(optional) Publish modules and their assets even when no changes were detected</dd>
+<dd>
+<p>(optional) Publish modules and their assets even when no changes were detected</p>
+</dd>
 <dt><code>--prompt-all</code></dt>
-<dd>(optional) Prompt for all missing parameters values (default: only prompt for missing parameters with no default value)</dd>
+<dd>
+<p>(optional) Prompt for all missing parameters values (default: only prompt for missing parameters with no default value)</p>
+</dd>
 <dt><code>--prompts-as-errors</code></dt>
-<dd>(optional) Missing parameters cause an error instead of a prompts (use for CI/CD to avoid unattended prompts)</dd>
+<dd>
+<p>(optional) Missing parameters cause an error instead of a prompts (use for CI/CD to avoid unattended prompts)</p>
+</dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
-<dd>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</dd>
+<dd>
+<p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
+</dd>
 <dt><code>--cli-profile|-C &lt;NAME&gt;</code></dt>
-<dd>(optional) Use a specific LambdaSharp CLI profile (default: Default)</dd>
+<dd>
+<p>(optional) Use a specific LambdaSharp CLI profile (default: Default)</p>
+</dd>
 <dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
-<dd>(optional) Use a specific AWS profile from the AWS credentials file</dd>
+<dd>
+<p>(optional) Use a specific AWS profile from the AWS credentials file</p>
+</dd>
 <dt><code>--verbose|-V:&lt;LEVEL&gt;</code></dt>
-<dd>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</dd>
+<dd>
+<p>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</p>
+</dd>
 </dl>
 <h2 id="examples">Examples</h2>
 <h3 id="create-a-new-deployment-tier-or-update-an-existing-one">Create a new deployment tier or update an existing one</h3>

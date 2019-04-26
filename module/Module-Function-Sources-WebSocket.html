@@ -80,27 +80,27 @@ Invoke: String
 <dl>
 <dt><code>Api</code></dt>
 <dd>
-The <code>WebSocket</code> attribute specifies the websocket route that is mapped to the Lambda function. The WebSocket instance and the WebSocket resources are automatically created for the module when an WebSocket source is used.
+<p>The <code>WebSocket</code> attribute specifies the websocket route that is mapped to the Lambda function. The WebSocket instance and the WebSocket resources are automatically created for the module when an WebSocket source is used.</p>
 <p><b>NOTE</b>: The WebSocket resource can be referenced by its name <code>Module::WebSocket</code>. Similarly, <code>Module::WebSocket::Stage</code> and <code>Module::WebSocket::Deployment</code> reference the WebSocket stage and deployment, respectively.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>ApiKeyRequired</code></dt>
 <dd>
-The <code>ApiKeyRequired</code> attribute indicates whether the route requires clients to submit a valid API key.
+<p>The <code>ApiKeyRequired</code> attribute indicates whether the route requires clients to submit a valid API key.</p>
 <p><b>NOTE</b>: this setting only applies to the <code>$connect</code> route.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Boolean</p>
 </dd>
 <dt><code>Invoke</code></dt>
 <dd>
-The <code>Invoke</code> attribute holds the name of a C# method to invoke in the Lambda function implementation. The Lambda function implementation must derive from the <code>ALambdaAPIGatewayFunction</code> class.
+<p>The <code>Invoke</code> attribute holds the name of a C# method to invoke in the Lambda function implementation. The Lambda function implementation must derive from the <code>ALambdaAPIGatewayFunction</code> class.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>OperationName</code></dt>
 <dd>
-The <code>OperationName</code> attribute holds a friendly operation name for the route.
+<p>The <code>OperationName</code> attribute holds a friendly operation name for the route.</p>
 <p><b>NOTE</b>: this attribute inherits the value of <code>Invoke</code> when not set.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>

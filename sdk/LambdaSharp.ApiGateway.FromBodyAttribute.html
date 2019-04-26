@@ -73,7 +73,9 @@
   
   <h1 id="LambdaSharp_ApiGateway_FromBodyAttribute" data-uid="LambdaSharp.ApiGateway.FromBodyAttribute" class="text-break">Class FromBodyAttribute
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.FromBodyAttribute.html">FromBodyAttribute</a> attribute is used to indicate that a parameter
+must be deserialized from the request body.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -88,6 +90,13 @@
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
 public class FromBodyAttribute : Attribute</code></pre>
   </div>
+  <h5 id="LambdaSharp_ApiGateway_FromBodyAttribute_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="LambdaSharp.ApiGateway.FromUriAttribute.html">FromUriAttribute</a> and <a class="xref" href="LambdaSharp.ApiGateway.FromBodyAttribute.html">FromBodyAttribute</a> are mutually exclusive.
+The <a class="xref" href="LambdaSharp.ApiGateway.FromBodyAttribute.html">FromBodyAttribute</a> is not needed for complex types
+as they are deserialized from the request body by default.
+There can only be one parameter that is explicitly marked with the <a class="xref" href="LambdaSharp.ApiGateway.FromBodyAttribute.html">FromBodyAttribute</a> attribute
+or which implicitly is deserialized from the request body.</p>
+</div>
 </article>
           </div>
           

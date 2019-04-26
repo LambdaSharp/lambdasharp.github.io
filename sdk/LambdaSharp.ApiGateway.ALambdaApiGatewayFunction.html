@@ -73,7 +73,8 @@
   
   <h1 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction" class="text-break">Class ALambdaApiGatewayFunction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p><a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> is the abstract base class for API Gateway functions (both V1 and V2).</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -185,11 +186,18 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ALambdaApiGatewayFunction : ALambdaFunction&lt;APIGatewayProxyRequest, APIGatewayProxyResponse&gt;, ILambdaLogLevelLogger</code></pre>
   </div>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>If the Lambda function was configured for REST API or web-socket routes with method invocations, then the
+Lambda function will act as a controller and route the incoming requests to the specified methods. Alternatively,
+a derived class can override <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessProxyRequestAsync(APIGatewayProxyRequest)</a>
+to process requests.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor">ALambdaApiGatewayFunction()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,7 +205,8 @@
   </div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)">ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,7 +225,24 @@
       <tr>
         <td><a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
-        <td></td>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">provider</code> is <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -224,7 +250,8 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CurrentRequest_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CurrentRequest*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CurrentRequest" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CurrentRequest">CurrentRequest</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieve the current <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> for the request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -241,13 +268,19 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CurrentRequest_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessMessageAsync(APIGatewayProxyRequest)</a>. Otherwise, it returns <code>null</code>.</p>
+</div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider">Provider</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a> instance used by the Lambda function to
+satisfy its required dependencies.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -270,7 +303,8 @@
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl">WebSocketUrl</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The URL to the web-socket management API.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -287,7 +321,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Web-socket URL.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -295,7 +330,9 @@
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse)">Abort(APIGatewayProxyResponse)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse_">Abort(APIGatewayProxyResponse)</a> method stops the request processing and sets the
+specified <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance as the response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -314,7 +351,8 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span></td>
         <td><span class="parametername">response</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance to use for the response.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -329,13 +367,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td></td>
+        <td><p>Nothing. See remarks.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method never returns as the abort exception is thrown immediately. The <span class="xref">System.Exception</span> instance is shown as returned
+to make it easier to tell the compiler the control flow.</p>
+</div>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse__examples">Examples</h5>
+  <pre><code>throw Abort(new APIGatewayProxyResponse {
+    StatusCode = 404,
+    Body = &quot;item not found&quot;
+});</code></pre>
+
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortBadRequest*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortBadRequest(System.String)">AbortBadRequest(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String_">AbortBadRequest(String)</a> stops request the request processing with a <code>400 - Bad Request</code> response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -354,7 +404,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The response message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -369,13 +420,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td></td>
+        <td><p>Nothing. See remarks.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method never returns as the abort exception is thrown immediately. The <span class="xref">System.Exception</span> instance is shown as returned
+to make it easier to tell the compiler the control flow.</p>
+</div>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String__examples">Examples</h5>
+  <pre><code>throw AbortBadRequest(&quot;invalid selection&quot;);</code></pre>
+
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortForbidden*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortForbidden(System.String)">AbortForbidden(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String_">AbortForbidden(String)</a> stops request the request processing with a <code>403 - Forbidden</code> response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -394,7 +454,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The response message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -409,13 +470,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td></td>
+        <td><p>Nothing. See remarks.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method never returns as the abort exception is thrown immediately. The <span class="xref">System.Exception</span> instance is shown as returned
+to make it easier to tell the compiler the control flow.</p>
+</div>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String__examples">Examples</h5>
+  <pre><code>throw AbortForbidden(&quot;you are not authorized&quot;);</code></pre>
+
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortNotFound*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortNotFound(System.String)">AbortNotFound(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String_">AbortNotFound(String)</a> stops request the request processing with a <code>404 - Not Found</code> response.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -434,7 +504,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The response message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -449,13 +520,24 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td></td>
+        <td><p>Nothing. See remarks.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method never returns as the abort exception is thrown immediately. The <span class="xref">System.Exception</span> instance is shown as returned
+to make it easier to tell the compiler the control flow.</p>
+</div>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String__examples">Examples</h5>
+  <pre><code>throw AbortNotFound(&quot;item not found&quot;);</code></pre>
+
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateBadParameterResponse_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateBadParameterResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String,System.String)">CreateBadParameterResponse(APIGatewayProxyRequest, String, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateBadParameterResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_System_String_">CreateBadParameterResponse(APIGatewayProxyRequest, String, String)</a> method creates a
+<span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance to report a <code>400 - Bad Request</code> error, because
+a request parameter was invalid or missing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -474,17 +556,20 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">parameterName</span></td>
-        <td></td>
+        <td><p>The name of the parameter.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The error message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -499,13 +584,17 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationExceptionResponse_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationExceptionResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_Exception_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.Exception)">CreateInvocationExceptionResponse(APIGatewayProxyRequest, Exception)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationExceptionResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_Exception_">CreateInvocationExceptionResponse(APIGatewayProxyRequest, Exception)</a> method creates a
+<span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance to report a <code>500 - Internal Server Error</code> error, because
+an unhandled exception occurred during the request processing.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -524,12 +613,14 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
-        <td></td>
+        <td><p>The raised exception.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -544,13 +635,16 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_System_Type_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(System.Type)">CreateInvocationTargetInstance(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_System_Type_">CreateInvocationTargetInstance(Type)</a> method is invoked to create instances for
+mapped method invocations. This is invoked only once per requested type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -569,7 +663,8 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td></td>
+        <td><p>The requested type to instantiate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -584,13 +679,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>The instance for the target method.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_System_Type__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the requested type is the type of the Lambda function, this method returns the Lambda function instance.
+Otherwise, it attempts to instantiate the requested type using that Lambda function instance as the sole the constructor parmeter.
+This pattern allows the Lambda function to be the <em>Dependency Provider</em> for the created instance.</p>
+</div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateResponse_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateResponse*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateResponse_System_Int32_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateResponse(System.Int32,System.String)">CreateResponse(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateResponse_System_Int32_System_String_">CreateResponse(Int32, String)</a> method creates a <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance
+set to the specified status code and message in the response body.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -609,12 +712,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">statusCode</span></td>
-        <td></td>
+        <td><p>The HTTP status code of the response.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The response mesage.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -629,17 +734,34 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateResponse_System_Int32_System_String__examples">Examples</h5>
+  <p>For a REST API route, the response body looks as follows.</p>
+<pre><code>{
+    &quot;message&quot;: &quot;item not found&quot;,
+    &quot;requestId&quot;: &quot;123abc&quot;
+}</code></pre>
+<p>For a web-socket route, the response body contains in addition the connection ID.</p>
+<pre><code>{
+    &quot;message&quot;: &quot;item not found&quot;,
+    &quot;requestId&quot;: &quot;123abc&quot;,
+    &quot;connectionId&quot;: &quot;456def&quot;
+}</code></pre>
+
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String)">CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_">CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)</a> method creates the
+<span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance to report a <code>404 - Not Found</code> error for the requested
+REST API or web-socket route.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual APIGatewayProxyResponse CreateRouteNotFoundResponse(APIGatewayProxyRequest request, string signature)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual APIGatewayProxyResponse CreateRouteNotFoundResponse(APIGatewayProxyRequest request, string route)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -654,12 +776,14 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">signature</span></td>
-        <td></td>
+        <td><span class="parametername">route</span></td>
+        <td><p>The REST API or web-socket route that could not be found.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -674,13 +798,16 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync">EndInitializeFunctionAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to complet the initialization of the
+Lambda function. This is the last of three methods that are invoked to initialize the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -697,7 +824,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -705,7 +833,9 @@
   <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync">ALambdaFunction.EndInitializeFunctionAsync()</a></div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)">ProcessMessageAsync(APIGatewayProxyRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessMessageAsync(APIGatewayProxyRequest)</a> method is overridden to
+provide specific behavior for this base class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -724,7 +854,8 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -739,7 +870,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span>&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -747,7 +879,9 @@
   <div><span class="xref">LambdaSharp.ALambdaFunction&lt;Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest, Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse&gt;.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)</span></div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)">ProcessProxyRequestAsync(APIGatewayProxyRequest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessProxyRequestAsync(APIGatewayProxyRequest)</a> method is invoked when the
+received request is not mapped to a method invocation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -766,7 +900,8 @@
       <tr>
         <td><span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -781,13 +916,18 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span>&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default implementation response with a 404 error.</p>
+</div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, Byte[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -806,12 +946,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">connectionId</span></td>
-        <td></td>
+        <td><p>Web-socket connection ID.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">messageBytes</span></td>
-        <td></td>
+        <td><p>Array containing the messages bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -826,13 +968,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">StartInitializeFunctionAsync(ILambdaConfigSource)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to prepare the Lambda function
+for initialization. This is the first of three methods that are invoked to initialize the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -851,7 +996,8 @@
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
         <td><span class="parametername">envSource</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance from which to read the configuration settings.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -866,7 +1012,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

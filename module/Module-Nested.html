@@ -84,31 +84,31 @@ DependsOn:
 <dl>
 <dt><code>DependsOn</code></dt>
 <dd>
-The <code>DependsOn</code> attribute identifies items that must be created prior. For additional information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html">CloudFormation DependsOn Attribute</a>.
+<p>The <code>DependsOn</code> attribute identifies items that must be created prior. For additional information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html">CloudFormation DependsOn Attribute</a>.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: List of String</p>
 </dd>
 <dt><code>Description</code></dt>
 <dd>
-The <code>Description</code> attribute specifies the nested module description.
+<p>The <code>Description</code> attribute specifies the nested module description.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>Module</code></dt>
 <dd>
-The <code>Module</code> attribute specifies the full name of the required module, its version, and origin. The format of the source must be <code>Owner.Name[:Version][@BucketName]</code>. Parts in brackets (<code>[]</code>) are optional. Without a version specifier, λ# uses the latest version it can find. Without an origin bucket name, λ# uses the configured deployment bucket. Compilation fails if the λ# CLI cannot find a published module that matches the criteria.
+<p>The <code>Module</code> attribute specifies the full name of the required module, its version, and origin. The format of the source must be <code>Owner.Name[:Version][@BucketName]</code>. Parts in brackets (<code>[]</code>) are optional. Without a version specifier, λ# uses the latest version it can find. Without an origin bucket name, λ# uses the configured deployment bucket. Compilation fails if the λ# CLI cannot find a published module that matches the criteria.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>Nested</code></dt>
 <dd>
-The <code>Nested</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.
+<p>The <code>Nested</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>Parameters</code></dt>
 <dd>
-The <code>Parameters</code> section specifies the parameters for the nested module. The λ# deployment parameters, such as <code>DeploymentBucketName</code> and <code>DeploymentPrefix</code>, are automatically provided and don't need to be specified.
+<p>The <code>Parameters</code> section specifies the parameters for the nested module. The λ# deployment parameters, such as <code>DeploymentBucketName</code> and <code>DeploymentPrefix</code>, are automatically provided and don't need to be specified.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Map</p>
 </dd>

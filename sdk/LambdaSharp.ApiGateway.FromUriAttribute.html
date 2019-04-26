@@ -73,7 +73,9 @@
   
   <h1 id="LambdaSharp_ApiGateway_FromUriAttribute" data-uid="LambdaSharp.ApiGateway.FromUriAttribute" class="text-break">Class FromUriAttribute
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.FromUriAttribute.html">FromUriAttribute</a> attribute is used to indicate that a parameter
+must be deserialized from path- and query-string parameters instead of the request body.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -88,6 +90,11 @@
     <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
 public class FromUriAttribute : Attribute</code></pre>
   </div>
+  <h5 id="LambdaSharp_ApiGateway_FromUriAttribute_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="LambdaSharp.ApiGateway.FromUriAttribute.html">FromUriAttribute</a> and <a class="xref" href="LambdaSharp.ApiGateway.FromBodyAttribute.html">FromBodyAttribute</a> are mutually exclusive.
+The <a class="xref" href="LambdaSharp.ApiGateway.FromUriAttribute.html">FromUriAttribute</a> is not needed for simple types (e.g. <code>string</code>, <code>int</code>, etc.)
+as they are deserialized from path- and query-string parameters by default.</p>
+</div>
 </article>
           </div>
           

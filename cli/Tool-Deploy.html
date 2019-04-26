@@ -78,51 +78,97 @@
 <h2 id="options">Options</h2>
 <dl>
 <dt><code>--name &lt;NAME&gt;</code></dt>
-<dd>(optional) Specify an alternative module name for the deployment (default: module name)</dd>
+<dd>
+<p>(optional) Specify an alternative module name for the deployment (default: module name)</p>
+</dd>
 <dt><code>--parameters &lt;FILE&gt;</code></dt>
-<dd>(optional) Specify filename to read module parameters from (default: none)</dd>
+<dd>
+<p>(optional) Specify filename to read module parameters from (default: none)</p>
+</dd>
 <dt><code>--allow-data-loss</code></dt>
-<dd>(optional) Allow CloudFormation resource update operations that could lead to data loss</dd>
+<dd>
+<p>(optional) Allow CloudFormation resource update operations that could lead to data loss</p>
+</dd>
 <dt><code>--protect</code></dt>
-<dd>(optional) Enable termination protection for the CloudFormation stack</dd>
+<dd>
+<p>(optional) Enable termination protection for the CloudFormation stack</p>
+</dd>
 <dt><code>--xray</code></dt>
-<dd>(optional) Enable service-call tracing with AWS X-Ray for all functions in module</dd>
+<dd>
+<p>(optional) Enable service-call tracing with AWS X-Ray for all functions in module</p>
+</dd>
 <dt><code>--force-deploy</code></dt>
-<dd>(optional) Force module deployment</dd>
+<dd>
+<p>(optional) Force module deployment</p>
+</dd>
 <dt><code>--prompt-all</code></dt>
-<dd>(optional) Prompt for all missing parameters values (default: only prompt for missing parameters with no default value)</dd>
+<dd>
+<p>(optional) Prompt for all missing parameters values (default: only prompt for missing parameters with no default value)</p>
+</dd>
 <dt><code>--prompts-as-errors</code></dt>
-<dd>(optional) Missing parameters cause an error instead of a prompts (use for CI/CD to avoid unattended prompts)</dd>
+<dd>
+<p>(optional) Missing parameters cause an error instead of a prompts (use for CI/CD to avoid unattended prompts)</p>
+</dd>
 <dt><code>--force-publish</code></dt>
-<dd>(optional) Publish modules and their assets even when no changes were detected</dd>
+<dd>
+<p>(optional) Publish modules and their assets even when no changes were detected</p>
+</dd>
 <dt><code>--no-assembly-validation</code></dt>
-<dd>(optional) Disable validating LambdaSharp assembly references in function project files</dd>
+<dd>
+<p>(optional) Disable validating LambdaSharp assembly references in function project files</p>
+</dd>
 <dt><code>--no-dependency-validation</code></dt>
-<dd>(optional) Disable validating LambdaSharp module dependencies</dd>
+<dd>
+<p>(optional) Disable validating LambdaSharp module dependencies</p>
+</dd>
 <dt><code>--configuration|-c &lt;CONFIGURATION&gt;</code></dt>
-<dd>(optional) Build configuration for function projects (default: "Release")</dd>
+<dd>
+<p>(optional) Build configuration for function projects (default: &quot;Release&quot;)</p>
+</dd>
 <dt><code>--git-sha &lt;VALUE&gt;</code></dt>
-<dd>(optional) Git SHA of most recent git commit (default: invoke `git rev-parse HEAD` command)</dd>
+<dd>
+<p>(optional) Git SHA of most recent git commit (default: invoke <code>git rev-parse HEAD</code> command)</p>
+</dd>
 <dt><code>--git-branch &lt;VALUE&gt;</code></dt>
-<dd>(optional) (optional) Git branch name (default: invoke `git rev-parse --abbrev-ref HEAD` command)</dd>
+<dd>
+<p>(optional) (optional) Git branch name (default: invoke <code>git rev-parse --abbrev-ref HEAD</code> command)</p>
+</dd>
 <dt><code>--output|-o  &lt;DIRECTORY&gt;</code></dt>
-<dd>(optional) Path to output directory (default: bin)</dd>
+<dd>
+<p>(optional) Path to output directory (default: bin)</p>
+</dd>
 <dt><code>--selector &lt;NAME&gt;</code></dt>
-<dd>(optional) Selector for resolving conditional compilation choices in module</dd>
+<dd>
+<p>(optional) Selector for resolving conditional compilation choices in module</p>
+</dd>
 <dt><code>--dryrun[:&lt;LEVEL&gt;]</code></dt>
-<dd>(optional) Generate output assets without deploying (0=everything, 1=cloudformation)</dd>
+<dd>
+<p>(optional) Generate output assets without deploying (0=everything, 1=cloudformation)</p>
+</dd>
 <dt><code>--cfn-output &lt;FILE&gt;</code></dt>
-<dd>(optional) Name of generated CloudFormation template file (default: bin/cloudformation.json)</dd>
+<dd>
+<p>(optional) Name of generated CloudFormation template file (default: bin/cloudformation.json)</p>
+</dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
-<dd>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</dd>
+<dd>
+<p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
+</dd>
 <dt><code>--cli-profile|-C &lt;NAME&gt;</code></dt>
-<dd>(optional) Use a specific LambdaSharp CLI profile (default: Default)</dd>
+<dd>
+<p>(optional) Use a specific LambdaSharp CLI profile (default: Default)</p>
+</dd>
 <dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
-<dd>(optional) Use a specific AWS profile from the AWS credentials file</dd>
+<dd>
+<p>(optional) Use a specific AWS profile from the AWS credentials file</p>
+</dd>
 <dt><code>--verbose|-V:&lt;LEVEL&gt;</code></dt>
-<dd>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</dd>
+<dd>
+<p>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</p>
+</dd>
 <dt><code>--no-ansi</code></dt>
-<dd>Disable ANSI terminal output</dd>
+<dd>
+<p>Disable ANSI terminal output</p>
+</dd>
 </dl>
 <h2 id="examples">Examples</h2>
 <h3 id="build-publish-and-deploy-module-in-current-folder">Build, publish, and deploy module in current folder</h3>

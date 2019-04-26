@@ -80,26 +80,26 @@ Invoke: String
 <dl>
 <dt><code>Api</code></dt>
 <dd>
-The <code>Api</code> attribute specifies the HTTP method and resource path that is mapped to the Lambda function. The notation is <span style="white-space: nowrap"><code>HTTP-METHOD:/resource/{param}</code></span>. The API Gateway instance, the API Gateway resources, and the API Gateway methods are automatically created for the module when an API Gateway source is used.
+<p>The <code>Api</code> attribute specifies the HTTP method and resource path that is mapped to the Lambda function. The notation is <span style="white-space: nowrap"><code>HTTP-METHOD:/resource/{param}</code></span>. The API Gateway instance, the API Gateway resources, and the API Gateway methods are automatically created for the module when an API Gateway source is used.</p>
 <p><b>NOTE</b>: The API Gateway resource can be referenced by its name <code>Module::RestApi</code>. Similarly, <code>Module::RestApi::Stage</code> and <code>Module::RestApi::Deployment</code> reference the API Gateway stage and deployment, respectively.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>ApiKeyRequired</code></dt>
 <dd>
-The <code>ApiKeyRequired</code> attribute indicates whether the method requires clients to submit a valid API key.
+<p>The <code>ApiKeyRequired</code> attribute indicates whether the method requires clients to submit a valid API key.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Boolean</p>
 </dd>
 <dt><code>Invoke</code></dt>
 <dd>
-The <code>Invoke</code> attribute holds the name of a C# method to invoke in the Lambda function implementation. The Lambda function implementation must derive from the <code>ALambdaAPIGatewayFunction</code> class.
+<p>The <code>Invoke</code> attribute holds the name of a C# method to invoke in the Lambda function implementation. The Lambda function implementation must derive from the <code>ALambdaAPIGatewayFunction</code> class.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>OperationName</code></dt>
 <dd>
-The <code>OperationName</code> attribute holds a friendly operation name for the method.
+<p>The <code>OperationName</code> attribute holds a friendly operation name for the method.</p>
 <p><b>NOTE</b>: this attribute inherits the value of <code>Invoke</code> when not set.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
