@@ -82,7 +82,8 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ALambdaFunction</span></div>
       <div class="level2"><a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a></div>
-      <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.Schedule.ALambdaScheduleFunction.html">ALambdaScheduleFunction</a></div>
       <div class="level2"><a class="xref" href="LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction&lt;TMessage&gt;</a></div>
       <div class="level2"><a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a></div>
   </div>
@@ -100,7 +101,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   </h3>
   <a id="LambdaSharp_ALambdaFunction__ctor_" data-uid="LambdaSharp.ALambdaFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ALambdaFunction__ctor" data-uid="LambdaSharp.ALambdaFunction.#ctor">ALambdaFunction()</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -109,7 +110,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   </div>
   <a id="LambdaSharp_ALambdaFunction__ctor_" data-uid="LambdaSharp.ALambdaFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ALambdaFunction__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.ALambdaFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaFunction(ILambdaFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -180,14 +181,14 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   <h5 id="LambdaSharp_ALambdaFunction_CurrentContext_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a>. Otherwise, it returns <code>null</code>.</p>
 </div>
-  <a id="LambdaSharp_ALambdaFunction_ErrorReporter_" data-uid="LambdaSharp.ALambdaFunction.ErrorReporter*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_ErrorReporter" data-uid="LambdaSharp.ALambdaFunction.ErrorReporter">ErrorReporter</h4>
-  <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ErrorReporter</a> instance used to generate error reports.</p>
+  <a id="LambdaSharp_ALambdaFunction_ErrorReportGenerator_" data-uid="LambdaSharp.ALambdaFunction.ErrorReportGenerator*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_ErrorReportGenerator" data-uid="LambdaSharp.ALambdaFunction.ErrorReportGenerator">ErrorReportGenerator</h4>
+  <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> instance used to generate error reports.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ErrorReporter ErrorReporter { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected LambdaErrorReportGenerator ErrorReportGenerator { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,8 +200,8 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ErrorReports.ErrorReporter.html">ErrorReporter</a></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ErrorReporter</a> instance.</p>
+        <td><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> instance.</p>
 </td>
       </tr>
     </tbody>
@@ -225,7 +226,8 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ALambdaFunction.InfoStruct.html">ALambdaFunction.InfoStruct</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.InfoStruct.html">ALambdaFunction.InfoStruct</a> value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -592,7 +594,7 @@ and handling any failures that occur.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;object&gt; FunctionHandlerAsync(Stream stream, ILambdaContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;Stream&gt; FunctionHandlerAsync(Stream stream, ILambdaContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -629,7 +631,7 @@ and handling any failures that occur.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>
@@ -1049,13 +1051,13 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
   <a id="LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_" data-uid="LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> method is invoked for every received request. It is
-responsible for deserializing the stream and processing the received message. The return value is
-automatically serialized as the response.</p>
+responsible for deserializing the stream and processing the received message. The return stream is
+sent as response.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;object&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;Stream&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1085,20 +1087,20 @@ automatically serialized as the response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.ErrorReport)">RecordErrorReport(ErrorReport)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">RecordErrorReport(ErrorReport)</a> method is invoked record errors for later reporting.</p>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.LambdaErrorReport)">RecordErrorReport(LambdaErrorReport)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a> method is invoked record errors for later reporting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual void RecordErrorReport(ErrorReport report)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void RecordErrorReport(LambdaErrorReport report)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1111,17 +1113,17 @@ automatically serialized as the response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ErrorReports.ErrorReport.html">ErrorReport</a></td>
+        <td><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a></td>
         <td><span class="parametername">report</span></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ErrorReports.ErrorReport.html">ErrorReport</a> to record.</p>
+        <td><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> to record.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordException_" data-uid="LambdaSharp.ALambdaFunction.RecordException*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_RecordException_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordException(System.Exception)">RecordException(Exception)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">RecordException(Exception)</a> method is only invoked when Lambda function <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ErrorReporter</a> instance
-has not yet been initialized of if an exception occurred while invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">RecordErrorReport(ErrorReport)</a>.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">RecordException(Exception)</a> method is only invoked when Lambda function <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> instance
+has not yet been initialized of if an exception occurred while invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

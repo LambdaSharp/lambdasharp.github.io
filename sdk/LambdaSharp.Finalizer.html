@@ -78,11 +78,21 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.Finalizer.FinalizerResponseProperties.html">FinalizerResponseProperties</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a> is the abstract base class for implementing a LambdaSharp module <em>Finalizer</em>.
+The <em>Finalizer</em> is a CloudFormation custom resource that is created after all other resources in the LambdaSharp module
+have been created. The <em>Finalizer</em> is used to perform custom logic when deploying, creating, or tearing down a
+LambdaSharp module.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a> class describes the attributes of
+the LambdaSharp <em>Finalizer</em> resource. This class is always empty since the
+finalizer is the last CloudFormation resource to be created, no other
+resources can depend on it.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> class describes the LambdaSharp <em>Finalizer</em> resource properties.
+These properties are automatically set by the LambdaSharp compiler.</p>
+</section>
 </article>
           </div>
           

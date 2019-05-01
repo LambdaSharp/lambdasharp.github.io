@@ -73,13 +73,17 @@
   
   <h1 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction" class="text-break">Class ALambdaFinalizerFunction
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a> is the abstract base class for implementing a LambdaSharp module <em>Finalizer</em>.
+The <em>Finalizer</em> is a CloudFormation custom resource that is created after all other resources in the LambdaSharp module
+have been created. The <em>Finalizer</em> is used to perform custom logic when deploying, creating, or tearing down a
+LambdaSharp module.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a></div>
-    <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a>, <a class="xref" href="LambdaSharp.Finalizer.FinalizerResponseProperties.html">FinalizerResponseProperties</a>&gt;</div>
+    <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a>, <a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a>&gt;</div>
     <div class="level3"><span class="xref">ALambdaFinalizerFunction</span></div>
   </div>
   <div classs="implements">
@@ -89,22 +93,22 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.HttpClient</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.HttpClient</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.ProcessCreateResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.ProcessCreateResourceAsync(Request&lt;FinalizerProperties&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.ProcessUpdateResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.ProcessUpdateResourceAsync(Request&lt;FinalizerProperties&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.ProcessDeleteResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.ProcessDeleteResourceAsync(Request&lt;FinalizerProperties&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.ProcessMessageStreamAsync(Stream)</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.ProcessMessageStreamAsync(Stream)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;.HandleFailedInitializationAsync(Stream)</a>
+      <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;.HandleFailedInitializationAsync(Stream)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Provider">ALambdaFunction.Provider</a>
@@ -119,7 +123,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info">ALambdaFunction.Info</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ALambdaFunction.ErrorReporter</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ALambdaFunction.ErrorReportGenerator</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Logger">ALambdaFunction.Logger</a>
@@ -164,7 +168,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">ALambdaFunction.RecordErrorReport(ErrorReport)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
@@ -204,17 +208,58 @@
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaFinalizerFunction : ALambdaCustomResourceFunction&lt;FinalizerRequestProperties, FinalizerResponseProperties&gt;, ILambdaLogLevelLogger</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaFinalizerFunction : ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;, ILambdaLogLevelLogger</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction__ctor_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.#ctor*"></a>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction__ctor" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.#ctor">ALambdaFinalizerFunction()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a> instance using the default
+implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaFinalizerFunction()</code></pre>
+  </div>
+  <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction__ctor_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.#ctor*"></a>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaFinalizerFunction(ILambdaFunctionDependencyProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a> instance using a
+custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaFinalizerFunction(ILambdaFunctionDependencyProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.CreateDeployment*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_LambdaSharp_Finalizer_FinalizerRequestProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.CreateDeployment(LambdaSharp.Finalizer.FinalizerRequestProperties)">CreateDeployment(FinalizerRequestProperties)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_LambdaSharp_Finalizer_FinalizerProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.CreateDeployment(LambdaSharp.Finalizer.FinalizerProperties)">CreateDeployment(FinalizerProperties)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html#LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_LambdaSharp_Finalizer_FinalizerProperties_">CreateDeployment(FinalizerProperties)</a> method is invoked when the LambdaSharp module is first created.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;string&gt; CreateDeployment(FinalizerRequestProperties request)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task CreateDeployment(FinalizerProperties request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,49 +272,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a></td>
+        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></td>
         <td><span class="parametername">request</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_DeleteDeployment_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.DeleteDeployment*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_DeleteDeployment_LambdaSharp_Finalizer_FinalizerRequestProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.DeleteDeployment(LambdaSharp.Finalizer.FinalizerRequestProperties)">DeleteDeployment(FinalizerRequestProperties)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task DeleteDeployment(FinalizerRequestProperties current)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a></td>
-        <td><span class="parametername">current</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> instance with the new deployment information.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -284,17 +290,61 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_DeleteDeployment_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.DeleteDeployment*"></a>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_DeleteDeployment_LambdaSharp_Finalizer_FinalizerProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.DeleteDeployment(LambdaSharp.Finalizer.FinalizerProperties)">DeleteDeployment(FinalizerProperties)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html#LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_LambdaSharp_Finalizer_FinalizerProperties_">CreateDeployment(FinalizerProperties)</a> method is invoked when the LambdaSharp module is being torn down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task DeleteDeployment(FinalizerProperties current)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></td>
+        <td><span class="parametername">current</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> instance with the current deployment information.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessCreateResourceAsync_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessCreateResourceAsync*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerRequestProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerRequestProperties})">ProcessCreateResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</h4>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerProperties})">ProcessCreateResourceAsync(Request&lt;FinalizerProperties&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerResponseProperties&gt;&gt; ProcessCreateResourceAsync(Request&lt;FinalizerRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessCreateResourceAsync(Request&lt;FinalizerProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -307,7 +357,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a>&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a>&gt;</td>
         <td><span class="parametername">request</span></td>
         <td></td>
       </tr>
@@ -323,20 +373,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerResponseProperties.html">FinalizerResponseProperties</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerRequestProperties, LambdaSharp.Finalizer.FinalizerResponseProperties&gt;.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerRequestProperties&gt;)</span></div>
+  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerProperties, LambdaSharp.Finalizer.FinalizerAttributes&gt;.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerProperties&gt;)</span></div>
+  <h5 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
+</div>
   <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessDeleteResourceAsync_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessDeleteResourceAsync*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerRequestProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerRequestProperties})">ProcessDeleteResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</h4>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerProperties})">ProcessDeleteResourceAsync(Request&lt;FinalizerProperties&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerResponseProperties&gt;&gt; ProcessDeleteResourceAsync(Request&lt;FinalizerRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessDeleteResourceAsync(Request&lt;FinalizerProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -349,7 +402,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a>&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a>&gt;</td>
         <td><span class="parametername">request</span></td>
         <td></td>
       </tr>
@@ -365,20 +418,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerResponseProperties.html">FinalizerResponseProperties</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerRequestProperties, LambdaSharp.Finalizer.FinalizerResponseProperties&gt;.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerRequestProperties&gt;)</span></div>
+  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerProperties, LambdaSharp.Finalizer.FinalizerAttributes&gt;.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerProperties&gt;)</span></div>
+  <h5 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
+</div>
   <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessUpdateResourceAsync_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessUpdateResourceAsync*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerRequestProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerRequestProperties})">ProcessUpdateResourceAsync(Request&lt;FinalizerRequestProperties&gt;)</h4>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties__" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request{LambdaSharp.Finalizer.FinalizerProperties})">ProcessUpdateResourceAsync(Request&lt;FinalizerProperties&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerResponseProperties&gt;&gt; ProcessUpdateResourceAsync(Request&lt;FinalizerRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessUpdateResourceAsync(Request&lt;FinalizerProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -391,7 +447,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a>&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a>&gt;</td>
         <td><span class="parametername">request</span></td>
         <td></td>
       </tr>
@@ -407,20 +463,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerResponseProperties.html">FinalizerResponseProperties</a>&gt;&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;<a class="xref" href="LambdaSharp.Finalizer.FinalizerAttributes.html">FinalizerAttributes</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerRequestProperties, LambdaSharp.Finalizer.FinalizerResponseProperties&gt;.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerRequestProperties&gt;)</span></div>
+  <div><span class="xref">LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;LambdaSharp.Finalizer.FinalizerProperties, LambdaSharp.Finalizer.FinalizerAttributes&gt;.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request&lt;LambdaSharp.Finalizer.FinalizerProperties&gt;)</span></div>
+  <h5 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request_LambdaSharp_Finalizer_FinalizerProperties___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
+</div>
   <a id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_UpdateDeployment_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.UpdateDeployment*"></a>
-  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_UpdateDeployment_LambdaSharp_Finalizer_FinalizerRequestProperties_LambdaSharp_Finalizer_FinalizerRequestProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.UpdateDeployment(LambdaSharp.Finalizer.FinalizerRequestProperties,LambdaSharp.Finalizer.FinalizerRequestProperties)">UpdateDeployment(FinalizerRequestProperties, FinalizerRequestProperties)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_UpdateDeployment_LambdaSharp_Finalizer_FinalizerProperties_LambdaSharp_Finalizer_FinalizerProperties_" data-uid="LambdaSharp.Finalizer.ALambdaFinalizerFunction.UpdateDeployment(LambdaSharp.Finalizer.FinalizerProperties,LambdaSharp.Finalizer.FinalizerProperties)">UpdateDeployment(FinalizerProperties, FinalizerProperties)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html#LambdaSharp_Finalizer_ALambdaFinalizerFunction_CreateDeployment_LambdaSharp_Finalizer_FinalizerProperties_">CreateDeployment(FinalizerProperties)</a> method is invoked when the LambdaSharp module is being updated.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;string&gt; UpdateDeployment(FinalizerRequestProperties current, FinalizerRequestProperties previous)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task UpdateDeployment(FinalizerProperties next, FinalizerProperties previous)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -433,14 +493,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a></td>
-        <td><span class="parametername">current</span></td>
-        <td></td>
+        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></td>
+        <td><span class="parametername">next</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> instance with the next deployment information.</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerRequestProperties.html">FinalizerRequestProperties</a></td>
+        <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></td>
         <td><span class="parametername">previous</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> instance with the previous deployment information.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -454,8 +516,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -133,10 +133,10 @@
     // echo message back
     return WebSocketClient.PostToConnectionAsync(new PostToConnectionRequest {
         ConnectionId = CurrentRequest.RequestContext.ConnectionId,
-        Data = new MemoryStream(Encoding.UTF8.GetBytes(SerializeJson(new Message {
+        Data = SerializeJson(new Message {
             From = request.From,
             Text = request.Text
-        }))
+        }).ToStream()
     });
 }
 </code></pre>

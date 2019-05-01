@@ -77,16 +77,30 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="LambdaSharp.ErrorReports.ErrorReport.html">ErrorReport</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.ErrorReports.ErrorReporter.html">ErrorReporter</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.ErrorReports.ErrorReportExceptionInfo.html">ErrorReportExceptionInfo</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.ErrorReports.ErrorReportStackFrame.html">ErrorReportStackFrame</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.ErrorReports.ErrorReportStackTrace.html">ErrorReportStackTrace</a></h4>
-      <section></section>
+      <h4><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> class defines a structured Lambda log entry
+for runtime errors and warnings.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportExceptionInfo.html">LambdaErrorReportExceptionInfo</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportExceptionInfo.html">LambdaErrorReportExceptionInfo</a> class describes a runtime exception.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> class is used to create
+<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances. Each Lambda function is
+initialized with an instance of <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a>
+class using its configuration and runtime settings.
+Use the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> property to access
+the initialized <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance in the
+Lambda function.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html">LambdaErrorReportStackFrame</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html">LambdaErrorReportStackFrame</a> class describes an execution stack frame.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackTrace.html">LambdaErrorReportStackTrace</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackTrace.html">LambdaErrorReportStackTrace</a> class describes an exception trace, which
+includes information about the exception and the stack frames between where the exception
+was thrown and where it was caught.</p>
+</section>
 </article>
           </div>
           

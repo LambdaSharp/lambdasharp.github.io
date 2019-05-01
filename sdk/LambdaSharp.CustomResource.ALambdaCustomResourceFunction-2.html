@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;
+    <title>Class ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;
    | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;
+    <meta name="title" content="Class ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;
    | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
@@ -71,15 +71,23 @@
             <article class="content wrap" id="_content" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2">
   
   
-  <h1 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2" class="text-break">Class ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;
+  <h1 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2" class="text-break">Class ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a> is the abstract base class for
+handling custom resources in <a href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a>. This class takes
+care of handling the communication protocol with the AWS CloudFormation service. Depending on the requested operation, the base class invokes either
+<a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessCreateResourceAsync(Request&lt;TProperties&gt;)</a>,
+<a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessUpdateResourceAsync(Request&lt;TProperties&gt;)</a>,
+or <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessDeleteResourceAsync(Request&lt;TProperties&gt;)</a>.
+In case of failure, the AWS CloudFormation service is automatically notified to avoid prolonged timeout errors during a
+CloudFormation stack operation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="LambdaSharp.ALambdaFunction.html">ALambdaFunction</a></div>
-    <div class="level2"><span class="xref">ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;</span></div>
+    <div class="level2"><span class="xref">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</span></div>
       <div class="level3"><a class="xref" href="LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a></div>
   </div>
   <div classs="implements">
@@ -101,7 +109,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info">ALambdaFunction.Info</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ALambdaFunction.ErrorReporter</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ALambdaFunction.ErrorReportGenerator</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Logger">ALambdaFunction.Logger</a>
@@ -140,7 +148,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">ALambdaFunction.RecordErrorReport(ErrorReport)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
@@ -180,7 +188,7 @@
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt; : ALambdaFunction, ILambdaLogLevelLogger</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt; : ALambdaFunction, ILambdaLogLevelLogger</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -192,19 +200,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TRequestProperties</span></td>
-        <td></td>
+        <td><span class="parametername">TProperties</span></td>
+        <td><p>The request properties for the custom resource.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="parametername">TResponseProperties</span></td>
-        <td></td>
+        <td><span class="parametername">TAttributes</span></td>
+        <td><p>The response attributes for the custom resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2__ctor_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.#ctor*"></a>
+  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2__ctor" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.#ctor">ALambdaCustomResourceFunction()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a> instance using the default
+implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaCustomResourceFunction()</code></pre>
+  </div>
+  <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2__ctor_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.#ctor*"></a>
+  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaCustomResourceFunction(ILambdaFunctionDependencyProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a> instance using a
+custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ALambdaCustomResourceFunction(ILambdaFunctionDependencyProvider provider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
+        <td><span class="parametername">provider</span></td>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
   <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HttpClient">HttpClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">HttpClient</a> instance used for communicating with the AWS CloudFormation service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,7 +272,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Net.Http.HttpClient</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">HttpClient</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -229,7 +281,10 @@
   </h3>
   <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync*"></a>
   <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(System.IO.Stream)">HandleFailedInitializationAsync(Stream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">HandleFailedInitializationAsync(Stream)</a> method is only invoked when an error occurs during the
+Lambda function initialization. This method can be overridden to provide custom behavior for how to handle such
+failures more gracefully.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,7 +303,8 @@
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream with the request payload.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -263,19 +319,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a></div>
+  <h5 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Regardless of what this method does. Once completed, the Lambda function exits by rethrowing the original exception
+that occurred during initialization.</p>
+</div>
   <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessCreateResourceAsync*"></a>
-  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessCreateResourceAsync(Request&lt;TRequestProperties&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessCreateResourceAsync(Request&lt;TProperties&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessCreateResourceAsync(Request&lt;TProperties&gt;)</a> method is invoked
+when AWS CloudFormation attempts to create a custom resource.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TResponseProperties&gt;&gt; ProcessCreateResourceAsync(Request&lt;TRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TAttributes&gt;&gt; ProcessCreateResourceAsync(Request&lt;TProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -288,9 +351,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TRequestProperties&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TProperties&gt;</td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The CloudFormation request instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -304,18 +368,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TResponseProperties&gt;&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TAttributes&gt;&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessDeleteResourceAsync*"></a>
-  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessDeleteResourceAsync(Request&lt;TRequestProperties&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessDeleteResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessDeleteResourceAsync(Request&lt;TProperties&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessDeleteResourceAsync(Request&lt;TProperties&gt;)</a> method is invoked
+when AWS CloudFormation attempts to delete a custom resource.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TResponseProperties&gt;&gt; ProcessDeleteResourceAsync(Request&lt;TRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TAttributes&gt;&gt; ProcessDeleteResourceAsync(Request&lt;TProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -328,9 +395,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TRequestProperties&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TProperties&gt;</td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The CloudFormation request instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -344,18 +412,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TResponseProperties&gt;&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TAttributes&gt;&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync*"></a>
   <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> method handles the communication protocol with the AWS CloudFormation service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;object&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Stream&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -370,7 +440,8 @@
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream with the request payload.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -384,20 +455,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction.ProcessMessageStreamAsync(Stream)</a></div>
+  <h5 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
+</div>
   <a id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessUpdateResourceAsync*"></a>
-  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessUpdateResourceAsync(Request&lt;TRequestProperties&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessUpdateResourceAsync(LambdaSharp.CustomResource.Request{`0})">ProcessUpdateResourceAsync(Request&lt;TProperties&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessUpdateResourceAsync(Request&lt;TProperties&gt;)</a> method is invoked
+when AWS CloudFormation attempts to update a custom resource.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TResponseProperties&gt;&gt; ProcessUpdateResourceAsync(Request&lt;TRequestProperties&gt; request)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;Response&lt;TAttributes&gt;&gt; ProcessUpdateResourceAsync(Request&lt;TProperties&gt; request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -410,9 +487,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TRequestProperties&gt;</td>
+        <td><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request</a>&lt;TProperties&gt;</td>
         <td><span class="parametername">request</span></td>
-        <td></td>
+        <td><p>The CloudFormation request instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -426,8 +504,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TResponseProperties&gt;&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response</a>&lt;TAttributes&gt;&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

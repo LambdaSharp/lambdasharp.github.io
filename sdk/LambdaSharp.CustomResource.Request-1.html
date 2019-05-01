@@ -73,7 +73,10 @@
   
   <h1 id="LambdaSharp_CustomResource_Request_1" data-uid="LambdaSharp.CustomResource.Request`1" class="text-break">Class Request&lt;TProperties&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request&lt;TProperties&gt;</a> is a generic class that
+wraps the <code data-dev-comment-type="typeparamref" class="typeparamref">TProperties</code> request with additional
+properties sent by the AWS CloudFormation service.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,7 +100,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TProperties</span></td>
-        <td></td>
+        <td><p>The request properties for the custom resource.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -105,7 +109,11 @@
   </h3>
   <a id="LambdaSharp_CustomResource_Request_1_LogicalResourceId_" data-uid="LambdaSharp.CustomResource.Request`1.LogicalResourceId*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_LogicalResourceId" data-uid="LambdaSharp.CustomResource.Request`1.LogicalResourceId">LogicalResourceId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The template developer-chosen name (logical ID) of the custom
+resource in the AWS CloudFormation template. This is provided to
+facilitate communication between the custom resource provider and
+the template developer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -128,7 +136,9 @@
   </table>
   <a id="LambdaSharp_CustomResource_Request_1_OldResourceProperties_" data-uid="LambdaSharp.CustomResource.Request`1.OldResourceProperties*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_OldResourceProperties" data-uid="LambdaSharp.CustomResource.Request`1.OldResourceProperties">OldResourceProperties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Used only for Update requests. Contains the resource properties
+that were declared previous to the update request.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -151,7 +161,9 @@
   </table>
   <a id="LambdaSharp_CustomResource_Request_1_PhysicalResourceId_" data-uid="LambdaSharp.CustomResource.Request`1.PhysicalResourceId*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_PhysicalResourceId" data-uid="LambdaSharp.CustomResource.Request`1.PhysicalResourceId">PhysicalResourceId</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A required custom resource provider-defined physical ID that is
+unique for that provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -174,7 +186,11 @@
   </table>
   <a id="LambdaSharp_CustomResource_Request_1_RequestType_" data-uid="LambdaSharp.CustomResource.Request`1.RequestType*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_RequestType" data-uid="LambdaSharp.CustomResource.Request`1.RequestType">RequestType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The request type is set by the AWS CloudFormation stack operation
+(create-stack, update-stack, or delete-stack) that was initiated
+by the template developer for the stack that contains the custom
+resource.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -197,7 +213,10 @@
   </table>
   <a id="LambdaSharp_CustomResource_Request_1_ResourceProperties_" data-uid="LambdaSharp.CustomResource.Request`1.ResourceProperties*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_ResourceProperties" data-uid="LambdaSharp.CustomResource.Request`1.ResourceProperties">ResourceProperties</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This field contains the contents of the Properties object sent by
+the template developer. Its contents are defined by the custom
+resource provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,7 +239,11 @@
   </table>
   <a id="LambdaSharp_CustomResource_Request_1_ResourceType_" data-uid="LambdaSharp.CustomResource.Request`1.ResourceType*"></a>
   <h4 id="LambdaSharp_CustomResource_Request_1_ResourceType" data-uid="LambdaSharp.CustomResource.Request`1.ResourceType">ResourceType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The template developer-chosen resource type of the custom resource
+in the AWS CloudFormation template. Custom resource type names can
+be up to 60 characters long and can include alphanumeric and the
+following characters: <code>_@-</code>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

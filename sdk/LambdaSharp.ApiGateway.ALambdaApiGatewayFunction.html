@@ -105,7 +105,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info">ALambdaFunction.Info</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ALambdaFunction.ErrorReporter</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ALambdaFunction.ErrorReportGenerator</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Logger">ALambdaFunction.Logger</a>
@@ -144,7 +144,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">ALambdaFunction.RecordErrorReport(ErrorReport)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
@@ -196,7 +196,7 @@ to process requests.</p>
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor">ALambdaApiGatewayFunction()</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -205,7 +205,7 @@ to process requests.</p>
   </div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)">ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -226,22 +226,6 @@ to process requests.</p>
         <td><a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
         <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">provider</code> is <code>null</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -297,7 +281,8 @@ satisfy its required dependencies.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -73,7 +73,11 @@
   
   <h1 id="LambdaSharp_ConfigSource_LambdaDictionarySource" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource" class="text-break">Class LambdaDictionarySource
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html">LambdaDictionarySource</a> class is an implementation of
+<a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> interface that reads configuration values from
+a collection of key-value pairs. Nested sections are represented by a '/' character
+in the configuration key.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -93,12 +97,15 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor*"></a>
-  <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">LambdaDictionarySource(IDictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">LambdaDictionarySource(IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">LambdaDictionarySource(IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a> constructor creates
+a new <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html">LambdaDictionarySource</a> instance from a collection of key-value pairs. Nested sections
+are represented by a '/' character in the configuration key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaDictionarySource(IDictionary&lt;string, string&gt; parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">public LambdaDictionarySource(IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt; parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,39 +118,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor*"></a>
-  <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_System_String_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">LambdaDictionarySource(String, IDictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaDictionarySource(string path, IDictionary&lt;string, string&gt; parameters)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">path</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>Collection of key-value pairs.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -151,11 +129,14 @@
   </h3>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_Open_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Open*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_Open_System_String_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Open(System.String)">Open(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_Open_System_String_">Open(String)</a> method returns an interface to read
+configuration values from the requested nested section. Section names
+are not case-sensitive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ILambdaConfigSource Open(string key)</code></pre>
+    <pre><code class="lang-csharp hljs">public ILambdaConfigSource Open(string name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -169,8 +150,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the nested section.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -185,13 +167,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> implementation of the nested section.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_Read_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Read*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_Read_System_String_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Read(System.String)">Read(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_Read_System_String_">Read(String)</a> method returns the configuration value
+of the specified key or <code>null</code> if the key does not exist. Configuration
+keys are not case-sensitive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -210,7 +196,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The configuration key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -225,13 +212,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The configuration value or <code>null</code> if the key does not exist.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_ReadAllKeys_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.ReadAllKeys*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_ReadAllKeys" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.ReadAllKeys">ReadAllKeys()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_ReadAllKeys">ReadAllKeys()</a> method returns all defined configuration keys.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,7 +237,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Enumeration of defined configuration keys.</p>
+</td>
       </tr>
     </tbody>
   </table>

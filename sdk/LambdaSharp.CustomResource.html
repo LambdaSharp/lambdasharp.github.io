@@ -77,16 +77,32 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TRequestProperties, TResponseProperties&gt;</a></h4>
-      <section></section>
+      <h4><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a> is the abstract base class for
+handling custom resources in <a href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a>. This class takes
+care of handling the communication protocol with the AWS CloudFormation service. Depending on the requested operation, the base class invokes either
+<a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessCreateResourceAsync(Request&lt;TProperties&gt;)</a>,
+<a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessUpdateResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessUpdateResourceAsync(Request&lt;TProperties&gt;)</a>,
+or <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessDeleteResourceAsync_LambdaSharp_CustomResource_Request__0__">ProcessDeleteResourceAsync(Request&lt;TProperties&gt;)</a>.
+In case of failure, the AWS CloudFormation service is automatically notified to avoid prolonged timeout errors during a
+CloudFormation stack operation.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request&lt;TProperties&gt;</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response&lt;TProperties&gt;</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.CustomResource.Request-1.html">Request&lt;TProperties&gt;</a> is a generic class that
+wraps the <code data-dev-comment-type="typeparamref" class="typeparamref">TProperties</code> request with additional
+properties sent by the AWS CloudFormation service.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response&lt;TAttributes&gt;</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.CustomResource.Response-1.html">Response&lt;TAttributes&gt;</a> is a generic class that
+wraps the <code data-dev-comment-type="typeparamref" class="typeparamref">TAttributes</code> response with additional
+properties expected by the AWS CloudFormation service.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="LambdaSharp.CustomResource.RequestType.html">RequestType</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.CustomResource.RequestType.html">RequestType</a> enumeration describes the CloudFormation
+operation on the custom resource.</p>
+</section>
 </article>
           </div>
           

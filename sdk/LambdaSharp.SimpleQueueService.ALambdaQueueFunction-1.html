@@ -73,7 +73,9 @@
   
   <h1 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1" class="text-break">Class ALambdaQueueFunction&lt;TMessage&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a> is the abstract base class for handling
+<a href="https://aws.amazon.com/sqs/">Amazon Simple Queue Service (SQS)</a> events.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -97,7 +99,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info">ALambdaFunction.Info</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReporter">ALambdaFunction.ErrorReporter</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ALambdaFunction.ErrorReportGenerator</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Logger">ALambdaFunction.Logger</a>
@@ -139,7 +141,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_ErrorReport_">ALambdaFunction.RecordErrorReport(ErrorReport)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
@@ -192,7 +194,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">TMessage</span></td>
-        <td></td>
+        <td><p>The SQS queue message type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -200,7 +203,9 @@
   </h3>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1__ctor_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.#ctor*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1__ctor" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.#ctor">ALambdaQueueFunction()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a> instance using the default
+implementation of <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,7 +213,9 @@
   </div>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1__ctor_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.#ctor*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1__ctor_LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.#ctor(LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider)">ALambdaQueueFunction(ILambdaQueueFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a> instance using a
+custom implementation of <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,7 +234,8 @@
       <tr>
         <td><a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
-        <td></td>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -235,7 +243,8 @@
   </h3>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_CurrentRecord_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.CurrentRecord*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_CurrentRecord" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.CurrentRecord">CurrentRecord</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_CurrentRecord">CurrentRecord</a> property holds the SQS queue message record that is currently being processed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -252,13 +261,19 @@
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.SQSEvents.SQSEvent.SQSMessage</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.SQSEvents.SQSEvent.SQSMessage</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_CurrentRecord_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a>. Otherwise, it returns <code>null</code>.</p>
+</div>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Provider_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.Provider*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Provider" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.Provider">Provider</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a> instance used by the Lambda function to
+satisfy its required dependencies.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,7 +290,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -283,7 +299,8 @@
   </h3>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Deserialize_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.Deserialize*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Deserialize_System_String_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.Deserialize(System.String)">Deserialize(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Deserialize_System_String_">Deserialize(String)</a> method converts the SQS queue message from string to a typed instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -302,7 +319,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">body</span></td>
-        <td></td>
+        <td><p>The SQS queue message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -317,13 +335,19 @@
     <tbody>
       <tr>
         <td><span class="xref">TMessage</span></td>
-        <td></td>
+        <td><p>The deserialized SQS queue message.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_Deserialize_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method invokes <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_String_">DeserializeJson&lt;T&gt;(String)</a> to convert the SQS queue message string
+into a <paramtyperef name="TMessage"></paramtyperef> instance. Override this method to provide a custom message deserialization implementation.</p>
+</div>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageAsync_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageAsync__0_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageAsync(`0)">ProcessMessageAsync(TMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageAsync__0_">ProcessMessageAsync(TMessage)</a> method is invoked for every received SQS queue message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -342,7 +366,8 @@
       <tr>
         <td><span class="xref">TMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The deserialized SQS queue message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -357,17 +382,20 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> method is overridden to
+provide specific behavior for this base class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;object&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Stream&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,7 +410,8 @@
       <tr>
         <td><span class="xref">System.IO.Stream</span></td>
         <td><span class="parametername">stream</span></td>
-        <td></td>
+        <td><p>The stream with the request payload.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -396,13 +425,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction.ProcessMessageStreamAsync(Stream)</a></div>
+  <h5 id="LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_System_IO_Stream__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>

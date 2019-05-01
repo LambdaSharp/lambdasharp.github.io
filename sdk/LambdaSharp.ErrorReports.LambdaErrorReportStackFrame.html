@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ILambdaConfigSource
+    <title>Class LambdaErrorReportStackFrame
    | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILambdaConfigSource
+    <meta name="title" content="Class LambdaErrorReportStackFrame
    | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
@@ -68,53 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame">
   
   
-  <h1 id="LambdaSharp_ConfigSource_ILambdaConfigSource" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource" class="text-break">Interface ILambdaConfigSource
+  <h1 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame" class="text-break">Class LambdaErrorReportStackFrame
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> interface provide the method
-definitions for accessing configuration values and nested sections.</p>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html">LambdaErrorReportStackFrame</a> class describes an execution stack frame.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ConfigSource.html">LambdaSharp.ConfigSource</a></h6>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LambdaErrorReportStackFrame</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ErrorReports.html">LambdaSharp.ErrorReports</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_ConfigSource_ILambdaConfigSource_syntax">Syntax</h5>
+  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILambdaConfigSource</code></pre>
+    <pre><code class="lang-csharp hljs">public class LambdaErrorReportStackFrame</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
-  <a id="LambdaSharp_ConfigSource_ILambdaConfigSource_Open_" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.Open*"></a>
-  <h4 id="LambdaSharp_ConfigSource_ILambdaConfigSource_Open_System_String_" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.Open(System.String)">Open(String)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_Open_System_String_">Open(String)</a> method returns an interface to read
-configuration values from the requested nested section. Section names
-are not case-sensitive.</p>
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_ColumnNumber_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.ColumnNumber*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_ColumnNumber" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.ColumnNumber">ColumnNumber</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html#LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_ColumnNumber">ColumnNumber</a> property describes the column number in the source code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILambdaConfigSource Open(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public int? ColumnNumber { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the nested section.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -124,42 +108,22 @@ are not case-sensitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> implementation of the nested section.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Source code column number or <code>null</code> if missing.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ConfigSource_ILambdaConfigSource_Read_" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.Read*"></a>
-  <h4 id="LambdaSharp_ConfigSource_ILambdaConfigSource_Read_System_String_" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.Read(System.String)">Read(String)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_Read_System_String_">Read(String)</a> method returns the configuration value
-of the specified key or <code>null</code> if the key does not exist. Configuration
-keys are not case-sensitive.</p>
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_FileName_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.FileName*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_FileName" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.FileName">FileName</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html#LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_FileName">FileName</a> property describes the source code file name of the stack trace.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Read(string key)</code></pre>
+    <pre><code class="lang-csharp hljs">public string FileName { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The configuration key.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -170,21 +134,21 @@ keys are not case-sensitive.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The configuration value or <code>null</code> if the key does not exist.</p>
+        <td><p>Source code file name or <code>null</code> if missing..</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ConfigSource_ILambdaConfigSource_ReadAllKeys_" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.ReadAllKeys*"></a>
-  <h4 id="LambdaSharp_ConfigSource_ILambdaConfigSource_ReadAllKeys" data-uid="LambdaSharp.ConfigSource.ILambdaConfigSource.ReadAllKeys">ReadAllKeys()</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html#LambdaSharp_ConfigSource_ILambdaConfigSource_ReadAllKeys">ReadAllKeys()</a> method returns all defined configuration keys.</p>
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_LineNumber_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.LineNumber*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_LineNumber" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.LineNumber">LineNumber</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html#LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_LineNumber">LineNumber</a> property describes the line number in the source code.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;string&gt; ReadAllKeys()</code></pre>
+    <pre><code class="lang-csharp hljs">public int? LineNumber { get; set; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -194,8 +158,33 @@ keys are not case-sensitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>Enumeration of defined configuration keys.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Source code line number or <code>null</code> if missing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_MethodName_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.MethodName*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_MethodName" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.MethodName">MethodName</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html#LambdaSharp_ErrorReports_LambdaErrorReportStackFrame_MethodName">MethodName</a> property describes the method name in which the stack frame is located.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MethodName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Name of the method.</p>
 </td>
       </tr>
     </tbody>
