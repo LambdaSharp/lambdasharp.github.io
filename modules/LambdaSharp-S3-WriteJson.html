@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ILambdaExceptionFingerprinter
-   | &#955;# - Serverless .NET for AWS </title>
+    <title>LambdaSharp::S3::WriteJson | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILambdaExceptionFingerprinter
-   | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="LambdaSharp::S3::WriteJson | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,51 +66,65 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter">
-  
-  
-  <h1 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter" class="text-break">Interface ILambdaExceptionFingerprinter
-  </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a> interface is used to indicate that
-an exception type has custom fingerprinting logic. The exception fingerprint is used
-by the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance to allow a log
-aggregator to group together related errors.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Exceptions.html">LambdaSharp.Exceptions</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILambdaExceptionFingerprinter</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue_" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue*"></a>
-  <h4 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue">FingerprintValue</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue">FingerprintValue</a> property returns a deterministic fingerprint value
-that can be used to group related exceptions together.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string FingerprintValue { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The fingerprint value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lambdasharps3writejson">LambdaSharp::S3::WriteJson</h1>
+
+<p>The <code>LambdaSharp::S3::WriteJson</code> type creates a resource that writes a JSON file to an S3 bucket.</p>
+<p>On creation and update, the <code>Contents</code> property is serialized into a JSON document and written to the S3 bucket. On deletion, the JSON document is deleted from the S3 bucket.</p>
+<h2 id="using">Using</h2>
+<pre><code class="lang-yaml">Using:
+
+  - Module: LambdaSharp.S3.IO:0.5
+</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Type: LambdaSharp::S3::WriteJson
+Properties:
+  Bucket: String
+  Key: String
+  Contents: JSON
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>Bucket</code></dt>
+<dd>
+<p>The <code>Bucket</code> property specifies the destination S3 bucket name or ARN.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Contents</code></dt>
+<dd>
+<p>The <code>Contents</code> property specifies the contents of the JSON document to be written.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: Boolean</p>
+</dd>
+<dt><code>Key</code></dt>
+<dd>
+<p>The <code>Key</code> property specifies the destination key where the JSON file is written to.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: Boolean</p>
+</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><code>Url</code></dt>
+<dd>
+<p>The <code>Url</code> attribute contains the S3 URL of the bucket and key: <code>s3://bucket-name/key</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="write-a-configjson-file-that-contains-the-api-gateway-url">Write a <code>config.json</code> file that contains the API Gateway URL</h3>
+<pre><code class="lang-yaml">- Resource: MyBucket
+  Type: AWS::S3::Bucket
+
+- Resource: WriteConfigJson
+  Type: LambdaSharp::S3::WriteJson
+  Properties:
+    Bucket: !Ref MyBucket
+    Key: config.json
+    Contents:
+      Api: !Ref Module::RestApi::Url
+</code></pre>
 </article>
           </div>
           

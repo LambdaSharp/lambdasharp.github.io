@@ -73,7 +73,10 @@
   
   <h1 id="LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider" data-uid="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider" class="text-break">Interface ILambdaQueueFunctionDependencyProvider
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html">ILambdaQueueFunctionDependencyProvider</a> interface provides all the required dependencies
+for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a> instances. This interface follows the <em>Dependency Provider</em> pattern
+where all side-effecting methods and properties must be provided by an outside implementation.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,7 +112,9 @@
   </h3>
   <a id="LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_" data-uid="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___" data-uid="LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})">DeleteMessagesFromQueueAsync(String, IEnumerable&lt;(String MessageId, String ReceiptHandle)&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Delete a batch of message from an SQS queue. The Lambda function requires <code>sqs:DeleteMessageBatch</code> permission
+on the specified SQS URL.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -128,12 +133,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">queueUrl</span></td>
-        <td></td>
+        <td><p>SQS URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messages</span></td>
-        <td></td>
+        <td><p>Enumeration of <code>(string MessageId, string ReceiptHandle)</code> tuples specifying which messages to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -148,7 +155,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

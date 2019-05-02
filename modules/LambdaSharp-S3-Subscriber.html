@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Secrets | &#955;# - Serverless .NET for AWS </title>
+    <title>Module: LambdaSharp.S3.Subscriber | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Secrets | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="Module: LambdaSharp.S3.Subscriber | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,24 +67,19 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="secrets">Secrets</h1>
+<h1 id="module-lambdasharps3subscriber">Module: LambdaSharp.S3.Subscriber</h1>
 
-<p>The <code>Secrets</code> section, in the <a href="Module.html">λ# Module</a>, lists which KMS keys can be used to decrypt parameter values. The module IAM role will get the <code>mks:Decrypt</code> permission to use these keys.</p>
-<h2 id="syntax">Syntax</h2>
-<pre><code class="lang-yaml">Secrets:
-  - Secret-Alias-or-ARN
-</code></pre>
-<h2 id="examples">Examples</h2>
-<p>When KMS key is referenced by an alias, it is resolved on the account used when deploying the CloudFormation template.</p>
-<pre><code class="lang-yaml">Secrets:
-  - alias/KeyAlias
-</code></pre>
-<p>When a KMS key is referenced using an ARN, it is used as is.</p>
-<pre><code class="lang-yaml">Secrets:
-  - arn:aws:kms:us-east-1:123456789012:key/abcdef12-3456-7890-abcd-ef1234567890
-</code></pre>
-<h2 id="notes">Notes</h2>
-<p>AWS does not allow referencing the built-in KMS key for the <a href="https://aws.amazon.com/systems-manager/features/#Parameter_Store">AWS Parameter Store</a> (i.e. <code>aws/ssm</code>).</p>
+<p>Version 0.5</p>
+<h2 id="overview">Overview</h2>
+<p>The <code>LambdaSharp.S3.Subscriber</code> module defines the <code>LambdaSharp::S3::Subscription</code> resource type, which is automatically used by the λ# CLI to subscribe Lambda functions to S3 events.</p>
+<h2 id="resource-types">Resource Types</h2>
+<ol>
+<li><a href="LambdaSharp-S3-Subscription.html">LambdaSharp::S3::Subscription</a></li>
+</ol>
+<h2 id="parameters">Parameters</h2>
+<p>This module requires no parameters.</p>
+<h2 id="output-values">Output Values</h2>
+<p>This module has no output values.</p>
 </article>
           </div>
           

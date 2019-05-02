@@ -73,7 +73,11 @@
   
   <h1 id="LambdaSharp_Exceptions_LambdaRetriableException" data-uid="LambdaSharp.Exceptions.LambdaRetriableException" class="text-break">Class LambdaRetriableException
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a> class represents a runtime error that
+can be retried. If the Lambda function allows retries, this exception will be logged
+as having a <em>Warning</em> severity rather than an <em>Error</em> severity.
+See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +106,8 @@
   </h3>
   <a id="LambdaSharp_Exceptions_LambdaRetriableException__ctor_" data-uid="LambdaSharp.Exceptions.LambdaRetriableException.#ctor*"></a>
   <h4 id="LambdaSharp_Exceptions_LambdaRetriableException__ctor_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.LambdaRetriableException.#ctor(System.Exception,System.String,System.Object[])">LambdaRetriableException(Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a> instance with the specified exception message and inner exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,23 +126,27 @@
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">innerException</span></td>
-        <td></td>
+        <td><p>The inner exception instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The exception message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>Optional arguments for the exception message.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_Exceptions_LambdaRetriableException__ctor_" data-uid="LambdaSharp.Exceptions.LambdaRetriableException.#ctor*"></a>
   <h4 id="LambdaSharp_Exceptions_LambdaRetriableException__ctor_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.LambdaRetriableException.#ctor(System.String,System.Object[])">LambdaRetriableException(String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a> instance with the specified exception message and arguments.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -156,12 +165,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The exception message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>Optional arguments for the exception message.</p>
+</td>
       </tr>
     </tbody>
   </table>

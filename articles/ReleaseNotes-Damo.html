@@ -270,9 +270,9 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Value: !Sub &quot;${Module::Name} (v${Module::Version})&quot;
 </code></pre>
 <h3 id="module-inputs">Module Inputs</h3>
-<p>λ# modules can now define parameters and imports (a.k.a. cross-module references) in the <a href="../module/Module-Parameter.html"><code>Inputs</code> section</a>.</p>
+<p>λ# modules can now define parameters and imports (a.k.a. cross-module references) in the <a href="../syntax/Module-Parameter.html"><code>Inputs</code> section</a>.</p>
 <h4 id="module-parameters">Module Parameters</h4>
-<p>λ# module parameters are modelled after <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a> and support all of their attributes. See the <a href="../module/Module-Parameter.html">parameters documentation</a> for more details.</p>
+<p>λ# module parameters are modelled after <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a> and support all of their attributes. See the <a href="../syntax/Module-Parameter.html">parameters documentation</a> for more details.</p>
 <p>In addition, a λ# module parameter can associate IAM permission with its parameter value, similar to variables.</p>
 <pre><code class="lang-yaml">- Parameter: Topic
   Resource:
@@ -365,7 +365,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Memory: 128
   Timeout: 15
 </code></pre>
-<p>See <a href="../module/Module-Macro.html">macro documentation</a> for more details.</p>
+<p>See <a href="../syntax/Module-Macro.html">macro documentation</a> for more details.</p>
 <h3 id="misc">Misc</h3>
 <h4 id="alexa-source">Alexa Source</h4>
 <p>The Alexa source definition now allows expressions when setting the Alexa Skill ID.</p>

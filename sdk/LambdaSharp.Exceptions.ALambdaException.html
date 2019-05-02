@@ -73,13 +73,19 @@
   
   <h1 id="LambdaSharp_Exceptions_ALambdaException" data-uid="LambdaSharp.Exceptions.ALambdaException" class="text-break">Class ALambdaException
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.ALambdaException.html">ALambdaException</a> abstract class is the recommended base class
+for all runtime exceptions. It implements the <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue">FingerprintValue</a>
+property to create a unique fingerprint from the exception type and the unformatted exception message.
+This allows the generated <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances to be grouped together by a
+log aggregator.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Exception</span></div>
     <div class="level2"><span class="xref">ALambdaException</span></div>
+      <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a></div>
       <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a></div>
       <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a></div>
   </div>
@@ -97,7 +103,8 @@
   </h3>
   <a id="LambdaSharp_Exceptions_ALambdaException__ctor_" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor*"></a>
   <h4 id="LambdaSharp_Exceptions_ALambdaException__ctor_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor(System.Exception,System.String,System.Object[])">ALambdaException(Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a> instance with the specified exception message and inner exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -116,23 +123,27 @@
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">innerException</span></td>
-        <td></td>
+        <td><p>The inner exception instance.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The exception message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>Optional arguments for the exception message.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_Exceptions_ALambdaException__ctor_" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor*"></a>
   <h4 id="LambdaSharp_Exceptions_ALambdaException__ctor_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor(System.String,System.Object[])">ALambdaException(String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.ALambdaException.html">ALambdaException</a> instance with the specified exception message and arguments.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -151,12 +162,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The exception message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>Optional arguments for the exception message.</p>
+</td>
       </tr>
     </tbody>
   </table>

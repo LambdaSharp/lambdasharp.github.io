@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Release Notes | &#955;# - Serverless .NET for AWS </title>
+    <title>LambdaSharp::Registration::Function | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Release Notes | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="LambdaSharp::Registration::Function | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,17 +67,95 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="release-notes">Release Notes</h1>
+<h1 id="lambdasharpregistrationfunction">LambdaSharp::Registration::Function</h1>
 
-<p>λ# releases are named after <a href="https://en.wikipedia.org/wiki/List_of_ancient_Greek_philosophers">Greek philosophers</a>.</p>
-<ol>
-<li><a href="ReleaseNotes-Favorinus.html">Favorinus (v0.6-RC2) - TBD</a></li>
-<li><a href="ReleaseNotes-Eurytus.html">Eurytus (v0.5.0.3) - 2019-03-08</a></li>
-<li><a href="ReleaseNotes-Damo.html">Damo (v0.4.0.4) - 2019-01-11</a></li>
-<li><a href="ReleaseNotes-Cebes.html">Cebes (v0.3) - 2018-09-19</a></li>
-<li><a href="ReleaseNotes-Brontinus.html">Brontinus (v0.2) - 2018-08-13</a></li>
-<li><a href="ReleaseNotes-Acrion.html">Acrion (v0.1) - 2018-07-17</a></li>
-</ol>
+<p>The <code>LambdaSharp::Registration::Function</code> type creates a new or updates an existing function registration.</p>
+<h2 id="using">Using</h2>
+<blockquote>
+<p><strong>NOTE:</strong> the λ# CLI automatically adds the required <code>Using</code> statement to all modules.</p>
+</blockquote>
+<pre><code class="lang-yaml">Using:
+
+  - Module: LambdaSharp.Core:0.5
+</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Type: LambdaSharp::Registration::Function
+Properties:
+  ModuleId: String
+  FunctionId: String
+  FunctionName: String
+  FunctionLogGroupName: String
+  FunctionMaxMemory: String
+  FunctionMaxDuration: String
+  FunctionPlatform: String
+  FunctionFramework: String
+  FunctionLanguage: String
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>ModuleId</code></dt>
+<dd>
+<p>The <code>ModuleId</code> property specifies the module CloudFormation stack name.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionId</code></dt>
+<dd>
+<p>The <code>FunctionId</code> property specifies the module function ARN.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionName</code></dt>
+<dd>
+<p>The <code>FunctionName</code> property specifies the module function name.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionLogGroupName</code></dt>
+<dd>
+<p>The <code>FunctionLogGroupName</code> property specifies the module function CloudWatch log group name.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionMaxMemory</code></dt>
+<dd>
+<p>The <code>FunctionMaxMemory</code> property specifies the max memory for module function.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: Number</p>
+</dd>
+<dt><code>FunctionMaxDuration</code></dt>
+<dd>
+<p>The <code>FunctionMaxDuration</code> property specifies the max duration for module function.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: Number</p>
+</dd>
+<dt><code>FunctionPlatform</code></dt>
+<dd>
+<p>The <code>FunctionPlatform</code> property specifies the module function execution platform.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionFramework</code></dt>
+<dd>
+<p>The <code>FunctionFramework</code> property specifies the module function execution framework.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionLanguage</code></dt>
+<dd>
+<p>The <code>FunctionLanguage</code> property specifies the module function programming language.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><code>Registration</code></dt>
+<dd>
+<p>The <code>Registration</code> attribute contains the function registration ID.</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
 </article>
           </div>
           

@@ -73,7 +73,10 @@
   
   <h1 id="LambdaSharp_Exceptions_LambdaAbortException" data-uid="LambdaSharp.Exceptions.LambdaAbortException" class="text-break">Class LambdaAbortException
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a> class is used to exit a Lambda function with a processing error,
+but without reporting the error to the log aggregator. This behavior is useful for intentionally triggering
+the native retry logic of the AWS Lambda runtime without causing false-positive errors to appear in the logs.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -102,7 +105,8 @@
   </h3>
   <a id="LambdaSharp_Exceptions_LambdaAbortException__ctor_" data-uid="LambdaSharp.Exceptions.LambdaAbortException.#ctor*"></a>
   <h4 id="LambdaSharp_Exceptions_LambdaAbortException__ctor_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.LambdaAbortException.#ctor(System.String,System.Object[])">LambdaAbortException(String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a> instance with the specified exception message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -121,12 +125,14 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>The exception message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">args</span></td>
-        <td></td>
+        <td><p>Optional arguments for the exception message.</p>
+</td>
       </tr>
     </tbody>
   </table>

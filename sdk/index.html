@@ -70,7 +70,20 @@
 
 <p><img src="../images/SDK.png" alt="λ#"></p>
 <h1 id="lambdasharp-sdk">LambdaSharp SDK</h1>
-<p>The LambdaSharp assembly provides utility methods and base classes for Lambda functions.</p>
+<p>The LambdaSharp is automatically added when you use <code>lash</code> to create projects. In addition, <code>lash</code> shows a warning when the referenced LambdaSharp assembly is outdated.</p>
+<h2 id="creating-a-lambdasharp-project">Creating a LambdaSharp Project</h2>
+<p>Create a folder for your first λ# module and open it your favorite terminal application.</p>
+<p>Run the following command to create a <code>Module.yml</code> file in the current folder.</p>
+<pre><code class="lang-bash">lash new module My.FirstModule
+</code></pre>
+<p>Run the following command to create a new C# function project add it to your module.</p>
+<pre><code>lash new function MyFunction
+</code></pre>
+<p>Run the following command to build and deploy your first module to your <em>Sandbox</em> deployment tier.</p>
+<pre><code>lash deploy --tier Sandbox
+</code></pre>
+<h2 id="adding-the-lambdasharp-assembly">Adding the LambdaSharp Assembly</h2>
+<p>The LambdaSharp assembly provides base classes and utility methods for Lambda functions.</p>
 <p>The assembly is referenced automatically when adding new functions to a module using <code>lash new function</code>. A a reference can be added manually, by using the <code>dotnet</code> CLI.</p>
 <pre><code class="lang-bash">dotnet add package LambdaSharp
 </code></pre>

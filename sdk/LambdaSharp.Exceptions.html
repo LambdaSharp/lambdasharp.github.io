@@ -78,29 +78,52 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a> abstract class is used by all
+exceptions thrown by <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a>.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.ALambdaException.html">ALambdaException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.ALambdaException.html">ALambdaException</a> abstract class is the recommended base class
+for all runtime exceptions. It implements the <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue">FingerprintValue</a>
+property to create a unique fingerprint from the exception type and the unformatted exception message.
+This allows the generated <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances to be grouped together by a
+log aggregator.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a> class is used to exit a Lambda function with a processing error,
+but without reporting the error to the log aggregator. This behavior is useful for intentionally triggering
+the native retry logic of the AWS Lambda runtime without causing false-positive errors to appear in the logs.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigBadValueException.html">LambdaConfigBadValueException</a> exception is thrown when a configuration value fails to validate.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.html">LambdaConfigIllegalKeyException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.html">LambdaConfigIllegalKeyException</a> exception is thrown when an invalid configuration key is used.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html">LambdaConfigMissingKeyException</a> exception is thrown when a configuration key cannot be found and no fallback is provided.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html">LambdaConfigUnexpectedException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html">LambdaConfigUnexpectedException</a> exception is thrown when an exception occurs inside a <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> instance
+operation and the exception is not derived from <a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a>. In that case <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html">LambdaConfigUnexpectedException</a>
+exception is used to wrap the unexpected exception.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaFunctionException.html">LambdaFunctionException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaConfigValidationException.html">LambdaConfigValidationException</a> exception is thrown by the <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> validation helper methods.</p>
+</section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a> class represents a runtime error that
+can be retried. If the Lambda function allows retries, this exception will be logged
+as having a <em>Warning</em> severity rather than an <em>Error</em> severity.
+See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a></h4>
-      <section></section>
+      <section><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a> interface is used to indicate that
+an exception type has custom fingerprinting logic. The exception fingerprint is used
+by the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance to allow a log
+aggregator to group together related errors.</p>
+</section>
 </article>
           </div>
           

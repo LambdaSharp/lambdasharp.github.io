@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>LambdaSharp Module - Items | &#955;# - Serverless .NET for AWS </title>
+    <title>LambdaSharp::S3::Subscription | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Module - Items | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="LambdaSharp::S3::Subscription | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,24 +67,97 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-module---items">LambdaSharp Module - Items</h1>
+<h1 id="lambdasharps3subscription">LambdaSharp::S3::Subscription</h1>
 
-<p>The <code>Items</code> section, in the <a href="Module.html">λ# Module</a>, defines parameters, variables, resources, functions, etc.</p>
-<p><strong>Definitions</strong></p>
-<ul>
-<li><a href="Module-Condition.html">Condition</a></li>
-<li><a href="Module-Function.html">Function</a></li>
-<li><a href="Module-Import.html">Import</a></li>
-<li><a href="Module-Macro.html">Macro</a></li>
-<li><a href="Module-Mapping.html">Mapping</a></li>
-<li><a href="Module-Namespace.html">Namespace</a></li>
-<li><a href="Module-Nested.html">Nested Module</a></li>
-<li><a href="Module-Package.html">Package</a></li>
-<li><a href="Module-Parameter.html">Parameter</a></li>
-<li><a href="Module-ResourceType.html">Resource Type</a></li>
-<li><a href="Module-Resource.html">Resource</a></li>
-<li><a href="Module-Variable.html">Variable</a></li>
-</ul>
+<p>The <code>LambdaSharp.S3.Subscriber</code> module defines the <code>LambdaSharp::S3::Subscription</code> resource type, which is automatically used by the λ# CLI to subscribe Lambda functions to S3 events.</p>
+<h2 id="using">Using</h2>
+<blockquote>
+<p><strong>NOTE:</strong> the λ# CLI automatically adds the required <code>Using</code> statement when a Lambda function subscribes to S3 events.</p>
+</blockquote>
+<pre><code class="lang-yaml">Using:
+
+  - Module: LambdaSharp.S3.Subscriber:0.5
+</code></pre>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Type: LambdaSharp::S3::Subscription
+Properties:
+  Bucket: String
+  Function: String
+  Filters:
+    - FilterDefinition
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>Bucket</code></dt>
+<dd>
+<p>The <code>Bucket</code> property specifies the S3 bucket name or ARN to subscribe to.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Function</code></dt>
+<dd>
+<p>The <code>Function</code> property specifies the Lambda ARN to invoke with the events.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Filters</code></dt>
+<dd>
+<p>The <code>Filters</code> property specifies the list of filters for S3 events to subscribe to.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: List of <code>FilterDefinition</code></p>
+</dd>
+</dl>
+<h2 id="attributes">Attributes</h2>
+<dl>
+<dt><code>Result</code></dt>
+<dd>
+<p>The <code>Result</code> attribute contains the S3 URL of the bucket.</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="types">Types</h2>
+<h3 id="lambdasharps3subscriptionfilterdefinition"><code>LambdaSharp::S3::Subscription.FilterDefinition</code></h3>
+<dl>
+<dt><code>Events</code></dt>
+<dd>
+<p>The <code>Events</code> property specifies the list of events to subscribe to.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: List<string><p>
+</string></dd>
+<dt><code>Prefix</code></dt>
+<dd>
+<p>The <code>Prefix</code> property specifies a case-sensitive filter that must match the beginning of the S3 key.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Suffix</code></dt>
+<dd>
+<p>The <code>Suffix</code> property specifies a case-sensitive filter that must match the end of the S3 key.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="manually-create-an-s3-event-subscription">Manually create an S3 event subscription</h3>
+<pre><code class="lang-yaml">- Resource: MyBucket
+  Type: AWS::S3::Bucket
+
+- Function: MyFunction
+  Memory: 256
+  Timeout: 30
+
+- Resource: MyBucketSubscription
+  Type: LambdaSharp::S3::Subscription
+  Properties:
+    Bucket: !Ref MyBucket
+    Function: !RFef MyFunction
+    Filters:
+
+      - Events:
+          - s3:ObjectCreated:*
+        Prefix: inbox/
+        Suffix: .png
+</code></pre>
 </article>
           </div>
           

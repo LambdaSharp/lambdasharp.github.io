@@ -142,13 +142,12 @@ or one of the <code>Read*</code> methods.</p>
   </h3>
   <a id="LambdaSharp_LambdaConfig_Item_" data-uid="LambdaSharp.LambdaConfig.Item*"></a>
   <h4 id="LambdaSharp_LambdaConfig_Item_System_String_" data-uid="LambdaSharp.LambdaConfig.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> scoped to a sub-hierarchy of values
-by appending the given key to the current path.</p>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> scoped to a nested section of values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaConfig this[string key] { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LambdaConfig this[string name] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,8 +161,8 @@ by appending the given key to the current path.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>Key to append to current hierarchy path.</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the nested section.</p>
 </td>
       </tr>
     </tbody>
@@ -840,7 +839,7 @@ of the specified lower and upper bounds, inclusively.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Action&lt;int&gt; ValidateIsInRange(int lowerValue, int upperValues)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Action&lt;int&gt; ValidateIsInRange(int lowerValue, int upperValue)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -860,7 +859,7 @@ of the specified lower and upper bounds, inclusively.</p>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">upperValues</span></td>
+        <td><span class="parametername">upperValue</span></td>
         <td><p>Upper bound in range.</p>
 </td>
       </tr>

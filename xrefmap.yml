@@ -2068,18 +2068,24 @@ references:
   commentId: T:LambdaSharp.Exceptions.ALambdaConfigException
   fullName: LambdaSharp.Exceptions.ALambdaConfigException
   nameWithType: ALambdaConfigException
-- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String)
-  name: ALambdaConfigException(String)
-  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_System_String_
-  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String)
-  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.String)
-  nameWithType: ALambdaConfigException.ALambdaConfigException(String)
-- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String,System.Exception)
-  name: ALambdaConfigException(String, Exception)
-  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_System_String_System_Exception_
-  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String,System.Exception)
-  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.String, System.Exception)
-  nameWithType: ALambdaConfigException.ALambdaConfigException(String, Exception)
+- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.Exception,System.String,System.Object[])
+  name: ALambdaConfigException(Exception, String, Object[])
+  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.Exception,System.String,System.Object[])
+  name.vb: ALambdaConfigException(Exception, String, Object())
+  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.Exception, System.String, System.Object())
+  nameWithType: ALambdaConfigException.ALambdaConfigException(Exception, String, Object[])
+  nameWithType.vb: ALambdaConfigException.ALambdaConfigException(Exception, String, Object())
+- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String,System.Object[])
+  name: ALambdaConfigException(String, Object[])
+  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String,System.Object[])
+  name.vb: ALambdaConfigException(String, Object())
+  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.String, System.Object())
+  nameWithType: ALambdaConfigException.ALambdaConfigException(String, Object[])
+  nameWithType.vb: ALambdaConfigException.ALambdaConfigException(String, Object())
 - uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor*
   name: ALambdaConfigException
   href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_
@@ -2182,12 +2188,12 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaConfigBadValueException
   fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException
   nameWithType: LambdaConfigBadValueException
-- uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.String,System.Exception)
-  name: LambdaConfigBadValueException(String, Exception)
-  href: sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html#LambdaSharp_Exceptions_LambdaConfigBadValueException__ctor_System_String_System_Exception_
-  commentId: M:LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.String,System.Exception)
-  fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException.LambdaConfigBadValueException(System.String, System.Exception)
-  nameWithType: LambdaConfigBadValueException.LambdaConfigBadValueException(String, Exception)
+- uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.Exception,System.String)
+  name: LambdaConfigBadValueException(Exception, String)
+  href: sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html#LambdaSharp_Exceptions_LambdaConfigBadValueException__ctor_System_Exception_System_String_
+  commentId: M:LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.Exception,System.String)
+  fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException.LambdaConfigBadValueException(System.Exception, System.String)
+  nameWithType: LambdaConfigBadValueException.LambdaConfigBadValueException(Exception, String)
 - uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor*
   name: LambdaConfigBadValueException
   href: sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html#LambdaSharp_Exceptions_LambdaConfigBadValueException__ctor_
@@ -2239,12 +2245,12 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaConfigUnexpectedException
   fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException
   nameWithType: LambdaConfigUnexpectedException
-- uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.String,System.String,System.Exception)
-  name: LambdaConfigUnexpectedException(String, String, Exception)
-  href: sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html#LambdaSharp_Exceptions_LambdaConfigUnexpectedException__ctor_System_String_System_String_System_Exception_
-  commentId: M:LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.String,System.String,System.Exception)
-  fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(System.String, System.String, System.Exception)
-  nameWithType: LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(String, String, Exception)
+- uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.Exception,System.String,System.String)
+  name: LambdaConfigUnexpectedException(Exception, String, String)
+  href: sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html#LambdaSharp_Exceptions_LambdaConfigUnexpectedException__ctor_System_Exception_System_String_System_String_
+  commentId: M:LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.Exception,System.String,System.String)
+  fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(System.Exception, System.String, System.String)
+  nameWithType: LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(Exception, String, String)
 - uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor*
   name: LambdaConfigUnexpectedException
   href: sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html#LambdaSharp_Exceptions_LambdaConfigUnexpectedException__ctor_
@@ -2258,12 +2264,15 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaConfigValidationException
   fullName: LambdaSharp.Exceptions.LambdaConfigValidationException
   nameWithType: LambdaConfigValidationException
-- uid: LambdaSharp.Exceptions.LambdaConfigValidationException.#ctor(System.String)
-  name: LambdaConfigValidationException(String)
-  href: sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.html#LambdaSharp_Exceptions_LambdaConfigValidationException__ctor_System_String_
-  commentId: M:LambdaSharp.Exceptions.LambdaConfigValidationException.#ctor(System.String)
-  fullName: LambdaSharp.Exceptions.LambdaConfigValidationException.LambdaConfigValidationException(System.String)
-  nameWithType: LambdaConfigValidationException.LambdaConfigValidationException(String)
+- uid: LambdaSharp.Exceptions.LambdaConfigValidationException.#ctor(System.String,System.Object[])
+  name: LambdaConfigValidationException(String, Object[])
+  href: sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.html#LambdaSharp_Exceptions_LambdaConfigValidationException__ctor_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.LambdaConfigValidationException.#ctor(System.String,System.Object[])
+  name.vb: LambdaConfigValidationException(String, Object())
+  fullName: LambdaSharp.Exceptions.LambdaConfigValidationException.LambdaConfigValidationException(System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.LambdaConfigValidationException.LambdaConfigValidationException(System.String, System.Object())
+  nameWithType: LambdaConfigValidationException.LambdaConfigValidationException(String, Object[])
+  nameWithType.vb: LambdaConfigValidationException.LambdaConfigValidationException(String, Object())
 - uid: LambdaSharp.Exceptions.LambdaConfigValidationException.#ctor*
   name: LambdaConfigValidationException
   href: sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.html#LambdaSharp_Exceptions_LambdaConfigValidationException__ctor_
@@ -2271,31 +2280,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Exceptions.LambdaConfigValidationException.LambdaConfigValidationException
   nameWithType: LambdaConfigValidationException.LambdaConfigValidationException
-- uid: LambdaSharp.Exceptions.LambdaFunctionException
-  name: LambdaFunctionException
-  href: sdk/LambdaSharp.Exceptions.LambdaFunctionException.html
-  commentId: T:LambdaSharp.Exceptions.LambdaFunctionException
-  fullName: LambdaSharp.Exceptions.LambdaFunctionException
-  nameWithType: LambdaFunctionException
-- uid: LambdaSharp.Exceptions.LambdaFunctionException.#ctor(System.String)
-  name: LambdaFunctionException(String)
-  href: sdk/LambdaSharp.Exceptions.LambdaFunctionException.html#LambdaSharp_Exceptions_LambdaFunctionException__ctor_System_String_
-  commentId: M:LambdaSharp.Exceptions.LambdaFunctionException.#ctor(System.String)
-  fullName: LambdaSharp.Exceptions.LambdaFunctionException.LambdaFunctionException(System.String)
-  nameWithType: LambdaFunctionException.LambdaFunctionException(String)
-- uid: LambdaSharp.Exceptions.LambdaFunctionException.#ctor(System.String,System.Exception)
-  name: LambdaFunctionException(String, Exception)
-  href: sdk/LambdaSharp.Exceptions.LambdaFunctionException.html#LambdaSharp_Exceptions_LambdaFunctionException__ctor_System_String_System_Exception_
-  commentId: M:LambdaSharp.Exceptions.LambdaFunctionException.#ctor(System.String,System.Exception)
-  fullName: LambdaSharp.Exceptions.LambdaFunctionException.LambdaFunctionException(System.String, System.Exception)
-  nameWithType: LambdaFunctionException.LambdaFunctionException(String, Exception)
-- uid: LambdaSharp.Exceptions.LambdaFunctionException.#ctor*
-  name: LambdaFunctionException
-  href: sdk/LambdaSharp.Exceptions.LambdaFunctionException.html#LambdaSharp_Exceptions_LambdaFunctionException__ctor_
-  commentId: Overload:LambdaSharp.Exceptions.LambdaFunctionException.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.Exceptions.LambdaFunctionException.LambdaFunctionException
-  nameWithType: LambdaFunctionException.LambdaFunctionException
 - uid: LambdaSharp.Exceptions.LambdaRetriableException
   name: LambdaRetriableException
   href: sdk/LambdaSharp.Exceptions.LambdaRetriableException.html

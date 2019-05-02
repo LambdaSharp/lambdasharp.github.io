@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ILambdaExceptionFingerprinter
-   | &#955;# - Serverless .NET for AWS </title>
+    <title>LambdaSharp Modules | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILambdaExceptionFingerprinter
-   | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="LambdaSharp Modules | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,51 +66,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter">
-  
-  
-  <h1 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter" class="text-break">Interface ILambdaExceptionFingerprinter
-  </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a> interface is used to indicate that
-an exception type has custom fingerprinting logic. The exception fingerprint is used
-by the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance to allow a log
-aggregator to group together related errors.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Exceptions.html">LambdaSharp.Exceptions</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILambdaExceptionFingerprinter</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue_" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue*"></a>
-  <h4 id="LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue" data-uid="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.FingerprintValue">FingerprintValue</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue">FingerprintValue</a> property returns a deterministic fingerprint value
-that can be used to group related exceptions together.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string FingerprintValue { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The fingerprint value.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+            <article class="content wrap" id="_content" data-uid="">
+
+<p><img src="../images/LambdaSharpLogo.png" alt="λ#"></p>
+<h1 id="lambdasharp-modules">LambdaSharp Modules</h1>
+<p>The following standard LambdaSharp modules are available to all modules.</p>
+<h2 id="lambdasharpcore">LambdaSharp.Core</h2>
+<p>This the <a href="LambdaSharp-Core.html">LambdaSharp.Core</a> module for a λ# deployment tier. It is automatically included with every module.</p>
+<h2 id="lambdasharps3io">LambdaSharp.S3.IO</h2>
+<p>The <a href="LambdaSharp-S3-IO.html">LambdaSharp.S3.IO</a> module defines resources types for writing files and unzipping archives to S3 buckets.</p>
+<h2 id="lambdasharps3subscriber">LambdaSharp.S3.Subscriber</h2>
+<p>The <a href="LambdaSharp-S3-Subscriber.html">LambdaSharp.S3.Subscriber</a> module defines a resource for subscribing to S3 bucket events. This module is automatically referenced by module with Lambda functions reacting to S3 events.</p>
+<h2 id="lambdasharptwitterquery">LambdaSharp.Twitter.Query</h2>
+<p>The <a href="LambdaSharp-Twitter-Query.html">LambdaSharp.Twitter.Query</a> module runs a Twitter query at regular intervals and sends the query results to an SNS topic, which can be listened to by a Lambda function.</p>
 </article>
           </div>
           
