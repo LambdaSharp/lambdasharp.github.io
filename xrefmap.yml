@@ -128,6 +128,36 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.ErrorReportGenerator
   nameWithType: ALambdaFunction.ErrorReportGenerator
+- uid: LambdaSharp.ALambdaFunction.FailedMessageOrigin
+  name: ALambdaFunction.FailedMessageOrigin
+  href: sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html
+  commentId: T:LambdaSharp.ALambdaFunction.FailedMessageOrigin
+  fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin
+  nameWithType: ALambdaFunction.FailedMessageOrigin
+- uid: LambdaSharp.ALambdaFunction.FailedMessageOrigin.ApiGateway
+  name: ApiGateway
+  href: sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html#LambdaSharp_ALambdaFunction_FailedMessageOrigin_ApiGateway
+  commentId: F:LambdaSharp.ALambdaFunction.FailedMessageOrigin.ApiGateway
+  fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin.ApiGateway
+  nameWithType: ALambdaFunction.FailedMessageOrigin.ApiGateway
+- uid: LambdaSharp.ALambdaFunction.FailedMessageOrigin.CloudFormation
+  name: CloudFormation
+  href: sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html#LambdaSharp_ALambdaFunction_FailedMessageOrigin_CloudFormation
+  commentId: F:LambdaSharp.ALambdaFunction.FailedMessageOrigin.CloudFormation
+  fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin.CloudFormation
+  nameWithType: ALambdaFunction.FailedMessageOrigin.CloudFormation
+- uid: LambdaSharp.ALambdaFunction.FailedMessageOrigin.SNS
+  name: SNS
+  href: sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html#LambdaSharp_ALambdaFunction_FailedMessageOrigin_SNS
+  commentId: F:LambdaSharp.ALambdaFunction.FailedMessageOrigin.SNS
+  fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin.SNS
+  nameWithType: ALambdaFunction.FailedMessageOrigin.SNS
+- uid: LambdaSharp.ALambdaFunction.FailedMessageOrigin.SQS
+  name: SQS
+  href: sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html#LambdaSharp_ALambdaFunction_FailedMessageOrigin_SQS
+  commentId: F:LambdaSharp.ALambdaFunction.FailedMessageOrigin.SQS
+  fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin.SQS
+  nameWithType: ALambdaFunction.FailedMessageOrigin.SQS
 - uid: LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)
   name: FunctionHandlerAsync(Stream, ILambdaContext)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_
@@ -513,12 +543,12 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordException
   nameWithType: ALambdaFunction.RecordException
-- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)
-  name: RecordFailedMessageAsync(LambdaLogLevel, String, Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)
-  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel, System.String, System.Exception)
-  nameWithType: ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, String, Exception)
+- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)
+  name: RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel, LambdaSharp.ALambdaFunction.FailedMessageOrigin, System.String, System.Exception)
+  nameWithType: ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)
 - uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*
   name: RecordFailedMessageAsync
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_
@@ -2544,12 +2574,15 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.Log
   nameWithType: ILambdaFunctionDependencyProvider.Log
-- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)
-  name: SendMessageToQueueAsync(String, String)
-  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_
-  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)
-  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String)
-  nameWithType: ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String)
+- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name: SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
+  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name.vb: SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
+  nameWithType: ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
+  nameWithType.vb: ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync*
   name: SendMessageToQueueAsync
   href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_
@@ -2909,12 +2942,15 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.Log
   nameWithType: LambdaFunctionDependencyProvider.Log
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)
-  name: SendMessageToQueueAsync(String, String)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String)
-  nameWithType: LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String)
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name: SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  name.vb: SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
+  nameWithType: LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
+  nameWithType.vb: LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync*
   name: SendMessageToQueueAsync
   href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_

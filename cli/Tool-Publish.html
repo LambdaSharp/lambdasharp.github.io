@@ -85,21 +85,29 @@
 <dd>
 <p>(optional) Build configuration for function projects (default: &quot;Release&quot;)</p>
 </dd>
-<dt><code>--gitsha &lt;VALUE&gt;</code></dt>
+<dt><code>--git-sha &lt;VALUE&gt;</code></dt>
 <dd>
-<p>(optional) GitSha of most recent git commit (default: invoke <code>git rev-parse HEAD</code> command)</p>
+<p>(optional) Git SHA of most recent git commit (default: invoke <code>git rev-parse HEAD</code> command)</p>
 </dd>
-<dt><code> -o|--output &lt;DIRECTORY&gt;</code></dt>
+<dt><code>--git-branch &lt;VALUE&gt;</code></dt>
+<dd>
+<p>(optional) (optional) Git branch name (default: invoke <code>git rev-parse --abbrev-ref HEAD</code> command)</p>
+</dd>
+<dt><code>--output|-o  &lt;DIRECTORY&gt;</code></dt>
 <dd>
 <p>(optional) Path to output directory (default: bin)</p>
 </dd>
-<dt><code>-selector &lt;NAME&gt;</code></dt>
+<dt><code>--selector &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Selector for resolving conditional compilation choices in module</p>
 </dd>
-<dt><code>--cf-output &lt;FILE&gt;</code></dt>
+<dt><code>--cfn-output &lt;FILE&gt;</code></dt>
 <dd>
 <p>(optional) Name of generated CloudFormation template file (default: bin/cloudformation.json)</p>
+</dd>
+<dt><code>--module-version &lt;VERSION&gt;</code></dt>
+<dd>
+<p>(optional) Override the module version</p>
 </dd>
 <dt><code>--dryrun[:&lt;LEVEL&gt;]</code></dt>
 <dd>
@@ -130,7 +138,8 @@
 <p>Output:</p>
 <pre><code>LambdaSharp CLI (v0.5) - Publish LambdaSharp module
 
-Compiling module: Module.yml
+Reading module: Module.yml
+Compiling: LambdaSharp.Demo.SlackTodo (v1.0-DEV)
 =&gt; Building function RecordMessage [netcoreapp2.1, Release]
 =&gt; Building function SlackCommand [netcoreapp2.1, Release]
 =&gt; Module compilation done: C:\LambdaSharpTool\Demos\Demo\bin\cloudformation.json

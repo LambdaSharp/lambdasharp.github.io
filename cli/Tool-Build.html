@@ -108,6 +108,10 @@
 <dd>
 <p>(optional) Name of generated CloudFormation template file (default: bin/cloudformation.json)</p>
 </dd>
+<dt><code>--module-version &lt;VERSION&gt;</code></dt>
+<dd>
+<p>(optional) Override the module version</p>
+</dd>
 <dt><code>--dryrun[:&lt;LEVEL&gt;]</code></dt>
 <dd>
 <p>(optional) Generate output assets without deploying (0=everything, 1=cloudformation)</p>
@@ -137,7 +141,8 @@
 <p>Output:</p>
 <pre><code>LambdaSharp CLI (v0.5) - Build LambdaSharp module
 
-Compiling module: Module.yml
+Reading module: Module.yml
+Compiling: LambdaSharp.Demo.SlackTodo (v1.0-DEV)
 =&gt; Building function RecordMessage [netcoreapp2.1, Release]
 =&gt; Building function SlackCommand [netcoreapp2.1, Release]
 =&gt; Module compilation done: C:\LambdaSharpTool\Demos\Demo\bin\cloudformation.json
@@ -151,7 +156,8 @@ Done (finished: 1/17/2019 3:57:27 PM; duration: 00:00:21.2642565)
 <p>Output:</p>
 <pre><code>LambdaSharp CLI (v0.5) - Build LambdaSharp module
 
-Compiling module: Module.yml
+Reading module: Module.yml
+Compiling: LambdaSharp.Demo.SlackTodo (v1.0-DEV)
 =&gt; Building function RecordMessage [netcoreapp2.1, Release]
 =&gt; Building function SlackCommand [netcoreapp2.1, Release]
 =&gt; Module compilation done: C:\LambdaSharpTool\Demos\Demo\bin\cloudformation.json

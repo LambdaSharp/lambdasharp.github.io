@@ -115,7 +115,7 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
       <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__">LambdaFunctionDependencyProvider.EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_">LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String)</a>
+      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.SimpleQueueService.html">LambdaSharp.SimpleQueueService</a></h6>
@@ -187,9 +187,7 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
   </h3>
   <a id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})">DeleteMessagesFromQueueAsync(String, IEnumerable&lt;(String MessageId, String ReceiptHandle)&gt;)</h4>
-  <div class="markdown level1 summary"><p>Delete a batch of message from an SQS queue. The Lambda function requires <code>sqs:DeleteMessageBatch</code> permission
-on the specified SQS URL.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,14 +206,12 @@ on the specified SQS URL.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">queueUrl</span></td>
-        <td><p>SQS URL.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messages</span></td>
-        <td><p>Enumeration of <code>(string MessageId, string ReceiptHandle)</code> tuples specifying which messages to delete.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -230,8 +226,7 @@ on the specified SQS URL.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

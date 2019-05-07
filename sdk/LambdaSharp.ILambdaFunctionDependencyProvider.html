@@ -299,14 +299,14 @@ the Lambda function.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync*"></a>
-  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String)">SendMessageToQueueAsync(String, String)</h4>
+  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Send a message to the specified SQS queue. The Lambda function requires <code>sqs:SendMessage</code> permission
 on the specified SQS queue.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task SendMessageToQueueAsync(string queueUrl, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">Task SendMessageToQueueAsync(string queueUrl, string message, IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt; messageAttributes = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -321,13 +321,19 @@ on the specified SQS queue.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">queueUrl</span></td>
-        <td><p>A SQS queue URL.</p>
+        <td><p>The SQS queue URL.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>A message to send.</p>
+        <td><p>The message to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">messageAttributes</span></td>
+        <td><p>Optional attributes for the message.</p>
 </td>
       </tr>
     </tbody>

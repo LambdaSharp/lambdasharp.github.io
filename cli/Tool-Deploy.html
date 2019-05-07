@@ -149,6 +149,10 @@
 <dd>
 <p>(optional) Name of generated CloudFormation template file (default: bin/cloudformation.json)</p>
 </dd>
+<dt><code>--module-version &lt;VERSION&gt;</code></dt>
+<dd>
+<p>(optional) Override the module version</p>
+</dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
@@ -179,7 +183,8 @@
 <pre><code>LambdaSharp CLI (v0.5) - Deploy LambdaSharp module
 Readying module for deployment tier 'Sandbox'
 
-Compiling module: Module.yml
+Reading module: Module.yml
+Compiling: LambdaSharp.Demo.SlackTodo (v1.0-DEV)
 =&gt; Building function RecordMessage [netcoreapp2.1, Release]
 =&gt; Building function SlackCommand [netcoreapp2.1, Release]
 =&gt; Module compilation done: C:\LambdaSharpTool\Demos\Demo\bin\cloudformation.json

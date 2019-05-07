@@ -115,7 +115,7 @@ for <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"
       <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__">LambdaFunctionDependencyProvider.EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_">LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String)</a>
+      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ApiGateway.html">LambdaSharp.ApiGateway</a></h6>
@@ -221,13 +221,11 @@ for <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"
   </h3>
   <a id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, String, Byte[])</h4>
-  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection. The Lambda function requires <code>execute-api:ManageConnections</code> permission
-on the specified web-socket.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task SendMessageToWebSocketConnectionAsync(string webSocketUrl, string connectionId, byte[] messageBytes)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; SendMessageToWebSocketConnectionAsync(string webSocketUrl, string connectionId, byte[] messageBytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,20 +240,17 @@ on the specified web-socket.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">webSocketUrl</span></td>
-        <td><p>Web-socket management URL.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">connectionId</span></td>
-        <td><p>Web-socket connection ID.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">messageBytes</span></td>
-        <td><p>Array containing the messages bytes.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -269,16 +264,11 @@ on the specified web-socket.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> is used to create a <span class="xref">Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi</span> instance. The most recently created
-instance is reused if the value of <code data-dev-comment-type="paramref" class="paramref">webSocketUrl</code> matches the previously created instance.</p>
-</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>

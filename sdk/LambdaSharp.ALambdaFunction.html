@@ -1149,15 +1149,15 @@ has not yet been initialized of if an exception occurred while invoking <a class
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_">RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</a> method is invoked when a permanent
+  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a> method is invoked when a permanent
 failure is detected during processing and the message should be sent to the dead-letter queue if possible. If no
 dead-letter queue is configured, the original exception is rethrown instead.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task RecordFailedMessageAsync(LambdaLogLevel level, string message, Exception exception)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task RecordFailedMessageAsync(LambdaLogLevel level, ALambdaFunction.FailedMessageOrigin origin, string message, Exception exception)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1173,6 +1173,12 @@ dead-letter queue is configured, the original exception is rethrown instead.</p>
         <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
         <td><p>The severity level of the failure. This should either be <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_ERROR">ERROR</a> or <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_FATAL">FATAL</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ALambdaFunction.FailedMessageOrigin.html">ALambdaFunction.FailedMessageOrigin</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td><p>The origin of the failed message.</p>
 </td>
       </tr>
       <tr>
@@ -1296,9 +1302,7 @@ for initialization. This is the first of three methods that are invoked to initi
   </h3>
   <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"><p>Log a message wit the given severity level. The <code>format</code> string is used to create a unique signature for errors.
-Therefore, any error information that varies between occurrences should be provided in the <code>arguments</code> parameter.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1317,32 +1321,25 @@ Therefore, any error information that varies between occurrences should be provi
       <tr>
         <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
-        <td><p>The severity level of the log message. See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
-        <td><p>Optional exception to log. The exception is logged with its description and stacktrace. This parameter can be <code>null</code>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">arguments</span></td>
-        <td><p>Optional arguments for the <code>format</code> parameter.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Nothing is logged if both <code data-dev-comment-type="paramref" class="paramref">format</code> and <code data-dev-comment-type="paramref" class="paramref">exception</code> are null.</p>
-</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>

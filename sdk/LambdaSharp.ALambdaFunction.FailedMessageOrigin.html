@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Module: LambdaSharp.S3.Subscriber | &#955;# - Serverless .NET for AWS </title>
+    <title>Enum ALambdaFunction.FailedMessageOrigin
+   | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Module: LambdaSharp.S3.Subscriber | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="Enum ALambdaFunction.FailedMessageOrigin
+   | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,20 +68,53 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="module-lambdasharps3subscriber">Module: LambdaSharp.S3.Subscriber</h1>
-
-<p><em>Version:</em> 0.6-RC3</p>
-<h2 id="overview">Overview</h2>
-<p>The <code>LambdaSharp.S3.Subscriber</code> module defines the <code>LambdaSharp::S3::Subscription</code> resource type, which is automatically used by the λ# CLI to subscribe Lambda functions to S3 events.</p>
-<h2 id="resource-types">Resource Types</h2>
-<ol>
-<li><a href="LambdaSharp-S3-Subscription.html">LambdaSharp::S3::Subscription</a></li>
-</ol>
-<h2 id="parameters">Parameters</h2>
-<p>This module requires no parameters.</p>
-<h2 id="output-values">Output Values</h2>
-<p>This module has no output values.</p>
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.ALambdaFunction.FailedMessageOrigin">
+  
+  
+  <h1 id="LambdaSharp_ALambdaFunction_FailedMessageOrigin" data-uid="LambdaSharp.ALambdaFunction.FailedMessageOrigin" class="text-break">Enum ALambdaFunction.FailedMessageOrigin
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.FailedMessageOrigin.html">ALambdaFunction.FailedMessageOrigin</a> describes the origin of the failed message. The origin determines how
+the failed message will be retried.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
+  <h5 id="LambdaSharp_ALambdaFunction_FailedMessageOrigin_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum FailedMessageOrigin</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="LambdaSharp_ALambdaFunction_FailedMessageOrigin_ApiGateway">ApiGateway</td>
+        <td><p>The message originated from the API Gateway service.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="LambdaSharp_ALambdaFunction_FailedMessageOrigin_CloudFormation">CloudFormation</td>
+        <td><p>The message originated from the CloudFormation service.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="LambdaSharp_ALambdaFunction_FailedMessageOrigin_SNS">SNS</td>
+        <td><p>The message originated from the Simple Notification Service service.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="LambdaSharp_ALambdaFunction_FailedMessageOrigin_SQS">SQS</td>
+        <td><p>The message originated from the Simple Queue Service service.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
 </article>
           </div>
           

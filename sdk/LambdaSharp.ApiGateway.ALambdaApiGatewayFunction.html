@@ -126,7 +126,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_System_String_System_Exception_">ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, String, Exception)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">ALambdaFunction.DeserializeJson&lt;T&gt;(Stream)</a>
@@ -790,9 +790,7 @@ REST API or web-socket route.</p>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync">EndInitializeFunctionAsync()</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to complet the initialization of the
-Lambda function. This is the last of three methods that are invoked to initialize the Lambda function.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -809,8 +807,7 @@ Lambda function. This is the last of three methods that are invoked to initializ
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -911,12 +908,13 @@ received request is not mapped to a method invocation.</p>
 </div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, Byte[])</h4>
-  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection.</p>
+  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection. The method returns <code>false</code> if the connection
+is gone. Other network errors throw an exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task SendMessageToWebSocketConnectionAsync(string connectionId, byte[] messageBytes)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; SendMessageToWebSocketConnectionAsync(string connectionId, byte[] messageBytes)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -952,7 +950,7 @@ received request is not mapped to a method invocation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>
@@ -960,9 +958,7 @@ received request is not mapped to a method invocation.</p>
   </table>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">StartInitializeFunctionAsync(ILambdaConfigSource)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to prepare the Lambda function
-for initialization. This is the first of three methods that are invoked to initialize the Lambda function.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -981,8 +977,7 @@ for initialization. This is the first of three methods that are invoked to initi
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
         <td><span class="parametername">envSource</span></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance from which to read the configuration settings.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -997,8 +992,7 @@ for initialization. This is the first of three methods that are invoked to initi
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

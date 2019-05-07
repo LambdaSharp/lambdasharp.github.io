@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#955;# - Favorinus (v0.6-RC2) - TBD | &#955;# - Serverless .NET for AWS </title>
+    <title>&#955;# - Favorinus (v0.6) - TBD | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#955;# - Favorinus (v0.6-RC2) - TBD | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="&#955;# - Favorinus (v0.6) - TBD | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="λ---favorinus-v06-rc2---tbd">λ# - Favorinus (v0.6-RC2) - TBD</h1>
+<h1 id="λ---favorinus-v06---tbd">λ# - Favorinus (v0.6) - TBD</h1>
 
 <blockquote>
 <p>Favorinus had extensive knowledge, combined with great oratorical powers, that raised him to eminence both in Athens and in Rome. He lived on close terms with Plutarch, with Herodes Atticus, to whom he bequeathed his library in Rome, with Demetrius the Cynic, Cornelius Fronto, Aulus Gellius, and with the emperor Hadrian. <a href="https://en.wikipedia.org/wiki/Favorinus">(Wikipedia)</a></p>
@@ -82,17 +82,30 @@
 <li>The <code>git-sha</code> is now prefixed with <code>DIRTY-</code> if the git checkout contains modified or untracked files.</li>
 </ul>
 <h3 id="λ-assemblies">λ# Assemblies</h3>
-<p>The λ# were refactored for consistency with the following breaking changes:</p>
+<p>The λ# dependencies were updated to <code>Amazon.Lambda.Core v1.1.0</code> and <code>Amazon.Lambda.Serialization.Json v1.5.0</code>. All projects need their dependencies updated to reflect this change. Otherwise, a compilation error will occur.</p>
+<p>The <code>LambdaSharp.dll</code> assembly was refactored for consistency. Classes are now organized into the following namespaces:</p>
+<ul>
+<li><code>LambdaSharp</code>: Common base classes, such as <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> and <a class="xref" href="../sdk/LambdaSharp.LambdaConfig.html">LambdaConfig</a>.</li>
+<li><code>LambdaSharp.ApiGateway</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a>.</li>
+<li><code>LambdaSharp.ConfigSource</code>: Classes for reading configuration information. Usually not required.</li>
+<li><code>LambdaSharp.CustomResource</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties,TAttributes&gt;</a>.</li>
+<li><code>LambdaSharp.ErrorReports</code>: Classes for generating error reports. Usually not required.</li>
+<li><code>LambdaSharp.Exceptions</code>: Classes for throwing exceptions. Usually not required.</li>
+<li><code>LambdaSharp.Finalizer</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a>.</li>
+<li><code>LambdaSharp.Logger</code>: Classes for basic logging. Usually not required.</li>
+<li><code>LambdaSharp.Schedule</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html">ALambdaScheduleFunction</a>.</li>
+<li><code>LambdaSharp.SimpleNotificationService</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction<tmessage></tmessage></a>.</li>
+<li><code>LambdaSharp.SimpleQueueService</code>: Classes relating to [ALambdaQueueFunction<tmessage><code>](xref:LambdaSharp.SimpleQueueService.ALambdaQueueFunction</code>1).</tmessage></li>
+</ul>
+<p>Other functional changes include:</p>
 <ul>
 <li>The <code>RequestId</code> property in <code>ALambdaFunction</code> was replaced by the more generic <code>CurrentContext</code> property. Old code needs to be updated to use <code>CurrentContext.AwsRequestId</code> instead.</li>
-<li>The <code>ALambdaTopicFunction&lt;TMessage&gt;</code> base class was moved to the <code>LambdaSharp.SimpleNotificationService</code> namespace.</li>
-<li>The <code>ALambdaApiGatewayFunction</code> was renamed to <code>ALambdaAPIGatewayFunction</code> and moved to the <code>LambdaSharp.APIGateway</code> namespace.</li>
 <li>The <code>ILambdaContext context</code> parameter was removed in favor of the <code>CurrentContext</code> property.</li>
 <li>Methods starting with <code>HandleXYZ</code> were renamed to <code>ProcessXYZ</code> for consistency.</li>
 </ul>
 <h2 id="new-λ-module-features">New λ# Module Features</h2>
 <h3 id="api-gateway-net">API Gateway .NET</h3>
-<p>The <code>Api</code> event-source now supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaAPIGatewayFunction</code>.</p>
+<p>The <code>Api</code> event-source now supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
 <pre><code class="lang-yaml">- Function: MyFunction
   Memory: 256
   Timeout: 30
@@ -118,7 +131,7 @@
 }
 </code></pre>
 <h3 id="websockets-net">WebSockets .NET</h3>
-<p>A new <code>WebSocket</code> event-source is now supported. Similar to the <code>Api</code> event-source, <code>WebSocket</code> supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway v2. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway v2. Otherwise, it will be configured for bidirectional communication. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaAPIGatewayFunction</code>.</p>
+<p>A new <code>WebSocket</code> event-source is now supported. Similar to the <code>Api</code> event-source, <code>WebSocket</code> supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway v2. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway v2. Otherwise, it will be configured for bidirectional communication. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
 <pre><code class="lang-yaml">- Function: MessageFunction
   Memory: 256
   Timeout: 30
@@ -127,7 +140,7 @@
     - WebSocket: send
       Invoke: SendMessageAsync
 </code></pre>
-<p>The target method can now be implemented in a straightforward way, without requiring deserializing or validation. The method uses the <code>WebSocketClient</code> property, which is inherited from the base class. The <code>WebSocketClient</code> returns the <code>IAmazonApiGatewayManagementApi</code> instance when <code>ALambdaAPIGateway</code> was instantiated with a web-socket URL.</p>
+<p>The target method can now be implemented in a straightforward way, without requiring deserializing or validation. The method uses the <code>WebSocketClient</code> property, which is inherited from the base class. The <code>WebSocketClient</code> returns the <code>IAmazonApiGatewayManagementApi</code> instance when <code>ALambdaApiGatewayFunction</code> was instantiated with a web-socket URL.</p>
 <pre><code class="lang-csharp">public Task SendMessageAsync(Message request) {
 
     // echo message back
@@ -143,11 +156,15 @@
 <h3 id="api-gateway-cloudwatch-log">API Gateway CloudWatch Log</h3>
 <p>The API Gateway CloudWatch log is now created--and therefore, deleted--by CloudFormation.</p>
 <h2 id="new-λ-cli-features">New λ# CLI Features</h2>
+<h3 id="build-command">Build Command</h3>
+<p>The <code>--module-version</code> option was added to allow overriding the version of the module being compiled. This capability is useful in build pipelines where a script needs to set the current version number.</p>
+<p>In addition, the captured git-sha is now prepended with <code>DIRTY-</code> when there are uncommitted/untracked changes when the module is built.</p>
 <h3 id="publish-command">Publish Command</h3>
 <p>The <code>--force-publish</code> option was modified to publish all assets even even when the checksums match.</p>
 <h3 id="deploy-command">Deploy Command</h3>
 <p>All CloudFormation stacks are now tagged with <code>LambdaSharp:DeployedBy</code> to capture the identity of who deployed the stack.</p>
 <h3 id="new-command">New Command</h3>
+<p>The <code>new module</code>, <code>new function</code>, and <code>new resource</code> commands will now prompt for the name and type when omitted.</p>
 <p>The <code>new resource</code> command now also inserts a documentation link with the newly added resource declaration. In addition, if the exact resource name cannot be found, the <code>new resource</code> command will show partial matches.</p>
 <pre><code class="lang-yaml">- Resource: MyTopic
   Description: TODO - update resource description
@@ -162,7 +179,7 @@
     TopicName: String
 </code></pre>
 <h3 id="util-command">Util Command</h3>
-<p>The <code>util create-invoke-methods-schema</code> was added to help generate JSON schema from compiled methods to be used with <code>ALambdaAPIGatewayFunction</code>.</p>
+<p>The <code>util create-invoke-methods-schema</code> was added to help generate JSON schema from compiled methods to be used with <code>ALambdaApiGatewayFunction</code>.</p>
 <h3 id="list-command">List Command</h3>
 <p>The output of the <code>list</code> command was enhanced to show the module name and version.</p>
 <pre><code class="lang-bash">lash list --tier Sandbox
@@ -182,7 +199,7 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <p>The <code>init</code> command was improved to detect previous versions of a deployment tier and prompt for perform an upgrade operation, similar to the <code>config</code> command.</p>
 <h2 id="new-λ-assembly-features">New λ# Assembly Features</h2>
 <p>This release adds <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html"><code>ALambdaQueueFunction&lt;T&gt;</code></a> as base class for processing messages from SQS queues.</p>
-<p>The <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaAPIGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
+<p>The <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
 </article>
           </div>
           
