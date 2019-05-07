@@ -681,12 +681,12 @@ references:
   commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ALambdaApiGatewayFunction()
   nameWithType: ALambdaApiGatewayFunction.ALambdaApiGatewayFunction()
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)
-  name: ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ALambdaApiGatewayFunction(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)
-  nameWithType: ALambdaApiGatewayFunction.ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)
+  name: ALambdaApiGatewayFunction(ILambdaFunctionDependencyProvider)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ALambdaApiGatewayFunction(LambdaSharp.ILambdaFunctionDependencyProvider)
+  nameWithType: ALambdaApiGatewayFunction.ALambdaApiGatewayFunction(ILambdaFunctionDependencyProvider)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*
   name: ALambdaApiGatewayFunction
   href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_
@@ -863,61 +863,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync
   nameWithType: ALambdaApiGatewayFunction.ProcessProxyRequestAsync
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider
-  name: Provider
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider
-  commentId: P:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider
-  nameWithType: ALambdaApiGatewayFunction.Provider
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider*
-  name: Provider
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider_
-  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider
-  nameWithType: ALambdaApiGatewayFunction.Provider
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String,System.Byte[])
-  name: SendMessageToWebSocketConnectionAsync(String, Byte[])
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_System_String_System_Byte___
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String,System.Byte[])
-  name.vb: SendMessageToWebSocketConnectionAsync(String, Byte())
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String, System.Byte[])
-  fullName.vb: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String, System.Byte())
-  nameWithType: ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(String, Byte[])
-  nameWithType.vb: ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(String, Byte())
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync*
-  name: SendMessageToWebSocketConnectionAsync
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_
-  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync
-  nameWithType: ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  name: StartInitializeFunctionAsync(ILambdaConfigSource)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  nameWithType: ALambdaApiGatewayFunction.StartInitializeFunctionAsync(ILambdaConfigSource)
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync*
-  name: StartInitializeFunctionAsync
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_
-  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync
-  nameWithType: ALambdaApiGatewayFunction.StartInitializeFunctionAsync
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
-  name: WebSocketUrl
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl
-  commentId: P:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
-  nameWithType: ALambdaApiGatewayFunction.WebSocketUrl
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl*
-  name: WebSocketUrl
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl_
-  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl
-  nameWithType: ALambdaApiGatewayFunction.WebSocketUrl
 - uid: LambdaSharp.ApiGateway.FromBodyAttribute
   name: FromBodyAttribute
   href: sdk/LambdaSharp.ApiGateway.FromBodyAttribute.html
@@ -930,79 +875,6 @@ references:
   commentId: T:LambdaSharp.ApiGateway.FromUriAttribute
   fullName: LambdaSharp.ApiGateway.FromUriAttribute
   nameWithType: FromUriAttribute
-- uid: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider
-  name: ILambdaApiGatewayFunctionDependencyProvider
-  href: sdk/LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html
-  commentId: T:LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider
-  fullName: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider
-  nameWithType: ILambdaApiGatewayFunctionDependencyProvider
-- uid: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])
-  name: SendMessageToWebSocketConnectionAsync(String, String, Byte[])
-  href: sdk/LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte___
-  commentId: M:LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])
-  name.vb: SendMessageToWebSocketConnectionAsync(String, String, Byte())
-  fullName: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String, System.String, System.Byte[])
-  fullName.vb: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String, System.String, System.Byte())
-  nameWithType: ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(String, String, Byte[])
-  nameWithType.vb: ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(String, String, Byte())
-- uid: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync*
-  name: SendMessageToWebSocketConnectionAsync
-  href: sdk/LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_
-  commentId: Overload:LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
-  nameWithType: ILambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider
-  name: LambdaApiGatewayFunctionDependencyProvider
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html
-  commentId: T:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS,System.Func{System.String,Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi})
-  name: LambdaApiGatewayFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, Func<String, IAmazonApiGatewayManagementApi>)
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider__ctor_System_Func_System_DateTime__System_Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_Amazon_Lambda_Core_ILambdaSerializer_Amazon_KeyManagementService_IAmazonKeyManagementService_Amazon_SQS_IAmazonSQS_System_Func_System_String_Amazon_ApiGatewayManagementApi_IAmazonApiGatewayManagementApi__
-  commentId: M:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS,System.Func{System.String,Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi})
-  name.vb: LambdaApiGatewayFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, Func(Of String, IAmazonApiGatewayManagementApi))
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider(System.Func<System.DateTime>, System.Action<System.String>, LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS, System.Func<System.String, Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi>)
-  fullName.vb: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider(System.Func(Of System.DateTime), System.Action(Of System.String), LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS, System.Func(Of System.String, Amazon.ApiGatewayManagementApi.IAmazonApiGatewayManagementApi))
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, Func<String, IAmazonApiGatewayManagementApi>)
-  nameWithType.vb: LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, Func(Of String, IAmazonApiGatewayManagementApi))
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor*
-  name: LambdaApiGatewayFunctionDependencyProvider
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider__ctor_
-  commentId: Overload:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.LambdaApiGatewayFunctionDependencyProvider
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient
-  name: AmaClient
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_AmaClient
-  commentId: P:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.AmaClient
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient*
-  name: AmaClient
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_AmaClient_
-  commentId: Overload:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.AmaClient
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.AmaClient
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])
-  name: SendMessageToWebSocketConnectionAsync(String, String, Byte[])
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_System_String_System_String_System_Byte___
-  commentId: M:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String,System.String,System.Byte[])
-  name.vb: SendMessageToWebSocketConnectionAsync(String, String, Byte())
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String, System.String, System.Byte[])
-  fullName.vb: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(System.String, System.String, System.Byte())
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(String, String, Byte[])
-  nameWithType.vb: LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync(String, String, Byte())
-- uid: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync*
-  name: SendMessageToWebSocketConnectionAsync
-  href: sdk/LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.html#LambdaSharp_ApiGateway_LambdaApiGatewayFunctionDependencyProvider_SendMessageToWebSocketConnectionAsync_
-  commentId: Overload:LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
-  nameWithType: LambdaApiGatewayFunctionDependencyProvider.SendMessageToWebSocketConnectionAsync
 - uid: LambdaSharp.AwsConverters
   name: AwsConverters
   href: sdk/LambdaSharp.AwsConverters.html

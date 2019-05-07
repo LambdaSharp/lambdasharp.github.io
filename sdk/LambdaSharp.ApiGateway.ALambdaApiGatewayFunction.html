@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -96,6 +97,9 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction&lt;APIGatewayProxyRequest, APIGatewayProxyResponse&gt;.ProcessMessageStreamAsync(Stream)</a>
     </div>
     <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Provider">ALambdaFunction.Provider</a>
+    </div>
+    <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_UtcNow">ALambdaFunction.UtcNow</a>
     </div>
     <div>
@@ -121,6 +125,9 @@
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_">ALambdaFunction.FunctionHandlerAsync(Stream, ILambdaContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">ALambdaFunction.StartInitializeFunctionAsync(ILambdaConfigSource)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a>
@@ -196,7 +203,7 @@ to process requests.</p>
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor">ALambdaApiGatewayFunction()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using the default implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -204,13 +211,13 @@ to process requests.</p>
     <pre><code class="lang-csharp hljs">protected ALambdaApiGatewayFunction()</code></pre>
   </div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ApiGateway_ILambdaApiGatewayFunctionDependencyProvider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider)">ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction__ctor_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.#ctor(LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaApiGatewayFunction(ILambdaFunctionDependencyProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a> instance using a custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ALambdaApiGatewayFunction(ILambdaApiGatewayFunctionDependencyProvider provider)</code></pre>
+    <pre><code class="lang-csharp hljs">protected ALambdaApiGatewayFunction(ILambdaFunctionDependencyProvider provider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,9 +230,9 @@ to process requests.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a></td>
+        <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
-        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a>.</p>
+        <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -260,57 +267,6 @@ to process requests.</p>
   <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CurrentRequest_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessMessageAsync(APIGatewayProxyRequest)</a>. Otherwise, it returns <code>null</code>.</p>
 </div>
-  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Provider" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Provider">Provider</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a> instance used by the Lambda function to
-satisfy its required dependencies.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILambdaApiGatewayFunctionDependencyProvider Provider { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ApiGateway.ILambdaApiGatewayFunctionDependencyProvider.html">ILambdaApiGatewayFunctionDependencyProvider</a> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_WebSocketUrl" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.WebSocketUrl">WebSocketUrl</h4>
-  <div class="markdown level1 summary"><p>The URL to the web-socket management API.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string WebSocketUrl { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Web-socket URL.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort*"></a>
@@ -906,98 +862,6 @@ received request is not mapped to a method invocation.</p>
   <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The default implementation response with a 404 error.</p>
 </div>
-  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_SendMessageToWebSocketConnectionAsync_System_String_System_Byte___" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.SendMessageToWebSocketConnectionAsync(System.String,System.Byte[])">SendMessageToWebSocketConnectionAsync(String, Byte[])</h4>
-  <div class="markdown level1 summary"><p>Send a message to the specified web-socket connection. The method returns <code>false</code> if the connection
-is gone. Other network errors throw an exception.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task&lt;bool&gt; SendMessageToWebSocketConnectionAsync(string connectionId, byte[] messageBytes)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">connectionId</span></td>
-        <td><p>Web-socket connection ID.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Byte</span>[]</td>
-        <td><span class="parametername">messageBytes</span></td>
-        <td><p>Array containing the messages bytes.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">StartInitializeFunctionAsync(ILambdaConfigSource)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task StartInitializeFunctionAsync(ILambdaConfigSource envSource)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td><span class="parametername">envSource</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">ALambdaFunction.StartInitializeFunctionAsync(ILambdaConfigSource)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>

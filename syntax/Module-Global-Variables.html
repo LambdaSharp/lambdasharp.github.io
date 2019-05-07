@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -132,7 +133,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="module-api-gateway-variables">Module API Gateway Variables</h2>
+<h2 id="module-rest-api-variables">Module REST API Variables</h2>
 <p>The following resources and variables are defined when a module contains a function that uses an API Gateway source. Otherwise, these resources and variables are not defined.</p>
 <table>
 <thead>
@@ -146,32 +147,65 @@
 <tr>
 <td><code>Module::RestApi</code></td>
 <td>AWS::ApiGateway::RestApi</td>
-<td>API Gateway REST API resource</td>
-</tr>
-<tr>
-<td><code>Module::RestApi::Account</code></td>
-<td>AWS::ApiGateway::Account</td>
-<td>Account for the API Gateway REST API</td>
+<td>REST API resource</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Deployment</code></td>
 <td>AWS::ApiGateway::Deployment</td>
-<td>Deployment for the API Gateway REST API; this resource changes whenever an API resource or method is modified</td>
+<td>Deployment for the REST API; this resource changes whenever a REST API resource or method is modified</td>
 </tr>
 <tr>
-<td><code>Module::RestApi::Role</code></td>
-<td>Arn&lt;AWS::IAM::Role&gt;</td>
-<td>IAM Role used by the API Gateway REST API Account</td>
+<td><code>Module::RestApi::DomainName</code></td>
+<td>String</td>
+<td>Domain name of theREST API</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Stage</code></td>
 <td>AWS::ApiGateway::Stage</td>
-<td>Stage for deploying API Gateway REST API; the stage name is always <code>LATEST</code></td>
+<td>Stage for deploying REST API; the stage name is always <code>LATEST</code></td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Url</code></td>
 <td>String</td>
-<td>URL of the API Gateway REST API</td>
+<td>URL of the REST API</td>
+</tr>
+</tbody>
+</table>
+<h2 id="module-web-socket-api-variables">Module Web-Socket API Variables</h2>
+<p>The following resources and variables are defined when a module contains a function that uses an API Gateway V2 source. Otherwise, these resources and variables are not defined.</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Module::WebSocket</code></td>
+<td>AWS::ApiGatewayV2::Api</td>
+<td>Web-Socket API resource</td>
+</tr>
+<tr>
+<td><code>Module::WebSocket::Deployment</code></td>
+<td>AWS::ApiGatewayV2::Deployment</td>
+<td>Deployment for the Web-Socket API; this resource changes whenever an Web-Socket API resource or method is modified</td>
+</tr>
+<tr>
+<td><code>Module::WebSocket::DomainName</code></td>
+<td>String</td>
+<td>Domain name of the Web-Socket API</td>
+</tr>
+<tr>
+<td><code>Module::WebSocket::Stage</code></td>
+<td>AWS::ApiGatewayV2::Stage</td>
+<td>Stage for deploying Web-Socket API; the stage name is always <code>LATEST</code></td>
+</tr>
+<tr>
+<td><code>Module::WebSocket::Url</code></td>
+<td>String</td>
+<td>URL of the Web-Socket API</td>
 </tr>
 </tbody>
 </table>

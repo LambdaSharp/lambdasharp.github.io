@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -74,7 +75,7 @@
 </blockquote>
 <h2 id="whats-new">What's New</h2>
 <p>This release focuses on API Gateway, both for REST APIs and Web-Sockets. After building the Lambda functions, λ# analyzes the compiled assemblies to enhance the API Gateway rout definitions in CloudFormation. For example, λ# will extract the JSON schema from the target methods to create request validation rules for API Gateway. This enables API Gateway to block requests before they reach the Lambda function. In addition, λ# allows checks if the target method returns a response. If not, API Gateway will be configured to invoke the Lambda function asynchronously, providing much faster response times.</p>
-<p>In particular, the λ# CLI now uses reflection to examine the target methods for API Gateway routes</p>
+<p>In addition, there is a <a href="https://lambdasharp.github.io">new documentation site</a> that covers all aspects of λ#, including the base classes, modules, and syntax.</p>
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
 <p>The following change may impact modules created with previous releases.</p>
 <h3 id="λ-tool">λ# Tool</h3>
