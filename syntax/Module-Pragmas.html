@@ -113,27 +113,32 @@
 <tbody>
 <tr>
 <td><code>Module::DeadLetterQueue</code></td>
-<td>Expression for determining the module dead-letter queue</td>
+<td>Expression for determining the module dead-letter queue.</td>
 <td><code>!Ref LambdaSharp::DeadLetterQueue</code></td>
 </tr>
 <tr>
 <td><code>Module::DefaultSecretKey</code></td>
-<td>Expression for determining the module KMS key</td>
+<td>Expression for determining the module KMS key.</td>
 <td><code>!Ref LambdaSharp::DefaultSecretKey</code></td>
 </tr>
 <tr>
 <td><code>Module::LoggingStream</code></td>
-<td>Expression for determining the module logging stream</td>
+<td>Expression for determining the module logging stream.</td>
 <td><code>!Ref LambdaSharp::LoggingStream</code></td>
 </tr>
 <tr>
 <td><code>Module::LoggingStreamRole</code></td>
-<td>Expression for determining the module logging stream role</td>
+<td>Expression for determining the module logging stream role.</td>
 <td><code>!Ref LambdaSharp::LoggingStreamRole</code></td>
 </tr>
 <tr>
+<td><code>Module::LogRetentionInDays</code></td>
+<td>Expression for determining the number days log entries are retained for.</td>
+<td><code>30</code></td>
+</tr>
+<tr>
 <td><code>Module::WebSocket.RouteSelectionExpression</code></td>
-<td>Expression for determining the WebSocket route</td>
+<td>Expression for determining the WebSocket route.</td>
 <td><code>&quot;$request.body.action&quot;</code></td>
 </tr>
 </tbody>
