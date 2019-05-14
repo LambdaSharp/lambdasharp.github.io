@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -560,32 +559,6 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync_" data-uid="LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync" data-uid="LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync">EndInitializeFunctionAsync()</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to complet the initialization of the
-Lambda function. This is the last of three methods that are invoked to initialize the Lambda function.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task EndInitializeFunctionAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)">FunctionHandlerAsync(Stream, ILambdaContext)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_">FunctionHandlerAsync(Stream, ILambdaContext)</a> method is the entry point for the Lambda function.
@@ -711,6 +684,76 @@ using the provided <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaCo
         <td><a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a></td>
         <td><span class="parametername">config</span></td>
         <td><p>The <a class="xref" href="LambdaSharp.LambdaConfig.html">LambdaConfig</a> instance to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_InitializeEpilogueAsync_" data-uid="LambdaSharp.ALambdaFunction.InitializeEpilogueAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_InitializeEpilogueAsync" data-uid="LambdaSharp.ALambdaFunction.InitializeEpilogueAsync">InitializeEpilogueAsync()</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">InitializePrologueAsync(ILambdaConfigSource)</a> method is invoked to complet the initialization of the
+Lambda function. This is the last of three methods that are invoked to initialize the Lambda function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task InitializeEpilogueAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_InitializePrologueAsync_" data-uid="LambdaSharp.ALambdaFunction.InitializePrologueAsync*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ALambdaFunction.InitializePrologueAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">InitializePrologueAsync(ILambdaConfigSource)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">InitializePrologueAsync(ILambdaConfigSource)</a> method is invoked to prepare the Lambda function
+for initialization. This is the first of three methods that are invoked to initialize the Lambda function.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task InitializePrologueAsync(ILambdaConfigSource envSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
+        <td><span class="parametername">envSource</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance from which to read the configuration settings.</p>
 </td>
       </tr>
     </tbody>
@@ -1255,55 +1298,13 @@ dead-letter queue is configured, the original exception is rethrown instead.</p>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_" data-uid="LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_" data-uid="LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)">StartInitializeFunctionAsync(ILambdaConfigSource)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">StartInitializeFunctionAsync(ILambdaConfigSource)</a> method is invoked to prepare the Lambda function
-for initialization. This is the first of three methods that are invoked to initialize the Lambda function.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task StartInitializeFunctionAsync(ILambdaConfigSource envSource)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td><span class="parametername">envSource</span></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance from which to read the configuration settings.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>The task object representing the asynchronous operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
   <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Log a message wit the given severity level. The <code>format</code> string is used to create a unique signature for errors.
+Therefore, any error information that varies between occurrences should be provided in the <code>arguments</code> parameter.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1322,25 +1323,32 @@ for initialization. This is the first of three methods that are invoked to initi
       <tr>
         <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
-        <td></td>
+        <td><p>The severity level of the log message. See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
-        <td></td>
+        <td><p>Optional exception to log. The exception is logged with its description and stacktrace. This parameter can be <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">format</span></td>
-        <td></td>
+        <td><p>Optional message to use instead of <code>Exception.Message</code>. This parameter can be <code>null</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">arguments</span></td>
-        <td></td>
+        <td><p>Optional arguments for the <code>format</code> parameter.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Nothing is logged if both <code data-dev-comment-type="paramref" class="paramref">format</code> and <code data-dev-comment-type="paramref" class="paramref">exception</code> are null.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>

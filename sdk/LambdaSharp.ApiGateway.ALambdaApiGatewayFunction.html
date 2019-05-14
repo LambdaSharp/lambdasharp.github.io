@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -127,7 +126,7 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_">ALambdaFunction.FunctionHandlerAsync(Stream, ILambdaContext)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">ALambdaFunction.StartInitializeFunctionAsync(ILambdaConfigSource)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">ALambdaFunction.InitializePrologueAsync(ILambdaConfigSource)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a>
@@ -744,13 +743,15 @@ REST API or web-socket route.</p>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync*"></a>
-  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync">EndInitializeFunctionAsync()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_InitializeEpilogueAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync*"></a>
+  <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_InitializeEpilogueAsync" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync">InitializeEpilogueAsync()</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_">InitializePrologueAsync(ILambdaConfigSource)</a> method is invoked to complet the initialization of the
+Lambda function. This is the last of three methods that are invoked to initialize the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task EndInitializeFunctionAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Task InitializeEpilogueAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -763,12 +764,13 @@ REST API or web-socket route.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync">ALambdaFunction.EndInitializeFunctionAsync()</a></div>
+  <div><a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeEpilogueAsync">ALambdaFunction.InitializeEpilogueAsync()</a></div>
   <a id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync*"></a>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)">ProcessMessageAsync(APIGatewayProxyRequest)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessMessageAsync(APIGatewayProxyRequest)</a> method is overridden to

@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -188,7 +187,9 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
   </h3>
   <a id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})">DeleteMessagesFromQueueAsync(String, IEnumerable&lt;(String MessageId, String ReceiptHandle)&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Delete a batch of message from an SQS queue. The Lambda function requires <code>sqs:DeleteMessageBatch</code> permission
+on the specified SQS URL.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -207,12 +208,14 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">queueUrl</span></td>
-        <td></td>
+        <td><p>SQS URL.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messages</span></td>
-        <td></td>
+        <td><p>Enumeration of <code>(string MessageId, string ReceiptHandle)</code> tuples specifying which messages to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -227,7 +230,8 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

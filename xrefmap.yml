@@ -102,19 +102,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.EncryptSecretAsync
   nameWithType: ALambdaFunction.EncryptSecretAsync
-- uid: LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync
-  name: EndInitializeFunctionAsync()
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync
-  commentId: M:LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync
-  fullName: LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync()
-  nameWithType: ALambdaFunction.EndInitializeFunctionAsync()
-- uid: LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync*
-  name: EndInitializeFunctionAsync
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EndInitializeFunctionAsync_
-  commentId: Overload:LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.EndInitializeFunctionAsync
-  nameWithType: ALambdaFunction.EndInitializeFunctionAsync
 - uid: LambdaSharp.ALambdaFunction.ErrorReportGenerator
   name: ErrorReportGenerator
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator
@@ -333,6 +320,32 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.InitializeAsync
   nameWithType: ALambdaFunction.InitializeAsync
+- uid: LambdaSharp.ALambdaFunction.InitializeEpilogueAsync
+  name: InitializeEpilogueAsync()
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeEpilogueAsync
+  commentId: M:LambdaSharp.ALambdaFunction.InitializeEpilogueAsync
+  fullName: LambdaSharp.ALambdaFunction.InitializeEpilogueAsync()
+  nameWithType: ALambdaFunction.InitializeEpilogueAsync()
+- uid: LambdaSharp.ALambdaFunction.InitializeEpilogueAsync*
+  name: InitializeEpilogueAsync
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeEpilogueAsync_
+  commentId: Overload:LambdaSharp.ALambdaFunction.InitializeEpilogueAsync
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.InitializeEpilogueAsync
+  nameWithType: ALambdaFunction.InitializeEpilogueAsync
+- uid: LambdaSharp.ALambdaFunction.InitializePrologueAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
+  name: InitializePrologueAsync(ILambdaConfigSource)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_
+  commentId: M:LambdaSharp.ALambdaFunction.InitializePrologueAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
+  fullName: LambdaSharp.ALambdaFunction.InitializePrologueAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
+  nameWithType: ALambdaFunction.InitializePrologueAsync(ILambdaConfigSource)
+- uid: LambdaSharp.ALambdaFunction.InitializePrologueAsync*
+  name: InitializePrologueAsync
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializePrologueAsync_
+  commentId: Overload:LambdaSharp.ALambdaFunction.InitializePrologueAsync
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.InitializePrologueAsync
+  nameWithType: ALambdaFunction.InitializePrologueAsync
 - uid: LambdaSharp.ALambdaFunction.JsonSerializer
   name: JsonSerializer
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_JsonSerializer
@@ -569,19 +582,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.SerializeJson
   nameWithType: ALambdaFunction.SerializeJson
-- uid: LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  name: StartInitializeFunctionAsync(ILambdaConfigSource)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_LambdaSharp_ConfigSource_ILambdaConfigSource_
-  commentId: M:LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  fullName: LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync(LambdaSharp.ConfigSource.ILambdaConfigSource)
-  nameWithType: ALambdaFunction.StartInitializeFunctionAsync(ILambdaConfigSource)
-- uid: LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync*
-  name: StartInitializeFunctionAsync
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_StartInitializeFunctionAsync_
-  commentId: Overload:LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.StartInitializeFunctionAsync
-  nameWithType: ALambdaFunction.StartInitializeFunctionAsync
 - uid: LambdaSharp.ALambdaFunction.UtcNow
   name: UtcNow
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_UtcNow
@@ -824,19 +824,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CurrentRequest
   nameWithType: ALambdaApiGatewayFunction.CurrentRequest
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync
-  name: EndInitializeFunctionAsync()
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync()
-  nameWithType: ALambdaApiGatewayFunction.EndInitializeFunctionAsync()
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync*
-  name: EndInitializeFunctionAsync
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_EndInitializeFunctionAsync_
-  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync
+  name: InitializeEpilogueAsync()
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_InitializeEpilogueAsync
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync()
+  nameWithType: ALambdaApiGatewayFunction.InitializeEpilogueAsync()
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync*
+  name: InitializeEpilogueAsync
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_InitializeEpilogueAsync_
+  commentId: Overload:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync
   isSpec: "True"
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.EndInitializeFunctionAsync
-  nameWithType: ALambdaApiGatewayFunction.EndInitializeFunctionAsync
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync
+  nameWithType: ALambdaApiGatewayFunction.InitializeEpilogueAsync
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
   name: ProcessMessageAsync(APIGatewayProxyRequest)
   href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_
