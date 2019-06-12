@@ -80,6 +80,10 @@
 <dd>
 <p>(optional) Enable termination protection for the CloudFormation stack</p>
 </dd>
+<dt><code>--xray[:&lt;LEVEL&gt;]</code></dt>
+<dd>
+<p>(optional) Enable service-call tracing with AWS X-Ray for all resources in module  (0=Disabled, 1=RootModule, 2=AllModules; RootModule if LEVEL is omitted)</p>
+</dd>
 <dt><code>--force-deploy</code></dt>
 <dd>
 <p>(optional) Force module deployment</p>
@@ -124,9 +128,13 @@
 <dd>
 <p>(optional) Use a specific AWS profile from the AWS credentials file</p>
 </dd>
-<dt><code>--verbose|-V:&lt;LEVEL&gt;</code></dt>
+<dt><code>--verbose|-V[:&lt;LEVEL&gt;]</code></dt>
 <dd>
-<p>(optional) Show verbose output (0=quiet, 1=normal, 2=detailed, 3=exceptions)</p>
+<p>(optional) Show verbose output (0=Quiet, 1=Normal, 2=Detailed, 3=Exceptions; Normal if LEVEL is omitted)</p>
+</dd>
+<dt><code>--no-ansi</code></dt>
+<dd>
+<p>Disable colored ANSI terminal output</p>
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>

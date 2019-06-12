@@ -117,6 +117,9 @@
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_CurrentContext">ALambdaFunction.CurrentContext</a>
     </div>
     <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HttpClient">ALambdaFunction.HttpClient</a>
+    </div>
+    <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeAsync_LambdaSharp_LambdaConfig_">ALambdaFunction.InitializeAsync(LambdaConfig)</a>
     </div>
     <div>
@@ -148,6 +151,15 @@
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_System_Threading_Tasks_Task_">ALambdaFunction.WaitForTask(Task)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Action_System_Threading_CancellationToken_">ALambdaFunction.RunTask(Action, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_">ALambdaFunction.RunTask(Func&lt;Task&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
@@ -193,7 +205,7 @@
     <pre><code class="lang-csharp hljs">public abstract class ALambdaApiGatewayFunction : ALambdaFunction&lt;APIGatewayProxyRequest, APIGatewayProxyResponse&gt;, ILambdaLogLevelLogger</code></pre>
   </div>
   <h5 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>If the Lambda function was configured for REST API or web-socket routes with method invocations, then the
+  <div class="markdown level0 remarks"><p>If the Lambda function was configured for REST API or WebSocket routes with method invocations, then the
 Lambda function will act as a controller and route the incoming requests to the specified methods. Alternatively,
 a derived class can override <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_">ProcessProxyRequestAsync(APIGatewayProxyRequest)</a>
 to process requests.</p>
@@ -685,7 +697,7 @@ set to the specified status code and message in the response body.</p>
     &quot;message&quot;: &quot;item not found&quot;,
     &quot;requestId&quot;: &quot;123abc&quot;
 }</code></pre>
-<p>For a web-socket route, the response body contains in addition the connection ID.</p>
+<p>For a WebSocket route, the response body contains in addition the connection ID.</p>
 <pre><code>{
     &quot;message&quot;: &quot;item not found&quot;,
     &quot;requestId&quot;: &quot;123abc&quot;,
@@ -696,7 +708,7 @@ set to the specified status code and message in the response body.</p>
   <h4 id="LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_" data-uid="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String)">CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_">CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)</a> method creates the
 <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse</span> instance to report a <code>404 - Not Found</code> error for the requested
-REST API or web-socket route.</p>
+REST API or WebSocket route.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -722,7 +734,7 @@ REST API or web-socket route.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">route</span></td>
-        <td><p>The REST API or web-socket route that could not be found.</p>
+        <td><p>The REST API or WebSocket route that could not be found.</p>
 </td>
       </tr>
     </tbody>

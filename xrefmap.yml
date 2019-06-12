@@ -171,6 +171,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync
   nameWithType: ALambdaFunction.HandleFailedInitializationAsync
+- uid: LambdaSharp.ALambdaFunction.HttpClient
+  name: HttpClient
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HttpClient
+  commentId: P:LambdaSharp.ALambdaFunction.HttpClient
+  fullName: LambdaSharp.ALambdaFunction.HttpClient
+  nameWithType: ALambdaFunction.HttpClient
+- uid: LambdaSharp.ALambdaFunction.HttpClient*
+  name: HttpClient
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HttpClient_
+  commentId: Overload:LambdaSharp.ALambdaFunction.HttpClient
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.HttpClient
+  nameWithType: ALambdaFunction.HttpClient
 - uid: LambdaSharp.ALambdaFunction.Info
   name: Info
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_Info
@@ -569,6 +582,28 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync
   nameWithType: ALambdaFunction.RecordFailedMessageAsync
+- uid: LambdaSharp.ALambdaFunction.RunTask(System.Action,System.Threading.CancellationToken)
+  name: RunTask(Action, CancellationToken)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Action_System_Threading_CancellationToken_
+  commentId: M:LambdaSharp.ALambdaFunction.RunTask(System.Action,System.Threading.CancellationToken)
+  fullName: LambdaSharp.ALambdaFunction.RunTask(System.Action, System.Threading.CancellationToken)
+  nameWithType: ALambdaFunction.RunTask(Action, CancellationToken)
+- uid: LambdaSharp.ALambdaFunction.RunTask(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name: RunTask(Func<Task>, CancellationToken)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:LambdaSharp.ALambdaFunction.RunTask(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name.vb: RunTask(Func(Of Task), CancellationToken)
+  fullName: LambdaSharp.ALambdaFunction.RunTask(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: LambdaSharp.ALambdaFunction.RunTask(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  nameWithType: ALambdaFunction.RunTask(Func<Task>, CancellationToken)
+  nameWithType.vb: ALambdaFunction.RunTask(Func(Of Task), CancellationToken)
+- uid: LambdaSharp.ALambdaFunction.RunTask*
+  name: RunTask
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_
+  commentId: Overload:LambdaSharp.ALambdaFunction.RunTask
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.RunTask
+  nameWithType: ALambdaFunction.RunTask
 - uid: LambdaSharp.ALambdaFunction.SerializeJson(System.Object)
   name: SerializeJson(Object)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_
@@ -595,6 +630,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.UtcNow
   nameWithType: ALambdaFunction.UtcNow
+- uid: LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
+  name: WaitForTask(Task)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_System_Threading_Tasks_Task_
+  commentId: M:LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
+  fullName: LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
+  nameWithType: ALambdaFunction.WaitForTask(Task)
+- uid: LambdaSharp.ALambdaFunction.WaitForTask*
+  name: WaitForTask
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_
+  commentId: Overload:LambdaSharp.ALambdaFunction.WaitForTask
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.WaitForTask
+  nameWithType: ALambdaFunction.WaitForTask
 - uid: LambdaSharp.ALambdaFunction`2
   name: ALambdaFunction<TRequest, TResponse>
   href: sdk/LambdaSharp.ALambdaFunction-2.html
@@ -1270,14 +1318,6 @@ references:
   fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).HandleFailedInitializationAsync
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.HandleFailedInitializationAsync
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).HandleFailedInitializationAsync
-- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HttpClient
-  name: HttpClient
-  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient
-  commentId: F:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HttpClient
-  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.HttpClient
-  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).HttpClient
-  nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.HttpClient
-  nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).HttpClient
 - uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessCreateResourceAsync(LambdaSharp.CustomResource.Request{`0})
   name: ProcessCreateResourceAsync(Request<TProperties>)
   href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessCreateResourceAsync_LambdaSharp_CustomResource_Request__0__

@@ -118,6 +118,9 @@ CloudFormation stack operation.</p>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_CurrentContext">ALambdaFunction.CurrentContext</a>
     </div>
     <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HttpClient">ALambdaFunction.HttpClient</a>
+    </div>
+    <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeAsync_LambdaSharp_LambdaConfig_">ALambdaFunction.InitializeAsync(LambdaConfig)</a>
     </div>
     <div>
@@ -146,6 +149,15 @@ CloudFormation stack operation.</p>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_System_Threading_Tasks_Task_">ALambdaFunction.WaitForTask(Task)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Action_System_Threading_CancellationToken_">ALambdaFunction.RunTask(Action, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_">ALambdaFunction.RunTask(Func&lt;Task&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
@@ -247,32 +259,6 @@ custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDepend
         <td><a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a></td>
         <td><span class="parametername">provider</span></td>
         <td><p>Custom implementation of <a class="xref" href="LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient" data-uid="LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HttpClient">HttpClient</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">HttpClient</a> instance used for communicating with the AWS CloudFormation service.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HttpClient HttpClient</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Net.Http.HttpClient</span></td>
-        <td><p>The <a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HttpClient">HttpClient</a> instance.</p>
 </td>
       </tr>
     </tbody>

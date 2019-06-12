@@ -5,6 +5,18 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/APIGateway.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/APIGateway.html",
+          "hash": "wZw68QUyIwHnGM22WK6Afg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/FolderStructure.md",
       "output": {
         ".html": {
@@ -93,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Favorinus.html",
-          "hash": "lI9tr4rTARTe6BEu0q622g=="
+          "hash": "VV+JfmqDEPyFxvT+b98HXg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Samples.html",
-          "hash": "Uw5a8O97vQcIqzhLS9IPBQ=="
+          "hash": "GRkrJZ4u3V+o8OZwHSbEZw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +129,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/Setup.html",
-          "hash": "ZOVbE+33MBjlyKJlhNkFtA=="
+          "hash": "u0zm7Y3MsSZlyHZ/e1lDXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/VideoTutorials.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/VideoTutorials.html",
+          "hash": "KUoPDabyRVrFluGwBq+ttQ=="
         }
       },
       "is_incremental": false,
@@ -129,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "Ae4weJQiKL2ObdOZA1xZBw=="
+          "hash": "ul2StrNfRdPC/KEf4xD6EQ=="
         }
       },
       "is_incremental": false,
@@ -141,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Index.html",
-          "hash": "9O20A46XYGVMljU0v3Hetw=="
+          "hash": "IDCdwpciazmnHFC3jepUVw=="
         }
       },
       "is_incremental": false,
@@ -153,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Build.html",
-          "hash": "B2vOO6pWRKt8UnQos/f9/A=="
+          "hash": "E8pAq9y3P5Sj1/3IAjW6lg=="
         }
       },
       "is_incremental": false,
@@ -165,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Config.html",
-          "hash": "EovNNzjw/UPgqeKF0lmIRw=="
+          "hash": "YUvQFTAjWE4Gk0dBS0h03w=="
         }
       },
       "is_incremental": false,
@@ -177,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Deploy.html",
-          "hash": "YEzl++xB9dtv9b5JEA9fNA=="
+          "hash": "CLi1nc8HT+TPCnxc2LHtNA=="
         }
       },
       "is_incremental": false,
@@ -189,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Encrypt.html",
-          "hash": "ftIjie3EYl21kxIZ5//96w=="
+          "hash": "hMmIQw+clNm67j4etoO/eg=="
         }
       },
       "is_incremental": false,
@@ -201,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Info.html",
-          "hash": "/QXqBLdzRFeKYb2G7oZVUQ=="
+          "hash": "3O86k6+E6tMNpgO9aTmBmg=="
         }
       },
       "is_incremental": false,
@@ -213,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Init.html",
-          "hash": "SYSJDIw5uGyWswmAJNHs0w=="
+          "hash": "Es8P4QtEyRd95nCgUSlnkA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-List.html",
-          "hash": "CV3j1m3pPTa7qFd/+qmLAg=="
+          "hash": "KbJJu+A/L0Rre3fYlmp1Rw=="
         }
       },
       "is_incremental": false,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Publish.html",
-          "hash": "qyD1H5P7SV2nYQl1q0Kflg=="
+          "hash": "QslsrCwsN2vUmV7cPriFmw=="
         }
       },
       "is_incremental": false,
@@ -293,11 +317,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-UtilDeleteOrphanLambdaLogs.md",
+      "source_relative_path": "cli/Tool-UtilDeleteOrphanLogs.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-UtilDeleteOrphanLambdaLogs.html",
-          "hash": "TphGRvg9wVIB+QQuQjvQFw=="
+          "relative_path": "cli/Tool-UtilDeleteOrphanLogs.html",
+          "hash": "uXxvM0z5x5IwmASpGtc0tA=="
         }
       },
       "is_incremental": false,
@@ -321,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/toc.html",
-          "hash": "Kjkirnnqqz7uOsZzA1JMkw=="
+          "hash": "6nwldE5cItyomAWATBjOZw=="
         }
       },
       "is_incremental": false,
@@ -355,6 +379,17 @@
       "output": {
         "resource": {
           "relative_path": "images/CLI.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Cloud.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Cloud.png"
         }
       },
       "is_incremental": false,
@@ -443,7 +478,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "twH3QzpL4hJVT9vX8Wp5sg=="
+          "hash": "N/aekDskLWwXuYEBMF23PQ=="
         }
       },
       "is_incremental": false,
@@ -455,7 +490,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/Index.html",
-          "hash": "MLzDlpFSawcN9l1bQMFn+Q=="
+          "hash": "a1R4c00hHZrRjAu4WwPq2g=="
         }
       },
       "is_incremental": false,
@@ -467,7 +502,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "Bwk7uIXOUKm32Wa8KSELuQ=="
+          "hash": "uSUfx/HS6/MWECP2eCoO3g=="
         }
       },
       "is_incremental": false,
@@ -515,7 +550,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "vBkxVHMkyhDEEO7e91dIRg=="
+          "hash": "YMhthMMiefbSGU8Rk3yCzQ=="
         }
       },
       "is_incremental": false,
@@ -527,7 +562,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "8J6sUaiVVKGYqbfnjObDgg=="
+          "hash": "DLg2dYd9MfmxpVc8m0U8AA=="
         }
       },
       "is_incremental": false,
@@ -551,7 +586,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Unzip.html",
-          "hash": "su+CA9mbk53K/abA4/7WEg=="
+          "hash": "5ef3NV54Qf81IOqis7DfLA=="
         }
       },
       "is_incremental": false,
@@ -575,7 +610,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "AWxrFxIMj8JztYMnl3BQyg=="
+          "hash": "P400hiirslNCuSm4zG0OvA=="
         }
       },
       "is_incremental": false,
@@ -611,7 +646,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction-2.html",
-          "hash": "6SoqrmWBG7YblwFZFmbFBw=="
+          "hash": "kTohySRZcyVtR18bCq4Kyg=="
         }
       },
       "is_incremental": false,
@@ -647,7 +682,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.html",
-          "hash": "Je1DPr4ihMw4ivzdCqUJbw=="
+          "hash": "0eZ7Vh5u+ZzHaQpCjI2BMw=="
         }
       },
       "is_incremental": false,
@@ -659,7 +694,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html",
-          "hash": "15K1cE7QLW2PVxgzf0/0tQ=="
+          "hash": "iQF+7n9Pi4EGtVqYd2s44w=="
         }
       },
       "is_incremental": false,
@@ -779,7 +814,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html",
-          "hash": "oyVSCWvTigFM0YiF8rNUbQ=="
+          "hash": "CGF+2E45Z4gscK2UpiVt2g=="
         }
       },
       "is_incremental": false,
@@ -1043,7 +1078,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html",
-          "hash": "8yrVbixHVi46UBwN2mIWkA=="
+          "hash": "LWhKTNWfW/etJ3ji1m972w=="
         }
       },
       "is_incremental": false,
@@ -1175,7 +1210,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html",
-          "hash": "AO4IFc2JjowuM2kkcGLE0A=="
+          "hash": "GJwiRIu1HwTF0EeioHKpjA=="
         }
       },
       "is_incremental": false,
@@ -1211,7 +1246,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html",
-          "hash": "57doIFFL77c/mnNWwOAD+g=="
+          "hash": "9/yRulIezdLt8S4pjgx4Kg=="
         }
       },
       "is_incremental": false,
@@ -1235,7 +1270,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html",
-          "hash": "u6zEUQOghzCubWn9XwqnwQ=="
+          "hash": "Stj8h1ptqblbbgaU3QyGRA=="
         }
       },
       "is_incremental": false,
@@ -1451,7 +1486,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Function-Sources-WebSocket.html",
-          "hash": "dtJIQMYgmoBwGEahZ2Xg2A=="
+          "hash": "lwAVuc8JWOAtRSqo9S7AYA=="
         }
       },
       "is_incremental": false,
@@ -1487,7 +1522,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Global-Variables.html",
-          "hash": "Kx+TGhOrkL7CSwYMabgHiw=="
+          "hash": "bEWyJ/dp7AtDYtan7ns0Bg=="
         }
       },
       "is_incremental": false,
@@ -1733,17 +1768,18 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 71,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
@@ -1752,11 +1788,10 @@
           "total_file_count": 57,
           "skipped_file_count": 0
         },
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 73,
           "skipped_file_count": 0
         }
       }
