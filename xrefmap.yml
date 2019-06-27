@@ -32,6 +32,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.ALambdaFunction
   nameWithType: ALambdaFunction.ALambdaFunction
+- uid: LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
+  name: AddPendingTask(Task)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_AddPendingTask_System_Threading_Tasks_Task_
+  commentId: M:LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
+  fullName: LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
+  nameWithType: ALambdaFunction.AddPendingTask(Task)
+- uid: LambdaSharp.ALambdaFunction.AddPendingTask*
+  name: AddPendingTask
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_AddPendingTask_
+  commentId: Overload:LambdaSharp.ALambdaFunction.AddPendingTask
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.AddPendingTask
+  nameWithType: ALambdaFunction.AddPendingTask
 - uid: LambdaSharp.ALambdaFunction.CurrentContext
   name: CurrentContext
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_CurrentContext
@@ -630,19 +643,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.UtcNow
   nameWithType: ALambdaFunction.UtcNow
-- uid: LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
-  name: WaitForTask(Task)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_System_Threading_Tasks_Task_
-  commentId: M:LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
-  fullName: LambdaSharp.ALambdaFunction.WaitForTask(System.Threading.Tasks.Task)
-  nameWithType: ALambdaFunction.WaitForTask(Task)
-- uid: LambdaSharp.ALambdaFunction.WaitForTask*
-  name: WaitForTask
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_WaitForTask_
-  commentId: Overload:LambdaSharp.ALambdaFunction.WaitForTask
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.WaitForTask
-  nameWithType: ALambdaFunction.WaitForTask
 - uid: LambdaSharp.ALambdaFunction`2
   name: ALambdaFunction<TRequest, TResponse>
   href: sdk/LambdaSharp.ALambdaFunction-2.html
