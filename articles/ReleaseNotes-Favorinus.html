@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#955;# - Favorinus (v0.6.0.2) - 2019-06-26 | &#955;# - Serverless .NET for AWS </title>
+    <title>&#955;# - Favorinus (v0.6.0.3) - 2019-07-01 | &#955;# - Serverless .NET for AWS </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#955;# - Favorinus (v0.6.0.2) - 2019-06-26 | &#955;# - Serverless .NET for AWS ">
+    <meta name="title" content="&#955;# - Favorinus (v0.6.0.3) - 2019-07-01 | &#955;# - Serverless .NET for AWS ">
     <meta name="generator" content="docfx 2.42.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,7 +67,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="λ---favorinus-v0602---2019-06-26">λ# - Favorinus (v0.6.0.2) - 2019-06-26</h1>
+<h1 id="λ---favorinus-v0603---2019-07-01">λ# - Favorinus (v0.6.0.3) - 2019-07-01</h1>
 
 <blockquote>
 <p>Favorinus had extensive knowledge, combined with great oratorical powers, that raised him to eminence both in Athens and in Rome. He lived on close terms with Plutarch, with Herodes Atticus, to whom he bequeathed his library in Rome, with Demetrius the Cynic, Cornelius Fronto, Aulus Gellius, and with the emperor Hadrian. <a href="https://en.wikipedia.org/wiki/Favorinus">(Wikipedia)</a></p>
@@ -201,14 +201,24 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <p>This release adds <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html"><code>ALambdaQueueFunction&lt;T&gt;</code></a> as base class for processing messages from SQS queues.</p>
 <p>The <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
 <h2 id="releases">Releases</h2>
-<h3 id="v0602---2019-06-26">(v0.6.0.2) - 2019-06-26</h3>
+<h3 id="v0603---2019-07-01">(v0.6.0.3) - 2019-07-01</h3>
 <h4 id="new-features">New Features</h4>
+<ul>
+<li>Added <code>--decrypt</code> option to <code>lash encrypt</code>, which decrypts the supplied value before encrypting it again. Useful when changing secret keys.</li>
+<li>Enhanced <code>lash tier coreservices</code> to also show nested stacks, but ignore them when using either the <code>--enable</code> or <code>--disable</code> options.</li>
+</ul>
+<h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed an issue where the IAM policy for using secret keys was not created/updated before the embedded <code>DecryptionSecret</code> function was invoked, leading to a CloudFormation failure.</li>
+</ul>
+<h3 id="v0602---2019-06-26">(v0.6.0.2) - 2019-06-26</h3>
+<h4 id="new-features-1">New Features</h4>
 <ul>
 <li>Modules are now compiled with a new <code>LambdaSharpCoreServices</code> parameter that controls if a module binds to λ# Core Services.</li>
 <li>Added <code>lash tier coreservices</code> command to enable/disable the use of λ# Core Services in deployed modules.</li>
 <li>Added standard module output parameter <code>LambdaSharpTool</code> that captures the version of the λ# CLI used to build the module.</li>
 </ul>
-<h4 id="fixes">Fixes</h4>
+<h4 id="fixes-1">Fixes</h4>
 <ul>
 <li>Fixed an issue where exceptions thrown in pending tasks submitted using <code>ALambdaFunction.RunTask()</code> did not cause the Lambda function to fail.</li>
 <li>Fixed an issue where <code>lash config</code> failed to properly initialize the API Gateway Account role when it was set to a deleted role.</li>
@@ -222,7 +232,7 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <li>Added documentation for <a href="APIGateway.html">API Gateway for .NET</a>.</li>
 <li>Added <a href="VideoTutorials.html">Video Tutorials</a> section.</li>
 </ul>
-<h4 id="new-features-1">New Features</h4>
+<h4 id="new-features-2">New Features</h4>
 <ul>
 <li>X-Ray Tracing now works for API Gateway V1 and Nested Modules.</li>
 <li>Updated CloudFormation spec to 3.3.0.</li>
@@ -232,7 +242,7 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <li><code>ALambdaFunction</code> now unrolls <code>AggregateException</code> instances and reports errors individually.</li>
 <li><code>lash util delete-orphan-logs</code> replaces <code>delete-orphan-lambda-logs</code>, which now also delete orphaned API Gateway V1/V2 CloudWatch logs</li>
 </ul>
-<h4 id="fixes-1">Fixes</h4>
+<h4 id="fixes-2">Fixes</h4>
 <ul>
 <li>Fixed an issue with setting the correct IAM role for the API Gateway account.</li>
 <li>Various bug fixes to generating the proper JSON schema for API Gateway endpoints and routes.</li>
