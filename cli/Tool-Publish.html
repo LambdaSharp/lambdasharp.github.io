@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Publish Module | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-Publish.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Publish Module | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="Publish Module | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="Publish Module | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="Publish Module | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -69,10 +94,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="publish-module">Publish Module</h1>
 
-<p>The <code>publish</code> command is used to upload the compiled module and its assets to the deployment bucket.</p>
+<p>The <code>publish</code> command is used to upload the compiled module and its artifacts to the deployment bucket.</p>
 <h2 id="arguments">Arguments</h2>
 <p>The <code>publish</code> command takes an optional path. The path can either refer to a manifest file, a module definition, or a folder containing a <code>Module.yml</code> file.</p>
-<p>If the path does not refer to a manifest file, the <code>publish</code> command invokes the <code>build</code> command to compile the module and its assets.</p>
+<p>If the path does not refer to a manifest file, the <code>publish</code> command invokes the <code>build</code> command to compile the module and its artifacts.</p>
 <pre><code class="lang-bash">lash new function MyNewFunction
 </code></pre>
 <h2 id="options">Options</h2>
@@ -111,7 +136,7 @@
 </dd>
 <dt><code>--dryrun[:&lt;LEVEL&gt;]</code></dt>
 <dd>
-<p>(optional) Generate output assets without deploying (0=everything, 1=cloudformation)</p>
+<p>(optional) Generate output artifacts without deploying (0=everything, 1=cloudformation)</p>
 </dd>
 <dt><code>--cli-profile|-C &lt;NAME&gt;</code></dt>
 <dd>
@@ -136,32 +161,29 @@
 <pre><code class="lang-bash">lash publish
 </code></pre>
 <p>Output:</p>
-<pre><code>LambdaSharp CLI (v0.5) - Publish LambdaSharp module
+<pre><code>LambdaSharp CLI (v0.7.0) - Publish LambdaSharp module
 
 Reading module: Module.yml
-Compiling: LambdaSharp.Demo.SlackTodo (v1.0-DEV)
-=&gt; Building function RecordMessage [netcoreapp2.1, Release]
+Compiling: Demo.SlackTodo (v1.0-DEV)
 =&gt; Building function SlackCommand [netcoreapp2.1, Release]
-=&gt; Module compilation done: C:\LambdaSharpTool\Demos\Demo\bin\cloudformation.json
-Publishing module: LambdaSharp.Demo
-=&gt; Uploading asset: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/function_RecordMessage_8A0A4D0DA5B090BD33D779EF16FE7470.zip
-=&gt; Uploading asset: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/function_SlackCommand_30C238770176A7AE6955A519FC6A283A.zip
-=&gt; Uploading template: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/cloudformation_v1.0-DEV_A556D13161D90F32959CDE5EC121B7D0.json
+=&gt; Module compilation done: bin\cloudformation.json
+Publishing module: Demo.SlackTodo
+=&gt; Uploading artifact: s3://lambdasharp-bucket-name/lambdasharp-bucket-name/LambdaSharp/Demo.SlackTodo/.artifacts/function_Demo.SlackTodo_SlackCommand_E0F4477DDAFDC152C8B66343657E9425.zip
+=&gt; Uploading template: s3://lambdasharp-bucket-name/lambdasharp-bucket-name/LambdaSharp/Demo.SlackTodo/.artifacts/cloudformation_Demo.SlackTodo_939992254E194760372083264D08D795.json
 
-Done (finished: 1/18/2019 1:26:33 PM; duration: 00:00:12.9332067)
+Done (finished: 9/5/2019 1:07:28 PM; duration: 00:00:11.1692368)
 </code></pre>
 <h3 id="publish-manifest">Publish manifest</h3>
 <p><strong>Using PowerShell/Bash:</strong></p>
-<pre><code class="lang-bash">lash publish Demo/bin/cloudformation.json
+<pre><code class="lang-bash">lash publish bin/cloudformation.json
 </code></pre>
 <p>Output:</p>
-<pre><code>LambdaSharp CLI (v0.5) - Publish LambdaSharp module
-Publishing module: LambdaSharp.Demo
-=&gt; Uploading asset: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/function_RecordMessage_8A0A4D0DA5B090BD33D779EF16FE7470.zip
-=&gt; Uploading asset: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/function_SlackCommand_30C238770176A7AE6955A519FC6A283A.zip
-=&gt; Uploading template: s3://lambdasharp-bucket-name/LambdaSharp/Modules/Demo/Assets/cloudformation_v1.0-DEV_A556D13161D90F32959CDE5EC121B7D0.json
+<pre><code>LambdaSharp CLI (v0.7.0) - Publish LambdaSharp module
+Publishing module: Demo.SlackTodo
+=&gt; Uploading artifact: s3://lambdasharp-bucket-name/lambdasharp-bucket-name/LambdaSharp/Demo.SlackTodo/.artifacts/function_Demo.SlackTodo_SlackCommand_E0F4477DDAFDC152C8B66343657E9425.zip
+=&gt; Uploading template: s3://lambdasharp-bucket-name/lambdasharp-bucket-name/LambdaSharp/Demo.SlackTodo/.artifacts/cloudformation_Demo.SlackTodo_939992254E194760372083264D08D795.json
 
-Done (finished: 1/18/2019 1:28:06 PM; duration: 00:00:02.9318400)
+Done (finished: 9/5/2019 1:07:28 PM; duration: 00:00:11.1692368)
 </code></pre>
 </article>
           </div>

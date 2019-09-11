@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>LambdaSharp (v0.6.0.3) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS </title>
+    <title>LambdaSharp (v0.7.0) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/index.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp (v0.6.0.3) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="LambdaSharp (v0.7.0) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="LambdaSharp (v0.7.0) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="LambdaSharp (v0.7.0) - Serverless .NET on AWS | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
+  
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -62,22 +87,17 @@
             <article class="content wrap" id="_content" data-uid="">
 
 <p><img src="images/LambdaSharpLogo.png" alt="λ#"></p>
-<h1 id="lambdasharp-v---serverless-net-on-aws">LambdaSharp (v0.6.0.3) - Serverless .NET on AWS</h1>
-<p><strong><a href="articles/ReleaseNotes-Favorinus.html">Read what's new in the 0.6 &quot;Favorinus&quot; release.</a></strong></p>
+<h1 id="lambdasharp-v---serverless-net-on-aws">LambdaSharp (v0.7.0) - Serverless .NET on AWS</h1>
+<p><strong><a href="articles/ReleaseNotes-Geminus.html">Read what's new in the 0.7.0 &quot;Geminus&quot; release.</a></strong></p>
 <p>λ# is a command line tool and a framework for serverless application development. λ# uses a simple declarative syntax to generate sophisticated CloudFormation templates that provide simple, yet flexible, deployment options.</p>
 <p>The objective of λ# is to accelerate the development pace of serverless solutions while helping developers adhere consistently to best practices to create scalable, observable, and modular systems.</p>
-<h2 id="give-a-star-">Give a Star! ⭐</h2>
-<p>If you like or are using this project, please <a href="https://github.com/LambdaSharp/LambdaSharpTool">give it a star on GitHub</a>. Thanks!</p>
 <p><img src="images/LashAnsiColor-WIP.gif" alt="λ# CLI"></p>
 <h2 id="install-λ-cli">Install λ# CLI</h2>
 <p>The λ# CLI is installed as a .NET Global Tool.</p>
 <pre><code class="lang-bash">dotnet tool install -g LambdaSharp.Tool
 </code></pre>
-<p>Once installed, the λ# CLI needs to be configured.</p>
-<pre><code class="lang-bash">lash config
-</code></pre>
-<p>Finally, a deployment tier must be initialized with the λ# Core.</p>
-<pre><code class="lang-bash">lash init --tier Sandbox
+<p>Once installed, a deployment tier must be initialized.</p>
+<pre><code class="lang-bash">lash init --quick-start
 </code></pre>
 <h2 id="deploy-a-λ-module">Deploy a λ# Module</h2>
 <p>Creating modules with Lambda functions and deploying them only requires a few steps.</p>
@@ -85,13 +105,13 @@
 lash new module MySampleModule
 
 # Add a function to the λ# module
-lash new function MyFunction
+lash new function MyFunction --type generic
 
 # Deploy the λ# module
 lash deploy
 </code></pre>
-<p>The λ# CLI uses a YAML file to compile the C# projects, upload assets, and deploy the CloudFormation stack in one step. The YAML file describes the entire module including the inputs, outputs, variables, resources, and functions.</p>
-<pre><code class="lang-yaml">Module: MySampleModule
+<p>The λ# CLI uses a YAML file to compile the C# projects, upload artifacts, and deploy the CloudFormation stack in one step. The YAML file describes the entire module including the inputs, outputs, variables, resources, and functions.</p>
+<pre><code class="lang-yaml">Module: My.SampleModule
 Items:
 
  - Function: MyFunction
@@ -127,7 +147,7 @@ Items:
 }
 </code></pre>
 <h2 id="license">License</h2>
-<pre><code>Copyright (c) 2018,2019 MindTouch
+<pre><code>Copyright (c) 2018-2019 LambdaSharp (λ#)
 
 Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
 you may not use this file except in compliance with the License.

@@ -171,6 +171,129 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.FunctionHandlerAsync
   nameWithType: ALambdaFunction.FunctionHandlerAsync
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo
+  name: ALambdaFunction.FunctionInfo
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html
+  commentId: T:LambdaSharp.ALambdaFunction.FunctionInfo
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo
+  nameWithType: ALambdaFunction.FunctionInfo
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+  name: DeadLetterQueueUrl
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeadLetterQueueUrl
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+  nameWithType: ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl*
+  name: DeadLetterQueueUrl
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeadLetterQueueUrl_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+  nameWithType: ALambdaFunction.FunctionInfo.DeadLetterQueueUrl
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName
+  name: DeploymentBucketName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeploymentBucketName
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName
+  nameWithType: ALambdaFunction.FunctionInfo.DeploymentBucketName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName*
+  name: DeploymentBucketName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeploymentBucketName_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.DeploymentBucketName
+  nameWithType: ALambdaFunction.FunctionInfo.DeploymentBucketName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId
+  name: FunctionId
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_FunctionId
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId
+  nameWithType: ALambdaFunction.FunctionInfo.FunctionId
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId*
+  name: FunctionId
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_FunctionId_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionId
+  nameWithType: ALambdaFunction.FunctionInfo.FunctionId
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName
+  name: FunctionName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_FunctionName
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName
+  nameWithType: ALambdaFunction.FunctionInfo.FunctionName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName*
+  name: FunctionName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_FunctionName_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.FunctionName
+  nameWithType: ALambdaFunction.FunctionInfo.FunctionName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId
+  name: ModuleId
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleId
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleId
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId*
+  name: ModuleId
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleId_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleId
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleId
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName
+  name: ModuleName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleName
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName*
+  name: ModuleName
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleName_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleName
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleName
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace
+  name: ModuleNamespace
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleNamespace
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleNamespace
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace*
+  name: ModuleNamespace
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleNamespace_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleNamespace
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleNamespace
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion
+  name: ModuleVersion
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleVersion
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleVersion
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion*
+  name: ModuleVersion
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_ModuleVersion_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.ModuleVersion
+  nameWithType: ALambdaFunction.FunctionInfo.ModuleVersion
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.Started
+  name: Started
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_Started
+  commentId: P:LambdaSharp.ALambdaFunction.FunctionInfo.Started
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.Started
+  nameWithType: ALambdaFunction.FunctionInfo.Started
+- uid: LambdaSharp.ALambdaFunction.FunctionInfo.Started*
+  name: Started
+  href: sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_Started_
+  commentId: Overload:LambdaSharp.ALambdaFunction.FunctionInfo.Started
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.FunctionInfo.Started
+  nameWithType: ALambdaFunction.FunctionInfo.Started
 - uid: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(System.IO.Stream)
   name: HandleFailedInitializationAsync(Stream)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_
@@ -210,129 +333,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.Info
   nameWithType: ALambdaFunction.Info
-- uid: LambdaSharp.ALambdaFunction.InfoStruct
-  name: ALambdaFunction.InfoStruct
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html
-  commentId: T:LambdaSharp.ALambdaFunction.InfoStruct
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct
-  nameWithType: ALambdaFunction.InfoStruct
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-  name: DeadLetterQueueUrl
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_DeadLetterQueueUrl
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-  nameWithType: ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl*
-  name: DeadLetterQueueUrl
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_DeadLetterQueueUrl_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-  nameWithType: ALambdaFunction.InfoStruct.DeadLetterQueueUrl
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId
-  name: DefaultSecretKeyId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_DefaultSecretKeyId
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId
-  nameWithType: ALambdaFunction.InfoStruct.DefaultSecretKeyId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId*
-  name: DefaultSecretKeyId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_DefaultSecretKeyId_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.DefaultSecretKeyId
-  nameWithType: ALambdaFunction.InfoStruct.DefaultSecretKeyId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.FunctionId
-  name: FunctionId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_FunctionId
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.FunctionId
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.FunctionId
-  nameWithType: ALambdaFunction.InfoStruct.FunctionId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.FunctionId*
-  name: FunctionId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_FunctionId_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.FunctionId
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.FunctionId
-  nameWithType: ALambdaFunction.InfoStruct.FunctionId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.FunctionName
-  name: FunctionName
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_FunctionName
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.FunctionName
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.FunctionName
-  nameWithType: ALambdaFunction.InfoStruct.FunctionName
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.FunctionName*
-  name: FunctionName
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_FunctionName_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.FunctionName
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.FunctionName
-  nameWithType: ALambdaFunction.InfoStruct.FunctionName
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleId
-  name: ModuleId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleId
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.ModuleId
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleId
-  nameWithType: ALambdaFunction.InfoStruct.ModuleId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleId*
-  name: ModuleId
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleId_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.ModuleId
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleId
-  nameWithType: ALambdaFunction.InfoStruct.ModuleId
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleName
-  name: ModuleName
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleName
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.ModuleName
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleName
-  nameWithType: ALambdaFunction.InfoStruct.ModuleName
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleName*
-  name: ModuleName
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleName_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.ModuleName
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleName
-  nameWithType: ALambdaFunction.InfoStruct.ModuleName
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner
-  name: ModuleOwner
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleOwner
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner
-  nameWithType: ALambdaFunction.InfoStruct.ModuleOwner
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner*
-  name: ModuleOwner
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleOwner_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleOwner
-  nameWithType: ALambdaFunction.InfoStruct.ModuleOwner
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion
-  name: ModuleVersion
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleVersion
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion
-  nameWithType: ALambdaFunction.InfoStruct.ModuleVersion
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion*
-  name: ModuleVersion
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_ModuleVersion_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.ModuleVersion
-  nameWithType: ALambdaFunction.InfoStruct.ModuleVersion
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.Started
-  name: Started
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_Started
-  commentId: P:LambdaSharp.ALambdaFunction.InfoStruct.Started
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.Started
-  nameWithType: ALambdaFunction.InfoStruct.Started
-- uid: LambdaSharp.ALambdaFunction.InfoStruct.Started*
-  name: Started
-  href: sdk/LambdaSharp.ALambdaFunction.InfoStruct.html#LambdaSharp_ALambdaFunction_InfoStruct_Started_
-  commentId: Overload:LambdaSharp.ALambdaFunction.InfoStruct.Started
-  isSpec: "True"
-  fullName: LambdaSharp.ALambdaFunction.InfoStruct.Started
-  nameWithType: ALambdaFunction.InfoStruct.Started
 - uid: LambdaSharp.ALambdaFunction.InitializeAsync(LambdaSharp.LambdaConfig)
   name: InitializeAsync(LambdaConfig)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_InitializeAsync_LambdaSharp_LambdaConfig_
@@ -1301,6 +1301,23 @@ references:
   fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).ALambdaCustomResourceFunction
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.ALambdaCustomResourceFunction
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).ALambdaCustomResourceFunction
+- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.Abort(System.String)
+  name: Abort(String)
+  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_System_String_
+  commentId: M:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.Abort(System.String)
+  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.Abort(System.String)
+  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort(System.String)
+  nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.Abort(String)
+  nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort(String)
+- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.Abort*
+  name: Abort
+  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_
+  commentId: Overload:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.Abort
+  isSpec: "True"
+  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.Abort
+  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort
+  nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.Abort
+  nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort
 - uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(System.IO.Stream)
   name: HandleFailedInitializationAsync(Stream)
   href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream_
@@ -1500,6 +1517,23 @@ references:
   fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties).ResourceType
   nameWithType: Request<TProperties>.ResourceType
   nameWithType.vb: Request(Of TProperties).ResourceType
+- uid: LambdaSharp.CustomResource.Request`1.StackId
+  name: StackId
+  href: sdk/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId
+  commentId: P:LambdaSharp.CustomResource.Request`1.StackId
+  fullName: LambdaSharp.CustomResource.Request<TProperties>.StackId
+  fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties).StackId
+  nameWithType: Request<TProperties>.StackId
+  nameWithType.vb: Request(Of TProperties).StackId
+- uid: LambdaSharp.CustomResource.Request`1.StackId*
+  name: StackId
+  href: sdk/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId_
+  commentId: Overload:LambdaSharp.CustomResource.Request`1.StackId
+  isSpec: "True"
+  fullName: LambdaSharp.CustomResource.Request<TProperties>.StackId
+  fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties).StackId
+  nameWithType: Request<TProperties>.StackId
+  nameWithType.vb: Request(Of TProperties).StackId
 - uid: LambdaSharp.CustomResource.RequestType
   name: RequestType
   href: sdk/LambdaSharp.CustomResource.RequestType.html

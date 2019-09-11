@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace | &#955;# - Serverless .NET for AWS </title>
+    <title>Group | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/syntax/Module-Group.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="Group | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="Group | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="Group | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -67,12 +92,12 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="namespace">Namespace</h1>
+<h1 id="group">Group</h1>
 
-<p>The <code>Namespace</code> definition creates a group of nested items. Namespaces are useful for organizing related definitions together.</p>
-<p>Nested items are accessed by combining the namespace name and item name with <code>::</code>. For example, use <code>Reporting::Message</code> to access the variable <code>Message</code> in the namespace <code>Reporting</code>.</p>
+<p>The <code>Group</code> definition creates a group of nested items. Groups are useful for organizing related definitions together.</p>
+<p>Nested items are accessed by combining the group name and item name with <code>::</code>. For example, use <code>Reporting::Message</code> to access the variable <code>Message</code> in the group <code>Reporting</code>.</p>
 <h2 id="syntax">Syntax</h2>
-<pre><code class="lang-yaml">Namespace: String
+<pre><code class="lang-yaml">Group: String
 Description: String
 Items:
   - ItemDefinition
@@ -81,26 +106,26 @@ Items:
 <dl>
 <dt><code>Description</code></dt>
 <dd>
-<p>The <code>Description</code> attribute specifies the namespace description.</p>
+<p>The <code>Description</code> attribute specifies the group description.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>Items</code></dt>
 <dd>
-<p>The <code>Items</code> section specifies the items defined in the namespace, such as parameters, variables, resources, conditions, mappings, functions, nested modules, resource type definitions, macro definitions, and module imports.</p>
+<p>The <code>Items</code> section specifies the items defined in the group, such as parameters, variables, resources, conditions, mappings, functions, nested modules, resource type definitions, macro definitions, and module imports.</p>
 <p><i>Required:</i> No</p>
 <p><i>Type:</i> List of <a href="Module-Items.html">Item Definition</a></p>
 </dd>
-<dt><code>Namespace</code></dt>
+<dt><code>Group</code></dt>
 <dd>
-<p>The <code>Namespace</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.</p>
+<p>The <code>Group</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>
 <h3 id="organize-related-resources">Organize related resources</h3>
-<pre><code class="lang-yaml">- Namespace: Accounting
+<pre><code class="lang-yaml">- Group: Accounting
   Description: Resources for accounting capabilities
   Items:
 

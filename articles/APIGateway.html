@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>API Gateway for .NET | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/APIGateway.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="API Gateway for .NET | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="API Gateway for .NET | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="API Gateway for .NET | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="API Gateway for .NET | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -70,7 +95,7 @@
 <h1 id="api-gateway-for-net">API Gateway for .NET</h1>
 
 <h2 id="overview">Overview</h2>
-<p>API Gateway can be configured to automatically deny requests with missing parameters or incorrect payloads before they reach the Lambda function. This capability avoids unnecessary Lambda compute time and comes at no additional cost. Furthermore, the complexity of coordinating the API Gateway endpoint validation with the implementation is fully automated by the λ# tool.</p>
+<p>API Gateway can be configured to automatically deny requests with missing parameters or incorrect payloads before they reach the Lambda function. This capability avoids unnecessary Lambda compute time and comes at no additional cost. Furthermore, the complexity of coordinating the API Gateway endpoint validation with the implementation is fully automated by the λ# CLI.</p>
 <h2 id="reading-the-request-uri">Reading the Request URI</h2>
 <p>Method parameters can be read from the request URI by REST API endpoints and the WebSocket <code>$connect</code> route. Value types, such as <code>int</code> and <code>string</code>, are resolved by default from the request URI. First, the compiler attempts to find a matching path parameter in the REST API endpoint definition (e.g. <code>GET:/items/{id}</code>). If no matching path parameter is found, the compiler expects the parameter to be supplied by the request query string (.e.g <code>https://example.org/items?id=123</code>). Since WebSocket routes have no path parameters, all method parameters are expected to be supplied as query string parameters.</p>
 <p>REST API path parameters are always required and must occur in the method definition. However, query string parameters can be optional if their type is nullable or a default value is specified. The API Gateway instance will be configured to match the requirements of the method and the REST API endpoint definitions. For WebSockets, only the <code>$connect</code> route can use query string parameters during the initial connection attempt. Unfortunately, WebSocket routes cannot be configured to enforce the presence of query string parameters. Therefore, all query string parameters must be defined as optional.</p>
@@ -90,7 +115,7 @@
     int limit = 10
 ) { ... }
 </code></pre>
-<p>Common query string parameters can be captured as a class and easily reused across methods. For example, the following class defines the same query string parameters as in the previous example. The determination if a parameter is required is slightly different, because the λ# tool cannot determine if a property/field initializer is specified. Therefore, it is necessary to use the <code>JsonProperty</code> attribute with the <code>Required</code> property to specify if a query parameter is required or not.</p>
+<p>Common query string parameters can be captured as a class and easily reused across methods. For example, the following class defines the same query string parameters as in the previous example. The determination if a parameter is required is slightly different, because the λ# CLI cannot determine if a property/field initializer is specified. Therefore, it is necessary to use the <code>JsonProperty</code> attribute with the <code>Required</code> property to specify if a query parameter is required or not.</p>
 <pre><code class="lang-csharp">public class FilterOptions {
 
     //--- Properties ---
@@ -157,7 +182,7 @@
     public int? YearPublished { get; set; }
 }
 </code></pre>
-<p>The λ# tool uses <a href="https://github.com/RicoSuter/NJsonSchema">NJsonSchema</a> to derive a JSON schema from the type definition. The JSON schema is then attached either to the REST API endpoint or WebSocket route to enforce it on the request body, which is always a JSON value.</p>
+<p>The λ# CLI uses <a href="https://github.com/RicoSuter/NJsonSchema">NJsonSchema</a> to derive a JSON schema from the type definition. The JSON schema is then attached either to the REST API endpoint or WebSocket route to enforce it on the request body, which is always a JSON value.</p>
 <p>The <code>AddAlbumRequest</code> type produces the following JSON schema.</p>
 <pre><code class="lang-json">{
   &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,

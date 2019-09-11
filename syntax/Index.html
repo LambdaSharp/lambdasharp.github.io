@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>LambdaSharp Module Syntax | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/syntax/Index.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Module Syntax | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="LambdaSharp Module Syntax | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="LambdaSharp Module Syntax | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="LambdaSharp Module Syntax | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -75,7 +100,7 @@
 <p>Variables hold intermediate results that can be shared with other item definitions in the module. Variables are inlined during compilation and don't appear in the final output unless shared publicly.</p>
 <p>Parameters, variables, and resources can be shared with other modules by making them <code>public</code>. These can then be imported using cross-module references.</p>
 <p>Functions can be wired up to respond to various event sources, such as SQS, SNS, API Gateway, or even Slack Commands. Functions can be implemented using C# or Javascript.</p>
-<p>The λ# CLI <code>build</code> command compiles the module into a CloudFormation template. The <code>publish</code> command uploads the assets to the deployment bucket. Finally, the <code>deploy</code> command creates/updates a CloudFormation stack.</p>
+<p>The λ# CLI <code>build</code> command compiles the module into a CloudFormation template. The <code>publish</code> command uploads the artifacts to the deployment bucket. Finally, the <code>deploy</code> command creates/updates a CloudFormation stack.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Module: String
 Version: String
@@ -105,8 +130,8 @@ Items:
 </dd>
 <dt><code>Module</code></dt>
 <dd>
-<p>The <code>Module</code> attribute specifies the owner and module names. The <code>Module</code> attribute must be formatted as <code>Owner.Name</code>.
-The module owner and name can be retrieved using the <code>!Ref</code> operations with <code>Module::Owner</code> and <code>Module::Name</code>, respectively. The full name can be retrieved using <code>Module::FullName</code>.</p>
+<p>The <code>Module</code> attribute specifies the full name of the module. It must be formatted as <code>Namespace.Name</code>.</p>
+<p>The module namespace and name can be retrieved using the <code>!Ref</code> operations with <code>Module::Namespace</code> and <code>Module::Name</code>, respectively. Alternatively, the full name can be retrieved using <code>Module::FullName</code>.</p>
 <p><i>Required:</i> Yes</p>
 <p><i>Type:</i> String</p>
 </dd>
@@ -120,7 +145,7 @@ The module owner and name can be retrieved using the <code>!Ref</code> operation
 <dd>
 <p>The <code>Using</code> section specifies λ# modules that are used by this module. During the build phase, the manifests of the used modules are imported to validate their parameters and attributes. During the deploy phase, the used modules are automatically deployed when missing.</p>
 <p><i>Required:</i> No</p>
-<p><i>Type:</i> List of <a href="Module-Requires.html">Using Definition</a></p>
+<p><i>Type:</i> List of <a href="Module-Using.html">Using Definition</a></p>
 </dd>
 <dt><code>Secrets</code></dt>
 <dd>
@@ -136,6 +161,13 @@ The module owner and name can be retrieved using the <code>!Ref</code> operation
 <p><i>Type:</i> String</p>
 </dd>
 </dl>
+<h2 id="intrinsic-functions">Intrinsic Functions</h2>
+<p><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a> are supported in item definitions where values can be specified. In addition, λ# modules can use the <code>!Include</code> pre-processor directive to include plain text files as strings or YAML files as nested objects. The <code>!Include</code> directive can be used anywhere in a YAML file.</p>
+<p><em><strong>Example</strong></em></p>
+<pre><code class="lang-yaml">Module: My.Module
+Items:
+  - !Include MyFirstItem
+</code></pre>
 </article>
           </div>
           

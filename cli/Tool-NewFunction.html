@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Add New Function to Module File | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-NewFunction.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add New Function to Module File | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="Add New Function to Module File | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="Add New Function to Module File | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="Add New Function to Module File | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -92,19 +117,23 @@
 <dd>
 <p>(optional) Select programming language for generated code (default: csharp)</p>
 </dd>
-<dt><code>--use-project-reference</code></dt>
+<dt><code>--type|-t &lt;TYPE&gt;</code></dt>
 <dd>
-<p>(optional) Reference LambdaSharp libraries using a project reference (default behavior when LAMBDASHARP environment variable is set)</p>
+<p>(optional) Function type (one of: apigateway, customresource, generic, queue, schedule, topic, websocket; default: prompt)</p>
 </dd>
-<dt><code>--use-nuget-reference</code></dt>
+<dt><code>--timeout &lt;SECONDS&gt;</code></dt>
 <dd>
-<p>(optional) Reference LambdaSharp libraries using nuget references</p>
+<p>(optional) Function timeout in seconds (default: 30)</p>
+</dd>
+<dt><code>--memory &lt;MB&gt;</code></dt>
+<dd>
+<p>(optional) Function memory in megabytes (default: 256)</p>
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>
-<h3 id="create-a-new-c-function">Create a new C# function</h3>
+<h3 id="create-a-new-generic-lambda-c-function">Create a new, generic Lambda C# function</h3>
 <p><strong>Using PowerShell/Bash:</strong></p>
-<pre><code class="lang-bash">lash new function MyNewFunction
+<pre><code class="lang-bash">lash new function --type generic MyNewFunction
 </code></pre>
 <p>Output:</p>
 <pre><code>LambdaSharp CLI (v0.5) - Create new LambdaSharp module, function, or resource

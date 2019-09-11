@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#955;# - Geminus (v0.7) - 2019-09-06 | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Geminus.html">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#955;# - Geminus (v0.7) - 2019-09-06 | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="&#955;# - Geminus (v0.7) - 2019-09-06 | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="&#955;# - Geminus (v0.7) - 2019-09-06 | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="λ---geminus-v07---2019-09-06">λ# - Geminus (v0.7) - 2019-09-06</h1>
+
+<blockquote>
+<p>Geminus of Rhodes, was a Greek astronomer and mathematician, who flourished in the 1st century BC. An astronomy work of his, the Introduction to the Phenomena, still survives; it was intended as an introductory astronomy book for students. He also wrote a work on mathematics, of which only fragments quoted by later authors survive. <a href="https://en.wikipedia.org/wiki/Geminus">(Wikipedia)</a></p>
+</blockquote>
+<h2 id="whats-new">What's New</h2>
+<p>This release focuses on making it easy to share modules with others and streamlining the creation and upgrading of λ# deployment tiers. Prior to this release, λ# modules had to be made available in an S3 bucket for each region used by a deployment tier. In 0.7.0, the λ# CLI now automatically imports modules and their artifacts into the S3 bucket of the deployment tier, regardless of the origin region. This new behavior also safeguards against disruption should the original λ# module become unavailable at a later date since a copy is maintained in the deployment bucket. To further enhance deployment consistency, external modules are only imported during the publishing phase. The deployment phase relies entirely on the modules available in the S3 bucket of the deployment tier.</p>
+<h3 id="upgrade-procedure-from-v061-to-v070">Upgrade Procedure from v0.6.1 to v0.7.0</h3>
+<ol>
+<li>Ensure all modules are deployed with v0.6.1 or later</li>
+<li>Upgrade λ# CLI to v0.7.0
+<ol>
+<li><code>dotnet tool uninstall -g LambdaSharp.Tool</code></li>
+<li><code>dotnet tool install -g LambdaSharp.Tool</code></li>
+</ol>
+</li>
+<li>Upgrade λ# Deployment Tier (replace <code>Sandbox</code> with the name of the deployment tier to upgrade)
+<ol>
+<li><code>lash init --tier Sandbox --allow-upgrade</code></li>
+</ol>
+</li>
+<li>Delete the λ# CLI profile CloudFormation stack if the CLI profile is not used by any other deployment tiers
+<ol>
+<li>Locate the λ# CLI profile stack in the AWS Console (starts with <code>LambdaSharpTool-</code>)</li>
+<li>Empty the associated S3 bucket named <em>DeploymentBucket</em></li>
+<li>Delete the CloudFormation stack</li>
+</ol>
+</li>
+</ol>
+<h2 id="breaking-changes">BREAKING CHANGES</h2>
+<h3 id="λ-module">λ# Module</h3>
+<ul>
+<li>The <code>Namespace:</code> declaration has been renamed to <a href="../syntax/Module-Group.html"><code>Group:</code></a>.</li>
+<li>Module references in <code>Using:</code> and <code>Nested:</code> declarations now require an origin suffix. For example, <code>LambdaSharp.S3.IO:0.5</code> must now be written as <code>LambdaSharp.S3.IO:0.5@lambdasharp</code>.</li>
+</ul>
+<h3 id="λ-core-services">λ# Core Services</h3>
+<p>The <code>DefaultSecretKey</code> was removed from λ# Core Services. While it was convenient, it introduced a hard relationship between the KMS key and the lifecycle of the λ# Core Services. The better approach is to entrust the account owner with managing the KMS lifecycle. In addition, it was also a monthly recurring cost item, which was unnecessary when not required.</p>
+<p>A few Lambda related error messages have been rephrased to make it clearer they related to the execution of Lambda functions.</p>
+<ul>
+<li><code>Task timed out after 15.02 seconds</code> is now <code>Lambda timed out after 15.02 seconds</code></li>
+<li><code>Process exited before completing request</code> is now <code>Lambda exited before completing request</code></li>
+<li><code>Process ran out of memory (Max: 128 MB)</code> is now <code>Lambda ran out of memory (Max: 128 MB)</code></li>
+<li><code>Process nearing execution limits (Memory 80.12 %, Duration: 91.23 %)</code> is now <code>Lambda nearing execution limits (Memory 80.12 %, Duration: 91.23 %)</code></li>
+</ul>
+<h3 id="λ-cli">λ# CLI</h3>
+<ul>
+<li>The <code>lash config</code> command has been removed. Its functionality has been integrated into the <code>lash init</code> command to streamline the setup process, resulting in a single deployment tier stack.</li>
+<li>The concept of the CLI profile is gone. Therefore the <code>--cli-profile</code> option is no longer supported.</li>
+<li>With support of resolving λ# modules from third-party S3 buckets by using the <code>@origin</code> suffix on module names, there is no need to pre-register S3 buckets anymore, which makes the <code>--module-bucket-names</code> obsolete.</li>
+<li>The deployment tier does not support the SNS topic for CloudFormation updates, which means the <code>--deployment-notifications-topic</code> option is no longer supported.</li>
+<li>The λ# CLI will now fail to publish a stable version of a module when the <code>git-sha</code> is prefixed with <code>DIRTY-</code>, which indicate uncommitted local changes.  This behavior can be overwritten with <code>--force-publish</code>.</li>
+<li>The <code>.csproj</code> file generated by <code>lash new function</code> can now dynamically support contributor mode (i.e. using a local λ# git checkout), which makes the <code>--use-project-reference</code> and <code>--use-nuget-reference</code> obsolete.</li>
+<li>The options for <code>lash tier coreservices</code> were changed from <code>--enable</code> to <code>--enabled</code> and from <code>--disable</code> to <code>--disabled</code> to make them consistent with the <code>lash init</code> command.</li>
+</ul>
+<h3 id="λ-assemblies">λ# Assemblies</h3>
+<ul>
+<li><code>ALambdaFunction.InfoStruct.ModuleOwner</code> has been renamed to <code>ALambdaFunction.InfoStruct.ModuleNamespace</code></li>
+<li><code>ALambdaFunction.DefaultSecretKeyId</code> has been removed</li>
+<li>The physical ID returned by <a class="xref" href="../sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html"><code>ALambdaFinalizerFunction</code></a> is now a constant (<code>Finalizer:Module</code>) instead of being based on the checksum of the original template. The latter proved too risky, because it could accidentally trigger a CloudFormation delete resource event when not expected.</li>
+</ul>
+<h2 id="new-λ-cli-features">New λ# CLI Features</h2>
+<h3 id="init-command">Init Command</h3>
+<p>The <code>lash init</code> command has been redesigned to streamline the setup and configuration of a deployment tier.</p>
+<p>Running <code>lash init --quick-start</code> will create a new deployment tier without any prompts. The newly created tier has no λ# Core Services, which means it sets up quickly and at no monthly cost. In addition, an empty deployment tier name is now supported, which means using the <code>--tier</code> option--or the <code>LAMBDASHARP_TIER</code> environment variable--is now optional.</p>
+<p>The deployment tier can be upgraded to use λ# Core Services by running <code>lash init --core-services enabled</code>. Similarly, a deployment tier can also be downgraded by running <code>lash init --core-services disabled</code> assuming none of the deployed modules rely on them. Otherwise, first run the <code>lash tier coreservices --disabled</code> command.</p>
+<h3 id="build-command">Build Command</h3>
+<p>The <code>lash build</code> command has two new options for advanced use cases. First, is the <code>--module-version</code>, which sets the version of the module being compiled. This option makes it possible to tie the module version to an environment variable or otherwise supply it without modifying the module source file. Second, the <code>--module-build-date</code>, which is used to override the default build date of the module. This option is useful to ensure that the generated CloudFormation file is deterministic, which is required for some validation scenarios.</p>
+<h3 id="publish-command">Publish Command</h3>
+<p>The <code>lash publish</code> command has a new option to override the module origin information using <code>--module-origin</code>. By default, the module origin for a newly published module is the name of the deployment bucket. However, it may be sometimes necessary to publish a new version of a module that originated from somewhere else, such as deploying an urgent fix. With the <code>--module-origin</code> option, it is possible to publish a module into the S3 bucket of the deployment tier, while making it look like it was imported. As a result, all subsequent deployments will resolve their dependencies to this new module. The imported module and its artifacts are annotated with a metadata field (<code>x-amz-meta-lambdasharp-origin</code>) that describes their true origin.</p>
+<p>The <code>lash publish</code> command is responsible for uploading the module artifacts to the deployment bucket, as well as importing all dependencies. Modules from a foreign origin can also be imported explicitly by this command.</p>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash publish LambdaSharp.S3.Subscriber:0.7.0@lambdasharp
+</code></pre>
+<p>The following text should appear (or similar):</p>
+<pre><code>LambdaSharp CLI (v0.7.0) - Publish LambdaSharp module
+=&gt; Imported LambdaSharp.S3.Subscriber:0.7.0@lambdasharp
+
+Done (finished: 8/16/2019 10:27:01 AM; duration: 00:00:04.5205374)
+</code></pre>
+<p>To accommodate combining modules from various origins in a single S3 deployment bucket, the structure of the S3 keys had to be revisited. All published/imported modules and their artifacts now have the following prefix <code>{Module::Origin}/{Module::Namespace}/{Module::Name}</code>, which ensures there will never be any conflicts, since S3 bucket names (i.e. the module origin) is guaranteed to be globally unique. The module manifest--which describes the parameters, resource type definitions, dependencies, and artifacts--is located at <code>{Module::Origin}/{Module::Namespace}/{Module::Name}/{Module::Version}</code>. The module artifacts, across all versions, are located at <code>{Origin}/{ModulePrefix}/{ModuleSuffix}/.artifacts/</code>.</p>
+<h3 id="deploy-command">Deploy Command</h3>
+<p>The <code>lash deploy</code> command now takes multiple values for the <code>--xray</code> option. Without any value, the <code>--xray</code> option only enables <a href="https://aws.amazon.com/xray/">AWS X-Ray</a> for the root module being deployed. Optionally, <em>AWS X-Ray</em> can also be enabled for the root module and all nested modules using <code>--xray:allmodules</code>.</p>
+<p>Additionally, <em>AWS X-Ray</em> is now supported for Lambda functions, AWS SDK calls, public HTTP calls (when using the [<code>ALambdaFunction.HttpClient</code>] property(xref:ALambdaFunction.HttpClient)) and API Gateway endpoints, providing deeper insights into</p>
+<h3 id="new-function-command">New Function Command</h3>
+<p>The <code>lash new function</code> command has been enhanced with types for C# functions. It can now create the scaffolding for functions to handle API Gateway, custom CloudFormation resources, SQS queues, scheduled CloudWatch events, SNS topics, WebSocket, module finalizer, and generic requests by using the <code>--type</code> option. If no type is provided, the λ# CLI will prompt for one. In addition, the <code>--memory</code> and <code>--timeout</code> options have been added. When omitted, they default to 256 (MB) and 30 (seconds), respectively.</p>
+<p>The generated <code>.csproj</code> file was updated to make it easier for contributors to deploy modules with their latest local changes by conditionally referencing the λ# nuget package or local λ# project depending on the <code>LAMBDASHARP</code> environment variable. This behavior was achieved by using conditionals in the <code>.csproj</code> file.</p>
+<pre><code class="lang-xml">&lt;ItemGroup&gt;
+&lt;PackageReference Condition=&quot;'$(LAMBDASHARP)'==''&quot; Include=&quot;LambdaSharp&quot; Version=&quot;0.7.0.*&quot;/&gt;
+&lt;ProjectReference Condition=&quot;'$(LAMBDASHARP)'!=''&quot; Include=&quot;$(LAMBDASHARP)/src/LambdaSharp/LambdaSharp.csproj&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<h3 id="new-bucket-command">New Bucket Command</h3>
+<p>The <code>lash new bucket</code> command is used to create a new public S3 bucket configured to require requestors to pay for data transfer. This is the recommended configuration when publicly sharing λ# modules so the owner of the bucket only pays for the storage and not its access, which could become expensive for a popular module. Once the bucket is created, it can be used with a deployment tier to enable publishing to it.</p>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash new bucket my-lambdasharp-bucket
+</code></pre>
+<p>The following text should appear (or similar):</p>
+<pre><code>LambdaSharp CLI (v0.7.0) - Create new public S3 bucket for sharing LambdaSharp modules
+CREATE_COMPLETE    AWS::CloudFormation::Stack    PublicLambdaSharpBucket-my-lambdasharp-bucket
+CREATE_COMPLETE    AWS::S3::Bucket               Bucket
+CREATE_COMPLETE    AWS::S3::BucketPolicy         BucketPolicy
+=&gt; Stack creation finished
+=&gt; Updating S3 Bucket for Requester Pays access
+
+Done (finished: 8/16/2019 10:20:18 AM; duration: 00:00:32.5327433)
+</code></pre>
+<h3 id="info-command">Info Command</h3>
+<p>The <code>lash info</code> command now shows if λ# Core Services are enabled for the deployment tier. In addition, it will also show how much Lambda storage is used and how much Lambda reserved capacity is used by the AWS account.</p>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash info
+</code></pre>
+<p>The following text should appear (or similar):</p>
+<pre><code>LambdaSharp CLI (v0.7.0) - Show LambdaSharp information
+LambdaSharp Deployment Tier
+    Name: Sandbox
+    Version: 0.7.0
+    Core Services: Enabled
+    Deployment S3 Bucket: sandbox-lambdasharp-cor-deploymentbucketresource-kvuimlss8yky
+    API Gateway Role: arn:aws:iam::************:role/LambdaSharp-ApiGatewayRole
+Git
+    Branch: 1.0-DEV
+    SHA: e8705be44f02f81f5e7c300205cf6de97248e090
+AWS
+    Region: us-west-2
+    Account Id: ************
+    Lambda Storage: 0.52GB of 75GB (0.69%)
+    Lambda Reserved Executions: 35 of 1,000 (3.50%)
+Tools
+    .NET Core CLI Version: 2.2.203
+    Git CLI Version: 2.18.0.windows.1
+    Amazon.Lambda.Tools: 3.2.3
+
+Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
+</code></pre>
+<h3 id="encrypt-command">Encrypt Command</h3>
+<p>The <code>lash encrypt</code> command now has a support for decrypting an encrypted secret before encrypting it by supplying the <code>--decrypt</code> option. This option makes it possible to decrypt an existing secret and re-encrypt it using a different KMS key without having to decrypt it manually first.</p>
+<h2 id="new-λ-assembly-features">New λ# Assembly Features</h2>
+<ul>
+<li>Added <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeploymentBucketName"><code>ALambdaFunction.DeploymentBucketName</code></a> property to read the S3 bucket name used to deploy the Lambda function.</li>
+<li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_System_String_"><code>ALambdaCustomResourceFunction.Abort(string)</code></a> method to abort the creation or update of a custom resource. <code>Abort()</code> will cause CloudFormation to respond with a failure code and showing the provided message.</li>
+<li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId"><code>LambdaSharp.CustomResource.Request&lt;TProperties&gt;.StackId</code></a> property to custom resource request to uniquely identify the CloudFormation stack from which the request originated.</li>
+<li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

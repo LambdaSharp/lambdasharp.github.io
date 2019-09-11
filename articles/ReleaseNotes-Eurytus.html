@@ -3,20 +3,45 @@
 <html>
   
   <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>&#955;# - Eurytus (v0.5.0.3) - 2019-03-08 | &#955;# - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Eurytus.html">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#955;# - Eurytus (v0.5.0.3) - 2019-03-08 | &#955;# - Serverless .NET for AWS ">
-    <meta name="generator" content="docfx 2.42.0.0">
-    
+    <meta name="title" content="&#955;# - Eurytus (v0.5.0.3) - 2019-03-08 | &#955;# - Serverless .NET for AWS">
+    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="keywords" content="software development, aws, serverless, lambda, dotnet, dotnetcore, .net, .net core">
+    <meta name="generator" content="docfx 2.45.0.0">
+  
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambdasharp.net/">
+    <meta property="og:title" content="&#955;# - Eurytus (v0.5.0.3) - 2019-03-08 | &#955;# - Serverless .NET for AWS">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+  
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:title" content="&#955;# - Eurytus (v0.5.0.3) - 2019-03-08 | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:image:src" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta name="twitter:card" content="summary_large_image">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+  
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
+  
     
     <meta property="docfx:newtab" content="true">
   </head>
@@ -81,7 +106,7 @@
 <p>The following change may impact modules created with previous releases.</p>
 <h3 id="module-definition">Module Definition</h3>
 <ul>
-<li>The top-level <code>Module</code> attribute must now contain at least one period (<code>.</code>) to denote the <em>module owner</em> and <em>module name</em>.</li>
+<li>The top-level <code>Module</code> attribute must now contain at least one period (<code>.</code>) to denote the <em>module namespace</em> and <em>module name</em>.</li>
 <li>The <code>Inputs</code>, <code>Outputs</code>, <code>Variables</code>, and <code>Functions</code> sections of λ# module have been combined into a single <code>Items</code> section to give more organizational freedom.</li>
 <li>The <code>Export</code> definitions have been removed in favor of a special class for <code>Scope</code> on items that can be exported.</li>
 <li>Cross-module references are now grouped into <code>Using</code> definitions by module they import from.</li>
@@ -89,7 +114,7 @@
 <li>The <code>Var</code> definition has been split into two distinct definitions: <code>Variable</code> for fixed values and expressions, and <code>Resource</code> for existing or new resources.</li>
 <li>The <code>CustomResource</code> definition has been renamed to <code>ResourceType</code> and enhanced with a specification about its properties and attributes to enable validation at compilation time.</li>
 <li><code>Function</code> definitions lost their <code>VPC</code> section and <code>ReservedConcurrency</code> attribute. Instead, like <code>Resource</code> definitions, they have a <code>Properties</code> section that can be used to set these, and other settings, directly. This approach is much more future proof.</li>
-<li>Nesting items has been limited to <code>Using</code> and <code>Namespace</code> definitions.</li>
+<li>Nesting items has been limited to <code>Using</code> and <code>Group</code> definitions.</li>
 <li>The default value for the <code>Version</code> attribute is now <code>1.0-DEV</code>.</li>
 </ul>
 <h3 id="λ-runtime">λ# Runtime</h3>
@@ -108,7 +133,7 @@
 </li>
 <li>Publish process
 <ul>
-<li>Modules are now published to a new location in the S3 deployment bucket: <code>${Module::Owner}/Modules/${Module::Name}/Versions/${Module::Version}</code></li>
+<li>Modules are now published to a new location in the S3 deployment bucket: <code>${Module::Namespace}/Modules/${Module::Name}/Versions/${Module::Version}</code></li>
 <li>The λ# manifest is now embedded in the CloudFormation template inside the <code>Metadata</code> section under <code>LambdaSharp::Manifest</code>.</li>
 </ul>
 </li>
@@ -137,9 +162,9 @@
 </li>
 </ul>
 <h2 id="new-λ-module-features">New λ# Module Features</h2>
-<h3 id="module-owner">Module Owner</h3>
-<p>The <code>Module</code> attribute now specifies both the module owner and the module name. The module owner should be the name of the organization, or individual, to whom the module belongs to. The module owner is used to group related modules in the deployment S3 bucket. The module owner is also a required concept for future compatibility with the <a href="https://aws.amazon.com/serverless/serverlessrepo/">Serverless Application Repository</a>. Everything after the first period is considered to be part of the module name, including additional periods.</p>
-<p>In the following example, <code>Acme</code> is the module owner and <code>Accounting.Reports</code> is the module name:</p>
+<h3 id="module-namespace">Module Namespace</h3>
+<p>The <code>Module</code> attribute now specifies both the module namespace and the module name. The module namespace could be the name of an organization, an individual, or a project the module is part of. The module namespace is used to group related modules in the deployment S3 bucket. Everything after the first period is considered to be part of the module name, including additional periods.</p>
+<p>In the following example, <code>Acme</code> is the module namespace and <code>Accounting.Reports</code> is the module name:</p>
 <pre><code class="lang-yaml">Module: Acme.Accounting.Reports
 </code></pre>
 <h3 id="module-dependencies">Module Dependencies</h3>
@@ -164,7 +189,7 @@ Items:
     Scope: Reporting::Calculator
     Value: !Sub &quot;Hi ${PersonName}&quot;
 
-  - Namespace: Reporting
+  - Group: Reporting
     Items:
 
       - Resource: Bucket
@@ -197,7 +222,7 @@ Items:
 <li>Delete dynamically created resources when the module is torn down.</li>
 <li>Delete objects from an S3 bucket so it can be deleted when the module is torn down.</li>
 </ul>
-<p>A module finalizer function must be called <code>Finalizer</code> and must appear in the top namespace of the module. The module finalizer timeout is always set to the maximum duration of 15 minutes. On invocation, the module finalizer receives the module version to allow it to track upgrades or downgrade scenarios. It also receives the module checksum so it track state for each CloudFormation update.</p>
+<p>A module finalizer function must be called <code>Finalizer</code> and must appear in the top-level items of the module. The module finalizer timeout is always set to the maximum duration of 15 minutes. On invocation, the module finalizer receives the module version to allow it to track upgrades or downgrade scenarios. It also receives the module checksum so it track state for each CloudFormation update.</p>
 <p>The following example shows how easy it is to define a module finalizer:</p>
 <pre><code class="lang-yaml">- Function: Finalizer
   Memory: 128
@@ -250,7 +275,7 @@ Items:
   Properties:
     ImageId: ami-0ff8a91507f77f867
 
-- Namespace: ProductionResources
+- Group: ProductionResources
   Items:
 
     - Condition: Create
