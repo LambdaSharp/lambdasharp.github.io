@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Build serverless applications with .NET on AWS">
-    <meta name="keywords" content="lambdasharp, aws, serverless, dotnet, dotnetcore">
+    <meta name="title" content="LambdaSharp &quot;Geminus&quot; Release (v0.7.0.1) - 2019-09-12 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Release notes for LambdaSharp &quot;Geminus&quot; (v0.7)">
+    <meta name="keywords" content="release, notes, geminus, lambdasharp, aws, serverless, dotnet, dotnetcore">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp &quot;Geminus&quot; Release (v0.7.0.1) - 2019-09-12 | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://lambdasharp.net/articles/ReleaseNotes-Geminus.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+    <meta property="og:description" content="Release notes for LambdaSharp &quot;Geminus&quot; (v0.7)">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp &quot;Geminus&quot; Release (v0.7.0.1) - 2019-09-12 | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:description" content="Release notes for LambdaSharp &quot;Geminus&quot; (v0.7)">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS </title>
+    <title>LambdaSharp &quot;Geminus&quot; Release (v0.7.0.1) - 2019-09-12 | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Geminus.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="λ---geminus-v07---2019-09-10">λ# - Geminus (v0.7) - 2019-09-10</h1>
+<h1 id="lambdasharp-geminus-release-v0701---2019-09-12">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.1) - 2019-09-12</h1>
 
 <blockquote>
 <p>Geminus of Rhodes, was a Greek astronomer and mathematician, who flourished in the 1st century BC. An astronomy work of his, the Introduction to the Phenomena, still survives; it was intended as an introductory astronomy book for students. He also wrote a work on mathematics, of which only fragments quoted by later authors survive. <a href="https://en.wikipedia.org/wiki/Geminus">(Wikipedia)</a></p>
@@ -123,12 +123,12 @@
 </li>
 </ol>
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
-<h3 id="λ-module">λ# Module</h3>
+<h3 id="lambdasharp-module">LambdaSharp Module</h3>
 <ul>
 <li>The <code>Namespace:</code> declaration has been renamed to <a href="../syntax/Module-Group.html"><code>Group:</code></a>.</li>
 <li>Module references in <code>Using:</code> and <code>Nested:</code> declarations now require an origin suffix. For example, <code>LambdaSharp.S3.IO:0.5</code> must now be written as <code>LambdaSharp.S3.IO:0.5@lambdasharp</code>.</li>
 </ul>
-<h3 id="λ-core-services">λ# Core Services</h3>
+<h3 id="lambdasharp-core-services">LambdaSharp Core Services</h3>
 <p>The <code>DefaultSecretKey</code> was removed from λ# Core Services. While it was convenient, it introduced a hard relationship between the KMS key and the lifecycle of the λ# Core Services. The better approach is to entrust the account owner with managing the KMS lifecycle. In addition, it was also a monthly recurring cost item, which was unnecessary when not required.</p>
 <p>A few Lambda related error messages have been rephrased to make it clearer they related to the execution of Lambda functions.</p>
 <ul>
@@ -137,7 +137,7 @@
 <li><code>Process ran out of memory (Max: 128 MB)</code> is now <code>Lambda ran out of memory (Max: 128 MB)</code></li>
 <li><code>Process nearing execution limits (Memory 80.12 %, Duration: 91.23 %)</code> is now <code>Lambda nearing execution limits (Memory 80.12 %, Duration: 91.23 %)</code></li>
 </ul>
-<h3 id="λ-cli">λ# CLI</h3>
+<h3 id="lambdasharp-cli">LambdaSharp CLI</h3>
 <ul>
 <li>The <code>lash config</code> command has been removed. Its functionality has been integrated into the <code>lash init</code> command to streamline the setup process, resulting in a single deployment tier stack.</li>
 <li>The concept of the CLI profile is gone. Therefore the <code>--cli-profile</code> option is no longer supported.</li>
@@ -147,7 +147,7 @@
 <li>The <code>.csproj</code> file generated by <code>lash new function</code> can now dynamically support contributor mode (i.e. using a local λ# git checkout), which makes the <code>--use-project-reference</code> and <code>--use-nuget-reference</code> obsolete.</li>
 <li>The options for <code>lash tier coreservices</code> were changed from <code>--enable</code> to <code>--enabled</code> and from <code>--disable</code> to <code>--disabled</code> to make them consistent with the <code>lash init</code> command.</li>
 </ul>
-<h3 id="λ-assemblies">λ# Assemblies</h3>
+<h3 id="lambdasharp-assemblies">LambdaSharp Assemblies</h3>
 <ul>
 <li><code>ALambdaFunction.InfoStruct.ModuleOwner</code> has been renamed to <code>ALambdaFunction.InfoStruct.ModuleNamespace</code></li>
 <li><code>ALambdaFunction.DefaultSecretKeyId</code> has been removed</li>
@@ -237,7 +237,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0701---2019-09-11">(v0.7.0.1) - 2019-09-11</h3>
+<h3 id="v0701---2019-09-12">(v0.7.0.1) - 2019-09-12</h3>
 <h4 id="fixes">Fixes</h4>
 <ul>
 <li>Fixed an issue with enabling/disabling core services in a deployment tier.</li>
