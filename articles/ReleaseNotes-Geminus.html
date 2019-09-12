@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | &#955;# - Serverless .NET for AWS">
-    <meta name="description" content="Building serverless applications with .NET on AWS">
+    <meta name="title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, aws, serverless, dotnet, dotnetcore">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | &#955;# - Serverless .NET for AWS">
-    <meta property="og:site_name" content="&#955;# - Serverless .NET for AWS">
+    <meta property="og:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://lambdasharp.net/articles/ReleaseNotes-Geminus.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Building serverless applications with .NET on AWS">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | &#955;# - Serverless .NET for AWS">
+    <meta name="twitter:title" content="&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Building serverless applications with .NET on AWS">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>&#955;# - Geminus (v0.7) - 2019-09-10 | &#955;# - Serverless .NET for AWS </title>
+    <title>&#955;# - Geminus (v0.7) - 2019-09-10 | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Geminus.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -235,6 +235,16 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_System_String_"><code>ALambdaCustomResourceFunction.Abort(string)</code></a> method to abort the creation or update of a custom resource. <code>Abort()</code> will cause CloudFormation to respond with a failure code and showing the provided message.</li>
 <li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId"><code>LambdaSharp.CustomResource.Request&lt;TProperties&gt;.StackId</code></a> property to custom resource request to uniquely identify the CloudFormation stack from which the request originated.</li>
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
+</ul>
+<h2 id="releases">Releases</h2>
+<h3 id="v0701---2019-09-11">(v0.7.0.1) - 2019-09-11</h3>
+<h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed an issue with enabling/disabling core services in a deployment tier.</li>
+</ul>
+<h4 id="updated-documentation">Updated Documentation</h4>
+<ul>
+<li>Added metadata to HTML pages.</li>
 </ul>
 </article>
           </div>
