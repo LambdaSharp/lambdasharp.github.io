@@ -13,13 +13,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Module - Using Section | LambdaSharp - Serverless .NET for AWS">
+    <meta name="title" content="Using Section - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp module Using section">
     <meta name="keywords" content="module, using, section, configuration, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp Module - Using Section | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="Using Section - Module | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="LambdaSharp module Using section">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp Module - Using Section | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="Using Section - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="LambdaSharp module Using section">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp Module - Using Section | LambdaSharp - Serverless .NET for AWS </title>
+    <title>Using Section - Module | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/syntax/Module-Using.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="using">Using</h1>
 
-<p>The <code>Using</code> section, in the <a href="Index.html">λ# Module</a>, lists modules that the current module uses. During deployment, the λ# CLI checks if the used modules are present. If not, it will attempt to find and deploy them, resolving their dependencies recursively.</p>
+<p>The <code>Using</code> section, in the <a href="Index.html">LambdaSharp Module</a>, lists modules that the current module uses. During deployment, the LambdaSharp CLI checks if the used modules are present. If not, it will attempt to find and deploy them, resolving their dependencies recursively.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Module: String
 Description: String
@@ -110,7 +110,7 @@ Description: String
 </dd>
 <dt><code>Module</code></dt>
 <dd>
-<p>The <code>Module</code> attribute specifies the full name of the required module with an optional version and origin. The format must be <code>Namespace.Name[:Version][@Origin]</code>. Parts in brackets (<code>[ ]</code>) are optional. Without a version specifier, λ# uses the latest version it can find that is compatible with the λ# CLI. Without an origin, λ# uses the deployment bucket name of the active deployment tier as origin. Compilation fails if the λ# CLI cannot find a published module that matches the criteria.</p>
+<p>The <code>Module</code> attribute specifies the full name of the required module with an optional version and origin. The format must be <code>Namespace.Name[:Version][@Origin]</code>. Parts in brackets (<code>[ ]</code>) are optional. Without a version specifier, LambdaSharp uses the latest version it can find that is compatible with the LambdaSharp CLI. Without an origin, LambdaSharp uses the deployment bucket name of the active deployment tier as origin. Compilation fails if the LambdaSharp CLI cannot find a published module that matches the criteria.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: String</p>
 </dd>

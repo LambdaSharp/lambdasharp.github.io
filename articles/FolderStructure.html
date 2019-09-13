@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Folder Structure | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Build serverless applications with .NET on AWS">
-    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="title" content="LambdaSharp Folder Structure | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Overview of typical LambdaSharp folder structure">
+    <meta name="keywords" content="overview, folder, files, structure, layout, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="Folder Structure | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp Folder Structure | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://lambdasharp.net/articles/FolderStructure.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+    <meta property="og:description" content="Overview of typical LambdaSharp folder structure">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Folder Structure | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp Folder Structure | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:description" content="Overview of typical LambdaSharp folder structure">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>Folder Structure | LambdaSharp - Serverless .NET for AWS </title>
+    <title>LambdaSharp Folder Structure | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/FolderStructure.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="folder-structure">Folder Structure</h1>
 
-<p>λ# modules must follow a consistent folder organization. The root folder must contain the <code>Module.yml</code> file. Each function listed in the <code>Module.yml</code> must have a corresponding folder the naming convention <code>{FunctionName}</code>. The .NET Core projects file (<code>.csproj</code>) for each function must be contained within the sub-folder and be named with the same naming convention. (e.g. <code>{FunctionName}.csproj</code>).</p>
+<p>LambdaSharp modules must follow a consistent folder organization. The root folder must contain the <code>Module.yml</code> file. Each function listed in the <code>Module.yml</code> must have a corresponding folder the naming convention <code>{FunctionName}</code>. The .NET Core projects file (<code>.csproj</code>) for each function must be contained within the sub-folder and be named with the same naming convention. (e.g. <code>{FunctionName}.csproj</code>).</p>
 <ul>
 <li><code>GettingStarted</code>
 <ul>
@@ -119,7 +119,7 @@
 &lt;/Project&gt;
 </code></pre>
 <p>Furthermore, the function handler should be in a class called <code>Function</code> and the method should be called <code>FunctionHandler</code>. When different, the function configuration will need to explicitly list the name of the function handler using the <code>Handler</code> setting.</p>
-<p>In order for the λ# CLI to work properly the .NET Core project file must contain a reference to <code>Amazon.Lambda.Tools</code>.</p>
+<p>In order for the LambdaSharp CLI to work properly the .NET Core project file must contain a reference to <code>Amazon.Lambda.Tools</code>.</p>
 <pre><code class="lang-csharp">namespace GettingStarted.SlackCommand {
 
     public class Function : ALambdaSlackCommandFunction {

@@ -13,13 +13,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp &quot;Damo&quot; Release (v0.4.0.4) - 2019-01-11 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="title" content="LambdaSharp &quot;Damo&quot; Release (v0.4) | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Release notes for LambdaSharp &quot;Damo&quot; (v0.4)">
     <meta name="keywords" content="release, notes, damo, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp &quot;Damo&quot; Release (v0.4.0.4) - 2019-01-11 | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp &quot;Damo&quot; Release (v0.4) | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="Release notes for LambdaSharp &quot;Damo&quot; (v0.4)">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp &quot;Damo&quot; Release (v0.4.0.4) - 2019-01-11 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp &quot;Damo&quot; Release (v0.4) | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="Release notes for LambdaSharp &quot;Damo&quot; (v0.4)">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp &quot;Damo&quot; Release (v0.4.0.4) - 2019-01-11 | LambdaSharp - Serverless .NET for AWS </title>
+    <title>LambdaSharp &quot;Damo&quot; Release (v0.4) | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Damo.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -99,9 +99,9 @@
 <p>Damo was a Pythagorean philosopher said by many to have been the daughter of Pythagoras and Theano. <a href="https://en.wikipedia.org/wiki/Damo_(philosopher)">(Wikipedia)</a></p>
 </blockquote>
 <h2 id="whats-new">What's New</h2>
-<p>The objective of the λ# 0.4 <em>Damo</em> release has been to enable λ# modules to be deployed to different tiers without requiring the module, or underlying code, to be rebuilt each time. To achieve this objective, all compile-time operations have been translated into equivalent CloudFormation operations that can be resolved at stack creation time. This change required adding support for <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a>, which means that λ# modules can now be parameterized. For added convenience, λ# generates a <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-interface.html">CloudFormation interface</a>, so that module parameters are laid out in a logical manner in the AWS Console.</p>
-<p>In addition, λ# 0.4 <em>Damo</em> introduces a new module composition model that makes it easy to deploy modules that build on each other. A design challenge was to make this new composition model both easy to use while maintaining flexibility in how module dependencies are resolved. The solution leverages <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html">CloudFormation exports</a> which provide built-in tracking of dependencies and termination protection. λ# cross-module references are automatically resolved by default, but can be overwritten when needed to reference other modules or use existing resources instead. The default behavior preserves the ease-of-use, while the flexibility of referencing different modules enables the freedom of choosing a preferred deployment topology. Finally, by allowing explicit resources names or values to be passed in, it is possible to deploy modules in legacy environments where resources were created through a different process.</p>
-<p>Finally, λ# 0.4 <em>Damo</em> introduces a new core service--the <code>λ# Registrar</code>--that is responsible for registering modules and processing the CloudWatch Logs of their deployed Lambda functions. By monitoring the logs, <code>λ# Registrar</code> can automatically detect and report out-of-memory and timeout failures. As an extra bonus, <code>λ# Registrar</code> can optionally be integrated with <a href="http://rollbar.com">Rollbar</a> to create projects per module to track their warnings and errors.</p>
+<p>The objective of the LambdaSharp 0.4 <em>Damo</em> release has been to enable LambdaSharp modules to be deployed to different tiers without requiring the module, or underlying code, to be rebuilt each time. To achieve this objective, all compile-time operations have been translated into equivalent CloudFormation operations that can be resolved at stack creation time. This change required adding support for <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a>, which means that LambdaSharp modules can now be parameterized. For added convenience, LambdaSharp generates a <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudformation-interface.html">CloudFormation interface</a>, so that module parameters are laid out in a logical manner in the AWS Console.</p>
+<p>In addition, LambdaSharp 0.4 <em>Damo</em> introduces a new module composition model that makes it easy to deploy modules that build on each other. A design challenge was to make this new composition model both easy to use while maintaining flexibility in how module dependencies are resolved. The solution leverages <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html">CloudFormation exports</a> which provide built-in tracking of dependencies and termination protection. LambdaSharp cross-module references are automatically resolved by default, but can be overwritten when needed to reference other modules or use existing resources instead. The default behavior preserves the ease-of-use, while the flexibility of referencing different modules enables the freedom of choosing a preferred deployment topology. Finally, by allowing explicit resources names or values to be passed in, it is possible to deploy modules in legacy environments where resources were created through a different process.</p>
+<p>Finally, LambdaSharp 0.4 <em>Damo</em> introduces a new core service--the <code>LambdaSharp Registrar</code>--that is responsible for registering modules and processing the CloudWatch Logs of their deployed Lambda functions. By monitoring the logs, <code>LambdaSharp Registrar</code> can automatically detect and report out-of-memory and timeout failures. As an extra bonus, <code>LambdaSharp Registrar</code> can optionally be integrated with <a href="http://rollbar.com">Rollbar</a> to create projects per module to track their warnings and errors.</p>
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
 <p>The following change may impact modules created with previous releases.</p>
 <h3 id="module-definition">Module Definition</h3>
@@ -120,7 +120,7 @@
 </ul>
 <h3 id="lambdasharp-tool">LambdaSharp Tool</h3>
 <ul>
-<li>The λ# Tool has been renamed to λ# CLI.</li>
+<li>The LambdaSharp Tool has been renamed to LambdaSharp CLI.</li>
 <li>Function folders no longer need to be prefixed with the module name. They will still be found for backwards compatibility, but the new recommended naming is to just use the function name as the folder name.</li>
 <li>With the introduction of <code>--cli-profile</code> there was the need to rename <code>--profile</code> to <code>--aws-profile</code> to avoid ambiguity.</li>
 <li>The role of the pre-processor has been greatly reduced to make generated CloudFormation templates more portable. As such, support for variable substitutions using the moustache (<code>{{ }}</code>) notation has been removed. Conditional inclusion is still supported, but since it is done at the pre-processor level, the benefits are no longer available after the build phase is complete. To select which conditional inclusions to keep, use the new <code>--selector</code> option with the <code>build</code> command. For convenience, the <code>deploy</code> command defaults to using the <code>--tier</code> option value as selector, if no selector is provided. This makes running the <code>deploy</code> command very similar to what it was in the past.</li>
@@ -130,23 +130,23 @@
 <li>CloudFormation resources are now always resolved to the ARN of the created resource. Previously, created resources were resolved using the <code>!Ref</code> operation, which varies by resource type. This change was necessary to homogenize CloudFormation resources with resource references found in module parameters and cross-module references. For convenience, the <code>AwsConverters</code> class contains methods for extracting resource names from S3/SQS/DynamoDB/etc. ARNs.</li>
 <li>The <code>ALambdaFunction&lt;TRequest&gt;</code> base class was removed in favor of <code>ALambdaFunction&lt;TRequest, TResponse&gt;</code>.</li>
 </ul>
-<h2 id="new-λ-cli-features">New λ# CLI Features</h2>
+<h2 id="new-lambdasharp-cli-features">New LambdaSharp CLI Features</h2>
 <h3 id="setup">Setup</h3>
-<p>The λ# CLI is now a global dotnet tool, which makes it trivial to install. No more need to check-out the <a href="https://github.com/LambdaSharp/LambdaSharpTool">LambdaSharpTool GitHub repository</a> for creating modules unless to contribute to it.</p>
+<p>The LambdaSharp CLI is now a global dotnet tool, which makes it trivial to install. No more need to check-out the <a href="https://github.com/LambdaSharp/LambdaSharpTool">LambdaSharpTool GitHub repository</a> for creating modules unless to contribute to it.</p>
 <pre><code class="lang-bash">dotnet tool install -g LambdaSharp.Tool --version 0.4.*
 </code></pre>
-<p>As part of the λ# CLI setup procedure, the CLI must be configured for the AWS account. The configuration step creates a profile and resources required to deploy λ# modules. The profile information is stored in the AWS Parameter Store so that it can be shared with team members. Multiple CLI profiles can be configured when needed.</p>
+<p>As part of the LambdaSharp CLI setup procedure, the CLI must be configured for the AWS account. The configuration step creates a profile and resources required to deploy LambdaSharp modules. The profile information is stored in the AWS Parameter Store so that it can be shared with team members. Multiple CLI profiles can be configured when needed.</p>
 <pre><code class="lang-bash">dotnet lash config
 </code></pre>
-<p>Initializing a deployment tier has been streamlined into a single command, which deploys the λ# runtime modules from a public bucket. Alternatively, for λ# contributors, the CLI can deploy a locally compiled version of the λ# runtime modules.</p>
+<p>Initializing a deployment tier has been streamlined into a single command, which deploys the LambdaSharp runtime modules from a public bucket. Alternatively, for LambdaSharp contributors, the CLI can deploy a locally compiled version of the LambdaSharp runtime modules.</p>
 <pre><code class="lang-bash">dotnet lash init --tier Sandbox
 </code></pre>
 <p>For complete instructions and options, check out the updated <a href="Setup.html">setup documentation</a>.</p>
 <h3 id="build-publish-and-deploy">Build, Publish, and Deploy</h3>
-<p>The λ# deployment process has been broken down into three commands: <code>build</code>, <code>publish</code>, and <code>deploy</code>.</p>
+<p>The LambdaSharp deployment process has been broken down into three commands: <code>build</code>, <code>publish</code>, and <code>deploy</code>.</p>
 <h4 id="build-command">Build Command</h4>
-<p>The <code>build</code> command compiles the λ# module definition into a CloudFormation template, the functions into Lambda-ready packages, and compresses the file packages. The <code>build</code> command does not upload any assets and, therefore, does not require a λ# CLI profile, deployment tier, or even AWS account to work.</p>
-<p>For .Net Core, before compiling the function projects, the λ# CLI verifies that the correct λ# assemblies are referenced. This ensures that λ# CLI produced CloudFormation template is compatible with the Lambda functions when they get deployed. In addition <code>dotnet restore</code> is run to ensure the latest dependencies are used.</p>
+<p>The <code>build</code> command compiles the LambdaSharp module definition into a CloudFormation template, the functions into Lambda-ready packages, and compresses the file packages. The <code>build</code> command does not upload any assets and, therefore, does not require a LambdaSharp CLI profile, deployment tier, or even AWS account to work.</p>
+<p>For .Net Core, before compiling the function projects, the LambdaSharp CLI verifies that the correct LambdaSharp assemblies are referenced. This ensures that LambdaSharp CLI produced CloudFormation template is compatible with the Lambda functions when they get deployed. In addition <code>dotnet restore</code> is run to ensure the latest dependencies are used.</p>
 <p>To build the <code>Module.yml</code> file in the current folder:</p>
 <pre><code class="lang-bash">dotnet lash build
 </code></pre>
@@ -154,7 +154,7 @@
 <pre><code class="lang-bash">dotnet lash MyCompany/MyModule
 </code></pre>
 <h4 id="publish-command">Publish Command</h4>
-<p>The <code>publish</code> command takes a path to a module manifest file as argument (e.g. <code>MyModule/bin/manifest.json</code>). The manifest is used to identify the module assets that must be uploaded to the deployment bucket associated with the λ# CLI profile. The <code>publish</code> command skips assets that have been previously uploaded and haven't changed.</p>
+<p>The <code>publish</code> command takes a path to a module manifest file as argument (e.g. <code>MyModule/bin/manifest.json</code>). The manifest is used to identify the module assets that must be uploaded to the deployment bucket associated with the LambdaSharp CLI profile. The <code>publish</code> command skips assets that have been previously uploaded and haven't changed.</p>
 <p>If the <code>publish</code> command is used without referencing a module manifest file, it invokes the <code>build</code> command first.</p>
 <p>To publish a previously built module:</p>
 <pre><code class="lang-bash">dotnet lash publish MyCompany/MyModule/bin/manifest.json
@@ -175,10 +175,10 @@
 <pre><code class="lang-bash">dotnet lash deploy MyCompany/MyModule
 </code></pre>
 <h5 id="module-parameters-processing">Module Parameters Processing</h5>
-<p>The λ# CLI can be invoked with an optional inputs file to supply the module parameter values for the deployment.</p>
+<p>The LambdaSharp CLI can be invoked with an optional inputs file to supply the module parameter values for the deployment.</p>
 <pre><code class="lang-bash">dotnet lash deploy --inputs inputs.yml MyCompany/MyModule
 </code></pre>
-<p>The module parameters file is processed by the λ# CLI before being applied as follows:</p>
+<p>The module parameters file is processed by the LambdaSharp CLI before being applied as follows:</p>
 <ul>
 <li>List of values are converted into a comma-separated text value.</li>
 <li>The <code>Secrets</code> attribute is processed to resolve KMS key aliases into key ARNs for the deployment AWS account/region.</li>
@@ -198,7 +198,7 @@ MySecondParameter: abc,xyz
 Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab,arn:aws:kms:us-east-1:123456789012:key/abcd1234-12ab-34cd-56ef-1234567890ab
 </code></pre>
 <h5 id="pre-deployment-check">Pre-deployment Check</h5>
-<p>The λ# CLI goes through a pre-deployment check before updating an existing CloudFormation stack:</p>
+<p>The LambdaSharp CLI goes through a pre-deployment check before updating an existing CloudFormation stack:</p>
 <ol>
 <li>The module to be deploying and the deployed module names must match.</li>
 <li>The module to be deployed must have the same or newer version than the deployed module.</li>
@@ -206,7 +206,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
 <p>The pre-deployment check can be skipped with the <code>--force-deploy</code> option.</p>
 <h3 id="other-cli-commands">Other CLI Commands</h3>
 <h4 id="info-command">Info Command</h4>
-<p>The <code>info</code> command was enhanced to show information about other installed tools that λ# CLI depends on, such as <code>dotnet</code> and <code>git</code>. In addition, sensitive information--like the AWS account ID--are hidden unless <code>--show-sensitive</code> option is used.</p>
+<p>The <code>info</code> command was enhanced to show information about other installed tools that LambdaSharp CLI depends on, such as <code>dotnet</code> and <code>git</code>. In addition, sensitive information--like the AWS account ID--are hidden unless <code>--show-sensitive</code> option is used.</p>
 <p>See the <a href="../cli/Tool-Info.html">updated documentation</a> for more details.</p>
 <h4 id="encrypt-command">Encrypt Command</h4>
 <p>The <code>encrypt</code> command was added to make it easier to encrypt sensitive information. The command can either use a specific KMS key or use the default KMS key for the deployment tier.</p>
@@ -214,7 +214,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
 <h3 id="new-function-command">New Function Command</h3>
 <p>The <code>new function</code> command now allows specifying the target language when adding a function.</p>
 <p>See the <a href="../cli/Tool-NewFunction.html">updated documentation</a> for more details.</p>
-<h2 id="new-λ-module-features">New λ# Module Features</h2>
+<h2 id="new-lambdasharp-module-features">New LambdaSharp Module Features</h2>
 <h3 id="variables">Variables</h3>
 <p>The <code>Variables</code> section defines literal values and resources. Variables can either be used to build other variables or passed into Lambda functions using the <code>Scope</code> attribute. Variables can define plaintext values, secrets, packages, or resources. When defining resources, variables can grant the module IAM role the permissions to act upon the resources.</p>
 <p>To scope a variable to all functions, use the wildcard value (<code>*</code>):</p>
@@ -230,7 +230,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Value: Another best variable!
 </code></pre>
 <h4 id="reusable-parameters-and-variables">Reusable Parameters and Variables</h4>
-<p>λ# module parameters and variables can now be referenced by other variables and resource properties.</p>
+<p>LambdaSharp module parameters and variables can now be referenced by other variables and resource properties.</p>
 <p>The following example shows how a variable can be used by another variable:</p>
 <pre><code class="lang-yaml">- Var: Greeting
   Value: Hello
@@ -258,14 +258,14 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
     Type: AWS::SNS::Topic
     Allow: Publish
 </code></pre>
-<p><strong>NOTE:</strong> the previous example is very common and λ# provides a shorthand notation for it.</p>
+<p><strong>NOTE:</strong> the previous example is very common and LambdaSharp provides a shorthand notation for it.</p>
 <pre><code class="lang-yaml">- Parameter: Topic
   Resource:
     Type: AWS::SNS::Topic
     Allow: Publish
 </code></pre>
 <h4 id="nested-variables">Nested Variables</h4>
-<p>λ# module variables can be organized into hierarchies. The value of a nested variable is accessed by creating a path to it using a double-colon as separator (<code>::</code>).</p>
+<p>LambdaSharp module variables can be organized into hierarchies. The value of a nested variable is accessed by creating a path to it using a double-colon as separator (<code>::</code>).</p>
 <pre><code class="lang-yaml">- Var: Greetings
   Variables:
 
@@ -296,10 +296,10 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Value: !Sub &quot;${Module::Name} (v${Module::Version})&quot;
 </code></pre>
 <h3 id="module-inputs">Module Inputs</h3>
-<p>λ# modules can now define parameters and imports (a.k.a. cross-module references) in the <a href="../syntax/Module-Parameter.html"><code>Inputs</code> section</a>.</p>
+<p>LambdaSharp modules can now define parameters and imports (a.k.a. cross-module references) in the <a href="../syntax/Module-Parameter.html"><code>Inputs</code> section</a>.</p>
 <h4 id="module-parameters">Module Parameters</h4>
-<p>λ# module parameters are modelled after <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a> and support all of their attributes. See the <a href="../syntax/Module-Parameter.html">parameters documentation</a> for more details.</p>
-<p>In addition, a λ# module parameter can associate IAM permission with its parameter value, similar to variables.</p>
+<p>LambdaSharp module parameters are modelled after <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html">CloudFormation parameters</a> and support all of their attributes. See the <a href="../syntax/Module-Parameter.html">parameters documentation</a> for more details.</p>
+<p>In addition, a LambdaSharp module parameter can associate IAM permission with its parameter value, similar to variables.</p>
 <pre><code class="lang-yaml">- Parameter: Topic
   Resource:
     Type: AWS::SNS::Topic
@@ -317,13 +317,13 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
 </code></pre>
 <p><strong>NOTE:</strong> the <code>Properties</code> section is ignored if a non-default parameter value is used since no resource is being created.</p>
 <h4 id="module-secret-parameters">Module Secret Parameters</h4>
-<p>In addition to the default CloudFormation parameter types, λ# modules can have parameters of type <code>Secret</code>. A secret parameter is passed in as base64-encoded string of the encrypted data (see <a href="../cli/Tool-Encrypt.html">CLI <code>encrypt</code> command</a>). To be able to decrypt the data, the KMS key must either be listed in the <code>Secrets</code> section or be passed in the <code>Secrets</code> parameter. Encrypted parameter values remain encrypted through the deployment process and are only decrypted in memory by the functions when accessed during initialization.</p>
+<p>In addition to the default CloudFormation parameter types, LambdaSharp modules can have parameters of type <code>Secret</code>. A secret parameter is passed in as base64-encoded string of the encrypted data (see <a href="../cli/Tool-Encrypt.html">CLI <code>encrypt</code> command</a>). To be able to decrypt the data, the KMS key must either be listed in the <code>Secrets</code> section or be passed in the <code>Secrets</code> parameter. Encrypted parameter values remain encrypted through the deployment process and are only decrypted in memory by the functions when accessed during initialization.</p>
 <pre><code class="lang-yaml">- Parameter: MyApiKey
   Type: Secret
 </code></pre>
 <h4 id="module-imports-aka-cross-module-references">Module Imports (a.k.a. Cross-Module References)</h4>
-<p>λ# module imports enable a module to reference output values from another module. This mechanism is also known as <em>cross-module references</em>. Cross-module references are implemented using CloudFormation parameters, conditionals, exports, and the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html"><code>!ImportValue</code> function</a> to reference them. The complexity of cross-module references implementation is hidden behind a usage mechanism consistent with module parameters and variables.</p>
-<p>The λ# implementation of cross-module references enables CloudFormation to resolve references at deployment time. However, they can also be redirected to a different module output value or be given an specific value instead. This capability makes it possible to have a default behavior that is mostly convenient, while enabling modules to be re-wired to import parameters from other modules, or to be given existing values for testing or legacy purposes.</p>
+<p>LambdaSharp module imports enable a module to reference output values from another module. This mechanism is also known as <em>cross-module references</em>. Cross-module references are implemented using CloudFormation parameters, conditionals, exports, and the <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html"><code>!ImportValue</code> function</a> to reference them. The complexity of cross-module references implementation is hidden behind a usage mechanism consistent with module parameters and variables.</p>
+<p>The LambdaSharp implementation of cross-module references enables CloudFormation to resolve references at deployment time. However, they can also be redirected to a different module output value or be given an specific value instead. This capability makes it possible to have a default behavior that is mostly convenient, while enabling modules to be re-wired to import parameters from other modules, or to be given existing values for testing or legacy purposes.</p>
 <pre><code class="lang-yaml">- Import: MyOtherModule::Topic
   Scope: all
   Description: Topic ARN for notifying users
@@ -348,7 +348,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Label: My Favorite Parameter # (automatic label would have been &quot;My Parameter&quot;)
 </code></pre>
 <h3 id="module-outputs">Module Outputs</h3>
-<p>λ# modules can have three kinds of outputs: exports, custom resources, and macros.</p>
+<p>LambdaSharp modules can have three kinds of outputs: exports, custom resources, and macros.</p>
 <p>Module exports are converted into <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html">CloudFormation export</a> values for top-level stacks. For nested stacks, the module exports are converted into CloudFormation stack outputs. This behavior prevents other modules from taking dependencies on nested stacks.</p>
 <pre><code class="lang-yaml">- Var: MyQueue
   Resource:
@@ -406,13 +406,13 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
   Sources:
     - Alexa: !Ref AlexaSkillId
 </code></pre>
-<h2 id="new-λ-runtime-features">New λ# Runtime Features</h2>
-<p>The λ# runtime is now a top-level CloudFormation stack with supporting modules deployed as nested stacks.</p>
+<h2 id="new-lambdasharp-runtime-features">New LambdaSharp Runtime Features</h2>
+<p>The LambdaSharp runtime is now a top-level CloudFormation stack with supporting modules deployed as nested stacks.</p>
 <h3 id="lambdasharp-registrar">LambdaSharp Registrar</h3>
 <p>The newest runtime module is the <code>Registrar</code>, which is responsible for registering modules and functions. Upon registration, function logs are centrally processed to detect warnings and errors.</p>
 <p>The <code>Registrar</code> can optionally be configured to integrate with <a href="https://rollbar.com">Rollbar</a> to create tracking projects on module deployment.</p>
-<p>See the λ# CLI &amp; Runtime documentation for more details.</p>
-<h2 id="new-λ-assembly-features">New λ# Assembly Features</h2>
+<p>See the LambdaSharp CLI &amp; Runtime documentation for more details.</p>
+<h2 id="new-lambdasharp-assembly-features">New LambdaSharp Assembly Features</h2>
 <h3 id="alambdafunction-class">ALambdaFunction Class</h3>
 <p>The following methods were added to the <code>ALambdaFunction</code> abstract, base class:</p>
 <ul>
@@ -449,10 +449,10 @@ This method serializes an object into a JSON string using the built-in AWS Lambd
 </ul>
 <h3 id="v0402---2018-11-13">(v0.4.0.2) - 2018-11-13</h3>
 <ul>
-<li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/60">Fixed issue where λ# bucket discovery incorrectly defaulted back to the original bucket during deployment.</a></li>
+<li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/60">Fixed issue where LambdaSharp bucket discovery incorrectly defaulted back to the original bucket during deployment.</a></li>
 <li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/61">Fixed issue where AWS profile was only set via <code>AWS_PROFILE</code> environment variable. Now <code>AWS_DEFAULT_PROFILE</code> is also set.</a></li>
 <li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/62">Fixed issue where <code>config</code> did not default to <code>LAMBDASHARP_PROFILE</code> value when configuring a new CLI profile.</a></li>
-<li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/63">Fixed issue where λ# Runtime module used a multi-region domain name pattern for S3 buckets that was incompatible with the <code>us-east-1</code> region.</a></li>
+<li><a href="https://github.com/LambdaSharp/LambdaSharpTool/issues/63">Fixed issue where LambdaSharp Runtime module used a multi-region domain name pattern for S3 buckets that was incompatible with the <code>us-east-1</code> region.</a></li>
 </ul>
 <h3 id="v0401---2018-11-12">(v0.4.0.1) - 2018-11-12</h3>
 <ul>

@@ -97,12 +97,12 @@
 
 <p><img src="../images/Model.png" alt="λ#"></p>
 <h1 id="lambdasharp-module-syntax">LambdaSharp Module Syntax</h1>
-<p>A λ# module is divided into three main components: details about the module, required dependencies, and item definitions, such as parameters, variables, resources, and functions.</p>
+<p>A LambdaSharp module is divided into three main components: details about the module, required dependencies, and item definitions, such as parameters, variables, resources, and functions.</p>
 <p>Parameter values are provided at module deployment time. Optionally, parameters can act as conditional resources that are created when a parameter value is omitted.</p>
 <p>Variables hold intermediate results that can be shared with other item definitions in the module. Variables are inlined during compilation and don't appear in the final output unless shared publicly.</p>
 <p>Parameters, variables, and resources can be shared with other modules by making them <code>public</code>. These can then be imported using cross-module references.</p>
 <p>Functions can be wired up to respond to various event sources, such as SQS, SNS, API Gateway, or even Slack Commands. Functions can be implemented using C# or Javascript.</p>
-<p>The λ# CLI <code>build</code> command compiles the module into a CloudFormation template. The <code>publish</code> command uploads the artifacts to the deployment bucket. Finally, the <code>deploy</code> command creates/updates a CloudFormation stack.</p>
+<p>The LambdaSharp CLI <code>build</code> command compiles the module into a CloudFormation template. The <code>publish</code> command uploads the artifacts to the deployment bucket. Finally, the <code>deploy</code> command creates/updates a CloudFormation stack.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Module: String
 Version: String
@@ -145,7 +145,7 @@ Items:
 </dd>
 <dt><code>Using</code></dt>
 <dd>
-<p>The <code>Using</code> section specifies λ# modules that are used by this module. During the build phase, the manifests of the used modules are imported to validate their parameters and attributes. During the deploy phase, the used modules are automatically deployed when missing.</p>
+<p>The <code>Using</code> section specifies LambdaSharp modules that are used by this module. During the build phase, the manifests of the used modules are imported to validate their parameters and attributes. During the deploy phase, the used modules are automatically deployed when missing.</p>
 <p><i>Required:</i> No</p>
 <p><i>Type:</i> List of <a href="Module-Using.html">Using Definition</a></p>
 </dd>
@@ -157,14 +157,14 @@ Items:
 </dd>
 <dt><code>Version</code></dt>
 <dd>
-<p>The <code>Version</code> attribute specifies the version of the λ# module. The format of the version must be <code>Major.Minor[.Build[.Revision]][-Suffix]</code>. Components in square brackets (<code>[]</code>) are optional and can be omitted. The presence of the <code>-Suffix</code> element indicates a pre-release version.</p>
+<p>The <code>Version</code> attribute specifies the version of the LambdaSharp module. The format of the version must be <code>Major.Minor[.Build[.Revision]][-Suffix]</code>. Components in square brackets (<code>[]</code>) are optional and can be omitted. The presence of the <code>-Suffix</code> element indicates a pre-release version.</p>
 <p>The module version can be accessed as a variable in <code>!Sub</code> operations using the <code>${Module::Version}</code>.</p>
 <p><i>Required:</i> No</p>
 <p><i>Type:</i> String</p>
 </dd>
 </dl>
 <h2 id="intrinsic-functions">Intrinsic Functions</h2>
-<p><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a> are supported in item definitions where values can be specified. In addition, λ# modules can use the <code>!Include</code> pre-processor directive to include plain text files as strings or YAML files as nested objects. The <code>!Include</code> directive can be used anywhere in a YAML file.</p>
+<p><a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a> are supported in item definitions where values can be specified. In addition, LambdaSharp modules can use the <code>!Include</code> pre-processor directive to include plain text files as strings or YAML files as nested objects. The <code>!Include</code> directive can be used anywhere in a YAML file.</p>
 <p><em><strong>Example</strong></em></p>
 <pre><code class="lang-yaml">Module: My.Module
 Items:

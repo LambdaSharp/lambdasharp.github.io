@@ -14,8 +14,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Setup LambdaSharp | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Build serverless applications with .NET on AWS">
-    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="description" content="Getting started with LambdaSharp">
+    <meta name="keywords" content="video, tutorial, getting started, overview, setup, install, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
@@ -25,12 +25,12 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://lambdasharp.net/articles/Setup.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+    <meta property="og:description" content="Getting started with LambdaSharp">
   
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Setup LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:description" content="Getting started with LambdaSharp">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -94,6 +94,7 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
+
 <p><img src="../images/LambdaSharpLogo.png" alt="λ#"></p>
 <h1 id="setup-lambdasharp">Setup LambdaSharp</h1>
 <h2 id="step-0-prerequisite">Step 0: Prerequisite</h2>
@@ -103,12 +104,12 @@
 <li><a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html">AWS CLI</a></li>
 <li><a href="https://www.microsoft.com/net/download">.NET Core 2.1+</a></li>
 </ol>
-<h2 id="step-1-installing-λ-cli">Step 1: Installing λ# CLI</h2>
-<p>The λ# CLI can be installed as a global <code>dotnet</code> tool by running the <code>dotnet</code> tool installation command:</p>
+<h2 id="step-1-installing-lambdasharp-cli">Step 1: Installing LambdaSharp CLI</h2>
+<p>The LambdaSharp CLI can be installed as a global <code>dotnet</code> tool by running the <code>dotnet</code> tool installation command:</p>
 <p><strong>Using PowerShell/Bash:</strong></p>
 <pre><code class="lang-bash">dotnet tool install -g LambdaSharp.Tool
 </code></pre>
-<p>Alternatively, for λ# contributors, the CLI can be setup using the <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. See the λ# contributor installation instructions below.</p>
+<p>Alternatively, for LambdaSharp contributors, the CLI can be setup using the <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. See the LambdaSharp contributor installation instructions below.</p>
 <p>Once installed, validate that the command works by running it.</p>
 <p><strong>Using PowerShell/Bash:</strong></p>
 <pre><code class="lang-bash">lash
@@ -137,8 +138,8 @@ Commands:
 
 Run 'lash [command] --help' for more information about a command.
 </code></pre>
-<h2 id="step-2-initialize-a-λ-deployment-tier">Step 2: Initialize a λ# Deployment Tier</h2>
-<p>The λ# CLI must initialize a deployment tier before it can be used. The initialization creates the needed resources for deploying λ# modules. Multiple deployment tiers can be created by using the <code>--tier</code> option (e.g. <code>Test</code>, <code>Stage</code>, <code>Prod</code>, etc.), which prefixes the deployment tier name.</p>
+<h2 id="step-2-initialize-a-lambdasharp-deployment-tier">Step 2: Initialize a LambdaSharp Deployment Tier</h2>
+<p>The LambdaSharp CLI must initialize a deployment tier before it can be used. The initialization creates the needed resources for deploying LambdaSharp modules. Multiple deployment tiers can be created by using the <code>--tier</code> option (e.g. <code>Test</code>, <code>Stage</code>, <code>Prod</code>, etc.), which prefixes the deployment tier name.</p>
 <p>A deployment tier can be initialized with or without LambdaSharp.Core services. The LambdaSharp.Core services provide functionality for tracking errors across deployed modules and are recommended for testing, staging, and production deployment tiers.</p>
 <p>As a convenience, the <code>--quick-start</code> option streamlines the process of setting up a deployment tier and is recommended for personal work and demos.</p>
 <p><strong>Using PowerShell/Bash:</strong></p>
@@ -161,7 +162,7 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 <pre><code class="lang-bash">lash init --core-services enabled
 </code></pre>
 <h2 id="optional-define-environment-variables">(Optional) Define Environment Variables</h2>
-<p>The following environment variables are checked when their corresponding options are omitted from the λ# command line.</p>
+<p>The following environment variables are checked when their corresponding options are omitted from the LambdaSharp command line.</p>
 <ul>
 <li><code>LAMBDASHARP_TIER</code>: Replaces the need for the <code>--tier</code> option.</li>
 <li><code>AWS_PROFILE</code>: Replaces the need for the <code>--aws-profile</code> option.</li>
@@ -173,7 +174,7 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 <pre><code class="lang-bash">export LAMBDASHARP_TIER=Sandbox
 </code></pre>
 <h2 id="optional-customize-lambdasharp-core-settings">(Optional) Customize LambdaSharp Core Settings</h2>
-<p>The following λ# Core module settings can be adjusted in the AWS console by updating the deployed CloudFormation stack.</p>
+<p>The following LambdaSharp Core module settings can be adjusted in the AWS console by updating the deployed CloudFormation stack.</p>
 <table>
 <thead>
 <tr>
@@ -196,10 +197,10 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 </tbody>
 </table>
 <h2 id="optional-subscribe-to-errorreporttopic-topic">(Optional) Subscribe to <code>ErrorReportTopic</code> Topic</h2>
-<p>The λ# Core module analyzes the output of all deployed functions. When an issue occurs, the Core module sends a notification on the SNS <code>ErrorReportTopic</code>.</p>
+<p>The LambdaSharp Core module analyzes the output of all deployed functions. When an issue occurs, the Core module sends a notification on the SNS <code>ErrorReportTopic</code>.</p>
 <h2 id="optional-setup-rollbar-integration">(Optional) Setup Rollbar Integration</h2>
-<p>The λ# Core module can optionally be configured to send errors and warnings to <a href="https://rollbar.com/">Rollbar</a>. To enable this functionality, the λ# Core module needs the <em>read</em> and <em>write</em> access tokens for the account, which can be found in the <em>Account Settings</em> page.</p>
-<p>The λ# Core module expects the access tokens to be encrypted, which can easily be done with the <a href="../cli/Tool-Encrypt.html"><code>lash encrypt</code></a> command.</p>
+<p>The LambdaSharp Core module can optionally be configured to send errors and warnings to <a href="https://rollbar.com/">Rollbar</a>. To enable this functionality, the LambdaSharp Core module needs the <em>read</em> and <em>write</em> access tokens for the account, which can be found in the <em>Account Settings</em> page.</p>
+<p>The LambdaSharp Core module expects the access tokens to be encrypted, which can easily be done with the <a href="../cli/Tool-Encrypt.html"><code>lash encrypt</code></a> command.</p>
 <table>
 <thead>
 <tr>
@@ -226,12 +227,12 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 </tr>
 </tbody>
 </table>
-<h1 id="for-λ-contributors-installing-λ-from-github">For λ# Contributors: Installing λ# from GitHub</h1>
-<p>λ# is distributed as <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. Switch to your preferred folder for Git projects and create a clone of the λ# repository.</p>
+<h1 id="for-lambdasharp-contributors-installing-lambdasharp-from-github">For LambdaSharp Contributors: Installing LambdaSharp from GitHub</h1>
+<p>LambdaSharp is distributed as <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. Switch to your preferred folder for Git projects and create a clone of the LambdaSharp repository.</p>
 <p><strong>Using PowerShell/Bash:</strong></p>
 <pre><code class="lang-bash">git clone https://github.com/LambdaSharp/LambdaSharpTool.git
 </code></pre>
-<p>Define the <code>LAMBDASHARP</code> environment variable to point to the folder of the <code>LambdaSharpTool</code> clone. Furthermore, define <code>lash</code> as an alias to invoke the λ# CLI. The following script assumes λ# was cloned into the <code>/Repos/LambdaSharpTool</code> directory.</p>
+<p>Define the <code>LAMBDASHARP</code> environment variable to point to the folder of the <code>LambdaSharpTool</code> clone. Furthermore, define <code>lash</code> as an alias to invoke the LambdaSharp CLI. The following script assumes LambdaSharp was cloned into the <code>/Repos/LambdaSharpTool</code> directory.</p>
 <p><strong>Using PowerShell:</strong></p>
 <pre><code class="lang-powershell">New-Variable -Name LAMBDASHARP -Value \Repos\LambdaSharpTool
 function lash {

@@ -96,7 +96,7 @@
 <h1 id="deploy-module">Deploy Module</h1>
 
 <p>The <code>deploy</code> command is used to deploy a published module.</p>
-<p>CloudFormation stacks created by the λ# CLI have termination protection enabled when deployed with the <code>--protect</code> option. In addition, subsequent updates cannot delete or replace data resources unless the <code>--allow-data-loss</code> option is passed in. This behavior is to reduce the risk of accidental data loss when CloudFormation resources are replaced.</p>
+<p>CloudFormation stacks created by the LambdaSharp CLI have termination protection enabled when deployed with the <code>--protect</code> option. In addition, subsequent updates cannot delete or replace data resources unless the <code>--allow-data-loss</code> option is passed in. This behavior is to reduce the risk of accidental data loss when CloudFormation resources are replaced.</p>
 <h2 id="arguments">Arguments</h2>
 <p>The <code>deploy</code> command takes an optional argument. The argument can either be the name of a published module with an optional version constraint, a path to a manifest file, a path to a module definition, or a path to a folder containing a <code>Module.yml</code> file.</p>
 <p>If the argument refers to a manifest file, the <code>deploy</code> command invokes <code>publish</code> command to upload the module and its artifacts to the deployment bucket.</p>

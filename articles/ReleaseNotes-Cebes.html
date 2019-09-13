@@ -13,13 +13,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) - 2018-09-19 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Release notes for LambdaSharp &quot;Cebes&quot; (v0.3)">
     <meta name="keywords" content="release, notes, cebes, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) - 2018-09-19 | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="Release notes for LambdaSharp &quot;Cebes&quot; (v0.3)">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) - 2018-09-19 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp &quot;Cebes&quot; Release (v0.3) | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="Release notes for LambdaSharp &quot;Cebes&quot; (v0.3)">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp &quot;Cebes&quot; Release (v0.3) - 2018-09-19 | LambdaSharp - Serverless .NET for AWS </title>
+    <title>LambdaSharp &quot;Cebes&quot; Release (v0.3) | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Cebes.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -101,19 +101,19 @@
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
 <p>The following change may impact modules you have created using previous releases.</p>
 <h3 id="bootstrap">Bootstrap</h3>
-<p>The bootstrap procedure has been updated to include a new custom resource to handle S3 bucket subscriptions (see below). The new bootstrap procedure must be run to update the λ# environment.</p>
+<p>The bootstrap procedure has been updated to include a new custom resource to handle S3 bucket subscriptions (see below). The new bootstrap procedure must be run to update the LambdaSharp environment.</p>
 <h3 id="default-module-filename">Default Module Filename</h3>
 <p>The default module filename was changed from <code>Deploy.yml</code> to <code>Module.yml</code> to make it more consistent with the new terminology adopted since the v0.2 release.</p>
 <p>A work-around to avoid being impacted by this change is to specify the module filename explicitly.</p>
 <pre><code class="lang-bash">lash deploy Deploy.yml
 </code></pre>
 <h3 id="s3-bucket-notifications-as-lambda-source">S3 Bucket Notifications as Lambda Source</h3>
-<p>This release introduces a custom resource to handle subscribing to S3 bucket notifications. In previous releases, it was only possible to subscribe to S3 notifications for S3 buckets that were created in the same λ# module. With the addition of the <code>S3Subscriber</code> custom resource, it now possible to subscribe to both new and existing S3 buckets. However, this change is not backwards compatible with how previous implementation handled S3 bucket subscriptions and requires the old S3 bucket to be deleted.</p>
+<p>This release introduces a custom resource to handle subscribing to S3 bucket notifications. In previous releases, it was only possible to subscribe to S3 notifications for S3 buckets that were created in the same LambdaSharp module. With the addition of the <code>S3Subscriber</code> custom resource, it now possible to subscribe to both new and existing S3 buckets. However, this change is not backwards compatible with how previous implementation handled S3 bucket subscriptions and requires the old S3 bucket to be deleted.</p>
 <h3 id="lambdasharp-environment-variable">LambdaSharp Environment Variable</h3>
-<p>The name of the deployment tier environment variable was changed to <code>LAMBDASHARP_TIER</code>. The <code>LAMBDASHARP_PROFILE</code> was added to allow selecting a different, default AWS profile for λ# deployments.</p>
-<h2 id="new-λ-cli-features">New λ# CLI Features</h2>
+<p>The name of the deployment tier environment variable was changed to <code>LAMBDASHARP_TIER</code>. The <code>LAMBDASHARP_PROFILE</code> was added to allow selecting a different, default AWS profile for LambdaSharp deployments.</p>
+<h2 id="new-lambdasharp-cli-features">New LambdaSharp CLI Features</h2>
 <h3 id="updated-new-command">Updated <code>New</code> Command</h3>
-<p>The λ# CLI has a new command to create a new module file. This command creates a <code>Module.yml</code> file in the current directory.</p>
+<p>The LambdaSharp CLI has a new command to create a new module file. This command creates a <code>Module.yml</code> file in the current directory.</p>
 <p>To invoke the new command:</p>
 <pre><code class="lang-bash">lash new module MyNewModule
 </code></pre>
@@ -122,18 +122,18 @@
 </code></pre>
 <p>Additionally, the <code>new function</code> command now updates the <code>Module.yml</code> file by adding a function definition.</p>
 <h3 id="artifact-output-directory">Artifact Output Directory</h3>
-<p>The λ# CLI now generates all artifacts in a dedicated output directory. By default, the output directory is called <code>bin</code> and co-located with the input <code>Module.yml</code> file.</p>
+<p>The LambdaSharp CLI now generates all artifacts in a dedicated output directory. By default, the output directory is called <code>bin</code> and co-located with the input <code>Module.yml</code> file.</p>
 <p>The location of the output directory can be overwritten with the <code>--output</code> option.</p>
 <pre><code class="lang-bash">lash deploy --output MyOutputFolder
 </code></pre>
-<h3 id="validate-λ-assembly-references">Validate λ# Assembly References</h3>
-<p>The λ# CLI now checks the version of all λ# assembly references in the function project files. If an assembly version mismatch is found, an error is emitted and deployment operation is cancelled. This behavior can be suppressed with the <code>--skip-assembly-validation</code> option.</p>
+<h3 id="validate-lambdasharp-assembly-references">Validate LambdaSharp Assembly References</h3>
+<p>The LambdaSharp CLI now checks the version of all LambdaSharp assembly references in the function project files. If an assembly version mismatch is found, an error is emitted and deployment operation is cancelled. This behavior can be suppressed with the <code>--skip-assembly-validation</code> option.</p>
 <pre><code class="lang-bash">lash deploy --skip-assembly-validation
 </code></pre>
 <p>To validate assembly references without deploying, use the <code>--dryrun</code> option.</p>
 <pre><code class="lang-bash">lash deploy --dryrun
 </code></pre>
-<h2 id="new-λ-module-features">New λ# Module Features</h2>
+<h2 id="new-lambdasharp-module-features">New LambdaSharp Module Features</h2>
 <h3 id="short-form-cloudformation-intrinsic-functions">Short-Form CloudFormation Intrinsic Functions</h3>
 <p>It is now possible to use the YAML short form for <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">CloudFormation intrinsic functions</a>. The short form for the following functions is now supported:
 <code>!And</code>, <code>!Base64</code>, <code>!Cidr</code>, <code>!Equals</code>, <code>!FindInMap</code>, <code>!GetAtt</code>, <code>!GetAZs</code>, <code>!If</code>, <code>!ImportValue</code>, <code>!Join</code>, <code>!Not</code>, <code>!Or</code>, <code>!Ref</code>, <code>!Select</code>, <code>!Split</code>, <code>!Sub</code>, <code>!Transform</code>.</p>
@@ -237,7 +237,7 @@ Functions:
 </code></pre>
 <h3 id="support-cloudformation-macros-experimental">Support CloudFormation Macros (Experimental)</h3>
 <p>This release includes experimental support for creating <a href="https://aws.amazon.com/blogs/aws/cloudformation-macros/">CloudFormation Macros</a>. See <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MacroSample/">CloudFormation Macro</a> sample.</p>
-<p>Note that while macros can be defined by a λ# module, they cannot be invoked by a λ# module, because they require CloudFormation stack updates to use change sets, which is not yet supported.</p>
+<p>Note that while macros can be defined by a LambdaSharp module, they cannot be invoked by a LambdaSharp module, because they require CloudFormation stack updates to use change sets, which is not yet supported.</p>
 <p>The following function definition creates a new macro called <code>{{Tier}}-MyMacro</code> that can be invoked by other CloudFormation change sets.</p>
 <pre><code class="lang-yaml">Functions:
   - Name: Function

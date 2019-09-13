@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp - Favorinus (v0.6.1) - 2019-09-05 | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Build serverless applications with .NET on AWS">
-    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="title" content="LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Release notes for LambdaSharp &quot;Favorinus&quot; (v0.6)">
+    <meta name="keywords" content="release, notes, favorinus, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp - Favorinus (v0.6.1) - 2019-09-05 | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://lambdasharp.net/articles/ReleaseNotes-Favorinus.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+    <meta property="og:description" content="Release notes for LambdaSharp &quot;Favorinus&quot; (v0.6)">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp - Favorinus (v0.6.1) - 2019-09-05 | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:description" content="Release notes for LambdaSharp &quot;Favorinus&quot; (v0.6)">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp - Favorinus (v0.6.1) - 2019-09-05 | LambdaSharp - Serverless .NET for AWS </title>
+    <title>LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Favorinus.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -99,8 +99,8 @@
 <p>Favorinus had extensive knowledge, combined with great oratorical powers, that raised him to eminence both in Athens and in Rome. He lived on close terms with Plutarch, with Herodes Atticus, to whom he bequeathed his library in Rome, with Demetrius the Cynic, Cornelius Fronto, Aulus Gellius, and with the emperor Hadrian. <a href="https://en.wikipedia.org/wiki/Favorinus">(Wikipedia)</a></p>
 </blockquote>
 <h2 id="whats-new">What's New</h2>
-<p>This release focuses on API Gateway, both for REST APIs and WebSockets. After building the Lambda functions, λ# analyzes the compiled assemblies to enhance the API Gateway rout definitions in CloudFormation. For example, λ# will extract the JSON schema from the target methods to create request validation rules for API Gateway. This enables API Gateway to block requests before they reach the Lambda function. In addition, λ# allows checks if the target method returns a response. If not, API Gateway will be configured to invoke the Lambda function asynchronously, providing much faster response times.</p>
-<p>In addition, there is a <a href="https://lambdasharp.net">new documentation site</a> that covers all aspects of λ#, including the base classes, modules, and syntax.</p>
+<p>This release focuses on API Gateway, both for REST APIs and WebSockets. After building the Lambda functions, LambdaSharp analyzes the compiled assemblies to enhance the API Gateway rout definitions in CloudFormation. For example, LambdaSharp will extract the JSON schema from the target methods to create request validation rules for API Gateway. This enables API Gateway to block requests before they reach the Lambda function. In addition, LambdaSharp allows checks if the target method returns a response. If not, API Gateway will be configured to invoke the Lambda function asynchronously, providing much faster response times.</p>
+<p>In addition, there is a <a href="https://lambdasharp.net">new documentation site</a> that covers all aspects of LambdaSharp, including the base classes, modules, and syntax.</p>
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
 <p>The following change may impact modules created with previous releases.</p>
 <h3 id="lambdasharp-cli">LambdaSharp CLI</h3>
@@ -108,7 +108,7 @@
 <li>The <code>git-sha</code> is now prefixed with <code>DIRTY-</code> if the git checkout contains modified or untracked files.</li>
 </ul>
 <h3 id="lambdasharp-assemblies">LambdaSharp Assemblies</h3>
-<p>The λ# dependencies were updated to <code>Amazon.Lambda.Core v1.1.0</code> and <code>Amazon.Lambda.Serialization.Json v1.5.0</code>. All projects need their dependencies updated to reflect this change. Otherwise, a compilation error will occur.</p>
+<p>The LambdaSharp dependencies were updated to <code>Amazon.Lambda.Core v1.1.0</code> and <code>Amazon.Lambda.Serialization.Json v1.5.0</code>. All projects need their dependencies updated to reflect this change. Otherwise, a compilation error will occur.</p>
 <p>The <code>LambdaSharp.dll</code> assembly was refactored for consistency. Classes are now organized into the following namespaces:</p>
 <ul>
 <li><code>LambdaSharp</code>: Common base classes, such as <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> and <a class="xref" href="../sdk/LambdaSharp.LambdaConfig.html">LambdaConfig</a>.</li>
@@ -129,9 +129,9 @@
 <li>The <code>ILambdaContext context</code> parameter was removed in favor of the <code>CurrentContext</code> property.</li>
 <li>Methods starting with <code>HandleXYZ</code> were renamed to <code>ProcessXYZ</code> for consistency.</li>
 </ul>
-<h2 id="new-λ-module-features">New λ# Module Features</h2>
+<h2 id="new-lambdasharp-module-features">New LambdaSharp Module Features</h2>
 <h3 id="api-gateway-net">API Gateway .NET</h3>
-<p>The <code>Api</code> event-source now supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
+<p>The <code>Api</code> event-source now supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, LambdaSharp CLI verifies that the target method exists in the compiled assembly. In addition, LambdaSharp generates the request/response JSON schema models for the method and uses them to configure API Gateway. If the method has either <code>void</code> or <code>Task</code> as return type, LambdaSharp will configure the lambda function as an asynchronous invocation in API Gateway. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
 <pre><code class="lang-yaml">- Function: MyFunction
   Memory: 256
   Timeout: 30
@@ -157,7 +157,7 @@
 }
 </code></pre>
 <h3 id="websockets-net">WebSockets .NET</h3>
-<p>A new <code>WebSocket</code> event-source is now supported. Similar to the <code>Api</code> event-source, <code>WebSocket</code> supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, λ# CLI verifies that the target method exists in the compiled assembly. In addition, λ# generates the request/response JSON schema models for the method and uses them to configure API Gateway v2. If the method has either <code>void</code> or <code>Task</code> as return type, λ# will configure the lambda function as an asynchronous invocation in API Gateway v2. Otherwise, it will be configured for bidirectional communication. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
+<p>A new <code>WebSocket</code> event-source is now supported. Similar to the <code>Api</code> event-source, <code>WebSocket</code> supports specifying a target invocation method using the <code>Invoke</code> attribute. At compile time, LambdaSharp CLI verifies that the target method exists in the compiled assembly. In addition, LambdaSharp generates the request/response JSON schema models for the method and uses them to configure API Gateway v2. If the method has either <code>void</code> or <code>Task</code> as return type, LambdaSharp will configure the lambda function as an asynchronous invocation in API Gateway v2. Otherwise, it will be configured for bidirectional communication. Note, for this behavior to take effect, the Lambda function must derive from <code>ALambdaApiGatewayFunction</code>.</p>
 <pre><code class="lang-yaml">- Function: MessageFunction
   Memory: 256
   Timeout: 30
@@ -181,7 +181,7 @@
 </code></pre>
 <h3 id="api-gateway-cloudwatch-log">API Gateway CloudWatch Log</h3>
 <p>The API Gateway CloudWatch log is now created--and therefore, deleted--by CloudFormation.</p>
-<h2 id="new-λ-cli-features">New λ# CLI Features</h2>
+<h2 id="new-lambdasharp-cli-features">New LambdaSharp CLI Features</h2>
 <h3 id="build-command">Build Command</h3>
 <p>The <code>--module-version</code> option was added to allow overriding the version of the module being compiled. This capability is useful in build pipelines where a script needs to set the current version number.</p>
 <p>In addition, the captured git-sha is now prepended with <code>DIRTY-</code> when there are uncommitted/untracked changes when the module is built.</p>
@@ -223,7 +223,7 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 </code></pre>
 <h3 id="init-command">Init Command</h3>
 <p>The <code>init</code> command was improved to detect previous versions of a deployment tier and prompt for perform an upgrade operation, similar to the <code>config</code> command.</p>
-<h2 id="new-λ-assembly-features">New λ# Assembly Features</h2>
+<h2 id="new-lambdasharp-assembly-features">New LambdaSharp Assembly Features</h2>
 <p>This release adds <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html"><code>ALambdaQueueFunction&lt;T&gt;</code></a> as base class for processing messages from SQS queues.</p>
 <p>The <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
 <h2 id="releases">Releases</h2>
@@ -245,9 +245,9 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <h3 id="v0602---2019-06-26">(v0.6.0.2) - 2019-06-26</h3>
 <h4 id="new-features-1">New Features</h4>
 <ul>
-<li>Modules are now compiled with a new <code>LambdaSharpCoreServices</code> parameter that controls if a module binds to λ# Core Services.</li>
-<li>Added <code>lash tier coreservices</code> command to enable/disable the use of λ# Core Services in deployed modules.</li>
-<li>Added standard module output parameter <code>LambdaSharpTool</code> that captures the version of the λ# CLI used to build the module.</li>
+<li>Modules are now compiled with a new <code>LambdaSharpCoreServices</code> parameter that controls if a module binds to LambdaSharp Core Services.</li>
+<li>Added <code>lash tier coreservices</code> command to enable/disable the use of LambdaSharp Core Services in deployed modules.</li>
+<li>Added standard module output parameter <code>LambdaSharpTool</code> that captures the version of the LambdaSharp CLI used to build the module.</li>
 </ul>
 <h4 id="fixes-1">Fixes</h4>
 <ul>

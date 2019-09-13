@@ -13,13 +13,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Module - Resource Declaration | LambdaSharp - Serverless .NET for AWS">
+    <meta name="title" content="Resource Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp YAML syntax for generic CloudFormation resources">
     <meta name="keywords" content="resource, declaration, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp Module - Resource Declaration | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="Resource Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="LambdaSharp YAML syntax for generic CloudFormation resources">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp Module - Resource Declaration | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="Resource Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="LambdaSharp YAML syntax for generic CloudFormation resources">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp Module - Resource Declaration | LambdaSharp - Serverless .NET for AWS </title>
+    <title>Resource Declaration - Module | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/syntax/Module-Resource.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -116,13 +116,13 @@ DependsOn:
 <dl>
 <dt><code>Allow</code></dt>
 <dd>
-<p>The <code>Allow</code> attribute can be either a comma-separated, single string value, or a list of string values. String values that contain a colon (<code>:</code>) are interpreted as IAM permission and used as is (e.g. <code>dynamodb:GetItem</code>, <code>s3:GetObject*</code>, etc.). Otherwise, the value is interpreted as a λ# shorthand (see <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/src/LambdaSharp.Tool/Resources/IAM-Mappings.yml">λ# Shorthand by Resource Type</a>). Both notations can be used simultaneously within a single <code>Allow</code> section. Duplicate IAM permissions, after λ# shorthand resolution, are removed.</p>
+<p>The <code>Allow</code> attribute can be either a comma-separated, single string value, or a list of string values. String values that contain a colon (<code>:</code>) are interpreted as IAM permission and used as is (e.g. <code>dynamodb:GetItem</code>, <code>s3:GetObject*</code>, etc.). Otherwise, the value is interpreted as a LambdaSharp shorthand (see <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/src/LambdaSharp.Tool/Resources/IAM-Mappings.yml">LambdaSharp Shorthand by Resource Type</a>). Both notations can be used simultaneously within a single <code>Allow</code> section. Duplicate IAM permissions, after LambdaSharp shorthand resolution, are removed.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Either String or List of String</p>
 </dd>
 <dt><code>DefaultAttribute</code></dt>
 <dd>
-<p>The <code>DefaultAttribute</code> attribute specifies the resource attribute to use when exporting the resource from the module or to a Lambda function. By default, the λ# CLI automatically selects the <code>Arn</code> attribute when available. Otherwise, it uses the return value of a <code>!Ref</code> expressions. This behavior can be overwritten by specifying a <code>DefaultAttribute</code> attribute.</p>
+<p>The <code>DefaultAttribute</code> attribute specifies the resource attribute to use when exporting the resource from the module or to a Lambda function. By default, the LambdaSharp CLI automatically selects the <code>Arn</code> attribute when available. Otherwise, it uses the return value of a <code>!Ref</code> expressions. This behavior can be overwritten by specifying a <code>DefaultAttribute</code> attribute.</p>
 <p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
 <p><i>Type</i>: String</p>
 </dd>
@@ -172,7 +172,7 @@ DependsOn:
 <dt><code>Type</code></dt>
 <dd>
 <p>The <code>Type</code> attribute identifies the AWS resource type that is being created or referenced. For example, <code>AWS::SNS::Topic</code> declares an SNS topic. For a list of all resource types, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html">AWS Resource Types Reference</a>.</p>
-<p><i>Required</i>: Conditional. The <code>Type</code> attribute is required for new resources and when using the λ# shorthand notation in the <code>Allow</code> attribute. The <code>Type</code> attribute can be omitted for referenced resources that only list native IAM permissions in their <code>Allow</code> attribute.</p>
+<p><i>Required</i>: Conditional. The <code>Type</code> attribute is required for new resources and when using the LambdaSharp shorthand notation in the <code>Allow</code> attribute. The <code>Type</code> attribute can be omitted for referenced resources that only list native IAM permissions in their <code>Allow</code> attribute.</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>Value</code></dt>
