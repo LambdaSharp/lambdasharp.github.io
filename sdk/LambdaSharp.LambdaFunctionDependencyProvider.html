@@ -191,7 +191,8 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
   </h3>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_ConfigSource_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.ConfigSource*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_ConfigSource" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.ConfigSource">ConfigSource</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance used for initializing the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -208,13 +209,15 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_JsonSerializer_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.JsonSerializer*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_JsonSerializer" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.JsonSerializer">JsonSerializer</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance used for serializing/deserializing JSON data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -231,7 +234,8 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
-        <td></td>
+        <td><p>The <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -287,7 +291,8 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
   </table>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_UtcNow_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.UtcNow*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_UtcNow" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.UtcNow">UtcNow</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the current date-time in UTC timezone.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -304,7 +309,8 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><span class="xref">System.DateTime</span></td>
-        <td></td>
+        <td><p>Current <span class="xref">System.DateTime</span> in UTC timezone</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -312,7 +318,10 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
   </h3>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_DecryptSecretAsync_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})">DecryptSecretAsync(Byte[], Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Decrypt a sequence of bytes with an optional encryption context. The Lambda function
+requires permission to use the <code>kms:Decrypt</code> operation on the KMS key used to
+encrypt the original message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -331,12 +340,14 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">secretBytes</span></td>
-        <td></td>
+        <td><p>Array containing the encrypted bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
-        <td></td>
+        <td><p>An optional encryption context. Can be <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -351,13 +362,16 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})">EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Encrypt a sequence of bytes using the specified KMS key. The Lambda function requires
+permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS key.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -376,17 +390,20 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">plaintextBytes</span></td>
-        <td></td>
+        <td><p>Array containing plaintext byte to encrypt.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">encryptionKeyId</span></td>
-        <td></td>
+        <td><p>The KMS key ID used encrypt the plaintext bytes.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
-        <td></td>
+        <td><p>An optional encryption context. Can be <code>null</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -401,13 +418,16 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_Log_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.Log*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_Log_System_String_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.Log(System.String)">Log(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Write a message to the log stream. In production, this should be the CloudWatch log associated with
+the Lambda function.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -426,13 +446,16 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>Message to write to the log stream.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync*"></a>
   <h4 id="LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___" data-uid="LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Send a message to the specified SQS queue. The Lambda function requires <code>sqs:SendMessage</code> permission
+on the specified SQS queue.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -456,12 +479,14 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message to send.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messageAttributes</span></td>
-        <td></td>
+        <td><p>Optional attributes for the message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -476,7 +501,8 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

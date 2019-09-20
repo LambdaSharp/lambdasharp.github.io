@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Why LambdaSharp? - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="LambdaSharp is a compiler for creating serverless .NET applications using CloudFormation">
+    <meta name="keywords" content="cloudformation, lambda, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Why LambdaSharp? - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/Compiler.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="LambdaSharp is a compiler for creating serverless .NET applications using CloudFormation">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why LambdaSharp? - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="LambdaSharp is a compiler for creating serverless .NET applications using CloudFormation">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Why LambdaSharp? - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/Compiler.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="why-did-we-create-lambdasharp">Why did we create LambdaSharp?</h1>
+
+<p>AWS CloudFormation has been around since 2010, but with the advent of serverless, it has really taken off. In 2018 alone, <a href="https://aws.amazon.com/blogs/mt/aws-cloudformation-2018-in-review/">almost a 100 new services have been added to it</a>. This number is likely to be dwarfed in 2019.</p>
+<p><img src="../images/CloudFormationResourceTypes2018.png" alt="CloudFormation Resource Types 2018"></p>
+<p>However, despite the rise in popularity of CloudFormation, the syntax has not improved and the developer tooling is still cumbersome. As a developer, I found it particularly frustrating that simple concepts like variables are absent and that there is no assistance in detecting preventable errors.</p>
+<p>As a result, <a href="https://github.com/LambdaSharp/LambdaSharpTool">I created LambdaSharp (λ#)</a>. LambdaSharp is a suite to tools to make building serverless .NET application much easier. For example, the LambdaSharp CLI compiles all associated code, uploads the generated artifacts, and deploys a CloudFormation stack in a single command.</p>
+<p>CloudFormation is an amazing technology for describing infrastructure and managing deployments. However, it is not developer-friendly. That is where LambdaSharp comes in. You get all the benefits of CloudFormation without many of its sharp edges.</p>
+<h2 id="new-syntax">New Syntax</h2>
+<p>Among my many grievances with CloudFormation was the stiff organization of the template file. Every definition type is confined to its own section. This design makes it impossible to co-locate related definitions. It also forces every new concept to introduce a new section.</p>
+<pre><code class="lang-yaml">AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  (set of parameters)
+Mappings:
+  (set of mappings)
+Conditions:
+  (set of conditions)
+Resources:
+  (set of resources)
+Outputs:
+  (set of outputs)
+</code></pre>
+<p>The new format is also YAML-based, but it allows for a free-form organization of definitions similar to what developers enjoy in modern languages. In addition, modules--CloudFormation templates in LambdaSharp--have a name and a version to detect unintentional CloudFormation stack updates with the wrong module or an older version.</p>
+<pre><code class="lang-yaml">Module: My.Module
+Version: 1.0-Dev
+Items:
+  - (list of definitions)
+</code></pre>
+<p>Definitions are identified by a keyword before their identifier (e.g. <code>Resource:</code>, <code>Mapping:</code>, <code>Condition:</code>, etc.). Additionally, definitions can be grouped to further organize them effectively.</p>
+<pre><code class="lang-yaml">- Resource: MyResource
+  Type: AWS::SNS::Topic
+  Properties:
+    DisplayName: MyTopic
+- Group: Accounting
+  Items:
+    - Resource: Bucket
+      Type: AWS::S3::Bucket
+</code></pre>
+<p>More importantly, though, it allows for new concepts, such as variables, to be added without having to confine them to a new section.</p>
+<h2 id="variables">Variables</h2>
+<p>Variables make it possible to reuse values in multiple places. These values can be hard-coded, like constants, or dynamic expressions based on parameters or resource attributes. Like parameters, variables can have a type, which is <code>String</code> when omitted. During compilation, variables are resolved and inlined were referenced.</p>
+<pre><code class="lang-yaml">- Variable: MyVariable
+  Value: !Sub &quot;Hello ${Greeting}&quot;
+</code></pre>
+<h2 id="encrypted-values">Encrypted Values</h2>
+<p>Another recurring headache is encrypted values. The problem is relatively easy to solve for Lambda functions, which can decrypt them during cold start, but not for resources.
+The solution is to embed a custom resource that decrypts values of type <code>Secret</code>. The output of the custom resource is obtained by appending the <code>::Plaintext</code> suffix to the name of the encrypted parameter or variable.</p>
+<pre><code class="lang-yaml">- Variable: SecretValue
+  Type: Secret
+  Value: AQICAH...rWI/sbo0d1oDVT2ccGj8=
+- Resource: MyResource
+  Type: AWS::SNS::Topic
+  Properties:
+    DisplayName: !Ref SecretValue::Plaintext
+</code></pre>
+<p>For the curious, the custom resource is optimized away during compilation if the plain text value is not needed by a resource, resulting in no additional overhead unless needed.</p>
+<h2 id="validation-of-resource-properties-and-attributes">Validation of Resource Properties and Attributes</h2>
+<p>The LambdaSharp compiler does more than adding some much requested features to CloudFormation. It also detects common errors, such as missing or misspelled resource properties and attributes, circular variable dependencies, misconfigured function entry points in the Lambda projects, and so on. The more errors detected early, the better!
+For example, compiling a module with the following definition:</p>
+<pre><code class="lang-yaml">- Resource: WebsiteBucket
+  Type: AWS::S3::Bucket
+  Properties:
+    WebsitConfiguration:
+      ErrorDocument: error/index.html
+      IndexDocument: index.html
+</code></pre>
+<p>Results with an error when built:</p>
+<pre><code>$ lash build
+LambdaSharp CLI (v0.7.0) - Build LambdaSharp module
+
+Compiling module: Module.yml
+
+FAILED: 1 errors encountered
+ERROR: unrecognized property 'WebsitConfiguration' @ Items/WebsiteBucket [C:\LambdaSharp\StaticWebsite\Module.yml]
+</code></pre>
+<h2 id="validation-of-custom-resource-types">Validation of Custom Resource Types</h2>
+<p>One of my favorite additions to CloudFormation is support for custom resource types, including declaring their properties and attributes. Custom resource types are validated just like regular AWS-native types.</p>
+<pre><code class="lang-yaml">- ResourceType: My::Custom::Resource
+    Handler: ResourceHandler
+    Properties:
+      - Name: SourceFile
+        Type: String
+    Attributes:
+      - Name: ResultValue
+        Type: String
+</code></pre>
+<p>Using a custom resource type in LambdaSharp is as simple as referencing its module in the <code>Using</code> section and then creating resources with it.</p>
+<pre><code class="lang-yaml">- Resource: MyResource
+  Type: My::Custom::Resource
+  Properties:
+    Source: !Ref MySourceParameter
+</code></pre>
+<p>During the build phase, the compiler embeds additional metadata about custom resource types inside the CloudFormation template, which is then fetched when a reference to a module if found. All this is done seamlessly without any additional overhead to the developer.</p>
+<h2 id="and-so-much-more">And so much more…</h2>
+<p>There are many more features that LambdaSharp provides today, such as a <a href="Finalizer.html">constructor/destructor for CloudFormation stacks</a>, local file uploads, interactive deployments, cross-module references, CloudWatch Log aggregation, etc. but they will have to go into a follow-on article.</p>
+<h2 id="check-it-out">Check It Out</h2>
+<p>The LambdaSharp syntax is documented and numerous examples are provided. Installation is trivial as well.</p>
+<ul>
+<li><a href="../syntax/Index.html">Module Syntax</a></li>
+<li><a href="Samples.html">Sample Modules</a></li>
+<li><a href="../sdk/Index.html">SDK Documentation</a></li>
+</ul>
+<h2 id="future-work">Future Work]</h2>
+<p>CloudFormation provides a rich set of mechanisms to create repeatable infrastructure at scale. However, CloudFormation as a language is not suitable for quick development cycles.</p>
+<p>LambdaSharp offers a glimpse of what kind of tooling can be created on top of CloudFormation and there is much more that can be done:</p>
+<ul>
+<li>Determine what regions a module is compatible with, based on AWS native and LambdaSharp referenced modules.</li>
+<li>Validate all possible permutations for modules with conditional resources and create the appropriate IAM roles.</li>
+<li>Type system for CloudFormation stack interoperability.</li>
+<li>Federation and discoverability of LambdaSharp module repositories.</li>
+<li>Optimize shared assembly references in pre-jitted Lambda Layers to reduce module size and cold-start times.</li>
+<li>Ability to define and share event sources for Lambda functions through modules.</li>
+<li>Enhance the active deployment tier for observability and reliability of serverless applications.</li>
+<li>And so on…</li>
+</ul>
+<p>If you are up for the challenge, check out the <a href="https://github.com/LambdaSharp/LambdaSharpTool">LambdaSharp GitHub repository</a> or reach out to me at <a href="https://twitter.com/lambdasharp">@lambdasharp</a>. If not, enjoy what LambdaSharp can do for you today and keep an eye out for future enhancements!</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -34,6 +34,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/Finalizer.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Finalizer.html",
+          "hash": "CqXyD6nepm6foBm6UqZ9Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/FolderStructure.md",
       "output": {
         ".html": {
@@ -134,7 +146,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Geminus.html",
-          "hash": "MzYrq+f1oY94Rrbf3nSeLA=="
+          "hash": "KrOJXYveSmMrTXknIlWxEg=="
         }
       },
       "is_incremental": false,
@@ -177,12 +189,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/WhyLambdaSharp.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/WhyLambdaSharp.html",
+          "hash": "G4Aa7c44P2Ql4qzJmyud8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "1scjsQgcISPbcVHJBcSwgQ=="
+          "hash": "To+4wCHUmx6XH7dte/2n8g=="
         }
       },
       "is_incremental": false,
@@ -438,6 +462,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/CloudFormationResourceTypes2018.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/CloudFormationResourceTypes2018.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/LambdaSharpBadge.png",
       "output": {
         "resource": {
@@ -530,7 +565,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "1/+BO4eO/vnMtZ2O6G+YMQ=="
+          "hash": "QRw7fTHdYfessszcPFMfbw=="
         }
       },
       "is_incremental": false,
@@ -554,7 +589,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "+x9rV64RlYoQGwanQf486Q=="
+          "hash": "wTNkqbPq1Nlxi+WFX8Jsvw=="
         }
       },
       "is_incremental": false,
@@ -602,7 +637,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "Okssg5s0BxTv0Gg7ZgFMJg=="
+          "hash": "MoNLhEsyQJdex1Jr/uRNiw=="
         }
       },
       "is_incremental": false,
@@ -614,7 +649,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "IaK3CY3YZ/c+5ZN1r/Ybhg=="
+          "hash": "O43xaUC05oqGBROqjevvlA=="
         }
       },
       "is_incremental": false,
@@ -662,7 +697,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "BaO/1dBSFHQAueFtSKdPdg=="
+          "hash": "GSpjSAUS0ao8ah8RmKEt6w=="
         }
       },
       "is_incremental": false,
@@ -745,7 +780,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.html",
-          "hash": "CLqHkslGC4EF+ogTtdQCFQ=="
+          "hash": "doarYuK0D5+nEwkeupxUUw=="
         }
       },
       "is_incremental": false,
@@ -757,7 +792,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html",
-          "hash": "7PVtWLpRRwsEu+Tun2z2xw=="
+          "hash": "2ti1V164bFxTsC6SjvkiuA=="
         }
       },
       "is_incremental": false,
@@ -817,7 +852,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.EmptyLambdaConfigSource.html",
-          "hash": "A1Wn/UjU3DCeVLHjsT1Kog=="
+          "hash": "KrFH7fSJhLqQwgZ5bm3gPg=="
         }
       },
       "is_incremental": false,
@@ -841,7 +876,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.html",
-          "hash": "exw+R6AzNp/UoZrKBknEIw=="
+          "hash": "xJfw1tz6RX2mmbczkxyYFg=="
         }
       },
       "is_incremental": false,
@@ -853,7 +888,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.html",
-          "hash": "hojJZ8jCOLp2oueVc7pPDw=="
+          "hash": "wZrmQpW786boXbRjRXbWYA=="
         }
       },
       "is_incremental": false,
@@ -877,7 +912,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html",
-          "hash": "AM9cHBWJW1wKJcBYe/8CBA=="
+          "hash": "BVf2DIuctl/nYiz2qsyheQ=="
         }
       },
       "is_incremental": false,
@@ -1213,7 +1248,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaFunctionDependencyProvider.html",
-          "hash": "fW2qom6vJOtCsY2h7Y3YFQ=="
+          "hash": "GtyjD3wfQPzo9FQ8snWAsg=="
         }
       },
       "is_incremental": false,
@@ -1357,7 +1392,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html",
-          "hash": "VMaC2WSzfD8mWhYTKl2V3A=="
+          "hash": "aAf2VXNzH/hjH1hrwKkQdQ=="
         }
       },
       "is_incremental": false,
@@ -1831,6 +1866,13 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1838,23 +1880,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 77,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 57,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 75,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
