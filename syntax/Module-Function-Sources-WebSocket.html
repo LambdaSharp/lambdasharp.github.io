@@ -100,6 +100,10 @@
 <pre><code class="lang-yaml">WebSocket: String
 OperationName: String
 ApiKeyRequired: Boolean
+AuthorizationType: String
+AuthorizationScopes:
+  - String
+AuthorizerId: String
 Invoke: String
 </code></pre>
 <h2 id="properties">Properties</h2>
@@ -117,6 +121,24 @@ Invoke: String
 <p><b>NOTE</b>: this setting only applies to the <code>$connect</code> route.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Boolean</p>
+</dd>
+<dt><code>AuthorizationType</code></dt>
+<dd>
+<p>The <code>AuthorizationType</code> attribute indicates the authorization type for the route. Valid values are <code>NONE</code> for open access, <code>AWS_IAM</code> for using AWS IAM permissions, and <code>CUSTOM</code> for using a Lambda authorizer.</p>
+<p><i>Required</i>: No (Default: <code>NONE</code>)</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>AuthorizationScopes</code></dt>
+<dd>
+<p>The <code>AuthorizationScopes</code> attribute holds the authorization scopes supported by this route.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: List of String</p>
+</dd>
+<dt><code>AuthorizerId</code></dt>
+<dd>
+<p>The <code>AuthorizerId</code> attribute holds the identifier of the <code>Authorizer</code> resource associated with this route.</p>
+<p><i>Required</i>: Conditional (Required when <code>AuthorizerType</code> is <code>CUSTOM</code>)</p>
+<p><i>Type</i>: String</p>
 </dd>
 <dt><code>Invoke</code></dt>
 <dd>

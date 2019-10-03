@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-geminus-release-v0702---2019-09-20">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.2) - 2019-09-20</h1>
+<h1 id="lambdasharp-geminus-release-v0703---2019-10-03">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.3) - 2019-10-03</h1>
 
 <blockquote>
 <p>Geminus of Rhodes, was a Greek astronomer and mathematician, who flourished in the 1st century BC. An astronomy work of his, the Introduction to the Phenomena, still survives; it was intended as an introductory astronomy book for students. He also wrote a work on mathematics, of which only fragments quoted by later authors survive. <a href="https://en.wikipedia.org/wiki/Geminus">(Wikipedia)</a></p>
@@ -123,7 +123,7 @@
 </li>
 </ol>
 <h2 id="breaking-changes">BREAKING CHANGES</h2>
-<h3 id="lambdasharp-module">LambdaSharp Module</h3>
+<h3 id="lambdasharp-module-syntax">LambdaSharp Module Syntax</h3>
 <ul>
 <li>The <code>Namespace:</code> declaration has been renamed to <a href="../syntax/Module-Group.html"><code>Group:</code></a>.</li>
 <li>Module references in <code>Using:</code> and <code>Nested:</code> declarations now require an origin suffix. For example, <code>LambdaSharp.S3.IO:0.5</code> must now be written as <code>LambdaSharp.S3.IO:0.5@lambdasharp</code>.</li>
@@ -237,15 +237,54 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0702---2019-09-20">(v0.7.0.2) - 2019-09-20</h3>
+<h3 id="v0703---2019-10-03">(v0.7.0.3) - 2019-10-03</h3>
+<h4 id="new-features">New Features</h4>
+<ul>
+<li>LambdaSharp Module Syntax
+<ul>
+<li>Added support for <code>AuthorizationType</code>, <code>AuthorizationScopes</code>, and <code>AuthorizerId</code> to REST API and WebSocket sources.</li>
+<li>Update CloudFormation spec to v6.2.0.</li>
+</ul>
+</li>
+<li>LambdaSharp CLI
+<ul>
+<li>Enhanced <code>lash new resource</code> to proceed with unambiguous resource type matches or prompt to disambiguate.</li>
+</ul>
+</li>
+</ul>
 <h4 id="fixes">Fixes</h4>
+<ul>
+<li>LambdaSharp CLI
+<ul>
+<li>Use function name for Lambda permissions instead of ARN b/c of 64 character limit.</li>
+<li>Fixed missing CloudWatch log group for <code>Finalizer</code> function.</li>
+<li>Fixed issue where nested types caused issues for WebSocket models.</li>
+<li>Fixed <code>lash new function Finalizer</code> to default to 900 seconds timeout.</li>
+<li>Fixed issue where <code>ApiKeyRequired</code> was not properly set for WebSocket sources.</li>
+<li>Improved heuristic for identifying if a legacy CloudFormation stack belongs to the deployment tier.</li>
+<li>Generate a single Lambda permission resource per REST API/WebSocket to Lambda function combination to avoid exceeding the resource policy size limit.</li>
+</ul>
+</li>
+<li><code>LambdaSharp.S3.IO</code> Module
+<ul>
+<li>Fixed an issue with empty zip packages.</li>
+</ul>
+</li>
+<li>LambdaSharp Assemblies
+<ul>
+<li>Added missing log comment when logging exception in asynchronous API Gateway endpoint invocation.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0702---2019-09-20">(v0.7.0.2) - 2019-09-20</h3>
+<h4 id="fixes-1">Fixes</h4>
 <ul>
 <li>Fixed an issue with legacy CloudFormation notification topics.</li>
 <li>Fixed an issue with build failing to abort after finding a type error during <code>util create-invoke-methods-schema</code> invocation.</li>
 <li>Fixed an issue with <code>lash init</code> not resuming properly when the core services installation was stuck in bootstrap mode.</li>
 </ul>
 <h3 id="v0701---2019-09-12">(v0.7.0.1) - 2019-09-12</h3>
-<h4 id="fixes-1">Fixes</h4>
+<h4 id="fixes-2">Fixes</h4>
 <ul>
 <li>Fixed an issue with enabling/disabling core services in a deployment tier.</li>
 </ul>

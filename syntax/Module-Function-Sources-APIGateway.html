@@ -98,8 +98,12 @@
 <p>The LambdaSharp CLI uses the <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html#api-gateway-create-api-as-simple-proxy">API Gateway Lambda Proxy Integration</a> to invoke Lambda functions from API Gateway. See <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/ApiSample/">API Gateway sample</a> for an example of how to use the API Gateway source.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Api: String
-OperationName: String
 ApiKeyRequired: Boolean
+AuthorizationType: String
+AuthorizationScopes:
+  - String
+AuthorizerId: String
+OperationName: String
 Invoke: String
 </code></pre>
 <h2 id="properties">Properties</h2>
@@ -116,6 +120,24 @@ Invoke: String
 <p>The <code>ApiKeyRequired</code> attribute indicates whether the method requires clients to submit a valid API key.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Boolean</p>
+</dd>
+<dt><code>AuthorizationType</code></dt>
+<dd>
+<p>The <code>AuthorizationType</code> attribute indicates the authorization type for the method. Valid values are <code>NONE</code> for open access, <code>AWS_IAM</code> for using AWS IAM permissions, <code>CUSTOM</code> for using a custom authorizer, or <code>COGNITO_USER_POOLS</code> for using a Cognito user pool.</p>
+<p><i>Required</i>: No (Default: <code>NONE</code>)</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>AuthorizationScopes</code></dt>
+<dd>
+<p>The <code>AuthorizationScopes</code> attribute holds a list of authorization scopes configured on the method. The scopes are used with a <code>COGNITO_USER_POOLS</code> authorizer to authorize the method invocation. The authorization works by matching the method scopes against the scopes parsed from the access token in the incoming request. The method invocation is authorized if any method scopes match a claimed scope in the access token. Otherwise, the invocation is not authorized. When the method scope is configured, the client must provide an access token instead of an identity token for authorization purposes.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: List of String</p>
+</dd>
+<dt><code>AuthorizerId</code></dt>
+<dd>
+<p>The <code>AuthorizerId</code> attribute holds the identifier of the <code>Authorizer</code> resource associated with this method.</p>
+<p><i>Required</i>: Conditional (Required when <code>AuthorizerType</code> is <code>CUSTOM</code> or <code>COGNITO_USER_POOLS</code>)</p>
+<p><i>Type</i>: String</p>
 </dd>
 <dt><code>Invoke</code></dt>
 <dd>
