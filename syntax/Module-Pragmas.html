@@ -122,7 +122,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="overrides-keys">Overrides Keys</h3>
+<h2 id="overrides-keys">Overrides Keys</h2>
 <table>
 <thead>
 <tr>
@@ -155,10 +155,16 @@
 <tr>
 <td><code>Module::WebSocket.RouteSelectionExpression</code></td>
 <td>Expression for determining the WebSocket route.</td>
-<td><code>&quot;$request.body.action&quot;</code></td>
+<td><code>$request.body.action</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="examples">Examples</h3>
+<h4 id="set-the-route-selection-expression-for-websocket">Set the route selection expression for WebSocket</h4>
+<pre><code class="lang-yaml">Pragmas:
+  - Overrides:
+      Module::WebSocket.RouteSelectionExpression: $request.body.Action
+</code></pre>
 </article>
           </div>
           
