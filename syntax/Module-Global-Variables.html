@@ -153,6 +153,19 @@
 </tr>
 </tbody>
 </table>
+<p><strong>NOTE:</strong>
+Some global variables are dependent on <code>UseCoreServices</code> and may not have a value otherwise.</p>
+<ul>
+<li><code>Module::DeadLetterQueue</code> becomes <code>AWS::NoValue</code> when <code>UseCoreServices</code> is <code>true</code>.</li>
+<li><code>Module::LoggingStream</code> becomes <code>AWS::NoValue</code> when <code>UseCoreServices</code> is <code>true</code>.</li>
+<li><code>Module::LoggingStreamRole</code> becomes <code>AWS::NoValue</code> when <code>UseCoreServices</code> is <code>true</code>.</li>
+</ul>
+<h2 id="module-conditions">Module Conditions</h2>
+<p>The following conditions are defined in each module.</p>
+<ul>
+<li><code>XRayIsEnabled</code> is <code>true</code> when X-Ray tracing is enabled for the module.</li>
+<li><code>UseCoreServices</code> is <code>true</code> when Core Services are enabled for the module.</li>
+</ul>
 <h2 id="module-rest-api-variables">Module REST API Variables</h2>
 <p>The following resources and variables are defined when a module contains a function that uses an API Gateway source. Otherwise, these resources and variables are not defined.</p>
 <table>

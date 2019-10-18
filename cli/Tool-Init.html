@@ -155,6 +155,10 @@
 <dd>
 <p>(optional) Allow upgrading LambdaSharp.Core across major releases (default: prompt)</p>
 </dd>
+<dt><code>--force-build</code></dt>
+<dd>
+<p>(optional) Always build function packages</p>
+</dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
@@ -166,6 +170,10 @@
 <dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Use a specific AWS profile from the AWS credentials file</p>
+</dd>
+<dt><code>--aws-region &lt;NAME&gt;</code></dt>
+<dd>
+<p>(optional) Use a specific AWS region (default: read from AWS profile)</p>
 </dd>
 <dt><code>--verbose|-V[:&lt;LEVEL&gt;]</code></dt>
 <dd>

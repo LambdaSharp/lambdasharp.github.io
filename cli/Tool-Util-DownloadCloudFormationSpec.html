@@ -95,23 +95,34 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="download-cloudformation-types-specification">Download CloudFormation Types Specification</h1>
 
-<p>The <code>util download-cloudformation-spec</code> is used by LambdaSharp contributors to download the latest CloudFormation specification. The downloaded file is automatically processed, compressed, and saved in the <code>$LAMBDASHARP/src/LambdaSharp.Tool/Resources</code> folder.</p>
-<p><strong>NOTE:</strong> this command is does not work unless the <code>LAMBDASHARP</code> environment variable is defined.</p>
+<p>The <code>util download-cloudformation-spec</code> is used to download the latest CloudFormation specification. By default, the CloudFormation specification is downloaded into the application data folder, located under the user account. However, for LambdaSharp contributors, the downloaded file is processed, compressed, and saved in the <code>$LAMBDASHARP/src/LambdaSharp.Tool/Resources</code> folder, so it can be used as an embedded resource.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="update-cloudformation-types-specification">Update CloudFormation Types Specification</h3>
 <p><strong>Using PowerShell/Bash:</strong></p>
 <pre><code class="lang-bash">lash util download-cloudformation-spec
 </code></pre>
-<p>Output:</p>
-<pre><code>LambdaSharp CLI (v0.5) - Download CloudFormation JSON specification to LAMBDASHARP development folder
+<pre><code class="lang-bash">LambdaSharp CLI (v0.7.0.4) - Download CloudFormation JSON specification
 
 Fetching specification from https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json
-Original size: 1,706,310
-Stripped size: 452,018
-Stored compressed spec file C:/LambdaSharpTool/src/LambdaSharp.Tool/Resources/CloudFormationResourceSpecification.json.gz
-Compressed file size: 54,086
+Original size: 2,417,148
+Stripped size: 549,585
 
-Done (finished: 1/17/2019 3:43:07 PM; duration: 00:00:02.3330652)
+Done (finished: 10/8/2019 2:56:08 PM; duration: 00:00:02.6376173)
+</code></pre>
+<h3 id="update-cloudformation-types-specification-for-lambdasharp-contributors">Update CloudFormation Types Specification for LambdaSharp Contributors</h3>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash util download-cloudformation-spec
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.7.0.4) - Download CloudFormation JSON specification
+
+Fetching specification from https://d1uauaxba7bl26.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json
+Original size: 2,417,148
+Stripped size: 549,585
+Stored compressed spec file C:\LambdaSharp\LambdaSharpTool\src\LambdaSharp.Tool\Resources\CloudFormationResourceSpecification.json.gz
+Compressed file size: 90,574
+
+Done (finished: 10/8/2019 2:55:38 PM; duration: 00:00:02.6412424)
 </code></pre>
 </article>
           </div>
