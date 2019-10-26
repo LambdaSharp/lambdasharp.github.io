@@ -364,7 +364,7 @@ Secrets: arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-12345678
 <p>See module exports documentation for more details.</p>
 <p>Custom resource definitions create new types of resources that can be used by other modules. Custom resources are a powerful way to expand the capabilities of modules beyond those provided by CloudFormation.</p>
 <pre><code class="lang-yaml">- CustomResource: Accounting::Report
-  Description: Custom resource for creating accounting reports
+  Description: Custom resource type for creating accounting reports
   Handler: AccountReportGenerator
 
 # ...
