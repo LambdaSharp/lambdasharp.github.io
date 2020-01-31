@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-geminus-release-v0706---2019-12-12">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.6) - 2019-12-12</h1>
+<h1 id="lambdasharp-geminus-release-v0707---2020-01-31">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.7) - 2020-01-31</h1>
 
 <blockquote>
 <p>Geminus of Rhodes, was a Greek astronomer and mathematician, who flourished in the 1st century BC. An astronomy work of his, the Introduction to the Phenomena, still survives; it was intended as an introductory astronomy book for students. He also wrote a work on mathematics, of which only fragments quoted by later authors survive. <a href="https://en.wikipedia.org/wiki/Geminus">(Wikipedia)</a></p>
@@ -237,6 +237,18 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
 </ul>
 <h2 id="releases">Releases</h2>
+<h3 id="v0707---2020-01-31">(v0.7.0.7) - 2020-01-31</h3>
+<h4 id="fixes">Fixes</h4>
+<ul>
+<li>LambdaSharp CLI
+<ul>
+<li><code>lash build</code> did not properly convert <code>\</code> in <code>.csproj</code> files on non-Windows operating systems, which caused a false-negative when trying to detect changes to function projects.</li>
+<li>Replaced locally patched <code>SharpZipLib</code> assembly with nuget version since the local patch was merged and published in v1.2.0</li>
+<li>Fixed an issue where a function project would be recompiled every time even when no changes were made.</li>
+<li>Fixed an issue where cached information was stored in the wrong application folder.</li>
+</ul>
+</li>
+</ul>
 <h3 id="v0706---2019-12-12">(v0.7.0.6) - 2019-12-12</h3>
 <h4 id="new-features">New Features</h4>
 <ul>
@@ -246,7 +258,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes">Fixes</h4>
+<h4 id="fixes-1">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -256,7 +268,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0705---2019-10-25">(v0.7.0.5) - 2019-10-25</h3>
-<h4 id="fixes-1">Fixes</h4>
+<h4 id="fixes-2">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -279,7 +291,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-2">Fixes</h4>
+<h4 id="fixes-3">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -311,7 +323,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-3">Fixes</h4>
+<h4 id="fixes-4">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -336,14 +348,14 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0702---2019-09-20">(v0.7.0.2) - 2019-09-20</h3>
-<h4 id="fixes-4">Fixes</h4>
+<h4 id="fixes-5">Fixes</h4>
 <ul>
 <li>Fixed an issue with legacy CloudFormation notification topics.</li>
 <li>Fixed an issue with build failing to abort after finding a type error during <code>util create-invoke-methods-schema</code> invocation.</li>
 <li>Fixed an issue with <code>lash init</code> not resuming properly when the core services installation was stuck in bootstrap mode.</li>
 </ul>
 <h3 id="v0701---2019-09-12">(v0.7.0.1) - 2019-09-12</h3>
-<h4 id="fixes-5">Fixes</h4>
+<h4 id="fixes-6">Fixes</h4>
 <ul>
 <li>Fixed an issue with enabling/disabling core services in a deployment tier.</li>
 </ul>
