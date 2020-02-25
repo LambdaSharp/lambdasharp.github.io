@@ -223,12 +223,26 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 <td>&quot;&quot;</td>
 </tr>
 <tr>
+<td><code>RollbarProjectPattern</code></td>
+<td>Optional pattern for naming Rollbar projects (see below)</td>
+<td>&quot;&quot;</td>
+</tr>
+<tr>
 <td><code>RollbarProjectPrefix</code></td>
-<td>Optional prefix when creating Rollbar projects</td>
+<td>(Obsolete: use <code>RollbarProjectPattern</code> instead) Optional prefix when creating Rollbar projects</td>
 <td>&quot;&quot;</td>
 </tr>
 </tbody>
 </table>
+<h3 id="using-rollbarprojectpattern-parameter">Using <code>RollbarProjectPattern</code> Parameter</h3>
+<p>The <code>RollbarProjectPattern</code> parameter is used to flexibly configure how Rollbar projects are named based on the module information. The following placeholders values are available for the pattern (assuming a module named <code>Acme.Example.Module:123@origin</code>):</p>
+<ul>
+<li><code>{ModuleFullName}</code>: The full module name (e.g. <code>Acme.Example.Module</code>)</li>
+<li><code>{ModuleNamespace}</code>: The module namespace (e.g. <code>Acme</code>)</li>
+<li><code>{ModuleName}</code>: The module name (e.g. <code>Example.Module</code>)</li>
+</ul>
+<p>During execution, the placeholders values are substituted with information from the module to generate the actual Rollbar project name. Note a Rollbar project name must start with a letter; can contain letters, numbers, spaces, underscores, hyphens, periods, and commas. If the generated Rollbar project name exceeds 32 characters, the last 6 characters in the available project name are substituted with 6 characters from the SHA256 hash of the entire name to ensure uniqueness.</p>
+<p>The default pattern is <code>{ModuleFullName}</code> when no <code>RollbarProjectPattern</code> parameter is specified.</p>
 <h1 id="for-lambdasharp-contributors-installing-lambdasharp-from-github">For LambdaSharp Contributors: Installing LambdaSharp from GitHub</h1>
 <p>LambdaSharp is distributed as <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. Switch to your preferred folder for Git projects and create a clone of the LambdaSharp repository.</p>
 <p><strong>Using PowerShell/Bash:</strong></p>
