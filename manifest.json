@@ -158,7 +158,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Geminus.html",
-          "hash": "oAM4zMRUXHSXKWPGwus5sA=="
+          "hash": "MrU01r5IGJb8iB1sdTgnyQ=="
         }
       },
       "is_incremental": false,
@@ -1892,16 +1892,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 57,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 78,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 57,
           "skipped_file_count": 0
         }
       }
