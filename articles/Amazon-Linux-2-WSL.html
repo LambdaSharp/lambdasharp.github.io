@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Doing LambdaSharp development with Amazon Linux 2 in Windows Terminal | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
+    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Doing LambdaSharp development with Amazon Linux 2 in Windows Terminal | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/Amazon-Linux-2-WSL.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Doing LambdaSharp development with Amazon Linux 2 in Windows Terminal | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Doing LambdaSharp development with Amazon Linux 2 in Windows Terminal | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/Amazon-Linux-2-WSL.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="doing-lambdasharp-development-with-amazon-linux-2-in-windows-terminal">Doing LambdaSharp development with Amazon Linux 2 in Windows Terminal</h1>
+
+<p>LambdaSharp builds <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#readytorun-images"><em>ReadyToRun</em></a>  packages when used on <em>Amazon Linux 2</em>. This can be achieved by either using an EC2 Linux instance, AWS CodeBuild, or the <em>Windows Subsystem for Linux</em> (WSL). This article describes how to enable and configure WSL for building LambdaSharp modules.</p>
+<p>The benefit of <em>ReadyToRun</em> packages is reduced cold start time for Lambda functions, as the assemblies contain pre-compiled native code. However, the pre-compiled native code does not replace the original .NET code. Therefore, <em>ReadyToRun</em> packages are larger than their unoptimized counterparts.</p>
+<h2 id="install-amazon-linux-2-for-wsl">Install Amazon Linux 2 for WSL</h2>
+<ol>
+<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Enable WSL on Windows 10.</a></li>
+<li>Download the <em>Amazon Linux 2</em> image for WSL from <a href="https://github.com/yosukes-dev/AmazonWSL">https://github.com/yosukes-dev/AmazonWSL</a></li>
+<li>Unzip the <em>Amazon2.zip</em> into a permanent location.</li>
+<li>Run <em>Amazon.exe</em> to extract <em>rootfs</em> and register it with WSL.</li>
+</ol>
+<h2 id="add-amazon-linux-2-to-windows-terminal">Add Amazon Linux 2 to Windows Terminal</h2>
+<p><a href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701">Windows Terminal</a> is a terminal emulator for Windows 10 written by Microsoft. It includes support for the Command Prompt, PowerShell, WSL, SSH, and more. The following settings make it trivial to open a <code>bash</code> shell directly in <em>Amazon Linux 2</em>.</p>
+<ol>
+<li>Open <em>Windows Terminal</em> settings.</li>
+<li>Add the following snippet to <em>Windows Terminal</em> settings. The icon path is assuming <em>Amazon2.zip</em> was extracted into <em>C:\Amazon2</em> folder.
+<pre><code class="lang-json">{
+    &quot;guid&quot;: &quot;{3dffc929-1f2e-44cc-8253-9635e0298f6b}&quot;,
+    &quot;hidden&quot;: false,
+    &quot;name&quot;: &quot;Amazon Linux 2&quot;,
+    &quot;commandline&quot;: &quot;wsl.exe -d Amazon2&quot;,
+    &quot;startingDirectory&quot; : &quot;C:\\&quot;,
+    &quot;icon&quot;: &quot;C:\\Amazon2\\assets\\AWS-icon.png&quot;
+}
+</code></pre>
+</li>
+</ol>
+<h2 id="install-lambdasharp-on-amazon-linux-2">Install LambdaSharp on Amazon Linux 2</h2>
+<p>The following steps install .NET Core 3.1, some utilities, and LambdaSharp.</p>
+<ol>
+<li>Open <em>Amazon Linux 2</em> in <em>Windows Terminal</em>.</li>
+<li>Register the Microsoft package repository.
+<pre><code class="lang-bash">rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
+</code></pre>
+</li>
+<li>Install .NET Core 3.1 and misc. required utilities
+<pre><code class="lang-bash">yum install -y dotnet-sdk-3.1 dotnet-runtime-3.1 git zip
+</code></pre>
+</li>
+<li>Install LambdaSharp
+<pre><code class="lang-bash">dotnet tool install --global LambdaSharp.Tool
+</code></pre>
+</li>
+</ol>
+<h2 id="optional-install-vs-code-remote">(Optional) Install VS Code Remote</h2>
+<p>Visual Studio Code supports <a href="https://code.visualstudio.com/docs/remote/remote-overview">remote development</a>, which allows files to be edited from the VS Code in Windows, while all commands are executed on <em>Amazon Linux 2</em>.</p>
+<ol>
+<li>Open <em>Amazon Linux 2</em> in <em>Windows Terminal</em>.</li>
+<li>Install utilities required by <em>VS Code Remote</em> extension
+<pre><code class="lang-bash">yum install -y wget glibc libgcc libstdc++ python ca-certificates tar
+</code></pre>
+</li>
+<li>Invoke <code>code</code> command to trigger the installation of the <em>VS Code Remote</em> extension
+<pre><code class="lang-bash">code
+</code></pre>
+</li>
+<li>Click <em>Allow Access</em> when prompted by <em>Windows Defender</em>.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-geminus-release-v07011---2020-03-31">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.11) - 2020-03-31</h1>
+<h1 id="lambdasharp-geminus-release-v07012---2020-04-08">LambdaSharp &quot;Geminus&quot; Release (v0.7.0.12) - 2020-04-08</h1>
 
 <blockquote>
 <p>Geminus of Rhodes, was a Greek astronomer and mathematician, who flourished in the 1st century BC. An astronomy work of his, the Introduction to the Phenomena, still survives; it was intended as an introductory astronomy book for students. He also wrote a work on mathematics, of which only fragments quoted by later authors survive. <a href="https://en.wikipedia.org/wiki/Geminus">(Wikipedia)</a></p>
@@ -237,8 +237,34 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v07011---2020-03-31">(v0.7.0.11) - 2020-03-31</h3>
+<h3 id="v07012---2020-04-10">(v0.7.0.12) - 2020-04-10</h3>
 <h4 id="new-features">New Features</h4>
+<ul>
+<li>LambdaSharp CLI
+<ul>
+<li>Enabled projects to be compiled with <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#readytorun-images"><em>ReadyToRun</em></a> optimization when targeting .NET Core 3.1 and running on <em>Amazon Linux 2</em>.</li>
+<li>Ensure compiled projects don't use <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#tiered-compilation"><em>Tiered Compilation/Quick JIT</em></a> for more consistent performance.</li>
+<li>Added support for creating Lambda functions using .NET Core 3.1.</li>
+<li>Highlight name of module, functions, and packages in console output for easier tracking (requires ANSI terminal compatibility).</li>
+<li>Updated embedded CloudFormation spec to 12.2.0.</li>
+</ul>
+</li>
+</ul>
+<h4 id="fixes">Fixes</h4>
+<ul>
+<li>LambdaSharp CLI
+<ul>
+<li>Fixed an issue were a project would skip compilation even when the invocation schema generation had failed previously.</li>
+</ul>
+</li>
+<li>LambdaSharp SDK
+<ul>
+<li>Fixed missing documentation XML comments.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v07011---2020-03-31">(v0.7.0.11) - 2020-03-31</h3>
+<h4 id="new-features-1">New Features</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -247,7 +273,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes">Fixes</h4>
+<h4 id="fixes-1">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -258,7 +284,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v07010---2020-03-13">(v0.7.0.10) - 2020-03-13</h3>
-<h4 id="fixes-1">Fixes</h4>
+<h4 id="fixes-2">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -267,7 +293,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0709---2020-02-25">(v0.7.0.9) - 2020-02-25</h3>
-<h4 id="fixes-2">Fixes</h4>
+<h4 id="fixes-3">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -276,7 +302,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0708---2020-02-25">(v0.7.0.8) - 2020-02-25</h3>
-<h4 id="new-features-1">New Features</h4>
+<h4 id="new-features-2">New Features</h4>
 <ul>
 <li>LambdaSharp Core Services
 <ul>
@@ -284,7 +310,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-3">Fixes</h4>
+<h4 id="fixes-4">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -304,7 +330,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0707---2020-01-31">(v0.7.0.7) - 2020-01-31</h3>
-<h4 id="fixes-4">Fixes</h4>
+<h4 id="fixes-5">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -316,7 +342,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0706---2019-12-12">(v0.7.0.6) - 2019-12-12</h3>
-<h4 id="new-features-2">New Features</h4>
+<h4 id="new-features-3">New Features</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -324,7 +350,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-5">Fixes</h4>
+<h4 id="fixes-6">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -334,7 +360,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0705---2019-10-25">(v0.7.0.5) - 2019-10-25</h3>
-<h4 id="fixes-6">Fixes</h4>
+<h4 id="fixes-7">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -343,7 +369,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0704---2019-10-17">(v0.7.0.4) - 2019-10-17</h3>
-<h4 id="new-features-3">New Features</h4>
+<h4 id="new-features-4">New Features</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -357,7 +383,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-7">Fixes</h4>
+<h4 id="fixes-8">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -375,7 +401,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0703---2019-10-03">(v0.7.0.3) - 2019-10-03</h3>
-<h4 id="new-features-4">New Features</h4>
+<h4 id="new-features-5">New Features</h4>
 <ul>
 <li>LambdaSharp Module Syntax
 <ul>
@@ -389,7 +415,7 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </ul>
 </li>
 </ul>
-<h4 id="fixes-8">Fixes</h4>
+<h4 id="fixes-9">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>
@@ -414,14 +440,14 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 </li>
 </ul>
 <h3 id="v0702---2019-09-20">(v0.7.0.2) - 2019-09-20</h3>
-<h4 id="fixes-9">Fixes</h4>
+<h4 id="fixes-10">Fixes</h4>
 <ul>
 <li>Fixed an issue with legacy CloudFormation notification topics.</li>
 <li>Fixed an issue with build failing to abort after finding a type error during <code>util create-invoke-methods-schema</code> invocation.</li>
 <li>Fixed an issue with <code>lash init</code> not resuming properly when the core services installation was stuck in bootstrap mode.</li>
 </ul>
 <h3 id="v0701---2019-09-12">(v0.7.0.1) - 2019-09-12</h3>
-<h4 id="fixes-10">Fixes</h4>
+<h4 id="fixes-11">Fixes</h4>
 <ul>
 <li>Fixed an issue with enabling/disabling core services in a deployment tier.</li>
 </ul>
