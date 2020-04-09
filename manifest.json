@@ -158,7 +158,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Geminus.html",
-          "hash": "MrU01r5IGJb8iB1sdTgnyQ=="
+          "hash": "ubYWumBp72TwYmMyu9QMWw=="
         }
       },
       "is_incremental": false,
@@ -218,7 +218,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "Ft4jCWhznrYJyqJs2N+8sA=="
+          "hash": "+zvkbHyw+q81WN+ZqgbxTw=="
         }
       },
       "is_incremental": false,
@@ -242,7 +242,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Build.html",
-          "hash": "AgLAOHr7tblwC29oTCiaWA=="
+          "hash": "ZlzOlX41y+OuUUESntk1NQ=="
         }
       },
       "is_incremental": false,
@@ -254,7 +254,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Deploy.html",
-          "hash": "uoOSYrEE9G6NufdLG9+0JA=="
+          "hash": "tfPKvSwC7fSPojEZSwSpFw=="
         }
       },
       "is_incremental": false,
@@ -266,7 +266,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Encrypt.html",
-          "hash": "w96itE3H1iMGebfL++snFQ=="
+          "hash": "SPWcOFdHAfZ2CfLnnCTBeA=="
         }
       },
       "is_incremental": false,
@@ -278,7 +278,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Info.html",
-          "hash": "vak8J1Z+tADvKiUrl0H0eg=="
+          "hash": "foun/aRfXENZtzx/hgUjJw=="
         }
       },
       "is_incremental": false,
@@ -290,7 +290,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Init.html",
-          "hash": "cvMkgl3bUE056CzwT1Y6Jg=="
+          "hash": "vHeovJgxZeZjKz4/odMskw=="
         }
       },
       "is_incremental": false,
@@ -302,7 +302,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-List.html",
-          "hash": "8eCYw7lrorFce8SS6N5u2w=="
+          "hash": "2CLm0eH5hlDUg+lbXjoCvA=="
         }
       },
       "is_incremental": false,
@@ -358,11 +358,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Nuke.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Nuke.html",
+          "hash": "oHTS++RB7egAxF9lfxmkFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "cli/Tool-Publish.md",
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Publish.html",
-          "hash": "aKAkT2ImfBIk/aw7rhi6Gw=="
+          "hash": "WFQ71BXzw0VOq32cHkcvEA=="
         }
       },
       "is_incremental": false,
@@ -374,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Tier-CoreServices.html",
-          "hash": "9U95z8kvR92C8A4xWZICig=="
+          "hash": "bHDdVvROL4fTzxzuLqsOBA=="
         }
       },
       "is_incremental": false,
@@ -398,7 +410,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Util-DeleteOrphanLogs.html",
-          "hash": "E+Jf6zThoCPYDJ7SA7qFFw=="
+          "hash": "sAjvDBWjxGCD7z7YW7seMw=="
         }
       },
       "is_incremental": false,
@@ -577,7 +589,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OrpLBhrOrEowq8kapkDdtQ=="
+          "hash": "kr9n4KkyilsGwBP0RjUOSg=="
         }
       },
       "is_incremental": false,
@@ -1740,7 +1752,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Pragmas.html",
-          "hash": "5vfn3M9ZyTBxvCm1k0R3iA=="
+          "hash": "HiMSfm9nSc3vUPg8t3fZFQ=="
         }
       },
       "is_incremental": false,
@@ -1885,23 +1897,23 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 57,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 78,
+          "total_file_count": 79,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 57,
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

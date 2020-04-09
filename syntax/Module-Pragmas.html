@@ -153,6 +153,16 @@
 <td><code>30</code></td>
 </tr>
 <tr>
+<td><code>Module::RestApi.EndpointConfiguration</code></td>
+<td>Expression for setting the REST API endpoint.</td>
+<td>(none)</td>
+</tr>
+<tr>
+<td><code>Module::RestApi.Policy</code></td>
+<td>Expression for setting the REST API policy.</td>
+<td>(none)</td>
+</tr>
+<tr>
 <td><code>Module::WebSocket.RouteSelectionExpression</code></td>
 <td>Expression for determining the WebSocket route.</td>
 <td><code>$request.body.action</code></td>
@@ -161,9 +171,41 @@
 </table>
 <h3 id="examples">Examples</h3>
 <h4 id="set-the-route-selection-expression-for-websocket">Set the route selection expression for WebSocket</h4>
+<p>The following override changes the route selection expression from <code>action</code> to <code>Action</code>.</p>
 <pre><code class="lang-yaml">Pragmas:
   - Overrides:
       Module::WebSocket.RouteSelectionExpression: $request.body.Action
+</code></pre>
+<h4 id="make-a-rest-api-private">Make a REST API private</h4>
+<p>The following override changes the REST API definition to be private and attaches a specific policy to it. Note, the sample assumes <code>VpcEndpoint</code> parameter or variable that has details about the source VPC.</p>
+<pre><code class="lang-yaml">Pragmas:
+  - Overrides:
+      Module::RestApi.EndpointConfiguration:
+        Types:
+          - PRIVATE
+      Module::RestApi.Policy: !Sub |
+        {
+          &quot;Version&quot;: &quot;2012-10-17&quot;,
+          &quot;Statement&quot;: [
+            {
+              &quot;Effect&quot;: &quot;Deny&quot;,
+              &quot;Principal&quot;: &quot;*&quot;,
+              &quot;Action&quot;: &quot;execute-api:Invoke&quot;,
+              &quot;Resource&quot;: &quot;arn:aws:execute-api:us-east-1:${AWS::AccountId}:*/*/*/*&quot;,
+              &quot;Condition&quot;: {
+                &quot;StringNotEquals&quot;: {
+                  &quot;aws:sourceVpc&quot;: ${VpcEndpoint}
+                }
+              }
+            },
+            {
+              &quot;Effect&quot;: &quot;Allow&quot;,
+              &quot;Principal&quot;: &quot;*&quot;,
+              &quot;Action&quot;: &quot;execute-api:Invoke&quot;,
+              &quot;Resource&quot;: &quot;arn:aws:execute-api:us-east-1:${AWS::AccountId}:*/*/*/*&quot;
+            }
+          ]
+        }
 </code></pre>
 </article>
           </div>
