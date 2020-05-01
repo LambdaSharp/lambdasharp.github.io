@@ -158,7 +158,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Geminus.html",
-          "hash": "mP5AsNwh6keYPQg3LnFcQA=="
+          "hash": "NREC4x9lVP4Dj4RQ/tflPA=="
         }
       },
       "is_incremental": false,
@@ -230,7 +230,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Index.html",
-          "hash": "eJRCFq2ZEeXdwY+zSZUrqQ=="
+          "hash": "50A+6k8Jc7WO1VXP/TnK3w=="
         }
       },
       "is_incremental": false,
@@ -429,12 +429,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Util-ListLambdas.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Util-ListLambdas.html",
+          "hash": "S8M77PZK0HlMoI27/I7wMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "cli/toc.yml",
       "output": {
         ".html": {
           "relative_path": "cli/toc.html",
-          "hash": "n0k+EKt5vARg34gbQz3ppg=="
+          "hash": "DoQioGtOecy0y42ShPhfzA=="
         }
       },
       "is_incremental": false,
@@ -589,7 +601,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "N3NIa+nD1ItKkuJXIaqxFQ=="
+          "hash": "O1R6+QaSHGF50G5hRForzg=="
         }
       },
       "is_incremental": false,
@@ -613,7 +625,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "6/Z8Z4/dqmQNrlgVOiQANQ=="
+          "hash": "nynknBvn+pKXfLyUXiZp9g=="
         }
       },
       "is_incremental": false,
@@ -661,7 +673,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "TAnB9eGFPWNibd4DKq7wcg=="
+          "hash": "rzqroBhXKk2MKxoivvVxGg=="
         }
       },
       "is_incremental": false,
@@ -673,7 +685,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "FXgn2eOmRv41tC4p5ZjX2w=="
+          "hash": "WnA5+aJ3ZXxTI9p9mFRWsA=="
         }
       },
       "is_incremental": false,
@@ -721,7 +733,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "OyiI4ez46w/PKQaHGfmbMQ=="
+          "hash": "ud1UdeAcK4kZlk+vdJ+gzw=="
         }
       },
       "is_incremental": false,
@@ -1890,13 +1902,6 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1907,13 +1912,20 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 79,
+          "total_file_count": 80,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 57,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

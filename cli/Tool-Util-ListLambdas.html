@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp.S3.Subscriber - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Documentation for LambdaSharp.S3.Subscriber module">
-    <meta name="keywords" content="module, s3, bucket, subscription, notification, documentation, overview, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="title" content="LambdaSharp CLI Util Command - List all Lambda functions by CloudFormation stack | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="List Lambda functions by CloudFormation stack with their runtime and last used date">
+    <meta name="keywords" content="cli, lambda, cloudformation, logs, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp.S3.Subscriber - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp CLI Util Command - List all Lambda functions by CloudFormation stack | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/modules/LambdaSharp-S3-Subscriber.html">
+    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-Util-ListLambdas.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Documentation for LambdaSharp.S3.Subscriber module">
+    <meta property="og:description" content="List Lambda functions by CloudFormation stack with their runtime and last used date">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp.S3.Subscriber - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp CLI Util Command - List all Lambda functions by CloudFormation stack | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Documentation for LambdaSharp.S3.Subscriber module">
+    <meta name="twitter:description" content="List Lambda functions by CloudFormation stack with their runtime and last used date">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,8 +43,8 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp.S3.Subscriber - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/modules/LambdaSharp-S3-Subscriber.html">
+    <title>LambdaSharp CLI Util Command - List all Lambda functions by CloudFormation stack | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-Util-ListLambdas.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -93,19 +93,56 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="module-lambdasharps3subscriber">Module: LambdaSharp.S3.Subscriber</h1>
+<h1 id="list-all-lambda-functions-by-cloudformation-stack">List all Lambda functions by CloudFormation stack</h1>
 
-<p><em>Version:</em> 0.7.0.16</p>
-<h2 id="overview">Overview</h2>
-<p>The <code>LambdaSharp.S3.Subscriber</code> module defines the <code>LambdaSharp::S3::Subscription</code> resource type, which is automatically used by the LambdaSharp CLI to subscribe Lambda functions to S3 events.</p>
-<h2 id="resource-types">Resource Types</h2>
-<ol>
-<li><a href="LambdaSharp-S3-Subscription.html">LambdaSharp::S3::Subscription</a></li>
-</ol>
-<h2 id="parameters">Parameters</h2>
-<p>This module requires no parameters.</p>
-<h2 id="output-values">Output Values</h2>
-<p>This module has no output values.</p>
+<p>The <code>util list-lambdas</code> command is used to list all Lambda functions grouped by their respective CloudFormation stack or shown as orphans if deployed independently. Each Lambda function is listed with its runtime and last event timestamps from the CloudWatch logs to see how recently it was used. Similarly, CloudFormation stacks deployed by <em>LambdaSharp.Tool</em> show their module information and the tool version they were compiled with.</p>
+<h2 id="options">Options</h2>
+<dl>
+<dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
+<dd>
+<p>(optional) Use a specific AWS profile from the AWS credentials file</p>
+</dd>
+<dt><code>--aws-region &lt;NAME&gt;</code></dt>
+<dd>
+<p>(optional) Use a specific AWS region (default: read from AWS profile)</p>
+</dd>
+<dt><code>--no-ansi</code></dt>
+<dd>
+<p>(optional) Disable colored ANSI terminal output</p>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="list-all-lambda-functions-by-cloudformation-stack-1">List all Lambda functions by CloudFormation stack</h3>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash util list-lambdas
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.7.0.16) - List all Lambda functions by CloudFormation stack
+
+Analyzing 4 CloudFormation stacks and 8 Lambda functions
+
+SteveBv7-Demo-TwitterNotifier (Demo.TwitterNotifier:1.0-DEV) [lash 0.7.0.15]:
+    NotifyFunction                       dotnetcore3.1    2020-04-26
+
+SteveBv7-Demo-TwitterNotifier-TwitterNotify-1F8924TBHKNJ9 (LambdaSharp.Twitter.Query:0.7.0.15) [lash 0.7.0.15]:
+    QueryFunction                        dotnetcore2.1    2020-04-28
+
+SteveBv7-LambdaSharp-Core (LambdaSharp.Core:0.7.0.15) [lash 0.7.0.15]:
+    ProcessLogEventsFunction             dotnetcore2.1    2020-04-28
+    RegistrationFunction                 dotnetcore2.1    2020-04-24
+
+SteveBv7-Sample-Metric (Sample.Metric:1.0-DEV) [lash 0.7.0.15]:
+    MyFunction                           dotnetcore3.1    2020-04-20
+
+ORPHANS:
+    github-auth                          nodejs8.10       2020-02-28
+    qa-upload-data-test                  dotnetcore2.1    2020-02-27(*)
+    s3Lambda                             dotnetcore2.1    2019-01-14
+
+(*) Showing Lambda last-modified date, because last event timestamp in CloudWatch log stream is not available
+
+Done (finished: 4/28/2020 12:24:22 PM; duration: 00:00:04.0566986)
+</code></pre>
 </article>
           </div>
           
