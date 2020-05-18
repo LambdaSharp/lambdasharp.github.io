@@ -117,6 +117,49 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogDebug_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogDebug*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogDebug_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogDebug(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])">LogDebug(ILambdaLogLevelLogger, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>Log a debugging message. This message will only appear in the log and not be forwarded to an error aggregator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogDebug(this ILambdaLogLevelLogger logger, string format, params object[] arguments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>The message format string. If not arguments are supplied, the message format string will be printed as a plain string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>Optional arguments for the message string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogDebug_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object____seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
+  </div>
   <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError*"></a>
   <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)">LogError(ILambdaLogLevelLogger, Exception)</h4>
   <div class="markdown level1 summary"><p>Log an exception as an error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
@@ -483,6 +526,57 @@ Otherwise, either use <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLo
   <div class="seealso">
       <div><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></div>
   </div>
+  <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric*"></a>
+  <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">LogMetric(ILambdaLogLevelLogger, String, IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Log a CloudWatch metric. The metric is picked up by CloudWatch logs and automatically ingested as a CloudWatch metric.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogMetric(this ILambdaLogLevelLogger logger, string namespace, IEnumerable&lt;LambdaMetric&gt; metrics, IEnumerable&lt;string&gt; dimensionNames, Dictionary&lt;string, string&gt; dimensionValues)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">namespace</span></td>
+        <td><p>Metric namespace.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.LambdaMetric.html">LambdaMetric</a>&gt;</td>
+        <td><span class="parametername">metrics</span></td>
+        <td><p>Enumeration of metrics, including their name, value, and unit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">dimensionNames</span></td>
+        <td><p>Metric dimensions as comma-separated list (e.g. [ &quot;A&quot;, &quot;A,B&quot; ]).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">dimensionValues</span></td>
+        <td><p>Dictionary of dimesion name-value pairs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn*"></a>
   <h4 id="LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___" data-uid="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogWarn(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Object[])">LogWarn(ILambdaLogLevelLogger, String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log a warning message. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>

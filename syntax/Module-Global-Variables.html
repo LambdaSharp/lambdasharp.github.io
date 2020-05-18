@@ -122,6 +122,11 @@
 <td>CloudFormation stack name</td>
 </tr>
 <tr>
+<td><code>Module::Info</code></td>
+<td>String</td>
+<td>Module full name, version, and origin</td>
+</tr>
+<tr>
 <td><code>Module::LoggingStream</code></td>
 <td>Arn&lt;AWS::Kinesis::Stream&gt;</td>
 <td>Kinesis logging stream used by Lambda function logs subscription</td>
@@ -147,9 +152,41 @@
 <td>IAM Role used by all Lambda functions in the module</td>
 </tr>
 <tr>
+<td><code>Module::RootId</code></td>
+<td>String</td>
+<td>Root CloudFormation stack when the module is nested; empty string otherwise</td>
+</tr>
+<tr>
 <td><code>Module::Version</code></td>
 <td>String</td>
 <td>Module version</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment-variables">Deployment Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Deployment::BucketName</code></td>
+<td>String</td>
+<td>S3 Bucket name from which the module is being deployed from</td>
+</tr>
+<tr>
+<td><code>Deployment::Tier</code></td>
+<td>String</td>
+<td>Deployment tier name. Empty string for default deployment tier</td>
+</tr>
+<tr>
+<td><code>Deployment::TierLowercase</code></td>
+<td>String</td>
+<td>Deployment tier name in lowercase characters. Empty string for default deployment tier</td>
 </tr>
 </tbody>
 </table>
@@ -262,11 +299,6 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 <td><code>DeploymentChecksum</code></td>
 <td>String</td>
 <td>Module checksum; changes whenever the module definition changes</td>
-</tr>
-<tr>
-<td><code>DeploymentRootId</code></td>
-<td>String</td>
-<td>Root CloudFormation stack when the module is nested; empty string otherwise</td>
 </tr>
 <tr>
 <td><code>DeploymentPrefix</code></td>

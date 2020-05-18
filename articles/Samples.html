@@ -13,13 +13,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Samples | LambdaSharp - Serverless .NET for AWS">
+    <meta name="title" content="Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="List of LambdaSharp samples">
     <meta name="keywords" content="tutorial, sample, example, getting started, overview, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp Samples | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
@@ -28,7 +28,7 @@
     <meta property="og:description" content="List of LambdaSharp samples">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp Samples | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="List of LambdaSharp samples">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
@@ -43,7 +43,7 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp Samples | LambdaSharp - Serverless .NET for AWS </title>
+    <title>Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
     <link rel="canonical" href="https://lambdasharp.net/articles/Samples.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -93,8 +93,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-samples">LambdaSharp Samples</h1>
+<h1 id="sample-applications">Sample Applications</h1>
 
+<h2 id="create-static-website-with-cloudformation">Create Static Website with CloudFormation</h2>
+<p>This LambdaSharp module creates a static website hosted by an S3 bucket with a customizable title and greeting message. The assets for the website are uploaded from the <code>wwwroot</code> folder and copied to the S3 bucket during deployment.</p>
+<p>Sample: <a href="https://github.com/LambdaSharp/StaticWebsite-Sample">StaticWebsite-Sample</a></p>
+<h2 id="create-animated-gifs-from-videos-with-aws-lambda">Create Animated GIFs from Videos with AWS Lambda</h2>
+<p>This LambdaSharp module creates a Lambda function that converts videos to animated GIFs. The conversion is done by the <a href="https://www.ffmpeg.org/">FFmpeg application</a> which is deployed as a <a href="https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html">Lambda Layer</a>. The module uses two S3 buckets: one for uploading videos and one for storing the converted animated GIFs. The Lambda function is automatically invoked when a file is uploaded the video S3 bucket.</p>
+<p><strong>Related</strong>:</p>
+<ul>
+<li>Sample: <a href="https://github.com/LambdaSharp/GifMaker-Sample">GifMaker-Sample</a></li>
+</ul>
+<h2 id="create-a-web-chat-with-api-gateway-websockets">Create a Web Chat with API Gateway WebSockets</h2>
+<p>This LambdaSharp module creates a web chat front-end and back-end using CloudFormation. The front-end is served by an S3 bucket and secured by a CloudFront distribution. The back-end uses API Gateway Websockets to facilitate communication between clients. The assets for the front-end are uploaded from the <code>wwwroot</code> folder and copied to the S3 bucket during deployment. Afterwards, a CloudFront distribution is created to provide secure access over <code>https://</code> to the front-end. In addition, an API Gateway (v2) is deployed with two Lambda functions that handle websocket connections and message notifications.</p>
+<p><strong>Related</strong>:</p>
+<ul>
+<li>Sample: <a href="https://github.com/LambdaSharp/WebSocketsChat-Sample">WebSocketsChat-Sample</a></li>
+</ul>
+<h2 id="λ-robots-game">λ-Robots Game</h2>
+<p>In λ-Robots (pronounced <em>Lambda Robots</em>), you program a battle robot that participates on a square game field. Each turn, the server invokes your robot's Lambda function to get its action for the turn until either the robot wins or is destroyed.</p>
+<p><strong>Related</strong>:</p>
+<ul>
+<li>Sample: <a href="https://github.com/LambdaSharp/LambdaRobots">LambdaRobots</a></li>
+</ul>
 <h2 id="rest-api-using-api-gateway-v1">REST API using API Gateway V1</h2>
 <p>API Gateway allows you to build a fully managed, serverless REST API. API endpoints are automatically validated by API Gateway before invoking an attached Lambda function.</p>
 <p><strong>Related</strong>:</p>
@@ -110,14 +131,14 @@
 <li>Sample: <a href="https://github.com/LambdaSharp/WebSocketsChat-Sample">WebSocketChat-Sample</a></li>
 </ul>
 <h2 id="sns-topic">SNS Topic</h2>
-<p>The Simple Notification Service (SNS) is provides pub-sub capabilities at scale. The base class handles deserialization of incoming messages and automatic handling of permanent failures.</p>
+<p>The Simple Notification Service (SNS) provides pub-sub capabilities at scale. The base class handles deserialization of incoming messages and automatic handling of permanent failures.</p>
 <p><strong>Related</strong>:</p>
 <ul>
 <li>Base class: <a class="xref" href="../sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">LambdaSharp.SimpleNotificationService.ALambdaTopicFunction&lt;TMessage&gt;</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/SnsSample">SnsSample</a></li>
 </ul>
 <h2 id="sqs-queue">SQS Queue</h2>
-<p>The Simple Queue Service (SQS) is provides reliable, discrete message delivery. The base class handles deserialization of incoming messages, automatic handling of permanent failures, and improved handling of partial failures for batched messages.</p>
+<p>The Simple Queue Service (SQS) provides reliable, discrete message delivery. The base class handles deserialization of incoming messages, automatic handling of permanent failures, and improved handling of partial failures for batched messages.</p>
 <p><strong>Related</strong>:</p>
 <ul>
 <li>Base class: <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">LambdaSharp.SimpleQueueService.ALambdaQueueFunction&lt;TMessage&gt;</a></li>
@@ -144,6 +165,12 @@
 <li>Base class: [LambdaSharp.CustomResource.ALambdaCustomResourceFunction&lt;TProperties,TAttributes&gt;](xref:Lambda* harp.CustomResource.ALambdaCustomResourceFunction`2)</li>
 </ul>
 <p>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/CustomResourceTypeSample">CustomResourceTypeSample</a></p>
+<h2 id="misc-λ-samples">Misc. λ# Samples</h2>
+<p>Various module samples showcasing LambdaSharp declarations and patterns.</p>
+<p><strong>Related</strong>:</p>
+<ul>
+<li>Samples: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/ReadMe.md">LambdaSharp GitHub Samples</a></li>
+</ul>
 </article>
           </div>
           

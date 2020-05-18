@@ -99,10 +99,6 @@
 <p>The <code>--quick-start</code> option minimizes the setup time by disabling the core services and assuming safe defaults for all prompts. This option is useful for learning about LambdaSharp and getting started quickly. However, <strong>DO NOT</strong> use this option in production or test environments!</p>
 <h2 id="options">Options</h2>
 <dl>
-<dt><code>--allow-data-loss</code></dt>
-<dd>
-<p>(optional) Allow CloudFormation resource update operations that could lead to data loss</p>
-</dd>
 <dt><code>--protect</code></dt>
 <dd>
 <p>(optional) Enable termination protection for the CloudFormation stack</p>
@@ -118,10 +114,6 @@
 <dt><code>--parameters &lt;FILE&gt;</code></dt>
 <dd>
 <p>(optional) Specify filename to read module parameters from (default: none)</p>
-</dd>
-<dt><code>--force-publish</code></dt>
-<dd>
-<p>(optional) Publish modules and their artifacts even when no changes were detected</p>
 </dd>
 <dt><code>--force-deploy</code></dt>
 <dd>
@@ -154,10 +146,6 @@
 <dt><code>--allow-upgrade</code></dt>
 <dd>
 <p>(optional) Allow upgrading LambdaSharp.Core across major releases (default: prompt)</p>
-</dd>
-<dt><code>--force-build</code></dt>
-<dd>
-<p>(optional) Always build function packages</p>
 </dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
 <dd>

@@ -100,10 +100,17 @@
 <pre><code class="lang-yaml">Package: String
 Description: String
 Scope: ScopeDefinition
+Build: String
 Files: String
 </code></pre>
 <h2 id="properties">Properties</h2>
 <dl>
+<dt><code>Build</code></dt>
+<dd>
+<p>The <code>Build</code> attribute specifies a command to execute from the same directory as the module definition.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
 <dt><code>Description</code></dt>
 <dd>
 <p>The <code>Description</code> attribute specifies the package description.</p>
@@ -136,6 +143,11 @@ Files: String
 <h3 id="create-package-of-local-files">Create package of local files</h3>
 <pre><code class="lang-yaml">- Package: MyPackage
   Files: WebAssets/
+</code></pre>
+<h3 id="create-package-from-a-published-blazor-webassembly-project">Create package from a published Blazor WebAssembly project</h3>
+<pre><code class="lang-yaml">- Package: MyBlazorPackage
+  Build: dotnet publish -c Release MyBlazorApp
+  Files: MyBlazorApp/bin/Release/netstandard2.1/publish/wwwroot/
 </code></pre>
 </article>
           </div>

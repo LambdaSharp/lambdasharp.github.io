@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaUsage Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Description of Lambda invocation usage event emitted by LambdaSharp.Core">
+    <meta name="keywords" content="cloudwatch, events, modules, lambda, invocation, usage, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="LambdaUsage Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/Events-LambdaUsage.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Description of Lambda invocation usage event emitted by LambdaSharp.Core">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LambdaUsage Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Description of Lambda invocation usage event emitted by LambdaSharp.Core">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>LambdaUsage Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/Events-LambdaUsage.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lambdausage-event">LambdaUsage Event</h1>
+
+<p>The <em>LambdaUsage</em> event is emitted by <em>LambdaSharp.Core</em> when ingesting a Lambda invocation report from the associated the CloudWatch logs. Note that <em>Core Services</em> must be enabled for these events to be emitted.</p>
+<h2 id="event-schema">Event Schema</h2>
+<pre><code class="lang-yaml">Type: String # UsageReport
+Version: String # 2020-05-05
+ModuleInfo: String
+FunctionId: String
+ModuleId: String
+Module: String
+Function: String
+BilledDuration: Float
+UsedDuration: Float
+UsedDurationPercent: Float
+MaxDuration: Float
+MaxMemory: Int
+UsedMemory: Int
+UsedMemoryPercent: Float
+InitDuration: Float?
+</code></pre>
+<h2 id="event-properties">Event Properties</h2>
+<dl>
+<dt><code>Type</code></dt>
+<dd>
+<p>The <code>Type</code> property holds the event type name. This property is always set to <code>&quot;LambdaUsage&quot;</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Version</code></dt>
+<dd>
+<p>The <code>Version</code> property holds the event type version. This property is set to <code>&quot;2020-05-05&quot;</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>ModuleInfo</code></dt>
+<dd>
+<p>The <code>ModuleInfo</code> property holds the module full name, version, and origin.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionId</code></dt>
+<dd>
+<p>The <code>FunctionId</code> property holds the resource name of the Lambda function.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>ModuleId</code></dt>
+<dd>
+<p>The <code>ModuleId</code> property holds the CloudFormation stack ID.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Module</code></dt>
+<dd>
+<p>The <code>Module</code> property holds the module full name.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Function</code></dt>
+<dd>
+<p>The <code>Function</code> property holds the logical function name as defined by the module.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>BilledDuration</code></dt>
+<dd>
+<p>The <code>BilledDuration</code> property holds the number of milliseconds the AWS account will be billed for this Lambda function invocation.</p>
+<p><i>Type</i>: Float</p>
+</dd>
+<dt><code>UsedDuration</code></dt>
+<dd>
+<p>The <code>UsedDuration</code> property holds the execution time for the Lambda function invocation in milliseconds. The invocation time does not include the cold start duration, which is tracked independently by the <code>InitDuration</code> property.</p>
+<p><i>Type</i>: Float</p>
+</dd>
+<dt><code>UsedDurationPercent</code></dt>
+<dd>
+<p>The <code>UsedDurationPercent</code> property holds the execution time for the Lambda function invocation normalized to the maximum allowed duration. The value is always between 0.0 and 1.0.</p>
+<p><i>Type</i>: Float</p>
+</dd>
+<dt><code>MaxDuration</code></dt>
+<dd>
+<p>The <code>MaxDuration</code> property holds the maximum execution time allowed for a Lambda function invocation. This execution limit does not include the cold start duration.</p>
+<p><i>Type</i>: Float</p>
+</dd>
+<dt><code>MaxMemory</code></dt>
+<dd>
+<p>The <code>MaxMemory</code> property holds the maximum amount of memory usable by the Lambda function in MB.</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>UsedMemory</code></dt>
+<dd>
+<p>The <code>UsedMemory</code> property holds the used amount of memory during the Lambda function invocation in MB.</p>
+<p><i>Type</i>: Int</p>
+</dd>
+<dt><code>UsedMemoryPercent</code></dt>
+<dd>
+<p>The <code>UsedMemoryPercent</code> property holds the used memory amount the Lambda function invocation normalized to the maximum allowed amount. The value is always between 0.0 and 1.0.</p>
+<p><i>Type</i>: Float</p>
+</dd>
+<dt><code>InitDuration</code></dt>
+<dd>
+<p>The <code>InitDuration</code> property holds the startup time required by a Lambda function in milliseconds. This property is only set for a Lambda function that required a cold start, otherwise the property is <code>null</code>.</p>
+<p><i>Type</i>: Float or <code>null</code></p>
+</dd>
+</dl>
+<h2 id="event-sample">Event Sample</h2>
+<pre><code class="lang-json">{
+  &quot;ModuleInfo&quot;: &quot;LambdaSharp.Twitter.Query:0.7.1.0&quot;,
+  &quot;FunctionId&quot;: &quot;Sandbox-Demo-TwitterNotifier-Twitte-QueryFunction-13VL7ZV8BTWKN&quot;,
+  &quot;ModuleId&quot;: &quot;Sandbox-Demo-TwitterNotifier-TwitterNotify-1F8924TBHKNJ9&quot;,
+  &quot;Module&quot;: &quot;LambdaSharp.Twitter.Query&quot;,
+  &quot;Function&quot;: &quot;QueryFunction&quot;,
+  &quot;BilledDuration&quot;: 12.5,
+  &quot;UsedDuration&quot;: 12.46635,
+  &quot;UsedDurationPercent&quot;: 0.415545,
+  &quot;MaxDuration&quot;: 30.0,
+  &quot;MaxMemory&quot;: 256,
+  &quot;UsedMemory&quot;: 109,
+  &quot;UsedMemoryPercent&quot;: 0.42578125,
+  &quot;InitDuration&quot;: 0.43456,
+  &quot;Type&quot;: &quot;LambdaUsage&quot;,
+  &quot;Version&quot;: &quot;2020-05-05&quot;
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

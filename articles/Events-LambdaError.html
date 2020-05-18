@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaError Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Description of Lambda warnings/errors event emitted by LambdaSharp.Core">
+    <meta name="keywords" content="cloudwatch, events, modules, errors, warnings, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="LambdaError Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/Events-LambdaError.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Description of Lambda warnings/errors event emitted by LambdaSharp.Core">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LambdaError Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Description of Lambda warnings/errors event emitted by LambdaSharp.Core">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>LambdaError Event - LambdaSharp Operational Events - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/Events-LambdaError.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lambdaerror-event">LambdaError Event</h1>
+
+<p>The <em>LambdaError</em> event is emitted by <em>LambdaSharp.Core</em> when ingesting a Lambda warning or error report from the associated the CloudWatch logs. Note that <em>Core Services</em> must be enabled for these events to be emitted. The <em>LambdaError</em> event captures information about the warning or error that occurred.</p>
+<h2 id="event-schema">Event Schema</h2>
+<pre><code class="lang-yaml">Type: String # LambdaError
+Version: String # 2020-05-05
+ModuleInfo: String
+Module: String
+ModuleId: String
+FunctionId: String
+FunctionName: String
+Platform: String
+Framework: String
+Language: String
+GitSha: String?
+GitBranch: String?
+RequestId: String?
+Level: String
+Fingerprint: String
+Timestamp: Long
+Message: String
+Raw: String
+Traces:
+  - Exception:
+      Type: String
+      Message: String
+      StackTrace: String?
+    Frames: #List?
+      - FileName: String?
+        LineNumber: Int?
+        ColumnNumber: Int?
+        MethodName: String
+</code></pre>
+<h2 id="event-properties">Event Properties</h2>
+<dl>
+<dt><code>Type</code></dt>
+<dd>
+<p>The <code>Type</code> property holds the event type name. This property is always set to <code>&quot;LambdaMetrics&quot;</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Version</code></dt>
+<dd>
+<p>The <code>Version</code> property holds the event type version. This property is set to <code>&quot;2020-05-05&quot;</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>ModuleInfo</code></dt>
+<dd>
+<p>The <code>ModuleInfo</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Module</code></dt>
+<dd>
+<p>The <code>Module</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>ModuleId</code></dt>
+<dd>
+<p>The <code>ModuleId</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionId</code></dt>
+<dd>
+<p>The <code>FunctionId</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>FunctionName</code></dt>
+<dd>
+<p>The <code>FunctionName</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Platform</code></dt>
+<dd>
+<p>The <code>Platform</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Framework</code></dt>
+<dd>
+<p>The <code>Framework</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Language</code></dt>
+<dd>
+<p>The <code>Language</code> property holds .</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>GitSha</code></dt>
+<dd>
+<p>The <code>GitSha</code> property holds the git SHA checksum when the module was deployed from a git repository, otherwise <code>null</code>.</p>
+<p><i>Type</i>: String or <code>null</code></p>
+</dd>
+<dt><code>GitBranch</code></dt>
+<dd>
+<p>The <code>GitBranch</code> property holds the git branch name when the module was deployed from a git repository, otherwise <code>null</code>.</p>
+<p><i>Type</i>: String or <code>null</code></p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The <code>RequestId</code> property holds the Lambda function invocation request ID if available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: String or <code>null</code></p>
+</dd>
+<dt><code>Level</code></dt>
+<dd>
+<p>The <code>Level</code> property describes the severity level of the error log entry. One of <code>WARNING</code>, <code>ERROR</code>, or <code>FATAL</code>.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Fingerprint</code></dt>
+<dd>
+<p>The <code>Fingerprint</code> property holds a hash value that can be used to group related <em>LambdaError</em> events.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Timestamp</code></dt>
+<dd>
+<p>The <code>Timestamp</code> property holds the UNIX epoch in milliseconds when the error log entry was generated.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Message</code></dt>
+<dd>
+<p>The <code>Message</code> property holds the message of the <em>LambdaError</em> event.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Raw</code></dt>
+<dd>
+<p>The <code>Raw</code> property holds unprocessed error log entry.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Traces</code></dt>
+<dd>
+<p>The <code>Traces</code> property describes the exception stack traces when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: List of exception stack traces or <code>null</code></p>
+<dl>
+<dt><code>Exception</code></dt>
+<dd>
+<p>The <code>Exception</code> property holds information about the exception.</p>
+<p><i>Type</i>: String</p>
+<dl>
+<dt><code>Type</code></dt>
+<dd>
+<p>The <code>Type</code> property holds the full exception type name.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Message</code></dt>
+<dd>
+<p>The <code>Message</code> property holds the exception message.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>StackTrace</code></dt>
+<dd>
+<p>The <code>StackTrace</code> property the unparsed exception stack trace when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: String or <code>null</code></p>
+</dd>
+</dl>
+</dd>
+<dt><code>Frames</code></dt>
+<dd>
+<p>The <code>Frames</code> property describes the stack frames between where the exception was thrown and where it was caught when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: List of stack frames or <code>null</code></p>
+<dl>
+<dt><code>FileName</code></dt>
+<dd>
+<p>The <code>FileName</code> property holds the source code file name of the stack trace when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: String or <code>null</code></p>
+</dd>
+<dt><code>LineNumber</code></dt>
+<dd>
+<p>The <code>LineNumber</code> property holds the line number in the source code when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: Int or <code>null</code></p>
+</dd>
+<dt><code>ColumnNumber</code></dt>
+<dd>
+<p>The <code>ColumnNumber</code> property holds the column number in the source code when available, otherwise <code>null</code>.</p>
+<p><i>Type</i>: Int or <code>null</code></p>
+</dd>
+<dt><code>MethodName</code></dt>
+<dd>
+<p>The <code>MethodName</code> property holds the method name in which the stack frame is located.</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<h2 id="event-sample">Event Sample</h2>
+<pre><code class="lang-json">{
+  &quot;ModuleInfo&quot;: &quot;LambdaSharp.BadModule:1.0-DEV@sandbox-lambdasharp-cor-deploymentbucketresource-9h53iqcat7uj&quot;,
+  &quot;Module&quot;: &quot;LambdaSharp.BadModule&quot;,
+  &quot;ModuleId&quot;: &quot;Sandbox-LambdaSharp-BadModule&quot;,
+  &quot;FunctionId&quot;: &quot;Sandbox-LambdaSharp-BadModule-FailError-9ZWPJT2RI6V6&quot;,
+  &quot;FunctionName&quot;: &quot;FailError&quot;,
+  &quot;Platform&quot;: &quot;AWS Lambda (Unix 4.14.165.102)&quot;,
+  &quot;Framework&quot;: &quot;dotnetcore3.1&quot;,
+  &quot;Language&quot;: &quot;csharp&quot;,
+  &quot;GitSha&quot;: &quot;DIRTY-a8f11ab357937e3cb87d512f08fc649c8261b1b8&quot;,
+  &quot;GitBranch&quot;: &quot;WIP-v0.8&quot;,
+  &quot;RequestId&quot;: &quot;f7d92855-628c-4285-ad83-fb7f10a81ec1&quot;,
+  &quot;Level&quot;: &quot;ERROR&quot;,
+  &quot;Fingerprint&quot;: &quot;F5F7309CD31CCF342EC3ED07679E79FD&quot;,
+  &quot;Timestamp&quot;: 1589411401688,
+  &quot;Message&quot;: &quot;this exception was thrown on request&quot;,
+  &quot;Traces&quot;: [
+    {
+      &quot;Exception&quot;: {
+        &quot;Type&quot;: &quot;System.Exception&quot;,
+        &quot;Message&quot;: &quot;this exception was thrown on request&quot;,
+        &quot;StackTrace&quot;: &quot; at BadModule.FailError.Function.ProcessMessageAsync(FunctionRequest request) in C:\\LambdaSharp\\LambdaSharpTool\\Tests\\BadModule\\FailError\\Function.cs:line 36\n at LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(Stream stream)\n at LambdaSharp.ALambdaFunction.FunctionHandlerAsync(Stream stream, ILambdaContext context) in C:\\LambdaSharp\\LambdaSharpTool\\src\\LambdaSharp\\ALambdaFunction.cs:line 398&quot;
+      },
+      &quot;Frames&quot;: [
+        {
+          &quot;FileName&quot;: &quot;C:\\LambdaSharp\\LambdaSharpTool\\Tests\\BadModule\\FailError\\Function.cs&quot;,
+          &quot;LineNumber&quot;: 36,
+          &quot;MethodName&quot;: &quot;MoveNext&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.ExceptionServices.ExceptionDispatchInfo&quot;,
+          &quot;MethodName&quot;: &quot;Throw&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.CompilerServices.TaskAwaiter&quot;,
+          &quot;MethodName&quot;: &quot;ThrowForNonSuccess(System.Threading.Tasks.Task task)&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.CompilerServices.TaskAwaiter&quot;,
+          &quot;MethodName&quot;: &quot;HandleNonSuccessAndDebuggerNotification(System.Threading.Tasks.Task task)&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;LambdaSharp.ALambdaFunction`2+&lt;ProcessMessageStreamAsync&gt;d__3[TRequest,TResponse]&quot;,
+          &quot;MethodName&quot;: &quot;MoveNext&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.ExceptionServices.ExceptionDispatchInfo&quot;,
+          &quot;MethodName&quot;: &quot;Throw&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.CompilerServices.TaskAwaiter&quot;,
+          &quot;MethodName&quot;: &quot;ThrowForNonSuccess(System.Threading.Tasks.Task task)&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;System.Runtime.CompilerServices.TaskAwaiter&quot;,
+          &quot;MethodName&quot;: &quot;HandleNonSuccessAndDebuggerNotification(System.Threading.Tasks.Task task)&quot;
+        },
+        {
+          &quot;FileName&quot;: &quot;C:\\LambdaSharp\\LambdaSharpTool\\src\\LambdaSharp\\ALambdaFunction.cs&quot;,
+          &quot;LineNumber&quot;: 398,
+          &quot;MethodName&quot;: &quot;MoveNext&quot;
+        }
+      ]
+    }
+  ],
+  &quot;Type&quot;: &quot;LambdaError&quot;,
+  &quot;Version&quot;: &quot;2020-05-05&quot;
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

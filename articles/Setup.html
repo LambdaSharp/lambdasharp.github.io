@@ -175,31 +175,6 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 <p><strong>Using Bash:</strong></p>
 <pre><code class="lang-bash">export LAMBDASHARP_TIER=Sandbox
 </code></pre>
-<h2 id="optional-customize-lambdasharp-core-settings">(Optional) Customize LambdaSharp Core Settings</h2>
-<p>The following LambdaSharp Core module settings can be adjusted in the AWS console by updating the deployed CloudFormation stack.</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>LoggingStreamRetentionPeriod</code></td>
-<td>How long logging stream entries are kept before they are lost</td>
-<td>24</td>
-</tr>
-<tr>
-<td><code>LoggingStreamShardCount</code></td>
-<td>Number of Kinesis shards for the logging streams</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="optional-subscribe-to-errorreporttopic-topic">(Optional) Subscribe to <code>ErrorReportTopic</code> Topic</h2>
-<p>The LambdaSharp Core module analyzes the output of all deployed functions. When an issue occurs, the Core module sends a notification on the SNS <code>ErrorReportTopic</code>.</p>
 <h2 id="optional-setup-rollbar-integration">(Optional) Setup Rollbar Integration</h2>
 <p>The LambdaSharp Core module can optionally be configured to send errors and warnings to <a href="https://rollbar.com/">Rollbar</a>. To enable this functionality, the LambdaSharp Core module needs the <em>read</em> and <em>write</em> access tokens for the account, which can be found in the <em>Account Settings</em> page.</p>
 <p>The LambdaSharp Core module expects the access tokens to be encrypted, which can easily be done with the <a href="../cli/Tool-Encrypt.html"><code>lash encrypt</code></a> command.</p>

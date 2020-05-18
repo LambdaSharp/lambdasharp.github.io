@@ -1,0 +1,567 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaSharp Function Metrics - Custom CloudWatch Metrics reported by LambdaSharp functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="List of custom CloudWatch metrics reported by LambdaSharp functions">
+    <meta name="keywords" content="cloudwatch, metrics, functions, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="LambdaSharp Function Metrics - Custom CloudWatch Metrics reported by LambdaSharp functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/Metrics-Function.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="List of custom CloudWatch metrics reported by LambdaSharp functions">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LambdaSharp Function Metrics - Custom CloudWatch Metrics reported by LambdaSharp functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="List of custom CloudWatch metrics reported by LambdaSharp functions">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>LambdaSharp Function Metrics - Custom CloudWatch Metrics reported by LambdaSharp functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/Metrics-Function.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lambdasharp-function-metrics">LambdaSharp Function Metrics</h1>
+
+<h2 id="class-alambdafunction">Class <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a></h2>
+<p>The <code>ALambdaFunction</code> custom metrics are organized by [<code>Stack</code>,<code>Function</code>] and [<code>Stack</code>] dimensions where:</p>
+<ul>
+<li><code>Stack</code> is the CloudFormation stack name.</li>
+<li><code>Function</code> is the Lambda function name.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LogError.Count</td>
+<td>Count</td>
+<td>Number of error statements logged.</td>
+</tr>
+<tr>
+<td>LogFatal.Count</td>
+<td>Count</td>
+<td>Number of fatal error statements logged.</td>
+</tr>
+<tr>
+<td>LogWarning.Count</td>
+<td>Count</td>
+<td>Number of warning statements logged. This count includes errors logged as warnings.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aws-metrics">AWS Metrics</h3>
+<p>In addition, Lambda emits the following metrics organized by [<code>FunctionName</code>], [<code>Resource</code>], [<code>ExecutedVersion</code>], and [<code>(none)</code>] dimension where:</p>
+<ul>
+<li><code>FunctionName</code> is the aggregate metrics for all versions and aliases of a function.</li>
+<li><code>Resource</code> is the metrics for a version or alias of a function.</li>
+<li><code>ExecutedVersion</code> is metrics for a combination of alias and version. Use the <code>ExecutedVersion</code> dimension to compare error rates for two versions of a function that are both targets of a weighted alias.</li>
+<li><code>(none)</code> is the aggregate metrics for all functions in the current AWS Region.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConcurrentExecutions</td>
+<td>Count</td>
+<td>The number of function instances that are processing events. If this number reaches your concurrent executions limit for the Region, or the reserved concurrency limit that you configured on the function, additional invocation requests are throttled.</td>
+</tr>
+<tr>
+<td>DeadLetterErrors</td>
+<td>Count</td>
+<td>For asynchronous invocation, the number of times Lambda attempts to send an event to a dead-letter queue but fails. Dead-letter errors can occur due to permissions errors, misconfigured resources, or size limits.</td>
+</tr>
+<tr>
+<td>DestinationDeliveryFailures</td>
+<td>Count</td>
+<td>For asynchronous invocation, the number of times Lambda attempts to send an event to a destination but fails. Delivery errors can occur due to permissions errors, misconfigured resources, or size limits.</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>Milliseconds</td>
+<td>The amount of time that your function code spends processing an event. For the first event processed by an instance of your function, this includes initialization time. The billed duration for an invocation is the value of <em>Duration</em> rounded up to the nearest 100 milliseconds.</td>
+</tr>
+<tr>
+<td>Errors</td>
+<td>Count</td>
+<td>The number of invocations that result in a function error. Function errors include exceptions thrown by your code and exceptions thrown by the Lambda runtime. The runtime returns errors for issues such as timeouts and configuration errors. To calculate the error rate, divide the value of Errors by the value of Invocations.</td>
+</tr>
+<tr>
+<td>Invocations</td>
+<td>Count</td>
+<td>The number of times your function code is executed, including successful executions and executions that result in a function error. Invocations aren't recorded if the invocation request is throttled or otherwise resulted in an invocation error. This equals the number of requests billed.</td>
+</tr>
+<tr>
+<td>IteratorAge</td>
+<td>Milliseconds</td>
+<td>For event source mappings that read from streams, the age of the last record in the event. The age is the amount of time between when the stream receives the record and when the event source mapping sends the event to the function.</td>
+</tr>
+<tr>
+<td>ProvisionedConcurrencyInvocations</td>
+<td>Count</td>
+<td>The number of times your function code is executed on provisioned concurrency.</td>
+</tr>
+<tr>
+<td>ProvisionedConcurrencySpilloverInvocations</td>
+<td>Count</td>
+<td>The number of times your function code is executed on standard concurrency when all provisioned concurrency is in use.</td>
+</tr>
+<tr>
+<td>ProvisionedConcurrencyUtilization</td>
+<td>Percent</td>
+<td>For a version or alias, the value of ProvisionedConcurrentExecutions divided by the total amount of provisioned concurrency allocated. For example, .5 indicates that 50 percent of allocated provisioned concurrency is in use.</td>
+</tr>
+<tr>
+<td>ProvisionedConcurrentExecutions</td>
+<td>Count</td>
+<td>The number of function instances that are processing events on provisioned concurrency. For each invocation of an alias or version with provisioned concurrency, Lambda emits the current count.</td>
+</tr>
+<tr>
+<td>Throttles</td>
+<td>Count</td>
+<td>The number of invocation requests that are throttled. When all function instances are processing requests and no concurrency is available to scale up, Lambda rejects additional requests with <code>TooManyRequestsException</code>. Throttled requests and other invocation errors don't count as Invocations or Errors.</td>
+</tr>
+<tr>
+<td>UnreservedConcurrentExecutions</td>
+<td>Count</td>
+<td>For an AWS Region, the number of events that are being processed by functions that don't have reserved concurrency.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="class-alambdaqueuefunctiontmessage">Class <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a></h2>
+<p>The <code>ALambdaQueueFunction&lt;TMessage&gt;</code> custom metrics are organized by [<code>Stack</code>,<code>Function</code>] and [<code>Stack</code>] dimensions where:</p>
+<ul>
+<li><code>Stack</code> is the CloudFormation stack name.</li>
+<li><code>Function</code> is the Lambda function name.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MessageFailed.Count</td>
+<td>Count</td>
+<td>Number of messages that failed processing, but have not been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>MessageDead.Count</td>
+<td>Count</td>
+<td>Number of messages that failed processing and have been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Count</td>
+<td>Count</td>
+<td>Number of successfully processed messages.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Latency</td>
+<td>Milliseconds</td>
+<td>Number of milliseconds to successfully process a message once received.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Lifespan</td>
+<td>Seconds</td>
+<td>Number of seconds to successfully process a message from the time it was created.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE:</strong> The lifespan of a message is determined by first checking for a custom <code>SentTimestamp</code> message attribute. If none is found, the built-in SQS <code>SentTimestamp</code> message attribute is used instead to determine when the message was created. The custom <code>SentTimestamp</code> attribute must a UNIX epoch timestamp in milliseconds stored as a <code>String</code> value.</p>
+<h3 id="aws-metrics-1">AWS Metrics</h3>
+<p>In addition, SQS emits the following metrics organized by [<code>QueueName</code>] dimension where:</p>
+<ul>
+<li><code>QueueName</code> is the Amazon SQS queue name.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ApproximateAgeOfOldestMessage</td>
+<td>Seconds</td>
+<td>The approximate age of the oldest non-deleted message in the queue.</td>
+</tr>
+<tr>
+<td>ApproximateNumberOfMessagesDelayed</td>
+<td>Count</td>
+<td>The number of messages in the queue that are delayed and not available for reading immediately.</td>
+</tr>
+<tr>
+<td>ApproximateNumberOfMessagesNotVisible</td>
+<td>Count</td>
+<td>The number of messages that are in flight.</td>
+</tr>
+<tr>
+<td>ApproximateNumberOfMessagesVisible</td>
+<td>Count</td>
+<td>The number of messages available for retrieval from the queue.</td>
+</tr>
+<tr>
+<td>NumberOfEmptyReceives</td>
+<td>Count</td>
+<td>The number of <code>ReceiveMessage</code> API calls that did not return a message.</td>
+</tr>
+<tr>
+<td>NumberOfMessagesDeleted</td>
+<td>Count</td>
+<td>The number of messages deleted from the queue.</td>
+</tr>
+<tr>
+<td>NumberOfMessagesReceived</td>
+<td>Count</td>
+<td>The number of messages returned by calls to the ReceiveMessage action.</td>
+</tr>
+<tr>
+<td>NumberOfMessagesSent</td>
+<td>Count</td>
+<td>The number of messages added to a queue.</td>
+</tr>
+<tr>
+<td>SentMessageSize</td>
+<td>Bytes</td>
+<td>The size of messages added to a queue.</td>
+</tr>
+</tbody>
+</table>
+<p>For more details, consult the <a href="https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-available-cloudwatch-metrics.html">Amazon SQS metrics documentation</a>.</p>
+<h2 id="class-alambdatopicfunctiontmessage">Class <a class="xref" href="../sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction&lt;TMessage&gt;</a></h2>
+<p>The <code>ALambdaTopicFunction&lt;TMessage&gt;</code> custom metrics are organized by [<code>Stack</code>,<code>Function</code>] and [<code>Stack</code>] dimensions where:</p>
+<ul>
+<li><code>Stack</code> is the CloudFormation stack name.</li>
+<li><code>Function</code> is the Lambda function name.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MessageFailed.Count</td>
+<td>Count</td>
+<td>Number of messages that failed processing, but have not been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>MessageDead.Count</td>
+<td>Count</td>
+<td>Number of messages that failed processing and have been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Count</td>
+<td>Count</td>
+<td>Number of successfully processed messages.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Latency</td>
+<td>Milliseconds</td>
+<td>Number of milliseconds to successfully process a message once received.</td>
+</tr>
+<tr>
+<td>MessageSuccess.Lifespan</td>
+<td>Seconds</td>
+<td>Number of seconds to successfully process a message from the time it was created.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE:</strong> The lifespan of a message is determined by first checking for a custom <code>SentTimestamp</code> message attribute. If none is found, the built-in SNS <code>Timestamp</code> is used instead to determine when the message was created. The custom <code>SentTimestamp</code> attribute must a UNIX epoch timestamp in milliseconds stored as a <code>String</code> value.</p>
+<h3 id="aws-metrics-2">AWS Metrics</h3>
+<p>In addition, SNS emits the following metrics organized by [<code>Application</code>], [<code>Application</code>,<code>Platform</code>], [<code>Country</code>], [<code>Platform</code>], [<code>TopicName</code>], and [<code>SMSType</code>] dimensions where:</p>
+<ul>
+<li><code>Application</code> is the app and device registered with one of the supported push notification services, such as APNs and FCM.</li>
+<li><code>Platform</code> is the platform object for the push notification services, such as APNs and FCM.</li>
+<li><code>Country</code> is the destination country or region of an SMS message.</li>
+<li><code>TopicName</code> is the Amazon SNS topic names.</li>
+<li><code>SMSType</code> is the message type of SMS message.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NumberOfMessagesPublished</td>
+<td>Count</td>
+<td>The number of messages published to your Amazon SNS topics.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsDelivered</td>
+<td>Count</td>
+<td>The number of messages successfully delivered from your Amazon SNS topics to subscribing endpoints.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsFailed</td>
+<td>Count</td>
+<td>The number of messages that Amazon SNS failed to deliver.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsFilteredOut</td>
+<td>Count</td>
+<td>The number of messages that were rejected by subscription filter policies.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsFilteredOut-InvalidAttributes</td>
+<td>Count</td>
+<td>The number of messages that were rejected by subscription filter policies because the messages' attributes are invalid.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsFilteredOut-NoMessageAttributes</td>
+<td>Count</td>
+<td>The number of messages that were rejected by subscription filter policies because the messages have no attributes.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsRedrivenToDlq</td>
+<td>Count</td>
+<td>The number of messages that have been moved to a dead-letter queue.</td>
+</tr>
+<tr>
+<td>NumberOfNotificationsFailedToRedriveToDlq</td>
+<td>Count</td>
+<td>The number of messages that couldn't be moved to a dead-letter queue.</td>
+</tr>
+<tr>
+<td>PublishSize</td>
+<td>Bytes</td>
+<td>The size of messages published.</td>
+</tr>
+<tr>
+<td>SMSMonthToDateSpentUSD</td>
+<td>USD</td>
+<td>The charges you have accrued since the start of the current calendar month for sending SMS messages.</td>
+</tr>
+<tr>
+<td>SMSSuccessRate</td>
+<td>Count</td>
+<td>The rate of successful SMS message deliveries.</td>
+</tr>
+</tbody>
+</table>
+<p>For more details, consult the <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html">Amazon SNS metrics documentation</a>.</p>
+<h2 id="class-alambdaapigatewayfunction">Class <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a></h2>
+<p>For REST APIs, the <code>ALambdaApiGatewayFunction</code> custom metrics are organized by [<code>Stack</code>,<code>Method</code>,<code>Resource</code>] dimension where:</p>
+<ul>
+<li><code>Stack</code> is the CloudFormation stack name.</li>
+<li><code>Method</code> is the HTTP method (e.g. <code>POST</code>, <code>GET</code>, etc.)</li>
+<li><code>Resource</code> is the API Gateway resource (e.g. <code>/foo/bar</code>)</li>
+</ul>
+<p>For WebSocket APIs, the <code>ALambdaApiGatewayFunction</code> custom metrics are organized by [<code>Stack</code>,<code>Route</code>] dimension where:</p>
+<ul>
+<li><code>Stack</code> is the CloudFormation stack name.</li>
+<li><code>Route</code> is the WebSocket route key (e.g. <code>$connect</code>, <code>$disconnect</code>, etc.)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AsyncRequestFailed.Count</td>
+<td>Count</td>
+<td>Number of asynchronous messages that failed processing, but have not been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>AsyncRequestDead.Count</td>
+<td>Count</td>
+<td>Number of asynchronous requests that failed and have been forwarded to the dead-letter queue.</td>
+</tr>
+<tr>
+<td>AsyncRequestSuccess.Count</td>
+<td>Count</td>
+<td>Number of successfully processed asynchronous requests.</td>
+</tr>
+<tr>
+<td>AsyncRequestSuccess.Latency</td>
+<td>Milliseconds</td>
+<td>Number of milliseconds to successfully process an asynchronous request.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aws-metrics-3">AWS Metrics</h3>
+<p>In addition, API Gateway emits the following detailed metrics organized by [<code>ApiName</code>,<code>Method</code>,<code>Resource</code>,<code>Stage</code>] dimensions where:</p>
+<ul>
+<li><code>ApiName</code> is the API Gateway name.</li>
+<li><code>Method</code> is the HTTP method (e.g. <code>POST</code>, <code>GET</code>, etc.)</li>
+<li><code>Resource</code> is the API Gateway resources (e.g. <code>/foo/bar</code>)</li>
+<li><code>Stage</code> is the API Gateway sages (i.e. <code>LATEST</code>)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4XXError</td>
+<td>Count</td>
+<td>The number of client-side errors captured in a given period.</td>
+</tr>
+<tr>
+<td>5XXError</td>
+<td>Count</td>
+<td>The number of server-side errors captured in a given period.</td>
+</tr>
+<tr>
+<td>CacheHitCount</td>
+<td>Count</td>
+<td>The number of requests served from the API cache in a given period.</td>
+</tr>
+<tr>
+<td>CacheMissCount</td>
+<td>Count</td>
+<td>The number of requests served from the backend in a given period, when API caching is enabled.</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>Count</td>
+<td>The total number API requests in a given period.</td>
+</tr>
+<tr>
+<td>IntegrationLatency</td>
+<td>Milliseconds</td>
+<td>The time between when API Gateway relays a request to the backend and when it receives a response from the backend.</td>
+</tr>
+<tr>
+<td>Latency</td>
+<td>Milliseconds</td>
+<td>The time between when API Gateway receives a request from a client and when it returns a response to the client. The latency includes the integration latency and other API Gateway overhead.</td>
+</tr>
+</tbody>
+</table>
+<p>For more details, consult the <a href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-metrics-and-dimensions.html">Amazon API Gateway metrics documentation</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

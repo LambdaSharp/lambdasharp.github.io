@@ -108,19 +108,40 @@ for runtime errors and warnings.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">LambdaErrorReport</span></div>
+    <div class="level1"><a class="xref" href="LambdaSharp.Records.ALambdaRecord.html">ALambdaRecord</a></div>
+    <div class="level2"><span class="xref">LambdaErrorReport</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="LambdaSharp.Records.ALambdaRecord.html#LambdaSharp_Records_ALambdaRecord_Type">ALambdaRecord.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.Records.ALambdaRecord.html#LambdaSharp_Records_ALambdaRecord_Version">ALambdaRecord.Version</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ErrorReports.html">LambdaSharp.ErrorReports</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ErrorReports_LambdaErrorReport_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LambdaErrorReport</code></pre>
+    <pre><code class="lang-csharp hljs">public class LambdaErrorReport : ALambdaRecord</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReport__ctor_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.#ctor*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport__ctor" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.#ctor">LambdaErrorReport()</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LambdaErrorReport()</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Fingerprint_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Fingerprint*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Fingerprint" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Fingerprint">Fingerprint</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Fingerprint">Fingerprint</a> property holds a unique value by which to group related error log entries.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Fingerprint">Fingerprint</a> property holds a unique value by which to group related LambdaError records.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -365,7 +386,7 @@ One of <code>WARNING</code>, <code>ERROR</code>, or <code>FATAL</code>.</p>
   </table>
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Module_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Module*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Module" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Module">Module</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Module">Module</a> property describes the LambdaSharp module name, version, and origin.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Module">Module</a> property describes the LambdaSharp module name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -383,14 +404,14 @@ One of <code>WARNING</code>, <code>ERROR</code>, or <code>FATAL</code>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The LambdaSharp module name and version.</p>
+        <td><p>The LambdaSharp module name.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="LambdaSharp_ErrorReports_LambdaErrorReport_Module_examples">Examples</h5>
-  <p>Sample module name and version:</p>
-<pre><code>My.AcmeModule:1.0-Dev@origin</code></pre>
+  <p>Sample module name:</p>
+<pre><code>My.AcmeModule</code></pre>
 
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleId_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.ModuleId*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleId" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.ModuleId">ModuleId</h4>
@@ -420,6 +441,35 @@ One of <code>WARNING</code>, <code>ERROR</code>, or <code>FATAL</code>.</p>
   <h5 id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleId_examples">Examples</h5>
   <p>Sample module ID:</p>
 <pre><code>DevTier-MyAcmeModule</code></pre>
+
+  <a id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleInfo_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.ModuleInfo*"></a>
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleInfo" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.ModuleInfo">ModuleInfo</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_ModuleInfo">ModuleInfo</a> property describes the LambdaSharp module name, version, and origin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ModuleInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The LambdaSharp module name and version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReport_ModuleInfo_examples">Examples</h5>
+  <p>Sample module name and version:</p>
+<pre><code>My.AcmeModule:1.0-Dev@origin</code></pre>
 
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Platform_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Platform*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Platform" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Platform">Platform</h4>
@@ -452,8 +502,7 @@ One of <code>WARNING</code>, <code>ERROR</code>, or <code>FATAL</code>.</p>
 
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Raw_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Raw*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Raw" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Raw">Raw</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Raw">Raw</a> property holds the unprocessed error log entry. This property
-is only set if the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Traces">Traces</a> property is <code>null</code>.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Raw">Raw</a> property holds the unprocessed error log entry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -501,35 +550,9 @@ is only set if the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorRep
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Source_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Source*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Source" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Source">Source</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Source">Source</a> property determines the source of the log entry.
-The value is always <code>&quot;LambdaError&quot;</code> for instance of <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Source { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The source of the log entry.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Timestamp_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Timestamp*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Timestamp" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Timestamp">Timestamp</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Timestamp">Timestamp</a> property holds the UNIX epoch when the error log entry was generated.</p>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Timestamp">Timestamp</a> property holds the UNIX epoch in milliseconds when the error log entry was generated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -547,7 +570,7 @@ The value is always <code>&quot;LambdaError&quot;</code> for instance of <a clas
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td><p>The UNIX epoch timestamp.</p>
+        <td><p>The UNIX epoch in milliseconds timestamp.</p>
 </td>
       </tr>
     </tbody>
@@ -573,31 +596,6 @@ The value is always <code>&quot;LambdaError&quot;</code> for instance of <a clas
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportStackTrace.html">LambdaErrorReportStackTrace</a>&gt;</td>
         <td><p>Enumeration of error stack traces.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ErrorReports_LambdaErrorReport_Version_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Version*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReport_Version" data-uid="LambdaSharp.ErrorReports.LambdaErrorReport.Version">Version</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html#LambdaSharp_ErrorReports_LambdaErrorReport_Version">Version</a> property determines the format version of the Lambda error log entry.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Version { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The format version.</p>
 </td>
       </tr>
     </tbody>

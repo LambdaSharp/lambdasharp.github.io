@@ -134,6 +134,12 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
       <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SqsClient">LambdaFunctionDependencyProvider.SqsClient</a>
     </div>
     <div>
+      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_EventsClient">LambdaFunctionDependencyProvider.EventsClient</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_DebugLoggingEnabled">LambdaFunctionDependencyProvider.DebugLoggingEnabled</a>
+    </div>
+    <div>
       <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_Log_System_String_">LambdaFunctionDependencyProvider.Log(String)</a>
     </div>
     <div>
@@ -144,6 +150,9 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
     </div>
     <div>
       <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___">LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendEventAsync_System_DateTimeOffset_System_String_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__">LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable&lt;String&gt;)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.SimpleQueueService.html">LambdaSharp.SimpleQueueService</a></h6>
@@ -215,11 +224,13 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
   </h3>
   <a id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*"></a>
   <h4 id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})">DeleteMessagesFromQueueAsync(String, IEnumerable&lt;(String MessageId, String ReceiptHandle)&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Delete a batch of message from an SQS queue. The Lambda function requires <code>sqs:DeleteMessageBatch</code> permission
+on the specified SQS URL.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task DeleteMessagesFromQueueAsync(string queueUrl, IEnumerable&lt;(string MessageId, string ReceiptHandle)&gt; messages)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task DeleteMessagesFromQueueAsync(string queueArn, IEnumerable&lt;(string MessageId, string ReceiptHandle)&gt; messages)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,13 +244,15 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">queueUrl</span></td>
-        <td></td>
+        <td><span class="parametername">queueArn</span></td>
+        <td><p>SQS ARN.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messages</span></td>
-        <td></td>
+        <td><p>Enumeration of <code>(string MessageId, string ReceiptHandle)</code> tuples specifying which messages to delete.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -254,7 +267,51 @@ for <a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_GetMaxRetriesForQueueAsync_" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.GetMaxRetriesForQueueAsync*"></a>
+  <h4 id="LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_GetMaxRetriesForQueueAsync_System_String_" data-uid="LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.GetMaxRetriesForQueueAsync(System.String)">GetMaxRetriesForQueueAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Determine how many times a message should be retried for a given SQS queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetMaxRetriesForQueueAsync(string queueArn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">queueArn</span></td>
+        <td><p>SQS ARN.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The task object representing the asynchronous operation.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -157,7 +157,10 @@ are represented by a '/' character in the configuration key.</p>
   </h3>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_Open_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Open*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_Open_System_String_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Open(System.String)">Open(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource_Open_System_String_">Open(String)</a> method returns an interface to read
+configuration values from the requested nested section. Section names
+are not case-sensitive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -176,7 +179,8 @@ are represented by a '/' character in the configuration key.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The name of the nested section.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -191,13 +195,17 @@ are represented by a '/' character in the configuration key.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> implementation of the nested section.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_Read_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Read*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_Read_System_String_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.Read(System.String)">Read(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource_Read_System_String_">Read(String)</a> method returns the configuration value
+of the specified key or <code>null</code> if the key does not exist. Configuration
+keys are not case-sensitive.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -216,7 +224,8 @@ are represented by a '/' character in the configuration key.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td></td>
+        <td><p>The configuration key.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -231,13 +240,15 @@ are represented by a '/' character in the configuration key.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The configuration value or <code>null</code> if the key does not exist.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ConfigSource_LambdaDictionarySource_ReadAllKeys_" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.ReadAllKeys*"></a>
   <h4 id="LambdaSharp_ConfigSource_LambdaDictionarySource_ReadAllKeys" data-uid="LambdaSharp.ConfigSource.LambdaDictionarySource.ReadAllKeys">ReadAllKeys()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource_ReadAllKeys">ReadAllKeys()</a> method returns all defined configuration keys.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -254,7 +265,8 @@ are represented by a '/' character in the configuration key.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
+        <td><p>Enumeration of defined configuration keys.</p>
+</td>
       </tr>
     </tbody>
   </table>

@@ -157,7 +157,7 @@ Properties:
 - Resource: DeployAssetsToBucket
   Type: LambdaSharp::S3::Unzip
   Properties:
-    SourceBucket: !Ref DeploymentBucketName
+    SourceBucket: !Ref Deployment::BucketName
     SourceKey: !Ref MyPackage
     DestinationBucket: !Ref MyBucket
     DestinationKey: assets/

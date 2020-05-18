@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Release notes for LambdaSharp &quot;Hicetas&quot; (v0.8)">
+    <meta name="keywords" content="release, notes, hicetas, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/ReleaseNotes-Hicetas.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Release notes for LambdaSharp &quot;Hicetas&quot; (v0.8)">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Release notes for LambdaSharp &quot;Hicetas&quot; (v0.8)">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/ReleaseNotes-Hicetas.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="lambdasharp-hicetas-release-v0801---2020-05-17">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.1) - 2020-05-17</h1>
+
+<blockquote>
+<p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
+</blockquote>
+<h2 id="whats-new">What's New</h2>
+<p>This release introduces some key new capabilities for Lambda functions and the <em>LambdaSharp.Core</em> module. The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new methods for <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">sending events</a>, <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__">capturing metrics</a>, and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">logging debug statements</a>. In addition, the <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. Kinesis Firehose is more cost effective, scales automatically, and also provides built-in integration with S3 for retaining ingested logs. Finally, during the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
+<h3 id="upgrading-from-v07-to-v08">Upgrading from v0.7 to v0.8</h3>
+<ol>
+<li>Ensure all modules are deployed with v0.6.1 or later</li>
+<li>Upgrade LambdaSharp CLI to v0.8
+<ol>
+<li><code>dotnet tool update -g LambdaSharp.Tool</code></li>
+</ol>
+</li>
+<li>Upgrade LambdaSharp Deployment Tier (replace <code>Sandbox</code> with the name of the deployment tier to upgrade)
+<ol>
+<li><code>lash init --allow-upgrade --tier Sandbox</code></li>
+</ol>
+</li>
+</ol>
+<h2 id="breaking-changes">BREAKING CHANGES</h2>
+<h3 id="lambdasharp-core-services">LambdaSharp Core Services</h3>
+<h4 id="lambdasharpcore">LambdaSharp.Core</h4>
+<p>Some configuration parameters changed with the switch to <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for CloudWatch logs ingestion.</p>
+<ul>
+<li>The <code>LoggingStreamRetentionPeriodHours</code> and <code>LoggingStreamShardCount</code> are no longer needed and have been removed.</li>
+<li>The <code>LoggingStream</code> has been replaced by <code>LoggingFirehoseStream</code>.</li>
+<li>The <code>LoggingBucketSuccessPrefix</code> and <code>LoggingBucketFailurePrefix</code> have been added.</li>
+</ul>
+<p>See the <a href="../modules/LambdaSharp-Core.html">LambdaSharp.Core</a> module documentation for more details.</p>
+<h3 id="lambdasharp-sdk">LambdaSharp SDK</h3>
+<p><strong>IMPORTANT:</strong> In preparation to switching <code>LambdaSharp</code> assembly to .NET Core 3.1 and using <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> as JSON serializer in a future release, it is highly advised to remove all references to <code>Amazon.Lambda.Serialization.Json</code> and <code>Newtonsoft.Json</code> assemblies from all <em>.csproj</em> files. These package are instead inherited via the <code>LambdaSharp</code> assembly. These changes ensure that once <code>LambdaSharp</code> assembly switches its serialization implementation, dependent projects will cease to compile, making it easier to transition to the new JSON serializer. Otherwise, these projects would compile successfully, but fail at runtime, as it is not possible to mix <code>Newtonsoft.Json</code> and <code>System.Text.Json</code> serializations.</p>
+<p>Look for the following package references in your <em>.csproj</em> files and remove them.</p>
+<pre><code class="lang-xml">&lt;PackageReference Include=&quot;Amazon.Lambda.Core&quot; Version=&quot;1.1.0&quot; /&gt;
+&lt;PackageReference Include=&quot;Amazon.Lambda.Serialization.Json&quot; Version=&quot;1.5.0&quot; /&gt;
+&lt;PackageReference Include=&quot;Newtonsoft.Json&quot; Version=&quot;12.0.3&quot; /&gt;
+</code></pre>
+<p>In addition, Lambda functions no longer need to declare the default serializer with the <code>[assembly: LambdaSerializer(...)]</code> attribute, unless a custom serializer is required. Instead, the serializer is defined by the base class (<a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>). This change was made to ease the transition to the new <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> serializer in a future release.</p>
+<p>Finally, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
+<h2 id="new-lambdasharp-module-syntax">New LambdaSharp Module Syntax</h2>
+<h3 id="cloudwatch-eventbridge-source">CloudWatch EventBridge Source</h3>
+<p>Lambda functions can now subscribe to a CloudWatch event bus. The <a href="../syntax/Module-Function-Sources-EventBus.html">EventBus notation</a> is straightforward. Multiple event bus subscriptions can be active at the same time.</p>
+<pre><code class="lang-yaml">Sources:
+  - EventBus: default
+    Pattern:
+      source:
+        - Sample.Event
+      detail-type:
+        - MyEvent
+      resources:
+        - !Sub &quot;lambdasharp:tier:${Deployment::Tier}&quot;
+</code></pre>
+<h3 id="package-build-command">Package Build Command</h3>
+<p>The <code>Package</code> declaration now supports and optional <a href="../syntax/Module-Package.html"><code>Build</code> attribute</a>, which specifies a command to run before the zip package is created. This enables creating packages from files that are generated by another project. For example, the output folder when publishing a <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor WebAssembly</a> application.</p>
+<pre><code class="lang-yaml">- Package: MyBlazorPackage
+  Build: dotnet publish -c Release MyBlazorApp
+  Files: MyBlazorApp/bin/Release/netstandard2.1/publish/wwwroot/
+</code></pre>
+<h3 id="new-module-variables">New Module Variables</h3>
+<p>New module variables have been introduced that relate to the deployment. These include <code>Deployment::BucketName</code>, <code>Deployment::Tier</code>, and <code>Deployment::TierLowercase</code>. For more details, see the <a href="../syntax/Module-Global-Variables.html">Module Global Variables</a> documentation.</p>
+<h2 id="new-lambdasharp-cli-features">New LambdaSharp CLI Features</h2>
+<p>The CLI remains mostly unchanged from the previous release.</p>
+<h3 id="misc">Misc.</h3>
+<ul>
+<li>Updated embedded CloudFormation spec to 14.3.0.</li>
+<li>Enhanced API Gateway V2 WebSocket logging to show error messages.</li>
+<li>Enabled detailed CloudWatch metrics for API Gateway deployments.</li>
+<li>Enhanced <code>lash init</code> to highlight deployment tier name during stack updates.</li>
+<li>Enhanced <code>lash init</code> for <em>LambdaSharp</em> contributors to automatically force build and force publish.</li>
+<li>Enhanced <code>lash nuke</code> to only empty the deployment and logging buckets if they were created by the <em>LambdaSharp.Core</em> module.</li>
+<li>Added <code>--no-ansi</code> option to <code>util delete-orphan-logs</code>, <code>util download-cloudformation-spec</code>, and <code>util create-invoke-methods-schema</code>.</li>
+<li>Added <code>util validate-assembly</code> command.</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>Fixed an issue were recreating a <em>LambdaSharp.Core</em> deployment from scratch would not update existing deployed modules with the new deployment bucket name.</li>
+<li>Let CloudFormation determine the name for <code>AWS::ApiGateway::Model</code> resources.</li>
+<li>Fixed an issue where the <code>--aws-region</code> command option didn't always work as expected.</li>
+</ul>
+<h2 id="new-lambdasharp-sdk-features">New LambdaSharp SDK Features</h2>
+<h3 id="cloudwatch-metrics">CloudWatch Metrics</h3>
+<p>Several Lambda function base classes have been enhanced with <a href="Metrics-Function.html">custom CloudWatch metrics</a> to augment existing AWS metrics. In addition, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
+<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MetricSample">The MetricSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
+<h3 id="cloudwatch-events">CloudWatch Events</h3>
+<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">SendEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a>.</p>
+<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/EventSample">The EventSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a> method for sending CloudWatch Events.</p>
+<h3 id="debug-logging">Debug Logging</h3>
+<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method to make debug logging easier. In addition, when debug logging is enabled, the base class logs the request and response streams to CloudWatch logs. See the documentation on <a href="Debugging.html">Lambda Debugging</a> for more details.</p>
+<h2 id="new-lambdasharp-core-services-features">New LambdaSharp Core Services Features</h2>
+<p>The <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. During the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
+<p>In addition, <em>LambdaSharp.Core</em> now emits <a href="Events.html">operational CloudWatch events</a> to the default event bus, which can be used to observe and track deployed modules.</p>
+<p>Finally, the <em>LambdaSharp.Core</em> module emits its <a href="Metrics-Module.html">own performance metrics</a> to provide quick insight into its operations.</p>
+<h3 id="misc-1">Misc.</h3>
+<p>Part of this release, <em>LambdaSharp.Core</em> functions were ported to .NET Core 3.1 with null-aware code, and the modules were published with <em>ReadyToRun</em> for shorter cold-start times.</p>
+<h3 id="fixes-1">Fixes</h3>
+<ul>
+<li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
+</ul>
+<h2 id="releases">Releases</h2>
+<h3 id="v0801---2020-05-17">(v0.8.0.1) - 2020-05-17</h3>
+<h4 id="fixes-2">Fixes</h4>
+<ul>
+<li>LambdaSharp CLI
+<ul>
+<li>Added fixes from v0.7.0.17 release.</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
