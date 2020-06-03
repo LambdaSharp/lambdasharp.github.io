@@ -58,6 +58,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.CurrentContext
   nameWithType: ALambdaFunction.CurrentContext
+- uid: LambdaSharp.ALambdaFunction.DebugLoggingEnabled
+  name: DebugLoggingEnabled
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled
+  commentId: P:LambdaSharp.ALambdaFunction.DebugLoggingEnabled
+  fullName: LambdaSharp.ALambdaFunction.DebugLoggingEnabled
+  nameWithType: ALambdaFunction.DebugLoggingEnabled
+- uid: LambdaSharp.ALambdaFunction.DebugLoggingEnabled*
+  name: DebugLoggingEnabled
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled_
+  commentId: Overload:LambdaSharp.ALambdaFunction.DebugLoggingEnabled
+  isSpec: "True"
+  fullName: LambdaSharp.ALambdaFunction.DebugLoggingEnabled
+  nameWithType: ALambdaFunction.DebugLoggingEnabled
 - uid: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: DecryptSecretAsync(String, Dictionary<String, String>)
   href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__

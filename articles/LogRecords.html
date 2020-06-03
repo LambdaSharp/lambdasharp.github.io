@@ -251,7 +251,7 @@ ORDER BY 5 DESC;
   Function,
   json_extract_scalar(Record, '$.Level') AS Level,
   json_extract_scalar(Record, '$.Message') AS Message
-FROM steveb.stevebv7logs
+FROM MyDatabase.MyLogs
 WHERE Timestamp &gt; (1000.0 * to_unixtime(date_add('day', -1, now()))) AND RecordType='LambdaError'
 ORDER BY Timestamp DESC, ModuleId, Function
 </code></pre>
@@ -268,63 +268,63 @@ ORDER BY Timestamp DESC, ModuleId, Function
 <tbody>
 <tr>
 <td>2020-05-13 23:10:08.779</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailTimeout</td>
 <td>ERROR</td>
 <td>Lambda timed out after 15.02 seconds</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:03.361</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailConstructor</td>
 <td>ERROR</td>
 <td>An exception was thrown when the constructor for type 'BadModule.FailConstructor.Function' was invoked. Check inner exception for more details.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:02.816</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailConstructor</td>
 <td>ERROR</td>
 <td>An exception was thrown when the constructor for type 'BadModule.FailConstructor.Function' was invoked. Check inner exception for more details.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:02.208</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailError</td>
 <td>ERROR</td>
 <td>this exception was thrown on request</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:01.582</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailBadEntryPoint</td>
 <td>ERROR</td>
 <td>Unable to load type 'BadModule.FailBadEntryPoint.Function' from assembly 'FailBadEntryPoint'.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:01.236</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailBadEntryPoint</td>
 <td>ERROR</td>
 <td>Unable to load type 'BadModule.FailBadEntryPoint.Function' from assembly 'FailBadEntryPoint'.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:10:00.877</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailOutOfMemory</td>
 <td>ERROR</td>
 <td>Exception of type 'System.OutOfMemoryException' was thrown.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:09:59.386</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailBadEntryPoint</td>
 <td>ERROR</td>
 <td>Unable to load type 'BadModule.FailBadEntryPoint.Function' from assembly 'FailBadEntryPoint'.</td>
 </tr>
 <tr>
 <td>2020-05-13 23:09:58.200</td>
-<td>SteveBv7-LambdaSharp-BadModule</td>
+<td>Sandbox-LambdaSharp-BadModule</td>
 <td>FailConstructor</td>
 <td>ERROR</td>
 <td>An exception was thrown when the constructor for type 'BadModule.FailConstructor.Function' was invoked. Check inner exception for more details.</td>

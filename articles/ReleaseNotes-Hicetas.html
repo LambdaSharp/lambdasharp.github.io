@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-hicetas-release-v0801---2020-05-17">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.1) - 2020-05-17</h1>
+<h1 id="lambdasharp-hicetas-release-v0802---2020-06-02">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.2) - 2020-06-02</h1>
 
 <blockquote>
 <p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
@@ -193,8 +193,51 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0801---2020-05-17">(v0.8.0.1) - 2020-05-17</h3>
+<h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><p>LambdaSharp CLI</p>
+<ul>
+<li>Added <code>--skip-apigateway-check</code> to <code>lash init</code> to bypass API Gateway role creation/update operation during deployment tier initialization.</li>
+</ul>
+</li>
+<li><p>LambdaSharp SDK</p>
+<ul>
+<li>Added the virtual <code>DebugLoggingEnabled</code> property to <code>ALambdaFunction</code> as the preferred way to check if debug logging is enabled.</li>
+</ul>
+</li>
+<li><p>LambdaSharp Syntax</p>
+<ul>
+<li>Added pragma for overriding <code>Module::Role.PermissionsBoundary</code> (contributed by @yurigorokhov).</li>
+</ul>
+</li>
+<li><p>LambdaSharp Modules</p>
+<ul>
+<li>Added <code>Encoding</code> property for <code>LambdaSharp::S3::IO</code> to enable compression encoding for content before it is deployed to an S3 bucket.</li>
+<li>Added <code>Content-MD5</code> checksum header for S3 uploads performed by <code>LambdaSharp::S3::Unzip</code> to ensure end-to-end data integrity.</li>
+</ul>
+</li>
+<li><p>Samples</p>
+<ul>
+<li>Added <em>DebugSample</em> showing how to use <code>LogDebug()</code> and <code>DebugLoggingEnabled</code>.</li>
+</ul>
+</li>
+</ul>
 <h4 id="fixes-2">Fixes</h4>
+<ul>
+<li><p>LambdaSharp CLI</p>
+<ul>
+<li>Added support to all commands for <code>--no-ansi</code>, <code>--quiet</code>, and <code>--verbose</code> options.</li>
+</ul>
+</li>
+<li><p>LambdaSharp Modules</p>
+<ul>
+<li>Removed unnecessary S3 access policy from <em>LambdaSharp.Core</em> that granted read access to <code>serverlessrepo.amazonaws.com</code> for deployment buckets.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0801---2020-05-18">(v0.8.0.1) - 2020-05-18</h3>
+<h4 id="fixes-3">Fixes</h4>
 <ul>
 <li>LambdaSharp CLI
 <ul>

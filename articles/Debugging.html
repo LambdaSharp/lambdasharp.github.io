@@ -98,12 +98,12 @@
 <p>While it is not (yet) possible to attach a debugger to a running Lambda function, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class provides debug logging capabilities to enable better inspection capabilities of what's going in a deployed Lambda function.</p>
 <h2 id="debug-logging">Debug Logging</h2>
 <p>Lambda functions deployed by LambdaSharp have a <code>DEBUG_LOGGING_ENABLED</code> environment variable to enable debug logging after deployment. By default, <code>DEBUG_LOGGING_ENABLED</code> is set to <code>false</code>.</p>
-<p>At runtime, the value of the <code>DEBUG_LOGGING_ENABLED</code> environment variable can be checked through the <a class="xref" href="../sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_DebugLoggingEnabled">Provider.DebugLoggingEnabled</a> property.</p>
+<p>At runtime, the value of the <code>DEBUG_LOGGING_ENABLED</code> environment variable can be checked through the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property.</p>
 <p>Debug statements are logged by using <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method and appear in CloudWatch logs with a <code>*** DEBUG:</code> prefix:</p>
 <pre><code class="lang-log">*** DEBUG: this entry is only emitted when debug logging is enabled
 </code></pre>
-<p>For complex debug statements, it is best practice to first check the <a class="xref" href="../sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_DebugLoggingEnabled">Provider.DebugLoggingEnabled</a> property before invoking <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(...)</a> . Checking if debug logging is enabled first avoids incurring wasteful overhead when the debug statement is discarded anyway.</p>
-<pre><code class="lang-csharp">if(Provider.DebugLoggingEnabled) {
+<p>For complex debug statements, it is best practice to first check the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property before invoking <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(...)</a> . Checking if debug logging is enabled first avoids incurring wasteful overhead when the debug statement is discarded anyway.</p>
+<pre><code class="lang-csharp">if(DebugLoggingEnabled) {
     LogDebug(CreateComplexDebugStatement());
 }
 </code></pre>
