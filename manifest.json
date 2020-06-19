@@ -17,7 +17,7 @@
     "priority": 0.5
   },
   "homepages": [],
-  "source_base_path": "C:/LambdaSharp/LambdaSharpTool/src/DocFx",
+  "source_base_path": "C:/LambdaSharp/LambdaSharpTool/Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -278,7 +278,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Hicetas.html",
-          "hash": "U7J8/LI0vHdJswJmCaraSA=="
+          "hash": "5xk4eMt/H9SH0M+DYNxnjA=="
         }
       },
       "is_incremental": false,
@@ -338,7 +338,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "sMO3iHnA9QMRmGwt0Me9lA=="
+          "hash": "WyoC0zbpgv5n1Mx065ypHw=="
         }
       },
       "is_incremental": false,
@@ -362,7 +362,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Build.html",
-          "hash": "ZlzOlX41y+OuUUESntk1NQ=="
+          "hash": "4wF3s2+cdskBBG5HlrW6mA=="
         }
       },
       "is_incremental": false,
@@ -374,7 +374,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Deploy.html",
-          "hash": "dSfFG1vtfiM7/UwLLlcn4w=="
+          "hash": "CRbKzrNBA44HJxV+hTW7PQ=="
         }
       },
       "is_incremental": false,
@@ -386,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Encrypt.html",
-          "hash": "SPWcOFdHAfZ2CfLnnCTBeA=="
+          "hash": "NLrGQMtYDGM+Lf/0ksPEyA=="
         }
       },
       "is_incremental": false,
@@ -398,7 +398,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Info.html",
-          "hash": "foun/aRfXENZtzx/hgUjJw=="
+          "hash": "ItWWW2OpDysSNu4f3FEU/Q=="
         }
       },
       "is_incremental": false,
@@ -410,7 +410,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Init.html",
-          "hash": "Un7ihqOVmHfgBjqMKa0VyA=="
+          "hash": "oE7F8+IySXjPXxMXU9/iBw=="
         }
       },
       "is_incremental": false,
@@ -422,7 +422,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-List.html",
-          "hash": "2CLm0eH5hlDUg+lbXjoCvA=="
+          "hash": "vheLld3CAE7DMm7ExM9V/g=="
         }
       },
       "is_incremental": false,
@@ -482,7 +482,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Nuke.html",
-          "hash": "xhQt+zys1DFLGlP6BUVd+A=="
+          "hash": "vhscRWaVEd0BvkUV/tJsfQ=="
         }
       },
       "is_incremental": false,
@@ -494,7 +494,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Publish.html",
-          "hash": "sCRbxfhl+bkkq1xmp4IsyA=="
+          "hash": "WCZ2hFLt8LRDCEUKLhKIpw=="
         }
       },
       "is_incremental": false,
@@ -506,7 +506,19 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Tier-CoreServices.html",
-          "hash": "bHDdVvROL4fTzxzuLqsOBA=="
+          "hash": "00IZ8mgUMj3JaS8ggtzjqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-Tier-Version.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-Tier-Version.html",
+          "hash": "hJFZRiCVl7bysLO439NxMA=="
         }
       },
       "is_incremental": false,
@@ -554,7 +566,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Util-ListLambdas.html",
-          "hash": "S8M77PZK0HlMoI27/I7wMA=="
+          "hash": "qypyVRt0P9PdbLJX9aKlIA=="
         }
       },
       "is_incremental": false,
@@ -566,7 +578,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/toc.html",
-          "hash": "DoQioGtOecy0y42ShPhfzA=="
+          "hash": "viFbDkq84bQONVmAsktHpw=="
         }
       },
       "is_incremental": false,
@@ -721,7 +733,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "GZ0yoE2aDELf+xl/ZJ0Rlg=="
+          "hash": "6nBPz8tRHSI2E+QlHxio4Q=="
         }
       },
       "is_incremental": false,
@@ -745,7 +757,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "QnzGIBGTbJLbk8jngBNREQ=="
+          "hash": "TM5koeaO2uWZsXp4uqjLyg=="
         }
       },
       "is_incremental": false,
@@ -793,7 +805,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "TxfmuKyZNyfZzC16rrNvHg=="
+          "hash": "NN37AB84FxJRCOh9wEZ8dQ=="
         }
       },
       "is_incremental": false,
@@ -805,7 +817,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "cAZRnX2AmPBHNWes/RLUaw=="
+          "hash": "eNQ8/OK64UdgLAe6EWQ4HA=="
         }
       },
       "is_incremental": false,
@@ -853,7 +865,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "flk8HfCtr+RJR3SOc7DyYw=="
+          "hash": "sq9AT5qnDw91qIw7JroGKg=="
         }
       },
       "is_incremental": false,
@@ -1992,7 +2004,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Import.html",
-          "hash": "DDNbb8HY8bAFa0jJdpp9Dw=="
+          "hash": "Ahr9Xsdm/rc5KlhNn6ffww=="
         }
       },
       "is_incremental": false,
@@ -2228,16 +2240,16 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 92,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 72,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 91,
           "skipped_file_count": 0
         }
       }

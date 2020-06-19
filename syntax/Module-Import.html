@@ -153,13 +153,13 @@ EncryptionContext:
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>
-<h3 id="import-a-module">Import a module</h3>
+<h3 id="import-a-public-module-value">Import a public module value</h3>
 <pre><code class="lang-yaml">- Import: ImportedMessageTitle
-  Module: My.OtherModule::MessageTitle
+  Module: My.OtherModule
   Description: Imported title for messages
   Type: String
 </code></pre>
-<h3 id="import-a-module-output-and-associate-iam-permissions">Import a module output and associate IAM permissions</h3>
+<h3 id="import-a-public-module-value-with-a-custom-name-and-associate-iam-permissions">Import a public module value with a custom name and associate IAM permissions</h3>
 <pre><code class="lang-yaml">- Import: ImportedTopic
   Module: My.OtherModule::Topic
   Description: Topic ARN for sending notifications
