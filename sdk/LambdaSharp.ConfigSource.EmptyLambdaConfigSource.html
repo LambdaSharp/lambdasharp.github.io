@@ -118,7 +118,7 @@
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ConfigSource_EmptyLambdaConfigSource_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EmptyLambdaConfigSource : ILambdaConfigSource</code></pre>
+    <pre><code class="lang-csharp hljs">public class EmptyLambdaConfigSource : object, ILambdaConfigSource</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -231,7 +231,7 @@ keys are not case-sensitive.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Enumeration of defined configuration keys.</p>
 </td>
       </tr>

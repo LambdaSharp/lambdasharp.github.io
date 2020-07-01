@@ -93,13 +93,13 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-hicetas-release-v0803---2020-06-19">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.3) - 2020-06-19</h1>
+<h1 id="lambdasharp-hicetas-release-v0804---2020-07-01">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.4) - 2020-07-01</h1>
 
 <blockquote>
 <p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
 </blockquote>
 <h2 id="whats-new">What's New</h2>
-<p>This release introduces some key new capabilities for Lambda functions and the <em>LambdaSharp.Core</em> module. The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new methods for <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">sending events</a>, <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__">capturing metrics</a>, and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">logging debug statements</a>. In addition, the <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. Kinesis Firehose is more cost effective, scales automatically, and also provides built-in integration with S3 for retaining ingested logs. Finally, during the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
+<p>This release introduces some key new capabilities for Lambda functions and the <em>LambdaSharp.Core</em> module. The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new methods for <a href="xref:LambdaSharp.ALambdaFunction.SendEvent%60%601(System.String,System.String,%60%600,System.Collections.Generic.IEnumerable%7BSystem.String%7D)">sending events</a>, <a href="xref:LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable%7BLambdaSharp.LambdaMetric%7D)">capturing metrics</a>, and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">logging debug statements</a>. In addition, the <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. Kinesis Firehose is more cost effective, scales automatically, and also provides built-in integration with S3 for retaining ingested logs. Finally, during the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
 <h3 id="upgrading-from-v07-to-v08">Upgrading from v0.7 to v0.8</h3>
 <ol>
 <li>Ensure all modules are deployed with v0.6.1 or later</li>
@@ -132,7 +132,7 @@
 &lt;PackageReference Include=&quot;Newtonsoft.Json&quot; Version=&quot;12.0.3&quot; /&gt;
 </code></pre>
 <p>In addition, Lambda functions no longer need to declare the default serializer with the <code>[assembly: LambdaSerializer(...)]</code> attribute, unless a custom serializer is required. Instead, the serializer is defined by the base class (<a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>). This change was made to ease the transition to the new <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> serializer in a future release.</p>
-<p>Finally, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
+<p>Finally, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a href="xref:LambdaSharp.ALambdaFunction.DeserializeJson%60%601(System.IO.Stream)">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
 <h2 id="new-lambdasharp-module-syntax">New LambdaSharp Module Syntax</h2>
 <h3 id="cloudwatch-eventbridge-source">CloudWatch EventBridge Source</h3>
 <p>Lambda functions can now subscribe to a CloudWatch event bus. The <a href="../syntax/Module-Function-Sources-EventBus.html">EventBus notation</a> is straightforward. Multiple event bus subscriptions can be active at the same time.</p>
@@ -175,11 +175,11 @@
 </ul>
 <h2 id="new-lambdasharp-sdk-features">New LambdaSharp SDK Features</h2>
 <h3 id="cloudwatch-metrics">CloudWatch Metrics</h3>
-<p>Several Lambda function base classes have been enhanced with <a href="Metrics-Function.html">custom CloudWatch metrics</a> to augment existing AWS metrics. In addition, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
+<p>Several Lambda function base classes have been enhanced with <a href="Metrics-Function.html">custom CloudWatch metrics</a> to augment existing AWS metrics. In addition, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new <a href="xref:LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable%7BLambdaSharp.LambdaMetric%7D)">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
 <p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MetricSample">The MetricSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
 <h3 id="cloudwatch-events">CloudWatch Events</h3>
-<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">SendEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a>.</p>
-<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/EventSample">The EventSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a> method for sending CloudWatch Events.</p>
+<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has a new <a href="xref:LambdaSharp.ALambdaFunction.SendEvent%60%601(System.String,System.String,%60%600,System.Collections.Generic.IEnumerable%7BSystem.String%7D)">SendEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a>.</p>
+<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/EventSample">The EventSample module</a> shows how to use the new <a href="xref:LambdaSharp.ALambdaFunction.SendEvent%60%601(System.String,System.String,%60%600,System.Collections.Generic.IEnumerable%7BSystem.String%7D)">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a> method for sending CloudWatch Events.</p>
 <h3 id="debug-logging">Debug Logging</h3>
 <p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method to make debug logging easier. In addition, when debug logging is enabled, the base class logs the request and response streams to CloudWatch logs. See the documentation on <a href="Debugging.html">Lambda Debugging</a> for more details.</p>
 <h2 id="new-lambdasharp-core-services-features">New LambdaSharp Core Services Features</h2>
@@ -193,13 +193,63 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
+<h3 id="v0804---2020-07-01">(v0.8.0.4) - 2020-07-01</h3>
 <h4 id="features">Features</h4>
+<ul>
+<li><p>CLI</p>
+<ul>
+<li>Enhanced <code>info</code> command to show the name of the logging S3 bucket for the deployment tier.</li>
+<li>Enhanced CloudFormation parameter prompts by showing min/max value and min/max length constraints.</li>
+<li>Enhanced CloudFormation resource creation/update tracking to show how long the operation took.</li>
+<li>Enhanced <code>lash nuke</code> to delete retained S3 buckets from <em>LambdaSharp.Core</em>.</li>
+<li>Added <code>util show-kinesis-failed-logs</code> command to list CloudWatch log entries that failed to be processed by <em>LambdaSharp.Core</em>.</li>
+<li>Added check for <code>!If [ condition, ifTrue, ifFalse ]</code> on publicly scoped variables to make CloudFormation output conditional on <code>condition</code>.</li>
+<li>Added <code>tier list</code> command to list all available deployment tiers.</li>
+<li>Added confirmation prompt when detecting potential replacement/deletion of resources during <code>lash deploy</code> instead of erroring.</li>
+<li>Added <code>util show-parameters</code> command to show the processed parameters YAML file.</li>
+<li>Added support for <code>!Sub</code> function in parameter files.</li>
+<li>Updated embedded CloudFormation spec to 16.0.0.</li>
+</ul>
+</li>
+<li><p>Syntax</p>
+<ul>
+<li>Added pragmas for overriding <code>Module::RestApi::StageName</code> and <code>Module::WebSocket::StageName</code>.</li>
+<li>Added support for <code>DeletionPolicy</code> attribute on resource and parameter declarations.</li>
+</ul>
+</li>
+<li><p>Modules</p>
+<ul>
+<li>Migrated <em>LambdaSharp.Twitter.Query</em> function implementation to null-aware C#.</li>
+<li>Added <code>DeletionPolicy: Retain</code> to the <em>LambdaSharp.Core</em> S3 logging bucket.</li>
+</ul>
+</li>
+<li><p>Misc.</p>
+<ul>
+<li>Migrated all Lambda function implementations to sealed classes since they are never inherited from.</li>
+</ul>
+</li>
+</ul>
+<h4 id="fixes-2">Fixes</h4>
+<ul>
+<li><p>CLI</p>
+<ul>
+<li>Fixed an issue when processing parameter files where the encryption key in <code>!GetParam</code> required the <code>&quot;alias/&quot;</code> prefix.</li>
+</ul>
+</li>
+<li><p>Modules</p>
+<ul>
+<li>Increased memory limit for <em>LambdaSharp.S3.Subscriber</em> resource handler to 256MB.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
+<h4 id="features-1">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
 <li>Added a check for asynchronous API Gateway method invocations to report when they are used with HTTP GET/OPTIONS.</li>
 <li>Added <code>lash tier version</code> command to show or check the deployment tier version against a minimum expected version.</li>
+<li>Updated embedded CloudFormation spec to 15.2.0.</li>
 </ul>
 </li>
 <li><p>SDK</p>
@@ -208,7 +258,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-2">Fixes</h4>
+<h4 id="fixes-3">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -228,12 +278,8 @@
 </ul>
 </li>
 </ul>
-<h4 id="misc-2">Misc</h4>
-<ul>
-<li>Moved documentation from <code>src/DocFx</code> to <code>Docs</code></li>
-</ul>
 <h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -262,7 +308,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-3">Fixes</h4>
+<h4 id="fixes-4">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -276,7 +322,7 @@
 </li>
 </ul>
 <h3 id="v0801---2020-05-18">(v0.8.0.1) - 2020-05-18</h3>
-<h4 id="fixes-4">Fixes</h4>
+<h4 id="fixes-5">Fixes</h4>
 <ul>
 <li>CLI
 <ul>

@@ -108,6 +108,7 @@ Pragmas:
   - PragmaDefinition
 Properties:
   ResourceProperties
+DeletionPolicy: String
 Value: Expression
 DependsOn:
   - String
@@ -124,6 +125,12 @@ DependsOn:
 <dd>
 <p>The <code>DefaultAttribute</code> attribute specifies the resource attribute to use when exporting the resource from the module or to a Lambda function. By default, the LambdaSharp CLI automatically selects the <code>Arn</code> attribute when available. Otherwise, it uses the return value of a <code>!Ref</code> expressions. This behavior can be overwritten by specifying a <code>DefaultAttribute</code> attribute.</p>
 <p><i>Required</i>: No. Not valid when the resource is explicitly referenced by the <code>Value</code> attribute.</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>DeletionPolicy</code></dt>
+<dd>
+<p>The <code>DeletionPolicy</code> attribute specifies what to do with the resource when the stack is deleted. The value must be one of: <code>Retain</code> or <code>Snapshot</code>.</p>
+<p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>
 </dd>
 <dt><code>DependsOn</code></dt>

@@ -106,7 +106,7 @@ its configuration settings. <a class="xref" href="LambdaSharp.LambdaConfig.html"
 access to scoped module values using the
 <a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Item_System_String_">Item[String]</a> operator.
 Individual values can be retrieved using the basic
-<a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0__">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</a> method
+<a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Read__1_System_String_Func_System_String___0__Func_System_String___0__Action___0__">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</a> method
 or one of the <code>Read*</code> methods.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -119,7 +119,7 @@ or one of the <code>Read*</code> methods.</p>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_LambdaConfig_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LambdaConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LambdaConfig : object</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -146,22 +146,6 @@ or one of the <code>Read*</code> methods.</p>
         <td><a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a></td>
         <td><span class="parametername">source</span></td>
         <td><p>The <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> instance to read configuration values from.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown when <code data-dev-comment-type="paramref" class="paramref">source</code> is null.</p>
 </td>
       </tr>
     </tbody>
@@ -230,7 +214,7 @@ or one of the <code>Read*</code> methods.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Enumeration of all nested keys.</p>
 </td>
       </tr>
@@ -264,7 +248,7 @@ or one of the <code>Read*</code> methods.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_LambdaConfig_Read_" data-uid="LambdaSharp.LambdaConfig.Read*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0__" data-uid="LambdaSharp.LambdaConfig.Read``1(System.String,System.Func{System.String,``0},System.Func{System.String,``0},System.Action{``0})">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_Read__1_System_String_Func_System_String___0__Func_System_String___0__Action___0__" data-uid="LambdaSharp.LambdaConfig.Read``1(System.String,Func{System.String,``0},Func{System.String,``0},Action{``0})">Read&lt;T&gt;(String, Func&lt;String, T&gt;, Func&lt;String, T&gt;, Action&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the value for a key from <a class="xref" href="LambdaSharp.ConfigSource.ILambdaConfigSource.html">ILambdaConfigSource</a> at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -289,19 +273,19 @@ or one of the <code>Read*</code> methods.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
         <td><span class="parametername">fallback</span></td>
         <td><p>An optional callback when the value could not be found at the current path.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
         <td><span class="parametername">convert</span></td>
         <td><p>An optional conversion from string to another type when the value was found.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the converted value.</p>
 </td>
@@ -340,8 +324,8 @@ or one of the <code>Read*</code> methods.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method should rarely be invoked directly. Instead use <a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__">ReadText(String, Action&lt;String&gt;)</a>
+  <h5 id="LambdaSharp_LambdaConfig_Read__1_System_String_Func_System_String___0__Func_System_String___0__Action___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method should rarely be invoked directly. Instead use <a class="xref" href="LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_Action_System_String__">ReadText(String, Action&lt;String&gt;)</a>
 and the other convenience methods.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -366,7 +350,7 @@ and the other convenience methods.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})">ReadCommaDelimitedList(String, Action&lt;IEnumerable&lt;String&gt;&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_Action_IEnumerable_System_String___" data-uid="LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,Action{IEnumerable{System.String}})">ReadCommaDelimitedList(String, Action&lt;IEnumerable&lt;String&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Read an enumeration of comma-delimited <code>string</code> values for a
 key at the current path in the hierarchy.</p>
 </div>
@@ -392,7 +376,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -409,7 +393,7 @@ key at the current path in the hierarchy.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>The found enumeration of <code>string</code> values.</p>
 </td>
       </tr>
@@ -437,7 +421,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})">ReadInt(String, Action&lt;Int32&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,Action{System.Int32})">ReadInt(String, Action&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>int</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -462,7 +446,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -507,7 +491,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadInt_" data-uid="LambdaSharp.LambdaConfig.ReadInt*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_System_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})">ReadInt(String, Int32, Action&lt;Int32&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_Action_System_Int32__" data-uid="LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,Action{System.Int32})">ReadInt(String, Int32, Action&lt;Int32&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>int</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -538,7 +522,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -578,7 +562,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})">ReadText(String, Action&lt;String&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,Action{System.String})">ReadText(String, Action&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>string</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -603,7 +587,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -648,7 +632,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadText_" data-uid="LambdaSharp.LambdaConfig.ReadText*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_String_System_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})">ReadText(String, String, Action&lt;String&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadText_System_String_System_String_Action_System_String__" data-uid="LambdaSharp.LambdaConfig.ReadText(System.String,System.String,Action{System.String})">ReadText(String, String, Action&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>string</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -679,7 +663,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -719,7 +703,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})">ReadTimeSpan(String, Action&lt;TimeSpan&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_Action_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,Action{TimeSpan})">ReadTimeSpan(String, Action&lt;TimeSpan&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>TimeSpan</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -744,7 +728,7 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -761,7 +745,7 @@ key at the current path in the hierarchy.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><p>The found <code>TimeSpan</code> value.</p>
 </td>
       </tr>
@@ -789,7 +773,7 @@ key at the current path in the hierarchy.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_LambdaConfig_ReadTimeSpan_" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan*"></a>
-  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_TimeSpan_System_Action_System_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})">ReadTimeSpan(String, TimeSpan, Action&lt;TimeSpan&gt;)</h4>
+  <h4 id="LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_TimeSpan_Action_TimeSpan__" data-uid="LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,TimeSpan,Action{TimeSpan})">ReadTimeSpan(String, TimeSpan, Action&lt;TimeSpan&gt;)</h4>
   <div class="markdown level1 summary"><p>Read the <code>TimeSpan</code> value for a key at the current path in the hierarchy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -814,13 +798,13 @@ key at the current path in the hierarchy.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">defaultValue</span></td>
         <td><p>A value to return if <code data-dev-comment-type="paramref" class="paramref">key</code> doesn't exist.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">validate</span></td>
         <td><p>An optional callback to validate the value.</p>
 </td>
@@ -837,7 +821,7 @@ key at the current path in the hierarchy.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><p>The found <code>TimeSpan</code> value.</p>
 </td>
       </tr>
@@ -903,7 +887,7 @@ of the specified lower and upper bounds, inclusively.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><p>The validation callback to validate that a value is within the provided lower and upper bounds.</p>
 </td>
       </tr>

@@ -102,7 +102,7 @@
   <h1 id="LambdaSharp_ILambdaSerializerEx" data-uid="LambdaSharp.ILambdaSerializerEx" class="text-break">Class ILambdaSerializerEx
   </h1>
   <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html">ILambdaSerializerEx</a> class provides extension methods
-for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface.</p>
+for the <see cref="!:Amazon.Lambda.Core.ILambdaSerializer"></see> interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -114,13 +114,13 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ILambdaSerializerEx_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ILambdaSerializerEx</code></pre>
+    <pre><code class="lang-csharp hljs">public static class ILambdaSerializerEx : object</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_ILambdaSerializerEx_Deserialize_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize*"></a>
-  <h4 id="LambdaSharp_ILambdaSerializerEx_Deserialize_Amazon_Lambda_Core_ILambdaSerializer_System_String_System_Type_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize(Amazon.Lambda.Core.ILambdaSerializer,System.String,System.Type)">Deserialize(ILambdaSerializer, String, Type)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize_Amazon_Lambda_Core_ILambdaSerializer_System_String_System_Type_">Deserialize(ILambdaSerializer, String, Type)</a> method deserializes the JSON object from a <code>string</code>.</p>
+  <h4 id="LambdaSharp_ILambdaSerializerEx_Deserialize_ILambdaSerializer_System_String_Type_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize(ILambdaSerializer,System.String,Type)">Deserialize(ILambdaSerializer, String, Type)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize_ILambdaSerializer_System_String_Type_">Deserialize(ILambdaSerializer, String, Type)</a> method deserializes the JSON object from a <code>string</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -138,7 +138,7 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
+        <td><span class="xref">ILambdaSerializer</span></td>
         <td><span class="parametername">serializer</span></td>
         <td><p>The Lambda serializer.</p>
 </td>
@@ -150,7 +150,7 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type to instantiate.</p>
 </td>
@@ -174,8 +174,8 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaSerializerEx_Deserialize_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize*"></a>
-  <h4 id="LambdaSharp_ILambdaSerializerEx_Deserialize__1_Amazon_Lambda_Core_ILambdaSerializer_System_String_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize``1(Amazon.Lambda.Core.ILambdaSerializer,System.String)">Deserialize&lt;T&gt;(ILambdaSerializer, String)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize__1_Amazon_Lambda_Core_ILambdaSerializer_System_String_">Deserialize&lt;T&gt;(ILambdaSerializer, String)</a> method deserializes the JSON object from a <code>string</code>.</p>
+  <h4 id="LambdaSharp_ILambdaSerializerEx_Deserialize__1_ILambdaSerializer_System_String_" data-uid="LambdaSharp.ILambdaSerializerEx.Deserialize``1(ILambdaSerializer,System.String)">Deserialize&lt;T&gt;(ILambdaSerializer, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize__1_ILambdaSerializer_System_String_">Deserialize&lt;T&gt;(ILambdaSerializer, String)</a> method deserializes the JSON object from a <code>string</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -193,7 +193,7 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
+        <td><span class="xref">ILambdaSerializer</span></td>
         <td><span class="parametername">serializer</span></td>
         <td><p>The Lambda serializer.</p>
 </td>
@@ -239,8 +239,8 @@ for the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> interface
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaSerializerEx_Serialize_" data-uid="LambdaSharp.ILambdaSerializerEx.Serialize*"></a>
-  <h4 id="LambdaSharp_ILambdaSerializerEx_Serialize__1_Amazon_Lambda_Core_ILambdaSerializer___0_" data-uid="LambdaSharp.ILambdaSerializerEx.Serialize``1(Amazon.Lambda.Core.ILambdaSerializer,``0)">Serialize&lt;T&gt;(ILambdaSerializer, T)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Serialize__1_Amazon_Lambda_Core_ILambdaSerializer___0_">Serialize&lt;T&gt;(ILambdaSerializer, T)</a> extension method serializes
+  <h4 id="LambdaSharp_ILambdaSerializerEx_Serialize__1_ILambdaSerializer___0_" data-uid="LambdaSharp.ILambdaSerializerEx.Serialize``1(ILambdaSerializer,``0)">Serialize&lt;T&gt;(ILambdaSerializer, T)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Serialize__1_ILambdaSerializer___0_">Serialize&lt;T&gt;(ILambdaSerializer, T)</a> extension method serializes
 n instance to a JSON <code>string</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -259,7 +259,7 @@ n instance to a JSON <code>string</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
+        <td><span class="xref">ILambdaSerializer</span></td>
         <td><span class="parametername">serializer</span></td>
         <td><p>The Lambda serializer.</p>
 </td>

@@ -336,6 +336,9 @@ The name of an environment variable.
 <pre><code class="lang-yaml">!GetParam parameter-store-path
 </code></pre>
 <p>-OR-</p>
+<pre><code class="lang-yaml">!GetParam [ parameter-store-path ]
+</code></pre>
+<p>-OR-</p>
 <pre><code class="lang-yaml">!GetParam [ parameter-store-path, encryption-key-id ]
 </code></pre>
 <h5 id="parameters-2">Parameters</h5>
@@ -354,6 +357,30 @@ The <a href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html
 <pre><code class="lang-yaml">ApiKey: !GetConfig [ '../global.json', Services.SomeApi.ApiKey ]
 ReplyEmail: !GetParam /Company/EmailAddress
 Language: !GetEnv LANG
+</code></pre>
+<h4 id="sub">!Sub</h4>
+<p>The <code>!Sub</code> function substitutes variables in the format string with values from the arguments map or environment variables.</p>
+<h5 id="syntax-3">Syntax</h5>
+<pre><code class="lang-yaml">!Sub format-string
+</code></pre>
+<p>-OR-</p>
+<pre><code class="lang-yaml">!Sub [ format-string, arguments ]
+</code></pre>
+<h5 id="parameters-3">Parameters</h5>
+<dl>
+<dt><code>format-string</code></dt>
+<dd>
+A string with variables that <code>!Sub</code> substitutes. Write variables as <code>${MyVariable}</code>. Variable values can come from the arguments map or from environment variables. The arguments map can be omitted if only environment variables are referenced.
+</dd>
+<dt><code>arguments</code></dt>
+<dd>
+A map of key-value pairs. The value of a key can be a function.
+</dd>
+</dl>
+<h4 id="examples-2">Examples</h4>
+<pre><code class="lang-yaml">BucketArn: !Sub
+  - &quot;arn:aws:s3:::${Name}&quot;
+  - Name: !GetParam [ !Sub &quot;/${STAGE}/bucket-name&quot; ]
 </code></pre>
 </article>
           </div>

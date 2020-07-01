@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp CLI - List Command | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="List deployed LambdaSharp modules in a deployment tier">
-    <meta name="keywords" content="cli, list, module, deployment, tier, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
+    <meta name="keywords" content="cli, kinesis, firehose, logs, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp CLI - List Command | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-List.html">
+    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-Util-KinesisFailedLogs.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="List deployed LambdaSharp modules in a deployment tier">
+    <meta property="og:description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp CLI - List Command | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="List deployed LambdaSharp modules in a deployment tier">
+    <meta name="twitter:description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,8 +43,8 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp CLI - List Command | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-List.html">
+    <title>LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-Util-KinesisFailedLogs.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -93,11 +93,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="list-deployed-modules">List Deployed Modules</h1>
+<h1 id="show-failed-kinesis-firehose-cloudwatch-log-entries">Show Failed Kinesis Firehose CloudWatch Log Entries</h1>
 
-<p>The <code>list</code> command lists all deployed modules on a deployment tier.</p>
+<p>The <code>util show-kinesis-failed-logs</code> fetches the failed Kinesis Firehose records from the S3 logging bucket. For each record, the source key is shown, as well as the record properties, and the decoded CloudWatch Log entries that are part of the record.</p>
 <h2 id="options">Options</h2>
 <dl>
+<dt><code>--key-prefix|-k &lt;PREFIX&gt;</code></dt>
+<dd>
+<p>(optional) S3 key prefix where the failed logging records are stored (default: logging-failed/processing-failed/)</p>
+</dd>
 <dt><code>--tier|-T &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
@@ -123,22 +127,6 @@
 <p>(optional) Don't show banner or execution time</p>
 </dd>
 </dl>
-<h2 id="examples">Examples</h2>
-<h3 id="list-all-deployed-modules">List all deployed modules</h3>
-<p><strong>Using PowerShell/Bash:</strong></p>
-<pre><code class="lang-bash">lash list --tier Sandbox
-</code></pre>
-<p>Output:</p>
-<pre><code>LambdaSharp CLI (v0.6) - List deployed LambdaSharp modules
-
-Found 2 modules for deployment tier 'Default'
-
-NAME                 MODULE                   STATUS             DATE
-LambdaSharp-Core     LambdaSharp.Core:0.6     UPDATE_COMPLETE    2019-04-05 10:36:49
-LambdaSharp-S3-IO    LambdaSharp.S3.IO:0.6    UPDATE_COMPLETE    2019-04-05 10:37:19
-
-Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
-</code></pre>
 </article>
           </div>
           

@@ -111,11 +111,10 @@ log aggregator.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">System.Exception</span></div>
-    <div class="level2"><span class="xref">ALambdaException</span></div>
-      <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a></div>
-      <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a></div>
-      <div class="level3"><a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a></div>
+    <div class="level1"><span class="xref">ALambdaException</span></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a></div>
+      <div class="level2"><a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -125,12 +124,12 @@ log aggregator.</p>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_Exceptions_ALambdaException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaException : Exception, ISerializable, ILambdaExceptionFingerprinter</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaException : Exception, ILambdaExceptionFingerprinter</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="LambdaSharp_Exceptions_ALambdaException__ctor_" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor*"></a>
-  <h4 id="LambdaSharp_Exceptions_ALambdaException__ctor_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor(System.Exception,System.String,System.Object[])">ALambdaException(Exception, String, Object[])</h4>
+  <h4 id="LambdaSharp_Exceptions_ALambdaException__ctor_Exception_System_String_System_Object___" data-uid="LambdaSharp.Exceptions.ALambdaException.#ctor(Exception,System.String,System.Object[])">ALambdaException(Exception, String, Object[])</h4>
   <div class="markdown level1 summary"><p>Initializes a <a class="xref" href="LambdaSharp.Exceptions.ALambdaConfigException.html">ALambdaConfigException</a> instance with the specified exception message and inner exception.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -149,7 +148,7 @@ log aggregator.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Exception</span></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">innerException</span></td>
         <td><p>The inner exception instance.</p>
 </td>
