@@ -21,15 +21,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/APIGateway.md",
       "output": {
         ".html": {
           "relative_path": "articles/APIGateway.html",
-          "hash": "YU8tFaXYZ0dPvrcsTgHo9A=="
+          "hash": "hvAZDhli1zm0T7YhJkNNzA=="
         }
       },
       "is_incremental": false,
@@ -276,15 +273,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "articles/ReleaseNotes-Hicetas.md",
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Hicetas.html",
-          "hash": "3o7A77DT9kptODIYwoO8ew=="
+          "hash": "NE5bI7q3nPgCPXFHkdtIiQ=="
         }
       },
       "is_incremental": false,
@@ -797,7 +791,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "y7f7OA7PcmqSYydEiVr+TQ=="
+          "hash": "IaNfyExM9d+v7rttMeuh0g=="
         }
       },
       "is_incremental": false,
@@ -821,7 +815,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "cWPMd9dtr8fdm1Lq46PrfA=="
+          "hash": "m6+fNetNkwJBUqPCKMzavA=="
         }
       },
       "is_incremental": false,
@@ -869,7 +863,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "A27oIm9YMt32tGakkFucCg=="
+          "hash": "158aWPw5/uEtUzYFuFY7JA=="
         }
       },
       "is_incremental": false,
@@ -881,7 +875,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "8MM8gw+ma+jJi8xov/vH8Q=="
+          "hash": "LaRPR6lK27sTSaUR4POV0g=="
         }
       },
       "is_incremental": false,
@@ -929,7 +923,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "ixJpDKFKGoD2Y3eO2odChg=="
+          "hash": "KeNoviBFg73G8CWH/LLjSA=="
         }
       },
       "is_incremental": false,
@@ -976,7 +970,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction-2.html",
-          "hash": "kc+wMDiP3DGGF9fGMe3Waw=="
+          "hash": "ca69zVPeAPth2EBj1AOGOg=="
         }
       },
       "is_incremental": false,
@@ -988,7 +982,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html",
-          "hash": "u+VRg3C8L1gUO0i4gkZpfw=="
+          "hash": "KrjBQ2Tlx5HICLWSiaJ5ug=="
         }
       },
       "is_incremental": false,
@@ -1000,7 +994,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.FunctionInfo.html",
-          "hash": "0EwEZWiqJfFYosCSN92nMA=="
+          "hash": "HtNAYHYA3SFpTsjMpV7REg=="
         }
       },
       "is_incremental": false,
@@ -1012,7 +1006,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ALambdaFunction.html",
-          "hash": "r8u/DayaqrEEfhU7MQW4WQ=="
+          "hash": "NctCOgAK8arSKe458bAydg=="
         }
       },
       "is_incremental": false,
@@ -1024,7 +1018,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html",
-          "hash": "l8NjuVOLSBMaWLQC12YFbA=="
+          "hash": "E+5310Mpqjryp64/7545zA=="
         }
       },
       "is_incremental": false,
@@ -1036,7 +1030,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ApiGateway.FromBodyAttribute.html",
-          "hash": "mMfUb3qPgf8sE+W6b+ed8w=="
+          "hash": "hyXj0QXWsqlpdBpTtNYdNw=="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1042,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ApiGateway.FromUriAttribute.html",
-          "hash": "y1EGEYLQ4m7b7bbFOy7NpA=="
+          "hash": "Gjk+7dULsSsSXhRR9p9sxg=="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1066,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.AwsConverters.html",
-          "hash": "VgEJ/V7tiSO0ix6+U89Agw=="
+          "hash": "Rzosvz0pxu8DvuvQyZ8wSg=="
         }
       },
       "is_incremental": false,
@@ -1084,7 +1078,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.EmptyLambdaConfigSource.html",
-          "hash": "Av0PanjZkQlmvgotSEyuDA=="
+          "hash": "RmaoOLkRo8XfndPHkYbzaQ=="
         }
       },
       "is_incremental": false,
@@ -1096,7 +1090,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.ILambdaConfigSource.html",
-          "hash": "+VoLMqv+zdDYMAv9Re8L7Q=="
+          "hash": "QCo7gMxcIV2bmB6KIvhTfA=="
         }
       },
       "is_incremental": false,
@@ -1108,7 +1102,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.html",
-          "hash": "+XALfZVxuC8fRb1MRX+Hhw=="
+          "hash": "+3VI3vS7P3CitwXhNRFQ7g=="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1114,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.html",
-          "hash": "dSPNHUg1d7hfxiJM1zBZKA=="
+          "hash": "qaiva65geLgFZ932D5Ytkg=="
         }
       },
       "is_incremental": false,
@@ -1144,7 +1138,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html",
-          "hash": "6sdSr+QHkFg6wPGcVVEMmg=="
+          "hash": "ZRfo9Zkb8PtK5tyLdox+Og=="
         }
       },
       "is_incremental": false,
@@ -1156,7 +1150,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.Request-1.html",
-          "hash": "2o8OYgETBHRwPDvMAs3AMQ=="
+          "hash": "Emwf+wg2l8ASlUPA+pqm/Q=="
         }
       },
       "is_incremental": false,
@@ -1168,7 +1162,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.RequestType.html",
-          "hash": "57/gM5NESleUUWcQS/vbkQ=="
+          "hash": "mBvqZezTaIfpszr3ztMFmQ=="
         }
       },
       "is_incremental": false,
@@ -1180,7 +1174,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource.Response-1.html",
-          "hash": "fJQ7Bz5qswKRIu78U55qWQ=="
+          "hash": "2HqNH75VuoC+Vz8BQN65QA=="
         }
       },
       "is_incremental": false,
@@ -1204,7 +1198,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ErrorReports.LambdaErrorReport.html",
-          "hash": "lZmGJNfQ8rlnP7ewCA85Zw=="
+          "hash": "ad7XKUmw/BNDyDWmjCIZQQ=="
         }
       },
       "is_incremental": false,
@@ -1216,7 +1210,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ErrorReports.LambdaErrorReportExceptionInfo.html",
-          "hash": "VZp7qV9vdAq67hsKZI1Fdg=="
+          "hash": "5ofE2ielh9HnLH4GBud0Xg=="
         }
       },
       "is_incremental": false,
@@ -1228,7 +1222,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html",
-          "hash": "5epeemu4cf35qLiCJKdLVw=="
+          "hash": "n/2ONmCIx2b3jnKaTESr/g=="
         }
       },
       "is_incremental": false,
@@ -1240,7 +1234,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ErrorReports.LambdaErrorReportStackFrame.html",
-          "hash": "aVUd+bmk55KJUnE1ygr6lQ=="
+          "hash": "elbJuXkzCNtO8/CC/r0Iyg=="
         }
       },
       "is_incremental": false,
@@ -1252,7 +1246,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ErrorReports.LambdaErrorReportStackTrace.html",
-          "hash": "G7jNzvccl2ZWY6qA7jjraA=="
+          "hash": "6TGw7Hrky+nAwA8KigcLNA=="
         }
       },
       "is_incremental": false,
@@ -1276,7 +1270,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.ALambdaConfigException.html",
-          "hash": "BNRmzwZ4x60UyVhARFVQfg=="
+          "hash": "Q6y26DuvRWB/CyIQ2oS0lw=="
         }
       },
       "is_incremental": false,
@@ -1288,7 +1282,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.ALambdaException.html",
-          "hash": "pdKqpxfBpavFk+ygOZroXg=="
+          "hash": "abiB/NAdVepUJ5BGSeHtEQ=="
         }
       },
       "is_incremental": false,
@@ -1312,7 +1306,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaAbortException.html",
-          "hash": "bRot6zCnS6LoF5mEugEOrg=="
+          "hash": "8vlu/YXqWpQVgEuqAsu9aA=="
         }
       },
       "is_incremental": false,
@@ -1324,7 +1318,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html",
-          "hash": "qP+9YnUpkJzxqEGThAc1tQ=="
+          "hash": "x0NGo+JItlwUw7Yz1LzPtg=="
         }
       },
       "is_incremental": false,
@@ -1336,7 +1330,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.html",
-          "hash": "usCGs9xvWHgQFMBktAvBRQ=="
+          "hash": "8kKtbT3V/GA9PCHI4ll6Ew=="
         }
       },
       "is_incremental": false,
@@ -1348,7 +1342,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html",
-          "hash": "F1CO7/I2heYIm7invor6Yw=="
+          "hash": "GYEhX1R/fo6vaZobqORbpg=="
         }
       },
       "is_incremental": false,
@@ -1360,7 +1354,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html",
-          "hash": "o9S8qNtaqwd/FfAJHJvDOA=="
+          "hash": "MCBAzOvsTWKgMHJ6ai9xFg=="
         }
       },
       "is_incremental": false,
@@ -1372,7 +1366,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaConfigValidationException.html",
-          "hash": "lY0vESdZKl+PcLbyxvEfRA=="
+          "hash": "EMxXWG9txesdnlmc0mZw5Q=="
         }
       },
       "is_incremental": false,
@@ -1384,7 +1378,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Exceptions.LambdaRetriableException.html",
-          "hash": "5ORwFUTkG1qwM0e2mmkZPg=="
+          "hash": "zBwZSBeU1Bo9TNx9SjPdJw=="
         }
       },
       "is_incremental": false,
@@ -1408,7 +1402,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html",
-          "hash": "OTrv1JGAYX9Y8lfkqS7r2A=="
+          "hash": "ZzljqcXiov1ukJu8L4VItg=="
         }
       },
       "is_incremental": false,
@@ -1420,7 +1414,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Finalizer.FinalizerAttributes.html",
-          "hash": "5w8mAiT98Qw7y4nmafwVUQ=="
+          "hash": "IdoJmHsvI88kAqOssSEADw=="
         }
       },
       "is_incremental": false,
@@ -1432,7 +1426,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Finalizer.FinalizerProperties.html",
-          "hash": "O0xTlkkcEwbLubQR2m2jZg=="
+          "hash": "U+zod+brOQMXZBbaXK0ONQ=="
         }
       },
       "is_incremental": false,
@@ -1456,7 +1450,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ILambdaErrorReportGenerator.html",
-          "hash": "LT8rGWQWFPb3Woae/rVLqg=="
+          "hash": "Q1Cf937eEyT8zPTzlpAe8Q=="
         }
       },
       "is_incremental": false,
@@ -1468,7 +1462,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html",
-          "hash": "K6FWZimuC0yUofVcZFb7rQ=="
+          "hash": "q9NdK8HFGu8DqEzs9Cvddg=="
         }
       },
       "is_incremental": false,
@@ -1480,7 +1474,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.ILambdaSerializerEx.html",
-          "hash": "w/1CYN5SQjVpf6Ao4N7yMQ=="
+          "hash": "H8J435BEQawQjhilvSxDag=="
         }
       },
       "is_incremental": false,
@@ -1492,7 +1486,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaConfig.html",
-          "hash": "MkC4QdC05ST6TKGUcFTT0A=="
+          "hash": "ZepLd70tVu4tK+TCNrAtUA=="
         }
       },
       "is_incremental": false,
@@ -1504,7 +1498,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaFunctionDependencyProvider.html",
-          "hash": "OJEQ/cXFLrj8u1p7UT01tQ=="
+          "hash": "OFrfuyzFiNnIYX0VN0EtMg=="
         }
       },
       "is_incremental": false,
@@ -1528,7 +1522,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.LambdaMetricUnit.html",
-          "hash": "XlE4BGcK79+tFCWrAqCvRg=="
+          "hash": "quvLR3r4xmunsU8XgtNkBA=="
         }
       },
       "is_incremental": false,
@@ -1540,7 +1534,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html",
-          "hash": "CwkFSqfO2Y5S1LuvJ13EAg=="
+          "hash": "ORs4BD44622bHOYs1AhpBA=="
         }
       },
       "is_incremental": false,
@@ -1552,7 +1546,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html",
-          "hash": "/My1GOD40L6i7HIH4UpCRg=="
+          "hash": "iQwqSnKYEqGBorcanm8VAA=="
         }
       },
       "is_incremental": false,
@@ -1564,7 +1558,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Logger.LambdaLogLevel.html",
-          "hash": "DC5G4nStwTKol2cHpJ4Isw=="
+          "hash": "ZBuj0BhXh+QB993U4uv0tQ=="
         }
       },
       "is_incremental": false,
@@ -1588,7 +1582,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.ALambdaRecord.html",
-          "hash": "3jgO/guEUd8dyJXWHiq8jg=="
+          "hash": "lmN3GNHW/pdQoGF93UmORQ=="
         }
       },
       "is_incremental": false,
@@ -1600,7 +1594,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.Events.LambdaEventRecord.html",
-          "hash": "OkJyV7p8p9OVvnw8bMuGJg=="
+          "hash": "sHNok0c85Tjk/YzM94AE5g=="
         }
       },
       "is_incremental": false,
@@ -1624,7 +1618,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.Metrics.CloudWatchMetricValue.html",
-          "hash": "RxjlZOk2GoqYagDW3+lNzg=="
+          "hash": "FMfJzf9w02HMz3xaw6smdw=="
         }
       },
       "is_incremental": false,
@@ -1636,7 +1630,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.Metrics.CloudWatchMetrics.html",
-          "hash": "choxLhEQPqSq96VszZ5Q6g=="
+          "hash": "WBTeF0+I7cu+u0oKRm1wGg=="
         }
       },
       "is_incremental": false,
@@ -1648,7 +1642,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.Metrics.EmbeddedCloudWatchMetrics.html",
-          "hash": "lLULDWpuSxKAArtZFFi8eg=="
+          "hash": "bgRUj/ru7KaYVal+WV3BGg=="
         }
       },
       "is_incremental": false,
@@ -1660,7 +1654,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Records.Metrics.LambdaMetricsRecord.html",
-          "hash": "1iHd6Xw8lL7heT/INmsUgw=="
+          "hash": "URYlfm2ZxP9nafbzYget8w=="
         }
       },
       "is_incremental": false,
@@ -1696,7 +1690,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html",
-          "hash": "9Qh5COAH0pPJirSowQXDsQ=="
+          "hash": "WvVfOvQurvizjGBVVmzIKA=="
         }
       },
       "is_incremental": false,
@@ -1708,7 +1702,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Schedule.LambdaScheduleEvent.html",
-          "hash": "PbXuiBL3H5dHv0bHLv4Sow=="
+          "hash": "dXZ5vjiU3GSjOYt5eE9nQg=="
         }
       },
       "is_incremental": false,
@@ -1732,7 +1726,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.Serialization.LambdaJsonSerializer.html",
-          "hash": "IhXtSgn49t3U28BbP6iYnQ=="
+          "hash": "Pv/085MQRcP0wz3ZSJvcvw=="
         }
       },
       "is_incremental": false,
@@ -1756,7 +1750,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html",
-          "hash": "dcwFB+xjTjNa6z5FMMcjwg=="
+          "hash": "T5UpD4Wjw9VE7HvjadndTQ=="
         }
       },
       "is_incremental": false,
@@ -1780,7 +1774,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html",
-          "hash": "3C/TVZwCHrfkePK8C2zpvg=="
+          "hash": "jUmGeQUMtarL31mh8ikiCQ=="
         }
       },
       "is_incremental": false,
@@ -1792,7 +1786,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html",
-          "hash": "oUrD6FkgBdJzrr8Wm2USFA=="
+          "hash": "qW/puAEIDKGqHBGfdZuGaA=="
         }
       },
       "is_incremental": false,
@@ -1804,7 +1798,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html",
-          "hash": "bK826Z17jV/jXptmRFsRkg=="
+          "hash": "kK18bSGfOqB/1u/nZaL8AQ=="
         }
       },
       "is_incremental": false,
@@ -1828,7 +1822,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/LambdaSharp.html",
-          "hash": "ZZaBw2cPqbOXdTg2ayP4bg=="
+          "hash": "UyCjXLGcn7N0ZTVehhhzXg=="
         }
       },
       "is_incremental": false,
@@ -2290,6 +2284,13 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2307,13 +2308,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 72,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

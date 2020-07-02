@@ -168,12 +168,13 @@ issues caused by inconsistencies in serialization or deserialization.</p>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_JsonSerializer_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.JsonSerializer*"></a>
   <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_JsonSerializer" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.JsonSerializer">JsonSerializer</h4>
-  <div class="markdown level1 summary"><p>Retrieves the <see cref="!:ILambdaSerializer"></see> instance used for serializing/deserializing JSON data.</p>
+  <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance used for serializing/deserializing JSON data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILambdaSerializer JsonSerializer { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ALambdaFunction.LambdaSerializer instead. This property will be removed in the next major release.&quot;)]
+ILambdaSerializer JsonSerializer { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,8 +186,8 @@ issues caused by inconsistencies in serialization or deserialization.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILambdaSerializer</span></td>
-        <td><p>The <see cref="!:ILambdaSerializer"></see> instance.</p>
+        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
+        <td><p>The <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance.</p>
 </td>
       </tr>
     </tbody>
@@ -210,8 +211,8 @@ issues caused by inconsistencies in serialization or deserialization.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><p>Current <see cref="!:DateTime"></see> in UTC timezone</p>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><p>Current <span class="xref">System.DateTime</span> in UTC timezone</p>
 </td>
       </tr>
     </tbody>
@@ -219,7 +220,7 @@ issues caused by inconsistencies in serialization or deserialization.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync*"></a>
-  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],Dictionary{System.String,System.String})">DecryptSecretAsync(Byte[], Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})">DecryptSecretAsync(Byte[], Dictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Decrypt a sequence of bytes with an optional encryption context. The Lambda function
 requires permission to use the <code>kms:Decrypt</code> operation on the KMS key used to
 encrypt the original message.</p>
@@ -246,7 +247,7 @@ encrypt the original message.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
         <td><p>An optional encryption context. Can be <code>null</code>.</p>
 </td>
@@ -263,14 +264,14 @@ encrypt the original message.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync*"></a>
-  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,Dictionary{System.String,System.String})">EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})">EncryptSecretAsync(Byte[], String, Dictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Encrypt a sequence of bytes using the specified KMS key. The Lambda function requires
 permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS key.</p>
 </div>
@@ -302,7 +303,7 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
         <td><p>An optional encryption context. Can be <code>null</code>.</p>
 </td>
@@ -319,7 +320,7 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>
@@ -354,7 +355,7 @@ the Lambda function.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_SendEventAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync*"></a>
-  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendEventAsync_DateTimeOffset_System_String_System_String_System_String_System_String_IEnumerable_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset,System.String,System.String,System.String,System.String,IEnumerable{System.String})">SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable&lt;String&gt;)</h4>
+  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendEventAsync_System_DateTimeOffset_System_String_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable&lt;String&gt;)</h4>
   <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event will be forwarded to the default EventBridge by LambdaSharp.Core (requires Core Services to be enabled).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -373,7 +374,7 @@ the Lambda function.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTimeOffset</span></td>
+        <td><span class="xref">System.DateTimeOffset</span></td>
         <td><span class="parametername">timestamp</span></td>
         <td><p>The timestamp of the event.</p>
 </td>
@@ -403,7 +404,7 @@ the Lambda function.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">resources</span></td>
         <td><p>Optional AWS or custom resources, identified by unique identifier (e.g. ARN), which the event primarily concerns. Any number, including zero, may be present.</p>
 </td>
@@ -420,13 +421,13 @@ the Lambda function.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <a id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync*"></a>
-  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_IEnumerable_KeyValuePair_System_String_System_String___" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,IEnumerable{KeyValuePair{System.String,System.String}})">SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</h4>
+  <h4 id="LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___" data-uid="LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">SendMessageToQueueAsync(String, String, IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Send a message to the specified SQS queue. The Lambda function requires <code>sqs:SendMessage</code> permission
 on the specified SQS queue.</p>
 </div>
@@ -458,7 +459,7 @@ on the specified SQS queue.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</td>
         <td><span class="parametername">messageAttributes</span></td>
         <td><p>Optional attributes for the message.</p>
 </td>
@@ -475,7 +476,7 @@ on the specified SQS queue.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
         <td><p>The task object representing the asynchronous operation.</p>
 </td>
       </tr>

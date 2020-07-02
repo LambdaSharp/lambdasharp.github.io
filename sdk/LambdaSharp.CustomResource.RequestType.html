@@ -109,7 +109,8 @@ operation on the custom resource.</p>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_CustomResource_RequestType_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum RequestType : int</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(StringEnumConverter))]
+public enum RequestType</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>

@@ -123,7 +123,7 @@ Lambda function.</p>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LambdaErrorReportGenerator : object, ILambdaErrorReportGenerator</code></pre>
+    <pre><code class="lang-csharp hljs">public class LambdaErrorReportGenerator : ILambdaErrorReportGenerator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -193,8 +193,8 @@ Lambda function.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_Exception_System_String_System_Object___" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
+  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
 <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance from the provided parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -225,7 +225,7 @@ Lambda function.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">exception</span></td>
         <td><p>An optional exception instance.</p>
 </td>
@@ -260,13 +260,13 @@ Lambda function.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_Exception_System_String_System_Object____remarks">Remarks</h5>
+  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>See <cref name="FormatMessage(string,object[])"></cref> for details on how the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter
 impacts the processing of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>
 </div>
   <a id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.FormatMessage*"></a>
   <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.FormatMessage(System.String,System.Object[])">FormatMessage(String, Object[])</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___">FormatMessage(String, Object[])</a> method behaves identically to the <see cref="!:string.Format(string,object[])"></see> method
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___">FormatMessage(String, Object[])</a> method behaves identically to the <span class="xref">System.String.Format(System.String,System.Object[])</span> method
 when the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter is not <code>null</code> and the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter is non-empty.
 If the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter is <code>null</code>, this method returns <code>null</code>. If the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter is empty,
 this method return the value of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>

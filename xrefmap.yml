@@ -32,11 +32,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.ALambdaFunction
   nameWithType: ALambdaFunction.ALambdaFunction
-- uid: LambdaSharp.ALambdaFunction.AddPendingTask(Task)
+- uid: LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
   name: AddPendingTask(Task)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_AddPendingTask_Task_
-  commentId: M:LambdaSharp.ALambdaFunction.AddPendingTask(Task)
-  fullName: LambdaSharp.ALambdaFunction.AddPendingTask(Task)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_AddPendingTask_System_Threading_Tasks_Task_
+  commentId: M:LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
+  fullName: LambdaSharp.ALambdaFunction.AddPendingTask(System.Threading.Tasks.Task)
   nameWithType: ALambdaFunction.AddPendingTask(Task)
 - uid: LambdaSharp.ALambdaFunction.AddPendingTask*
   name: AddPendingTask
@@ -71,13 +71,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.DebugLoggingEnabled
   nameWithType: ALambdaFunction.DebugLoggingEnabled
-- uid: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,Dictionary{System.String,System.String})
+- uid: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: DecryptSecretAsync(String, Dictionary<String, String>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: DecryptSecretAsync(String, Dictionary(Of String, String))
-  fullName: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String, Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ALambdaFunction.DecryptSecretAsync(String, Dictionary<String, String>)
   nameWithType.vb: ALambdaFunction.DecryptSecretAsync(String, Dictionary(Of String, String))
 - uid: LambdaSharp.ALambdaFunction.DecryptSecretAsync*
@@ -94,13 +94,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.DeserializeJson
   nameWithType: ALambdaFunction.DeserializeJson
-- uid: LambdaSharp.ALambdaFunction.DeserializeJson``1(Stream)
+- uid: LambdaSharp.ALambdaFunction.DeserializeJson``1(System.IO.Stream)
   name: DeserializeJson<T>(Stream)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_Stream_
-  commentId: M:LambdaSharp.ALambdaFunction.DeserializeJson``1(Stream)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_
+  commentId: M:LambdaSharp.ALambdaFunction.DeserializeJson``1(System.IO.Stream)
   name.vb: DeserializeJson(Of T)(Stream)
-  fullName: LambdaSharp.ALambdaFunction.DeserializeJson<T>(Stream)
-  fullName.vb: LambdaSharp.ALambdaFunction.DeserializeJson(Of T)(Stream)
+  fullName: LambdaSharp.ALambdaFunction.DeserializeJson<T>(System.IO.Stream)
+  fullName.vb: LambdaSharp.ALambdaFunction.DeserializeJson(Of T)(System.IO.Stream)
   nameWithType: ALambdaFunction.DeserializeJson<T>(Stream)
   nameWithType.vb: ALambdaFunction.DeserializeJson(Of T)(Stream)
 - uid: LambdaSharp.ALambdaFunction.DeserializeJson``1(System.String)
@@ -112,13 +112,13 @@ references:
   fullName.vb: LambdaSharp.ALambdaFunction.DeserializeJson(Of T)(System.String)
   nameWithType: ALambdaFunction.DeserializeJson<T>(String)
   nameWithType.vb: ALambdaFunction.DeserializeJson(Of T)(String)
-- uid: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,Dictionary{System.String,System.String})
+- uid: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: EncryptSecretAsync(String, String, Dictionary<String, String>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: EncryptSecretAsync(String, String, Dictionary(Of String, String))
-  fullName: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String, System.String, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String, System.String, Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ALambdaFunction.EncryptSecretAsync(String, String, Dictionary<String, String>)
   nameWithType.vb: ALambdaFunction.EncryptSecretAsync(String, String, Dictionary(Of String, String))
 - uid: LambdaSharp.ALambdaFunction.EncryptSecretAsync*
@@ -171,11 +171,11 @@ references:
   commentId: F:LambdaSharp.ALambdaFunction.FailedMessageOrigin.SQS
   fullName: LambdaSharp.ALambdaFunction.FailedMessageOrigin.SQS
   nameWithType: ALambdaFunction.FailedMessageOrigin.SQS
-- uid: LambdaSharp.ALambdaFunction.FunctionHandlerAsync(Stream,ILambdaContext)
+- uid: LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)
   name: FunctionHandlerAsync(Stream, ILambdaContext)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_Stream_ILambdaContext_
-  commentId: M:LambdaSharp.ALambdaFunction.FunctionHandlerAsync(Stream,ILambdaContext)
-  fullName: LambdaSharp.ALambdaFunction.FunctionHandlerAsync(Stream, ILambdaContext)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_
+  commentId: M:LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)
+  fullName: LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream, Amazon.Lambda.Core.ILambdaContext)
   nameWithType: ALambdaFunction.FunctionHandlerAsync(Stream, ILambdaContext)
 - uid: LambdaSharp.ALambdaFunction.FunctionHandlerAsync*
   name: FunctionHandlerAsync
@@ -398,11 +398,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.FunctionInfo.Started
   nameWithType: ALambdaFunction.FunctionInfo.Started
-- uid: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(Stream)
+- uid: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(System.IO.Stream)
   name: HandleFailedInitializationAsync(Stream)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_Stream_
-  commentId: M:LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(Stream)
-  fullName: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(Stream)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(System.IO.Stream)
+  fullName: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync(System.IO.Stream)
   nameWithType: ALambdaFunction.HandleFailedInitializationAsync(Stream)
 - uid: LambdaSharp.ALambdaFunction.HandleFailedInitializationAsync*
   name: HandleFailedInitializationAsync
@@ -502,13 +502,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LambdaSerializer
   nameWithType: ALambdaFunction.LambdaSerializer
-- uid: LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,Exception,System.String,System.Object[])
+- uid: LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
   name: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
   name.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, Exception, System.String, System.Object())
+  fullName: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object())
   nameWithType: ALambdaFunction.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
   nameWithType.vb: ALambdaFunction.LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
 - uid: LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*
@@ -553,19 +553,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogDebug
   nameWithType: ALambdaFunction.LogDebug
-- uid: LambdaSharp.ALambdaFunction.LogError(Exception)
+- uid: LambdaSharp.ALambdaFunction.LogError(System.Exception)
   name: LogError(Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.LogError(Exception)
-  fullName: LambdaSharp.ALambdaFunction.LogError(Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.LogError(System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.LogError(System.Exception)
   nameWithType: ALambdaFunction.LogError(Exception)
-- uid: LambdaSharp.ALambdaFunction.LogError(Exception,System.String,System.Object[])
+- uid: LambdaSharp.ALambdaFunction.LogError(System.Exception,System.String,System.Object[])
   name: LogError(Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LogError(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LogError(System.Exception,System.String,System.Object[])
   name.vb: LogError(Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LogError(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LogError(Exception, System.String, System.Object())
+  fullName: LambdaSharp.ALambdaFunction.LogError(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LogError(System.Exception, System.String, System.Object())
   nameWithType: ALambdaFunction.LogError(Exception, String, Object[])
   nameWithType.vb: ALambdaFunction.LogError(Exception, String, Object())
 - uid: LambdaSharp.ALambdaFunction.LogError*
@@ -575,19 +575,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogError
   nameWithType: ALambdaFunction.LogError
-- uid: LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception)
+- uid: LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception)
   name: LogErrorAsInfo(Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception)
-  fullName: LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception)
   nameWithType: ALambdaFunction.LogErrorAsInfo(Exception)
-- uid: LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception,System.String,System.Object[])
+- uid: LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception,System.String,System.Object[])
   name: LogErrorAsInfo(Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsInfo_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception,System.String,System.Object[])
   name.vb: LogErrorAsInfo(Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LogErrorAsInfo(Exception, System.String, System.Object())
+  fullName: LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LogErrorAsInfo(System.Exception, System.String, System.Object())
   nameWithType: ALambdaFunction.LogErrorAsInfo(Exception, String, Object[])
   nameWithType.vb: ALambdaFunction.LogErrorAsInfo(Exception, String, Object())
 - uid: LambdaSharp.ALambdaFunction.LogErrorAsInfo*
@@ -597,19 +597,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogErrorAsInfo
   nameWithType: ALambdaFunction.LogErrorAsInfo
-- uid: LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception)
+- uid: LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception)
   name: LogErrorAsWarning(Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception)
-  fullName: LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception)
   nameWithType: ALambdaFunction.LogErrorAsWarning(Exception)
-- uid: LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception,System.String,System.Object[])
+- uid: LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception,System.String,System.Object[])
   name: LogErrorAsWarning(Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogErrorAsWarning_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception,System.String,System.Object[])
   name.vb: LogErrorAsWarning(Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LogErrorAsWarning(Exception, System.String, System.Object())
+  fullName: LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LogErrorAsWarning(System.Exception, System.String, System.Object())
   nameWithType: ALambdaFunction.LogErrorAsWarning(Exception, String, Object[])
   nameWithType.vb: ALambdaFunction.LogErrorAsWarning(Exception, String, Object())
 - uid: LambdaSharp.ALambdaFunction.LogErrorAsWarning*
@@ -619,13 +619,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogErrorAsWarning
   nameWithType: ALambdaFunction.LogErrorAsWarning
-- uid: LambdaSharp.ALambdaFunction.LogFatal(Exception,System.String,System.Object[])
+- uid: LambdaSharp.ALambdaFunction.LogFatal(System.Exception,System.String,System.Object[])
   name: LogFatal(Exception, String, Object[])
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogFatal_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ALambdaFunction.LogFatal(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogFatal_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ALambdaFunction.LogFatal(System.Exception,System.String,System.Object[])
   name.vb: LogFatal(Exception, String, Object())
-  fullName: LambdaSharp.ALambdaFunction.LogFatal(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ALambdaFunction.LogFatal(Exception, System.String, System.Object())
+  fullName: LambdaSharp.ALambdaFunction.LogFatal(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ALambdaFunction.LogFatal(System.Exception, System.String, System.Object())
   nameWithType: ALambdaFunction.LogFatal(Exception, String, Object[])
   nameWithType.vb: ALambdaFunction.LogFatal(Exception, String, Object())
 - uid: LambdaSharp.ALambdaFunction.LogFatal*
@@ -664,22 +664,22 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogInfo
   nameWithType: ALambdaFunction.LogInfo
-- uid: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable{LambdaSharp.LambdaMetric})
+- uid: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric})
   name: LogMetric(IEnumerable<LambdaMetric>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_IEnumerable_LambdaSharp_LambdaMetric__
-  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(IEnumerable{LambdaSharp.LambdaMetric})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__
+  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric})
   name.vb: LogMetric(IEnumerable(Of LambdaMetric))
-  fullName: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable<LambdaSharp.LambdaMetric>)
-  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable(Of LambdaSharp.LambdaMetric))
+  fullName: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable<LambdaSharp.LambdaMetric>)
+  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable(Of LambdaSharp.LambdaMetric))
   nameWithType: ALambdaFunction.LogMetric(IEnumerable<LambdaMetric>)
   nameWithType.vb: ALambdaFunction.LogMetric(IEnumerable(Of LambdaMetric))
-- uid: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable{LambdaSharp.LambdaMetric},IEnumerable{System.String},Dictionary{System.String,System.String})
+- uid: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name: LogMetric(IEnumerable<LambdaMetric>, IEnumerable<String>, Dictionary<String, String>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_IEnumerable_LambdaSharp_LambdaMetric__IEnumerable_System_String__Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(IEnumerable{LambdaSharp.LambdaMetric},IEnumerable{System.String},Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: LogMetric(IEnumerable(Of LambdaMetric), IEnumerable(Of String), Dictionary(Of String, String))
-  fullName: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable<LambdaSharp.LambdaMetric>, IEnumerable<System.String>, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(IEnumerable(Of LambdaSharp.LambdaMetric), IEnumerable(Of System.String), Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable<LambdaSharp.LambdaMetric>, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable(Of LambdaSharp.LambdaMetric), System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ALambdaFunction.LogMetric(IEnumerable<LambdaMetric>, IEnumerable<String>, Dictionary<String, String>)
   nameWithType.vb: ALambdaFunction.LogMetric(IEnumerable(Of LambdaMetric), IEnumerable(Of String), Dictionary(Of String, String))
 - uid: LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit)
@@ -688,13 +688,13 @@ references:
   commentId: M:LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit)
   fullName: LambdaSharp.ALambdaFunction.LogMetric(System.String, System.Double, LambdaSharp.LambdaMetricUnit)
   nameWithType: ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit)
-- uid: LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit,IEnumerable{System.String},Dictionary{System.String,System.String})
+- uid: LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name: LogMetric(String, Double, LambdaMetricUnit, IEnumerable<String>, Dictionary<String, String>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_IEnumerable_System_String__Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit,IEnumerable{System.String},Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: LogMetric(String, Double, LambdaMetricUnit, IEnumerable(Of String), Dictionary(Of String, String))
-  fullName: LambdaSharp.ALambdaFunction.LogMetric(System.String, System.Double, LambdaSharp.LambdaMetricUnit, IEnumerable<System.String>, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(System.String, System.Double, LambdaSharp.LambdaMetricUnit, IEnumerable(Of System.String), Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ALambdaFunction.LogMetric(System.String, System.Double, LambdaSharp.LambdaMetricUnit, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ALambdaFunction.LogMetric(System.String, System.Double, LambdaSharp.LambdaMetricUnit, System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit, IEnumerable<String>, Dictionary<String, String>)
   nameWithType.vb: ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit, IEnumerable(Of String), Dictionary(Of String, String))
 - uid: LambdaSharp.ALambdaFunction.LogMetric*
@@ -720,11 +720,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.LogWarn
   nameWithType: ALambdaFunction.LogWarn
-- uid: LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaFunction.ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.ALambdaFunction.ProcessMessageStreamAsync*
   name: ProcessMessageStreamAsync
@@ -759,11 +759,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordErrorReport
   nameWithType: ALambdaFunction.RecordErrorReport
-- uid: LambdaSharp.ALambdaFunction.RecordException(Exception)
+- uid: LambdaSharp.ALambdaFunction.RecordException(System.Exception)
   name: RecordException(Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.RecordException(Exception)
-  fullName: LambdaSharp.ALambdaFunction.RecordException(Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.RecordException(System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.RecordException(System.Exception)
   nameWithType: ALambdaFunction.RecordException(Exception)
 - uid: LambdaSharp.ALambdaFunction.RecordException*
   name: RecordException
@@ -772,11 +772,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordException
   nameWithType: ALambdaFunction.RecordException
-- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,Exception)
+- uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)
   name: RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_Exception_
-  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,Exception)
-  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel, LambdaSharp.ALambdaFunction.FailedMessageOrigin, System.String, Exception)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_
+  commentId: M:LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)
+  fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel, LambdaSharp.ALambdaFunction.FailedMessageOrigin, System.String, System.Exception)
   nameWithType: ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)
 - uid: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*
   name: RecordFailedMessageAsync
@@ -785,19 +785,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.RecordFailedMessageAsync
   nameWithType: ALambdaFunction.RecordFailedMessageAsync
-- uid: LambdaSharp.ALambdaFunction.RunTask(Action,CancellationToken)
+- uid: LambdaSharp.ALambdaFunction.RunTask(System.Action,System.Threading.CancellationToken)
   name: RunTask(Action, CancellationToken)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_Action_CancellationToken_
-  commentId: M:LambdaSharp.ALambdaFunction.RunTask(Action,CancellationToken)
-  fullName: LambdaSharp.ALambdaFunction.RunTask(Action, CancellationToken)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Action_System_Threading_CancellationToken_
+  commentId: M:LambdaSharp.ALambdaFunction.RunTask(System.Action,System.Threading.CancellationToken)
+  fullName: LambdaSharp.ALambdaFunction.RunTask(System.Action, System.Threading.CancellationToken)
   nameWithType: ALambdaFunction.RunTask(Action, CancellationToken)
-- uid: LambdaSharp.ALambdaFunction.RunTask(Func{Task},CancellationToken)
+- uid: LambdaSharp.ALambdaFunction.RunTask(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
   name: RunTask(Func<Task>, CancellationToken)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_Func_Task__CancellationToken_
-  commentId: M:LambdaSharp.ALambdaFunction.RunTask(Func{Task},CancellationToken)
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:LambdaSharp.ALambdaFunction.RunTask(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
   name.vb: RunTask(Func(Of Task), CancellationToken)
-  fullName: LambdaSharp.ALambdaFunction.RunTask(Func<Task>, CancellationToken)
-  fullName.vb: LambdaSharp.ALambdaFunction.RunTask(Func(Of Task), CancellationToken)
+  fullName: LambdaSharp.ALambdaFunction.RunTask(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: LambdaSharp.ALambdaFunction.RunTask(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
   nameWithType: ALambdaFunction.RunTask(Func<Task>, CancellationToken)
   nameWithType.vb: ALambdaFunction.RunTask(Func(Of Task), CancellationToken)
 - uid: LambdaSharp.ALambdaFunction.RunTask*
@@ -814,13 +814,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ALambdaFunction.SendEvent
   nameWithType: ALambdaFunction.SendEvent
-- uid: LambdaSharp.ALambdaFunction.SendEvent``1(System.String,System.String,``0,IEnumerable{System.String})
+- uid: LambdaSharp.ALambdaFunction.SendEvent``1(System.String,System.String,``0,System.Collections.Generic.IEnumerable{System.String})
   name: SendEvent<T>(String, String, T, IEnumerable<String>)
-  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_IEnumerable_System_String__
-  commentId: M:LambdaSharp.ALambdaFunction.SendEvent``1(System.String,System.String,``0,IEnumerable{System.String})
+  href: sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:LambdaSharp.ALambdaFunction.SendEvent``1(System.String,System.String,``0,System.Collections.Generic.IEnumerable{System.String})
   name.vb: SendEvent(Of T)(String, String, T, IEnumerable(Of String))
-  fullName: LambdaSharp.ALambdaFunction.SendEvent<T>(System.String, System.String, T, IEnumerable<System.String>)
-  fullName.vb: LambdaSharp.ALambdaFunction.SendEvent(Of T)(System.String, System.String, T, IEnumerable(Of System.String))
+  fullName: LambdaSharp.ALambdaFunction.SendEvent<T>(System.String, System.String, T, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: LambdaSharp.ALambdaFunction.SendEvent(Of T)(System.String, System.String, T, System.Collections.Generic.IEnumerable(Of System.String))
   nameWithType: ALambdaFunction.SendEvent<T>(String, String, T, IEnumerable<String>)
   nameWithType.vb: ALambdaFunction.SendEvent(Of T)(String, String, T, IEnumerable(Of String))
 - uid: LambdaSharp.ALambdaFunction.SerializeJson(System.Object)
@@ -900,12 +900,12 @@ references:
   fullName.vb: LambdaSharp.ALambdaFunction(Of TRequest, TResponse).ProcessMessageAsync
   nameWithType: ALambdaFunction<TRequest, TResponse>.ProcessMessageAsync
   nameWithType.vb: ALambdaFunction(Of TRequest, TResponse).ProcessMessageAsync
-- uid: LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.ALambdaFunction<TRequest, TResponse>.ProcessMessageStreamAsync(Stream)
-  fullName.vb: LambdaSharp.ALambdaFunction(Of TRequest, TResponse).ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.ALambdaFunction-2.html#LambdaSharp_ALambdaFunction_2_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.ALambdaFunction<TRequest, TResponse>.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.ALambdaFunction(Of TRequest, TResponse).ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaFunction<TRequest, TResponse>.ProcessMessageStreamAsync(Stream)
   nameWithType.vb: ALambdaFunction(Of TRequest, TResponse).ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.ALambdaFunction`2.ProcessMessageStreamAsync*
@@ -965,11 +965,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ALambdaApiGatewayFunction
   nameWithType: ALambdaApiGatewayFunction.ALambdaApiGatewayFunction
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(APIGatewayProxyResponse)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse)
   name: Abort(APIGatewayProxyResponse)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_APIGatewayProxyResponse_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(APIGatewayProxyResponse)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(APIGatewayProxyResponse)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyResponse)
   nameWithType: ALambdaApiGatewayFunction.Abort(APIGatewayProxyResponse)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.Abort*
   name: Abort
@@ -1017,11 +1017,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.AbortNotFound
   nameWithType: ALambdaApiGatewayFunction.AbortNotFound
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(APIGatewayProxyRequest,System.String,System.String)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String,System.String)
   name: CreateBadParameterResponse(APIGatewayProxyRequest, String, String)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateBadParameterResponse_APIGatewayProxyRequest_System_String_System_String_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(APIGatewayProxyRequest,System.String,System.String)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(APIGatewayProxyRequest, System.String, System.String)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateBadParameterResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_System_String_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String,System.String)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest, System.String, System.String)
   nameWithType: ALambdaApiGatewayFunction.CreateBadParameterResponse(APIGatewayProxyRequest, String, String)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse*
   name: CreateBadParameterResponse
@@ -1030,11 +1030,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateBadParameterResponse
   nameWithType: ALambdaApiGatewayFunction.CreateBadParameterResponse
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(APIGatewayProxyRequest,Exception)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.Exception)
   name: CreateInvocationExceptionResponse(APIGatewayProxyRequest, Exception)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationExceptionResponse_APIGatewayProxyRequest_Exception_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(APIGatewayProxyRequest,Exception)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(APIGatewayProxyRequest, Exception)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationExceptionResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_Exception_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.Exception)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest, System.Exception)
   nameWithType: ALambdaApiGatewayFunction.CreateInvocationExceptionResponse(APIGatewayProxyRequest, Exception)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse*
   name: CreateInvocationExceptionResponse
@@ -1043,11 +1043,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationExceptionResponse
   nameWithType: ALambdaApiGatewayFunction.CreateInvocationExceptionResponse
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(Type)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(System.Type)
   name: CreateInvocationTargetInstance(Type)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_Type_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(Type)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(Type)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateInvocationTargetInstance_System_Type_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(System.Type)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance(System.Type)
   nameWithType: ALambdaApiGatewayFunction.CreateInvocationTargetInstance(Type)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateInvocationTargetInstance*
   name: CreateInvocationTargetInstance
@@ -1069,11 +1069,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateResponse
   nameWithType: ALambdaApiGatewayFunction.CreateResponse
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(APIGatewayProxyRequest,System.String)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String)
   name: CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_APIGatewayProxyRequest_System_String_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(APIGatewayProxyRequest,System.String)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(APIGatewayProxyRequest, System.String)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_CreateRouteNotFoundResponse_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_System_String_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest,System.String)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest, System.String)
   nameWithType: ALambdaApiGatewayFunction.CreateRouteNotFoundResponse(APIGatewayProxyRequest, String)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.CreateRouteNotFoundResponse*
   name: CreateRouteNotFoundResponse
@@ -1108,11 +1108,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.InitializeEpilogueAsync
   nameWithType: ALambdaApiGatewayFunction.InitializeEpilogueAsync
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(APIGatewayProxyRequest)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
   name: ProcessMessageAsync(APIGatewayProxyRequest)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_APIGatewayProxyRequest_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(APIGatewayProxyRequest)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(APIGatewayProxyRequest)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessMessageAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
   nameWithType: ALambdaApiGatewayFunction.ProcessMessageAsync(APIGatewayProxyRequest)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync*
   name: ProcessMessageAsync
@@ -1121,11 +1121,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessMessageAsync
   nameWithType: ALambdaApiGatewayFunction.ProcessMessageAsync
-- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(APIGatewayProxyRequest)
+- uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
   name: ProcessProxyRequestAsync(APIGatewayProxyRequest)
-  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_APIGatewayProxyRequest_
-  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(APIGatewayProxyRequest)
-  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(APIGatewayProxyRequest)
+  href: sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_ProcessProxyRequestAsync_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyRequest_
+  commentId: M:LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
+  fullName: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync(Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest)
   nameWithType: ALambdaApiGatewayFunction.ProcessProxyRequestAsync(APIGatewayProxyRequest)
 - uid: LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.ProcessProxyRequestAsync*
   name: ProcessProxyRequestAsync
@@ -1371,13 +1371,13 @@ references:
   commentId: T:LambdaSharp.ConfigSource.LambdaDictionarySource
   fullName: LambdaSharp.ConfigSource.LambdaDictionarySource
   nameWithType: LambdaDictionarySource
-- uid: LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(IEnumerable{KeyValuePair{System.String,System.String}})
+- uid: LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name: LambdaDictionarySource(IEnumerable<KeyValuePair<String, String>>)
-  href: sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_IEnumerable_KeyValuePair_System_String_System_String___
-  commentId: M:LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(IEnumerable{KeyValuePair{System.String,System.String}})
+  href: sdk/LambdaSharp.ConfigSource.LambdaDictionarySource.html#LambdaSharp_ConfigSource_LambdaDictionarySource__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name.vb: LambdaDictionarySource(IEnumerable(Of KeyValuePair(Of String, String)))
-  fullName: LambdaSharp.ConfigSource.LambdaDictionarySource.LambdaDictionarySource(IEnumerable<KeyValuePair<System.String, System.String>>)
-  fullName.vb: LambdaSharp.ConfigSource.LambdaDictionarySource.LambdaDictionarySource(IEnumerable(Of KeyValuePair(Of System.String, System.String)))
+  fullName: LambdaSharp.ConfigSource.LambdaDictionarySource.LambdaDictionarySource(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: LambdaSharp.ConfigSource.LambdaDictionarySource.LambdaDictionarySource(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
   nameWithType: LambdaDictionarySource.LambdaDictionarySource(IEnumerable<KeyValuePair<String, String>>)
   nameWithType.vb: LambdaDictionarySource.LambdaDictionarySource(IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: LambdaSharp.ConfigSource.LambdaDictionarySource.#ctor*
@@ -1541,12 +1541,12 @@ references:
   fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.Abort
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).Abort
-- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(Stream)
+- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(System.IO.Stream)
   name: HandleFailedInitializationAsync(Stream)
-  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_Stream_
-  commentId: M:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(Stream)
-  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.HandleFailedInitializationAsync(Stream)
-  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).HandleFailedInitializationAsync(Stream)
+  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_HandleFailedInitializationAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync(System.IO.Stream)
+  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.HandleFailedInitializationAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).HandleFailedInitializationAsync(System.IO.Stream)
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.HandleFailedInitializationAsync(Stream)
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).HandleFailedInitializationAsync(Stream)
 - uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.HandleFailedInitializationAsync*
@@ -1594,12 +1594,12 @@ references:
   fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).ProcessDeleteResourceAsync
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.ProcessDeleteResourceAsync
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).ProcessDeleteResourceAsync
-- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.ProcessMessageStreamAsync(Stream)
-  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.CustomResource.ALambdaCustomResourceFunction<TProperties, TAttributes>.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.CustomResource.ALambdaCustomResourceFunction(Of TProperties, TAttributes).ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaCustomResourceFunction<TProperties, TAttributes>.ProcessMessageStreamAsync(Stream)
   nameWithType.vb: ALambdaCustomResourceFunction(Of TProperties, TAttributes).ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.CustomResource.ALambdaCustomResourceFunction`2.ProcessMessageStreamAsync*
@@ -2133,13 +2133,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.LambdaErrorReportGenerator
   nameWithType: LambdaErrorReportGenerator.LambdaErrorReportGenerator
-- uid: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,Exception,System.String,System.Object[])
+- uid: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
   name: CreateReport(String, String, Exception, String, Object[])
-  href: sdk/LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
   name.vb: CreateReport(String, String, Exception, String, Object())
-  fullName: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String, System.String, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String, System.String, Exception, System.String, System.Object())
+  fullName: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String, System.String, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String, System.String, System.Exception, System.String, System.Object())
   nameWithType: LambdaErrorReportGenerator.CreateReport(String, String, Exception, String, Object[])
   nameWithType.vb: LambdaErrorReportGenerator.CreateReport(String, String, Exception, String, Object())
 - uid: LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport*
@@ -2267,13 +2267,13 @@ references:
   commentId: T:LambdaSharp.Exceptions.ALambdaConfigException
   fullName: LambdaSharp.Exceptions.ALambdaConfigException
   nameWithType: ALambdaConfigException
-- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(Exception,System.String,System.Object[])
+- uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.Exception,System.String,System.Object[])
   name: ALambdaConfigException(Exception, String, Object[])
-  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Exceptions.ALambdaConfigException.html#LambdaSharp_Exceptions_ALambdaConfigException__ctor_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.Exception,System.String,System.Object[])
   name.vb: ALambdaConfigException(Exception, String, Object())
-  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(Exception, System.String, System.Object())
+  fullName: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.ALambdaConfigException.ALambdaConfigException(System.Exception, System.String, System.Object())
   nameWithType: ALambdaConfigException.ALambdaConfigException(Exception, String, Object[])
   nameWithType.vb: ALambdaConfigException.ALambdaConfigException(Exception, String, Object())
 - uid: LambdaSharp.Exceptions.ALambdaConfigException.#ctor(System.String,System.Object[])
@@ -2298,13 +2298,13 @@ references:
   commentId: T:LambdaSharp.Exceptions.ALambdaException
   fullName: LambdaSharp.Exceptions.ALambdaException
   nameWithType: ALambdaException
-- uid: LambdaSharp.Exceptions.ALambdaException.#ctor(Exception,System.String,System.Object[])
+- uid: LambdaSharp.Exceptions.ALambdaException.#ctor(System.Exception,System.String,System.Object[])
   name: ALambdaException(Exception, String, Object[])
-  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException__ctor_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Exceptions.ALambdaException.#ctor(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Exceptions.ALambdaException.html#LambdaSharp_Exceptions_ALambdaException__ctor_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.ALambdaException.#ctor(System.Exception,System.String,System.Object[])
   name.vb: ALambdaException(Exception, String, Object())
-  fullName: LambdaSharp.Exceptions.ALambdaException.ALambdaException(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Exceptions.ALambdaException.ALambdaException(Exception, System.String, System.Object())
+  fullName: LambdaSharp.Exceptions.ALambdaException.ALambdaException(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.ALambdaException.ALambdaException(System.Exception, System.String, System.Object())
   nameWithType: ALambdaException.ALambdaException(Exception, String, Object[])
   nameWithType.vb: ALambdaException.ALambdaException(Exception, String, Object())
 - uid: LambdaSharp.Exceptions.ALambdaException.#ctor(System.String,System.Object[])
@@ -2387,11 +2387,11 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaConfigBadValueException
   fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException
   nameWithType: LambdaConfigBadValueException
-- uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(Exception,System.String)
+- uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.Exception,System.String)
   name: LambdaConfigBadValueException(Exception, String)
-  href: sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html#LambdaSharp_Exceptions_LambdaConfigBadValueException__ctor_Exception_System_String_
-  commentId: M:LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(Exception,System.String)
-  fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException.LambdaConfigBadValueException(Exception, System.String)
+  href: sdk/LambdaSharp.Exceptions.LambdaConfigBadValueException.html#LambdaSharp_Exceptions_LambdaConfigBadValueException__ctor_System_Exception_System_String_
+  commentId: M:LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor(System.Exception,System.String)
+  fullName: LambdaSharp.Exceptions.LambdaConfigBadValueException.LambdaConfigBadValueException(System.Exception, System.String)
   nameWithType: LambdaConfigBadValueException.LambdaConfigBadValueException(Exception, String)
 - uid: LambdaSharp.Exceptions.LambdaConfigBadValueException.#ctor*
   name: LambdaConfigBadValueException
@@ -2444,11 +2444,11 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaConfigUnexpectedException
   fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException
   nameWithType: LambdaConfigUnexpectedException
-- uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(Exception,System.String,System.String)
+- uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.Exception,System.String,System.String)
   name: LambdaConfigUnexpectedException(Exception, String, String)
-  href: sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html#LambdaSharp_Exceptions_LambdaConfigUnexpectedException__ctor_Exception_System_String_System_String_
-  commentId: M:LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(Exception,System.String,System.String)
-  fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(Exception, System.String, System.String)
+  href: sdk/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html#LambdaSharp_Exceptions_LambdaConfigUnexpectedException__ctor_System_Exception_System_String_System_String_
+  commentId: M:LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor(System.Exception,System.String,System.String)
+  fullName: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(System.Exception, System.String, System.String)
   nameWithType: LambdaConfigUnexpectedException.LambdaConfigUnexpectedException(Exception, String, String)
 - uid: LambdaSharp.Exceptions.LambdaConfigUnexpectedException.#ctor*
   name: LambdaConfigUnexpectedException
@@ -2485,13 +2485,13 @@ references:
   commentId: T:LambdaSharp.Exceptions.LambdaRetriableException
   fullName: LambdaSharp.Exceptions.LambdaRetriableException
   nameWithType: LambdaRetriableException
-- uid: LambdaSharp.Exceptions.LambdaRetriableException.#ctor(Exception,System.String,System.Object[])
+- uid: LambdaSharp.Exceptions.LambdaRetriableException.#ctor(System.Exception,System.String,System.Object[])
   name: LambdaRetriableException(Exception, String, Object[])
-  href: sdk/LambdaSharp.Exceptions.LambdaRetriableException.html#LambdaSharp_Exceptions_LambdaRetriableException__ctor_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Exceptions.LambdaRetriableException.#ctor(Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Exceptions.LambdaRetriableException.html#LambdaSharp_Exceptions_LambdaRetriableException__ctor_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Exceptions.LambdaRetriableException.#ctor(System.Exception,System.String,System.Object[])
   name.vb: LambdaRetriableException(Exception, String, Object())
-  fullName: LambdaSharp.Exceptions.LambdaRetriableException.LambdaRetriableException(Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Exceptions.LambdaRetriableException.LambdaRetriableException(Exception, System.String, System.Object())
+  fullName: LambdaSharp.Exceptions.LambdaRetriableException.LambdaRetriableException(System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Exceptions.LambdaRetriableException.LambdaRetriableException(System.Exception, System.String, System.Object())
   nameWithType: LambdaRetriableException.LambdaRetriableException(Exception, String, Object[])
   nameWithType.vb: LambdaRetriableException.LambdaRetriableException(Exception, String, Object())
 - uid: LambdaSharp.Exceptions.LambdaRetriableException.#ctor(System.String,System.Object[])
@@ -2672,13 +2672,13 @@ references:
   commentId: T:LambdaSharp.ILambdaErrorReportGenerator
   fullName: LambdaSharp.ILambdaErrorReportGenerator
   nameWithType: ILambdaErrorReportGenerator
-- uid: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,Exception,System.String,System.Object[])
+- uid: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
   name: CreateReport(String, String, Exception, String, Object[])
-  href: sdk/LambdaSharp.ILambdaErrorReportGenerator.html#LambdaSharp_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.ILambdaErrorReportGenerator.html#LambdaSharp_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])
   name.vb: CreateReport(String, String, Exception, String, Object())
-  fullName: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String, System.String, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String, System.String, Exception, System.String, System.Object())
+  fullName: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String, System.String, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String, System.String, System.Exception, System.String, System.Object())
   nameWithType: ILambdaErrorReportGenerator.CreateReport(String, String, Exception, String, Object[])
   nameWithType.vb: ILambdaErrorReportGenerator.CreateReport(String, String, Exception, String, Object())
 - uid: LambdaSharp.ILambdaErrorReportGenerator.CreateReport*
@@ -2720,13 +2720,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.DebugLoggingEnabled
   nameWithType: ILambdaFunctionDependencyProvider.DebugLoggingEnabled
-- uid: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],Dictionary{System.String,System.String})
+- uid: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})
   name: DecryptSecretAsync(Byte[], Dictionary<String, String>)
-  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: DecryptSecretAsync(Byte(), Dictionary(Of String, String))
-  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[], Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte(), Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[], System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte(), System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ILambdaFunctionDependencyProvider.DecryptSecretAsync(Byte[], Dictionary<String, String>)
   nameWithType.vb: ILambdaFunctionDependencyProvider.DecryptSecretAsync(Byte(), Dictionary(Of String, String))
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync*
@@ -2736,13 +2736,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.DecryptSecretAsync
   nameWithType: ILambdaFunctionDependencyProvider.DecryptSecretAsync
-- uid: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,Dictionary{System.String,System.String})
+- uid: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: EncryptSecretAsync(Byte[], String, Dictionary<String, String>)
-  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: EncryptSecretAsync(Byte(), String, Dictionary(Of String, String))
-  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[], System.String, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte(), System.String, Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[], System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte(), System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ILambdaFunctionDependencyProvider.EncryptSecretAsync(Byte[], String, Dictionary<String, String>)
   nameWithType.vb: ILambdaFunctionDependencyProvider.EncryptSecretAsync(Byte(), String, Dictionary(Of String, String))
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider.EncryptSecretAsync*
@@ -2778,13 +2778,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.Log
   nameWithType: ILambdaFunctionDependencyProvider.Log
-- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset,System.String,System.String,System.String,System.String,IEnumerable{System.String})
+- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
   name: SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable<String>)
-  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendEventAsync_DateTimeOffset_System_String_System_String_System_String_System_String_IEnumerable_System_String__
-  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset,System.String,System.String,System.String,System.String,IEnumerable{System.String})
+  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendEventAsync_System_DateTimeOffset_System_String_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
   name.vb: SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable(Of String))
-  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, System.String, System.String, System.String, System.String, IEnumerable<System.String>)
-  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, System.String, System.String, System.String, System.String, IEnumerable(Of System.String))
+  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset, System.String, System.String, System.String, System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset, System.String, System.String, System.String, System.String, System.Collections.Generic.IEnumerable(Of System.String))
   nameWithType: ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable<String>)
   nameWithType.vb: ILambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable(Of String))
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync*
@@ -2794,13 +2794,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendEventAsync
   nameWithType: ILambdaFunctionDependencyProvider.SendEventAsync
-- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,IEnumerable{KeyValuePair{System.String,System.String}})
+- uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name: SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
-  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_IEnumerable_KeyValuePair_System_String_System_String___
-  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,IEnumerable{KeyValuePair{System.String,System.String}})
+  href: sdk/LambdaSharp.ILambdaFunctionDependencyProvider.html#LambdaSharp_ILambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name.vb: SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
-  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, IEnumerable<KeyValuePair<System.String, System.String>>)
-  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, IEnumerable(Of KeyValuePair(Of System.String, System.String)))
+  fullName: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
   nameWithType: ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
   nameWithType.vb: ILambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: LambdaSharp.ILambdaFunctionDependencyProvider.SendMessageToQueueAsync*
@@ -2829,11 +2829,11 @@ references:
   commentId: T:LambdaSharp.ILambdaSerializerEx
   fullName: LambdaSharp.ILambdaSerializerEx
   nameWithType: ILambdaSerializerEx
-- uid: LambdaSharp.ILambdaSerializerEx.Deserialize(ILambdaSerializer,System.String,Type)
+- uid: LambdaSharp.ILambdaSerializerEx.Deserialize(Amazon.Lambda.Core.ILambdaSerializer,System.String,System.Type)
   name: Deserialize(ILambdaSerializer, String, Type)
-  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize_ILambdaSerializer_System_String_Type_
-  commentId: M:LambdaSharp.ILambdaSerializerEx.Deserialize(ILambdaSerializer,System.String,Type)
-  fullName: LambdaSharp.ILambdaSerializerEx.Deserialize(ILambdaSerializer, System.String, Type)
+  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize_Amazon_Lambda_Core_ILambdaSerializer_System_String_System_Type_
+  commentId: M:LambdaSharp.ILambdaSerializerEx.Deserialize(Amazon.Lambda.Core.ILambdaSerializer,System.String,System.Type)
+  fullName: LambdaSharp.ILambdaSerializerEx.Deserialize(Amazon.Lambda.Core.ILambdaSerializer, System.String, System.Type)
   nameWithType: ILambdaSerializerEx.Deserialize(ILambdaSerializer, String, Type)
 - uid: LambdaSharp.ILambdaSerializerEx.Deserialize*
   name: Deserialize
@@ -2842,13 +2842,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaSerializerEx.Deserialize
   nameWithType: ILambdaSerializerEx.Deserialize
-- uid: LambdaSharp.ILambdaSerializerEx.Deserialize``1(ILambdaSerializer,System.String)
+- uid: LambdaSharp.ILambdaSerializerEx.Deserialize``1(Amazon.Lambda.Core.ILambdaSerializer,System.String)
   name: Deserialize<T>(ILambdaSerializer, String)
-  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize__1_ILambdaSerializer_System_String_
-  commentId: M:LambdaSharp.ILambdaSerializerEx.Deserialize``1(ILambdaSerializer,System.String)
+  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Deserialize__1_Amazon_Lambda_Core_ILambdaSerializer_System_String_
+  commentId: M:LambdaSharp.ILambdaSerializerEx.Deserialize``1(Amazon.Lambda.Core.ILambdaSerializer,System.String)
   name.vb: Deserialize(Of T)(ILambdaSerializer, String)
-  fullName: LambdaSharp.ILambdaSerializerEx.Deserialize<T>(ILambdaSerializer, System.String)
-  fullName.vb: LambdaSharp.ILambdaSerializerEx.Deserialize(Of T)(ILambdaSerializer, System.String)
+  fullName: LambdaSharp.ILambdaSerializerEx.Deserialize<T>(Amazon.Lambda.Core.ILambdaSerializer, System.String)
+  fullName.vb: LambdaSharp.ILambdaSerializerEx.Deserialize(Of T)(Amazon.Lambda.Core.ILambdaSerializer, System.String)
   nameWithType: ILambdaSerializerEx.Deserialize<T>(ILambdaSerializer, String)
   nameWithType.vb: ILambdaSerializerEx.Deserialize(Of T)(ILambdaSerializer, String)
 - uid: LambdaSharp.ILambdaSerializerEx.Serialize*
@@ -2858,13 +2858,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.ILambdaSerializerEx.Serialize
   nameWithType: ILambdaSerializerEx.Serialize
-- uid: LambdaSharp.ILambdaSerializerEx.Serialize``1(ILambdaSerializer,``0)
+- uid: LambdaSharp.ILambdaSerializerEx.Serialize``1(Amazon.Lambda.Core.ILambdaSerializer,``0)
   name: Serialize<T>(ILambdaSerializer, T)
-  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Serialize__1_ILambdaSerializer___0_
-  commentId: M:LambdaSharp.ILambdaSerializerEx.Serialize``1(ILambdaSerializer,``0)
+  href: sdk/LambdaSharp.ILambdaSerializerEx.html#LambdaSharp_ILambdaSerializerEx_Serialize__1_Amazon_Lambda_Core_ILambdaSerializer___0_
+  commentId: M:LambdaSharp.ILambdaSerializerEx.Serialize``1(Amazon.Lambda.Core.ILambdaSerializer,``0)
   name.vb: Serialize(Of T)(ILambdaSerializer, T)
-  fullName: LambdaSharp.ILambdaSerializerEx.Serialize<T>(ILambdaSerializer, T)
-  fullName.vb: LambdaSharp.ILambdaSerializerEx.Serialize(Of T)(ILambdaSerializer, T)
+  fullName: LambdaSharp.ILambdaSerializerEx.Serialize<T>(Amazon.Lambda.Core.ILambdaSerializer, T)
+  fullName.vb: LambdaSharp.ILambdaSerializerEx.Serialize(Of T)(Amazon.Lambda.Core.ILambdaSerializer, T)
   nameWithType: ILambdaSerializerEx.Serialize<T>(ILambdaSerializer, T)
   nameWithType.vb: ILambdaSerializerEx.Serialize(Of T)(ILambdaSerializer, T)
 - uid: LambdaSharp.LambdaConfig
@@ -2935,22 +2935,22 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaConfig.Read
   nameWithType: LambdaConfig.Read
-- uid: LambdaSharp.LambdaConfig.Read``1(System.String,Func{System.String,``0},Func{System.String,``0},Action{``0})
+- uid: LambdaSharp.LambdaConfig.Read``1(System.String,System.Func{System.String,``0},System.Func{System.String,``0},System.Action{``0})
   name: Read<T>(String, Func<String, T>, Func<String, T>, Action<T>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Read__1_System_String_Func_System_String___0__Func_System_String___0__Action___0__
-  commentId: M:LambdaSharp.LambdaConfig.Read``1(System.String,Func{System.String,``0},Func{System.String,``0},Action{``0})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_Read__1_System_String_System_Func_System_String___0__System_Func_System_String___0__System_Action___0__
+  commentId: M:LambdaSharp.LambdaConfig.Read``1(System.String,System.Func{System.String,``0},System.Func{System.String,``0},System.Action{``0})
   name.vb: Read(Of T)(String, Func(Of String, T), Func(Of String, T), Action(Of T))
-  fullName: LambdaSharp.LambdaConfig.Read<T>(System.String, Func<System.String, T>, Func<System.String, T>, Action<T>)
-  fullName.vb: LambdaSharp.LambdaConfig.Read(Of T)(System.String, Func(Of System.String, T), Func(Of System.String, T), Action(Of T))
+  fullName: LambdaSharp.LambdaConfig.Read<T>(System.String, System.Func<System.String, T>, System.Func<System.String, T>, System.Action<T>)
+  fullName.vb: LambdaSharp.LambdaConfig.Read(Of T)(System.String, System.Func(Of System.String, T), System.Func(Of System.String, T), System.Action(Of T))
   nameWithType: LambdaConfig.Read<T>(String, Func<String, T>, Func<String, T>, Action<T>)
   nameWithType.vb: LambdaConfig.Read(Of T)(String, Func(Of String, T), Func(Of String, T), Action(Of T))
-- uid: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,Action{IEnumerable{System.String}})
+- uid: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
   name: ReadCommaDelimitedList(String, Action<IEnumerable<String>>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_Action_IEnumerable_System_String___
-  commentId: M:LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,Action{IEnumerable{System.String}})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadCommaDelimitedList_System_String_System_Action_System_Collections_Generic_IEnumerable_System_String___
+  commentId: M:LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String,System.Action{System.Collections.Generic.IEnumerable{System.String}})
   name.vb: ReadCommaDelimitedList(String, Action(Of IEnumerable(Of String)))
-  fullName: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, Action<IEnumerable<System.String>>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, Action(Of IEnumerable(Of System.String)))
+  fullName: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, System.Action<System.Collections.Generic.IEnumerable<System.String>>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadCommaDelimitedList(System.String, System.Action(Of System.Collections.Generic.IEnumerable(Of System.String)))
   nameWithType: LambdaConfig.ReadCommaDelimitedList(String, Action<IEnumerable<String>>)
   nameWithType.vb: LambdaConfig.ReadCommaDelimitedList(String, Action(Of IEnumerable(Of String)))
 - uid: LambdaSharp.LambdaConfig.ReadCommaDelimitedList*
@@ -2960,22 +2960,22 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaConfig.ReadCommaDelimitedList
   nameWithType: LambdaConfig.ReadCommaDelimitedList
-- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,Action{System.Int32})
+- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})
   name: ReadInt(String, Action<Int32>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_Action_System_Int32__
-  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,Action{System.Int32})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_System_Action_System_Int32__
+  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,System.Action{System.Int32})
   name.vb: ReadInt(String, Action(Of Int32))
-  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, Action<System.Int32>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, Action(Of System.Int32))
+  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Action<System.Int32>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Action(Of System.Int32))
   nameWithType: LambdaConfig.ReadInt(String, Action<Int32>)
   nameWithType.vb: LambdaConfig.ReadInt(String, Action(Of Int32))
-- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,Action{System.Int32})
+- uid: LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})
   name: ReadInt(String, Int32, Action<Int32>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_Action_System_Int32__
-  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,Action{System.Int32})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadInt_System_String_System_Int32_System_Action_System_Int32__
+  commentId: M:LambdaSharp.LambdaConfig.ReadInt(System.String,System.Int32,System.Action{System.Int32})
   name.vb: ReadInt(String, Int32, Action(Of Int32))
-  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, Action<System.Int32>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, Action(Of System.Int32))
+  fullName: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, System.Action<System.Int32>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadInt(System.String, System.Int32, System.Action(Of System.Int32))
   nameWithType: LambdaConfig.ReadInt(String, Int32, Action<Int32>)
   nameWithType.vb: LambdaConfig.ReadInt(String, Int32, Action(Of Int32))
 - uid: LambdaSharp.LambdaConfig.ReadInt*
@@ -2985,22 +2985,22 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaConfig.ReadInt
   nameWithType: LambdaConfig.ReadInt
-- uid: LambdaSharp.LambdaConfig.ReadText(System.String,Action{System.String})
+- uid: LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})
   name: ReadText(String, Action<String>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_Action_System_String__
-  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,Action{System.String})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_Action_System_String__
+  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,System.Action{System.String})
   name.vb: ReadText(String, Action(Of String))
-  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, Action<System.String>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, Action(Of System.String))
+  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, System.Action<System.String>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, System.Action(Of System.String))
   nameWithType: LambdaConfig.ReadText(String, Action<String>)
   nameWithType.vb: LambdaConfig.ReadText(String, Action(Of String))
-- uid: LambdaSharp.LambdaConfig.ReadText(System.String,System.String,Action{System.String})
+- uid: LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})
   name: ReadText(String, String, Action<String>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_String_Action_System_String__
-  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,System.String,Action{System.String})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadText_System_String_System_String_System_Action_System_String__
+  commentId: M:LambdaSharp.LambdaConfig.ReadText(System.String,System.String,System.Action{System.String})
   name.vb: ReadText(String, String, Action(Of String))
-  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, Action<System.String>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, Action(Of System.String))
+  fullName: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, System.Action<System.String>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadText(System.String, System.String, System.Action(Of System.String))
   nameWithType: LambdaConfig.ReadText(String, String, Action<String>)
   nameWithType.vb: LambdaConfig.ReadText(String, String, Action(Of String))
 - uid: LambdaSharp.LambdaConfig.ReadText*
@@ -3010,22 +3010,22 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaConfig.ReadText
   nameWithType: LambdaConfig.ReadText
-- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,Action{TimeSpan})
+- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})
   name: ReadTimeSpan(String, Action<TimeSpan>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_Action_TimeSpan__
-  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,Action{TimeSpan})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_Action_System_TimeSpan__
+  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.Action{System.TimeSpan})
   name.vb: ReadTimeSpan(String, Action(Of TimeSpan))
-  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, Action<TimeSpan>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, Action(Of TimeSpan))
+  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.Action<System.TimeSpan>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.Action(Of System.TimeSpan))
   nameWithType: LambdaConfig.ReadTimeSpan(String, Action<TimeSpan>)
   nameWithType.vb: LambdaConfig.ReadTimeSpan(String, Action(Of TimeSpan))
-- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,TimeSpan,Action{TimeSpan})
+- uid: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})
   name: ReadTimeSpan(String, TimeSpan, Action<TimeSpan>)
-  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_TimeSpan_Action_TimeSpan__
-  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,TimeSpan,Action{TimeSpan})
+  href: sdk/LambdaSharp.LambdaConfig.html#LambdaSharp_LambdaConfig_ReadTimeSpan_System_String_System_TimeSpan_System_Action_System_TimeSpan__
+  commentId: M:LambdaSharp.LambdaConfig.ReadTimeSpan(System.String,System.TimeSpan,System.Action{System.TimeSpan})
   name.vb: ReadTimeSpan(String, TimeSpan, Action(Of TimeSpan))
-  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, TimeSpan, Action<TimeSpan>)
-  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, TimeSpan, Action(Of TimeSpan))
+  fullName: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.TimeSpan, System.Action<System.TimeSpan>)
+  fullName.vb: LambdaSharp.LambdaConfig.ReadTimeSpan(System.String, System.TimeSpan, System.Action(Of System.TimeSpan))
   nameWithType: LambdaConfig.ReadTimeSpan(String, TimeSpan, Action<TimeSpan>)
   nameWithType.vb: LambdaConfig.ReadTimeSpan(String, TimeSpan, Action(Of TimeSpan))
 - uid: LambdaSharp.LambdaConfig.ReadTimeSpan*
@@ -3106,13 +3106,13 @@ references:
   commentId: T:LambdaSharp.LambdaFunctionDependencyProvider
   fullName: LambdaSharp.LambdaFunctionDependencyProvider
   nameWithType: LambdaFunctionDependencyProvider
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.#ctor(Func{DateTime},Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,ILambdaSerializer,IAmazonKeyManagementService,IAmazonSQS,IAmazonCloudWatchEvents,System.Nullable{System.Boolean})
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS,Amazon.CloudWatchEvents.IAmazonCloudWatchEvents,System.Nullable{System.Boolean})
   name: LambdaFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, Nullable<Boolean>)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider__ctor_Func_DateTime__Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_ILambdaSerializer_IAmazonKeyManagementService_IAmazonSQS_IAmazonCloudWatchEvents_System_Nullable_System_Boolean__
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.#ctor(Func{DateTime},Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,ILambdaSerializer,IAmazonKeyManagementService,IAmazonSQS,IAmazonCloudWatchEvents,System.Nullable{System.Boolean})
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider__ctor_System_Func_System_DateTime__System_Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_Amazon_Lambda_Core_ILambdaSerializer_Amazon_KeyManagementService_IAmazonKeyManagementService_Amazon_SQS_IAmazonSQS_Amazon_CloudWatchEvents_IAmazonCloudWatchEvents_System_Nullable_System_Boolean__
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS,Amazon.CloudWatchEvents.IAmazonCloudWatchEvents,System.Nullable{System.Boolean})
   name.vb: LambdaFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, Nullable(Of Boolean))
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(Func<DateTime>, Action<System.String>, LambdaSharp.ConfigSource.ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, System.Nullable<System.Boolean>)
-  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(Func(Of DateTime), Action(Of System.String), LambdaSharp.ConfigSource.ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, System.Nullable(Of System.Boolean))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(System.Func<System.DateTime>, System.Action<System.String>, LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS, Amazon.CloudWatchEvents.IAmazonCloudWatchEvents, System.Nullable<System.Boolean>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(System.Func(Of System.DateTime), System.Action(Of System.String), LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS, Amazon.CloudWatchEvents.IAmazonCloudWatchEvents, System.Nullable(Of System.Boolean))
   nameWithType: LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, Nullable<Boolean>)
   nameWithType.vb: LambdaFunctionDependencyProvider.LambdaFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS, IAmazonCloudWatchEvents, Nullable(Of Boolean))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.#ctor*
@@ -3148,13 +3148,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.DebugLoggingEnabled
   nameWithType: LambdaFunctionDependencyProvider.DebugLoggingEnabled
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],Dictionary{System.String,System.String})
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})
   name: DecryptSecretAsync(Byte[], Dictionary<String, String>)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_DecryptSecretAsync_System_Byte___System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[],System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: DecryptSecretAsync(Byte(), Dictionary(Of String, String))
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[], Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte(), Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte[], System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync(System.Byte(), System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: LambdaFunctionDependencyProvider.DecryptSecretAsync(Byte[], Dictionary<String, String>)
   nameWithType.vb: LambdaFunctionDependencyProvider.DecryptSecretAsync(Byte(), Dictionary(Of String, String))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync*
@@ -3164,13 +3164,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.DecryptSecretAsync
   nameWithType: LambdaFunctionDependencyProvider.DecryptSecretAsync
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,Dictionary{System.String,System.String})
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: EncryptSecretAsync(Byte[], String, Dictionary<String, String>)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_EncryptSecretAsync_System_Byte___System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[],System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: EncryptSecretAsync(Byte(), String, Dictionary(Of String, String))
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[], System.String, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte(), System.String, Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte[], System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync(System.Byte(), System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: LambdaFunctionDependencyProvider.EncryptSecretAsync(Byte[], String, Dictionary<String, String>)
   nameWithType.vb: LambdaFunctionDependencyProvider.EncryptSecretAsync(Byte(), String, Dictionary(Of String, String))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.EncryptSecretAsync*
@@ -3232,13 +3232,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.Log
   nameWithType: LambdaFunctionDependencyProvider.Log
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset,System.String,System.String,System.String,System.String,IEnumerable{System.String})
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
   name: SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable<String>)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendEventAsync_DateTimeOffset_System_String_System_String_System_String_System_String_IEnumerable_System_String__
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset,System.String,System.String,System.String,System.String,IEnumerable{System.String})
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendEventAsync_System_DateTimeOffset_System_String_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset,System.String,System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
   name.vb: SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable(Of String))
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, System.String, System.String, System.String, System.String, IEnumerable<System.String>)
-  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, System.String, System.String, System.String, System.String, IEnumerable(Of System.String))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset, System.String, System.String, System.String, System.String, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync(System.DateTimeOffset, System.String, System.String, System.String, System.String, System.Collections.Generic.IEnumerable(Of System.String))
   nameWithType: LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable<String>)
   nameWithType.vb: LambdaFunctionDependencyProvider.SendEventAsync(DateTimeOffset, String, String, String, String, IEnumerable(Of String))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync*
@@ -3248,13 +3248,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendEventAsync
   nameWithType: LambdaFunctionDependencyProvider.SendEventAsync
-- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,IEnumerable{KeyValuePair{System.String,System.String}})
+- uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name: SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
-  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_IEnumerable_KeyValuePair_System_String_System_String___
-  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,IEnumerable{KeyValuePair{System.String,System.String}})
+  href: sdk/LambdaSharp.LambdaFunctionDependencyProvider.html#LambdaSharp_LambdaFunctionDependencyProvider_SendMessageToQueueAsync_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  commentId: M:LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
   name.vb: SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
-  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, IEnumerable<KeyValuePair<System.String, System.String>>)
-  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, IEnumerable(Of KeyValuePair(Of System.String, System.String)))
+  fullName: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String>>)
+  fullName.vb: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync(System.String, System.String, System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String)))
   nameWithType: LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable<KeyValuePair<String, String>>)
   nameWithType.vb: LambdaFunctionDependencyProvider.SendMessageToQueueAsync(String, String, IEnumerable(Of KeyValuePair(Of String, String)))
 - uid: LambdaSharp.LambdaFunctionDependencyProvider.SendMessageToQueueAsync*
@@ -3562,13 +3562,13 @@ references:
   commentId: T:LambdaSharp.Logger.ILambdaLogLevelLogger
   fullName: LambdaSharp.Logger.ILambdaLogLevelLogger
   nameWithType: ILambdaLogLevelLogger
-- uid: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,Exception,System.String,System.Object[])
+- uid: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
   name: Log(LambdaLogLevel, Exception, String, Object[])
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html#LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLogger.html#LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])
   name.vb: Log(LambdaLogLevel, Exception, String, Object())
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, Exception, System.String, System.Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLogger.Log(LambdaSharp.Logger.LambdaLogLevel, System.Exception, System.String, System.Object())
   nameWithType: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])
   nameWithType.vb: ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object())
 - uid: LambdaSharp.Logger.ILambdaLogLevelLogger.Log*
@@ -3613,19 +3613,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogDebug
   nameWithType: ILambdaLogLevelLoggerEx.LogDebug
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
   name: LogError(ILambdaLogLevelLogger, Exception)
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
   nameWithType: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name: LogError(ILambdaLogLevelLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name.vb: LogError(ILambdaLogLevelLogger, Exception, String, Object())
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
   nameWithType: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])
   nameWithType.vb: ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object())
 - uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError*
@@ -3635,19 +3635,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogError
   nameWithType: ILambdaLogLevelLoggerEx.LogError
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
   name: LogErrorAsInfo(ILambdaLogLevelLogger, Exception)
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name: LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name.vb: LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object())
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])
   nameWithType.vb: ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object())
 - uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo*
@@ -3657,19 +3657,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsInfo
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsInfo
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
   name: LogErrorAsWarning(ILambdaLogLevelLogger, Exception)
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception)
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception)
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception)
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception)
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name: LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name.vb: LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object())
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])
   nameWithType.vb: ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object())
 - uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning*
@@ -3679,13 +3679,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogErrorAsWarning
   nameWithType: ILambdaLogLevelLoggerEx.LogErrorAsWarning
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name: LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_Exception_System_String_System_Object___
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,Exception,System.String,System.Object[])
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger,System.Exception,System.String,System.Object[])
   name.vb: LogFatal(ILambdaLogLevelLogger, Exception, String, Object())
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object[])
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, Exception, System.String, System.Object())
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object[])
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal(LambdaSharp.Logger.ILambdaLogLevelLogger, System.Exception, System.String, System.Object())
   nameWithType: ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])
   nameWithType.vb: ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object())
 - uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogFatal*
@@ -3711,13 +3711,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogInfo
   nameWithType: ILambdaLogLevelLoggerEx.LogInfo
-- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,IEnumerable{LambdaSharp.LambdaMetric},IEnumerable{System.String},Dictionary{System.String,System.String})
+- uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name: LogMetric(ILambdaLogLevelLogger, String, IEnumerable<LambdaMetric>, IEnumerable<String>, Dictionary<String, String>)
-  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_IEnumerable_LambdaSharp_LambdaMetric__IEnumerable_System_String__Dictionary_System_String_System_String__
-  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,IEnumerable{LambdaSharp.LambdaMetric},IEnumerable{System.String},Dictionary{System.String,System.String})
+  href: sdk/LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger,System.String,System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: LogMetric(ILambdaLogLevelLogger, String, IEnumerable(Of LambdaMetric), IEnumerable(Of String), Dictionary(Of String, String))
-  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, IEnumerable<LambdaSharp.LambdaMetric>, IEnumerable<System.String>, Dictionary<System.String, System.String>)
-  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, IEnumerable(Of LambdaSharp.LambdaMetric), IEnumerable(Of System.String), Dictionary(Of System.String, System.String))
+  fullName: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Collections.Generic.IEnumerable<LambdaSharp.LambdaMetric>, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric(LambdaSharp.Logger.ILambdaLogLevelLogger, System.String, System.Collections.Generic.IEnumerable(Of LambdaSharp.LambdaMetric), System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: ILambdaLogLevelLoggerEx.LogMetric(ILambdaLogLevelLogger, String, IEnumerable<LambdaMetric>, IEnumerable<String>, Dictionary<String, String>)
   nameWithType.vb: ILambdaLogLevelLoggerEx.LogMetric(ILambdaLogLevelLogger, String, IEnumerable(Of LambdaMetric), IEnumerable(Of String), Dictionary(Of String, String))
 - uid: LambdaSharp.Logger.ILambdaLogLevelLoggerEx.LogMetric*
@@ -4124,11 +4124,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessEventAsync
   nameWithType: ALambdaScheduleFunction.ProcessEventAsync
-- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html#LambdaSharp_Schedule_ALambdaScheduleFunction_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaScheduleFunction.ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.Schedule.ALambdaScheduleFunction.ProcessMessageStreamAsync*
   name: ProcessMessageStreamAsync
@@ -4207,11 +4207,11 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.Serialization.LambdaJsonSerializer.LambdaJsonSerializer
   nameWithType: LambdaJsonSerializer.LambdaJsonSerializer
-- uid: LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(Stream,Type)
+- uid: LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(System.IO.Stream,System.Type)
   name: Deserialize(Stream, Type)
-  href: sdk/LambdaSharp.Serialization.LambdaJsonSerializer.html#LambdaSharp_Serialization_LambdaJsonSerializer_Deserialize_Stream_Type_
-  commentId: M:LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(Stream,Type)
-  fullName: LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(Stream, Type)
+  href: sdk/LambdaSharp.Serialization.LambdaJsonSerializer.html#LambdaSharp_Serialization_LambdaJsonSerializer_Deserialize_System_IO_Stream_System_Type_
+  commentId: M:LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(System.IO.Stream,System.Type)
+  fullName: LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize(System.IO.Stream, System.Type)
   nameWithType: LambdaJsonSerializer.Deserialize(Stream, Type)
 - uid: LambdaSharp.Serialization.LambdaJsonSerializer.Deserialize*
   name: Deserialize
@@ -4311,12 +4311,12 @@ references:
   fullName.vb: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction(Of TMessage).ProcessMessageAsync
   nameWithType: ALambdaTopicFunction<TMessage>.ProcessMessageAsync
   nameWithType.vb: ALambdaTopicFunction(Of TMessage).ProcessMessageAsync
-- uid: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction`1.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html#LambdaSharp_SimpleNotificationService_ALambdaTopicFunction_1_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.SimpleNotificationService.ALambdaTopicFunction`1.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction<TMessage>.ProcessMessageStreamAsync(Stream)
-  fullName.vb: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html#LambdaSharp_SimpleNotificationService_ALambdaTopicFunction_1_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.SimpleNotificationService.ALambdaTopicFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction<TMessage>.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction(Of TMessage).ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaTopicFunction<TMessage>.ProcessMessageStreamAsync(Stream)
   nameWithType.vb: ALambdaTopicFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.SimpleNotificationService.ALambdaTopicFunction`1.ProcessMessageStreamAsync*
@@ -4419,12 +4419,12 @@ references:
   fullName.vb: LambdaSharp.SimpleQueueService.ALambdaQueueFunction(Of TMessage).ProcessMessageAsync
   nameWithType: ALambdaQueueFunction<TMessage>.ProcessMessageAsync
   nameWithType.vb: ALambdaQueueFunction(Of TMessage).ProcessMessageAsync
-- uid: LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
   name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_Stream_
-  commentId: M:LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync(Stream)
-  fullName: LambdaSharp.SimpleQueueService.ALambdaQueueFunction<TMessage>.ProcessMessageStreamAsync(Stream)
-  fullName.vb: LambdaSharp.SimpleQueueService.ALambdaQueueFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html#LambdaSharp_SimpleQueueService_ALambdaQueueFunction_1_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.SimpleQueueService.ALambdaQueueFunction<TMessage>.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.SimpleQueueService.ALambdaQueueFunction(Of TMessage).ProcessMessageStreamAsync(System.IO.Stream)
   nameWithType: ALambdaQueueFunction<TMessage>.ProcessMessageStreamAsync(Stream)
   nameWithType.vb: ALambdaQueueFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
 - uid: LambdaSharp.SimpleQueueService.ALambdaQueueFunction`1.ProcessMessageStreamAsync*
@@ -4459,13 +4459,13 @@ references:
   commentId: T:LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider
   fullName: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider
   nameWithType: ILambdaQueueFunctionDependencyProvider
-- uid: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,IEnumerable{System.ValueTuple{System.String,System.String}})
+- uid: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
   name: DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
-  href: sdk/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_IEnumerable_System_ValueTuple_System_String_System_String___
-  commentId: M:LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,IEnumerable{System.ValueTuple{System.String,System.String}})
+  href: sdk/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___
+  commentId: M:LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
   name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
-  fullName: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, IEnumerable<System.ValueTuple<System.String, System.String>>)
-  fullName.vb: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
+  fullName: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable<System.ValueTuple<System.String, System.String>>)
+  fullName.vb: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
   nameWithType: ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
   nameWithType.vb: ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
 - uid: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*
@@ -4494,13 +4494,13 @@ references:
   commentId: T:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider
   fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider
   nameWithType: LambdaQueueFunctionDependencyProvider
-- uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.#ctor(Func{DateTime},Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,ILambdaSerializer,IAmazonKeyManagementService,IAmazonSQS)
+- uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS)
   name: LambdaQueueFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
-  href: sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider__ctor_Func_DateTime__Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_ILambdaSerializer_IAmazonKeyManagementService_IAmazonSQS_
-  commentId: M:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.#ctor(Func{DateTime},Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,ILambdaSerializer,IAmazonKeyManagementService,IAmazonSQS)
+  href: sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider__ctor_System_Func_System_DateTime__System_Action_System_String__LambdaSharp_ConfigSource_ILambdaConfigSource_Amazon_Lambda_Core_ILambdaSerializer_Amazon_KeyManagementService_IAmazonKeyManagementService_Amazon_SQS_IAmazonSQS_
+  commentId: M:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.#ctor(System.Func{System.DateTime},System.Action{System.String},LambdaSharp.ConfigSource.ILambdaConfigSource,Amazon.Lambda.Core.ILambdaSerializer,Amazon.KeyManagementService.IAmazonKeyManagementService,Amazon.SQS.IAmazonSQS)
   name.vb: LambdaQueueFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
-  fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(Func<DateTime>, Action<System.String>, LambdaSharp.ConfigSource.ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
-  fullName.vb: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(Func(Of DateTime), Action(Of System.String), LambdaSharp.ConfigSource.ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
+  fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(System.Func<System.DateTime>, System.Action<System.String>, LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS)
+  fullName.vb: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(System.Func(Of System.DateTime), System.Action(Of System.String), LambdaSharp.ConfigSource.ILambdaConfigSource, Amazon.Lambda.Core.ILambdaSerializer, Amazon.KeyManagementService.IAmazonKeyManagementService, Amazon.SQS.IAmazonSQS)
   nameWithType: LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(Func<DateTime>, Action<String>, ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
   nameWithType.vb: LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider(Func(Of DateTime), Action(Of String), ILambdaConfigSource, ILambdaSerializer, IAmazonKeyManagementService, IAmazonSQS)
 - uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.#ctor*
@@ -4510,13 +4510,13 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider
   nameWithType: LambdaQueueFunctionDependencyProvider.LambdaQueueFunctionDependencyProvider
-- uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,IEnumerable{System.ValueTuple{System.String,System.String}})
+- uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
   name: DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
-  href: sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_IEnumerable_System_ValueTuple_System_String_System_String___
-  commentId: M:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,IEnumerable{System.ValueTuple{System.String,System.String}})
+  href: sdk/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___
+  commentId: M:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
   name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
-  fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, IEnumerable<System.ValueTuple<System.String, System.String>>)
-  fullName.vb: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
+  fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable<System.ValueTuple<System.String, System.String>>)
+  fullName.vb: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
   nameWithType: LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
   nameWithType.vb: LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
 - uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*
