@@ -319,7 +319,7 @@ A JSON-path expression to locate to desired value in the JSON file. A good descr
 </dd>
 </dl>
 <h4 id="getenv">!GetEnv</h4>
-<p>The <code>!GetEnv</code> function is similar, but reads a value from the system environment variables instead.</p>
+<p>The <code>!GetEnv</code> function reads a system environment variable.</p>
 <h5 id="syntax-1">Syntax</h5>
 <pre><code class="lang-yaml">!GetEnv environment-variable
 </code></pre>
@@ -358,15 +358,40 @@ The <a href="https://docs.aws.amazon.com/kms/latest/developerguide/overview.html
 ReplyEmail: !GetParam /Company/EmailAddress
 Language: !GetEnv LANG
 </code></pre>
+<h4 id="ref">!Ref</h4>
+<p>The <code>!Ref</code> function reads a built-in variable.</p>
+<h5 id="syntax-3">Syntax</h5>
+<pre><code class="lang-yaml">!Ref builtin-variable
+</code></pre>
+<h5 id="parameters-3">Parameters</h5>
+<dl>
+<dt><code>builtin-variable</code></dt>
+<dd>
+The name of a built-in variable.
+<p>One of:</p>
+<dl>
+<dt><code>Deployment::BucketName</code></dt>
+<dd>S3 Bucket name from which the module is being deployed from.</dd>
+<dt><code>Deployment::Tier</code></dt>
+<dd>Deployment tier name. Empty string for default deployment tier.</dd>
+<dt><code>Deployment::TierLowercase</code></dt>
+<dd>Deployment tier name in lowercase characters. Empty string for default deployment tier.</dd>
+<dt><code>Deployment::TierPrefix</code></dt>
+<dd>Deployment tier prefix used to isolate resources. Empty string for default deployment tier.</dd>
+<dt><code>Deployment::TierPrefixLowercase</code></dt>
+<dd>Deployment tier prefix in lowercase characters. Used by resources that require only lowercase characters (e.g. S3 buckets, domain names). Empty string for default deployment tier.</dd>
+</dl>
+</dd>
+</dl>
 <h4 id="sub">!Sub</h4>
 <p>The <code>!Sub</code> function substitutes variables in the format string with values from the arguments map or environment variables.</p>
-<h5 id="syntax-3">Syntax</h5>
+<h5 id="syntax-4">Syntax</h5>
 <pre><code class="lang-yaml">!Sub format-string
 </code></pre>
 <p>-OR-</p>
 <pre><code class="lang-yaml">!Sub [ format-string, arguments ]
 </code></pre>
-<h5 id="parameters-3">Parameters</h5>
+<h5 id="parameters-4">Parameters</h5>
 <dl>
 <dt><code>format-string</code></dt>
 <dd>

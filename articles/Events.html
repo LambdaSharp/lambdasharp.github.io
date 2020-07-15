@@ -105,14 +105,16 @@
 <li><a href="Events-LambdaUsage.html">LambdaUsage Event</a> when a Lambda function has completed its execution.</li>
 </ol>
 <h2 id="schema">Schema</h2>
-<p>The LambdaSharp events follow the CloudWatch Events schema with some values consistently filled in so they can be used to subscribe to specific events reliably.</p>
+<p>The LambdaSharp events follow the CloudWatch Events schema with additional values filled in to allow subscribing by stack name, module full name, deployment tier, module specifier (<code>moduleinfo</code>), and module origin.</p>
 <pre><code class="lang-yaml">source: LambdaSharp
 detail-type: $EVENT_TYPE
 detail: JSON # event type specific
 resources:
-    - lambdasharp:stack:$STACK_ID
+    - lambdasharp:stack:$MODULE_ID
     - lambdasharp:module:$MODULE_FULL_NAME
     - lambdasharp:tier:$DEPLOYMENT_TIER
+    - lambdasharp:moduleinfo:$MODULE_INFO
+    - lambdasharp:origin:$MODULE_ORIGIN
 </code></pre>
 <table>
 <thead>
@@ -135,8 +137,16 @@ resources:
 <td>Full name of the originating module (e.g. <code>My.Module</code>).</td>
 </tr>
 <tr>
-<td><code>$STACK_ID</code></td>
-<td>The ID of the CloudFormation stack that was created for the module deployment.</td>
+<td><code>$MODULE_ID</code></td>
+<td>The name of the CloudFormation stack that was created for the module deployment.</td>
+</tr>
+<tr>
+<td><code>$MODULE_INFO</code></td>
+<td>The full name, version, and origin of the originating module (e.g. <code>My.Module:1.5@my-origin</code>)</td>
+</tr>
+<tr>
+<td><code>$MODULE_ORIGIN</code></td>
+<td>Origin of the originating module (e.g. <code>my-origin</code>).</td>
 </tr>
 </tbody>
 </table>

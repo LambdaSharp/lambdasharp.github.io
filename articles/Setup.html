@@ -218,6 +218,13 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 </ul>
 <p>During execution, the placeholders values are substituted with information from the module to generate the actual Rollbar project name. Note a Rollbar project name must start with a letter; can contain letters, numbers, spaces, underscores, hyphens, periods, and commas. If the generated Rollbar project name exceeds 32 characters, the last 6 characters in the available project name are substituted with 6 characters from the SHA256 hash of the entire name to ensure uniqueness.</p>
 <p>The default pattern is <code>{ModuleFullName}</code> when no <code>RollbarProjectPattern</code> parameter is specified.</p>
+<h2 id="optional-custom-api-gateway-role">(Optional) Custom API Gateway Role</h2>
+<p>During the initialization of a deployment tier, the CLI checks for the presence and capabilities of a default API Gateway role. This role is shared by all API Gateway instances in a region and determines if instances can write to CloudWatch logs and X-Ray traces. A new, empty role is created if needed. If one exists, the CLI checks if the role has the following managed policies and otherwise attaches them:</p>
+<ul>
+<li><code>AWSXrayWriteOnlyAccess</code></li>
+<li><code>service-role/AmazonAPIGatewayPushToCloudWatchLogs</code></li>
+</ul>
+<p>Alternatively, the API Gateway role can be created manually. This might be required if the account requires roles to have permission boundaries. As long as it has the expected managed policies, the CLI will not attempt to modify it. However, if the CLI cannot create or update the role, and one cannot be created manually, the <code>--skip-apigateway-check</code> option can be used with the <code>init</code> command to bypass the API Gateway role check. Without the managed policies, API Gateway instances may not be able to write to CloudWatch logs or X-Ray traces, but are otherwise not impacted in functionality.</p>
 <h1 id="for-lambdasharp-contributors-installing-lambdasharp-from-github">For LambdaSharp Contributors: Installing LambdaSharp from GitHub</h1>
 <p>LambdaSharp is distributed as <a href="https://github.com/LambdaSharp/LambdaSharpTool">GitHub repository</a>. Switch to your preferred folder for Git projects and create a clone of the LambdaSharp repository.</p>
 <p><strong>Using PowerShell/Bash:</strong></p>

@@ -107,8 +107,8 @@
     LogDebug(CreateComplexDebugStatement());
 }
 </code></pre>
-<h2 id="enable-debug-logging">Enable Debug Logging</h2>
-<p>To enable debug logging, follow these steps:</p>
+<h2 id="enable-debug-logging-in-the-aws-console">Enable Debug Logging in the AWS Console</h2>
+<p>To enable debug logging temporarily, follow these steps:</p>
 <ol>
 <li>Go to the AWS Console</li>
 <li>Locate the Lambda function</li>
@@ -116,7 +116,17 @@
 <li>Change the value for <code>DEBUG_LOGGING_ENABLED</code> to <code>true</code></li>
 <li>Click <em>Save</em>.</li>
 </ol>
-<p>This operation will restart the Lambda function with debug logging enabled.</p>
+<p>This operation will restart the Lambda function with debug logging enabled. Note when the Lambda function is redeployed, the environment variables will be reset.</p>
+<h2 id="enable-debug-logging-in-the-module">Enable Debug Logging in the Module</h2>
+<p>To enable debug logging permanently, edit the Lambda function declaration as follows:</p>
+<pre><code class="lang-yaml">- Function: MyFunction
+  Memory: 256
+  Timeout: 30
+  Properties:
+    Environment:
+      Variables:
+        DEBUG_LOGGING_ENABLED: true
+</code></pre>
 <h2 id="requestresponse-logging">Request/Response Logging</h2>
 <p>The most common use case for debug logging is to inspect the request or response of the Lambda function. This use case is covered out of the box by the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class.</p>
 <p>When debug logging is enabled, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> emits the request and response to CloudWatch logs as follows.</p>

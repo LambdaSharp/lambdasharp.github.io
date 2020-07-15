@@ -176,17 +176,27 @@
 <tr>
 <td><code>Deployment::BucketName</code></td>
 <td>String</td>
-<td>S3 Bucket name from which the module is being deployed from</td>
+<td>S3 Bucket name from which the module is being deployed from.</td>
 </tr>
 <tr>
 <td><code>Deployment::Tier</code></td>
 <td>String</td>
-<td>Deployment tier name. Empty string for default deployment tier</td>
+<td>Deployment tier name. Empty string for default deployment tier.</td>
 </tr>
 <tr>
 <td><code>Deployment::TierLowercase</code></td>
 <td>String</td>
-<td>Deployment tier name in lowercase characters. Empty string for default deployment tier</td>
+<td>Deployment tier name in lowercase characters. Empty string for default deployment tier.</td>
+</tr>
+<tr>
+<td><code>Deployment::TierPrefix</code></td>
+<td>String</td>
+<td>Deployment tier prefix used to isolate resources. Empty string for default deployment tier.</td>
+</tr>
+<tr>
+<td><code>Deployment::TierPrefixLowercase</code></td>
+<td>String</td>
+<td>Deployment tier prefix in lowercase characters. Used by resources that require only lowercase characters (e.g. S3 buckets, domain names). Empty string for default deployment tier.</td>
 </tr>
 </tbody>
 </table>
@@ -279,8 +289,8 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 </tr>
 </tbody>
 </table>
-<h2 id="module-deployment-variables">Module Deployment Variables</h2>
-<p>The following variables are set by LambdaSharp CLI when deploying a module.</p>
+<h2 id="module-deployment-parameters">Module Deployment Parameters</h2>
+<p>The following parameters are set by LambdaSharp CLI when deploying a module.</p>
 <table>
 <thead>
 <tr>
