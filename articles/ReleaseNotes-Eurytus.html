@@ -416,7 +416,7 @@ Done (finished: 2/1/2019 2:19:28 PM; duration: 00:04:36.2478253)
 <p>The LambdaSharp CLI now allows to request a specific bucket name during the <code>config</code> command instead of defaulting to a name created by CloudFormation. The created bucket now also grants permission to the <a href="https://docs.aws.amazon.com/serverlessrepo/latest/devguide/what-is-serverlessrepo.html">AWS Serverless Repository</a> to access its contents, in preparation to support publishing modules to it in the future.</p>
 <p>Similar to the change the <code>deploy</code> command, the <code>config</code> command now prompts for new parameters when upgrading an existing configuration.</p>
 <h3 id="new-command">New Command</h3>
-<p>The LambdaSharp CLI now allows to add a resource definition to a module, similar to the <code>new function</code> command. The new <a href="../cli/Tool-NewResource.html"><code>new resource</code> command</a> take a resource name and resource type. It then appends the a skeleont definition to the <code>Module.yml</code> file where the property values indicate the type of the property and if it is required.</p>
+<p>The LambdaSharp CLI now allows to add a resource definition to a module, similar to the <code>new function</code> command. The new <a href="../cli/Tool-New-Resource.html"><code>new resource</code> command</a> take a resource name and resource type. It then appends the a skeleont definition to the <code>Module.yml</code> file where the property values indicate the type of the property and if it is required.</p>
 <pre><code class="lang-bash">lash new resource MyTopic AWS::SNS::Topic
 </code></pre>
 <p>Appends the following resource definition to the <code>Module.yml</code> file:</p>

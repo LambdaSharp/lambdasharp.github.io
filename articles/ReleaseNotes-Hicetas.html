@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-hicetas-release-v0806---2020-07-14">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.6) - 2020-07-14</h1>
+<h1 id="lambdasharp-hicetas-release-v0807---tbd">LambdaSharp &quot;Hicetas&quot; Release (v0.8.0.7) - TBD</h1>
 
 <blockquote>
 <p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
@@ -193,8 +193,42 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0806---2020-07-14">(v0.8.0.6) - 2020-07-14</h3>
+<h3 id="v0807---tbd">(v0.8.0.7) - TBD</h3>
+<h3 id="breaking-changes-1">BREAKING CHANGES</h3>
+<ul>
+<li>CLI
+<ul>
+<li>Renamed <code>new bucket</code> command to <code>new public-bucket</code> to make it clear the created S3 bucket is publicly accessible.</li>
+</ul>
+</li>
+</ul>
 <h4 id="features">Features</h4>
+<ul>
+<li>CLI
+<ul>
+<li>Added <code>new expiring-bucket</code> command to create a self-deleting S3 bucket.</li>
+<li>Enhanced <code>publish</code> and <code>deploy</code> commands to allow omitting the version number to automatically use the latest published module version.</li>
+<li>Enhanced <code>publish</code> and <code>deploy</code> command by adding <code>--from-origin</code> option to import modules from specified origin instead the module origin. Dependencies must be published explicitly.</li>
+<li>Enhanced <code>deploy</code> command by adding <code>--no-import</code> option to prevent module artifacts or dependencies from being imported. All artifacts must already exist in the deployment tier bucket.</li>
+<li>Enhanced <code>deploy</code> to automatically upgrade shared dependencies when deploying a module. This behavior can be turned off with the <code>--no-dependency-upgrades</code> option.</li>
+<li>Enhanced output for <code>tier version</code> command. The command now also returns status code 2 when the deployment tier does not exist.</li>
+</ul>
+</li>
+</ul>
+<h4 id="fixes-2">Fixes</h4>
+<ul>
+<li>CLI
+<ul>
+<li>Fixed an issue in <code>util show-kinesis-failed-logs</code> where logs with multiple entries were not parsed properly.</li>
+<li>Fixed an issue in <code>init</code> where <code>--existing-s3-bucket-name</code> would not convert a S3 bucket name to a S3 bucket ARN.</li>
+<li>Fixed an issue in <code>tier coreservices --enabled</code> would fail without an explanation when the deployment tier was created without <em>Core Services</em>.</li>
+<li>Use <code>AWS::Partition</code> instead of hard-coding <code>aws</code> when constructing ARNs.</li>
+<li>Fixed an issue where the <em>Finalizer</em> was not taking a dependency on conditional custom resources.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0806---2020-07-14">(v0.8.0.6) - 2020-07-14</h3>
+<h4 id="features-1">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -212,7 +246,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-2">Fixes</h4>
+<h4 id="fixes-3">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -222,7 +256,7 @@
 </li>
 </ul>
 <h3 id="v0805---2020-07-02">(v0.8.0.5) - 2020-07-02</h3>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -230,7 +264,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-3">Fixes</h4>
+<h4 id="fixes-4">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -246,7 +280,7 @@
 </li>
 </ul>
 <h3 id="v0804---2020-07-01">(v0.8.0.4) - 2020-07-01</h3>
-<h4 id="features-2">Features</h4>
+<h4 id="features-3">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -281,7 +315,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-4">Fixes</h4>
+<h4 id="fixes-5">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -295,7 +329,7 @@
 </li>
 </ul>
 <h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
-<h4 id="features-3">Features</h4>
+<h4 id="features-4">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -310,7 +344,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-5">Fixes</h4>
+<h4 id="fixes-6">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -331,7 +365,7 @@
 </li>
 </ul>
 <h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
-<h4 id="features-4">Features</h4>
+<h4 id="features-5">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -360,7 +394,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-6">Fixes</h4>
+<h4 id="fixes-7">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -374,7 +408,7 @@
 </li>
 </ul>
 <h3 id="v0801---2020-05-18">(v0.8.0.1) - 2020-05-18</h3>
-<h4 id="fixes-7">Fixes</h4>
+<h4 id="fixes-8">Fixes</h4>
 <ul>
 <li>CLI
 <ul>

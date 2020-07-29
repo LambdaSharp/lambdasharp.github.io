@@ -131,6 +131,14 @@
 <dd>
 <p>(optional) Prompt for all missing parameters values (default: only prompt for missing parameters with no default value)</p>
 </dd>
+<dt><code>--no-import</code></dt>
+<dd>
+<p>(optional) All module artifacts must exist in deployment tier bucket and cannot be imported</p>
+</dd>
+<dt><code>--no-dependency-upgrades</code></dt>
+<dd>
+<p>(optional) Do not automatically upgrade shared dependencies</p>
+</dd>
 <dt><code>--prompts-as-errors</code></dt>
 <dd>
 <p>(optional) Missing parameters cause an error instead of a prompts (use for CI/CD to avoid unattended prompts)</p>
@@ -182,6 +190,10 @@
 <dt><code>--module-build-date &lt;DATE&gt;</code></dt>
 <dd>
 <p>(optional) Override module build date [yyyyMMddHHmmss]</p>
+</dd>
+<dt><code>--from-origin &lt;ORIGIN&gt;</code></dt>
+<dd>
+<p>(optional) Use specified origin to import module instead of module origin</p>
 </dd>
 <dt><code>--force-build</code></dt>
 <dd>

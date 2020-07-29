@@ -106,10 +106,11 @@
 </ol>
 <h2 id="development-commands">Development Commands</h2>
 <ol>
-<li><a href="Tool-NewModule.html"><code>new module</code></a>: create a new module</li>
-<li><a href="Tool-NewFunction.html"><code>new function</code></a>: add a new function to a module</li>
-<li><a href="Tool-NewResource.html"><code>new resource</code></a>: add a new AWS resource to a module</li>
-<li><a href="Tool-NewBucket.html"><code>new bucket</code></a>: create a new public S3 bucket for sharing LambdaSharp modules</li>
+<li><a href="Tool-New-Module.html"><code>new module</code></a>: create a new module</li>
+<li><a href="Tool-New-Function.html"><code>new function</code></a>: add a new function to a module</li>
+<li><a href="Tool-New-Resource.html"><code>new resource</code></a>: add a new AWS resource to a module</li>
+<li><a href="Tool-New-PublicBucket.html"><code>new public-bucket</code></a>: create a public S3 bucket with Requester Pays access</li>
+<li><a href="Tool-New-ExpiringBucket.html"><code>new expiring-bucket</code></a>: create an expiring S3 bucket that self-deletes after expiration</li>
 <li><a href="Tool-Encrypt.html"><code>encrypt</code></a>: encrypt a value with a managed encryption key</li>
 <li><a href="Tool-List.html"><code>list</code></a>: list deployed modules</li>
 <li><a href="Tool-Info.html"><code>info</code></a>: show information about CLI setup</li>
@@ -121,6 +122,8 @@
 <h2 id="tier-commands">Tier Commands</h2>
 <ol>
 <li><a href="Tool-Tier-CoreServices.html"><code>tier coreservices</code></a>: show/update LambdaSharp Core Services configuration</li>
+<li><a href="Tool-Tier-List.html"><code>tier list</code></a>: list all deployment tiers</li>
+<li><a href="Tool-Tier-Version.html"><code>tier version</code></a>: show the version of the deployment tier</li>
 </ol>
 <h2 id="utility-commands">Utility Commands</h2>
 <ol>
@@ -128,6 +131,8 @@
 <li><a href="Tool-Util-DeleteOrphanLogs.html"><code>util delete-orphan-logs</code></a>: delete orphaned Lambda CloudWatch logs</li>
 <li><a href="Tool-Util-DownloadCloudFormationSpec.html"><code>util download-cloudformation-spec</code></a>: download the CloudFormation types specification</li>
 <li><a href="Tool-Util-ListLambdas.html"><code>util list-lambdas</code></a>: list Lambda function by CloudFormation stack</li>
+<li><a href="Tool-Util-ShowKinesisFailedLogs.html"><code>util show-kinesis-failed-logs</code></a>: show the failed Kinesis Firehose records from the S3 logging bucket</li>
+<li><a href="Tool-Util-ShowParameters.html"><code>util show-parameters</code></a>:</li>
 </ol>
 </article>
           </div>

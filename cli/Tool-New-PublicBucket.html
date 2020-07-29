@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="LambdaSharp CLI New Command - Create a Public S3 Bucket | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Create a public S3 bucket for sharing LambdaSharp modules">
+    <meta name="description" content="Create a public S3 bucket with Requester Pays access">
     <meta name="keywords" content="cli, cloudformation, public, sharing, s3, bucket, module, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
@@ -23,14 +23,14 @@
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-NewBucket.html">
+    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-New-PublicBucket.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Create a public S3 bucket for sharing LambdaSharp modules">
+    <meta property="og:description" content="Create a public S3 bucket with Requester Pays access">
   
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LambdaSharp CLI New Command - Create a Public S3 Bucket | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Create a public S3 bucket for sharing LambdaSharp modules">
+    <meta name="twitter:description" content="Create a public S3 bucket with Requester Pays access">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -44,7 +44,7 @@
     <meta property="docfx:newtab" content="true">
   
     <title>LambdaSharp CLI New Command - Create a Public S3 Bucket | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-NewBucket.html">
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-New-PublicBucket.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -93,11 +93,11 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="create-new-public-s3-bucket">Create New Public S3 Bucket</h1>
+<h1 id="create-public-s3-bucket">Create Public S3 Bucket</h1>
 
-<p>The <code>new bucket</code> command is used to create a new public S3 bucket for sharing LambdaSharp modules. The bucket is configured to be publicly accessible, but requires the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">requester to pay</a> for all data transfer. This ensures that the owner of the S3 bucket only pays for the storage of shared LambdaSharp modules.</p>
+<p>The <code>new public-bucket</code> command is used to create a public S3 bucket. The bucket is configured to be publicly accessible, but requires the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html">requester to pay</a> for all data transfer. This ensures that the owner of the S3 bucket only pays for the storage of shared LambdaSharp modules.</p>
 <h2 id="arguments">Arguments</h2>
-<p>The <code>new bucket</code> command takes a single argument that specifies the S3 bucket name.</p>
+<p>The <code>new public-bucket</code> command takes a single argument that specifies the S3 bucket name.</p>
 <p>The following are the rules for naming S3 buckets in all AWS Regions:</p>
 <ul>
 <li>Bucket names must be unique across all existing bucket names in Amazon S3.</li>
@@ -109,7 +109,7 @@
 <li>Bucket names must not be formatted as an IP address (for example, 192.168.5.4).</li>
 <li>When you use virtual hosted–style buckets with Secure Sockets Layer (SSL), the SSL wildcard certificate only matches buckets that don't contain periods. To work around this, use HTTP or write your own certificate verification logic. We recommend that you do not use periods (&quot;.&quot;) in bucket names when using virtual hosted–style buckets.</li>
 </ul>
-<pre><code class="lang-bash">lash new bucket my-lambdasharp-bucket
+<pre><code class="lang-bash">lash new public-bucket my-lambdasharp-bucket
 </code></pre>
 <h2 id="options">Options</h2>
 <dl>
@@ -123,13 +123,13 @@
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>
-<h3 id="create-a-new-public-s3-bucket-for-sharing-lambdasharp-modules">Create a new public S3 bucket for sharing LambdaSharp modules</h3>
+<h3 id="create-a-public-s3-bucket-with-requester-pays-access">Create a public S3 bucket with Requester Pays access</h3>
 <p><strong>Using PowerShell/Bash:</strong></p>
-<pre><code class="lang-bash">lash new bucket my-lambdasharp-bucket4
+<pre><code class="lang-bash">lash new public-bucket my-lambdasharp-bucket4
 </code></pre>
 <p>Output:</p>
-<pre><code>LambdaSharp CLI (v0.7.0) - Create new public S3 bucket for sharing LambdaSharp modules
-CREATE_COMPLETE    AWS::CloudFormation::Stack    PublicLambdaSharpBucket-my-lambdasharp-bucket4
+<pre><code>LambdaSharp CLI (v0.7.0) - Create new public S3 bucket with Requester Pays access
+CREATE_COMPLETE    AWS::CloudFormation::Stack    Bucket-my-lambdasharp-bucket4
 CREATE_COMPLETE    AWS::S3::Bucket               Bucket
 CREATE_COMPLETE    AWS::S3::BucketPolicy         BucketPolicy
 =&gt; Stack creation finished

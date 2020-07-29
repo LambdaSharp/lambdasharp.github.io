@@ -38,7 +38,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/Amazon-Linux-2-WSL.html",
-          "hash": "k1JagqRXbCM6anTfu8P5IA=="
+          "hash": "aNVfJ+q73OZ6rS1rKEtazg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CICD.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CICD.html",
+          "hash": "7tdG6J3SB5ZSRrRH4Y0Ssg=="
         }
       },
       "is_incremental": false,
@@ -230,7 +242,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Damo.html",
-          "hash": "nLD1JJpC9g/E2bSy0b9bNQ=="
+          "hash": "Z1C44FYtLv7161K45RCo6A=="
         }
       },
       "is_incremental": false,
@@ -242,7 +254,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Eurytus.html",
-          "hash": "mLAEHfwzNzOq1Zon2EIG6w=="
+          "hash": "W9WdIL23P861rA3f9NiZrA=="
         }
       },
       "is_incremental": false,
@@ -278,7 +290,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Hicetas.html",
-          "hash": "2GiPxf7xY0M/1+rbc2biaA=="
+          "hash": "Iq63YjadQY7jVf/yuks4jg=="
         }
       },
       "is_incremental": false,
@@ -338,7 +350,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "EfP2gBGte6e26wmQnE/TTA=="
+          "hash": "D5kOP7C6OItCpWc/qS3EwA=="
         }
       },
       "is_incremental": false,
@@ -350,7 +362,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Index.html",
-          "hash": "50A+6k8Jc7WO1VXP/TnK3w=="
+          "hash": "BVwQAcQNMCawoWHgBMzb+w=="
         }
       },
       "is_incremental": false,
@@ -374,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Deploy.html",
-          "hash": "7iOzhpl3Jbuy14UcbCTT9A=="
+          "hash": "8KfNgz37SZKh3H9Xe1cqtw=="
         }
       },
       "is_incremental": false,
@@ -410,7 +422,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Init.html",
-          "hash": "oE7F8+IySXjPXxMXU9/iBw=="
+          "hash": "oI+RUJAYCWy+6kwjvfG+SQ=="
         }
       },
       "is_incremental": false,
@@ -430,11 +442,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-NewBucket.md",
+      "source_relative_path": "cli/Tool-New-ExpiringBucket.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-NewBucket.html",
-          "hash": "zevXfJ7fEK1VqtEQJuz3yA=="
+          "relative_path": "cli/Tool-New-ExpiringBucket.html",
+          "hash": "Wneb4w4DR/BH+O1NSvtB+g=="
         }
       },
       "is_incremental": false,
@@ -442,11 +454,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-NewFunction.md",
+      "source_relative_path": "cli/Tool-New-Function.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-NewFunction.html",
-          "hash": "pvEOIf17vKPZTMlxm/GZ1A=="
+          "relative_path": "cli/Tool-New-Function.html",
+          "hash": "obEnEIFA7ZyYEElkiag8pw=="
         }
       },
       "is_incremental": false,
@@ -454,11 +466,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-NewModule.md",
+      "source_relative_path": "cli/Tool-New-Module.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-NewModule.html",
-          "hash": "Cy4P5h3yc7i9BBW8q5gUQA=="
+          "relative_path": "cli/Tool-New-Module.html",
+          "hash": "0B0JB/WBDL6tbukyA9eQNA=="
         }
       },
       "is_incremental": false,
@@ -466,11 +478,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-NewResource.md",
+      "source_relative_path": "cli/Tool-New-PublicBucket.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-NewResource.html",
-          "hash": "9znVqAdaCI2t6bP32qDwjw=="
+          "relative_path": "cli/Tool-New-PublicBucket.html",
+          "hash": "4vaKhmCAL37XJ0Mn2APTBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "cli/Tool-New-Resource.md",
+      "output": {
+        ".html": {
+          "relative_path": "cli/Tool-New-Resource.html",
+          "hash": "o0CAnojSK0Xf0ZxTQWQ1dA=="
         }
       },
       "is_incremental": false,
@@ -494,7 +518,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Publish.html",
-          "hash": "WCZ2hFLt8LRDCEUKLhKIpw=="
+          "hash": "4HeWAK3xLYAAv/HBBDcRMQ=="
         }
       },
       "is_incremental": false,
@@ -506,7 +530,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Tier-CoreServices.html",
-          "hash": "00IZ8mgUMj3JaS8ggtzjqw=="
+          "hash": "2NENBxnp0f6+utB3jAWptA=="
         }
       },
       "is_incremental": false,
@@ -530,7 +554,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Tier-Version.html",
-          "hash": "E1XMGy/jLt7Z3NwjceNwSA=="
+          "hash": "NYpCAkegt91+/YSEwz4rmg=="
         }
       },
       "is_incremental": false,
@@ -574,11 +598,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-Util-KinesisFailedLogs.md",
+      "source_relative_path": "cli/Tool-Util-ListLambdas.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-Util-KinesisFailedLogs.html",
-          "hash": "3t6A7s89PHmMwmjK+Yr/Og=="
+          "relative_path": "cli/Tool-Util-ListLambdas.html",
+          "hash": "qypyVRt0P9PdbLJX9aKlIA=="
         }
       },
       "is_incremental": false,
@@ -586,11 +610,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-Util-ListLambdas.md",
+      "source_relative_path": "cli/Tool-Util-ShowKinesisFailedLogs.md",
       "output": {
         ".html": {
-          "relative_path": "cli/Tool-Util-ListLambdas.html",
-          "hash": "qypyVRt0P9PdbLJX9aKlIA=="
+          "relative_path": "cli/Tool-Util-ShowKinesisFailedLogs.html",
+          "hash": "bSL/TKRveCb4zp3eXKLOnQ=="
         }
       },
       "is_incremental": false,
@@ -614,7 +638,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/toc.html",
-          "hash": "7CImvN6UswqaXemZLPNd6Q=="
+          "hash": "B9Oasc1PPCDW8QxP8B41Hg=="
         }
       },
       "is_incremental": false,
@@ -791,7 +815,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3D0l2G3R92yWZEJehv3Bkg=="
+          "hash": "+GcTrmZ4ObG5z5o9M2WKOw=="
         }
       },
       "is_incremental": false,
@@ -815,7 +839,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "cM12j4oKKwV3pROyU5zhFw=="
+          "hash": "Pig4QeiSexYjRPwwaOdmIQ=="
         }
       },
       "is_incremental": false,
@@ -863,7 +887,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "xbe8XLs1sVbgFIEj6b3pfQ=="
+          "hash": "E3E/KJ9RXW6Cwx60tT6gzw=="
         }
       },
       "is_incremental": false,
@@ -875,7 +899,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "2fbbimLIkSPgIfLYQdfBWw=="
+          "hash": "015eqO/5oDadBfEsAzXBxw=="
         }
       },
       "is_incremental": false,
@@ -923,7 +947,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "P9W6FGgRThB+8kHM+55ScA=="
+          "hash": "VIW34Mq0KKwVjHazCFs5gQ=="
         }
       },
       "is_incremental": false,
@@ -2284,11 +2308,17 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 97,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
@@ -2297,15 +2327,9 @@
           "total_file_count": 72,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 95,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
           "skipped_file_count": 0

@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
-    <meta name="description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
-    <meta name="keywords" content="cli, kinesis, firehose, logs, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="title" content="LambdaSharp CLI New Command - Create an Expiring S3 Bucket | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Create an S3 bucket that self-deletes after expiration">
+    <meta name="keywords" content="cli, cloudformation, public, sharing, s3, bucket, module, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
     <meta name="generator" content="docfx 2.45.0.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:title" content="LambdaSharp CLI New Command - Create an Expiring S3 Bucket | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-Util-KinesisFailedLogs.html">
+    <meta property="og:url" content="https://lambdasharp.net/cli/Tool-New-ExpiringBucket.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
-    <meta property="og:description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
+    <meta property="og:description" content="Create an S3 bucket that self-deletes after expiration">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:title" content="LambdaSharp CLI New Command - Create an Expiring S3 Bucket | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
-    <meta name="twitter:description" content="Show the CloudWatch Log entries that were ingested by Kinesis Firehose, but failed to be processed by LambdaSharp.Core">
+    <meta name="twitter:description" content="Create an S3 bucket that self-deletes after expiration">
     <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
   
     <link rel="shortcut icon" href="../favicon.ico">
@@ -43,8 +43,8 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>LambdaSharp Util Tier Command - Show Kinesis Failed Logs | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-Util-KinesisFailedLogs.html">
+    <title>LambdaSharp CLI New Command - Create an Expiring S3 Bucket | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/cli/Tool-New-ExpiringBucket.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -93,19 +93,26 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="show-failed-kinesis-firehose-cloudwatch-log-entries">Show Failed Kinesis Firehose CloudWatch Log Entries</h1>
+<h1 id="create-expiring-s3-bucket">Create Expiring S3 Bucket</h1>
 
-<p>The <code>util show-kinesis-failed-logs</code> fetches the failed Kinesis Firehose records from the S3 logging bucket. For each record, the source key is shown, as well as the record properties, and the decoded CloudWatch Log entries that are part of the record.</p>
+<p>The <code>new expiring-bucket</code> command is used to create a private S3 bucket that self deletes after it expires.</p>
+<h2 id="arguments">Arguments</h2>
+<p>The <code>new expiring-bucket</code> command takes a single argument that specifies the S3 bucket name.</p>
+<p>The following are the rules for naming S3 buckets in all AWS Regions:</p>
+<ul>
+<li>Bucket names must be unique across all existing bucket names in Amazon S3.</li>
+<li>Bucket names must comply with DNS naming conventions.</li>
+<li>Bucket names must be at least 3 and no more than 63 characters long.</li>
+<li>Bucket names must not contain uppercase characters or underscores.</li>
+<li>Bucket names must start with a lowercase letter or number.</li>
+<li>Bucket names must be a series of one or more labels. Adjacent labels are separated by a single period (.). Bucket names can contain lowercase letters, numbers, and hyphens. Each label must start and end with a lowercase letter or a number.</li>
+<li>Bucket names must not be formatted as an IP address (for example, 192.168.5.4).</li>
+<li>When you use virtual hosted–style buckets with Secure Sockets Layer (SSL), the SSL wildcard certificate only matches buckets that don't contain periods. To work around this, use HTTP or write your own certificate verification logic. We recommend that you do not use periods (&quot;.&quot;) in bucket names when using virtual hosted–style buckets.</li>
+</ul>
+<pre><code class="lang-bash">lash new expiring-bucket my-lambdasharp-bucket
+</code></pre>
 <h2 id="options">Options</h2>
 <dl>
-<dt><code>--key-prefix|-k &lt;PREFIX&gt;</code></dt>
-<dd>
-<p>(optional) S3 key prefix where the failed logging records are stored (default: logging-failed/processing-failed/)</p>
-</dd>
-<dt><code>--tier|-T &lt;NAME&gt;</code></dt>
-<dd>
-<p>(optional) Name of deployment tier (default: <code>LAMBDASHARP_TIER</code> environment variable)</p>
-</dd>
 <dt><code>--aws-profile|-P &lt;NAME&gt;</code></dt>
 <dd>
 <p>(optional) Use a specific AWS profile from the AWS credentials file</p>
@@ -114,19 +121,29 @@
 <dd>
 <p>(optional) Use a specific AWS region (default: read from AWS profile)</p>
 </dd>
-<dt><code>--verbose|-V[:&lt;LEVEL&gt;]</code></dt>
+<dt><code>--expiration-in-days &lt;VALUE&gt;</code></dt>
 <dd>
-<p>(optional) Show verbose output (0=Quiet, 1=Normal, 2=Detailed, 3=Exceptions; Normal if LEVEL is omitted)</p>
-</dd>
-<dt><code>--no-ansi</code></dt>
-<dd>
-<p>(optional) Disable colored ANSI terminal output</p>
-</dd>
-<dt><code>--quiet</code></dt>
-<dd>
-<p>(optional) Don't show banner or execution time</p>
+<p>(optional) Number of days until the bucket expires and is deleted (default: 7 days). Minimum value is 1 day. Maximum value is 365 days.</p>
 </dd>
 </dl>
+<h2 id="examples">Examples</h2>
+<h3 id="create-an-s3-bucket-that-self-deletes-in-3-days">Create an S3 bucket that self-deletes in 3 days</h3>
+<p><strong>Using PowerShell/Bash:</strong></p>
+<pre><code class="lang-bash">lash new expiring-bucket my-bucket --expiration-in-days 3
+</code></pre>
+<p>Output:</p>
+<pre><code>LambdaSharp CLI (v0.8.0.7) - Create an S3 bucket that self-deletes after expiration
+CREATE_COMPLETE    AWS::CloudFormation::Stack    Bucket-my-bucket (51.09s)
+CREATE_COMPLETE    AWS::IAM::Role                AutoDeleteFunctionRole (19.34s)
+CREATE_COMPLETE    AWS::S3::Bucket               Bucket (23.66s)
+CREATE_COMPLETE    AWS::Lambda::Function         AutoDeleteFunction (1.06s)
+CREATE_COMPLETE    AWS::IAM::Policy              AutoDeleteFunctionSelfDeletePolicy (18.28s)
+=&gt; Stack creation finished
+
+=&gt; S3 Bucket ARN: arn:aws:s3:::my-bucket
+
+Done (finished: 7/23/2020 1:05:50 PM; duration: 00:00:53.7584203)
+</code></pre>
 </article>
           </div>
           
