@@ -16,7 +16,7 @@
     <meta name="title" content="Macro Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp YAML syntax for CloudFormation macros">
     <meta name="keywords" content="macro, lambda, declaration, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Macro Declaration - Module | LambdaSharp - Serverless .NET for AWS">
@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="macro">Macro</h1>
 
-<p>The <code>Macro</code> definition registers a <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html">CloudFormation Macro</a> for the deployment tier. The handler must be a Lambda function. Once deployed, the macro is available to all subsequent module deployments.</p>
+<p>The <code>Macro</code> declaration registers a <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-macros.html">CloudFormation Macro</a> for the deployment tier. The handler must be a Lambda function. Once deployed, the macro is available to all subsequent module deployments.</p>
 <p><strong>WARNING:</strong> Due to a limitation in the <code>Fn::Transform</code> function, it is not possible to namespace macros to a deployment tier. Consequently, macros are defined globally for the entire account, across all deployment tiers.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Macro: String

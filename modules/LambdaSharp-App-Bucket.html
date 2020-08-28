@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="LambdaSharp.App.Bucket - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Documentation for LambdaSharp.App.Bucket module">
+    <meta name="keywords" content="module, app, bucket, documentation, overview, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="LambdaSharp.App.Bucket - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/modules/LambdaSharp-App-Bucket.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Documentation for LambdaSharp.App.Bucket module">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LambdaSharp.App.Bucket - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Documentation for LambdaSharp.App.Bucket module">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>LambdaSharp.App.Bucket - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/modules/LambdaSharp-App-Bucket.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="module-lambdasharpappbucket">Module: LambdaSharp.App.Bucket</h1>
+
+<p><em>Version:</em> 0.8.1.0</p>
+<h2 id="overview">Overview</h2>
+<p>The <em>LambdaSharp.App.Bucket</em> module is used by the <code>App</code> declaration to create an S3 bucket for deploying the app files. The S3 bucket can either be configured for public access as a website or for secure access from a CloudFront distribution.</p>
+<h2 id="resource-types">Resource Types</h2>
+<p>This module defines no resource types.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><code>CloudFrontOriginAccessIdentity</code></dt>
+<dd>
+<p>The <code>CloudFrontOriginAccessIdentity</code> parameter configures the S3 bucket for secure access from a CloudFront distribution. When left empty, the S3 bucket is configured as a public website instead.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code></code></dt>
+<dd>
+<p>The <code>ContentEncoding</code> parameter sets the content encoding to apply to all files copied from the zip package. The value must be one of: <code>NONE</code>, <code>BROTLI</code>, <code>GZIP</code>, or <code>DEFAULT</code>.</p>
+<p>The encoded files are annotated with a <code>Content-Encoding</code> header matching the compression algorithm.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+<p>The <code>ContentEncoding</code> parameter must have one of the following values:</p>
+<dl>
+<dt><code>NONE</code></dt>
+<dd>
+<p>No content encoding is performed and no <code>Content-Encoding</code> header is applied. Using no encoding is fastest to perform, but produces significantly larger files.</p>
+</dd>
+<dt><code>BROTLI</code></dt>
+<dd>
+<p>Content is encoded with <a href="https://en.wikipedia.org/wiki/Brotli">Brotli compression</a> using the optimal compression setting. Brotli compression takes longer to perform, but produces smaller files.</p>
+<p>Note that Brotli encoding is only valid for <em>https://</em> connections.</p>
+</dd>
+<dt><code>GZIP</code></dt>
+<dd>
+<p>Content is encoded with <a href="https://en.wikipedia.org/wiki/Gzip">Gzip compression</a>. Gzip compression is faster than Brotli, but produces slightly larger files.</p>
+</dd>
+<dt><code>DEFAULT</code></dt>
+<dd>
+<p>The <code>DEFAULT</code> value defaults to <code>BROTLI</code> when a non-empty <code>CloudFrontOriginAccessIdentity</code> parameter is specified since CloudFront distributions are always served over <em>https://</em> connections. Otherwise, it defaults to <code>GZIP</code>, which is safe for connections over <em>https://</em> and <em>http://</em>.</p>
+</dd>
+</dl>
+</dd>
+<dt><code>Package</code></dt>
+<dd>
+<p>The <code>Package</code> parameter is the path to the packaged app files in the deployment bucket.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+<h2 id="output-values">Output Values</h2>
+<dl>
+<dt><code>Arn</code></dt>
+<dd>
+<p>The <code>Arn</code> output contains the ARN of the S3 bucket.</p>
+<p><i>Type:</i> AWS::S3::Bucket</p>
+</dd>
+<dt><code>DomainName</code></dt>
+<dd>
+<p>The <code>DomainName</code> output contains the IPv4 DNS name of the S3 bucket.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>WebsiteUrl</code></dt>
+<dd>
+<p>The <code>WebsiteUrl</code> output contains the the Amazon S3 website endpoint of the S3 bucket.</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

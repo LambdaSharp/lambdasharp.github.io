@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace LambdaSharp.Records
+    <meta name="title" content="Namespace LambdaSharp.Logging.ErrorReports
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="Namespace LambdaSharp.Records
+    <meta property="og:title" content="Namespace LambdaSharp.Logging.ErrorReports
    | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.Records.html">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
     <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Namespace LambdaSharp.Records
+    <meta name="twitter:title" content="Namespace LambdaSharp.Logging.ErrorReports
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
@@ -46,9 +46,9 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>Namespace LambdaSharp.Records
+    <title>Namespace LambdaSharp.Logging.ErrorReports
    | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.Records.html">
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -96,18 +96,26 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.Records">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.Logging.ErrorReports">
   
-  <h1 id="LambdaSharp_Records" data-uid="LambdaSharp.Records" class="text-break">Namespace LambdaSharp.Records
+  <h1 id="LambdaSharp_Logging_ErrorReports" data-uid="LambdaSharp.Logging.ErrorReports" class="text-break">Namespace LambdaSharp.Logging.ErrorReports
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="LambdaSharp.Records.ALambdaRecord.html">ALambdaRecord</a></h4>
-      <section><p>The abstract <a class="xref" href="LambdaSharp.Records.ALambdaRecord.html">ALambdaRecord</a> class is the base class for all
-structured log records.</p>
+      <h4><a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> class is used to create
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instances. Each Lambda function is
+initialized with an instance of <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a>
+class using its configuration and runtime settings.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a> interface is used to create
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instances.</p>
 </section>
 </article>
           </div>

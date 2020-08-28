@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Struct ALambdaFunction.FunctionInfo
@@ -104,11 +104,15 @@
   <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.FunctionInfo.html">ALambdaFunction.FunctionInfo</a> struct exposes the function initialization settings.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="LambdaSharp.Logging.ILambdaSharpInfo.html">ILambdaSharpInfo</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ALambdaFunction_FunctionInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected struct FunctionInfo</code></pre>
+    <pre><code class="lang-csharp hljs">protected struct FunctionInfo : ILambdaSharpInfo</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -496,6 +500,35 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <a id="LambdaSharp_ALambdaFunction_FunctionInfo_LambdaSharp_Logging_ILambdaSharpInfo_AppName_" data-uid="LambdaSharp.ALambdaFunction.FunctionInfo.LambdaSharp#Logging#ILambdaSharpInfo#AppName*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_FunctionInfo_LambdaSharp_Logging_ILambdaSharpInfo_AppName" data-uid="LambdaSharp.ALambdaFunction.FunctionInfo.LambdaSharp#Logging#ILambdaSharpInfo#AppName">ILambdaSharpInfo.AppName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ILambdaSharpInfo.AppName { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.Logging.ILambdaSharpInfo.html">ILambdaSharpInfo</a>
+  </div>
 </article>
           </div>
           

@@ -16,7 +16,7 @@
     <meta name="title" content="Nested Module Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp YAML syntax for nested modules">
     <meta name="keywords" content="nested, declaration, module, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Nested Module Declaration - Module | LambdaSharp - Serverless .NET for AWS">
@@ -95,8 +95,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="nested-module">Nested Module</h1>
 
-<p>The <code>Module</code> definition specifies the creation of a nested module. Nested modules inherit the same LambdaSharp configuration as their parent module, except for the <code>Secrets</code> parameter, which must be passed on explicitly.</p>
-<p>Nested module should <strong>never</strong> be updated directly. Instead, all updates must be triggered by their parent module. Updating a nested module directly can cause it to be in an unexpected state that will prevent the parent module from upating in the future.</p>
+<p>The <code>Module</code> declaration specifies the creation of a nested module. Nested modules inherit the same LambdaSharp configuration as their parent module, except for the <code>Secrets</code> parameter, which must be passed on explicitly.</p>
+<p>Nested module should <strong>never</strong> be updated directly. Instead, all updates must be triggered by their parent module. Updating a nested module directly can cause it to be in an unexpected state that will prevent the parent module from updating in the future.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Nested: String
 Description: String

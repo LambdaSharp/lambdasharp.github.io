@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp SDK | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp SDK Overview">
     <meta name="keywords" content="sdk, overview, getting started, project, base class, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp SDK | LambdaSharp - Serverless .NET for AWS">
@@ -97,22 +97,23 @@
 
 <p><img src="../images/SDK.png" alt="λ#"></p>
 <h1 id="lambdasharp-sdk">LambdaSharp SDK</h1>
-<p>The LambdaSharp assembly is automatically added when you use <code>lash</code> to add a function to your module. In addition, <code>lash build</code> shows a warning when the referenced LambdaSharp assembly is outdated.</p>
-<h2 id="creating-a-lambdasharp-project">Creating a LambdaSharp Project</h2>
+<p>The required LambdaSharp dependencies are automatically added when you use <code>lash new</code> to add a project to your module. In addition, <code>lash build</code> performs a compatibility check and issues a warning when a dependency is outdated.</p>
+<h2 id="creating-a-lambdasharp-module">Creating a LambdaSharp Module</h2>
 <p>Create a folder for your first LambdaSharp module and open it your favorite terminal application.</p>
 <p>Run the following command to create a <code>Module.yml</code> file in the current folder.</p>
 <pre><code class="lang-bash">lash new module My.FirstModule
 </code></pre>
-<p>Run the following command to create a new C# function project add it to your module.</p>
-<pre><code>lash new function MyFunction
+<h3 id="add-a-c-lambda-function">Add a C# Lambda Function</h3>
+<p>Run the following command to add a generic C# Lambda function to your module.</p>
+<pre><code>lash new function --type generic MyFunction
 </code></pre>
+<h3 id="add-a-blazor-webassembly-app">Add a Blazor WebAssembly App</h3>
+<p>Run the following command to add a Blazor WebAssembly app to your module.</p>
+<pre><code>lash new app MyApp
+</code></pre>
+<h3 id="deploy-module">Deploy Module</h3>
 <p>Run the following command to build and deploy your first module to your <em>Sandbox</em> deployment tier.</p>
 <pre><code>lash deploy --tier Sandbox
-</code></pre>
-<h2 id="adding-the-lambdasharp-assembly">Adding the LambdaSharp Assembly</h2>
-<p>The LambdaSharp assembly provides base classes and utility methods for Lambda functions.</p>
-<p>The assembly is referenced automatically when adding new functions to a module using <code>lash new function</code>. A a reference can be added manually, by using the <code>dotnet</code> CLI.</p>
-<pre><code class="lang-bash">dotnet add package LambdaSharp
 </code></pre>
 </article>
           </div>

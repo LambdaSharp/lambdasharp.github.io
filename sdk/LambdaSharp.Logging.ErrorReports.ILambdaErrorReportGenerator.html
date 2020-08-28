@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LambdaMetricsRecord
+    <meta name="title" content="Interface ILambdaErrorReportGenerator
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="Class LambdaMetricsRecord
+    <meta property="og:title" content="Interface ILambdaErrorReportGenerator
    | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.Records.Metrics.LambdaMetricsRecord.html">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
     <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Class LambdaMetricsRecord
+    <meta name="twitter:title" content="Interface ILambdaErrorReportGenerator
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
@@ -46,9 +46,9 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>Class LambdaMetricsRecord
+    <title>Interface ILambdaErrorReportGenerator
    | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.Records.Metrics.LambdaMetricsRecord.html">
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -96,60 +96,76 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator">
   
   
-  <h1 id="LambdaSharp_Records_Metrics_LambdaMetricsRecord" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord" class="text-break">Class LambdaMetricsRecord
+  <h1 id="LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator" data-uid="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator" class="text-break">Interface ILambdaErrorReportGenerator
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Records.Metrics.LambdaMetricsRecord.html">LambdaMetricsRecord</a> class defines a structured Lambda log entry
-for metrics that is compatible with embedded CloudWatch metrics format.</p>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a> interface is used to create
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instances.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="LambdaSharp.Records.ALambdaRecord.html">ALambdaRecord</a></div>
-    <div class="level2"><span class="xref">LambdaMetricsRecord</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="LambdaSharp.Records.ALambdaRecord.html#LambdaSharp_Records_ALambdaRecord_Type">ALambdaRecord.Type</a>
-    </div>
-    <div>
-      <a class="xref" href="LambdaSharp.Records.ALambdaRecord.html#LambdaSharp_Records_ALambdaRecord_Version">ALambdaRecord.Version</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Records.Metrics.html">LambdaSharp.Records.Metrics</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_Records_Metrics_LambdaMetricsRecord_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Logging.ErrorReports.html">LambdaSharp.Logging.ErrorReports</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.Logging.dll</h6>
+  <h5 id="LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LambdaMetricsRecord : ALambdaRecord</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ILambdaErrorReportGenerator</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="methods">Methods
   </h3>
-  <a id="LambdaSharp_Records_Metrics_LambdaMetricsRecord__ctor_" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.#ctor*"></a>
-  <h4 id="LambdaSharp_Records_Metrics_LambdaMetricsRecord__ctor" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.#ctor">LambdaMetricsRecord()</h4>
-  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.Records.Metrics.LambdaMetricsRecord.html">LambdaMetricsRecord</a> instance.</p>
+  <a id="LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator_CreateReport_" data-uid="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.CreateReport*"></a>
+  <h4 id="LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html#LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instance from the provided parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaMetricsRecord()</code></pre>
+    <pre><code class="lang-csharp hljs">LambdaErrorReport CreateReport(string requestId, string level, Exception exception, string format = null, params object[] args)</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="LambdaSharp_Records_Metrics_LambdaMetricsRecord_Aws_" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.Aws*"></a>
-  <h4 id="LambdaSharp_Records_Metrics_LambdaMetricsRecord_Aws" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.Aws">Aws</h4>
-  <div class="markdown level1 summary"><p>Embedded CloudWatch metrics metadata object.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;_aws&quot;)]
-public EmbeddedCloudWatchMetrics Aws { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestId</span></td>
+        <td><p>The AWS request ID.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>The severity level of the error report.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>An optional exception instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>An optional message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td><p>Optional arguments for the error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -159,36 +175,16 @@ public EmbeddedCloudWatchMetrics Aws { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Records.Metrics.EmbeddedCloudWatchMetrics.html">EmbeddedCloudWatchMetrics</a></td>
-        <td></td>
+        <td><a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a></td>
+        <td><p>A new <a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_Records_Metrics_LambdaMetricsRecord_TargetMembers_" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.TargetMembers*"></a>
-  <h4 id="LambdaSharp_Records_Metrics_LambdaMetricsRecord_TargetMembers" data-uid="LambdaSharp.Records.Metrics.LambdaMetricsRecord.TargetMembers">TargetMembers</h4>
-  <div class="markdown level1 summary"><p>Dictionary for holding metric target members that are added at the root of the object serialization.</p>
+  <h5 id="LambdaSharp_Logging_ErrorReports_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <cref name="FormatMessage(string,object[])"></cref> for details on how the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter
+impacts the processing of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonExtensionData]
-public Dictionary&lt;string, object&gt; TargetMembers { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

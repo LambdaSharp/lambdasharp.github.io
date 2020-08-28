@@ -16,7 +16,7 @@
     <meta name="title" content="Function Declaration - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp YAML syntax for Lambda functions">
     <meta name="keywords" content="lambda, function, declaration, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Function Declaration - Module | LambdaSharp - Serverless .NET for AWS">
@@ -95,7 +95,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="function">Function</h1>
 
-<p>The <code>Function</code> definition specifies a Lambda function for deployment. Each definition is compiled and uploaded as part of the deployment process. The deployed Lambda function is prefixed with <code>${Deployment::TierPrefix}</code> to uniquely distinguish is from other functions.</p>
+<p>The <code>Function</code> declaration specifies a Lambda function for deployment. Each declaration is compiled and uploaded as part of the deployment process. The deployed Lambda function is prefixed with <code>${Deployment::TierPrefix}</code> to uniquely distinguish is from other functions.</p>
+<p>Use the <a href="../cli/Tool-New-Function.html">lash new app</a> command to add the <code>Function</code> declaration with a pre-configured project to your module.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Function: String
 Description: String
@@ -110,7 +111,7 @@ Language: String
 Pragmas:
   - PragmaDefinition
 Environment:
-  String: String
+  String: String or Expression
 Properties:
   ResourceProperties
 Sources:
@@ -159,7 +160,7 @@ Sources:
 <dd>
 <p>The <code>Pragmas</code> section specifies directives that change the default compiler behavior.</p>
 <p><i>Required:</i> No</p>
-<p><i>Type:</i> List of <a href="Module-Pragmas.html">Pragma Definition</a></p>
+<p><i>Type:</i> List of <a href="Module-Function-Pragmas.html">Pragma Definition</a></p>
 </dd>
 <dt><code>Project</code></dt>
 <dd>

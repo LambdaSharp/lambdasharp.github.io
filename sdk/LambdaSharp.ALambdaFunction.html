@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class ALambdaFunction
@@ -117,13 +117,13 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></div>
+    <div><a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_ALambdaFunction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaFunction : ILambdaLogLevelLogger</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaFunction : ILambdaSharpLogger</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -255,7 +255,7 @@ issues caused by inconsistencies in serialization or deserialization.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a></td>
         <td><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> instance.</p>
 </td>
       </tr>
@@ -365,12 +365,12 @@ used for serializing/deserializing JSON data.</p>
   </table>
   <a id="LambdaSharp_ALambdaFunction_Logger_" data-uid="LambdaSharp.ALambdaFunction.Logger*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_Logger" data-uid="LambdaSharp.ALambdaFunction.Logger">Logger</h4>
-  <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance.</p>
+  <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a> instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILambdaLogLevelLogger Logger { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected ILambdaSharpLogger Logger { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -382,8 +382,8 @@ used for serializing/deserializing JSON data.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></td>
-        <td><p>The <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a> instance.</p>
+        <td><a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a></td>
+        <td><p>The <a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a> instance.</p>
 </td>
       </tr>
     </tbody>
@@ -1159,6 +1159,66 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
   <div class="markdown level1 remarks"><p>Only use this method when the exception has no operational impact.
 Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_">LogError(Exception)</a>.</p>
 </div>
+  <a id="LambdaSharp_ALambdaFunction_LogEvent_" data-uid="LambdaSharp.ALambdaFunction.LogEvent*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogEvent``1(System.String,System.String,``0,System.Collections.Generic.IEnumerable{System.String})">LogEvent&lt;T&gt;(String, String, T, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event will be forwarded to the default EventBridge by LambdaSharp.Core (requires Core Services to be enabled).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogEvent&lt;T&gt;(string source, string detailType, T detail, IEnumerable&lt;string&gt; resources = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Name of the event source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">detailType</span></td>
+        <td><p>Free-form string used to decide what fields to expect in the event detail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">detail</span></td>
+        <td><p>Data-structure to serialize as a JSON string using the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSerializer">LambdaSerializer</a> property. If value is already a <pre><code>string</code></pre>, it is sent as-is. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Optional AWS or custom resources, identified by unique identifier (e.g. ARN), which the event primarily concerns. Any number, including zero, may be present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="LambdaSharp_ALambdaFunction_LogFatal_" data-uid="LambdaSharp.ALambdaFunction.LogFatal*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_LogFatal_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LogFatal(System.Exception,System.String,System.Object[])">LogFatal(Exception, String, Object[])</h4>
   <div class="markdown level1 summary"><p>Log an exception with a custom message as a fatal error. This message will be reported if an error aggregator is configured for the <code>LambdaSharp.Core</code> module.</p>
@@ -1232,7 +1292,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_LogMetric_" data-uid="LambdaSharp.ALambdaFunction.LogMetric*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric})">LogMetric(IEnumerable&lt;LambdaMetric&gt;)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.Logging.Metrics.LambdaMetric})">LogMetric(IEnumerable&lt;LambdaMetric&gt;)</h4>
   <div class="markdown level1 summary"><p>Log a CloudWatch metric. The metric is picked up by CloudWatch logs and automatically ingested as a CloudWatch metric.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1251,7 +1311,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.LambdaMetric.html">LambdaMetric</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.Logging.Metrics.LambdaMetric.html">LambdaMetric</a>&gt;</td>
         <td><span class="parametername">metrics</span></td>
         <td><p>Enumeration of metrics, including their name, value, and unit.</p>
 </td>
@@ -1259,7 +1319,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_LogMetric_" data-uid="LambdaSharp.ALambdaFunction.LogMetric*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">LogMetric(IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.Collections.Generic.IEnumerable{LambdaSharp.Logging.Metrics.LambdaMetric},System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">LogMetric(IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Log a CloudWatch metric. The metric is picked up by CloudWatch logs and automatically ingested as a CloudWatch metric.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1278,7 +1338,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.LambdaMetric.html">LambdaMetric</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.Logging.Metrics.LambdaMetric.html">LambdaMetric</a>&gt;</td>
         <td><span class="parametername">metrics</span></td>
         <td><p>Enumeration of metrics, including their name, value, and unit.</p>
 </td>
@@ -1298,7 +1358,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_LogMetric_" data-uid="LambdaSharp.ALambdaFunction.LogMetric*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit)">LogMetric(String, Double, LambdaMetricUnit)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.Logging.Metrics.LambdaMetricUnit)">LogMetric(String, Double, LambdaMetricUnit)</h4>
   <div class="markdown level1 summary"><p>Log a CloudWatch metric. The metric is picked up by CloudWatch logs and automatically ingested as a CloudWatch metric.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1329,7 +1389,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="LambdaSharp.LambdaMetricUnit.html">LambdaMetricUnit</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.Metrics.LambdaMetricUnit.html">LambdaMetricUnit</a></td>
         <td><span class="parametername">unit</span></td>
         <td><p>Metric unit.</p>
 </td>
@@ -1337,7 +1397,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_LogMetric_" data-uid="LambdaSharp.ALambdaFunction.LogMetric*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.LambdaMetricUnit,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">LogMetric(String, Double, LambdaMetricUnit, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <h4 id="LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogMetric(System.String,System.Double,LambdaSharp.Logging.Metrics.LambdaMetricUnit,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">LogMetric(String, Double, LambdaMetricUnit, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Log a CloudWatch metric. The metric is picked up by CloudWatch logs and automatically ingested as a CloudWatch metric.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1368,7 +1428,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="LambdaSharp.LambdaMetricUnit.html">LambdaMetricUnit</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.Metrics.LambdaMetricUnit.html">LambdaMetricUnit</a></td>
         <td><span class="parametername">unit</span></td>
         <td><p>Metric unit.</p>
 </td>
@@ -1466,8 +1526,8 @@ sent as response.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.ErrorReports.LambdaErrorReport)">RecordErrorReport(LambdaErrorReport)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a> method is invoked record errors for later reporting.</p>
+  <h4 id="LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Logging_ErrorReports_Models_LambdaErrorReport_" data-uid="LambdaSharp.ALambdaFunction.RecordErrorReport(LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport)">RecordErrorReport(LambdaErrorReport)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Logging_ErrorReports_Models_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a> method is invoked record errors for later reporting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1485,9 +1545,9 @@ sent as response.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a></td>
         <td><span class="parametername">report</span></td>
-        <td><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> to record.</p>
+        <td><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> to record.</p>
 </td>
       </tr>
     </tbody>
@@ -1495,7 +1555,7 @@ sent as response.</p>
   <a id="LambdaSharp_ALambdaFunction_RecordException_" data-uid="LambdaSharp.ALambdaFunction.RecordException*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_RecordException_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordException(System.Exception)">RecordException(Exception)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">RecordException(Exception)</a> method is only invoked when Lambda function <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> instance
-has not yet been initialized of if an exception occurred while invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a>.</p>
+has not yet been initialized of if an exception occurred while invoking <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Logging_ErrorReports_Models_LambdaErrorReport_">RecordErrorReport(LambdaErrorReport)</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1521,8 +1581,8 @@ has not yet been initialized of if an exception occurred while invoking <a class
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logger.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a> method is invoked when a permanent
+  <h4 id="LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logging_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_" data-uid="LambdaSharp.ALambdaFunction.RecordFailedMessageAsync(LambdaSharp.Logging.LambdaLogLevel,LambdaSharp.ALambdaFunction.FailedMessageOrigin,System.String,System.Exception)">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logging_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a> method is invoked when a permanent
 failure is detected during processing and the message should be sent to the dead-letter queue if possible. If no
 dead-letter queue is configured, the original exception is rethrown instead.</p>
 </div>
@@ -1542,9 +1602,9 @@ dead-letter queue is configured, the original exception is rethrown instead.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
-        <td><p>The severity level of the failure. This should either be <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_ERROR">ERROR</a> or <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html#LambdaSharp_Logger_LambdaLogLevel_FATAL">FATAL</a>.</p>
+        <td><p>The severity level of the failure. This should either be <a class="xref" href="LambdaSharp.Logging.LambdaLogLevel.html#LambdaSharp_Logging_LambdaLogLevel_ERROR">ERROR</a> or <a class="xref" href="LambdaSharp.Logging.LambdaLogLevel.html#LambdaSharp_Logging_LambdaLogLevel_FATAL">FATAL</a>.</p>
 </td>
       </tr>
       <tr>
@@ -1651,66 +1711,6 @@ queued background work has completed before completing the active invocation.</p
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_SendEvent_" data-uid="LambdaSharp.ALambdaFunction.SendEvent*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ALambdaFunction.SendEvent``1(System.String,System.String,``0,System.Collections.Generic.IEnumerable{System.String})">SendEvent&lt;T&gt;(String, String, T, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event will be forwarded to the default EventBridge by LambdaSharp.Core (requires Core Services to be enabled).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void SendEvent&lt;T&gt;(string source, string detailType, T details, IEnumerable&lt;string&gt; resources = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>Name of the event source.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">detailType</span></td>
-        <td><p>Free-form string used to decide what fields to expect in the event detail.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">details</span></td>
-        <td><p>Data-structure to serialize as a JSON string. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">resources</span></td>
-        <td><p>Optional AWS or custom resources, identified by unique identifier (e.g. ARN), which the event primarily concerns. Any number, including zero, may be present.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="LambdaSharp_ALambdaFunction_SerializeJson_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_SerializeJson_System_Object_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson(System.Object)">SerializeJson(Object)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(Object)</a> method serializes an instance to a JSON <code>string</code>.</p>
@@ -1757,13 +1757,59 @@ protected string SerializeJson(object value)</code></pre>
   </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
-  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#Log(LambdaSharp.Logger.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_DebugLoggingEnabled_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#DebugLoggingEnabled*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_DebugLoggingEnabled" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#DebugLoggingEnabled">ILambdaSharpLogger.DebugLoggingEnabled</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ILambdaLogLevelLogger.Log(LambdaLogLevel level, Exception exception, string format, params object[] arguments)</code></pre>
+    <pre><code class="lang-csharp hljs">bool ILambdaSharpLogger.DebugLoggingEnabled { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Info_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#Info*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Info" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#Info">ILambdaSharpLogger.Info</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILambdaSharpInfo ILambdaSharpLogger.Info { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.Logging.ILambdaSharpInfo.html">ILambdaSharpInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Log_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#Log*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Log_LambdaSharp_Logging_LambdaLogLevel_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#Log(LambdaSharp.Logging.LambdaLogLevel,System.Exception,System.String,System.Object[])">ILambdaSharpLogger.Log(LambdaLogLevel, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ILambdaSharpLogger.Log(LambdaLogLevel level, Exception exception, string format, params object[] arguments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1776,7 +1822,7 @@ protected string SerializeJson(object value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.LambdaLogLevel.html">LambdaLogLevel</a></td>
         <td><span class="parametername">level</span></td>
         <td></td>
       </tr>
@@ -1797,13 +1843,13 @@ protected string SerializeJson(object value)</code></pre>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_LogRecord_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#LogRecord*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_LogRecord_LambdaSharp_Records_ALambdaRecord_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logger#ILambdaLogLevelLogger#LogRecord(LambdaSharp.Records.ALambdaRecord)">ILambdaLogLevelLogger.LogRecord(ALambdaRecord)</h4>
+  <a id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_LogRecord_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#LogRecord*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_LogRecord_LambdaSharp_Logging_ALambdaLogRecord_" data-uid="LambdaSharp.ALambdaFunction.LambdaSharp#Logging#ILambdaSharpLogger#LogRecord(LambdaSharp.Logging.ALambdaLogRecord)">ILambdaSharpLogger.LogRecord(ALambdaLogRecord)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ILambdaLogLevelLogger.LogRecord(ALambdaRecord record)</code></pre>
+    <pre><code class="lang-csharp hljs">void ILambdaSharpLogger.LogRecord(ALambdaLogRecord record)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1816,7 +1862,7 @@ protected string SerializeJson(object value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.Records.ALambdaRecord.html">ALambdaRecord</a></td>
+        <td><a class="xref" href="LambdaSharp.Logging.ALambdaLogRecord.html">ALambdaLogRecord</a></td>
         <td><span class="parametername">record</span></td>
         <td></td>
       </tr>
@@ -1824,41 +1870,7 @@ protected string SerializeJson(object value)</code></pre>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogDebug_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogDebug(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ILambdaLogLevelLoggerEx.LogMetric(ILambdaLogLevelLogger, String, IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
+      <a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a>
   </div>
 </article>
           </div>

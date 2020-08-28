@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Namespace LambdaSharp.Exceptions
@@ -113,7 +113,7 @@ exceptions thrown by <a class="xref" href="LambdaSharp.LambdaConfig.html">Lambda
       <section><p>The <a class="xref" href="LambdaSharp.Exceptions.ALambdaException.html">ALambdaException</a> abstract class is the recommended base class
 for all runtime exceptions. It implements the <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html#LambdaSharp_Exceptions_ILambdaExceptionFingerprinter_FingerprintValue">FingerprintValue</a>
 property to create a unique fingerprint from the exception type and the unformatted exception message.
-This allows the generated <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances to be grouped together by a
+This allows the generated <a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instances to be grouped together by a
 log aggregator.</p>
 </section>
       <h4><a class="xref" href="LambdaSharp.Exceptions.LambdaAbortException.html">LambdaAbortException</a></h4>
@@ -142,14 +142,14 @@ exception is used to wrap the unexpected exception.</p>
       <section><p>The <a class="xref" href="LambdaSharp.Exceptions.LambdaRetriableException.html">LambdaRetriableException</a> class represents a runtime error that
 can be retried. If the Lambda function allows retries, this exception will be logged
 as having a <em>Warning</em> severity rather than an <em>Error</em> severity.
-See <a class="xref" href="LambdaSharp.Logger.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
+See <a class="xref" href="LambdaSharp.Logging.LambdaLogLevel.html">LambdaLogLevel</a> for a description of the severity levels.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a></h4>
       <section><p>The <a class="xref" href="LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html">ILambdaExceptionFingerprinter</a> interface is used to indicate that
 an exception type has custom fingerprinting logic. The exception fingerprint is used
-by the <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance to allow a log
+by the <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance to allow a log
 aggregator to group together related errors.</p>
 </section>
 </article>

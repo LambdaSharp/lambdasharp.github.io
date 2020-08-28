@@ -16,7 +16,7 @@
     <meta name="title" content="Setup LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Getting started with LambdaSharp">
     <meta name="keywords" content="video, tutorial, getting started, overview, setup, install, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Setup LambdaSharp | LambdaSharp - Serverless .NET for AWS">
@@ -213,8 +213,10 @@ Done (finished: 8/15/2019 2:53:45 PM; duration: 00:00:33.2020715)
 <p>The <code>RollbarProjectPattern</code> parameter is used to flexibly configure how Rollbar projects are named based on the module information. The following placeholders values are available for the pattern (assuming a module named <code>Acme.Example.Module:123@origin</code>):</p>
 <ul>
 <li><code>{ModuleFullName}</code>: The full module name (e.g. <code>Acme.Example.Module</code>)</li>
-<li><code>{ModuleNamespace}</code>: The module namespace (e.g. <code>Acme</code>)</li>
+<li><code>{ModuleId}</code>: The name of the CloudFormation stack (e.g. <code>Dev-Acme-Example-Module</code>)</li>
+<li><code>{ModuleIdNoTierPrefix}</code>: The name of the CloudFormation stack without the deployment tier prefix (e.g. <code>Acme-Example-Module</code>)</li>
 <li><code>{ModuleName}</code>: The module name (e.g. <code>Example.Module</code>)</li>
+<li><code>{ModuleNamespace}</code>: The module namespace (e.g. <code>Acme</code>)</li>
 </ul>
 <p>During execution, the placeholders values are substituted with information from the module to generate the actual Rollbar project name. Note a Rollbar project name must start with a letter; can contain letters, numbers, spaces, underscores, hyphens, periods, and commas. If the generated Rollbar project name exceeds 32 characters, the last 6 characters in the available project name are substituted with 6 characters from the SHA256 hash of the entire name to ensure uniqueness.</p>
 <p>The default pattern is <code>{ModuleFullName}</code> when no <code>RollbarProjectPattern</code> parameter is specified.</p>

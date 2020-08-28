@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class ALambdaFinalizerFunction
@@ -116,7 +116,7 @@ LambdaSharp module.</p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a></div>
+    <div><a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -187,7 +187,7 @@ LambdaSharp module.</p>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_HandleFailedInitializationAsync_System_IO_Stream_">ALambdaFunction.HandleFailedInitializationAsync(Stream)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logger_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordFailedMessageAsync_LambdaSharp_Logging_LambdaLogLevel_LambdaSharp_ALambdaFunction_FailedMessageOrigin_System_String_System_Exception_">ALambdaFunction.RecordFailedMessageAsync(LambdaLogLevel, ALambdaFunction.FailedMessageOrigin, String, Exception)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">ALambdaFunction.DeserializeJson&lt;T&gt;(Stream)</a>
@@ -214,7 +214,7 @@ LambdaSharp module.</p>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RunTask_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_">ALambdaFunction.RunTask(Func&lt;Task&gt;, CancellationToken)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_ErrorReports_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordErrorReport_LambdaSharp_Logging_ErrorReports_Models_LambdaErrorReport_">ALambdaFunction.RecordErrorReport(LambdaErrorReport)</a>
     </div>
     <div>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_RecordException_System_Exception_">ALambdaFunction.RecordException(Exception)</a>
@@ -250,32 +250,38 @@ LambdaSharp module.</p>
       <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogFatal_System_Exception_System_String_System_Object___">ALambdaFunction.LogFatal(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_">ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_">ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_LambdaMetricUnit_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.LogMetric(String, Double, LambdaMetricUnit, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__">ALambdaFunction.LogMetric(IEnumerable&lt;LambdaMetric&gt;)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__">ALambdaFunction.LogMetric(IEnumerable&lt;LambdaMetric&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.LogMetric(IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ALambdaFunction.LogMetric(IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SendEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">ALambdaFunction.SendEvent&lt;T&gt;(String, String, T, IEnumerable&lt;String&gt;)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">ALambdaFunction.LogEvent&lt;T&gt;(String, String, T, IEnumerable&lt;String&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_Log_LambdaSharp_Logger_LambdaLogLevel_System_Exception_System_String_System_Object___">ALambdaFunction.ILambdaLogLevelLogger.Log(LambdaLogLevel, Exception, String, Object[])</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_DebugLoggingEnabled">ALambdaFunction.ILambdaSharpLogger.DebugLoggingEnabled</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logger_ILambdaLogLevelLogger_LogRecord_LambdaSharp_Records_ALambdaRecord_">ALambdaFunction.ILambdaLogLevelLogger.LogRecord(ALambdaRecord)</a>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Info">ALambdaFunction.ILambdaSharpLogger.Info</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_Log_LambdaSharp_Logging_LambdaLogLevel_System_Exception_System_String_System_Object___">ALambdaFunction.ILambdaSharpLogger.Log(LambdaLogLevel, Exception, String, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_LogRecord_LambdaSharp_Logging_ALambdaLogRecord_">ALambdaFunction.ILambdaSharpLogger.LogRecord(ALambdaLogRecord)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Finalizer.html">LambdaSharp.Finalizer</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
   <h5 id="LambdaSharp_Finalizer_ALambdaFinalizerFunction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ALambdaFinalizerFunction : ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;, ILambdaLogLevelLogger</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ALambdaFinalizerFunction : ALambdaCustomResourceFunction&lt;FinalizerProperties, FinalizerAttributes&gt;, ILambdaSharpLogger</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -559,7 +565,7 @@ when AWS CloudFormation attempts to update a custom resource.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task UpdateDeployment(FinalizerProperties next, FinalizerProperties previous)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Task UpdateDeployment(FinalizerProperties current, FinalizerProperties previous)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -573,7 +579,7 @@ when AWS CloudFormation attempts to update a custom resource.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a></td>
-        <td><span class="parametername">next</span></td>
+        <td><span class="parametername">current</span></td>
         <td><p>The <a class="xref" href="LambdaSharp.Finalizer.FinalizerProperties.html">FinalizerProperties</a> instance with the next deployment information.</p>
 </td>
       </tr>
@@ -603,41 +609,7 @@ when AWS CloudFormation attempts to update a custom resource.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLogger.html">ILambdaLogLevelLogger</a>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogDebug_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogDebug(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogInfo(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogWarn_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogWarn(ILambdaLogLevelLogger, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogError_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogError(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsInfo_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsInfo(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception)</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogErrorAsWarning_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogErrorAsWarning(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogFatal_LambdaSharp_Logger_ILambdaLogLevelLogger_System_Exception_System_String_System_Object___">ILambdaLogLevelLoggerEx.LogFatal(ILambdaLogLevelLogger, Exception, String, Object[])</a>
-  </div>
-  <div>
-      <a class="xref" href="LambdaSharp.Logger.ILambdaLogLevelLoggerEx.html#LambdaSharp_Logger_ILambdaLogLevelLoggerEx_LogMetric_LambdaSharp_Logger_ILambdaLogLevelLogger_System_String_System_Collections_Generic_IEnumerable_LambdaSharp_LambdaMetric__System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_Dictionary_System_String_System_String__">ILambdaLogLevelLoggerEx.LogMetric(ILambdaLogLevelLogger, String, IEnumerable&lt;LambdaMetric&gt;, IEnumerable&lt;String&gt;, Dictionary&lt;String, String&gt;)</a>
+      <a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a>
   </div>
 </article>
           </div>

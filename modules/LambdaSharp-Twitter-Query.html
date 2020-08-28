@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp.Twitter.Query - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Documentation for LambdaSharp.Twitter.Query module">
     <meta name="keywords" content="module, twitter, query, documentation, overview, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp.Twitter.Query - LambdaSharp Module | LambdaSharp - Serverless .NET for AWS">
@@ -95,9 +95,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="module-lambdasharptwitterquery">Module: LambdaSharp.Twitter.Query</h1>
 
-<p><em>Version:</em> 0.8.0.7</p>
+<p><em>Version:</em> 0.8.1.0</p>
 <h2 id="overview">Overview</h2>
-<p>The <code>LambdaSharp.Twitter.Query</code> module conducts a Twitter search at regular intervals and publishes found tweets to a dedicated SNS topic.</p>
+<p>The <em>LambdaSharp.Twitter.Query</em> module conducts a Twitter search at regular intervals and publishes found tweets to a dedicated SNS topic.</p>
 <p>This module requires a Twitter developer account. See the <a href="https://developer.twitter.com/en/docs/basics/getting-started">Twitter Developer Documentation</a> for more information.</p>
 <h2 id="resource-types">Resource Types</h2>
 <p>This module defines no resource types.</p>
@@ -135,33 +135,33 @@
 </dd>
 <dt><code>TwitterSentimentFilter</code></dt>
 <dd>
-<p>The <code>TwitterSentimentFilter</code> parameter sets the sentiment filter (one of: SKIP, POSITIVE, NEUTRAL, NEGATIVE, MIXED, ALL).</p>
+<p>The <code>TwitterSentimentFilter</code> parameter sets the sentiment filter (one of: <code>SKIP</code>, <code>POSITIVE</code>, <code>NEUTRAL</code>, <code>NEGATIVE</code>, <code>MIXED</code>, <code>ALL</code>).</p>
 <p><b>NOTE:</b> Analyzing tweets for sentiment incurs additional costs. Please check pricing for the <a href="https://aws.amazon.com/comprehend/pricing/">AWS Comprehend Sentiment Analysis API</a>.</p>
 <p><i>Required</i>: No (Default: SKIP)</p>
 <p><i>Type:</i> String</p>
-<p>The <code>TwitterSentimentFilter</code> must have one of the following values:</p>
+<p>The <code>TwitterSentimentFilter</code> parameter must have one of the following values:</p>
 <dl>
-<dt>ALL</dt>
+<dt><code>ALL</code></dt>
 <dd>
 <p>Analyze and publish all tweets.</p>
 </dd>
-<dt>MIXED</dt>
+<dt><code>MIXED</code></dt>
 <dd>
 <p>Only publish tweets with mixed sentiment.</p>
 </dd>
-<dt>NEGATIVE</dt>
+<dt><code>NEGATIVE</code></dt>
 <dd>
 <p>Only publish tweets with negative sentiment.</p>
 </dd>
-<dt>NEUTRAL</dt>
+<dt><code>NEUTRAL</code></dt>
 <dd>
 <p>Only publish tweets with neutral sentiment.</p>
 </dd>
-<dt>POSITIVE</dt>
+<dt><code>POSITIVE</code></dt>
 <dd>
 <p>Only publish tweets with positive sentiment.</p>
 </dd>
-<dt>SKIP</dt>
+<dt><code>SKIP</code></dt>
 <dd>
 <p>Publish all tweets without analyzing them.</p>
 </dd>

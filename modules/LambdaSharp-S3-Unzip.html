@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp::S3::Unzip - LambdaSharp.S3.IO Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Documentation for LambdaSharp::S3::Unzip resource type">
     <meta name="keywords" content="module, s3, io, documentation, resource, type, properties, attributes, unzip, package, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp::S3::Unzip - LambdaSharp.S3.IO Module | LambdaSharp - Serverless .NET for AWS">
@@ -127,7 +127,7 @@ Properties:
 </dd>
 <dt><code>Encoding</code></dt>
 <dd>
-<p>The <code>Encoding</code> property sets the content encoding to apply to all files copied from the zip package. The value must be one of: <code>NONE</code>, <code>BROTLI</code>, or <code>GZIP</code>. In addition, the encoded file is also annotated with a <code>Content-Encoding</code> header matching the compression algorithm.</p>
+<p>The <code>Encoding</code> property sets the content encoding to apply to all files copied from the zip package. The value must be one of: <code>NONE</code>, <code>BROTLI</code>, or <code>GZIP</code>. The encoded files are annotated with a <code>Content-Encoding</code> header matching the compression algorithm.</p>
 <p>Note that <code>BROTLI</code> encoding is only valid for <em>https://</em> connections.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: String</p>

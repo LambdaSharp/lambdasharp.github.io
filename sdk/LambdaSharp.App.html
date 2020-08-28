@@ -13,24 +13,24 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ILambdaErrorReportGenerator
+    <meta name="title" content="Namespace LambdaSharp.App
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
-    <meta property="og:title" content="Interface ILambdaErrorReportGenerator
+    <meta property="og:title" content="Namespace LambdaSharp.App
    | LambdaSharp - Serverless .NET for AWS">
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.ILambdaErrorReportGenerator.html">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.App.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
     <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Interface ILambdaErrorReportGenerator
+    <meta name="twitter:title" content="Namespace LambdaSharp.App
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="twitter:site" content="@lambdasharp">
     <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
@@ -46,9 +46,9 @@
     
     <meta property="docfx:newtab" content="true">
   
-    <title>Interface ILambdaErrorReportGenerator
+    <title>Namespace LambdaSharp.App
    | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.ILambdaErrorReportGenerator.html">
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.App.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -96,95 +96,24 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.ILambdaErrorReportGenerator">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.App">
   
-  
-  <h1 id="LambdaSharp_ILambdaErrorReportGenerator" data-uid="LambdaSharp.ILambdaErrorReportGenerator" class="text-break">Interface ILambdaErrorReportGenerator
+  <h1 id="LambdaSharp_App" data-uid="LambdaSharp.App" class="text-break">Namespace LambdaSharp.App
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a> interface is used to create
-<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.html">LambdaSharp</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_ILambdaErrorReportGenerator_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ILambdaErrorReportGenerator</code></pre>
-  </div>
-  <h3 id="methods">Methods
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
   </h3>
-  <a id="LambdaSharp_ILambdaErrorReportGenerator_CreateReport_" data-uid="LambdaSharp.ILambdaErrorReportGenerator.CreateReport*"></a>
-  <h4 id="LambdaSharp_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ILambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ILambdaErrorReportGenerator.html#LambdaSharp_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
-<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance from the provided parameters.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">LambdaErrorReport CreateReport(string requestId, string level, Exception exception, string format = null, params object[] args)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">requestId</span></td>
-        <td><p>The AWS request ID.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">level</span></td>
-        <td><p>The severity level of the error report.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exception</span></td>
-        <td><p>An optional exception instance.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">format</span></td>
-        <td><p>An optional message.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span>[]</td>
-        <td><span class="parametername">args</span></td>
-        <td><p>Optional arguments for the error message.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a></td>
-        <td><p>A new <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="LambdaSharp_ILambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>See <cref name="FormatMessage(string,object[])"></cref> for details on how the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter
-impacts the processing of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>
-</div>
+      <h4><a class="xref" href="LambdaSharp.App.ALambdaComponent.html">ALambdaComponent</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.App.ALambdaComponent.html">ALambdaComponent</a> class is used for creating Blazor components with direct access to all the <a class="xref" href="LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a> methods.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.App.LambdaSharpAppClient.html">LambdaSharpAppClient</a></h4>
+      <section><p>The <a class="xref" href="LambdaSharp.App.LambdaSharpAppClient.html">LambdaSharpAppClient</a> class is used to sending logs, metrics, and events to the app API.</p>
+</section>
+      <h4><a class="xref" href="LambdaSharp.App.WebAssemblyHostBuilderEx.html">WebAssemblyHostBuilderEx</a></h4>
+      <section><p>Static class with extension methods for initializing the <span class="xref">Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHostBuilder</span> instance.</p>
+</section>
 </article>
           </div>
           

@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class LambdaErrorReportGenerator
@@ -25,7 +25,7 @@
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
     <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
@@ -48,7 +48,7 @@
   
     <title>Class LambdaErrorReportGenerator
    | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -96,18 +96,15 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator">
   
   
-  <h1 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator" class="text-break">Class LambdaErrorReportGenerator
+  <h1 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator" class="text-break">Class LambdaErrorReportGenerator
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> class is used to create
-<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instances. Each Lambda function is
-initialized with an instance of <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a>
-class using its configuration and runtime settings.
-Use the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ErrorReportGenerator">ErrorReportGenerator</a> property to access
-the initialized <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance in the
-Lambda function.</p>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> class is used to create
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instances. Each Lambda function is
+initialized with an instance of <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a>
+class using its configuration and runtime settings.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -117,24 +114,24 @@ Lambda function.</p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="LambdaSharp.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a></div>
+    <div><a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.ErrorReports.html">LambdaSharp.ErrorReports</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.dll</h6>
-  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.Logging.ErrorReports.html">LambdaSharp.Logging.ErrorReports</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.Logging.dll</h6>
+  <h5 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class LambdaErrorReportGenerator : ILambdaErrorReportGenerator</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator__ctor_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.#ctor*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">LambdaErrorReportGenerator(String, String, String, String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance with the specified configuration settings.</p>
+  <a id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator__ctor_" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.#ctor*"></a>
+  <h4 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator__ctor_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">LambdaErrorReportGenerator(String, String, String, String, String, String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html">LambdaErrorReportGenerator</a> instance with the specified configuration settings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaErrorReportGenerator(string moduleId, string moduleInfo, string functionId, string functionName, string framework, string gitSha, string gitBranch)</code></pre>
+    <pre><code class="lang-csharp hljs">public LambdaErrorReportGenerator(string moduleId, string moduleInfo, string platform, string functionId, string functionName, string appId, string appName, string framework, string gitSha, string gitBranch)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -149,13 +146,19 @@ Lambda function.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">moduleId</span></td>
-        <td><p>The ID of the deployed LambdaSharp module.</p>
+        <td><p>The stack name of the deployed LambdaSharp module.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">moduleInfo</span></td>
         <td><p>The LambdaSharp module name and version.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">platform</span></td>
+        <td><p>The platform running the code.</p>
 </td>
       </tr>
       <tr>
@@ -168,6 +171,18 @@ Lambda function.</p>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">functionName</span></td>
         <td><p>The Lambda function name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appId</span></td>
+        <td><p>The ID of the deployed app.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">appName</span></td>
+        <td><p>The app name.</p>
 </td>
       </tr>
       <tr>
@@ -192,10 +207,10 @@ Lambda function.</p>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
-<a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance from the provided parameters.</p>
+  <a id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_CreateReport_" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.CreateReport*"></a>
+  <h4 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.CreateReport(System.String,System.String,System.Exception,System.String,System.Object[])">CreateReport(String, String, Exception, String, Object[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object___">CreateReport(String, String, Exception, String, Object[])</a> method create a new
+<a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instance from the provided parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -254,19 +269,19 @@ Lambda function.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a></td>
-        <td><p>A new <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReport.html">LambdaErrorReport</a> instance.</p>
+        <td><a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a></td>
+        <td><p>A new <a class="xref" href="LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html">LambdaErrorReport</a> instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object____remarks">Remarks</h5>
+  <h5 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_CreateReport_System_String_System_String_System_Exception_System_String_System_Object____remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>See <cref name="FormatMessage(string,object[])"></cref> for details on how the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter
 impacts the processing of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>
 </div>
-  <a id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.FormatMessage*"></a>
-  <h4 id="LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___" data-uid="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.FormatMessage(System.String,System.Object[])">FormatMessage(String, Object[])</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___">FormatMessage(String, Object[])</a> method behaves identically to the <span class="xref">System.String.Format(System.String,System.Object[])</span> method
+  <a id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_FormatMessage_" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.FormatMessage*"></a>
+  <h4 id="LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___" data-uid="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.FormatMessage(System.String,System.Object[])">FormatMessage(String, Object[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html#LambdaSharp_Logging_ErrorReports_LambdaErrorReportGenerator_FormatMessage_System_String_System_Object___">FormatMessage(String, Object[])</a> method behaves identically to the <span class="xref">System.String.Format(System.String,System.Object[])</span> method
 when the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter is not <code>null</code> and the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter is non-empty.
 If the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter is <code>null</code>, this method returns <code>null</code>. If the <code data-dev-comment-type="paramref" class="paramref">args</code> parameter is empty,
 this method return the value of the <code data-dev-comment-type="paramref" class="paramref">format</code> parameter.</p>
@@ -318,7 +333,7 @@ this method return the value of the <code data-dev-comment-type="paramref" class
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="LambdaSharp.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a>
+      <a class="xref" href="LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html">ILambdaErrorReportGenerator</a>
   </div>
 </article>
           </div>

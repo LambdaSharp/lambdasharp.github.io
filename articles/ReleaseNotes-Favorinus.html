@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Release notes for LambdaSharp &quot;Favorinus&quot; (v0.6)">
     <meta name="keywords" content="release, notes, favorinus, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.53.1.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp &quot;Favorinus&quot; Release (v0.6) | LambdaSharp - Serverless .NET for AWS">
@@ -271,7 +271,7 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <li>Added <code>ALambdaFunction.RunTask()</code> and <code>ALambdaFunction.AddPendingTask(Task)</code> to queue background operations that must complete before the Lambda invocation finishes.</li>
 <li>Added <code>HttpClient</code> with X-Ray tracing instrumentation to <code>ALambdaFunction</code> base class.</li>
 <li><code>ALambdaFunction</code> now unrolls <code>AggregateException</code> instances and reports errors individually.</li>
-<li><code>lash util delete-orphan-logs</code> replaces <code>delete-orphan-lambda-logs</code>, which now also delete orphaned API Gateway V1/V2 CloudWatch logs</li>
+<li><code>lash util delete-orphan-logs</code> replaces <code>delete-orphan-lambda-logs</code>, which now also delete orphaned API Gateway CloudWatch logs</li>
 </ul>
 <h4 id="fixes-2">Fixes</h4>
 <ul>
