@@ -205,6 +205,16 @@ Done (finished: 7/28/2020 10:41:24 AM; duration: 00:01:46.5435267)
 </code></pre>
 <h3 id="publish-modules-to-build-tier">Publish modules to build tier</h3>
 <p>Each module must now be built and published to the build deployment tier. The <code>--module-origin</code> option overwrites the origin identifier to the specified value.</p>
+<p>In addition, a build policy should specify which modules can be resolved during the build phase. The build policy ensures that no new dependencies are introduced by resolving module references only to specified versions. The following <code>build-policy.json</code> document specifies the modules and versions that are acceptable during the build phase. The build policy document is specified using the <code>--build-policy</code> command line option with a path to the JSON file.</p>
+<pre><code class="lang-json">{
+    &quot;Modules&quot;: {
+        &quot;Allow&quot;: [
+            &quot;LambdaSharp.Core:0.8.0.6@lambdasharp&quot;,
+            &quot;LambdaSharp.S3.IO:0.8.0.6@lambdasharp&quot;
+        ]
+    }
+}
+</code></pre>
 <blockquote>
 <p>NOTE: <code>lash publish</code> can build and publish multiple modules at once.</p>
 </blockquote>
@@ -217,6 +227,7 @@ lash publish ${LASH_OPTIONS} \
     --tier ${BUILD_TIER} \
     --prompts-as-errors \
     --module-origin ${MODULE_ORIGIN} \
+    --build-policy build-policy.json \
     My.Module
 </code></pre>
 <p><strong>Output:</strong></p>
