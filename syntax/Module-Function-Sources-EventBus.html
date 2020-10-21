@@ -111,6 +111,8 @@ Pattern: JSON
 <dt><code>Pattern</code></dt>
 <dd>
 <p>The <code>Pattern</code> attribute describes which events are routed to the Lambda function. For more information, see <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eventbridge-and-event-patterns.html">Events and Event Patterns in EventBridge</a> in the Amazon EventBridge User Guide.</p>
+<p>For better consistency with the SDK, the attributes can be capitalized and will be converted by the tool automatically. For example, <code>DetailType</code> becomes <code>detail-type</code>, <code>Source</code> becomes <code>source</code>, and so on. Note the renaming is only applied to top-level attributes.</p>
+<p><em>NOTE:</em> The <code>Resources</code> attribute defaults to <code>!Sub &quot;lambdasharp:tier:${Deployment::Tier}&quot;</code> when omitted. Use <code>Resources: null</code> to have no constraints on the <code>resources</code> attribute.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type</i>: JSON</p>
 </dd>
@@ -121,11 +123,11 @@ Pattern: JSON
 <pre><code class="lang-yaml">Sources:
   - EventBus: default
     Pattern:
-      source:
+      Source:
         - Sample.Event
-      detail-type:
+      DetailType:
         - MyEvent
-      resources:
+      Resources:
         - !Sub &quot;lambdasharp:tier:${Deployment::Tier}&quot;
 </code></pre>
 </article>

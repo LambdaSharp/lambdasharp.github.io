@@ -181,7 +181,7 @@ Done (finished: 8/16/2019 10:27:01 AM; duration: 00:00:04.5205374)
 <p>The generated <code>.csproj</code> file was updated to make it easier for contributors to deploy modules with their latest local changes by conditionally referencing the LambdaSharp nuget package or local LambdaSharp project depending on the <code>LAMBDASHARP</code> environment variable. This behavior was achieved by using conditionals in the <code>.csproj</code> file.</p>
 <pre><code class="lang-xml">&lt;ItemGroup&gt;
 &lt;PackageReference Condition=&quot;'$(LAMBDASHARP)'==''&quot; Include=&quot;LambdaSharp&quot; Version=&quot;0.7.0.*&quot;/&gt;
-&lt;ProjectReference Condition=&quot;'$(LAMBDASHARP)'!=''&quot; Include=&quot;$(LAMBDASHARP)/src/LambdaSharp/LambdaSharp.csproj&quot; /&gt;
+&lt;ProjectReference Condition=&quot;'$(LAMBDASHARP)'!=''&quot; Include=&quot;$(LAMBDASHARP)\src\LambdaSharp\LambdaSharp.csproj&quot; /&gt;
 &lt;/ItemGroup&gt;
 </code></pre>
 <h3 id="new-bucket-command">New Bucket Command</h3>

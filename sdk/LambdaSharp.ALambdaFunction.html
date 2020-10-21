@@ -211,7 +211,7 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
 </div>
   <a id="LambdaSharp_ALambdaFunction_DebugLoggingEnabled_" data-uid="LambdaSharp.ALambdaFunction.DebugLoggingEnabled*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_DebugLoggingEnabled" data-uid="LambdaSharp.ALambdaFunction.DebugLoggingEnabled">DebugLoggingEnabled</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property indicates if the the requests received and responses emitted
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property indicates if the requests received and responses emitted
 by this Lambda function should be shown in the CloudWatch logs. This can be useful to determine check for
 issues caused by inconsistencies in serialization or deserialization.</p>
 </div>
@@ -696,6 +696,33 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
       </tr>
     </tbody>
   </table>
+  <a id="LambdaSharp_ALambdaFunction_ForceLambdaColdStart_" data-uid="LambdaSharp.ALambdaFunction.ForceLambdaColdStart*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_ForceLambdaColdStart_System_String_" data-uid="LambdaSharp.ALambdaFunction.ForceLambdaColdStart(System.String)">ForceLambdaColdStart(String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ForceLambdaColdStart_System_String_">ForceLambdaColdStart(String)</a> method causes the Lambda runtime to re-initialize as if a cold start had occurred. This methos is useful
+when the global environment is corrupted and only a restart can fix it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ForceLambdaColdStart(string reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_" data-uid="LambdaSharp.ALambdaFunction.FunctionHandlerAsync(System.IO.Stream,Amazon.Lambda.Core.ILambdaContext)">FunctionHandlerAsync(Stream, ILambdaContext)</h4>
   <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_FunctionHandlerAsync_System_IO_Stream_Amazon_Lambda_Core_ILambdaContext_">FunctionHandlerAsync(Stream, ILambdaContext)</a> method is the entry point for the Lambda function.
@@ -1160,8 +1187,110 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
 Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogError_System_Exception_">LogError(Exception)</a>.</p>
 </div>
   <a id="LambdaSharp_ALambdaFunction_LogEvent_" data-uid="LambdaSharp.ALambdaFunction.LogEvent*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogEvent__1___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogEvent``1(``0,System.Collections.Generic.IEnumerable{System.String})">LogEvent&lt;T&gt;(T, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event is forwarded to the configured EventBridge. The 'detail-type' property is set to the full type name of the detail value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogEvent&lt;T&gt;(T detail, IEnumerable&lt;string&gt; resources = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">detail</span></td>
+        <td><p>Data-structure to serialize as a JSON string. If value is already a <pre><code>string</code></pre>, it is sent as-is. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Optional AWS or custom resources, identified by unique identifier (e.g. ARN), which the event primarily concerns. Any number, including zero, may be present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogEvent_" data-uid="LambdaSharp.ALambdaFunction.LogEvent*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_LogEvent__1_System_String___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogEvent``1(System.String,``0,System.Collections.Generic.IEnumerable{System.String})">LogEvent&lt;T&gt;(String, T, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event is forwarded to the configured EventBridge. The 'detail-type' property is set to the full type name of the detail value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LogEvent&lt;T&gt;(string source, T detail, IEnumerable&lt;string&gt; resources = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Name of the event source.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">detail</span></td>
+        <td><p>Data-structure to serialize as a JSON string. If value is already a <pre><code>string</code></pre>, it is sent as-is. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">resources</span></td>
+        <td><p>Optional AWS or custom resources, identified by unique identifier (e.g. ARN), which the event primarily concerns. Any number, including zero, may be present.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_ALambdaFunction_LogEvent_" data-uid="LambdaSharp.ALambdaFunction.LogEvent*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.ALambdaFunction.LogEvent``1(System.String,System.String,``0,System.Collections.Generic.IEnumerable{System.String})">LogEvent&lt;T&gt;(String, String, T, IEnumerable&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event will be forwarded to the default EventBridge by LambdaSharp.Core (requires Core Services to be enabled).</p>
+  <div class="markdown level1 summary"><p>Send a CloudWatch event with optional event details and resources it applies to. This event is forwarded to the configured EventBridge.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

@@ -116,11 +116,11 @@ Name: String
 </dd>
 </dl>
 <h2 id="examples">Examples</h2>
-<p>Define a schedule event to invokes an associated Lambda function using a <code>cron</code> expression.</p>
+<p>Define a schedule event source to invokes an associated Lambda function using a <code>cron</code> expression.</p>
 <pre><code class="lang-yaml">Sources:
   - Schedule: cron(0 12 * * ? *)
 </code></pre>
-<p>Define a named schedule event using a <code>rate</code> expression.</p>
+<p>Define a named schedule event source using a <code>rate</code> expression.</p>
 <pre><code class="lang-yaml">Sources:
   - Schedule: rate(1 minute)
     Name: MyEvent

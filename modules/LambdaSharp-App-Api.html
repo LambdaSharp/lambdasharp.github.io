@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="module-lambdasharpappapi">Module: LambdaSharp.App.Api</h1>
 
-<p><em>Version:</em> 0.8.1.1</p>
+<p><em>Version:</em> 0.8.1.2</p>
 <h2 id="overview">Overview</h2>
 <p>The <em>LambdaSharp.App.Api</em> module is used by the <code>App</code> declaration to create an API Gateway REST API proxy for CloudWatch Logs, Metrics, and Events that is used by the app. The API can be configured to limit access using the <code>CoreOrigin</code> parameter. Access to the API is secured by an API key that is computed from the CloudFormation stack identifier and the app version identifier. Using the <code>DevMode</code> parameter, the API can be configured for more lenient access and a simplified API key, which allows for accessing it from <em>localhost</em>.</p>
 <h2 id="resource-types">Resource Types</h2>
@@ -148,9 +148,15 @@
 <p><i>Type:</i> Number</p>
 <p><i>Value Constraints:</i> Minimum value of 10.</p>
 </dd>
+<dt><code>EventSource</code></dt>
+<dd>
+<p>The <code>EventSource</code> parameter specifies the 'Source' property override for app events. When empty, the 'Source' property is set by the app request.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
 <dt><code>AppVersionId</code></dt>
 <dd>
-<p>The <code>AppVersionId</code> parameter specifies the app version identifier. This value is used to construct the complete API key when <code>DevMode</code> is <code>Disabled</code>.</p>
+<p>The <code>AppVersionId</code> parameter specifies the app version identifier. This value is used to construct the complete API key.</p>
 <p><i>Required</i>: Yes</p>
 <p><i>Type:</i> String</p>
 </dd>
@@ -173,16 +179,15 @@
 </dd>
 </dl>
 <h2 id="output-values">Output Values</h2>
-<p>stApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/${RestApiStage}&quot;</p>
 <dl>
 <dt><code>ApiKey</code></dt>
 <dd>
 <p>The <code>ApiKey</code> output contains the CloudFormation stack identifier portion of the API key.</p>
 <p><i>Type:</i> String</p>
 </dd>
-<dt><code>ApiUrl</code></dt>
+<dt><code>Url</code></dt>
 <dd>
-<p>The <code>ApiUrl</code> output contains the URL of the api endpoint used by the <code>LambdaSharpAppClient</code>.</p>
+<p>The <code>Url</code> output contains the URL of the api endpoint used by the <code>LambdaSharpAppClient</code>.</p>
 <p><i>Type:</i> String</p>
 </dd>
 <dt><code>DomainName</code></dt>

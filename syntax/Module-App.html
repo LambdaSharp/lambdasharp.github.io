@@ -112,6 +112,7 @@ Api:
   CorsOrigin: String or Expression
   BurstLimit: Number or Expression
   RateLimit: Number or Expression
+  EventSource: String or Expression
 Bucket:
   CloudFrontOriginAccessIdentity: String or Expression
   ContentEncoding: String or Expression
@@ -119,6 +120,8 @@ Client:
   ApiUrl: String or Expression
 AppSettings:
   String: Expression
+Sources:
+  - SourceDefinition
 </code></pre>
 <h2 id="properties">Properties</h2>
 <dl>
@@ -151,6 +154,12 @@ AppSettings:
 <p>The <code>RateLimit</code> attribute specifies the maximum number of requests per second to the app API over a long period of time. When omitted, the default value is 100.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Number</p>
+</dd>
+<dt><code>EventSource</code></dt>
+<dd>
+<p>The <code>EventSource</code> attribute specifies a 'Source' property override for app events. When empty, the 'Source' property is set by the app request. When omitted, the default value is the full module name, followed by the logical ID of the app. For example, <code>My.Module::MyApp</code>.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
 </dd>
 </dl>
 </dd>
@@ -226,6 +235,12 @@ AppSettings:
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Number</p>
 </dd>
+<dt><code>Sources</code></dt>
+<dd>
+<p>The <code>Sources</code> section specifies zero or more source definitions for events to publish to the LambdaSharp App EventBus.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: List of <a href="Module-App-Sources.html">Source Definition</a></p>
+</dd>
 <dt><code>Pragmas</code></dt>
 <dd>
 <p>The <code>Pragmas</code> section specifies directives that change the default compiler behavior.</p>
@@ -244,6 +259,7 @@ AppSettings:
 <ul>
 <li><code>${AppName}::Bucket</code> is a CloudFormation stack using the <a href="../modules/LambdaSharp-App-Bucket.html">LambdaSharp.App.Bucket</a> module.</li>
 <li><code>${AppName}::Api</code> is a nested CloudFormation stack using the <a href="../modules/LambdaSharp-App-Api.html">LambdaSharp.App.Api</a> module.</li>
+<li><code>${AppName}::EventBus</code> is an optional nested CloudFormation stack using the <a href="../modules/LambdaSharp-App-Api.html">LambdaSharp.App.EventBus</a> module. It is only created when the app has event sources.</li>
 </ul>
 <p>The nested stacks have output values that can be used to initialize other resources in the stack.</p>
 <h2 id="examples">Examples</h2>
