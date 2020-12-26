@@ -16,7 +16,7 @@
     <meta name="title" content="Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="List of LambdaSharp samples">
     <meta name="keywords" content="tutorial, sample, example, getting started, overview, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Sample Applications and Patterns - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
@@ -120,42 +120,42 @@
 <p>API Gateway allows you to build a fully managed, serverless REST API. API endpoints are automatically validated by API Gateway before invoking an attached Lambda function.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">LambdaSharp.ApiGateway.ALambdaApiGatewayFunction</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">LambdaSharp.ApiGateway.ALambdaApiGatewayFunction</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/ApiSample">ApiSample</a></li>
 </ul>
 <h2 id="web-sockets-using-api-gateway-v2">Web Sockets using API Gateway V2</h2>
 <p>API Gateway V2 allows you to build a fully managed, serverless Web Socket API. The WebSocket routes are automatically validated by API Gateway V2 before invoking an attached Lambda function.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">LambdaSharp.ApiGateway.ALambdaApiGatewayFunction</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">LambdaSharp.ApiGateway.ALambdaApiGatewayFunction</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/WebSocketsChat-Sample">WebSocketChat-Sample</a></li>
 </ul>
 <h2 id="sns-topic">SNS Topic</h2>
 <p>The Simple Notification Service (SNS) provides pub-sub capabilities at scale. The base class handles deserialization of incoming messages and automatic handling of permanent failures.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">LambdaSharp.SimpleNotificationService.ALambdaTopicFunction&lt;TMessage&gt;</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">LambdaSharp.SimpleNotificationService.ALambdaTopicFunction&lt;TMessage&gt;</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/SnsSample">SnsSample</a></li>
 </ul>
 <h2 id="sqs-queue">SQS Queue</h2>
 <p>The Simple Queue Service (SQS) provides reliable, discrete message delivery. The base class handles deserialization of incoming messages, automatic handling of permanent failures, and improved handling of partial failures for batched messages.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">LambdaSharp.SimpleQueueService.ALambdaQueueFunction&lt;TMessage&gt;</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">LambdaSharp.SimpleQueueService.ALambdaQueueFunction&lt;TMessage&gt;</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/SqsSample">SqsSample</a></li>
 </ul>
 <h2 id="scheduled-event">Scheduled Event</h2>
 <p>A common use-case for Lambda functions is repeating a task at regular intervals. The included base class makes it easy to handle multiple scheduled events at once.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.Schedule.ALambdaScheduleFunction.html">LambdaSharp.Schedule.ALambdaScheduleFunction</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.Schedule.ALambdaScheduleFunction.html">LambdaSharp.Schedule.ALambdaScheduleFunction</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/ScheduleSample">ScheduleSample</a></li>
 </ul>
 <h2 id="finalizer">Finalizer</h2>
 <p>The <em>Finalizer</em> is a function that is run automatically a part CloudFormation stack operation. It is used to initialize resources as part of the CloudFormation stack creation or to tear-down/clean-up resources before the stack is deleted.</p>
 <p><strong>Related</strong>:</p>
 <ul>
-<li>Base class: <a class="xref" href="../sdk/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">LambdaSharp.Finalizer.ALambdaFinalizerFunction</a></li>
+<li>Base class: <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">LambdaSharp.Finalizer.ALambdaFinalizerFunction</a></li>
 <li>Sample: <a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/FinalizerSample">FinalizerSample</a></li>
 </ul>
 <h2 id="custom-resource-type">Custom Resource Type</h2>
@@ -177,7 +177,8 @@
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

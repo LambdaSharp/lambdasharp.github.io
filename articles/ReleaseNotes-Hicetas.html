@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Release notes for LambdaSharp &quot;Hicetas&quot; (v0.8)">
     <meta name="keywords" content="release, notes, hicetas, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
@@ -93,13 +93,13 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-hicetas-release-v0812---2020-10-20">LambdaSharp &quot;Hicetas&quot; Release (v0.8.1.2) - 2020-10-20</h1>
+<h1 id="lambdasharp-hicetas-release-v0814---2020-11-20">LambdaSharp &quot;Hicetas&quot; Release (v0.8.1.4) - 2020-11-20</h1>
 
 <blockquote>
 <p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
 </blockquote>
 <h2 id="whats-new">What's New</h2>
-<p>This release introduces some key new capabilities for Lambda functions and the <em>LambdaSharp.Core</em> module. The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new methods for <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">sending events</a>, <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__">capturing metrics</a>, and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">logging debug statements</a>. In addition, the <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. Kinesis Firehose is more cost effective, scales automatically, and also provides built-in integration with S3 for retaining ingested logs. Finally, during the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
+<p>This release introduces some key new capabilities for Lambda functions and the <em>LambdaSharp.Core</em> module. The <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new methods for <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">sending events</a>, <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__">capturing metrics</a>, and <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">logging debug statements</a>. In addition, the <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. Kinesis Firehose is more cost effective, scales automatically, and also provides built-in integration with S3 for retaining ingested logs. Finally, during the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
 <h3 id="upgrading-from-v07-to-v08">Upgrading from v0.7 to v0.8</h3>
 <ol>
 <li>Ensure all modules are deployed with v0.6.1 or later</li>
@@ -131,8 +131,8 @@
 &lt;PackageReference Include=&quot;Amazon.Lambda.Serialization.Json&quot; Version=&quot;1.5.0&quot; /&gt;
 &lt;PackageReference Include=&quot;Newtonsoft.Json&quot; Version=&quot;12.0.3&quot; /&gt;
 </code></pre>
-<p>In addition, Lambda functions no longer need to declare the default serializer with the <code>[assembly: LambdaSerializer(...)]</code> attribute, unless a custom serializer is required. Instead, the serializer is defined by the base class (<a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>). This change was made to ease the transition to the new <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> serializer in a future release.</p>
-<p>Finally, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
+<p>In addition, Lambda functions no longer need to declare the default serializer with the <code>[assembly: LambdaSerializer(...)]</code> attribute, unless a custom serializer is required. Instead, the serializer is defined by the base class (<a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>). This change was made to ease the transition to the new <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> serializer in a future release.</p>
+<p>Finally, the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
 <h2 id="new-lambdasharp-module-syntax">New LambdaSharp Module Syntax</h2>
 <h3 id="cloudwatch-eventbridge-source">CloudWatch EventBridge Source</h3>
 <p>Lambda functions can now subscribe to a CloudWatch event bus. The <a href="../syntax/Module-Function-Sources-EventBus.html">EventBus notation</a> is straightforward. Multiple event bus subscriptions can be active at the same time.</p>
@@ -175,13 +175,13 @@
 </ul>
 <h2 id="new-lambdasharp-sdk-features">New LambdaSharp SDK Features</h2>
 <h3 id="cloudwatch-metrics">CloudWatch Metrics</h3>
-<p>Several Lambda function base classes have been enhanced with <a href="Metrics-Function.html">custom CloudWatch metrics</a> to augment existing AWS metrics. In addition, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
-<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MetricSample">The MetricSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
+<p>Several Lambda function base classes have been enhanced with <a href="Metrics-Function.html">custom CloudWatch metrics</a> to augment existing AWS metrics. In addition, the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has new <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_Collections_Generic_IEnumerable_LambdaSharp_Logging_Metrics_LambdaMetric__">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
+<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/MetricSample">The MetricSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogMetric_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit_">LogMetric(...)</a> methods to emit custom CloudWatch metrics using the <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html">embedded metric format</a>.</p>
 <h3 id="cloudwatch-events">CloudWatch Events</h3>
-<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a>.</p>
-<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/EventSample">The EventSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a> method for sending CloudWatch Events.</p>
+<p>The <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class has a new <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a>.</p>
+<p><a href="https://github.com/LambdaSharp/LambdaSharpTool/tree/master/Samples/EventSample">The EventSample module</a> shows how to use the new <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogEvent__1_System_String_System_String___0_System_Collections_Generic_IEnumerable_System_String__">LogEvent(...)</a> method to emit CloudWatch Events to the default event bus on <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/what-is-amazon-eventbridge.html">Amazon EventBridge</a> method for sending CloudWatch Events.</p>
 <h3 id="debug-logging">Debug Logging</h3>
-<p>The <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> has a new <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method to make debug logging easier. In addition, when debug logging is enabled, the base class logs the request and response streams to CloudWatch logs. See the documentation on <a href="Debugging.html">Lambda Debugging</a> for more details.</p>
+<p>The <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> has a new <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method to make debug logging easier. In addition, when debug logging is enabled, the base class logs the request and response streams to CloudWatch logs. See the documentation on <a href="Debugging.html">Lambda Debugging</a> for more details.</p>
 <h2 id="new-lambdasharp-core-services-features">New LambdaSharp Core Services Features</h2>
 <p>The <em>LambdaSharp.Core</em> module now uses <a href="https://aws.amazon.com/kinesis/data-firehose/">Amazon Kinesis Firehose</a> for ingesting CloudWatch Log streams. During the ingestion process, the logs are converted into <a href="LogRecords.html">queryable JSON documents</a>.</p>
 <p>In addition, <em>LambdaSharp.Core</em> now emits <a href="Events.html">operational CloudWatch events</a> to the default event bus, which can be used to observe and track deployed modules.</p>
@@ -193,6 +193,43 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
+<h3 id="v0815---2020-12-26">(v0.8.1.5) - 2020-12-26</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li>CLI
+<ul>
+<li>Enhanced <code>lash new</code> command to prompt for type of file to create (app, function, or resource). Defaults to <code>module</code> when no <code>Module.yml</code> file is present.</li>
+<li>Enhanced <code>lash util list-modules</code> command to show a message when pre-release modules were omitted from the list.</li>
+</ul>
+</li>
+</ul>
+<h4 id="fixes-2">Fixes</h4>
+<ul>
+<li>CLI
+<ul>
+<li>Fixed a NRE in <code>lash util list-modules</code> when the bucket name was passed in as an option instead of an argument.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0814---2020-11-20">(v0.8.1.4) - 2020-11-20</h3>
+<h4 id="fixes-3">Fixes</h4>
+<ul>
+<li>CLI
+<ul>
+<li>Fixed an issue where the <code>nuke</code> command did not delete all stacks as expected.</li>
+<li>Fixed an issue where interactive commands would cause an audible alert for short running operations.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0813---2020-10-21">(v0.8.1.3) - 2020-10-21</h3>
+<h4 id="fixes-4">Fixes</h4>
+<ul>
+<li>SDK
+<ul>
+<li>Fixes a broken package reference in the <code>LambdaSharp.App</code> package.</li>
+</ul>
+</li>
+</ul>
 <h3 id="v0812---2020-10-20">(v0.8.1.2) - 2020-10-20</h3>
 <h4 id="breaking-changes-1">BREAKING CHANGES</h4>
 <ul>
@@ -202,7 +239,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features">Features</h4>
+<h4 id="features-1">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -237,7 +274,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-2">Fixes</h4>
+<h4 id="fixes-5">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -254,7 +291,7 @@
 </li>
 </ul>
 <h3 id="v0811---2020-08-31">(v0.8.1.1) - 2020-08-31</h3>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -276,7 +313,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-2">Features</h4>
+<h4 id="features-3">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -302,7 +339,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-3">Fixes</h4>
+<h4 id="fixes-6">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -314,7 +351,7 @@
 </li>
 </ul>
 <h3 id="v0809---2020-08-31">(v0.8.0.9) - 2020-08-31</h3>
-<h4 id="features-3">Features</h4>
+<h4 id="features-4">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -323,7 +360,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-4">Fixes</h4>
+<h4 id="fixes-7">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -335,7 +372,7 @@
 </li>
 </ul>
 <h3 id="v0808---2020-08-03">(v0.8.0.8) - 2020-08-03</h3>
-<h4 id="fixes-5">Fixes</h4>
+<h4 id="fixes-8">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -352,7 +389,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-4">Features</h4>
+<h4 id="features-5">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -365,7 +402,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-6">Fixes</h4>
+<h4 id="fixes-9">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -378,7 +415,7 @@
 </li>
 </ul>
 <h3 id="v0806---2020-07-14">(v0.8.0.6) - 2020-07-14</h3>
-<h4 id="features-5">Features</h4>
+<h4 id="features-6">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -396,7 +433,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-7">Fixes</h4>
+<h4 id="fixes-10">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -406,7 +443,7 @@
 </li>
 </ul>
 <h3 id="v0805---2020-07-02">(v0.8.0.5) - 2020-07-02</h3>
-<h4 id="features-6">Features</h4>
+<h4 id="features-7">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -414,7 +451,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-8">Fixes</h4>
+<h4 id="fixes-11">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -430,7 +467,7 @@
 </li>
 </ul>
 <h3 id="v0804---2020-07-01">(v0.8.0.4) - 2020-07-01</h3>
-<h4 id="features-7">Features</h4>
+<h4 id="features-8">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -465,7 +502,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-9">Fixes</h4>
+<h4 id="fixes-12">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -479,7 +516,7 @@
 </li>
 </ul>
 <h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
-<h4 id="features-8">Features</h4>
+<h4 id="features-9">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -494,7 +531,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-10">Fixes</h4>
+<h4 id="fixes-13">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -515,7 +552,7 @@
 </li>
 </ul>
 <h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
-<h4 id="features-9">Features</h4>
+<h4 id="features-10">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -544,7 +581,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="fixes-11">Fixes</h4>
+<h4 id="fixes-14">Fixes</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -558,7 +595,7 @@
 </li>
 </ul>
 <h3 id="v0801---2020-05-18">(v0.8.0.1) - 2020-05-18</h3>
-<h4 id="fixes-12">Fixes</h4>
+<h4 id="fixes-15">Fixes</h4>
 <ul>
 <li>CLI
 <ul>
@@ -572,7 +609,8 @@
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

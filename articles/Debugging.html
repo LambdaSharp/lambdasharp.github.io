@@ -16,7 +16,7 @@
     <meta name="title" content="Lambda Debug Logging - Lambda Functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Description of how to enable debug logging for Lambda functions">
     <meta name="keywords" content="debug, logs, cloudwatch, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Lambda Debug Logging - Lambda Functions - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
@@ -95,14 +95,14 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="lambda-debugging">Lambda Debugging</h1>
 
-<p>While it is not (yet) possible to attach a debugger to a running Lambda function, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class provides debug logging capabilities to enable better inspection capabilities of what's going in a deployed Lambda function.</p>
+<p>While it is not (yet) possible to attach a debugger to a running Lambda function, the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class provides debug logging capabilities to enable better inspection capabilities of what's going in a deployed Lambda function.</p>
 <h2 id="debug-logging">Debug Logging</h2>
 <p>Lambda functions deployed by LambdaSharp have a <code>DEBUG_LOGGING_ENABLED</code> environment variable to enable debug logging after deployment. By default, <code>DEBUG_LOGGING_ENABLED</code> is set to <code>false</code>.</p>
-<p>At runtime, the value of the <code>DEBUG_LOGGING_ENABLED</code> environment variable can be checked through the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property.</p>
-<p>Debug statements are logged by using <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method and appear in CloudWatch logs with a <code>*** DEBUG:</code> prefix:</p>
+<p>At runtime, the value of the <code>DEBUG_LOGGING_ENABLED</code> environment variable can be checked through the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property.</p>
+<p>Debug statements are logged by using <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(string format, params object[] arguments)</a> method and appear in CloudWatch logs with a <code>*** DEBUG:</code> prefix:</p>
 <pre><code class="lang-log">*** DEBUG: this entry is only emitted when debug logging is enabled
 </code></pre>
-<p>For complex debug statements, it is best practice to first check the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property before invoking <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(...)</a> . Checking if debug logging is enabled first avoids incurring wasteful overhead when the debug statement is discarded anyway.</p>
+<p>For complex debug statements, it is best practice to first check the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DebugLoggingEnabled">DebugLoggingEnabled</a> property before invoking <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LogDebug_System_String_System_Object___">LogDebug(...)</a> . Checking if debug logging is enabled first avoids incurring wasteful overhead when the debug statement is discarded anyway.</p>
 <pre><code class="lang-csharp">if(DebugLoggingEnabled) {
     LogDebug(CreateComplexDebugStatement());
 }
@@ -128,8 +128,8 @@
         DEBUG_LOGGING_ENABLED: true
 </code></pre>
 <h2 id="requestresponse-logging">Request/Response Logging</h2>
-<p>The most common use case for debug logging is to inspect the request or response of the Lambda function. This use case is covered out of the box by the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class.</p>
-<p>When debug logging is enabled, the <a class="xref" href="../sdk/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> emits the request and response to CloudWatch logs as follows.</p>
+<p>The most common use case for debug logging is to inspect the request or response of the Lambda function. This use case is covered out of the box by the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> base class.</p>
+<p>When debug logging is enabled, the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> emits the request and response to CloudWatch logs as follows.</p>
 <p><strong>Request Stream:</strong></p>
 <pre><code class="lang-log">*** DEBUG: request stream: { ... }
 </code></pre>
@@ -142,7 +142,8 @@
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

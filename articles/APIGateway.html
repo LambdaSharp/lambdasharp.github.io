@@ -16,7 +16,7 @@
     <meta name="title" content="API Gateway for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Documentation on configuring API Gateway with LambdaSharp">
     <meta name="keywords" content="overview, api, gateway, aws, amazon, configuration, validation, security, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="API Gateway for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
@@ -230,12 +230,12 @@
 ) { ... }
 </code></pre>
 <p>Methods with a response schema always return HTTP status code 200 (OK) when successful or HTTP status code 500 (Internal Server Error) if an exception occurs. In the latter case, the details of the exception are captured in the Lambda CloudWatch logs and not returned to the client.</p>
-<p>A custom status code can be returned either by using the <a href="https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.APIGatewayEvents/APIGatewayProxyResponse.cs"><code>APIGatewayProxyResponse</code></a> return type or by calling one of the <code>Abort()</code> methods from <a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a>:</p>
+<p>A custom status code can be returned either by using the <a href="https://github.com/aws/aws-lambda-dotnet/blob/master/Libraries/src/Amazon.Lambda.APIGatewayEvents/APIGatewayProxyResponse.cs"><code>APIGatewayProxyResponse</code></a> return type or by calling one of the <code>Abort()</code> methods from <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a>:</p>
 <ul>
-<li><a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse_"><code>Abort(APIGatewayProxyResponse response)</code></a>: response with the HTTP status code, headers, and response body set in the <code>APIGatewayProxyResponse</code> instance.</li>
-<li><a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String_"><code>AbortBadRequest(string message)</code></a>: responds with HTTP status code 400 (Bad Request) and the provided message.</li>
-<li><a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String_"><code>AbortForbidden(string message)</code></a>: responds with HTTP status code 403 (Forbidden) and the provided message.</li>
-<li><a class="xref" href="../sdk/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String_"><code>AbortNotFound(string message)</code></a>: responds with HTTP status code 404 (Not Found) and the provided message.</li>
+<li><a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_Abort_Amazon_Lambda_APIGatewayEvents_APIGatewayProxyResponse_"><code>Abort(APIGatewayProxyResponse response)</code></a>: response with the HTTP status code, headers, and response body set in the <code>APIGatewayProxyResponse</code> instance.</li>
+<li><a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortBadRequest_System_String_"><code>AbortBadRequest(string message)</code></a>: responds with HTTP status code 400 (Bad Request) and the provided message.</li>
+<li><a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortForbidden_System_String_"><code>AbortForbidden(string message)</code></a>: responds with HTTP status code 403 (Forbidden) and the provided message.</li>
+<li><a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html#LambdaSharp_ApiGateway_ALambdaApiGatewayFunction_AbortNotFound_System_String_"><code>AbortNotFound(string message)</code></a>: responds with HTTP status code 404 (Not Found) and the provided message.</li>
 </ul>
 <h3 id="websocket-response">WebSocket Response</h3>
 <p>When a WebSocket route returns a response, that response is only sent to the client connection from which the request came. To broadcast a message to all connections, use <a href="https://docs.aws.amazon.com/sdkfornet/v3/apidocs/items/ApiGatewayManagementApi/MIApiGatewayManagementApiPostToConnectionPostToConnectionRequest.html"><code>IAmazonApiGatewayManagementApi.PostToConnectionAsync(PostToConnectionRequest)</code></a> instead.</p>
@@ -250,7 +250,8 @@
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
