@@ -93,7 +93,7 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="lambdasharp-hicetas-release-v0816---2020-12-28">LambdaSharp &quot;Hicetas&quot; Release (v0.8.1.6) - 2020-12-28</h1>
+<h1 id="lambdasharp-hicetas-release-v0820---2021-02-15">LambdaSharp &quot;Hicetas&quot; Release (v0.8.2.0) - 2021-02-15</h1>
 
 <blockquote>
 <p>Hicetas was a Greek philosopher of the Pythagorean School. He was born in Syracuse. Like his fellow Pythagorean Ecphantus and the Academic Heraclides Ponticus, he believed that the daily movement of permanent stars was caused by the rotation of the Earth around its axis. When Copernicus referred to Nicetus Syracusanus (Nicetus of Syracuse) in <em>De revolutionibus orbium coelestium</em> as having been cited by Cicero as an ancient who also argued that the Earth moved, it is believed that he was actually referring to Hicetas. <a href="https://en.wikipedia.org/wiki/Hicetas">(Wikipedia)</a></p>
@@ -132,7 +132,7 @@
 &lt;PackageReference Include=&quot;Newtonsoft.Json&quot; Version=&quot;12.0.3&quot; /&gt;
 </code></pre>
 <p>In addition, Lambda functions no longer need to declare the default serializer with the <code>[assembly: LambdaSerializer(...)]</code> attribute, unless a custom serializer is required. Instead, the serializer is defined by the base class (<a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a>). This change was made to ease the transition to the new <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-how-to">System.Text.Json</a> serializer in a future release.</p>
-<p>Finally, the <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(...)</a> and <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
+<p>Finally, the <a href="xref:LambdaSharp.ALambdaFunction.SerializeJson(System.Object)">SerializeJson(...)</a> and <a href="xref:LambdaSharp.ALambdaFunction.DeserializeJson%60%601(System.IO.Stream)">DeserializeJson<t>(...)</t></a> have been marked as obsolete. Instead, use <code>LambdaSerializer.Serialize(...)</code> and <code>LambdaSerialize.Deserialize&lt;T&gt;(...)</code>, respectively.</p>
 <h2 id="new-lambdasharp-module-syntax">New LambdaSharp Module Syntax</h2>
 <h3 id="cloudwatch-eventbridge-source">CloudWatch EventBridge Source</h3>
 <p>Lambda functions can now subscribe to a CloudWatch event bus. The <a href="../syntax/Module-Function-Sources-EventBus.html">EventBus notation</a> is straightforward. Multiple event bus subscriptions can be active at the same time.</p>
@@ -193,8 +193,128 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
-<h3 id="v0816---2020-12-28">(v0.8.1.6) - 2020-12-28</h3>
+<h3 id="v0820---2021-02-15">(v0.8.2.0) - 2021-02-15</h3>
+<h4 id="breaking-changes-1">BREAKING CHANGES</h4>
+<ul>
+<li>SDK
+<ul>
+<li>LambdaSharp base classes for Lambda functions now require the JSON serializer to be provided. The JSON serializer must derive from <code>LambdaSharp.Serialization.ILambdaJsonSerializer</code>. The preferred JSON serializer is <code>LambdaSystemTextJsonSerializer</code>.</li>
+<li>Renamed <code>LambdaJsonSerializer</code> to <code>LambdaNewtonsoftJsonSerializer</code> to make it clear this JSON serializer is based on <code>Newtonsoft.Json</code>.</li>
+<li>Moved <code>LambdaNewtonsoftJsonSerializer</code> to its own NuGet package <em>LambdaSharp.Serialization.NewtonsoftJson</em> to remove dependency on the <em>Newtonsoft.Json</em> NuGet package for <em>LambdaSharp</em> assembly.</li>
+<li>Changed <code>ALambdaFunction.LambdaSerializer</code> property type to <code>ILambdaJsonSerializer</code>.</li>
+<li>Changed target framework for <code>LambdaSharp</code> project to <code>netcoreapp3.1</code> which is required by the <code>Amazon.Lambda.Serialization.SystemTextJson</code> assembly.</li>
+<li>Changed target framework for <code>LambdaSharp.Slack</code> project to <code>netcoreapp3.1</code> which is required by the <code>LambdaSharp</code> assembly.</li>
+<li>Updated <em>AWSSDK.Core</em> dependencies to version 3.5</li>
+<li>Changed method signatures in <code>ALambdaCustomResourceFunction</code>:
+<ul>
+<li>Added <code>System.Threading.CancellationToken</code> parameter to <code>ProcessCreateResourceAsync</code>, <code>ProcessUpdateResourceAsync</code>, and <code>ProcessDeleteResourceAsync</code>.</li>
+</ul>
+</li>
+<li>Changed method signatures in <code>ALambdaFinalizerFunction</code>:
+<ul>
+<li>Renamed <code>CreateDeployment</code> to <code>CreateDeploymentAsync</code>, <code>CreateDeployment</code> to <code>CreateDeploymentAsync</code>, and <code>DeleteDeployment</code> to <code>DeleteDeploymentAsync</code>.</li>
+<li>Added <code>System.Threading.CancellationToken</code> parameter to <code>CreateDeploymentAsync</code>, <code>CreateDeploymentAsync</code>, and <code>DeleteDeploymentAsync</code>.</li>
+</ul>
+</li>
+<li>Moved the LambdaSharp namespaces to specialized assemblies:
+<ul>
+<li><em>LambdaSharp.ApiGateway</em></li>
+<li><em>LambdaSharp.CloudWatch</em></li>
+<li><em>LambdaSharp.CustomResource</em></li>
+<li><em>LambdaSharp.Finalizer</em></li>
+<li><em>LambdaSharp.Schedule</em></li>
+<li><em>LambdaSharp.SimpleNotificationService</em></li>
+<li><em>LambdaSharp.SimpleQueueService</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="nuget-package-migration-guide">NuGet Package Migration Guide</h5>
+<table>
+<thead>
+<tr>
+<th>Base Class</th>
+<th>NuGet Package</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALambdaApiGatewayFunction&lt;TRequest,TResponse&gt;</td>
+<td>LambdaSharp.ApiGateway</td>
+</tr>
+<tr>
+<td>ALambdaCustomResourceFunction&lt;TProperties,TAttributes&gt;</td>
+<td>LambdaSharp.CustomResource</td>
+</tr>
+<tr>
+<td>ALambdaEventFunction<tmessage></tmessage></td>
+<td>LambdaSharp.CloudWatch</td>
+</tr>
+<tr>
+<td>ALambdaFinalizerFunction</td>
+<td>LambdaSharp.Finalizer</td>
+</tr>
+<tr>
+<td>ALambdaFunction</td>
+<td>LambdaSharp</td>
+</tr>
+<tr>
+<td>ALambdaFunction&lt;TRequest,TResponse&gt;</td>
+<td>LambdaSharp</td>
+</tr>
+<tr>
+<td>ALambdaQueueFunction<tmessage></tmessage></td>
+<td>LambdaSharp.SimpleQueueService</td>
+</tr>
+<tr>
+<td>ALambdaScheduleFunction</td>
+<td>LambdaSharp.Schedule</td>
+</tr>
+<tr>
+<td>ALambdaTopicFunction<tmessage></tmessage></td>
+<td>LambdaSharp.SimpleNotificationService</td>
+</tr>
+</tbody>
+</table>
 <h4 id="features">Features</h4>
+<ul>
+<li><p>CLI</p>
+<ul>
+<li>Added support for self-contained .NET 5 Lambda functions.</li>
+<li>Update Blazor WebAssembly app template to target .NET 5.</li>
+<li>Removed dependency on <em>Amazon.Lambda.Tools</em>. <em>Amazon.Lambda.Tools</em> is no longer requires to build, publish, or deploy LambdaSharp modules.</li>
+<li>Updated CloudFormation to v22.0.0.</li>
+<li>Allowed resource types to have an empty or omitted <code>Attributes</code> section.</li>
+</ul>
+</li>
+<li><p>SDK</p>
+<ul>
+<li>Added new <code>ALambdaEventFunction&lt;TMessage&gt;</code> base class for handling CloudWatch events.</li>
+<li>Optimized cold-start times for by deserializing Amazon Lambda data-structures by using <code>LambdaSystemTextJsonSerializer</code>, which is built on <em>System.Text.Json</em>. This change avoids jitting the heavy <em>Newtonsoft.Json</em> assembly unless required by the end-user code.</li>
+<li>Added constructor to customize serializer settings for <code>LambdaSystemTextJsonSerializer</code>.</li>
+<li>Added constructor to customize serializer settings for <code>LambdaNewtonsoftJsonSerializer</code>.</li>
+<li>Added null-aware annotations to <em>LambdaSharp</em> assembly.</li>
+<li>Added <a href="https://github.com/mono/mono/blob/master/mcs/class/corlib/System.Security.Cryptography/MD5CryptoServiceProvider.cs">MD5 algorithm implementation from Mono</a> in <em>LambdaSharp.Logging</em> since it is not supported in .NET 5 WebAssembly currently.</li>
+<li>Added logic in <code>ALambdaCustomResourceFunction</code> and <code>ALambdaFinalizerFunction</code> to trigger the <code>System.Threading.CancellationToken</code> 500ms before the function times out.</li>
+<li>Added <code>TerminateLambdaInstance()</code> method, which forces the Lambda instance to terminate and perform a cold start on next invocation. This method should only be used when the processing environment has become corrupted beyond repair.</li>
+</ul>
+</li>
+<li><p>Syntax</p>
+<ul>
+<li>Added <code>Module::RestApi::CorsOrigin</code> override to specify an expression as the <em>CORS Origin</em> header value. The <em>CORS Origin</em> header value is automatically added to all REST API responses.</li>
+<li>Added <code>Stack</code> as the declaration keyword for nested stacks. Previously the keyword was <code>Nested</code>, which remains supported for backwards compatibility.</li>
+</ul>
+</li>
+<li><p>Samples</p>
+<ul>
+<li>Added <code>Samples/JsonSerializerSample</code> module showing how to specify and customize the JSON serializer for a Lambda function.</li>
+<li>Added <code>Samples/LambdaSelfContainedSample</code> module showing how to build a Lambda function using .NET 5.</li>
+</ul>
+</li>
+</ul>
+<h3 id="v0816---2020-12-28">(v0.8.1.6) - 2020-12-28</h3>
+<h4 id="features-1">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -211,7 +331,7 @@
 </li>
 </ul>
 <h3 id="v0815---2020-12-26">(v0.8.1.5) - 2020-12-26</h3>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -248,7 +368,7 @@
 </li>
 </ul>
 <h3 id="v0812---2020-10-20">(v0.8.1.2) - 2020-10-20</h3>
-<h4 id="breaking-changes-1">BREAKING CHANGES</h4>
+<h4 id="breaking-changes-2">BREAKING CHANGES</h4>
 <ul>
 <li>CLI
 <ul>
@@ -256,7 +376,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-2">Features</h4>
+<h4 id="features-3">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -308,7 +428,7 @@
 </li>
 </ul>
 <h3 id="v0811---2020-08-31">(v0.8.1.1) - 2020-08-31</h3>
-<h4 id="features-3">Features</h4>
+<h4 id="features-4">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -319,7 +439,7 @@
 </ul>
 <h3 id="v0810---2020-08-28">(v0.8.1.0) - 2020-08-28</h3>
 <p>This release introduce support for Blazor WebAssembly apps at the syntax and SDK level. Similar to Lambda functions, Blazor apps have access to the <code>ILambdaSharpLogger</code> to log messages, metrics, and events to CloudWatch. This capability is accomplished by generating a REST API that enables the front-end Blazor app to securely integrate with CloudWatch Logs, Metrics, and EventBridge. By default, Blazor apps are served from an S3 bucket configured as a website. Optionally, the S3 bucket can be configured for integration with CloudFront.</p>
-<h4 id="breaking-changes-2">BREAKING CHANGES</h4>
+<h4 id="breaking-changes-3">BREAKING CHANGES</h4>
 <ul>
 <li>SDK
 <ul>
@@ -330,7 +450,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-4">Features</h4>
+<h4 id="features-5">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -368,7 +488,7 @@
 </li>
 </ul>
 <h3 id="v0809---2020-08-31">(v0.8.0.9) - 2020-08-31</h3>
-<h4 id="features-5">Features</h4>
+<h4 id="features-6">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -398,7 +518,7 @@
 </li>
 </ul>
 <h3 id="v0807---2020-07-28">(v0.8.0.7) - 2020-07-28</h3>
-<h4 id="breaking-changes-3">BREAKING CHANGES</h4>
+<h4 id="breaking-changes-4">BREAKING CHANGES</h4>
 <ul>
 <li>CLI
 <ul>
@@ -406,7 +526,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-6">Features</h4>
+<h4 id="features-7">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -432,7 +552,7 @@
 </li>
 </ul>
 <h3 id="v0806---2020-07-14">(v0.8.0.6) - 2020-07-14</h3>
-<h4 id="features-7">Features</h4>
+<h4 id="features-8">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -460,7 +580,7 @@
 </li>
 </ul>
 <h3 id="v0805---2020-07-02">(v0.8.0.5) - 2020-07-02</h3>
-<h4 id="features-8">Features</h4>
+<h4 id="features-9">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -484,7 +604,7 @@
 </li>
 </ul>
 <h3 id="v0804---2020-07-01">(v0.8.0.4) - 2020-07-01</h3>
-<h4 id="features-9">Features</h4>
+<h4 id="features-10">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -533,7 +653,7 @@
 </li>
 </ul>
 <h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
-<h4 id="features-10">Features</h4>
+<h4 id="features-11">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -569,7 +689,7 @@
 </li>
 </ul>
 <h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
-<h4 id="features-11">Features</h4>
+<h4 id="features-12">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>

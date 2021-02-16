@@ -151,7 +151,7 @@
 <ul>
 <li><code>ALambdaFunction.InfoStruct.ModuleOwner</code> has been renamed to <code>ALambdaFunction.InfoStruct.ModuleNamespace</code></li>
 <li><code>ALambdaFunction.DefaultSecretKeyId</code> has been removed</li>
-<li>The physical ID returned by <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html"><code>ALambdaFinalizerFunction</code></a> is now a constant (<code>Finalizer:Module</code>) instead of being based on the checksum of the original template. The latter proved too risky, because it could accidentally trigger a CloudFormation delete resource event when not expected.</li>
+<li>The physical ID returned by <a class="xref" href="../sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html"><code>ALambdaFinalizerFunction</code></a> is now a constant (<code>Finalizer:Module</code>) instead of being based on the checksum of the original template. The latter proved too risky, because it could accidentally trigger a CloudFormation delete resource event when not expected.</li>
 </ul>
 <h2 id="new-lambdasharp-cli-features">New LambdaSharp CLI Features</h2>
 <h3 id="init-command">Init Command</h3>
@@ -232,8 +232,8 @@ Done (finished: 8/20/2019 12:27:29 PM; duration: 00:00:04.9603515)
 <h2 id="new-lambdasharp-assembly-features">New LambdaSharp Assembly Features</h2>
 <ul>
 <li>Added <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.FunctionInfo.html#LambdaSharp_ALambdaFunction_FunctionInfo_DeploymentBucketName"><code>ALambdaFunction.DeploymentBucketName</code></a> property to read the S3 bucket name used to deploy the Lambda function.</li>
-<li>Added <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_System_String_"><code>ALambdaCustomResourceFunction.Abort(string)</code></a> method to abort the creation or update of a custom resource. <code>Abort()</code> will cause CloudFormation to respond with a failure code and showing the provided message.</li>
-<li>Added <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId"><code>LambdaSharp.CustomResource.Request&lt;TProperties&gt;.StackId</code></a> property to custom resource request to uniquely identify the CloudFormation stack from which the request originated.</li>
+<li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html#LambdaSharp_CustomResource_ALambdaCustomResourceFunction_2_Abort_System_String_"><code>ALambdaCustomResourceFunction.Abort(string)</code></a> method to abort the creation or update of a custom resource. <code>Abort()</code> will cause CloudFormation to respond with a failure code and showing the provided message.</li>
+<li>Added <a class="xref" href="../sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_StackId"><code>LambdaSharp.CustomResource.Request&lt;TProperties&gt;.StackId</code></a> property to custom resource request to uniquely identify the CloudFormation stack from which the request originated.</li>
 <li>The <code>ALambdaFinalizerFunction</code> class now checks confirms the CloudFormation stack is being deleted before triggering the [DeleteDeployment(FinalizerProperties)] method. This change allows a <code>Finalizer</code> to be removed from a module without triggering its delete logic.</li>
 </ul>
 <h2 id="releases">Releases</h2>

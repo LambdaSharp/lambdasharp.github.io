@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="JSON Serialization - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Best practices for JSON Serialization in LambdaSharp">
+    <meta name="keywords" content="newtonsoft, json, serialization, system, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="JSON Serialization - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/JSON-Serialization.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Best practices for JSON Serialization in LambdaSharp">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JSON Serialization - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Best practices for JSON Serialization in LambdaSharp">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>JSON Serialization - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/JSON-Serialization.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="json-serialization">JSON Serialization</h1>
+
+<p>Starting with v0.8.2, <em>LambdaSharp</em> uses <em>System.Text.Json</em> v5.0 instead of <em>Newtonsoft.Json</em> for JSON serialization of built-in types. Custom types are handled with the JSON serializer specified using the <code>LambdaSerializer</code> assembly attribute.</p>
+<p>This article describes how to switch from the default <em>Newtonsoft.Json</em> to <em>System.Text.Json</em>, as well as what to look out for.</p>
+<h2 id="migrating-json-serialization-from-newtonsoftjson-to-systemtextjson">Migrating JSON Serialization from <em>Newtonsoft.Json</em> to <em>System.Text.Json</em></h2>
+<p>Lambda functions using <em>System.Text.Json</em> must declare <code>LambdaSystemTextJsonSerializer</code> as their JSON serializer using the <code>JsonSerializer</code> assembly attribute.</p>
+<pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(LambdaSharp.Serialization.LambdaSystemTextJsonSerializer))]
+</code></pre>
+<p>Microsoft has published an excellent <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to?pivots=dotnet-5-0">migration guide</a> for switching from <em>Newtonsoft.Json</em> to <em>System.Text.Json</em>. In addition to the guide, the following sections explain how to migrate existing data-structures.</p>
+<p>Alternatively, functions can continue to use <em>Newtonsoft.Json</em> as their JSON serializer by including the <code>LambdaSharp.Serialization.NewtonsoftJson</code> assembly from NuGet:</p>
+<pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(LambdaSharp.Serialization.LambdaNewtonsoftJsonSerializer))]
+</code></pre>
+<h3 id="update-projects">Update Projects</h3>
+<p>Upgrade projects to .NET Core 3.1 by changing the target framework in the <em>.csproj</em> file.</p>
+<ul>
+<li>Before: <code>&lt;TargetFramework&gt;netcoreapp2.1&lt;/TargetFramework&gt;</code></li>
+<li>After: <code>&lt;TargetFramework&gt;netcoreapp3.1&lt;/TargetFramework&gt;</code></li>
+</ul>
+<p>Remove all <em>Newtonsoft.Json</em> package dependencies (version may vary).</p>
+<ul>
+<li>Remove: <code>&lt;PackageReference Include=&quot;Newtonsoft.Json&quot; /&gt;</code></li>
+</ul>
+<h3 id="replace-non-public-propertiesfields-with-public-propertiesfields">Replace Non-Public Properties/Fields with Public Properties/Fields</h3>
+<p>Unlike <em>Newtonsoft.Json</em>, <em>System.Text.Json</em> does not serialize non-public properties/fields.</p>
+<p>Non-public properties must be converted to public, mutable properties.</p>
+<ul>
+<li>Before: <code>internal string Name { get; set; }</code></li>
+<li>After: <code>public string Name { get; set; }</code></li>
+</ul>
+<p>Limited mutable properties must be converted to public, mutable properties to be deserialized properly.</p>
+<ul>
+<li>Before: <code>public string Name { get; protected set; }</code></li>
+<li>After: <code>public string Name { get; set; }</code></li>
+</ul>
+<p>Non-public fields must be converted to public, mutable fields.</p>
+<ul>
+<li>Before: <code>internal string Name;</code></li>
+<li>After: <code>public string Name;</code></li>
+</ul>
+<h3 id="convert-json-string-values-to-enum-properties">Convert JSON string values to <code>enum</code> properties</h3>
+<p><em>Newtonsoft.Json</em> provides <code>StringEnumConverter</code> to convert JSON string to <code>enum</code> properties. <em>System.Text.Json</em> includes an equivalent converter called <code>JsonStringEnumConverter</code> in the <em>System.Text.Json.Serialization</em> namespace.</p>
+<ul>
+<li>Before: <code>[JsonConverter(typeof(StringEnumConverter))]</code></li>
+<li>After: <code>[JsonConverter(typeof(JsonStringEnumConverter))]</code></li>
+</ul>
+<h3 id="convert-json-integer-values-to-datetimeoffsetdatetime-properties">Convert JSON integer values to <code>DateTimeOffset</code>/<code>DateTime</code> properties</h3>
+<p><em>Newtonsoft.Json</em> provides <code>UnixDateTimeConverter</code> to convert JSON integer to <code>DateTime</code> properties. <em>System.Text.Json</em> does not include such a converter. Instead, <em>LambdaSharp.Serialization</em> defines <code>JsonEpochSecondsDateTimeOffsetConverter</code> and <code>JsonEpochSecondsDateTimeConverter</code> to convert <code>DateTimeOffset</code> and <code>DateTime</code>, respectively to a JSON integer representing the UNIX epoch in seconds.</p>
+<pre><code class="lang-csharp">[JsonConverter(typeof(JsonEpochSecondsDateTimeOffsetConverter))]
+public DateTimeOffset Epoch { get; set; }
+</code></pre>
+<p>--OR--</p>
+<pre><code class="lang-csharp">[JsonConverter(typeof(JsonEpochSecondsDateTimeConverter))]
+public DateTime Epoch { get; set; }
+</code></pre>
+<h3 id="update-property-attributes">Update Property Attributes</h3>
+<p>Replace attribute for explicitly naming JSON elements.</p>
+<ul>
+<li>Before: <code>[JsonProperty(&quot;name&quot;)]</code></li>
+<li>After: <code>[JsonPropertyName(&quot;name&quot;)]</code></li>
+<li>Requires: <code>using System.Text.Json.Serialization;</code></li>
+</ul>
+<p>Replace attribute for requiring a JSON property (used by JSON schema generator for API Gateway models)</p>
+<ul>
+<li>Before: <code>[JsonRequired]</code> -or- <code>[JsonProperty(Required = Required.DisallowNull)]</code></li>
+<li>After: <code>[Required]</code></li>
+<li>Requires: <code>using System.ComponentModel.DataAnnotations;</code></li>
+</ul>
+<h3 id="case-sensitive-serialization">Case-Sensitive Serialization</h3>
+<p><em>Newtonsoft.Json</em> is not case-sensitive on property/field names, but <em>System.Text.Json</em> is.</p>
+<h4 id="solution-1-use-newtonsoftjson-serializer">Solution 1: Use <em>Newtonsoft.Json</em> Serializer</h4>
+<p>Keep using the <em>Newtonsoft.Json</em> serializer instead by adding the <code>LambdaSharp.Serialization.NewtonsoftJson</code> NuGet package and assembly attribute for it.</p>
+<pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(LambdaSharp.Serialization.LambdaNewtonsoftJsonSerializer))]`
+</code></pre>
+<h4 id="solution-2-provide-proper-case-sensitive-spelling-for-propertyfield">Solution 2: Provide Proper Case-Sensitive Spelling for Property/Field</h4>
+<p>Use the <code>[JsonPropertyName(&quot;name&quot;)]</code> attribute to provide the property/field name with the case-sensitive spelling.</p>
+<pre><code class="lang-csharp">class MyClass {
+
+    //--- Properties ---
+    [JsonPropertyName(&quot;name&quot;)]
+    public string Name { get; set; }
+}
+</code></pre>
+<h4 id="solution-3-custom-systemtextjson-serializer-settings">Solution 3: Custom <em>System.Text.Json</em> Serializer Settings</h4>
+<p>Create a custom serializer that overrides the default <em>System.Text.Json</em> behavior in its constructor.</p>
+<pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(MySerializer))]
+
+public class MySerializer : LambdaSharp.Serialization.LambdaSystemTextJsonSerializer {
+
+    //--- Constructors ---
+    public MySerializer() : base(settings =&gt; {
+        settings.settings.PropertyNameCaseInsensitive = true;
+    }) { }
+}
+</code></pre>
+<h3 id="derived-classes-serialization">Derived Classes Serialization</h3>
+<p>Beware of derived classes during serialization. <em>System.Text.Json</em> will only serialize properties of the declared type, not all the properties of the actual instance, unless you use <code>object</code> as type.</p>
+<ul>
+<li>Before: <code>LambdaSerializer.Serialize&lt;Car&gt;(new Sedan { ... })</code> (only <code>Car</code> properties are serialized; any additional <code>Sedan</code> properties are skipped)</li>
+<li>After: <code>LambdaSerializer.Serialize&lt;object&gt;(mySedan)</code> (all public properties are serialized)</li>
+</ul>
+<h3 id="polymorphic-serialization">Polymorphic Serialization</h3>
+<p>Additional care is required when serializing an abstract syntax tree where nodes share an abstract base definition.</p>
+<p>For example, consider the definition for nestable lists with values. Using <code>Newtonsoft.Json</code>, we may have written something as follows, where <code>ListConverter</code> and <code>ValueConverter</code> are JSON-converters that implement serialization for their respective types.</p>
+<pre><code class="lang-csharp">public class AExpression { }
+
+[JsonConverter(ListConverter)]
+public class List : AExpression {
+    public List&lt;AExpression&gt; Items { get; set; } = new List&lt;AExpression&gt;()
+}
+
+[JsonConverter(LiteralConverter)]
+public class Literal : AExpression {
+    public string Value { get; set; }
+}
+</code></pre>
+<p>Surprisingly, the following expression serializes as <code>[{}]</code> because the declared type for <code>List</code> is <code>AExpression</code> which has no properties!</p>
+<pre><code class="lang-csharp">JsonSerialize.Serialize(new List {
+    Items = {
+        new Literal {
+            Value = 123
+        }
+    }
+})
+</code></pre>
+<p>The solution is to provide a <code>JsonConverter</code> for <code>AExpression</code> that knows how to perform polymorphic serialization based on the actual derived type.</p>
+<pre><code class="lang-csharp">public class ExpressionConverter : JsonConverter&lt;AExpression&gt; {
+
+    //--- Class Fields ---
+    private readonly ListConverter _listSerializer = new ListConverter();
+    private readonly LiteralConverter _literalSerializer = new LiteralConverter();
+
+    //--- Methods ---
+    public override ACloudFormationExpression Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
+
+        // Read() implementation omitted for brevity
+        throw new NotImplementedException();
+    }
+
+    public override void Write(Utf8JsonWriter writer, ACloudFormationExpression value, JsonSerializerOptions options) {
+        switch(value) {
+        case List list:
+            _listSerializer.Write(writer, list, options);
+            break;
+        case Literal literal:
+            _literalSerializer.Write(writer, literal, options);
+            break;
+        default:
+            throw new ArgumentException($&quot;unsupported serialization type {value?.GetType().FullName ?? &quot;&lt;null&gt;&quot;}&quot;);
+        }
+    }
+}
+</code></pre>
+<h2 id="custom-json-serializer">Custom JSON Serializer</h2>
+<p>Custom JSON serializer implementation can also be used by providing a class that derives from <code>ILambdaJsonSerializer</code>.</p>
+<p>For example, the following JSON serializer uses <a href="https://litjson.net/">LitJSON</a> instead.</p>
+<pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(MySerializer))]
+
+public class MySerializer : ILambdaJsonSerializer {
+
+    //--- Methods ---
+    public object Deserialize(Stream stream, Type type) {
+        var reader = new StreamReader(stream);
+        var json = reader.ReadToEnd();
+        return LitJson.JsonMapper.ToObject(json, type);
+    }
+
+    public T Deserialize&lt;T&gt;(Stream requestStream) =&gt; (T)Deserialize(stream, typeof(T));
+
+    public void Serialize&lt;T&gt;(T response, Stream responseStream) {
+        var json = LitJson.JsonMapper.ToJson(response);
+        responseStream.Write(Encoding.UTF8.GetBytes(json));
+    }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

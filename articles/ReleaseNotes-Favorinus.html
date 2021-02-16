@@ -112,15 +112,15 @@
 <p>The <code>LambdaSharp.dll</code> assembly was refactored for consistency. Classes are now organized into the following namespaces:</p>
 <ul>
 <li><code>LambdaSharp</code>: Common base classes, such as <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html">ALambdaFunction</a> and <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.LambdaConfig.html">LambdaConfig</a>.</li>
-<li><code>LambdaSharp.ApiGateway</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a>.</li>
+<li><code>LambdaSharp.ApiGateway</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html">ALambdaApiGatewayFunction</a>.</li>
 <li><code>LambdaSharp.ConfigSource</code>: Classes for reading configuration information. Usually not required.</li>
-<li><code>LambdaSharp.CustomResource</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties,TAttributes&gt;</a>.</li>
+<li><code>LambdaSharp.CustomResource</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties,TAttributes&gt;</a>.</li>
 <li><code>LambdaSharp.ErrorReports</code>: Classes for generating error reports. Usually not required.</li>
 <li><code>LambdaSharp.Exceptions</code>: Classes for throwing exceptions. Usually not required.</li>
-<li><code>LambdaSharp.Finalizer</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a>.</li>
+<li><code>LambdaSharp.Finalizer</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html">ALambdaFinalizerFunction</a>.</li>
 <li><code>LambdaSharp.Logger</code>: Classes for basic logging. Usually not required.</li>
-<li><code>LambdaSharp.Schedule</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.Schedule.ALambdaScheduleFunction.html">ALambdaScheduleFunction</a>.</li>
-<li><code>LambdaSharp.SimpleNotificationService</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction<tmessage></tmessage></a>.</li>
+<li><code>LambdaSharp.Schedule</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.Schedule/LambdaSharp.Schedule.ALambdaScheduleFunction.html">ALambdaScheduleFunction</a>.</li>
+<li><code>LambdaSharp.SimpleNotificationService</code>: Classes relating to <a class="xref" href="../sdk/LambdaSharp.SimpleNotificationService/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction<tmessage></tmessage></a>.</li>
 <li><code>LambdaSharp.SimpleQueueService</code>: Classes relating to [ALambdaQueueFunction<tmessage><code>](xref:LambdaSharp.SimpleQueueService.ALambdaQueueFunction</code>1).</tmessage></li>
 </ul>
 <p>Other functional changes include:</p>
@@ -224,8 +224,8 @@ Done (finished: 4/5/2019 3:36:10 PM; duration: 00:00:01.4137682)
 <h3 id="init-command">Init Command</h3>
 <p>The <code>init</code> command was improved to detect previous versions of a deployment tier and prompt for perform an upgrade operation, similar to the <code>config</code> command.</p>
 <h2 id="new-lambdasharp-assembly-features">New LambdaSharp Assembly Features</h2>
-<p>This release adds <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html"><code>ALambdaQueueFunction&lt;T&gt;</code></a> as base class for processing messages from SQS queues.</p>
-<p>The <a class="xref" href="../sdk/LambdaSharp/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
+<p>This release adds <a class="xref" href="../sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html"><code>ALambdaQueueFunction&lt;T&gt;</code></a> as base class for processing messages from SQS queues.</p>
+<p>The <a class="xref" href="../sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html"><code>ALambdaApiGatewayFunction</code></a> was also enhanced to provide support for target methods invocations.</p>
 <h2 id="releases">Releases</h2>
 <h3 id="v061---2019-09-05">(v0.6.1) - 2019-09-05</h3>
 <ul>

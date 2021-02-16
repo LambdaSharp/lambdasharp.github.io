@@ -248,7 +248,7 @@ Items:
       - !Ref MyLambdaLayer
 </code></pre>
 <h3 id="nested-modules">Nested Modules</h3>
-<p>Nested modules are similar to nested CloudFormation stacks. The module reference is resolved at compile time to a CloudFormation template location. Furthermore, the LambdaSharp CLI seamlessly injects the deployment tier parameters required for deploying modules. <a href="../syntax/Module-Nested.html">See <code>Nested</code> documentation</a>.</p>
+<p>Nested modules are similar to nested CloudFormation stacks. The module reference is resolved at compile time to a CloudFormation template location. Furthermore, the LambdaSharp CLI seamlessly injects the deployment tier parameters required for deploying modules. <a href="../syntax/Module-Stack.html">See <code>Nested</code> documentation</a>.</p>
 <p>During the <em>build</em> phase, the LambdaSharp CLI validates that all required parameters are supplied and that the supplied parameters exist.</p>
 <p>The following example shows how to create a nested module definition and access its output values:</p>
 <pre><code class="lang-yaml">- Nested: MyNestedModule

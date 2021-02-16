@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Stack Declaration - Module | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="LambdaSharp YAML syntax for nested stacks">
+    <meta name="keywords" content="nested, stack, declaration, module, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Stack Declaration - Module | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/syntax/Module-Stack.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="LambdaSharp YAML syntax for nested stacks">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stack Declaration - Module | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="LambdaSharp YAML syntax for nested stacks">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Stack Declaration - Module | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/syntax/Module-Stack.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="stack">Stack</h1>
+
+<p>The <code>Stack</code> declaration specifies the creation of a nested stack. Nested stacks inherit the same LambdaSharp configuration as their parent stack, except for the <code>Secrets</code> parameter, which must be passed explicitly.</p>
+<p>A nested stack should <strong>never</strong> be updated directly. Instead, all updates must be triggered by their parent module. Updating a nested stack directly can cause it to be in an unexpected state that will prevent the parent module from updating in the future.</p>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-yaml">Stack: String
+Description: String
+Module: String
+Parameters:
+  ModuleParameters
+DependsOn:
+  - String
+</code></pre>
+<h2 id="properties">Properties</h2>
+<dl>
+<dt><code>DependsOn</code></dt>
+<dd>
+<p>The <code>DependsOn</code> attribute identifies items that must be created prior. For additional information, see <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-dependson.html">CloudFormation DependsOn Attribute</a>.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: List of String</p>
+</dd>
+<dt><code>Description</code></dt>
+<dd>
+<p>The <code>Description</code> attribute specifies the nested stack description.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Module</code></dt>
+<dd>
+<p>The <code>Module</code> attribute specifies the full name of the required module with an optional version and origin. The format must be <code>Namespace.Name[:Version][@Origin]</code>. Parts in brackets (<code>[ ]</code>) are optional. Without a version specifier, LambdaSharp uses the latest version it can find that is compatible with the LambdaSharp CLI. Without an origin, LambdaSharp uses the deployment bucket name of the active deployment tier as origin. Compilation fails if the LambdaSharp CLI cannot find a published module that matches the criteria.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+<dt><code>Parameters</code></dt>
+<dd>
+<p>The <code>Parameters</code> section specifies the parameters for the nested stack. The LambdaSharp deployment parameters, such as <code>DeploymentBucketName</code> and <code>DeploymentPrefix</code>, are automatically provided and don't need to be specified.</p>
+<p><i>Required</i>: No</p>
+<p><i>Type</i>: Map</p>
+</dd>
+<dt><code>Stack</code></dt>
+<dd>
+<p>The <code>Stack</code> attribute specifies the item name. The name must start with a letter and followed only by letters or digits. Punctuation marks are not allowed. All names are case-sensitive.</p>
+<p><i>Required</i>: Yes</p>
+<p><i>Type</i>: String</p>
+</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<h3 id="creating-a-nested-stack-and-accessing-it-outputs">Creating a nested stack and accessing it outputs</h3>
+<pre><code class="lang-yaml">- Stack: MyNestedStack
+  Module: Acme.MyOtherModule:1.0
+  Parameters:
+    Message: !Sub &quot;Hi from ${Module::Name}&quot;
+
+- Variable: NestedOutput
+  Value: !GetAtt MyNestedStack.Outputs.OutputName
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

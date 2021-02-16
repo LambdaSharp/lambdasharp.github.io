@@ -110,10 +110,6 @@ environment variables, before invoking <a class="xref" href="LambdaSharp.ALambda
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ALambdaFunction</span></div>
       <div class="level2"><a class="xref" href="LambdaSharp.ALambdaFunction-2.html">ALambdaFunction&lt;TRequest, TResponse&gt;</a></div>
-      <div class="level2"><a class="xref" href="LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html">ALambdaCustomResourceFunction&lt;TProperties, TAttributes&gt;</a></div>
-      <div class="level2"><a class="xref" href="LambdaSharp.Schedule.ALambdaScheduleFunction.html">ALambdaScheduleFunction</a></div>
-      <div class="level2"><a class="xref" href="LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html">ALambdaTopicFunction&lt;TMessage&gt;</a></div>
-      <div class="level2"><a class="xref" href="LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html">ALambdaQueueFunction&lt;TMessage&gt;</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -311,58 +307,6 @@ issues caused by inconsistencies in serialization or deserialization.</p>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_JsonSerializer_" data-uid="LambdaSharp.ALambdaFunction.JsonSerializer*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_JsonSerializer" data-uid="LambdaSharp.ALambdaFunction.JsonSerializer">JsonSerializer</h4>
-  <div class="markdown level1 summary"><p>Retrieves the <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance used for serializing/deserializing JSON data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LambdaSerializer instead. This property will be removed in the next major release.&quot;)]
-protected ILambdaSerializer JsonSerializer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
-        <td><p>The <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ALambdaFunction_LambdaSerializer_" data-uid="LambdaSharp.ALambdaFunction.LambdaSerializer*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_LambdaSerializer" data-uid="LambdaSharp.ALambdaFunction.LambdaSerializer">LambdaSerializer</h4>
-  <div class="markdown level1 summary"><p>An instance of <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span>, as specified by the <see cre="LambdaSerializer"></see> attribute on the assembly,
-used for serializing/deserializing JSON data.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ILambdaSerializer LambdaSerializer { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span></td>
-        <td><p>The <span class="xref">Amazon.Lambda.Core.ILambdaSerializer</span> instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="LambdaSharp_ALambdaFunction_Logger_" data-uid="LambdaSharp.ALambdaFunction.Logger*"></a>
   <h4 id="LambdaSharp_ALambdaFunction_Logger" data-uid="LambdaSharp.ALambdaFunction.Logger">Logger</h4>
   <div class="markdown level1 summary"><p>Retrieve the <a class="xref" href="../LambdaSharp.Logging/LambdaSharp.Logging.ILambdaSharpLogger.html">ILambdaSharpLogger</a> instance.</p>
@@ -470,15 +414,15 @@ pendings tasks have completed before responding to the active invocation.</p>
     </tbody>
   </table>
   <a id="LambdaSharp_ALambdaFunction_DecryptSecretAsync_" data-uid="LambdaSharp.ALambdaFunction.DecryptSecretAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">DecryptSecretAsync(String, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">DecryptSecretAsync(String, Dictionary&lt;String, String&gt;)</a> method decrypts a Base64-encoded string with an optional encryption context. The Lambda function
+  <h4 id="LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="LambdaSharp.ALambdaFunction.DecryptSecretAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)">DecryptSecretAsync(String, Dictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DecryptSecretAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">DecryptSecretAsync(String, Dictionary&lt;String, String&gt;, CancellationToken)</a> method decrypts a Base64-encoded string with an optional encryption context. The Lambda function
 requires permission to use the <code>kms:Decrypt</code> operation on the KMS key used to
 encrypt the original message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; DecryptSecretAsync(string secret, Dictionary&lt;string, string&gt; encryptionContext = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; DecryptSecretAsync(string secret, Dictionary&lt;string, string&gt; encryptionContext = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -502,6 +446,12 @@ encrypt the original message.</p>
         <td><p>An optional encryption context. Can be <code>null</code>.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -520,135 +470,15 @@ encrypt the original message.</p>
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_DeserializeJson_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson``1(System.IO.Stream)">DeserializeJson&lt;T&gt;(Stream)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_IO_Stream_">DeserializeJson&lt;T&gt;(Stream)</a> method deserializes the JSON object from a <span class="xref">System.IO.Stream</span> instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LambdaSerializer.Deserialize&lt;T&gt;(Stream) instead. This method will be removed in the next major release.&quot;)]
-protected T DeserializeJson&lt;T&gt;(Stream stream)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.Stream</span></td>
-        <td><span class="parametername">stream</span></td>
-        <td><p>The stream to deserialize.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>Deserialized instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The deserialization target type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="LambdaSharp_ALambdaFunction_DeserializeJson_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_DeserializeJson__1_System_String_" data-uid="LambdaSharp.ALambdaFunction.DeserializeJson``1(System.String)">DeserializeJson&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_DeserializeJson__1_System_String_">DeserializeJson&lt;T&gt;(String)</a> method deserializes the JSON object from a <code>string</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LambdaSerializer.Deserialize&lt;T&gt;(string) instead. This method will be removed in the next major release.&quot;)]
-protected T DeserializeJson&lt;T&gt;(string json)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">json</span></td>
-        <td><p>The <code>string</code> to deserialize.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>Deserialized instance.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The deserialization target type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="LambdaSharp_ALambdaFunction_EncryptSecretAsync_" data-uid="LambdaSharp.ALambdaFunction.EncryptSecretAsync*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__">EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;)</a> encrypts a sequence of bytes using the specified KMS key. The Lambda function requires
+  <h4 id="LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="LambdaSharp.ALambdaFunction.EncryptSecretAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Threading.CancellationToken)">EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_EncryptSecretAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Threading_CancellationToken_">EncryptSecretAsync(String, String, Dictionary&lt;String, String&gt;, CancellationToken)</a> encrypts a sequence of bytes using the specified KMS key. The Lambda function requires
 permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; EncryptSecretAsync(string text, string encryptionKeyId, Dictionary&lt;string, string&gt; encryptionContext = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Task&lt;string&gt; EncryptSecretAsync(string text, string encryptionKeyId, Dictionary&lt;string, string&gt; encryptionContext = null, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -676,6 +506,12 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
         <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">encryptionContext</span></td>
         <td><p>An optional encryption context. Can be <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The token to monitor for cancellation requests.</p>
 </td>
       </tr>
     </tbody>
@@ -732,7 +568,7 @@ and handling any failures that occur.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[LambdaSerializer(typeof(LambdaJsonSerializer))]
+    <pre><code class="lang-csharp hljs">[LambdaSerializer(typeof(LambdaSystemTextJsonSerializer))]
 public Task&lt;Stream&gt; FunctionHandlerAsync(Stream stream, ILambdaContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1322,7 +1158,7 @@ Otherwise, either use <a class="xref" href="LambdaSharp.ALambdaFunction.html#Lam
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">detail</span></td>
-        <td><p>Data-structure to serialize as a JSON string using the <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSerializer">LambdaSerializer</a> property. If value is already a <pre><code>string</code></pre>, it is sent as-is. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
+        <td><p>Data-structure to serialize as a JSON string using <span class="xref">System.Text.Json.JsonSerializer</span>. If value is already a <pre><code>string</code></pre>, it is sent as-is. There is no other schema imposed. The data-structure may contain fields and nested subobjects.</p>
 </td>
       </tr>
       <tr>
@@ -1840,15 +1676,15 @@ queued background work has completed before completing the active invocation.</p
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_ALambdaFunction_SerializeJson_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson*"></a>
-  <h4 id="LambdaSharp_ALambdaFunction_SerializeJson_System_Object_" data-uid="LambdaSharp.ALambdaFunction.SerializeJson(System.Object)">SerializeJson(Object)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_SerializeJson_System_Object_">SerializeJson(Object)</a> method serializes an instance to a JSON <code>string</code>.</p>
+  <a id="LambdaSharp_ALambdaFunction_TerminateLambdaInstance_" data-uid="LambdaSharp.ALambdaFunction.TerminateLambdaInstance*"></a>
+  <h4 id="LambdaSharp_ALambdaFunction_TerminateLambdaInstance_System_String_" data-uid="LambdaSharp.ALambdaFunction.TerminateLambdaInstance(System.String)">TerminateLambdaInstance(String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_TerminateLambdaInstance_System_String_">TerminateLambdaInstance(String)</a> method forces the Lambda instance to terminate and perform a cold start on next invocation.
+This method should only be used when the processing environment has become corrupted beyond repair.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use LambdaSerializer.Serialize&lt;T&gt;(T) instead. This method will be removed in the next major release.&quot;)]
-protected string SerializeJson(object value)</code></pre>
+    <pre><code class="lang-csharp hljs">protected void TerminateLambdaInstance(string reason = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1861,25 +1697,9 @@ protected string SerializeJson(object value)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The instance to serialize.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>Serialized JSON <code>string</code>.</p>
+        <td><span class="parametername">reason</span></td>
+        <td><p>Optional message shown as reason for terminating the Lambda instance.</p>
 </td>
       </tr>
     </tbody>
