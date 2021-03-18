@@ -116,17 +116,20 @@
     int limit = 10
 ) { ... }
 </code></pre>
-<p>Common query string parameters can be captured as a class and easily reused across methods. For example, the following class defines the same query string parameters as in the previous example. The determination if a parameter is required is slightly different, because the LambdaSharp CLI cannot determine if a property/field initializer is specified. Therefore, it is necessary to use the <code>JsonProperty</code> attribute with the <code>Required</code> property to specify if a query parameter is required or not.</p>
+<p>Common query string parameters can be captured as a class and easily reused across methods. For example, the following class defines the same query string parameters as in the previous example. The determination if a parameter is required is slightly different, because the LambdaSharp CLI cannot determine if a property/field initializer is specified. Therefore, it is necessary to use the <code>JsonPropertyName</code> attribute with the <code>Required</code> property to specify if a query parameter is required or not.</p>
 <pre><code class="lang-csharp">public class FilterOptions {
 
     //--- Properties ---
-    [JsonProperty(PropertyName = &quot;contains&quot;, Required = Required.DisallowNull)]
+    [JsonPropertyName(&quot;contains&quot;)]
+    [Required]
     public string Contains { get; set; }
 
-    [JsonProperty(PropertyName = &quot;offset&quot;, Required = Required.DisallowNull)]
+    [JsonPropertyName(&quot;offset&quot;)]
+    [Required]
     public int Offset { get; set; } = 0;
 
-    [JsonProperty(PropertyName = &quot;limit&quot;, Required = Required.DisallowNull)]
+    [JsonPropertyName(&quot;limit&quot;)]
+    [Required]
     public int Limit { get; set; } = 10;
 }
 </code></pre>
@@ -173,11 +176,11 @@
     AddAlbumRequest album
 ) { ... }
 </code></pre>
-<p>The validation of the request body is controlled by the definition of the <code>AddAlbumRequest</code> type. The following type definition makes the <code>Title</code> property mandatory while keeping <code>YearPublished</code> optional. The constraints of the type fields and properties are controlled using the <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonPropertyAttribute.htm">JsonProperty</a> and <a href="https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonRequiredAttribute.htm">JsonRequired</a> attributes.</p>
+<p>The validation of the request body is controlled by the definition of the <code>AddAlbumRequest</code> type. The following type definition makes the <code>Title</code> property mandatory while keeping <code>YearPublished</code> optional. The constraints of the type fields and properties are controlled using the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonpropertynameattribute">JsonPropertyName</a> attribute from <em>System.Text.Json</em> namespace, as well as the <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute">Required</a> and <a href="https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute">Range</a> attributes from the <em>System.ComponentModel.DataAnnotations</em> namespace.</p>
 <pre><code class="lang-csharp">class AddAlbumRequest {
 
     //--- Properties ---
-    [JsonRequired]
+    [Required]
     public string Title { get; set; }
 
     public int? YearPublished { get; set; }

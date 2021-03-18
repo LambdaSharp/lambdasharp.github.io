@@ -2826,131 +2826,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.AwsConverters.ToStream
   nameWithType: AwsConverters.ToStream
-- uid: LambdaSharp.CloudWatch
-  name: LambdaSharp.CloudWatch
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.html
-  commentId: N:LambdaSharp.CloudWatch
-  fullName: LambdaSharp.CloudWatch
-  nameWithType: LambdaSharp.CloudWatch
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1
-  name: ALambdaEventFunction<TMessage>
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html
-  commentId: T:LambdaSharp.CloudWatch.ALambdaEventFunction`1
-  name.vb: ALambdaEventFunction(Of TMessage)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage)
-  nameWithType: ALambdaEventFunction<TMessage>
-  nameWithType.vb: ALambdaEventFunction(Of TMessage)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)
-  name: ALambdaEventFunction(ILambdaJsonSerializer)
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_
-  commentId: M:LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer)
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer)
-  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction(ILambdaJsonSerializer)
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction(ILambdaJsonSerializer)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)
-  name: ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_LambdaSharp_ILambdaFunctionDependencyProvider_
-  commentId: M:LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer, LambdaSharp.ILambdaFunctionDependencyProvider)
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer, LambdaSharp.ILambdaFunctionDependencyProvider)
-  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor*
-  name: ALambdaEventFunction
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ALambdaEventFunction
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ALambdaEventFunction
-  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent
-  name: CurrentEvent
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent
-  commentId: P:LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.CurrentEvent
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).CurrentEvent
-  nameWithType: ALambdaEventFunction<TMessage>.CurrentEvent
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).CurrentEvent
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent*
-  name: CurrentEvent
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.CurrentEvent
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).CurrentEvent
-  nameWithType: ALambdaEventFunction<TMessage>.CurrentEvent
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).CurrentEvent
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize(System.String,System.String)
-  name: Deserialize(String, String)
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_System_String_System_String_
-  commentId: M:LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize(System.String,System.String)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.Deserialize(System.String, System.String)
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).Deserialize(System.String, System.String)
-  nameWithType: ALambdaEventFunction<TMessage>.Deserialize(String, String)
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).Deserialize(String, String)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize*
-  name: Deserialize
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.Deserialize
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).Deserialize
-  nameWithType: ALambdaEventFunction<TMessage>.Deserialize
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).Deserialize
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer
-  name: LambdaSerializer
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_LambdaSerializer
-  commentId: P:LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.LambdaSerializer
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).LambdaSerializer
-  nameWithType: ALambdaEventFunction<TMessage>.LambdaSerializer
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).LambdaSerializer
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer*
-  name: LambdaSerializer
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_LambdaSerializer_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.LambdaSerializer
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).LambdaSerializer
-  nameWithType: ALambdaEventFunction<TMessage>.LambdaSerializer
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).LambdaSerializer
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync(`0)
-  name: ProcessEventAsync(TMessage)
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync__0_
-  commentId: M:LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync(`0)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ProcessEventAsync(TMessage)
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ProcessEventAsync(TMessage)
-  nameWithType: ALambdaEventFunction<TMessage>.ProcessEventAsync(TMessage)
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessEventAsync(TMessage)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync*
-  name: ProcessEventAsync
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ProcessEventAsync
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ProcessEventAsync
-  nameWithType: ALambdaEventFunction<TMessage>.ProcessEventAsync
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessEventAsync
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
-  name: ProcessMessageStreamAsync(Stream)
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_
-  commentId: M:LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync(System.IO.Stream)
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync(System.IO.Stream)
-  nameWithType: ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync(Stream)
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
-- uid: LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync*
-  name: ProcessMessageStreamAsync
-  href: sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_
-  commentId: Overload:LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync
-  isSpec: "True"
-  fullName: LambdaSharp.CloudWatch.ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync
-  fullName.vb: LambdaSharp.CloudWatch.ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync
-  nameWithType: ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync
-  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync
 - uid: LambdaSharp.ConfigSource
   name: LambdaSharp.ConfigSource
   href: sdk/LambdaSharp/LambdaSharp.ConfigSource.html
@@ -3540,6 +3415,131 @@ references:
   fullName.vb: LambdaSharp.CustomResource.Response(Of TAttributes).PhysicalResourceId
   nameWithType: Response<TAttributes>.PhysicalResourceId
   nameWithType.vb: Response(Of TAttributes).PhysicalResourceId
+- uid: LambdaSharp.EventBridge
+  name: LambdaSharp.EventBridge
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.html
+  commentId: N:LambdaSharp.EventBridge
+  fullName: LambdaSharp.EventBridge
+  nameWithType: LambdaSharp.EventBridge
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1
+  name: ALambdaEventFunction<TMessage>
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html
+  commentId: T:LambdaSharp.EventBridge.ALambdaEventFunction`1
+  name.vb: ALambdaEventFunction(Of TMessage)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage)
+  nameWithType: ALambdaEventFunction<TMessage>
+  nameWithType.vb: ALambdaEventFunction(Of TMessage)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)
+  name: ALambdaEventFunction(ILambdaJsonSerializer)
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_
+  commentId: M:LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer)
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer)
+  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction(ILambdaJsonSerializer)
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction(ILambdaJsonSerializer)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)
+  name: ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_LambdaSharp_ILambdaFunctionDependencyProvider_
+  commentId: M:LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer, LambdaSharp.ILambdaFunctionDependencyProvider)
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ALambdaEventFunction(LambdaSharp.Serialization.ILambdaJsonSerializer, LambdaSharp.ILambdaFunctionDependencyProvider)
+  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor*
+  name: ALambdaEventFunction
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ALambdaEventFunction
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ALambdaEventFunction
+  nameWithType: ALambdaEventFunction<TMessage>.ALambdaEventFunction
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ALambdaEventFunction
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent
+  name: CurrentEvent
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent
+  commentId: P:LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.CurrentEvent
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).CurrentEvent
+  nameWithType: ALambdaEventFunction<TMessage>.CurrentEvent
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).CurrentEvent
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent*
+  name: CurrentEvent
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.CurrentEvent
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).CurrentEvent
+  nameWithType: ALambdaEventFunction<TMessage>.CurrentEvent
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).CurrentEvent
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize(System.String,System.String)
+  name: Deserialize(String, String)
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_System_String_System_String_
+  commentId: M:LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize(System.String,System.String)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.Deserialize(System.String, System.String)
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).Deserialize(System.String, System.String)
+  nameWithType: ALambdaEventFunction<TMessage>.Deserialize(String, String)
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).Deserialize(String, String)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize*
+  name: Deserialize
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.Deserialize
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).Deserialize
+  nameWithType: ALambdaEventFunction<TMessage>.Deserialize
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).Deserialize
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer
+  name: LambdaSerializer
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_LambdaSerializer
+  commentId: P:LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.LambdaSerializer
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).LambdaSerializer
+  nameWithType: ALambdaEventFunction<TMessage>.LambdaSerializer
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).LambdaSerializer
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer*
+  name: LambdaSerializer
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_LambdaSerializer_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.LambdaSerializer
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).LambdaSerializer
+  nameWithType: ALambdaEventFunction<TMessage>.LambdaSerializer
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).LambdaSerializer
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync(`0)
+  name: ProcessEventAsync(TMessage)
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync__0_
+  commentId: M:LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync(`0)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ProcessEventAsync(TMessage)
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ProcessEventAsync(TMessage)
+  nameWithType: ALambdaEventFunction<TMessage>.ProcessEventAsync(TMessage)
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessEventAsync(TMessage)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync*
+  name: ProcessEventAsync
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ProcessEventAsync
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ProcessEventAsync
+  nameWithType: ALambdaEventFunction<TMessage>.ProcessEventAsync
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessEventAsync
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
+  name: ProcessMessageStreamAsync(Stream)
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_
+  commentId: M:LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync(System.IO.Stream)
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync(System.IO.Stream)
+  nameWithType: ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync(Stream)
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync(Stream)
+- uid: LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync*
+  name: ProcessMessageStreamAsync
+  href: sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_
+  commentId: Overload:LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync
+  isSpec: "True"
+  fullName: LambdaSharp.EventBridge.ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync
+  fullName.vb: LambdaSharp.EventBridge.ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync
+  nameWithType: ALambdaEventFunction<TMessage>.ProcessMessageStreamAsync
+  nameWithType.vb: ALambdaEventFunction(Of TMessage).ProcessMessageStreamAsync
 - uid: LambdaSharp.Exceptions
   name: LambdaSharp.Exceptions
   href: sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.html

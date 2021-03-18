@@ -25,7 +25,7 @@
     <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html">
     <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
     <meta property="og:description" content="Build serverless applications with .NET on AWS">
   
@@ -48,7 +48,7 @@
   
     <title>Class ALambdaEventFunction&lt;TMessage&gt;
    | LambdaSharp - Serverless .NET for AWS </title>
-    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html">
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html">
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -96,12 +96,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1">
   
   
-  <h1 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1" class="text-break">Class ALambdaEventFunction&lt;TMessage&gt;
+  <h1 id="LambdaSharp_EventBridge_ALambdaEventFunction_1" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1" class="text-break">Class ALambdaEventFunction&lt;TMessage&gt;
   </h1>
-  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> is the abstract base class for handling
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> is the abstract base class for handling
 <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html">Amazon CloudWatch Events</a> events.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -250,9 +250,9 @@
       <a class="xref" href="../LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_LambdaSharp_Logging_ILambdaSharpLogger_LogRecord_LambdaSharp_Logging_ALambdaLogRecord_">ALambdaFunction.ILambdaSharpLogger.LogRecord(ALambdaLogRecord)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.CloudWatch.html">LambdaSharp.CloudWatch</a></h6>
-  <h6><strong>Assembly</strong>: LambdaSharp.CloudWatch.dll</h6>
-  <h5 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.EventBridge.html">LambdaSharp.EventBridge</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.EventBridge.dll</h6>
+  <h5 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ALambdaEventFunction&lt;TMessage&gt; : ALambdaFunction, ILambdaSharpLogger</code></pre>
   </div>
@@ -274,9 +274,9 @@
   </table>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)">ALambdaEventFunction(ILambdaJsonSerializer)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> instance using the default
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer)">ALambdaEventFunction(ILambdaJsonSerializer)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> instance using the default
 implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -302,9 +302,9 @@ implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambdaFuncti
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> instance using a
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1__ctor_LambdaSharp_Serialization_ILambdaJsonSerializer_LambdaSharp_ILambdaFunctionDependencyProvider_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.#ctor(LambdaSharp.Serialization.ILambdaJsonSerializer,LambdaSharp.ILambdaFunctionDependencyProvider)">ALambdaEventFunction(ILambdaJsonSerializer, ILambdaFunctionDependencyProvider)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html">ALambdaEventFunction&lt;TMessage&gt;</a> instance using a
 custom implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambdaFunctionDependencyProvider.html">ILambdaFunctionDependencyProvider</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -338,9 +338,9 @@ custom implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambd
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.CurrentEvent">CurrentEvent</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent">CurrentEvent</a> property holds the CloudWatch event that is currently being processed.</p>
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.CurrentEvent">CurrentEvent</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent">CurrentEvent</a> property holds the CloudWatch event that is currently being processed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -363,11 +363,11 @@ custom implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambd
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_CurrentEvent_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync__0_">ProcessEventAsync(TMessage)</a>. Otherwise, it returns <code>null</code>.</p>
+  <h5 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_CurrentEvent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only set during the invocation of <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync__0_">ProcessEventAsync(TMessage)</a>. Otherwise, it returns <code>null</code>.</p>
 </div>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_LambdaSerializer_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_LambdaSerializer" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.LambdaSerializer">LambdaSerializer</h4>
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1_LambdaSerializer_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_LambdaSerializer" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.LambdaSerializer">LambdaSerializer</h4>
   <div class="markdown level1 summary"><p>An instance of <a class="xref" href="../LambdaSharp/LambdaSharp.Serialization.ILambdaJsonSerializer.html">ILambdaJsonSerializer</a> used for serializing/deserializing JSON data.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -393,9 +393,9 @@ custom implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambd
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_System_String_System_String_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.Deserialize(System.String,System.String)">Deserialize(String, String)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_System_String_System_String_">Deserialize(String, String)</a> method converts the CloudWatch event detail from string to a typed instance.</p>
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_System_String_System_String_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.Deserialize(System.String,System.String)">Deserialize(String, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_System_String_System_String_">Deserialize(String, String)</a> method converts the CloudWatch event detail from string to a typed instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -442,13 +442,13 @@ custom implementation of <a class="xref" href="../LambdaSharp/LambdaSharp.ILambd
       </tr>
     </tbody>
   </table>
-  <h5 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_Deserialize_System_String_System_String__remarks">Remarks</h5>
+  <h5 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_Deserialize_System_String_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method invokes <span class="xref">Amazon.Lambda.Core.ILambdaSerializer.Deserialize``1(System.IO.Stream)</span> to convert the CloudWatch event detail string
 into a <paramtyperef name="TMessage"></paramtyperef> instance. Override this method to provide a custom message deserialization implementation.</p>
 </div>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync__0_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessEventAsync(`0)">ProcessEventAsync(TMessage)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessEventAsync__0_">ProcessEventAsync(TMessage)</a> method is invoked for every received CloudWatch event.</p>
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync__0_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessEventAsync(`0)">ProcessEventAsync(TMessage)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessEventAsync__0_">ProcessEventAsync(TMessage)</a> method is invoked for every received CloudWatch event.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -489,9 +489,9 @@ into a <paramtyperef name="TMessage"></paramtyperef> instance. Override this met
       </tr>
     </tbody>
   </table>
-  <a id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync*"></a>
-  <h4 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.CloudWatch.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
-  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.CloudWatch.ALambdaEventFunction-1.html#LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> method is overridden to
+  <a id="LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync*"></a>
+  <h4 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_" data-uid="LambdaSharp.EventBridge.ALambdaEventFunction`1.ProcessMessageStreamAsync(System.IO.Stream)">ProcessMessageStreamAsync(Stream)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.EventBridge.ALambdaEventFunction-1.html#LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream_">ProcessMessageStreamAsync(Stream)</a> method is overridden to
 provide specific behavior for this base class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -535,7 +535,7 @@ provide specific behavior for this base class.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="../LambdaSharp/LambdaSharp.ALambdaFunction.html#LambdaSharp_ALambdaFunction_ProcessMessageStreamAsync_System_IO_Stream_">ALambdaFunction.ProcessMessageStreamAsync(Stream)</a></div>
-  <h5 id="LambdaSharp_CloudWatch_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream__remarks">Remarks</h5>
+  <h5 id="LambdaSharp_EventBridge_ALambdaEventFunction_1_ProcessMessageStreamAsync_System_IO_Stream__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method cannot be overridden.</p>
 </div>
   <h3 id="implements">Implements</h3>

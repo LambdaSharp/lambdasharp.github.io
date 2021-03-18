@@ -26,7 +26,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/APIGateway.html",
-          "hash": "Ox2Vhja6NwBFLzaUmGIhMw=="
+          "hash": "6guFgkJk2xUFW13pPd7luQ=="
         }
       },
       "is_incremental": false,
@@ -74,7 +74,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Events-LambdaError.html",
-          "hash": "wgXQfZ1HuJsQV5vChA2N3w=="
+          "hash": "ssa0C2/zV+TvV1/0UuduCg=="
         }
       },
       "is_incremental": false,
@@ -302,7 +302,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Hicetas.html",
-          "hash": "Co4sqiCmARumPbsGrtpMfA=="
+          "hash": "FV0aJJGd0IHob4WCiLgCEA=="
         }
       },
       "is_incremental": false,
@@ -338,7 +338,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/VideoTutorials.html",
-          "hash": "OI8Y6GgWKuYRbmJZEhHz/g=="
+          "hash": "jlTF8J18rfeqCuBSfIE2VQ=="
         }
       },
       "is_incremental": false,
@@ -362,7 +362,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "51kbVze7SL8gs7ON40BNPw=="
+          "hash": "1MY+7q9H/gvSgMt66d/0vw=="
         }
       },
       "is_incremental": false,
@@ -374,7 +374,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Index.html",
-          "hash": "USiqetHjtUfKF0qW77+gUg=="
+          "hash": "uJAioFfjt9uTivkfIbkVTA=="
         }
       },
       "is_incremental": false,
@@ -386,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Build.html",
-          "hash": "aSjJi6g2uVGGS76+EXyC/w=="
+          "hash": "l6FOLRaoRuoar3oS9vfybA=="
         }
       },
       "is_incremental": false,
@@ -398,7 +398,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Deploy.html",
-          "hash": "ezLNNQpqJ7w+yogv6dJSoQ=="
+          "hash": "r2aXdvcmMHUkicjwf0JYaQ=="
         }
       },
       "is_incremental": false,
@@ -554,7 +554,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Publish.html",
-          "hash": "w97QWQtGx7QvnwSeSp8zBA=="
+          "hash": "nKSCH7WJgcTW16S8gYvfVg=="
         }
       },
       "is_incremental": false,
@@ -622,18 +622,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "cli/Tool-Util-DownloadCloudFormationSpec.md",
-      "output": {
-        ".html": {
-          "relative_path": "cli/Tool-Util-DownloadCloudFormationSpec.html",
-          "hash": "bBkxEd3hyRgNtqLetiIQGQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "cli/Tool-Util-ListLambdas.md",
       "output": {
         ".html": {
@@ -650,7 +638,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/Tool-Util-ListModules.html",
-          "hash": "nThFGZ5H3ttIf5Kaf0hPCQ=="
+          "hash": "sFjtH1G5WI6Ohhve5yTC6A=="
         }
       },
       "is_incremental": false,
@@ -686,7 +674,7 @@
       "output": {
         ".html": {
           "relative_path": "cli/toc.html",
-          "hash": "NdChbf5p/aiecw93WA0Nxg=="
+          "hash": "elLac+rqH+STuOIF/Jgt6Q=="
         }
       },
       "is_incremental": false,
@@ -863,7 +851,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "quCHDS2ZmASbsLI8E8FB6Q=="
+          "hash": "s30oPpwEtO2m+MlzTk42kA=="
         }
       },
       "is_incremental": false,
@@ -887,7 +875,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-Api.html",
-          "hash": "ckc5BBhgec1GOsd8Wx59KQ=="
+          "hash": "nsqQ/fv1nae1h83pgB7dfg=="
         }
       },
       "is_incremental": false,
@@ -899,7 +887,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-Bucket.html",
-          "hash": "dj2SEsYDXJz7A86zhvPZeA=="
+          "hash": "j1QF5C45OrFCOqWEzp2heQ=="
         }
       },
       "is_incremental": false,
@@ -911,7 +899,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-EventBus.html",
-          "hash": "BELKJ93rxUw8abe2Ggy8RA=="
+          "hash": "O5QuiWIrYD211FF6rF1SSQ=="
         }
       },
       "is_incremental": false,
@@ -923,7 +911,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "ot6rlTu2ZHAok9n9laNa+Q=="
+          "hash": "yoIahBW0fqVNprESLK5XGQ=="
         }
       },
       "is_incremental": false,
@@ -971,7 +959,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "FbEY8W2fWMivN4o3DYAogQ=="
+          "hash": "l9tFtzkPy19/yJICgTQg2w=="
         }
       },
       "is_incremental": false,
@@ -983,7 +971,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "06kev7iIUzvdOMNX9d+hEw=="
+          "hash": "0faNE16hVK1VX6FzFwPfOQ=="
         }
       },
       "is_incremental": false,
@@ -1031,7 +1019,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "wevOS+vsY1oJBAmKY4eoAg=="
+          "hash": "C9JthP4vfKfK+4rzO+c9Qg=="
         }
       },
       "is_incremental": false,
@@ -1434,30 +1422,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.ALambdaEventFunction-1.html",
-          "hash": "7nqvxUy1qiCXHRc8Ql/nVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.yml",
-      "output": {
-        ".html": {
-          "relative_path": "sdk/LambdaSharp.CloudWatch/LambdaSharp.CloudWatch.html",
-          "hash": "aXJevBhnO/HYbGLKgIeyPg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.yml",
       "output": {
         ".html": {
@@ -1511,6 +1475,30 @@
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.html",
           "hash": "rsHWT66E+KaKU73vXMLmqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html",
+          "hash": "Dznjpj9Kg0TQyII32ZyJYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.html",
+          "hash": "RnHRza08Z1gcj1EKmC9tKg=="
         }
       },
       "is_incremental": false,
@@ -2497,7 +2485,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/toc.html",
-          "hash": "4sMKulr8XQ8SbKRLlKGjGw=="
+          "hash": "OYnvQBqU+Tk+op3D/PVPUw=="
         }
       },
       "is_incremental": false,
@@ -2893,7 +2881,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-ResourceType-Attribute.html",
-          "hash": "MRYdn03VsseKDKISED2vvQ=="
+          "hash": "TE9Rj7XsEDavQch3LkDicg=="
         }
       },
       "is_incremental": false,
@@ -2905,7 +2893,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-ResourceType-Property.html",
-          "hash": "8Ga6a7Nth9Ewv7J849inFA=="
+          "hash": "HkdZv2HT3rTdEBqwQMMyHw=="
         }
       },
       "is_incremental": false,
@@ -3008,14 +2996,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 109,
-          "skipped_file_count": 108
+          "total_file_count": 108,
+          "skipped_file_count": 99
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 118,
-          "skipped_file_count": 118
+          "skipped_file_count": 116
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
