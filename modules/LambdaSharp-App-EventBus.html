@@ -138,6 +138,272 @@
 <p>The <code>Url</code> output contains the URL of the api endpoint used by the <code>LambdaSharpEventBusClient</code>.</p>
 <p><i>Type:</i> String</p>
 </dd>
+<dt><code>EventTopicArn</code></dt>
+<dd>
+<p>The <code>EventTopicArn</code> output contains the SNS topic ARN for broadcasting events to the app event bus.</p>
+<p><i>Type:</i> AWS::SNS::Topic</p>
+</dd>
+</dl>
+<h2 id="websocket-api">WebSocket API</h2>
+<p>The WebSocket API endpoint can be found in the <code>Url</code> output value of the nested stack. The WebSocket API manages the broadcasting of subscribed EventBridge events to clients. Each client can have an arbitrary number of subscription rules using the <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/filtering-examples-structure.html">EventBridge pattern</a> notation.</p>
+<p>Note that events must first be published to WebSocket SNS topic before they can be subscribed to. The ARN of the SNS topic can be found in the <code>EventTopicArn</code> output value of the nested stack.</p>
+<h3 id="authentication">Authentication</h3>
+<p>The WebSocket API expects a <code>header</code> query parameter in the request to validate access to the API. The value of the <code>header</code> query parameter is a base64 encoded JSON document.</p>
+<h4 id="header-document">Header Document</h4>
+<pre><code class="lang-json">{
+    &quot;Host&quot;: &quot;string&quot;,
+    &quot;ApiKey&quot;: &quot;string&quot;,
+    &quot;Id&quot;: &quot;guid&quot;
+}
+</code></pre>
+<h4 id="header-properties">Header Properties</h4>
+<dl>
+<dt><code>Host</code></dt>
+<dd>
+<p>The WebSocket domain name.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>ApiKey</code></dt>
+<dd>
+<p>The API key to authorize access to the WebSocket. The API key is computed by concatenating <code>AppVersionId</code> with the colon character (i.e. <code>':'</code>) and the CloudFormation stack identifier, and then applying a base 64 encoding to the result. When <code>DevMode</code> is enabled, the API key only uses the CloudFormation stack identifier.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Id</code></dt>
+<dd>
+<p>The app instance ID or session ID. Must be a unique GUID.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> GUID</p>
+</dd>
+</dl>
+<h4 id="sample-header-encoding">Sample Header Encoding</h4>
+<p>The following example illustrates how to encode the JSON header into a query parameter.</p>
+<p><strong>Original header document:</strong></p>
+<pre><code class="lang-json">{
+    &quot;Host&quot;: &quot;acme.execute-api.us-west-2.amazonaws.com&quot;,
+    &quot;ApiKey&quot;: &quot;ZWU4OTc0MjAtODgzNi0xMWViLWFmMmMtMDIxZTQ5Njc5YTBi&quot;,
+    &quot;Id&quot;: &quot;4a114560-fa5b-4f94-a462-69fbaf432b86&quot;
+}
+</code></pre>
+<p><strong>Encoded header value:</strong></p>
+<pre><code>wss://acme.execute-api.us-west-2.amazonaws.com/LATEST/?header=ewogICAgIkhvc3QiOiAiYWNtZS5leGVjdXRlLWFwaS51cy13ZXN0LTIuYW1hem9uYXdzLmNvbSIsCiAgICAiQXBpS2V5IjogIlpXVTRPVGMwTWpBdE9EZ3pOaTB4TVdWaUxXRm1NbU10TURJeFpUUTVOamM1WVRCaSIsCiAgICAiSWQiOiAiNGExMTQ1NjAtZmE1Yi00Zjk0LWE0NjItNjlmYmFmNDMyYjg2Igp9Cg==
+</code></pre>
+<h3 id="protocol">Protocol</h3>
+<p>The WebSocket protocol has two types of interactions: actions and notifications. <em>Actions</em> are similar to requests in that each action has exactly one response, called acknowledgements. <em>Acknowledgements</em> are correlated to actions by the <code>RequestId</code> property. <em>Notifications</em> can occur at any time and are commonly  triggered by a subscription rule.</p>
+<h3 id="action-syntax">Action Syntax</h3>
+<p>Each request must have a <code>Action</code> property with a known value. The <code>Action</code> property indicates the shape of the request. In addition, must have a <code>RequestId</code> property to correlate responses from the WebSocket with their requests.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;string&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;
+}
+</code></pre>
+<h4 id="properties">Properties</h4>
+<p>The following properties are required for all requests.</p>
+<dl>
+<dt><code>Action</code></dt>
+<dd>
+<p>The name of the action to invoke.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The unique identifier for the request.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> GUID</p>
+</dd>
+</dl>
+<h4 id="acknowledge-success">Acknowledge: Success</h4>
+<p>A response to an action has <code>Ack</code> as its <code>Action</code> value. The <code>RequestId</code> must be used to correlate a response to an earlier request. The order in which responses are sent back is non-deterministic and the client must be able to associate responses correctly to pending requests.</p>
+<p>A successful acknowledge response has <code>Ok</code> as its <code>Status</code> value.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;Ack&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;,
+    &quot;Status&quot;: &quot;Ok&quot;
+}
+</code></pre>
+<dl>
+<dt><code>Action</code></dt>
+<dd>
+<p>The value is always <code>Ack</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The unique identifier for the request correlating it to a matching <em>Action</em>.</p>
+<p><i>Type:</i> GUID</p>
+</dd>
+<dt><code>Status</code></dt>
+<dd>
+<p>The value is always <code>Ok</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+<h4 id="acknowledge-error">Acknowledge: Error</h4>
+<p>A response to an action has <code>Ack</code> as its <code>Action</code> value. The <code>RequestId</code> must be used to correlate a response to an earlier request. The order in which responses are sent back is non-deterministic and the client must be able to associate responses correctly to pending requests.</p>
+<p>A failed acknowledge response has <code>Error</code> as its <code>Status</code> value. In addition, the <code>Message</code> property contains a description of the error.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;Ack&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;,
+    &quot;Status&quot;: &quot;Error&quot;,
+    &quot;Message&quot;: &quot;string&quot;
+}
+</code></pre>
+<dl>
+<dt><code>Action</code></dt>
+<dd>
+<p>The value is always <code>Ack</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Message</code></dt>
+<dd>
+<p>A description of the error that occurred.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The unique identifier for the request correlating it to a matching <em>Action</em>.</p>
+<p><i>Type:</i> GUID</p>
+</dd>
+<dt><code>Status</code></dt>
+<dd>
+<p>The value is always <code>Error</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+<h3 id="action-hello">Action: Hello</h3>
+<p>The <code>Hello</code> action must be sent by the client as soon as the connection is opened. Failure to send the <code>Hello</code> action will cause the connection to be automatically closed by the WebSocket API.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;Hello&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;
+}
+</code></pre>
+<h3 id="action-subscribe">Action: Subscribe</h3>
+<p>The <code>Subscribe</code> action is used to create or update a subscription rule. The subscription rule has an <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/filtering-examples-structure.html">EventBridge pattern</a> to describe which events should be sent to the client.</p>
+<p>Note that only events published to the <code>EventTopicArn</code> SNS topic can be subscribed to.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;Subscribe&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;,
+    &quot;Rule&quot;: &quot;string&quot;,
+    &quot;Pattern&quot;: &quot;pattern&quot;
+}
+</code></pre>
+<h4 id="properties-1">Properties</h4>
+<p>The following properties are in addition to the default request properties.</p>
+<dl>
+<dt><code>Rule</code></dt>
+<dd>
+<p>The name of the subscription rule to create or update.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Pattern</code></dt>
+<dd>
+<p>The <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/filtering-examples-structure.html">EventBridge pattern</a> describing the events to subscribe to.</p>
+<p>Note that only events published to the <code>EventTopicArn</code> SNS topic can be subscribed to.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/filtering-examples-structure.html">EventBridge pattern</a> as a JSON string</p>
+</dd>
+</dl>
+<h3 id="action-unsubscribe">Action: Unsubscribe</h3>
+<p>The <code>Unsubscribe</code> action is used to delete a subscription rule.</p>
+<pre><code class="lang-json">{
+    &quot;Action&quot;: &quot;Unsubscribe&quot;,
+    &quot;RequestId&quot;: &quot;guid&quot;,
+    &quot;Rule&quot;: &quot;string&quot;
+}
+</code></pre>
+<h4 id="properties-2">Properties</h4>
+<p>The following properties are in addition to the default request properties.</p>
+<dl>
+<dt><code>Rule</code></dt>
+<dd>
+<p>The name of the subscription rule to delete.</p>
+<p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+<h3 id="notification-event">Notification: Event</h3>
+<p>An event notification has <code>Event</code> as its <code>Action</code> value. The WebSocket API sends this notification when an EventBridge event published to <code>EventTopicArn</code> matches one or more subscription rules.</p>
+<pre><code class="lang-json">{
+  &quot;Action&quot;: &quot;Event&quot;,
+  &quot;Rules&quot;: [ &quot;string&quot; ],
+  &quot;Source&quot;: &quot;string&quot;,
+  &quot;Type&quot;: &quot;string&quot;,
+  &quot;Event&quot;: &quot;json&quot;,
+  &quot;RequestId&quot;: &quot;guid&quot;
+}
+</code></pre>
+<h4 id="properties-3">Properties</h4>
+<dl>
+<dt><code>Action</code></dt>
+<dd>
+<p>The value is always <code>Event</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Event</code></dt>
+<dd>
+<p>The <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/aws-events.html">EventBridge event</a> payload that matched the subscription rule.</p>
+<p><i>Type:</i> <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/aws-events.html">EventBridge event</a> as a JSON string</p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The unique identifier for the request.</p>
+<p><i>Type:</i> GUID</p>
+</dd>
+<dt><code>Rules</code></dt>
+<dd>
+<p>A list of subscription rules that were matched by the event.</p>
+<p><i>Type:</i> List of String</p>
+</dd>
+<dt><code>Source</code></dt>
+<dd>
+<p>The value of the <code>source</code> property from the EventBridge event.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Type</code></dt>
+<dd>
+<p>The value of the <code>detail-type</code> property from the EventBridge event.</p>
+<p><i>Type:</i> String</p>
+</dd>
+</dl>
+<p><strong>Sample EventBridge event:</strong></p>
+<pre><code class="lang-json">{
+  &quot;version&quot;: &quot;0&quot;,
+  &quot;id&quot;: &quot;6a7e8feb-b491-4cf7-a9f1-bf3703467718&quot;,
+  &quot;detail-type&quot;: &quot;EC2 Instance State-change Notification&quot;,
+  &quot;source&quot;: &quot;aws.ec2&quot;,
+  &quot;account&quot;: &quot;111122223333&quot;,
+  &quot;time&quot;: &quot;2017-12-22T18:43:48Z&quot;,
+  &quot;region&quot;: &quot;us-west-1&quot;,
+  &quot;resources&quot;: [
+    &quot;arn:aws:ec2:us-west-1:123456789012:instance/i-1234567890abcdef0&quot;
+  ],
+  &quot;detail&quot;: {
+    &quot;instance-id&quot;: &quot;i-1234567890abcdef0&quot;,
+    &quot;state&quot;: &quot;terminated&quot;
+  }
+}
+</code></pre>
+<h3 id="notification-keepalive">Notification: KeepAlive</h3>
+<p>A keep-alive notification has <code>KeepAlive</code> as its <code>Action</code> value. The WebSocket API sends this notification periodically to keep the WebSocket connection alive.</p>
+<pre><code class="lang-json">{
+  &quot;Action&quot;: &quot;KeepAlive&quot;,
+  &quot;RequestId&quot;: &quot;guid&quot;
+}
+</code></pre>
+<dl>
+<dt><code>Action</code></dt>
+<dd>
+<p>The value is always <code>KeepAlive</code>.</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>RequestId</code></dt>
+<dd>
+<p>The unique identifier for the request.</p>
+<p><i>Type:</i> GUID</p>
+</dd>
 </dl>
 </article>
           </div>

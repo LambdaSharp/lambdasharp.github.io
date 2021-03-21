@@ -212,7 +212,10 @@
 </dd>
 </dl>
 <h2 id="rest-api">REST API</h2>
-<p>The API key is computed by concatenating the app version identifier with the colon character (i.e. <code>':'</code>) and the CloudFormation stack identifier, and then applying a base 64 encoding to the result. When <code>DevMode</code> is enabled, the API key only uses the CloudFormation stack identifier.</p>
+<p>The REST API endpoint can be found in the <code>Url</code> output value of the nested stack.</p>
+<h3 id="authentication">Authentication</h3>
+<p>The REST API expects a <code>X-Api-Key</code> header in the request to validate access to the API.</p>
+<p>The API key is computed by concatenating <code>AppVersionId</code> with the colon character (i.e. <code>':'</code>) and the CloudFormation stack identifier, and then applying a base 64 encoding to the result. When <code>DevMode</code> is enabled, the API key only uses the CloudFormation stack identifier.</p>
 <p>To compute the effective API key, base 64 decode the <code>ApiKey</code> output value and concatenate it to the app version identifier:</p>
 <pre><code class="lang-javascript">Headers[&quot;X-Api-Key&quot;] = Base64Encode($AppVersionId + ':' + Base64Decode($ApiKey))
 </code></pre>

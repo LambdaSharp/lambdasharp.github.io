@@ -326,7 +326,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/Setup.html",
-          "hash": "KFyZB487gY0ccVK5hQKDHw=="
+          "hash": "Ti7Yf2sZBX35RRdxM5Ul0A=="
         }
       },
       "is_incremental": false,
@@ -338,7 +338,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/VideoTutorials.html",
-          "hash": "jlTF8J18rfeqCuBSfIE2VQ=="
+          "hash": "zm3CuUFWr+yMuWwINh4oBw=="
         }
       },
       "is_incremental": false,
@@ -875,7 +875,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-Api.html",
-          "hash": "nsqQ/fv1nae1h83pgB7dfg=="
+          "hash": "iaW/EvioIFvnxEyF3obBHQ=="
         }
       },
       "is_incremental": false,
@@ -899,7 +899,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-EventBus.html",
-          "hash": "O5QuiWIrYD211FF6rF1SSQ=="
+          "hash": "S0wBDZsZ2ADYp7gjhdXC8Q=="
         }
       },
       "is_incremental": false,
@@ -911,7 +911,19 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "yoIahBW0fqVNprESLK5XGQ=="
+          "hash": "VJKQBCfggVnL0pm6iv8+rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "modules/LambdaSharp-Registration-App.md",
+      "output": {
+        ".html": {
+          "relative_path": "modules/LambdaSharp-Registration-App.html",
+          "hash": "vklOvVOjkUZYDFrq8GPGug=="
         }
       },
       "is_incremental": false,
@@ -1031,7 +1043,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/toc.html",
-          "hash": "rHLHshHmDqQD/GK2xiupcA=="
+          "hash": "B7AJeHG3m8vu6oqi2nr+ug=="
         }
       },
       "is_incremental": false,
@@ -1613,6 +1625,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "ManagedReference",
       "source_relative_path": "sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.yml",
       "output": {
@@ -2345,9 +2360,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "ManagedReference",
       "source_relative_path": "sdk/LambdaSharp/LambdaSharp.Exceptions.yml",
       "output": {
@@ -2996,14 +3008,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 108,
-          "skipped_file_count": 99
+          "total_file_count": 109,
+          "skipped_file_count": 108
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 118,
-          "skipped_file_count": 116
+          "skipped_file_count": 118
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
