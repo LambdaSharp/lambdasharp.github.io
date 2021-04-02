@@ -100,7 +100,7 @@
 <p>A LambdaSharp module is divided into three main components: details about the module, required dependencies, and item definitions, such as parameters, variables, resources, and functions.</p>
 <p>Parameter values are provided at module deployment time. Optionally, parameters can act as conditional resources that are created when a parameter value is omitted.</p>
 <p>Variables hold intermediate results that can be shared with other item definitions in the module. Variables are inlined during compilation and don't appear in the final output unless shared publicly.</p>
-<p>Parameters, variables, and resources can be shared with other modules by making them <code>public</code>. These can then be imported using cross-module references.</p>
+<p>Parameters, variables, and resources can be shared with other modules by making them <code>public</code>. These can then be imported using cross-module references. Alternatively, they can be scoped as <code>stack</code>, which makes them only available in a nested stack.</p>
 <p>Functions can be wired up to respond to various event sources, such as SQS, SNS, API Gateway, or even Slack Commands. Functions can be implemented using C# or Javascript.</p>
 <p>The LambdaSharp CLI <code>build</code> command compiles the module into a CloudFormation template. The <code>publish</code> command uploads the artifacts to the deployment bucket. Finally, the <code>deploy</code> command creates/updates a CloudFormation stack.</p>
 <h2 id="syntax">Syntax</h2>

@@ -108,27 +108,29 @@ event pattern on the LambdaSharp App EventBus.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="LambdaSharp.App.EventBus.Actions.AnAction.html">AnAction</a></div>
-    <div class="level2"><a class="xref" href="LambdaSharp.App.EventBus.Actions.ARuleAction.html">ARuleAction</a></div>
-    <div class="level3"><span class="xref">SubscribeAction</span></div>
+    <div class="level1"><a class="xref" href="LambdaSharp.App.EventBus.Actions.AAction.html">AAction</a></div>
+    <div class="level2"><span class="xref">SubscribeAction</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="LambdaSharp.App.EventBus.Actions.ARuleAction.html#LambdaSharp_App_EventBus_Actions_ARuleAction_Rule">ARuleAction.Rule</a>
+      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_Action">AAction.Action</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_Action">AnAction.Action</a>
+      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_RequestId">AAction.RequestId</a>
     </div>
     <div>
-      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_RequestId">AnAction.RequestId</a>
+      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeOk">AAction.AcknowledgeOk()</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeError_System_String_">AAction.AcknowledgeError(String)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.App.EventBus.Actions.html">LambdaSharp.App.EventBus.Actions</a></h6>
   <h6><strong>Assembly</strong>: LambdaSharp.App.dll</h6>
   <h5 id="LambdaSharp_App_EventBus_Actions_SubscribeAction_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SubscribeAction : ARuleAction</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class SubscribeAction : AAction</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -151,6 +153,30 @@ event pattern on the LambdaSharp App EventBus.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Pattern { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_App_EventBus_Actions_SubscribeAction_Rule_" data-uid="LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule*"></a>
+  <h4 id="LambdaSharp_App_EventBus_Actions_SubscribeAction_Rule" data-uid="LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule">Rule</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.App.EventBus.Actions.SubscribeAction.html#LambdaSharp_App_EventBus_Actions_SubscribeAction_Rule">Rule</a> property holds the subscription rule name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Rule { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="variable">Variable</h1>
 
-<p>The <code>Variable</code> declaration specifies a literal value or an expression. Variables are inlined during compilation. They can be used by other variables, resources, and functions. Variables, like resources, can be scoped to functions or to be public.</p>
+<p>The <code>Variable</code> declaration specifies a literal value or an expression. Variables are inlined during compilation. They can be used by other variables, resources, and functions. Variables, like resources, can be scoped to functions, the stack, or to be public.</p>
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Variable: String
 Description: String
@@ -121,7 +121,7 @@ EncryptionContext:
 </dd>
 <dt><code>Scope</code></dt>
 <dd>
-<p>The <code>Scope</code> attribute specifies which functions need to have access to this item. The <code>Scope</code> attribute can be a comma-separated list or a YAML list of function names. If all function need the item, then <code>all</code> can be used as a wildcard. In addition, the <code>public</code> can be used to export the item from the module.</p>
+<p>The <code>Scope</code> attribute specifies which functions need to have access to this item. The <code>Scope</code> attribute can be a comma-separated list or a YAML list of function names. If all functions need the item, then <code>all</code> can be used as a wildcard. In addition, <code>public</code> can be used to export the item from the module. Alternatively, <code>stack</code> can be used to make the item available only in a nested stack.</p>
 <p><i>Required</i>: No</p>
 <p><i>Type</i>: Comma-delimited String or List of String</p>
 </dd>

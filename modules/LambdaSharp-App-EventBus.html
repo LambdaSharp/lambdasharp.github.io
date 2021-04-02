@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="module-lambdasharpappeventbus">Module: LambdaSharp.App.EventBus</h1>
 
-<p><em>Version:</em> 0.8.2.2</p>
+<p><em>Version:</em> 0.8.2.3</p>
 <h2 id="overview">Overview</h2>
 <p>The <em>LambdaSharp.App.EventBus</em> module is used by the <code>App</code> declaration to create an API Gateway WebSocket proxy for CloudWatch EventBridge. The proxy is only created if the app has at least one event source. When created, the proxy manages event pattern subscriptions to forwarded events. The proxy uses the same notation as CloudWatch EventBridge to describe event patterns. This design promotes a unified way to work with CloudWatch events both in the backend and frontend. Access to the EventBus API is secured by an API key that is computed from the CloudFormation stack identifier and the app version identifier. Using the <code>DevMode</code> parameter, the EventBus API can be configured for more lenient access and a simplified API key, which allows for accessing it from <em>localhost</em>.</p>
 <h2 id="resource-types">Resource Types</h2>
@@ -115,15 +115,15 @@
 <p><i>Type:</i> String</p>
 <p>The <code>DevMode</code> parameter must have one of the following values:</p>
 <dl>
-<dt><code>Enabled</code></dt>
-<dd>
-<p>The API key is solely based on the CloudFormation stack identifer. Debug logging is enabled in the app.</p>
-</dd>
 <dt><code>Disabled</code></dt>
 <dd>
 <p>The API key is based on teh CloudFormation stack identifier and the app version identifier. Debug logging is disabled in the app.</p>
 </dd>
 </dl>
+</dd>
+<dt><code>Enabled</code></dt>
+<dd>
+<p>The API key is solely based on the CloudFormation stack identifer. Debug logging is enabled in the app.</p>
 </dd>
 </dl>
 <h2 id="output-values">Output Values</h2>
@@ -133,15 +133,20 @@
 <p>The <code>ApiKey</code> output contains the CloudFormation stack identifier portion of the API key.</p>
 <p><i>Type:</i> String</p>
 </dd>
+<dt><code>EventTopicArn</code></dt>
+<dd>
+<p>The <code>EventTopicArn</code> output contains the SNS topic ARN for broadcasting events to the app event bus.</p>
+<p><i>Type:</i> AWS::SNS::Topic</p>
+</dd>
 <dt><code>Url</code></dt>
 <dd>
 <p>The <code>Url</code> output contains the URL of the api endpoint used by the <code>LambdaSharpEventBusClient</code>.</p>
 <p><i>Type:</i> String</p>
 </dd>
-<dt><code>EventTopicArn</code></dt>
+<dt><code>WebSocketApiId</code></dt>
 <dd>
-<p>The <code>EventTopicArn</code> output contains the SNS topic ARN for broadcasting events to the app event bus.</p>
-<p><i>Type:</i> AWS::SNS::Topic</p>
+<p>The <code>WebSocketApiId</code> output contains the ID of the WebSocket API.</p>
+<p><i>Type:</i> AWS::ApiGatewayV2::Api</p>
 </dd>
 </dl>
 <h2 id="websocket-api">WebSocket API</h2>

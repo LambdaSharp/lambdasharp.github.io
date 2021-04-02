@@ -296,14 +296,14 @@ if ! lash tier version --min-version ${LASH_TIER_VERSION}; then
 fi
 </code></pre>
 <h3 id="import-module-artifacts-to-deployment-tier">Import module artifacts to deployment tier</h3>
-<p>With the deployment tier upgraded, the previously built modules can now be imported. The following command copies the CloudFormation templates and artifacts produced by the <em>Build</em> phase to the deployment tier bucket. All module dependencies must be imported explicitly when using the <code>--from-origin</code> option.</p>
+<p>With the deployment tier upgraded, the previously built modules can now be imported. The following command copies the CloudFormation templates and artifacts produced by the <em>Build</em> phase to the deployment tier bucket. All module dependencies must be imported explicitly when using the <code>--from-bucket</code> option.</p>
 <blockquote>
 <p>NOTE: <code>lash publish</code> can import multiple modules at once.</p>
 </blockquote>
 <pre><code class="lang-bash">lash publish ${LASH_OPTIONS} \
     --tier ${DEPLOYMENT_TIER} \
     --prompts-as-errors \
-    --from-origin ${BUILD_BUCKET} \
+    --from-bucket ${BUILD_BUCKET} \
     My.Module@${MODULE_ORIGIN}
 </code></pre>
 <h3 id="deploy-imported-modules-to-deployment-tier">Deploy imported modules to deployment tier</h3>

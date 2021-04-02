@@ -230,6 +230,11 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 <td>REST API resource</td>
 </tr>
 <tr>
+<td><code>Module::RestApi::CorsOrigin</code></td>
+<td>String</td>
+<td>CORS Origin for REST API; is <code>!Ref AWS::NoValue</code> when not set</td>
+</tr>
+<tr>
 <td><code>Module::RestApi::Deployment</code></td>
 <td>AWS::ApiGateway::Deployment</td>
 <td>Deployment for the REST API; this resource changes whenever a REST API resource or method is modified</td>

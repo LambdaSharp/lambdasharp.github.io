@@ -1854,6 +1854,64 @@ references:
   commentId: N:LambdaSharp.App.EventBus.Actions
   fullName: LambdaSharp.App.EventBus.Actions
   nameWithType: LambdaSharp.App.EventBus.Actions
+- uid: LambdaSharp.App.EventBus.Actions.AAction
+  name: AAction
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html
+  commentId: T:LambdaSharp.App.EventBus.Actions.AAction
+  fullName: LambdaSharp.App.EventBus.Actions.AAction
+  nameWithType: AAction
+- uid: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError(System.String)
+  name: AcknowledgeError(String)
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeError_System_String_
+  commentId: M:LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError(System.String)
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError(System.String)
+  nameWithType: AAction.AcknowledgeError(String)
+- uid: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError*
+  name: AcknowledgeError
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeError_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeError
+  nameWithType: AAction.AcknowledgeError
+- uid: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk
+  name: AcknowledgeOk()
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeOk
+  commentId: M:LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk()
+  nameWithType: AAction.AcknowledgeOk()
+- uid: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk*
+  name: AcknowledgeOk
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_AcknowledgeOk_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.AcknowledgeOk
+  nameWithType: AAction.AcknowledgeOk
+- uid: LambdaSharp.App.EventBus.Actions.AAction.Action
+  name: Action
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_Action
+  commentId: P:LambdaSharp.App.EventBus.Actions.AAction.Action
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.Action
+  nameWithType: AAction.Action
+- uid: LambdaSharp.App.EventBus.Actions.AAction.Action*
+  name: Action
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_Action_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.AAction.Action
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.Action
+  nameWithType: AAction.Action
+- uid: LambdaSharp.App.EventBus.Actions.AAction.RequestId
+  name: RequestId
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_RequestId
+  commentId: P:LambdaSharp.App.EventBus.Actions.AAction.RequestId
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.RequestId
+  nameWithType: AAction.RequestId
+- uid: LambdaSharp.App.EventBus.Actions.AAction.RequestId*
+  name: RequestId
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html#LambdaSharp_App_EventBus_Actions_AAction_RequestId_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.AAction.RequestId
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.AAction.RequestId
+  nameWithType: AAction.RequestId
 - uid: LambdaSharp.App.EventBus.Actions.AcknowledgeAction
   name: AcknowledgeAction
   href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AcknowledgeAction.html
@@ -1899,57 +1957,6 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.App.EventBus.Actions.AcknowledgeAction.Status
   nameWithType: AcknowledgeAction.Status
-- uid: LambdaSharp.App.EventBus.Actions.AnAction
-  name: AnAction
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AnAction.html
-  commentId: T:LambdaSharp.App.EventBus.Actions.AnAction
-  fullName: LambdaSharp.App.EventBus.Actions.AnAction
-  nameWithType: AnAction
-- uid: LambdaSharp.App.EventBus.Actions.AnAction.Action
-  name: Action
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_Action
-  commentId: P:LambdaSharp.App.EventBus.Actions.AnAction.Action
-  fullName: LambdaSharp.App.EventBus.Actions.AnAction.Action
-  nameWithType: AnAction.Action
-- uid: LambdaSharp.App.EventBus.Actions.AnAction.Action*
-  name: Action
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_Action_
-  commentId: Overload:LambdaSharp.App.EventBus.Actions.AnAction.Action
-  isSpec: "True"
-  fullName: LambdaSharp.App.EventBus.Actions.AnAction.Action
-  nameWithType: AnAction.Action
-- uid: LambdaSharp.App.EventBus.Actions.AnAction.RequestId
-  name: RequestId
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_RequestId
-  commentId: P:LambdaSharp.App.EventBus.Actions.AnAction.RequestId
-  fullName: LambdaSharp.App.EventBus.Actions.AnAction.RequestId
-  nameWithType: AnAction.RequestId
-- uid: LambdaSharp.App.EventBus.Actions.AnAction.RequestId*
-  name: RequestId
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AnAction.html#LambdaSharp_App_EventBus_Actions_AnAction_RequestId_
-  commentId: Overload:LambdaSharp.App.EventBus.Actions.AnAction.RequestId
-  isSpec: "True"
-  fullName: LambdaSharp.App.EventBus.Actions.AnAction.RequestId
-  nameWithType: AnAction.RequestId
-- uid: LambdaSharp.App.EventBus.Actions.ARuleAction
-  name: ARuleAction
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.ARuleAction.html
-  commentId: T:LambdaSharp.App.EventBus.Actions.ARuleAction
-  fullName: LambdaSharp.App.EventBus.Actions.ARuleAction
-  nameWithType: ARuleAction
-- uid: LambdaSharp.App.EventBus.Actions.ARuleAction.Rule
-  name: Rule
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.ARuleAction.html#LambdaSharp_App_EventBus_Actions_ARuleAction_Rule
-  commentId: P:LambdaSharp.App.EventBus.Actions.ARuleAction.Rule
-  fullName: LambdaSharp.App.EventBus.Actions.ARuleAction.Rule
-  nameWithType: ARuleAction.Rule
-- uid: LambdaSharp.App.EventBus.Actions.ARuleAction.Rule*
-  name: Rule
-  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.ARuleAction.html#LambdaSharp_App_EventBus_Actions_ARuleAction_Rule_
-  commentId: Overload:LambdaSharp.App.EventBus.Actions.ARuleAction.Rule
-  isSpec: "True"
-  fullName: LambdaSharp.App.EventBus.Actions.ARuleAction.Rule
-  nameWithType: ARuleAction.Rule
 - uid: LambdaSharp.App.EventBus.Actions.EventAction
   name: EventAction
   href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.EventAction.html
@@ -2091,6 +2098,25 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.App.EventBus.Actions.SubscribeAction.Pattern
   nameWithType: SubscribeAction.Pattern
+- uid: LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule
+  name: Rule
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.SubscribeAction.html#LambdaSharp_App_EventBus_Actions_SubscribeAction_Rule
+  commentId: P:LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule
+  fullName: LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule
+  nameWithType: SubscribeAction.Rule
+- uid: LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule*
+  name: Rule
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.SubscribeAction.html#LambdaSharp_App_EventBus_Actions_SubscribeAction_Rule_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.SubscribeAction.Rule
+  nameWithType: SubscribeAction.Rule
+- uid: LambdaSharp.App.EventBus.Actions.UnrecognizedAction
+  name: UnrecognizedAction
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnrecognizedAction.html
+  commentId: T:LambdaSharp.App.EventBus.Actions.UnrecognizedAction
+  fullName: LambdaSharp.App.EventBus.Actions.UnrecognizedAction
+  nameWithType: UnrecognizedAction
 - uid: LambdaSharp.App.EventBus.Actions.UnsubscribeAction
   name: UnsubscribeAction
   href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnsubscribeAction.html
@@ -2110,6 +2136,19 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.App.EventBus.Actions.UnsubscribeAction.UnsubscribeAction
   nameWithType: UnsubscribeAction.UnsubscribeAction
+- uid: LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule
+  name: Rule
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnsubscribeAction.html#LambdaSharp_App_EventBus_Actions_UnsubscribeAction_Rule
+  commentId: P:LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule
+  fullName: LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule
+  nameWithType: UnsubscribeAction.Rule
+- uid: LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule*
+  name: Rule
+  href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnsubscribeAction.html#LambdaSharp_App_EventBus_Actions_UnsubscribeAction_Rule_
+  commentId: Overload:LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule
+  isSpec: "True"
+  fullName: LambdaSharp.App.EventBus.Actions.UnsubscribeAction.Rule
+  nameWithType: UnsubscribeAction.Rule
 - uid: LambdaSharp.App.EventBus.EventBusPattern
   name: EventBusPattern
   href: sdk/LambdaSharp.App/LambdaSharp.App.EventBus.EventBusPattern.html
