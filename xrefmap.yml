@@ -3251,6 +3251,23 @@ references:
   fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties)
   nameWithType: Request<TProperties>
   nameWithType.vb: Request(Of TProperties)
+- uid: LambdaSharp.CustomResource.Request`1.HasPhysicalResourceId
+  name: HasPhysicalResourceId()
+  href: sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_HasPhysicalResourceId
+  commentId: M:LambdaSharp.CustomResource.Request`1.HasPhysicalResourceId
+  fullName: LambdaSharp.CustomResource.Request<TProperties>.HasPhysicalResourceId()
+  fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties).HasPhysicalResourceId()
+  nameWithType: Request<TProperties>.HasPhysicalResourceId()
+  nameWithType.vb: Request(Of TProperties).HasPhysicalResourceId()
+- uid: LambdaSharp.CustomResource.Request`1.HasPhysicalResourceId*
+  name: HasPhysicalResourceId
+  href: sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_HasPhysicalResourceId_
+  commentId: Overload:LambdaSharp.CustomResource.Request`1.HasPhysicalResourceId
+  isSpec: "True"
+  fullName: LambdaSharp.CustomResource.Request<TProperties>.HasPhysicalResourceId
+  fullName.vb: LambdaSharp.CustomResource.Request(Of TProperties).HasPhysicalResourceId
+  nameWithType: Request<TProperties>.HasPhysicalResourceId
+  nameWithType.vb: Request(Of TProperties).HasPhysicalResourceId
 - uid: LambdaSharp.CustomResource.Request`1.LogicalResourceId
   name: LogicalResourceId
   href: sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Request-1.html#LambdaSharp_CustomResource_Request_1_LogicalResourceId

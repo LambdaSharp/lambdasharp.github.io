@@ -2,1363 +2,1363 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lambdasharp.net/articles/Amazon-Linux-2-WSL.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/APIGateway.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/CICD.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Debugging.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Events.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Events-LambdaError.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Events-LambdaMetrics.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Events-LambdaUsage.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Finalizer.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/FolderStructure.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Glossary.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/JSON-Serialization.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/LogRecords.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Metrics.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Metrics-Function.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Metrics-Module.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Acrion.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Brontinus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Cebes.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Damo.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Eurytus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Favorinus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Geminus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/ReleaseNotes-Hicetas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Samples.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/Setup.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/VideoTutorials.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/articles/WhyLambdaSharp.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Index.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Build.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Deploy.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Encrypt.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Info.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Init.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-List.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-App.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-ExpiringBucket.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-Function.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-Module.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-PublicBucket.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-New-Resource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Nuke.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Publish.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Tier-CoreServices.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Tier-List.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Tier-Version.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-CreateInvokeMethodsSchema.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-DeleteOrphanLogs.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-ListLambdas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-ListModules.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-ShowKinesisFailedLogs.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/cli/Tool-Util-ShowParameters.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/index.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/Index.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-App-Api.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-App-Bucket.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-App-EventBus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-Core.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-Registration-App.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-Registration-Function.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-Registration-Module.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-EmptyBucket.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-IO.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-Subscriber.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-Subscription.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-Unzip.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-S3-WriteJson.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/modules/LambdaSharp-Twitter-Query.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/Index.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.ALambdaApiGatewayFunction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.FromBodyAttribute.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.FromUriAttribute.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.ApiGateway/LambdaSharp.ApiGateway.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.ALambdaComponent.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.Config.LambdaSharpAppConfig.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.Config.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.AcknowledgeAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.EventAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.HelloAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.KeepAliveAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.SubscribeAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnrecognizedAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.UnsubscribeAction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Actions.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.EventBusPattern.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.EventBusStateChangedEventArgs.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.EventBusSubscriptErrorEventArgs.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.EventBusSubscriptionStatus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Exceptions.AcknowledgeEventBusException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Exceptions.AnEventBusException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Exceptions.UnexpectedEventBusException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.Exceptions.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.IEventBusSubscription.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.EventBus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.LambdaSharpAppClient.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.LambdaSharpEventBusClient.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.WebAssemblyHostBuilderEx.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.App/LambdaSharp.App.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.ALambdaCustomResourceFunction-2.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Request-1.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.RequestType.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.Response-1.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.ALambdaEventFunction-1.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.EventBridge/LambdaSharp.EventBridge.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.ALambdaFinalizerFunction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.FinalizerAttributes.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.FinalizerProperties.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.ILambdaFinalizerDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.LambdaFinalizerDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Finalizer/LambdaSharp.Finalizer.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.ALambdaException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.ILambdaExceptionFingerprinter.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.LambdaAbortException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Exceptions.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ALambdaLogRecord.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.ILambdaErrorReportGenerator.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.LambdaErrorReportGenerator.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReport.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReportExceptionInfo.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReportStackFrame.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.Models.LambdaErrorReportStackTrace.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.Models.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ErrorReports.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Events.ILambdaSharpLoggerEx.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Events.Models.LambdaEventRecord.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Events.Models.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Events.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ILambdaSharpInfo.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ILambdaSharpLogger.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.ILambdaSharpLoggerEx.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.LambdaLogLevel.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.ILambdaSharpLoggerEx.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.LambdaMetric.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.LambdaMetricUnit.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.Models.CloudWatchMetrics.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.Models.CloudWatchMetricValue.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.Models.EmbeddedCloudWatchMetrics.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.Models.LambdaMetricsRecord.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.Models.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Logging/LambdaSharp.Logging.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Schedule/LambdaSharp.Schedule.ALambdaScheduleFunction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Schedule/LambdaSharp.Schedule.LambdaScheduleEvent.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Schedule/LambdaSharp.Schedule.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleNotificationService/LambdaSharp.SimpleNotificationService.ALambdaTopicFunction-1.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleNotificationService/LambdaSharp.SimpleNotificationService.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.ALambdaQueueFunction-1.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.ALambdaSlackCommandFunction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.SlackRequest.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.SlackResponse.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.SlackResponseAttachment.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.SlackResponseAttachmentFields.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.SlackVerificationTokenMismatchException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp.Slack/LambdaSharp.Slack.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ALambdaFunction.FailedMessageOrigin.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ALambdaFunction.FunctionInfo.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ALambdaFunction.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ALambdaFunction-2.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.AwsConverters.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ConfigSource.EmptyLambdaConfigSource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ConfigSource.ILambdaConfigSource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ConfigSource.LambdaDictionarySource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ConfigSource.LambdaSystemEnvironmentSource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ConfigSource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.ALambdaConfigException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaConfigBadValueException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaConfigIllegalKeyException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaConfigMissingKeyException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaConfigUnexpectedException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaConfigValidationException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.LambdaRetriableException.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Exceptions.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.ILambdaFunctionDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.LambdaConfig.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.LambdaFunctionDependencyProvider.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.ILambdaJsonSerializer.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.JsonEpochSecondsDateTimeConverter.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.JsonEpochSecondsDateTimeOffsetConverter.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.LambdaSerializerSettings.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.LambdaSystemTextJsonSerializer.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.Serialization.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/sdk/LambdaSharp/LambdaSharp.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Index.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-App.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-App-Pragmas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-App-Sources.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-App-Sources-EventBus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-App-Sources-Schedule.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Condition.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Pragmas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-Alexa.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-APIGateway.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-DynamoDB.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-EventBus.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-Kinesis.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-S3.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-Schedule.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-SlackCommand.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-SNS.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-SQS.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Function-Sources-WebSocket.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Global-Variables.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Group.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Import.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Items.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Macro.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Mapping.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Package.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Parameter.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Pragmas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Resource.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Resource-Pragmas.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-ResourceType.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-ResourceType-Attribute.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-ResourceType-Property.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Secrets.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Stack.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Using.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lambdasharp.net/syntax/Module-Variable.html</loc>
-    <lastmod>2021-04-01T11:47:31-07:00</lastmod>
+    <lastmod>2021-04-30T04:06:36-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

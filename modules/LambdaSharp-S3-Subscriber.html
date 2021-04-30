@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="module-lambdasharps3subscriber">Module: LambdaSharp.S3.Subscriber</h1>
 
-<p><em>Version:</em> 0.8.2.3</p>
+<p><em>Version:</em> 0.8.2.4</p>
 <h2 id="overview">Overview</h2>
 <p>The <code>LambdaSharp.S3.Subscriber</code> module defines the <code>LambdaSharp::S3::Subscription</code> resource type, which is automatically used by the LambdaSharp CLI to subscribe Lambda functions to S3 events.</p>
 <h2 id="resource-types">Resource Types</h2>
@@ -105,7 +105,33 @@
 <h2 id="parameters">Parameters</h2>
 <p>This module requires no parameters.</p>
 <h2 id="output-values">Output Values</h2>
-<p>This module has no output values.</p>
+<dl>
+<dt><code>ResourceHandlerRole</code></dt>
+<dd>
+<p>The <code>ResourceHandlerRole</code> output contains the module IAM role ARN. This enables other modules to give additional permissions to the resource handler when required.</p>
+<p><i>Type:</i> AWS::IAM::Role</p>
+<p>The following module sample shows how to import the <code>ResourceHandlerRole</code> output value and use it to attach additional permission to the S3 subscription handler.</p>
+<pre><code class="lang-yaml">- Import: SubscriberRole
+  Module: LambdaSharp.S3.Subscriber::ResourceHandlerRole
+
+- Resource: S3SubscriberAccess
+  Type: AWS::IAM::Policy
+  Properties:
+    PolicyName: !Sub &quot;${AWS::StackName}S3BucketPolicy&quot;
+    PolicyDocument:
+      Version: 2012-10-17
+      Statement:
+        - Sid: S3BucketPermissions
+          Effect: Allow
+          Action:
+            - s3:GetBucketNotification
+            - s3:PutBucketNotification
+          Resource: !Ref MyBucket
+    Roles:
+      - !Ref SubscriberRole
+</code></pre>
+</dd>
+</dl>
 </article>
           </div>
           
