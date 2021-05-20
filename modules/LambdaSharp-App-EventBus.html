@@ -95,7 +95,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="module-lambdasharpappeventbus">Module: LambdaSharp.App.EventBus</h1>
 
-<p><em>Version:</em> 0.8.2.4</p>
+<p><em>Version:</em> 0.8.3.0</p>
 <h2 id="overview">Overview</h2>
 <p>The <em>LambdaSharp.App.EventBus</em> module is used by the <code>App</code> declaration to create an API Gateway WebSocket proxy for CloudWatch EventBridge. The proxy is only created if the app has at least one event source. When created, the proxy manages event pattern subscriptions to forwarded events. The proxy uses the same notation as CloudWatch EventBridge to describe event patterns. This design promotes a unified way to work with CloudWatch events both in the backend and frontend. Access to the EventBus API is secured by an API key that is computed from the CloudFormation stack identifier and the app version identifier. Using the <code>DevMode</code> parameter, the EventBus API can be configured for more lenient access and a simplified API key, which allows for accessing it from <em>localhost</em>.</p>
 <h2 id="resource-types">Resource Types</h2>
