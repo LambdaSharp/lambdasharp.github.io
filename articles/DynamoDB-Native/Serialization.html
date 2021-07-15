@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Serialization for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="keywords" content="serialization, api, dynamodb, aws, amazon, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Serialization for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/DynamoDB-Native/Serialization.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Serialization for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Serialization for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/DynamoDB-Native/Serialization.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="serialization-for-dynamodb">Serialization for DynamoDB</h1>
+
+<p>DynamoDB uses its own document model for serializing data structures, which looks similar to JSON. The <em>LambdaSharp.DynamoDB.Serialization</em> library is modeled after other serialization libraries, such as <em>System.Text.Json.JsonSerializer</em> to streamline conversions between .NET types and DynamoDB documents.</p>
+<h2 id="serialization">Serialization</h2>
+<p>Serializing a .NET type instance is straightforward using <code>DynamoSerialize.Serialize&lt;T&gt;(T record)</code>.</p>
+<p><strong>NOTE:</strong> <code>Serialize()</code> will return <code>null</code> when the state of the type being serialized is not supported by DynamoDB. For example, an empty <code>HashSet&lt;string&gt;</code> returns <code>null</code>.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="lang-csharp">using LambdaSharp.DynamoDB.Serialization;
+
+var serialized = DynamoSerializer.Serialize(new {
+    Active = true,
+    Binary = Encoding.UTF8.GetBytes(&quot;Bye&quot;),
+    Name = &quot;John Doe&quot;,
+    Age = 42,
+    MixedList = new object[] {
+        new {
+            Message = &quot;Hello&quot;
+        },
+        &quot;World!&quot;
+    },
+    Dictionary = new Dictionary&lt;string, object&gt; {
+        [&quot;Key&quot;] = &quot;Value&quot;
+    },
+    StringSet = new[] { &quot;Red&quot;, &quot;Blue&quot; }.ToHashSet(),
+    NumberSet = new[] { 123, 456 }.ToHashSet(),
+    BinarySet = new[] {
+        Encoding.UTF8.GetBytes(&quot;Good&quot;),
+        Encoding.UTF8.GetBytes(&quot;Day&quot;)
+    }.ToHashSet(ByteArrayEqualityComparer.Instance)
+});
+</code></pre>
+<p><strong>DynamoDB Output:</strong></p>
+<pre><code class="lang-json">{
+   &quot;M&quot;: {
+     &quot;Active&quot;: { &quot;BOOL&quot;: true },
+     &quot;Binary&quot;: { &quot;B&quot;: &quot;Qnll&quot; },
+     &quot;Name&quot;: { &quot;S&quot;: &quot;John Doe&quot; },
+     &quot;Age&quot;: { &quot;N&quot;: &quot;42&quot; },
+     &quot;MixedList&quot;: {
+       &quot;L&quot;: [
+         {
+           &quot;M&quot;: {
+             &quot;Message&quot;: { &quot;S&quot;: &quot;Hello&quot; }
+           }
+         },
+         { &quot;S&quot;: &quot;World!&quot; }
+       ]
+     },
+     &quot;Dictionary&quot;: {
+       &quot;M&quot;: {
+         &quot;Key&quot;: { &quot;S&quot;: &quot;Value&quot; }
+       }
+     },
+     &quot;StringSet&quot;: {
+       &quot;SS&quot;: [ &quot;Red&quot;, &quot;Blue&quot; ]
+     },
+     &quot;NumberSet&quot;: {
+       &quot;NS&quot;: [ &quot;123&quot;, &quot;456&quot; ]
+     },
+     &quot;BinarySet&quot;: {
+       &quot;BS&quot;: [ &quot;R29vZA==&quot;, &quot;RGF5&quot; ]
+     }
+   }
+}
+</code></pre>
+<h2 id="deserialization">Deserialization</h2>
+<p>Deserializing a DynamoDB document is straightforward using <code>DynamoSerialize.Deserialize&lt;T&gt;(Dictionary&lt;string, AttributeValue&gt; document)</code>.</p>
+<p><strong>NOTE:</strong> <code>Deserialize()</code> will return <code>null</code> when deserialized the <code>NULL</code> attribute value.</p>
+<p><strong>NOTE:</strong> <code>Deserialize()</code> may throw <code>DynamoSerializationException</code> when an issue occurs during deserialization.</p>
+<h2 id="serializer-options">Serializer Options</h2>
+<p>The behavior of <code>DynamoSerialize.Serialize&lt;T&gt;(...)</code> and <code>DynamoSerialize.Deserialize&lt;T&gt;(...)</code> can be modified by supplying an instance of <code>DynamoSerializerOptions</code> as a second parameter.</p>
+<p><strong>NOTE:</strong> It is recommended to create and share a single instance <code>DynamoSerializerOptions</code>.</p>
+<h3 id="properties">Properties</h3>
+<p>The <code>DynamoSerializerOptions</code> has the following properties.</p>
+<dl>
+<dt><code>Converters</code></dt>
+<dd>
+<p>The <code>Converters</code> property lists additional custom converters to use when (de)serializing values. Custom converters take precedence over default converters. Default converters can be disabled entirely by setting the <code>UseDefaultConverters</code> property to <code>false</code>.</p>
+<p><em>Type:</em> <code>List&lt;IDynamoAttributeConverter&gt;</code></p>
+<p><em>Default:</em> empty list</p>
+</dd>
+<dt><code>IgnoreNullValues</code></dt>
+<dd>
+<p>The <code>IgnoreNullValues</code> property controls if <code>null</code> values are serialized as DynamoDB NULL attribute values or skipped.</p>
+<p><em>Type:</em> <code>bool</code></p>
+<p><em>Default:</em> <code>true</code></p>
+</dd>
+<dt><code>UseDefaultConverters</code></dt>
+<dd>
+<p>The <code>UseDefaultConverters</code> property controls if the default DynamoDB converters are enabled.</p>
+<p><em>Type:</em> <code>bool</code></p>
+<p><em>Default:</em> <code>true</code></p>
+<p>The default converters are:</p>
+<ul>
+<li><code>DynamoBoolConverter</code></li>
+<li><code>DynamoIntConverter</code></li>
+<li><code>DynamoLongConverter</code></li>
+<li><code>DynamoDoubleConverter</code></li>
+<li><code>DynamoDateTimeOffsetConverter</code></li>
+<li><code>DynamoDecimalConverter</code></li>
+<li><code>DynamoStringConverter</code></li>
+<li><code>DynamoEnumConverter</code></li>
+<li><code>DynamoByteArrayConverter</code></li>
+<li><code>DynamoISetByteArrayConverter</code></li>
+<li><code>DynamoISetStringConverter</code></li>
+<li><code>DynamoISetIntConverter</code></li>
+<li><code>DynamoISetLongConverter</code></li>
+<li><code>DynamoISetDoubleConverter</code></li>
+<li><code>DynamoISetDecimalConverter</code></li>
+<li><code>DynamoIDictionaryConverter</code></li>
+<li><code>DynamoListConverter</code></li>
+<li><code>DynamoJsonElementConverter</code></li>
+<li><code>DynamoObjectConverter</code></li>
+</ul>
+</dd>
+</dl>
+<h2 id="serialization-attributes-for-dynamodb">Serialization Attributes for DynamoDB</h2>
+<p>By default, all public properties of a class are (de)serialized by <code>DynamoSerializer</code> using the property name. However, this behavior can modified by annotating the properties with the following attributes.</p>
+<dl>
+<dt><code>DynamoPropertyIgnore</code></dt>
+<dd>
+<p>The <code>DynamoPropertyIgnore</code> attribute causes <code>DynamoSerializer</code> to ignore a property on a class.</p>
+</dd>
+<dt><code>DynamoPropertyName(string Name)</code></dt>
+<dd>
+<p>The <code>DynamoPropertyName</code> attribute changes the name used by <code>DynamoSerializer</code> when serializing the property.</p>
+</dd>
+</dl>
+<pre><code class="lang-csharp">class MyRecord {
+
+    //--- Properties ---
+
+    [DynamoPropertyIgnore]
+    public string IgnoreMe { get; set; }
+
+    [DynamoPropertyName(&quot;NewName&quot;)]
+    public string RenameMe { get; set; }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

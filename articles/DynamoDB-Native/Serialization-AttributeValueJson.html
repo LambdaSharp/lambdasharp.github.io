@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="keywords" content="serialization, api, dynamodb, aws, amazon, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/DynamoDB-Native/Serialization-AttributeValueJson.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>.NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/DynamoDB-Native/Serialization-AttributeValueJson.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="miscellaneous">Miscellaneous</h1>
+
+<h2 id="attributevalue-to-json-converter-for-systemtextjsonjsonserializer"><code>AttributeValue</code> to JSON converter for <code>System.Text.Json.JsonSerializer</code></h2>
+<p>The <code>DynamoAttributeValueConverter</code> class is useful for debugging DynamoDB documents by providing accurate JSON serialization for <code>AttributeValue</code> instances.</p>
+<pre><code class="lang-csharp">
+// serialize an instance to DynamoDB document
+var serialized = DynamoSerializer.Serialize(new {
+    Active = true,
+    Binary = Encoding.UTF8.GetBytes(&quot;Bye&quot;),
+    Name = &quot;John Doe&quot;,
+    Age = 42,
+    MixedList = new object[] {
+        new {
+            Message = &quot;Hello&quot;
+        },
+        &quot;World!&quot;
+    },
+    Dictionary = new Dictionary&lt;string, object&gt; {
+        [&quot;Key&quot;] = &quot;Value&quot;
+    },
+    StringSet = new[] { &quot;Red&quot;, &quot;Blue&quot; }.ToHashSet(),
+    NumberSet = new[] { 123, 456 }.ToHashSet(),
+    BinarySet = new[] {
+        Encoding.UTF8.GetBytes(&quot;Good&quot;),
+        Encoding.UTF8.GetBytes(&quot;Day&quot;)
+    }.ToHashSet(ByteArrayEqualityComparer.Instance)
+});
+
+// serialize DynamoDB document
+var json = JsonSerializer.Serialize(serialized, new JsonSerializerOptions {
+    WriteIndented = true,
+    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
+    Converters = {
+        new DynamoAttributeValueConverter()
+    }
+});
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code class="lang-json">{
+   &quot;M&quot;: {
+     &quot;Active&quot;: { &quot;BOOL&quot;: true },
+     &quot;Binary&quot;: { &quot;B&quot;: &quot;Qnll&quot; },
+     &quot;Name&quot;: { &quot;S&quot;: &quot;John Doe&quot; },
+     &quot;Age&quot;: { &quot;N&quot;: &quot;42&quot; },
+     &quot;MixedList&quot;: {
+       &quot;L&quot;: [
+         {
+           &quot;M&quot;: {
+             &quot;Message&quot;: { &quot;S&quot;: &quot;Hello&quot; }
+           }
+         },
+         { &quot;S&quot;: &quot;World!&quot; }
+       ]
+     },
+     &quot;Dictionary&quot;: {
+       &quot;M&quot;: {
+         &quot;Key&quot;: { &quot;S&quot;: &quot;Value&quot; }
+       }
+     },
+     &quot;StringSet&quot;: {
+       &quot;SS&quot;: [ &quot;Red&quot;, &quot;Blue&quot; ]
+     },
+     &quot;NumberSet&quot;: {
+       &quot;NS&quot;: [ &quot;123&quot;, &quot;456&quot; ]
+     },
+     &quot;BinarySet&quot;: {
+       &quot;BS&quot;: [ &quot;R29vZA==&quot;, &quot;RGF5&quot; ]
+     }
+   }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

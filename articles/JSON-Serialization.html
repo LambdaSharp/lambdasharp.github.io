@@ -101,7 +101,7 @@
 <p>Lambda functions using <em>System.Text.Json</em> must declare <code>LambdaSystemTextJsonSerializer</code> as their JSON serializer using the <code>JsonSerializer</code> assembly attribute.</p>
 <pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(LambdaSharp.Serialization.LambdaSystemTextJsonSerializer))]
 </code></pre>
-<p>Microsoft has published an excellent <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to?pivots=dotnet-5-0">migration guide</a> for switching from <em>Newtonsoft.Json</em> to <em>System.Text.Json</em>. In addition to the guide, the following sections explain how to migrate existing data-structures.</p>
+<p>Microsoft has published an excellent <a href="https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to?pivots=dotnet-5-0">migration guide</a> for switching from <em>Newtonsoft.Json</em> to <em>System.Text.Json</em>. In addition to the guide, the following sections explain how to migrate existing data structures.</p>
 <p>Alternatively, functions can continue to use <em>Newtonsoft.Json</em> as their JSON serializer by including the <code>LambdaSharp.Serialization.NewtonsoftJson</code> assembly from NuGet:</p>
 <pre><code class="lang-csharp">[assembly: Amazon.Lambda.Core.LambdaSerializer(typeof(LambdaSharp.Serialization.LambdaNewtonsoftJsonSerializer))]
 </code></pre>

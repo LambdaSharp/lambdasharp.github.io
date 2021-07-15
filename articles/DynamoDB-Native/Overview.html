@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="DynamoDB for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Overview of LambdaSharp.DynamoDB.Native">
+    <meta name="keywords" content="overview, api, dynamodb, aws, amazon, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="DynamoDB for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/DynamoDB-Native/Overview.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Overview of LambdaSharp.DynamoDB.Native">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DynamoDB for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Overview of LambdaSharp.DynamoDB.Native">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>DynamoDB for .NET - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/DynamoDB-Native/Overview.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="dynamodb-for-net">DynamoDB for .NET</h1>
+
+<p>DynamoDB is an advanced, serverless key-value store that is fast and scales well, but that suffers from a complex API design. To learn more about DynamoDB, visit the <a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a> webpage or buy the excellent <a href="https://www.dynamodbbook.com/">&quot;The DynamoDB Book&quot; by Alex DeBrie</a> for in-depth coverage with samples.</p>
+<p><em>LambdaSharp.DynamoDB.Native</em> uses LINQ expression with a fluent interface which drastically simplifies using advanced DynamoDB features in applications.</p>
+<p>To optimize simplicity, the <code>DynamoTable</code> makes a few design choices.</p>
+<ol>
+<li><code>DynamoTable</code> is designed for single table access and does not support operations across multiple tables.</li>
+<li><code>DynamoTable</code> assumes the primary key is made from a partition key and a sort key. Furthermore, the name of partition key is <code>PK</code> and the name of the sort key is <code>SK</code>.</li>
+</ol>
+<p>These are intentional constraints of the <code>DynamoTable</code> implementation. If these constraints do not fit your use case, then <code>DynamoTable</code> may not be suitable to your application.</p>
+<h2 id="initializing-a-dynamotable-instance">Initializing a <code>DynamoTable</code> instance</h2>
+<p>The constructor for <code>DynamoTable</code> only requires the table name. Optionally, an <code>IAmazonDynamoDB</code> client can be passed as a second parameter. When omitted, the default <code>AmazonDynamoDBClient</code> is used.</p>
+<pre><code class="lang-csharp">IDynamoTable table = new DynamoTable(tableName);
+</code></pre>
+<p>Once the <code>DynamoTable</code> instance has been initialized, it is ready for use.</p>
+<h2 id="primary-keys">Primary Keys</h2>
+<p>Most DynamoDB operations use <code>DynamoPrimaryKey</code> to specify the item to act upon. The exception to this rule is the <code>Query</code> operation, which selects a collection of items.</p>
+<p>The <code>DynamoPrimaryKey</code> specifies the partition key and sort key of the item to act upon. The primary key is always a composite key and the names must be <code>PK</code> and <code>SK</code>, respectively.</p>
+<pre><code class="lang-csharp">var primaryKey = new DynamoPrimaryKey&lt;CustomerRecord&gt;(pkValue, skValue);
+</code></pre>
+<p>The generic type parameter in <code>DynamoPrimaryKey&lt;TRecord&gt;</code> serves two purposes:</p>
+<ul>
+<li>It avoids accidental confusion between primary keys by having a stricter type.</li>
+<li>The generic type is used to determine the type of the record class to instantiate.</li>
+</ul>
+<h2 id="getitem-operation">GetItem Operation</h2>
+<p>The <code>GetItemAsync()</code> is the simplest way to retrieve a DynamoDB item. It reads all the attributes and populates a record instance. If the item was not found, the method returns <code>null</code> instead.</p>
+<pre><code class="lang-csharp">var customer = await table.GetItemAsync(primaryKey, cancellationToken);
+</code></pre>
+<p>The <code>GetItem()</code> method enables retrieving only some properties of the record instead of all of them. Reducing the amount of data returned does not reduce the DynamoDB read consumption, but it does reduce the bandwidth required to retrieve the wanted data.</p>
+<p>The following code only populates the <code>CustomerId</code> and <code>CustomerName</code> property.</p>
+<pre><code class="lang-csharp">var partialRecord = await table.GetItem(primaryKey)
+    .Get(record =&gt; record.CustomerId)
+    .Get(record =&gt; record.CustomerName)
+    .ExecuteAsync(cancellationToken);
+</code></pre>
+<p>The <code>DynamoTable</code> instance analyzes the lambda expressions passed into the <code>Get()</code> method and determines from them the DynamoDB attributes to request. The lambda expression is typed using the generic parameter from <code>DynamoPrimaryKey&lt;TRecord&gt;</code>. The lambda expression can use <code>.</code> and index <code>[]</code> operations to specify inner attributes of maps and lists as well. This approach makes it both easy and safe to specify the wanted attributes.</p>
+<p>A <code>NotSupportedException</code> is thrown when the lambda expression is not valid for specifying a DynamoDB attribute.</p>
+<h2 id="putitem-operation">PutItem Operation</h2>
+<p>The <code>PutItemAsync()</code> method creates new DynamoDB item or replaces one. When an existing item is replaced, all previous item attributes are removed and replaced with the item attributes. The method returns a boolean indicating success.</p>
+<pre><code class="lang-csharp">var customer = new CustomerRecord {
+    CustomerId = &quot;123&quot;,
+    CustomerName = &quot;John Doe&quot;,
+    CustomerEmail = &quot;john@example.org&quot;,
+    Addresses = new Dictionary&lt;string, CustomerAddress&gt;()
+};
+var success = table.PutItemAsync(primaryKey, customer, cancellationToken)
+</code></pre>
+<p>The <code>PutItem()</code> method allow specifying conditions and also returning the previously stored DynamoDB item.</p>
+<p>Use the <code>ExecuteReturnOldItemAsync()</code> to retrieve the DynamoDB item attributes that were replaced. If the DynamoDB item doesn't exist, the method returns <code>null</code>.</p>
+<pre><code class="lang-csharp">var customer = new CustomerRecord {
+    CustomerId = &quot;123&quot;,
+    CustomerName = &quot;John Doe&quot;,
+    CustomerEmail = &quot;john@example.org&quot;,
+    Addresses = new Dictionary&lt;string, CustomerAddress&gt;()
+};
+var previousCustomer = table.PutItem(primaryKey, customer)
+    .ExecuteReturnOldItemAsync(cancellationToken)
+</code></pre>
+<p>Use <code>WithCondition()</code> to specify a condition before performing the <em>PutItem</em> operation. The following code checks that the DynamoDB item does not exist.</p>
+<pre><code class="lang-csharp">var customer = new CustomerRecord {
+    CustomerId = &quot;123&quot;,
+    CustomerName = &quot;John Doe&quot;,
+    CustomerEmail = &quot;john@example.org&quot;,
+    Addresses = new Dictionary&lt;string, CustomerAddress&gt;()
+};
+var success = table.PutItem(primaryKey, customer)
+    .WithCondition(record =&gt; DynamoCondition.Exists(record))
+    .ExecuteAsync(cancellationToken)
+</code></pre>
+<p>The <code>DynamoCondition</code> static class contains static methods representing native DynamoDB condition functions and operators. These methods are only used to analyze the lambda expressions in the <code>WithCondition()</code> method. When used directly, the methods throw an <code>InvalidOperationException</code>.</p>
+<p>See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.OperatorsAndFunctions.html">Comparison Operator and Function Reference</a> for a complete list of condition expressions.</p>
+<p>Sometimes, it is necessary to store additional attributes alongside a record. For example, attributes used by either local or global secondary indices. This is possible by using the <code>Set()</code> method.</p>
+<pre><code class="lang-csharp">var customer = new CustomerRecord {
+    CustomerId = &quot;123&quot;,
+    CustomerName = &quot;John Doe&quot;,
+    CustomerEmail = &quot;john@example.org&quot;,
+    Addresses = new Dictionary&lt;string, CustomerAddress&gt;()
+};
+var success = table.PutItem(primaryKey, customer)
+
+    // allow retrieving customer record using the email address via the global secondary index GSI1
+    .Set(&quot;GSI1PK&quot;, $&quot;EMAIL={record.CustomerEmail}&quot;)
+    .Set(&quot;GSI1SK&quot;, &quot;INFO&quot;)
+    .ExecuteAsync(cancellationToken)
+</code></pre>
+<h2 id="deleteitem-operation">DeleteItem Operation</h2>
+<p>The <code>DeleteItemAsync()</code> method is used to delete a DynamoDB item. The operation is idempotent and succeeds regardless if the item exists or not.</p>
+<pre><code class="lang-csharp">var success = await table.DeleteItemAsync(primaryKey, cancellationToken);
+</code></pre>
+<p>The <code>DeleteItem()</code> method has similar capabilities as the <code>PutItem()</code> method and allows specifying a condition for the operation and returning the previously stored DynamoDB item.</p>
+<p>Use the <code>ExecuteReturnOldItemAsync()</code> to retrieve the DynamoDB item attributes that were deleted. The method returns <code>null</code> if the DynamoDB item doesn't exist or the operation could not be performed.</p>
+<pre><code class="lang-csharp">var previousCustomer = table.DeleteItem(primaryKey)
+    .ExecuteReturnOldItemAsync(cancellationToken)
+</code></pre>
+<p>Use <code>WithCondition()</code> to specify a condition before performing the <em>DeleteItem</em> operation. The following code checks the state of the DynamoDB item before deleting it.</p>
+<pre><code class="lang-csharp">var success = table.DeleteItem(primaryKey)
+    .WithCondition(record =&gt; record.Status == CustomerStatus.Deactivated)
+    .ExecuteAsync(cancellationToken)
+</code></pre>
+<p>The <code>DynamoCondition</code> static class contains static methods representing native DynamoDB condition functions and operators. These methods are only used to analyze the lambda expressions in the <code>WithCondition()</code> method. When used directly, the methods throw an <code>InvalidOperationException</code>.</p>
+<p>See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.OperatorsAndFunctions.html">Comparison Operator and Function Reference</a> for a complete list of condition expressions.</p>
+<h2 id="updateitem-operation">UpdateItem Operation</h2>
+<p>The <em>UpdateItem</em> operation is the most powerful and versatile operation that DynamoDB supports. It allows updating specific attributes of a DynamoDB item without affecting others. Furthermore, it can use the previous value of the item and atomically modify it to a new value. Similar to the <em>PutItem</em> operation, the <em>UpdateItem</em> operation can either create a new DynamoDB item or update an existing one.</p>
+<p>The <code>UpdateItem()</code> method allows tapping into the rich set of capabilities of the <em>UpdateItem</em> operation, which include:</p>
+<ul>
+<li>The <code>Set()</code> method to modify a DynamoDB item attribute to a specific value or to compute a new value from an existing one. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html#Expressions.UpdateExpressions.SET">SET—Modifying or Adding Item Attributes</a>).</li>
+<li>The <code>Remove()</code> method to delete a top-level or nested attribute. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html#Expressions.UpdateExpressions.REMOVE">REMOVE—Deleting Attributes from an Item</a>.</li>
+<li>The <code>Add()</code> method to add a number to a numeric attribute or add an item to a set attribute. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html#Expressions.UpdateExpressions.ADD">ADD—Updating Numbers and Sets</a>.</li>
+<li>The <code>Delete()</code> method to remove an item from a set attribute. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html#Expressions.UpdateExpressions.DELETE">DELETE—Removing Elements from a Set</a>.</li>
+</ul>
+<p>Use the <code>ExecuteReturnOldItemAsync()</code> to retrieve the DynamoDB item attributes before they were updated. The method returns <code>null</code> if the DynamoDB item doesn't exist or the operation could not be performed.</p>
+<pre><code class="lang-csharp">var previousCustomer = table.UpdateItem(primaryKey)
+    .Set(record =&gt; record.CustomerName, &quot;John Doe&quot;)
+    .ExecuteReturnOldItemAsync(cancellationToken)
+</code></pre>
+<p>Use the <code>ExecuteReturnNewItemAsync()</code> to retrieve the DynamoDB item attributes after they were updated. The method returns <code>null</code> if the DynamoDB item doesn't exist or the operation could not be performed.</p>
+<pre><code class="lang-csharp">var updatedCustomer = table.UpdateItem(primaryKey)
+    .Set(record =&gt; record.CustomerName, &quot;John Doe&quot;)
+    .ExecuteReturnNewItemAsync(cancellationToken)
+</code></pre>
+<p>Use <code>WithCondition()</code> to specify a condition before performing the <em>UpdateItem</em> operation. The following code checks that the DynamoDB item exists.</p>
+<pre><code class="lang-csharp">var success = table.UpdateItem(primaryKey)
+    .WithCondition(record =&gt; DynamoCondition.Exists(record))
+    .Set(record =&gt; record.PendingOrders, record =&gt; record.PendingOrders + 1)
+    .ExecuteAsync(cancellationToken)
+</code></pre>
+<p>The <code>DynamoCondition</code> static class contains static methods representing native DynamoDB condition functions and operators. These methods are only used to analyze the lambda expressions in the <code>WithCondition()</code> method. When used directly, the methods throw an <code>InvalidOperationException</code>.</p>
+<p>See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.OperatorsAndFunctions.html">Comparison Operator and Function Reference</a> for a complete list of condition expressions.</p>
+<p>Some of the <code>Set()</code> methods take a lambda expression as their second argument to compute a new value based on an existing DynamoDB item attribute. Although, this capability is extremely powerful, the kind of operations that can be performed is very limited. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html#Expressions.UpdateExpressions.DELETE">SET—Modifying or Adding Item Attributes</a> for a list of allowed operations and functions. The <code>DynamoUpdate</code> static class contains static methods representing native DynamoDB update functions. These methods are only used to analyze the lambda expressions in the <code>Set()</code> method. When used directly, the methods throw an <code>InvalidOperationException</code>.</p>
+<p>Sometimes, it is necessary to store additional attributes alongside a record. For example, attributes used by either local or global secondary indices. This is possible by using the <code>Set()</code> method.</p>
+<pre><code class="lang-csharp">var success = table.UpdateItem(primaryKey)
+    .WithCondition(record =&gt; DynamoCondition.Exists(record))
+
+    // update customer email
+    .Set(record =&gt; record.CustomerEmail, &quot;john@example.org&quot;)
+
+    // also update global secondary index GSI1 to allow retrieving customer record using the email address
+    .Set(&quot;GSI1PK&quot;, &quot;EMAIL=john@example.org&quot;)
+    .ExecuteAsync(cancellationToken)
+</code></pre>
+<h2 id="query-operation">Query Operation</h2>
+<p>The <em>Query</em> operation allows finding multiple items in the main index or in a local/global secondary index.</p>
+<p>The <em>Query</em> operation is anchored by the partition key (PK). Optionally, constraints on the sort key (SK) can be specified to narrow down the collection of DynamoDB items. However, the list of constraints is very limited.</p>
+<ul>
+<li><code>SK</code> is equal to some value</li>
+<li><code>SK</code> is less than some value</li>
+<li><code>SK</code> is less than or equal to some value</li>
+<li><code>SK</code> is greater than some value</li>
+<li><code>SK</code> is greater than or equal to some value</li>
+<li><code>SK</code> is between two bounds (inclusively)</li>
+<li><code>SK</code> begins with a sub-string</li>
+</ul>
+<p>Those are all the possible constraints. They cannot be combined into more complex constraints either. This list is literally it. See <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html#Query.KeyConditionExpressions">Key Condition Expression</a>.</p>
+<p>In <em>LambdaSharp.DynamoDB.Native</em>, the combination of the PK value and the SK constraint is referred to as the <em>query clause</em>. It is one of the more complex concepts in DynamoDB to model, but the <em>query clause</em> seems to work well in practice.</p>
+<p>The following operation finds all WebSocket connections belonging to a given user.</p>
+<pre><code class="lang-csharp">var clause = DynamoQuery.FromIndex(&quot;GSI1&quot;)
+    .SelectPK(&quot;USER=123&quot;)
+    .WhereSKBeginsWith(&quot;WS=&quot;);
+</code></pre>
+<p>The <code>Query()</code> method can specify an operation that returns a list of DynamoDB items that all have the same type or they can be mixed. For the latter case, the <code>WithTypeFilter&lt;TRecord&gt;()</code> method is used to specify what types to deserialize. Items returned by the DynamoDB <em>Query</em> operation that do not match the type filter are discarded.</p>
+<p>The results of the DynamoDB <em>Query</em> operation can either be retrieved as a complete list using <code>ExecuteAsync()</code> or streamed incrementally using <code>ExecuteAsyncEnumerable()</code>.</p>
+<pre><code class="lang-csharp">// receive all items at once
+var list = await table.Query(clause, limit: 100).ExecuteAsync(cancellationToken);
+
+// receive items as they come in
+var asyncEnumerable = table.Query(clause, limit: 100).ExecuteAsyncEnumerable(cancellationToken);
+await foreach(var item in asyncEnumerable.WithCancellation(cancellationToken)) {
+
+    // process item incrementally
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

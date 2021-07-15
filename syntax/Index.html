@@ -106,6 +106,7 @@
 <h2 id="syntax">Syntax</h2>
 <pre><code class="lang-yaml">Module: String
 Version: String
+Origin: String
 Description: String
 Pragmas:
   - PragmaDefinition
@@ -135,6 +136,12 @@ Items:
 <p>The <code>Module</code> attribute specifies the full name of the module. It must be formatted as <code>Namespace.Name</code>.</p>
 <p>The module namespace and name can be retrieved using the <code>!Ref</code> operations with <code>Module::Namespace</code> and <code>Module::Name</code>, respectively. Alternatively, the full name can be retrieved using <code>Module::FullName</code>.</p>
 <p><i>Required:</i> Yes</p>
+<p><i>Type:</i> String</p>
+</dd>
+<dt><code>Origin</code></dt>
+<dd>
+<p>The <code>Origin</code> attribute specifies the origin S3 bucket of the module. When omitted, the origin information is filled in when the module is published to an S3 bucket.</p>
+<p><i>Required:</i> No</p>
 <p><i>Type:</i> String</p>
 </dd>
 <dt><code>Pragmas</code></dt>

@@ -1,0 +1,1734 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamoCondition
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
+    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Class DynamoCondition
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoCondition.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Class DynamoCondition
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Class DynamoCondition
+   | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoCondition.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition">
+  
+  
+  <h1 id="LambdaSharp_DynamoDB_Native_DynamoCondition" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition" class="text-break">Class DynamoCondition
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html">DynamoCondition</a> class contains static methods representing native DynamoDB
+condition functions and operators. These methods are only useful in <code>WithCondition(...)</code>
+constructs to express DynamoDB conditions. When used in code directly, these methods
+throw <code>InvalidOperationException</code>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DynamoCondition</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.DynamoDB.Native.html">LambdaSharp.DynamoDB.Native</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.DynamoDB.Native.dll</h6>
+  <h5 id="LambdaSharp_DynamoDB_Native_DynamoCondition_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class DynamoCondition</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_BeginsWith_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.BeginsWith*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_BeginsWith_System_String_System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.BeginsWith(System.String,System.String)">BeginsWith(String, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_BeginsWith_System_String_System_String_">BeginsWith(String, String)</a> method represents the <code>begins_with(path, substr)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool BeginsWith(string value, string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>The string prefix value to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Decimal_System_Decimal_System_Decimal_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between(System.Decimal,System.Decimal,System.Decimal)">Between(Decimal, Decimal, Decimal)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Decimal_System_Decimal_System_Decimal_">Between(Decimal, Decimal, Decimal)</a> method represents the <code>a BETWEEN b AND c</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Between(decimal value, decimal lower, decimal upper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">lower</span></td>
+        <td><p>The lower bound (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">upper</span></td>
+        <td><p>The upper bound (inclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Double_System_Double_System_Double_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between(System.Double,System.Double,System.Double)">Between(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Double_System_Double_System_Double_">Between(Double, Double, Double)</a> method represents the <code>a BETWEEN b AND c</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Between(double value, double lower, double upper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">lower</span></td>
+        <td><p>The lower bound (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">upper</span></td>
+        <td><p>The upper bound (inclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Int32_System_Int32_System_Int32_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between(System.Int32,System.Int32,System.Int32)">Between(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Int32_System_Int32_System_Int32_">Between(Int32, Int32, Int32)</a> method represents the <code>a BETWEEN b AND c</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Between(int value, int lower, int upper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lower</span></td>
+        <td><p>The lower bound (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">upper</span></td>
+        <td><p>The upper bound (inclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Int64_System_Int64_System_Int64_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between(System.Int64,System.Int64,System.Int64)">Between(Int64, Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_Int64_System_Int64_System_Int64_">Between(Int64, Int64, Int64)</a> method represents the <code>a BETWEEN b AND c</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Between(long value, long lower, long upper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">lower</span></td>
+        <td><p>The lower bound (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">upper</span></td>
+        <td><p>The upper bound (inclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_String_System_String_System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Between(System.String,System.String,System.String)">Between(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Between_System_String_System_String_System_String_">Between(String, String, String)</a> method represents the <code>a BETWEEN b AND c</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Between(string value, string lower, string upper)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lower</span></td>
+        <td><p>The lower bound (inclusive).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">upper</span></td>
+        <td><p>The upper bound (inclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Byte____System_Byte___" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.Byte[]},System.Byte[])">Contains(ISet&lt;Byte[]&gt;, Byte[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Byte____System_Byte___">Contains(ISet&lt;Byte[]&gt;, Byte[])</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;byte[]&gt; set, byte[] item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Decimal__System_Decimal_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.Decimal},System.Decimal)">Contains(ISet&lt;Decimal&gt;, Decimal)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Decimal__System_Decimal_">Contains(ISet&lt;Decimal&gt;, Decimal)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;decimal&gt; set, decimal item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Double__System_Double_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.Double},System.Double)">Contains(ISet&lt;Double&gt;, Double)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Double__System_Double_">Contains(ISet&lt;Double&gt;, Double)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;double&gt; set, double item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Int32__System_Int32_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.Int32},System.Int32)">Contains(ISet&lt;Int32&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Int32__System_Int32_">Contains(ISet&lt;Int32&gt;, Int32)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;int&gt; set, int item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Int64__System_Int64_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.Int64},System.Int64)">Contains(ISet&lt;Int64&gt;, Int64)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_Int64__System_Int64_">Contains(ISet&lt;Int64&gt;, Int64)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;long&gt; set, long item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_String__System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.Collections.Generic.ISet{System.String},System.String)">Contains(ISet&lt;String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_Collections_Generic_ISet_System_String__System_String_">Contains(ISet&lt;String&gt;, String)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(ISet&lt;string&gt; set, string item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to check if it is present in the set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_String_System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Contains(System.String,System.String)">Contains(String, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Contains_System_String_System_String_">Contains(String, String)</a> method represents the <code>contains(path, value)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(string value, string substr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">substr</span></td>
+        <td><p>The sub-string to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_DoesNotExist_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.DoesNotExist*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_DoesNotExist_System_Object_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.DoesNotExist(System.Object)">DoesNotExist(Object)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_DoesNotExist_System_Object_">DoesNotExist(Object)</a> method represents the <code>attribute_not_exists(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DoesNotExist(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record or record property to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Exists_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Exists*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Exists_System_Object_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Exists(System.Object)">Exists(Object)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Exists_System_Object_">Exists(Object)</a> method represents the <code>attribute_exists(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record or record property to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_HasType_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.HasType*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_HasType_System_Object_System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.HasType(System.Object,System.String)">HasType(Object, String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_HasType_System_Object_System_String_">HasType(Object, String)</a> method represents the <code>attribute_type(path, type)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasType(object value, string type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Decimal_System_Collections_Generic_IEnumerable_System_Decimal__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In(System.Decimal,System.Collections.Generic.IEnumerable{System.Decimal})">In(Decimal, IEnumerable&lt;Decimal&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Decimal_System_Collections_Generic_IEnumerable_System_Decimal__">In(Decimal, IEnumerable&lt;Decimal&gt;)</a> method represents the <code>a IN (b, c, d)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool In(decimal value, IEnumerable&lt;decimal&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The non-empty list of values to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Double_System_Collections_Generic_IEnumerable_System_Double__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In(System.Double,System.Collections.Generic.IEnumerable{System.Double})">In(Double, IEnumerable&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Double_System_Collections_Generic_IEnumerable_System_Double__">In(Double, IEnumerable&lt;Double&gt;)</a> method represents the <code>a IN (b, c, d)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool In(double value, IEnumerable&lt;double&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The non-empty list of values to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Int32_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In(System.Int32,System.Collections.Generic.IEnumerable{System.Int32})">In(Int32, IEnumerable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Int32_System_Collections_Generic_IEnumerable_System_Int32__">In(Int32, IEnumerable&lt;Int32&gt;)</a> method represents the <code>a IN (b, c, d)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool In(int value, IEnumerable&lt;int&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The non-empty list of values to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In(System.Int64,System.Collections.Generic.IEnumerable{System.Int64})">In(Int64, IEnumerable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__">In(Int64, IEnumerable&lt;Int64&gt;)</a> method represents the <code>a IN (b, c, d)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool In(long value, IEnumerable&lt;long&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The non-empty list of values to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.In(System.String,System.Collections.Generic.IEnumerable{System.String})">In(String, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_In_System_String_System_Collections_Generic_IEnumerable_System_String__">In(String, IEnumerable&lt;String&gt;)</a> method represents the <code>a IN (b, c, d)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool In(string value, IEnumerable&lt;string&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The non-empty list of values to check for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Byte___" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Byte[])">Size(Byte[])</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Byte___">Size(Byte[])</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(byte[] value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to get the byte size of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Byte____" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.Byte[]})">Size(ISet&lt;Byte[]&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Byte____">Size(ISet&lt;Byte[]&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;byte[]&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Decimal__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.Decimal})">Size(ISet&lt;Decimal&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Decimal__">Size(ISet&lt;Decimal&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;decimal&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Decimal</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Double__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.Double})">Size(ISet&lt;Double&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Double__">Size(ISet&lt;Double&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;double&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Int32__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.Int32})">Size(ISet&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Int32__">Size(ISet&lt;Int32&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;int&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Int64__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.Int64})">Size(ISet&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_Int64__">Size(ISet&lt;Int64&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;long&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_String__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.Generic.ISet{System.String})">Size(ISet&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_Generic_ISet_System_String__">Size(ISet&lt;String&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(ISet&lt;string&gt; set)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">set</span></td>
+        <td><p>The record property to get the set item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_IList_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.Collections.IList)">Size(IList)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_Collections_IList_">Size(IList)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(IList list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IList</span></td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The record property to get the list item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_String_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size(System.String)">Size(String)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size_System_String_">Size(String)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record property to get the character count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1___0_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size``1(``0)">Size&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1___0_">Size&lt;T&gt;(T)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size&lt;T&gt;(T map)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The record property to get the map item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the record property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1_System_Collections_Generic_IDictionary_System_String___0__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size``1(System.Collections.Generic.IDictionary{System.String,``0})">Size&lt;T&gt;(IDictionary&lt;String, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1_System_Collections_Generic_IDictionary_System_String___0__">Size&lt;T&gt;(IDictionary&lt;String, T&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size&lt;T&gt;(IDictionary&lt;string, T&gt; map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, T&gt;</td>
+        <td><span class="parametername">map</span></td>
+        <td><p>The record property to get the map item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the record property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size_" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1_System_Collections_Generic_IList___0__" data-uid="LambdaSharp.DynamoDB.Native.DynamoCondition.Size``1(System.Collections.Generic.IList{``0})">Size&lt;T&gt;(IList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoCondition.html#LambdaSharp_DynamoDB_Native_DynamoCondition_Size__1_System_Collections_Generic_IList___0__">Size&lt;T&gt;(IList&lt;T&gt;)</a> method represents the <code>size(path)</code> DynamoDB operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Size&lt;T&gt;(IList&lt;T&gt; list)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td><p>The record property to get the list item count of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The inner type for the generic list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

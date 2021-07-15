@@ -227,32 +227,32 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 <tr>
 <td><code>Module::RestApi</code></td>
 <td>AWS::ApiGateway::RestApi</td>
-<td>REST API resource</td>
+<td>REST API resource.</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::CorsOrigin</code></td>
 <td>String</td>
-<td>CORS Origin for REST API; is <code>!Ref AWS::NoValue</code> when not set</td>
+<td>CORS Origin for REST API; is <code>!Ref AWS::NoValue</code> when not set.</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Deployment</code></td>
 <td>AWS::ApiGateway::Deployment</td>
-<td>Deployment for the REST API; this resource changes whenever a REST API resource or method is modified</td>
+<td>Deployment for the REST API; this resource changes whenever a REST API resource or method is modified.</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::DomainName</code></td>
 <td>String</td>
-<td>Domain name of theREST API</td>
+<td>Domain name of theREST API.</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Stage</code></td>
 <td>AWS::ApiGateway::Stage</td>
-<td>Stage for deploying REST API; the stage name is always <code>LATEST</code></td>
+<td>Stage for deploying REST API; the stage name is always <code>LATEST</code>.</td>
 </tr>
 <tr>
 <td><code>Module::RestApi::Url</code></td>
 <td>String</td>
-<td>URL of the REST API</td>
+<td>URL of the REST API.</td>
 </tr>
 </tbody>
 </table>
@@ -270,30 +270,26 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 <tr>
 <td><code>Module::WebSocket</code></td>
 <td>AWS::ApiGatewayV2::Api</td>
-<td>WebSocket API resource</td>
-</tr>
-<tr>
-<td><code>Module::WebSocket::Deployment</code></td>
-<td>AWS::ApiGatewayV2::Deployment</td>
-<td>Deployment for the WebSocket API; this resource changes whenever an WebSocket API resource or method is modified</td>
+<td>WebSocket API resource.</td>
 </tr>
 <tr>
 <td><code>Module::WebSocket::DomainName</code></td>
 <td>String</td>
-<td>Domain name of the WebSocket API</td>
+<td>Domain name of the WebSocket API.</td>
 </tr>
 <tr>
 <td><code>Module::WebSocket::Stage</code></td>
 <td>AWS::ApiGatewayV2::Stage</td>
-<td>Stage for deploying WebSocket API; the stage name is always <code>LATEST</code></td>
+<td>Stage for deploying WebSocket API; the stage name is always <code>LATEST</code>.</td>
 </tr>
 <tr>
 <td><code>Module::WebSocket::Url</code></td>
 <td>String</td>
-<td>URL of the WebSocket API</td>
+<td>URL of the WebSocket API.</td>
 </tr>
 </tbody>
 </table>
+<p><strong>NOTE:</strong> When overriding <code>Module::WebSocket</code>, the <code>Module::WebSocket::Stage</code> is defined as empty strings since no resource is generated.</p>
 <h2 id="module-deployment-parameters">Module Deployment Parameters</h2>
 <p>The following parameters are set by LambdaSharp CLI when deploying a module.</p>
 <table>
@@ -308,22 +304,22 @@ Some global variables are dependent on <code>UseCoreServices</code> and may not 
 <tr>
 <td><code>DeploymentBucketName</code></td>
 <td>String</td>
-<td>S3 Bucket name from which the module is being deployed from</td>
+<td>S3 Bucket name from which the module is being deployed from.</td>
 </tr>
 <tr>
 <td><code>DeploymentChecksum</code></td>
 <td>String</td>
-<td>Module checksum; changes whenever the module definition changes</td>
+<td>Module checksum; changes whenever the module definition changes.</td>
 </tr>
 <tr>
 <td><code>DeploymentPrefix</code></td>
 <td>String</td>
-<td>Deployment tier prefix used to isolate resources</td>
+<td>Deployment tier prefix used to isolate resources.</td>
 </tr>
 <tr>
 <td><code>DeploymentPrefixLowercase</code></td>
 <td>String</td>
-<td>Deployment tier prefix in lowercase characters; used by resources that require only lowercase characters (e.g. S3 buckets)</td>
+<td>Deployment tier prefix in lowercase characters; used by resources that require only lowercase characters (e.g. S3 buckets).</td>
 </tr>
 </tbody>
 </table>

@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDynamoTableQuery&lt;TRecord&gt;
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
+    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Interface IDynamoTableQuery&lt;TRecord&gt;
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Interface IDynamoTableQuery&lt;TRecord&gt;
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Interface IDynamoTableQuery&lt;TRecord&gt;
+   | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1">
+  
+  
+  <h1 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1" class="text-break">Interface IDynamoTableQuery&lt;TRecord&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Interface to specify Query operation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.html">LambdaSharp.DynamoDB.Native.Operations</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.DynamoDB.Native.dll</h6>
+  <h5 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDynamoTableQuery&lt;TRecord&gt;
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsync_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsync*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsync_System_Boolean_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsync(System.Boolean,System.Threading.CancellationToken)">ExecuteAsync(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;TRecord&gt;&gt; ExecuteAsync(bool fetchAllAttributes, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fetchAllAttributes</span></td>
+        <td><p>Fetch all attributes from main index when querying a local/global secondary index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;&gt;</td>
+        <td><p>List of all found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsync_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsync*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsync_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsync(System.Threading.CancellationToken)">ExecuteAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual Task&lt;IEnumerable&lt;TRecord&gt;&gt; ExecuteAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;&gt;</td>
+        <td><p>List of all found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsyncEnumerable_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsyncEnumerable*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsyncEnumerable_System_Boolean_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsyncEnumerable(System.Boolean,System.Threading.CancellationToken)">ExecuteAsyncEnumerable(Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAsyncEnumerable&lt;TRecord&gt; ExecuteAsyncEnumerable(bool fetchAllAttributes, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">fetchAllAttributes</span></td>
+        <td><p>Fetch all attributes from main index when querying a local/global secondary index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;TRecord&gt;</td>
+        <td><p>Asynchronous enumerable which returns found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsyncEnumerable_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsyncEnumerable*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteAsyncEnumerable_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteAsyncEnumerable(System.Threading.CancellationToken)">ExecuteAsyncEnumerable(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IAsyncEnumerable&lt;TRecord&gt; ExecuteAsyncEnumerable(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;TRecord&gt;</td>
+        <td><p>Asynchronous enumerable which returns found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteFetchAllAttributesAsync_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteFetchAllAttributesAsync*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteFetchAllAttributesAsync_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteFetchAllAttributesAsync(System.Threading.CancellationToken)">ExecuteFetchAllAttributesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation and fetch all attributes from main index when querying a local/global secondary index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual Task&lt;IEnumerable&lt;TRecord&gt;&gt; ExecuteFetchAllAttributesAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TRecord&gt;&gt;</td>
+        <td><p>List of all found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteFetchAllAttributesAsyncEnumerable_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteFetchAllAttributesAsyncEnumerable*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_ExecuteFetchAllAttributesAsyncEnumerable_System_Threading_CancellationToken_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.ExecuteFetchAllAttributesAsyncEnumerable(System.Threading.CancellationToken)">ExecuteFetchAllAttributesAsyncEnumerable(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Execute Query operation and fetch all attributes from main index when querying a local/global secondary index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IAsyncEnumerable&lt;TRecord&gt; ExecuteFetchAllAttributesAsyncEnumerable(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;TRecord&gt;</td>
+        <td><p>Asynchronous enumerable which returns found records.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_Get_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.Get*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_Get__1_System_Linq_Expressions_Expression_System_Func__0___0___" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.Get``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})">Get&lt;T&gt;(Expression&lt;Func&lt;TRecord, T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Selects a record property to fetch.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDynamoTableQuery&lt;TRecord&gt; Get&lt;T&gt;(Expression&lt;Func&lt;TRecord, T&gt;&gt; attribute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TRecord, T&gt;&gt;</td>
+        <td><span class="parametername">attribute</span></td>
+        <td><p>A lambda expression that returns the record property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html">IDynamoTableQuery</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The property type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_Where_" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.Where*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_Operations_IDynamoTableQuery_1_Where_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery`1.Where(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">Where(Expression&lt;Func&lt;TRecord, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Filter query results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDynamoTableQuery&lt;TRecord&gt; Where(Expression&lt;Func&lt;TRecord, bool&gt;&gt; filter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TRecord, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>A lambda predicate representing the DynamoDB filter expression.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html">IDynamoTableQuery</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

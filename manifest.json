@@ -70,6 +70,90 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Condition-Filter-Specification.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Condition-Filter-Specification.html",
+          "hash": "Bsjsn6HbbNVK1NAcO9FVqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Overview.html",
+          "hash": "BgxBsuVpuTSOvDb4dkr2bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Serialization-AttributeValueJson.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Serialization-AttributeValueJson.html",
+          "hash": "Kx2gABob0XxLee8cC21NVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Serialization-CustomConverters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Serialization-CustomConverters.html",
+          "hash": "oRQCsQFG9AAjHhZ8gv6Olw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Serialization-TypeMappings.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Serialization-TypeMappings.html",
+          "hash": "uKfSdcGkUsEoribD1WIsYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/Serialization.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/Serialization.html",
+          "hash": "fq8Mduv7qBzvBXh5vqLdMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/DynamoDB-Native/UpdateItem-Set-Specification.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/DynamoDB-Native/UpdateItem-Set-Specification.html",
+          "hash": "DaJvS+qZuZTtfdSSzN11Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/Events-LambdaError.md",
       "output": {
         ".html": {
@@ -158,7 +242,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/JSON-Serialization.html",
-          "hash": "6C9qT8toZri+b13VBp7Jgw=="
+          "hash": "ssEKmWaVzfDY4CNKVy7STQ=="
         }
       },
       "is_incremental": false,
@@ -266,7 +350,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Eurytus.html",
-          "hash": "CKmb0eoVOgh/RQG6pRG1qw=="
+          "hash": "SZ8sps1APhdoUo+5mq9TJA=="
         }
       },
       "is_incremental": false,
@@ -302,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/ReleaseNotes-Hicetas.html",
-          "hash": "R7tIq/d9D92u/KKzmGiq8w=="
+          "hash": "LLRh2TFbzIQ0aF4nytpwhg=="
         }
       },
       "is_incremental": false,
@@ -338,7 +422,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/VideoTutorials.html",
-          "hash": "JFwwWxJn9drjlva90/K9yA=="
+          "hash": "cQyqgZFsR6qXnof7+h3TKg=="
         }
       },
       "is_incremental": false,
@@ -362,7 +446,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "yMUe+8mJlUuwu2nkgriL0Q=="
+          "hash": "8HGJfKqhiFZiBeGPGB+/Og=="
         }
       },
       "is_incremental": false,
@@ -851,7 +935,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "8i5RjKtFKPd6XaAT8ZbVjA=="
+          "hash": "BPdFNzF3uKu2vub37Y1Gfg=="
         }
       },
       "is_incremental": false,
@@ -875,7 +959,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-Api.html",
-          "hash": "CgEFSVL3+nJ7X5i7JSiZPQ=="
+          "hash": "w3Gp16lx82xdKSreU37HxA=="
         }
       },
       "is_incremental": false,
@@ -887,7 +971,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-Bucket.html",
-          "hash": "GUkad8Kms+X667xPPLo/qA=="
+          "hash": "vKOvt5j5spuW00XvD23uLQ=="
         }
       },
       "is_incremental": false,
@@ -899,7 +983,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-App-EventBus.html",
-          "hash": "uJicbhNTLImFrJPvvkW+tA=="
+          "hash": "FMjwpynxdO5GlxWo74mebg=="
         }
       },
       "is_incremental": false,
@@ -911,7 +995,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Core.html",
-          "hash": "Fi1UM1ESMx6mX3jdM1JJdw=="
+          "hash": "vDscpcW1R1AOLoKsXMkQ7g=="
         }
       },
       "is_incremental": false,
@@ -971,7 +1055,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-IO.html",
-          "hash": "h7bNosgolIbAkiKWijwlTQ=="
+          "hash": "kkTZAMM5ttoAICmmiwOfEw=="
         }
       },
       "is_incremental": false,
@@ -983,7 +1067,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-S3-Subscriber.html",
-          "hash": "S+tXCTEZL/ucG3g9IiNdng=="
+          "hash": "rehTF6roR8M/06mPPNUX/g=="
         }
       },
       "is_incremental": false,
@@ -1031,7 +1115,7 @@
       "output": {
         ".html": {
           "relative_path": "modules/LambdaSharp-Twitter-Query.html",
-          "hash": "Yz2QzGLLP761Q6bnFvLZOQ=="
+          "hash": "L+Yc9wZptIeaY1w7CApBkQ=="
         }
       },
       "is_incremental": false,
@@ -1487,6 +1571,894 @@
         ".html": {
           "relative_path": "sdk/LambdaSharp.CustomResource/LambdaSharp.CustomResource.html",
           "hash": "rsHWT66E+KaKU73vXMLmqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoCondition.html",
+          "hash": "1UdcDu210ELkbMkCZFPwpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html",
+          "hash": "paTNYs4vqrTYgG7PUJYrnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoPrimaryKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoPrimaryKey.html",
+          "hash": "jsBqrhfrvQSSOjJtPta/Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoQuery.html",
+          "hash": "UDRIzWxIgX9Jjs7SIpp/8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTable.html",
+          "hash": "VrbJy4b7oJcgLNLUD8kTSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTableOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTableOptions.html",
+          "hash": "EZ6U/M3EgFQfxy0KvvWSsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoUpdate.html",
+          "hash": "4XYBUHLH5Qg5yiwRGU6gEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.ADynamoException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.ADynamoException.html",
+          "hash": "kvEYZVTx+gdWR9a3QVFwvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.DynamoTableBatchGetItemsMaxAttemptsExceededException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.DynamoTableBatchGetItemsMaxAttemptsExceededException.html",
+          "hash": "OefhxS5exWoXMDfxenP7YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.DynamoTableBatchWriteItemsMaxAttemptsExceededException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.DynamoTableBatchWriteItemsMaxAttemptsExceededException.html",
+          "hash": "IDbuRyQrdSjzXV2o+8oVnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Exceptions.html",
+          "hash": "kmgb1WnzdbP2o2du1HURyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoQueryClause-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoQueryClause-1.html",
+          "hash": "GD3jbKdAUg7xxYN71fXWrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoQueryClause.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoQueryClause.html",
+          "hash": "dnagKtCXlV8FulTKKFABCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.IDynamoTable.html",
+          "hash": "jRzqKPQwe3WT5nNWdHotig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems-1.html",
+          "hash": "xVlYeDoqSTsZUpw0uooNdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems.html",
+          "hash": "QwPqqFK2Dy7mderM/wntrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItemsGetItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItemsGetItem-1.html",
+          "hash": "sT0ykAwubpIABsdkMD6kjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchWriteItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchWriteItems.html",
+          "hash": "1mwC/g8GOPsjhDZjDHq2IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchWriteItemsPutItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchWriteItemsPutItem-1.html",
+          "hash": "1DQrbKTHwN0csAPxqAmhRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableDeleteItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableDeleteItem-1.html",
+          "hash": "/eUkuiAFeIkEGDm9sxv0ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableGetItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableGetItem-1.html",
+          "hash": "5Mg3kBJY+ewQjOIuH9IC8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTablePutItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTablePutItem-1.html",
+          "hash": "nn5HB964eGa/BcMTPgBbyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html",
+          "hash": "U2gdC5VSy01wilEYWvqQTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery.html",
+          "hash": "Kk0DN4Sd58aZ/2OPkhqekg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems-1.html",
+          "hash": "Htv4dvV5SrJq4bNe3gcnDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems.html",
+          "hash": "/9HT4cCZTuPpcf9iH1FOhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItemsBegin-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItemsBegin-1.html",
+          "hash": "hYQXQ+PjYBt3PSb99+y+bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItems.html",
+          "hash": "H1CzAZZN3/v6xXVGY/izyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsConditionCheck-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsConditionCheck-1.html",
+          "hash": "SACR17PfBAqei2xe7wX+oA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsDeleteItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsDeleteItem-1.html",
+          "hash": "hT1uUpNLUns7Tj3CbhW5lw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsPutItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsPutItem-1.html",
+          "hash": "jQq1PBs+58NkAc9rlNpx/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsUpdateItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItemsUpdateItem-1.html",
+          "hash": "tJTOU1PZ1bML0k2v0i0yQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableUpdateItem-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.IDynamoTableUpdateItem-1.html",
+          "hash": "ZRmMMMuhDlAfNK43WVY3tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Operations.html",
+          "hash": "9HsdEMgai0tC+0xk0xWSkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQueryPartitionKeyConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQueryPartitionKeyConstraint.html",
+          "hash": "XVX/ZDPoklc7uJnmkQPyLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQuerySortKeyConstraint-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQuerySortKeyConstraint-1.html",
+          "hash": "o6gAVpwX0epwhzfs1joE1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQuerySortKeyConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.IDynamoQuerySortKeyConstraint.html",
+          "hash": "SlM6PyLv1doBOKkdFk7lOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Query.html",
+          "hash": "lc0mJWaCwqpuJhGjGbfIIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Utility.InspectDynamoDbClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Utility.InspectDynamoDbClient.html",
+          "hash": "+SqtmnQ6IALyF1S5fMz4fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.Utility.html",
+          "hash": "dXC17XBeona7H7S8saRTdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.html",
+          "hash": "T08JiO6KG9jqEDpJPUFeBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.ADynamoPropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.ADynamoPropertyAttribute.html",
+          "hash": "y3CRO/gV5/lau2qHBsJ+qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html",
+          "hash": "MDQHeOR9T0EK+H+sa436kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoBoolConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoBoolConverter.html",
+          "hash": "496hgfge+88SxkXn1s9RJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoByteArrayConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoByteArrayConverter.html",
+          "hash": "FDxIljdffPRRKKDllivHcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDateTimeOffsetConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDateTimeOffsetConverter.html",
+          "hash": "AdhHbDxBx6FElNnp16+WrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDecimalConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDecimalConverter.html",
+          "hash": "zlTLTDMtX/kQJReWex/eag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDoubleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoDoubleConverter.html",
+          "hash": "hcpcb2Sqjy0PkcPdllmT8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoEnumConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoEnumConverter.html",
+          "hash": "+4M98TTd9vyaSN+7lyJbBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoGuidConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoGuidConverter.html",
+          "hash": "NeqlptLbr9oGpRmvGRMoXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoIDictionaryConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoIDictionaryConverter.html",
+          "hash": "lOhgju7o0XYEXfy/4UQFmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html",
+          "hash": "bpxKWBxPZkOkSQvc5JxiXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetDecimalConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetDecimalConverter.html",
+          "hash": "wGfThEznkKnf6mBRnRWPOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetDoubleConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetDoubleConverter.html",
+          "hash": "I+zZXqMTkUJsWyqqPGqrKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetIntConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetIntConverter.html",
+          "hash": "UXt9sJD3XgkG5oDqJA+2gQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetLongConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetLongConverter.html",
+          "hash": "1yACoE6hSgxX4q5CQawTIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetStringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetStringConverter.html",
+          "hash": "cTd2S93/8E6S8SB5V/i7mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoIntConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoIntConverter.html",
+          "hash": "JrkVtoZQ1bHzAkl1H1epaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoJsonElementConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoJsonElementConverter.html",
+          "hash": "Ytkq/eQL8LbOUIQPrsx8Sw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoListConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoListConverter.html",
+          "hash": "zbaFILo3XhUkRdAEbKv9lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoLongConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoLongConverter.html",
+          "hash": "Xn2eHJj1MHqvlIo07cVF/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoObjectConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoObjectConverter.html",
+          "hash": "vR6dCAgBtH+F++Y3Iwua5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoStringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoStringConverter.html",
+          "hash": "ulI19aWupt8p8QD+DijIlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.IDynamoAttributeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.IDynamoAttributeConverter.html",
+          "hash": "1SA46HDcjZvTzBQ+6YOMvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.html",
+          "hash": "vFbpSNolyPJ1CDn6XqpHaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoPropertyIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoPropertyIgnoreAttribute.html",
+          "hash": "PPmRFMTO61b9JDlANyUPDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoPropertyNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoPropertyNameAttribute.html",
+          "hash": "hKIiJJUjl3UHROE+8B8Z3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializationException.html",
+          "hash": "6qF3pL7zpxOLd5RlCQI1mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializer.html",
+          "hash": "T3hjsvWf75ln/FvysyJmug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions.html",
+          "hash": "b76XiPueFHVAeumUQILByA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.ByteArrayEqualityComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.ByteArrayEqualityComparer.html",
+          "hash": "4U8oBZWf6GWtc2ek1LX+ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.DynamoAttributeValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.DynamoAttributeValueConverter.html",
+          "hash": "ssPSalNpH+YZsM4tqyjEAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Utility.html",
+          "hash": "LmiHJhQ8mcYGMRT7piqOMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.html",
+          "hash": "m/8TMVY1VLkgH10NToCI/Q=="
         }
       },
       "is_incremental": false,
@@ -2497,7 +3469,7 @@
       "output": {
         ".html": {
           "relative_path": "sdk/toc.html",
-          "hash": "fpTpFJhSG0x7cO9tpQSoCA=="
+          "hash": "fxNoaQwwA/eUIGH9U6ZAwA=="
         }
       },
       "is_incremental": false,
@@ -2509,7 +3481,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Index.html",
-          "hash": "DEVvi/XanW6PMvsqKtBvmw=="
+          "hash": "M1oy/xSCY2uQA353QH432w=="
         }
       },
       "is_incremental": false,
@@ -2761,7 +3733,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Global-Variables.html",
-          "hash": "hx2WZYtDdVbyC/IzY14R4Q=="
+          "hash": "BRfdFhgKnjdafDNr1vbXcA=="
         }
       },
       "is_incremental": false,
@@ -2857,7 +3829,7 @@
       "output": {
         ".html": {
           "relative_path": "syntax/Module-Pragmas.html",
-          "hash": "q81XwCMJzaombWzpvkLeVw=="
+          "hash": "bMF5X2ZnDEDC7QHv4QUycw=="
         }
       },
       "is_incremental": false,
@@ -2989,7 +3961,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "V15XcRBGcYVMZb58uTnxzA=="
+          "hash": "TmreYmuaxsnVQHU8HKhRLA=="
         }
       },
       "is_incremental": false,
@@ -3010,13 +3982,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 109,
+          "total_file_count": 116,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 118,
+          "total_file_count": 192,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -178,6 +178,11 @@
 <td>(none)</td>
 </tr>
 <tr>
+<td><code>Module::WebSocket</code></td>
+<td>Expression for the WebSocket ID.</td>
+<td>(none)</td>
+</tr>
+<tr>
 <td><code>Module::WebSocket::StageName</code></td>
 <td>Expression for setting the WebSocket stage name.</td>
 <td><code>LATEST</code></td>
@@ -194,6 +199,7 @@
 </tr>
 </tbody>
 </table>
+<p><strong>NOTE</strong>: No WebSocket resources are generated when <code>Module::WebSocket</code> is defined in the overrides section. When defining <code>Module::WebSocket</code>, also consider defining <code>Module::RestApi::StageName</code> which is used to grant permission to post back on a WebSocket connection.</p>
 <h3 id="examples">Examples</h3>
 <h4 id="set-the-route-selection-expression-for-websocket">Set the route selection expression for WebSocket</h4>
 <p>The following override changes the route selection expression from <code>action</code> to <code>Action</code>.</p>

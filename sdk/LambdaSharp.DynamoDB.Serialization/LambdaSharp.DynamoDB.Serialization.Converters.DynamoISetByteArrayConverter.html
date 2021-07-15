@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamoISetByteArrayConverter
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
+    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Class DynamoISetByteArrayConverter
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Class DynamoISetByteArrayConverter
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Class DynamoISetByteArrayConverter
+   | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter">
+  
+  
+  <h1 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter" class="text-break">Class DynamoISetByteArrayConverter
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html">DynamoISetByteArrayConverter</a> class is used to convert <code>ISet&lt;byte[]&gt;</code> value to/from a DynamoDB attribute value.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html">ADynamoAttributeConverter</a></div>
+    <div class="level2"><span class="xref">DynamoISetByteArrayConverter</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.IDynamoAttributeConverter.html">IDynamoAttributeConverter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromNull_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromNull(Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromBool_System_Boolean_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromBool(Boolean, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromBinary_System_IO_MemoryStream_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromBinary(MemoryStream, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromNumber_System_String_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromNumber(String, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromString_System_String_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromString(String, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromList_System_Collections_Generic_List_Amazon_DynamoDBv2_Model_AttributeValue__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromList(List&lt;AttributeValue&gt;, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromMap_System_Collections_Generic_Dictionary_System_String_Amazon_DynamoDBv2_Model_AttributeValue__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromMap(Dictionary&lt;String, AttributeValue&gt;, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromNumberSet_System_Collections_Generic_List_System_String__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromNumberSet(List&lt;String&gt;, Type, DynamoSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromStringSet_System_Collections_Generic_List_System_String__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromStringSet(List&lt;String&gt;, Type, DynamoSerializerOptions)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.html">LambdaSharp.DynamoDB.Serialization.Converters</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.DynamoDB.Serialization.dll</h6>
+  <h5 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamoISetByteArrayConverter : ADynamoAttributeConverter, IDynamoAttributeConverter</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_Instance" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_Instance">Instance</a> class field exposes a reusable instance of the class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DynamoISetByteArrayConverter Instance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html">DynamoISetByteArrayConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_CanConvert_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.CanConvert*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_CanConvert_System_Type_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.CanConvert(System.Type)">CanConvert(Type)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_CanConvert_System_Type_">CanConvert(Type)</a> method checks if this converter can handle the presented type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanConvert(Type typeToConvert)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">typeToConvert</span></td>
+        <td><p>The type to convert.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the converter can handle the type; otherwise, <code>false</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_CanConvert_System_Type_">ADynamoAttributeConverter.CanConvert(Type)</a></div>
+  <a id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_FromBinarySet_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.FromBinarySet*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_FromBinarySet_System_Collections_Generic_List_System_IO_MemoryStream__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.FromBinarySet(System.Collections.Generic.List{System.IO.MemoryStream},System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)">FromBinarySet(List&lt;MemoryStream&gt;, Type, DynamoSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_FromBinarySet_System_Collections_Generic_List_System_IO_MemoryStream__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">FromBinarySet(List&lt;MemoryStream&gt;, Type, DynamoSerializerOptions)</a> method converts a DynamoDB BS attribute value to the type of the converter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object FromBinarySet(List&lt;MemoryStream&gt; value, Type targetType, DynamoSerializerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.IO.MemoryStream</span>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The DynamoDB attribute value to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>The expected return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions.html">DynamoSerializerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The deserialization options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An instance of type <code data-dev-comment-type="paramref" class="paramref">targetType</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_FromBinarySet_System_Collections_Generic_List_System_IO_MemoryStream__System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.FromBinarySet(List&lt;MemoryStream&gt;, Type, DynamoSerializerOptions)</a></div>
+  <a id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_GetDefaultValue_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.GetDefaultValue*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_GetDefaultValue_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.GetDefaultValue(System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)">GetDefaultValue(Type, DynamoSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_GetDefaultValue_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">GetDefaultValue(Type, DynamoSerializerOptions)</a> method instantiates a default value for a missing property during deserialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object GetDefaultValue(Type targetType, DynamoSerializerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>The expected return type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions.html">DynamoSerializerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The deserialization options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_GetDefaultValue_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.GetDefaultValue(Type, DynamoSerializerOptions)</a></div>
+  <a id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_ToAttributeValue_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.ToAttributeValue*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_ToAttributeValue_System_Object_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_" data-uid="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.ToAttributeValue(System.Object,System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)">ToAttributeValue(Object, Type, DynamoSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.DynamoISetByteArrayConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoISetByteArrayConverter_ToAttributeValue_System_Object_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ToAttributeValue(Object, Type, DynamoSerializerOptions)</a> method converts an instance to a DynamoDB attribute value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AttributeValue ToAttributeValue(object value, Type targetType, DynamoSerializerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>The source value type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions.html">DynamoSerializerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The serialization options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.DynamoDBv2.Model.AttributeValue</span></td>
+        <td><p>A DynamoDB attribute value, or <code>null</code> if the instance state cannot be represented in DynamoDB.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.ADynamoAttributeConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_ADynamoAttributeConverter_ToAttributeValue_System_Object_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_">ADynamoAttributeConverter.ToAttributeValue(Object, Type, DynamoSerializerOptions)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Serialization.Converters.IDynamoAttributeConverter.html">IDynamoAttributeConverter</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamoTable
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Build serverless applications with .NET on AWS">
+    <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content="Class DynamoTable
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTable.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Build serverless applications with .NET on AWS">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Class DynamoTable
+   | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Build serverless applications with .NET on AWS">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>Class DynamoTable
+   | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/sdk/LambdaSharp.DynamoDB.Native/LambdaSharp.DynamoDB.Native.DynamoTable.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable">
+  
+  
+  <h1 id="LambdaSharp_DynamoDB_Native_DynamoTable" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable" class="text-break">Class DynamoTable
+  </h1>
+  <div class="markdown level0 summary"><p>Implementation for accessing DynamoDB operations in a type-safe mannter using LINQ expressions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DynamoTable</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="LambdaSharp.DynamoDB.Native.IDynamoTable.html">IDynamoTable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LambdaSharp.DynamoDB.Native.html">LambdaSharp.DynamoDB.Native</a></h6>
+  <h6><strong>Assembly</strong>: LambdaSharp.DynamoDB.Native.dll</h6>
+  <h5 id="LambdaSharp_DynamoDB_Native_DynamoTable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamoTable : IDynamoTable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable__ctor_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.#ctor*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable__ctor_System_String_Amazon_DynamoDBv2_IAmazonDynamoDB_LambdaSharp_DynamoDB_Native_DynamoTableOptions_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.#ctor(System.String,Amazon.DynamoDBv2.IAmazonDynamoDB,LambdaSharp.DynamoDB.Native.DynamoTableOptions)">DynamoTable(String, IAmazonDynamoDB, DynamoTableOptions)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoTable.html">DynamoTable</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamoTable(string tableName, IAmazonDynamoDB dynamoClient = null, DynamoTableOptions options = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">tableName</span></td>
+        <td><p>The name of the table.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Amazon.DynamoDBv2.IAmazonDynamoDB</span></td>
+        <td><span class="parametername">dynamoClient</span></td>
+        <td><p>The <code>IAmazonDynamoDB</code> client to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoTableOptions.html">DynamoTableOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The table access options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_DynamoClient_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.DynamoClient*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_DynamoClient" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.DynamoClient">DynamoClient</h4>
+  <div class="markdown level1 summary"><p>Get the <code>IAmazonDynamoDB</code> client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAmazonDynamoDB DynamoClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Amazon.DynamoDBv2.IAmazonDynamoDB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_Options_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Options*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_Options" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Get/set the table access options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamoTableOptions Options { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoTableOptions.html">DynamoTableOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_TableName_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TableName*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_TableName" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TableName">TableName</h4>
+  <div class="markdown level1 summary"><p>Get the DynamoDB table name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TableName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchGetItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchGetItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchGetItems_System_Boolean_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchGetItems(System.Boolean)">BatchGetItems(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specify the BatchGetItems operation with mixed record types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableBatchGetItems BatchGetItems(bool consistentRead)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">consistentRead</span></td>
+        <td><p>Boolean indicating if the read operations should be performed against the main partition (2x cost compared to eventual consistent read).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems.html">IDynamoTableBatchGetItems</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchGetItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchGetItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchGetItems__1_System_Collections_Generic_IEnumerable_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0___System_Boolean_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchGetItems``1(System.Collections.Generic.IEnumerable{LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0}},System.Boolean)">BatchGetItems&lt;TRecord&gt;(IEnumerable&lt;DynamoPrimaryKey&lt;TRecord&gt;&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specify the BatchGetItems operation for a list of primary keys that all share the same record type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableBatchGetItems&lt;TRecord&gt; BatchGetItems&lt;TRecord&gt;(IEnumerable&lt;DynamoPrimaryKey&lt;TRecord&gt;&gt; primaryKeys, bool consistentRead)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;&gt;</td>
+        <td><span class="parametername">primaryKeys</span></td>
+        <td><p>List of primary keys to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">consistentRead</span></td>
+        <td><p>Boolean indicating if the read operations should be performed against the main partition (2x cost compared to eventual consistent read).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchGetItems-1.html">IDynamoTableBatchGetItems</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchWriteItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchWriteItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_BatchWriteItems" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.BatchWriteItems">BatchWriteItems()</h4>
+  <div class="markdown level1 summary"><p>Specify the BatchWriteItems operation to write or delete rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableBatchWriteItems BatchWriteItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableBatchWriteItems.html">IDynamoTableBatchWriteItems</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_DeleteItem_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.DeleteItem*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_DeleteItem__1_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0__" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.DeleteItem``1(LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0})">DeleteItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt;)</h4>
+  <div class="markdown level1 summary"><p>/// Specify the DeleteItem operation for the given primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableDeleteItem&lt;TRecord&gt; DeleteItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt; primaryKey)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;</td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>Primary key of the item to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableDeleteItem-1.html">IDynamoTableDeleteItem</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_GetItem_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.GetItem*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_GetItem__1_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0__System_Boolean_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.GetItem``1(LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0},System.Boolean)">GetItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specify the GetItem operation for the given primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableGetItem&lt;TRecord&gt; GetItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt; primaryKey, bool consistentRead = false)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;</td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>Primary key of the item to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">consistentRead</span></td>
+        <td><p>Boolean indicating if the read operation should be performed against the main partition (2x cost compared to eventual consistent read).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableGetItem-1.html">IDynamoTableGetItem</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_PutItem_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.PutItem*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_PutItem__1_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0____0_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.PutItem``1(LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0},``0)">PutItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt;, TRecord)</h4>
+  <div class="markdown level1 summary"><p>Specify the PutItem operation for the given primary key and record. When successful, this operation creates a new row or replaces all attributes of the matching row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTablePutItem&lt;TRecord&gt; PutItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt; primaryKey, TRecord record)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;</td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>Primary key of the item to write.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TRecord</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>The record to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTablePutItem-1.html">IDynamoTablePutItem</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_Query_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Query*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_Query_LambdaSharp_DynamoDB_Native_IDynamoQueryClause_System_Int32_System_Boolean_System_Boolean_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Query(LambdaSharp.DynamoDB.Native.IDynamoQueryClause,System.Int32,System.Boolean,System.Boolean)">Query(IDynamoQueryClause, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specify the Query operation to fetch a list of mixed records type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableQuery Query(IDynamoQueryClause queryClause, int limit, bool scanIndexForward, bool consistentRead)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.IDynamoQueryClause.html">IDynamoQueryClause</a></td>
+        <td><span class="parametername">queryClause</span></td>
+        <td><p>The query clause that specifies the index and sort-key constraints.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum number of records to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">scanIndexForward</span></td>
+        <td><p>The direction of index scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">consistentRead</span></td>
+        <td><p>Boolean indicating if the read operations should be performed against the main partition (2x cost compared to eventual consistent read).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery.html">IDynamoTableQuery</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_Query_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Query*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_Query__1_LambdaSharp_DynamoDB_Native_IDynamoQueryClause___0__System_Int32_System_Boolean_System_Boolean_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.Query``1(LambdaSharp.DynamoDB.Native.IDynamoQueryClause{``0},System.Int32,System.Boolean,System.Boolean)">Query&lt;TRecord&gt;(IDynamoQueryClause&lt;TRecord&gt;, Int32, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Specify the Query operation to fetch a list of records of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableQuery&lt;TRecord&gt; Query&lt;TRecord&gt;(IDynamoQueryClause&lt;TRecord&gt; queryClause, int limit, bool scanIndexForward, bool consistentRead)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.IDynamoQueryClause-1.html">IDynamoQueryClause</a>&lt;TRecord&gt;</td>
+        <td><span class="parametername">queryClause</span></td>
+        <td><p>The query clause that specifies the index and sort-key constraints.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum number of records to read.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">scanIndexForward</span></td>
+        <td><p>The direction of index scan.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">consistentRead</span></td>
+        <td><p>Boolean indicating if the read operations should be performed against the main partition (2x cost compared to eventual consistent read).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableQuery-1.html">IDynamoTableQuery</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactGetItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactGetItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactGetItems" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactGetItems">TransactGetItems()</h4>
+  <div class="markdown level1 summary"><p>/// Specify the TransactGetItems operation with mixed record types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableTransactGetItems TransactGetItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems.html">IDynamoTableTransactGetItems</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactGetItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactGetItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactGetItems__1_System_Collections_Generic_IEnumerable_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0___" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactGetItems``1(System.Collections.Generic.IEnumerable{LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0}})">TransactGetItems&lt;TRecord&gt;(IEnumerable&lt;DynamoPrimaryKey&lt;TRecord&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Specify the TransactGetItems operation for a list of primary keys that all share the same record type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableTransactGetItems&lt;TRecord&gt; TransactGetItems&lt;TRecord&gt;(IEnumerable&lt;DynamoPrimaryKey&lt;TRecord&gt;&gt; primaryKeys)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;&gt;</td>
+        <td><span class="parametername">primaryKeys</span></td>
+        <td><p>List of primary keys to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactGetItems-1.html">IDynamoTableTransactGetItems</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactWriteItems_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactWriteItems*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_TransactWriteItems" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.TransactWriteItems">TransactWriteItems()</h4>
+  <div class="markdown level1 summary"><p>Specify the TransactWriteItems to created, put, update, or delete records in a transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableTransactWriteItems TransactWriteItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableTransactWriteItems.html">IDynamoTableTransactWriteItems</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="LambdaSharp_DynamoDB_Native_DynamoTable_UpdateItem_" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.UpdateItem*"></a>
+  <h4 id="LambdaSharp_DynamoDB_Native_DynamoTable_UpdateItem__1_LambdaSharp_DynamoDB_Native_DynamoPrimaryKey___0__" data-uid="LambdaSharp.DynamoDB.Native.DynamoTable.UpdateItem``1(LambdaSharp.DynamoDB.Native.DynamoPrimaryKey{``0})">UpdateItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt;)</h4>
+  <div class="markdown level1 summary"><p>Specify the UpdateItem operation for the given primary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDynamoTableUpdateItem&lt;TRecord&gt; UpdateItem&lt;TRecord&gt;(DynamoPrimaryKey&lt;TRecord&gt; primaryKey)
+    where TRecord : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.DynamoPrimaryKey-1.html">DynamoPrimaryKey</a>&lt;TRecord&gt;</td>
+        <td><span class="parametername">primaryKey</span></td>
+        <td><p>Primary key of the item to update.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LambdaSharp.DynamoDB.Native.Operations.IDynamoTableUpdateItem-1.html">IDynamoTableUpdateItem</a>&lt;TRecord&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRecord</span></td>
+        <td><p>The record type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="LambdaSharp.DynamoDB.Native.IDynamoTable.html">IDynamoTable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

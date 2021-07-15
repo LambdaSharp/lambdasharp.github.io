@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-147535443-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-147535443-1');
+    </script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="keywords" content="serialization, api, dynamodb, aws, amazon, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
+    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="robots" content="index,follow">
+  
+    <meta property="og:title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:site_name" content="LambdaSharp - Serverless .NET for AWS">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://lambdasharp.net/articles/DynamoDB-Native/Serialization-TypeMappings.html">
+    <meta property="og:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+    <meta property="og:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=".NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS">
+    <meta name="twitter:site" content="@lambdasharp">
+    <meta name="twitter:description" content="Serializing data structures with LambdaSharp.DynamoDB.Serialization">
+    <meta name="twitter:image" content="https://lambdasharp.net/images/LambdaSharpBadge.png">
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:newtab" content="true">
+  
+    <title>.NET Type Mappings for DynamoDB - LambdaSharp | LambdaSharp - Serverless .NET for AWS </title>
+    <link rel="canonical" href="https://lambdasharp.net/articles/DynamoDB-Native/Serialization-TypeMappings.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/LambdaSharpLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="net-type-mappings-for-dynamodb">.NET Type Mappings for DynamoDB</h1>
+
+<p>The following table shows how DynamoDB attribute types are mapped to .NET types. The table has two columns for .NET types. The first column describes the default .NET type used when no target type is provided. The second column describes what types are supported for (de)serializing the corresponding DynamoDB attribute values.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>All .NET types must be concrete and have a parameter-less constructor.</li>
+<li>Only public instance properties are (de)serialized.</li>
+<li>Enum types are (de)serialized as strings by default.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>DynamoDB Attribute Type</th>
+<th>Default .NET Type</th>
+<th>Alternative .NET Types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>B</code> (Binary)</td>
+<td><code>byte[]</code></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><code>BOOL</code> (Boolean)</td>
+<td><code>bool</code></td>
+<td><code>bool?</code></td>
+</tr>
+<tr>
+<td><code>BS</code> (Binary Set)</td>
+<td><code>HashSet&lt;byte[]&gt;</code></td>
+<td>implementation of <code>ISet&lt;byte[]&gt;</code></td>
+</tr>
+<tr>
+<td><code>L</code> (List)</td>
+<td><code>List&lt;object&gt;</code></td>
+<td>implementation of <code>IList&lt;T&gt;</code> where <code>T</code> is a concrete type with a parameter-less constructor</td>
+</tr>
+<tr>
+<td><code>M</code> (Map)</td>
+<td><code>Dictionary&lt;string, object&gt;</code></td>
+<td>any concrete type with a parameter-less constructor -OR- implementation of <code>IDictionary&lt;string, T&gt;</code> where <code>T</code> is a concrete type with a parameter-less constructor</td>
+</tr>
+<tr>
+<td><code>N</code> (Number)</td>
+<td><code>double</code></td>
+<td><code>int</code>, <code>int?</code>, <code>long</code>, <code>long?</code>, <code>double?</code>, <code>decimal</code>, <code>decimal?</code>, <code>DateTimeOffset</code>, <code>DateTimeOffset?</code></td>
+</tr>
+<tr>
+<td><code>NS</code> (Number Set)</td>
+<td><code>HashSet&lt;double&gt;</code></td>
+<td>implementation of <code>ISet&lt;int&gt;</code>, <code>ISet&lt;long&gt;</code>, <code>ISet&lt;double&gt;</code>, or <code>ISet&lt;decimal&gt;</code></td>
+</tr>
+<tr>
+<td><code>NULL</code> (Null)</td>
+<td>N/A (<code>null</code> doesn't have a .NET type)</td>
+<td>any class</td>
+</tr>
+<tr>
+<td><code>S</code> (String)</td>
+<td><code>string</code></td>
+<td>any enum type</td>
+</tr>
+<tr>
+<td><code>SS</code> (String Set)</td>
+<td><code>HashSet&lt;string&gt;</code></td>
+<td>implementation of <code>ISet&lt;string&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="string-number-and-binary-sets">String, Number, and Binary Sets</h2>
+<p>DynamoDB does not support storing empty sets. Therefore, the library will skip serializing empty instances of <code>ISet&lt;string&gt;</code>, <code>ISet&lt;int&gt;</code> etc. When a .NET class deserialized, the library detects the missing attribute value and initializes the instance property with an empty instance of <code>HashSte&lt;string&gt;</code>, <code>HashSet&lt;int&gt;</code>, etc. This ensures proper round-tripping behavior for DynamoDB sets while also avoiding unnecessary null checks in code.</p>
+<p>In addition, instances of <code>HashSet&lt;byte[]&gt;</code> are initialized with an instance of <code>ByteArrayEqualityComparer</code> to provide a similar behavior as when serialized.</p>
+<pre><code class="lang-csharp">class MyRecord {
+
+    //--- Properties ---
+    public HashSet&lt;string&gt; StringSet { get; set; }
+    public HashSet&lt;int&gt; IntSet { get; set; }
+    public HashSet&lt;long&gt; LongSet { get; set; }
+    public HashSet&lt;double&gt; DoubleSet { get; set; }
+    public HashSet&lt;decimal&gt; DecimalSet { get; set; }
+    public HashSet&lt;byte[]&gt; ByteArraySet { get; set; }
+}
+
+var record = new MyRecord {
+    StringSet = new HashSet&lt;string&gt;(),
+    IntSet = new HashSet&lt;int&gt;(),
+    LongSet = new HashSet&lt;long&gt;(),
+    DoubleSet = new HashSet&lt;double&gt;(),
+    DecimalSet = new HashSet&lt;decimal&gt;(),
+    ByteArraySet = new HashSet&lt;byte[]&gt;(ByteArrayEqualityComparer.Instance)
+};
+
+var serialized = DynamoSerializer.Serialize(record);
+
+var deserialized = DynamoSerializer.Deserialize(serialized);
+
+Assert.IsNotNull(deserialized.StringSet);
+Assert.IsNotNull(deserialized.IntSet);
+Assert.IsNotNull(deserialized.LongSet);
+Assert.IsNotNull(deserialized.DoubleSet);
+Assert.IsNotNull(deserialized.DecimalSet);
+Assert.IsNotNull(deserialized.ByteArraySet);
+</code></pre>
+<h2 id="jsonelement-to-attributevalue-support"><code>JsonElement</code> to <code>AttributeValue</code> Support</h2>
+<p><code>DynamoSerializer</code> supports converting <code>JsonElement</code> values to DynamoDB attribute values, but not the other way around.</p>
+<p>This makes it possible to convert an arbitrary JSON document to a DynamoDB document without having to first convert all occurrences of the <code>JsonElement</code> instances.</p>
+<pre><code class="lang-csharp">
+// deserializing an arbitrary JSON document creates JsonElement values in nested objects
+var deserializedJson = JsonSerializer.Deserialize&lt;Dictionary, object&gt;(json);
+
+// JsonElement values are converted to corresponding DynamoDB attribute values
+var dynamoDocument = DynamoSerializer.Serialize(deserializedJson);
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
