@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class LambdaFunctionDependencyProvider
@@ -136,7 +136,7 @@ that takes an instance implementing the required <em>Dependency Provider</em> in
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LambdaFunctionDependencyProvider(Func&lt;DateTime&gt; utcNowCallback = null, Action&lt;string&gt; logCallback = null, ILambdaConfigSource configSource = null, IAmazonKeyManagementService kmsClient = null, IAmazonSQS sqsClient = null, IAmazonCloudWatchEvents eventsClient = null, bool? debugLoggingEnabled = default(bool? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public LambdaFunctionDependencyProvider(Func&lt;DateTime&gt; utcNowCallback = null, Action&lt;string&gt; logCallback = null, ILambdaConfigSource configSource = null, IAmazonKeyManagementService kmsClient = null, IAmazonSQS sqsClient = null, IAmazonCloudWatchEvents eventsClient = null, bool? debugLoggingEnabled = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -355,7 +355,7 @@ encrypt the original message.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;byte[]&gt; DecryptSecretAsync(byte[] secretBytes, Dictionary&lt;string, string&gt; encryptionContext, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;byte[]&gt; DecryptSecretAsync(byte[] secretBytes, Dictionary&lt;string, string&gt; encryptionContext, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -411,7 +411,7 @@ permission to use the <code>kms:Encrypt</code> opeartion on the specified KMS ke
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task&lt;byte[]&gt; EncryptSecretAsync(byte[] plaintextBytes, string encryptionKeyId, Dictionary&lt;string, string&gt; encryptionContext, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task&lt;byte[]&gt; EncryptSecretAsync(byte[] plaintextBytes, string encryptionKeyId, Dictionary&lt;string, string&gt; encryptionContext, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

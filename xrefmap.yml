@@ -10958,20 +10958,20 @@ references:
   name: Implicit((String Name, Double Value, LambdaMetricUnit Unit) to LambdaMetric)
   href: sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.LambdaMetric.html#LambdaSharp_Logging_Metrics_LambdaMetric_op_Implicit_System_ValueTuple_System_String_System_Double_LambdaSharp_Logging_Metrics_LambdaMetricUnit___LambdaSharp_Logging_Metrics_LambdaMetric
   commentId: M:LambdaSharp.Logging.Metrics.LambdaMetric.op_Implicit(System.ValueTuple{System.String,System.Double,LambdaSharp.Logging.Metrics.LambdaMetricUnit})~LambdaSharp.Logging.Metrics.LambdaMetric
-  name.vb: Widening((Name As String, Value As Double, Unit As LambdaMetricUnit) to LambdaMetric)
+  name.vb: Widening((Name As String, Value As Double, Unit As LambdaMetricUnit)(Of String, Double, LambdaMetricUnit) to LambdaMetric)
   fullName: LambdaSharp.Logging.Metrics.LambdaMetric.Implicit(System.ValueTuple<System.String, System.Double, LambdaSharp.Logging.Metrics.LambdaMetricUnit> to LambdaSharp.Logging.Metrics.LambdaMetric)
   fullName.vb: LambdaSharp.Logging.Metrics.LambdaMetric.Widening(System.ValueTuple(Of System.String, System.Double, LambdaSharp.Logging.Metrics.LambdaMetricUnit) to LambdaSharp.Logging.Metrics.LambdaMetric)
   nameWithType: LambdaMetric.Implicit((String Name, Double Value, LambdaMetricUnit Unit) to LambdaMetric)
-  nameWithType.vb: LambdaMetric.Widening((Name As String, Value As Double, Unit As LambdaMetricUnit) to LambdaMetric)
+  nameWithType.vb: LambdaMetric.Widening((Name As String, Value As Double, Unit As LambdaMetricUnit)(Of String, Double, LambdaMetricUnit) to LambdaMetric)
 - uid: LambdaSharp.Logging.Metrics.LambdaMetric.op_Implicit(System.ValueTuple{System.String,System.Int32,LambdaSharp.Logging.Metrics.LambdaMetricUnit})~LambdaSharp.Logging.Metrics.LambdaMetric
   name: Implicit((String Name, Int32 Value, LambdaMetricUnit Unit) to LambdaMetric)
   href: sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.LambdaMetric.html#LambdaSharp_Logging_Metrics_LambdaMetric_op_Implicit_System_ValueTuple_System_String_System_Int32_LambdaSharp_Logging_Metrics_LambdaMetricUnit___LambdaSharp_Logging_Metrics_LambdaMetric
   commentId: M:LambdaSharp.Logging.Metrics.LambdaMetric.op_Implicit(System.ValueTuple{System.String,System.Int32,LambdaSharp.Logging.Metrics.LambdaMetricUnit})~LambdaSharp.Logging.Metrics.LambdaMetric
-  name.vb: Widening((Name As String, Value As Int32, Unit As LambdaMetricUnit) to LambdaMetric)
+  name.vb: Widening((Name As String, Value As Int32, Unit As LambdaMetricUnit)(Of String, Int32, LambdaMetricUnit) to LambdaMetric)
   fullName: LambdaSharp.Logging.Metrics.LambdaMetric.Implicit(System.ValueTuple<System.String, System.Int32, LambdaSharp.Logging.Metrics.LambdaMetricUnit> to LambdaSharp.Logging.Metrics.LambdaMetric)
   fullName.vb: LambdaSharp.Logging.Metrics.LambdaMetric.Widening(System.ValueTuple(Of System.String, System.Int32, LambdaSharp.Logging.Metrics.LambdaMetricUnit) to LambdaSharp.Logging.Metrics.LambdaMetric)
   nameWithType: LambdaMetric.Implicit((String Name, Int32 Value, LambdaMetricUnit Unit) to LambdaMetric)
-  nameWithType.vb: LambdaMetric.Widening((Name As String, Value As Int32, Unit As LambdaMetricUnit) to LambdaMetric)
+  nameWithType.vb: LambdaMetric.Widening((Name As String, Value As Int32, Unit As LambdaMetricUnit)(Of String, Int32, LambdaMetricUnit) to LambdaMetric)
 - uid: LambdaSharp.Logging.Metrics.LambdaMetric.op_Implicit*
   name: Implicit
   href: sdk/LambdaSharp.Logging/LambdaSharp.Logging.Metrics.LambdaMetric.html#LambdaSharp_Logging_Metrics_LambdaMetric_op_Implicit_
@@ -11901,11 +11901,11 @@ references:
   name: DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
   href: sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___
   commentId: M:LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
-  name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
+  name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)(Of String, String)))
   fullName: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable<System.ValueTuple<System.String, System.String>>)
   fullName.vb: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
   nameWithType: ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
-  nameWithType.vb: ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
+  nameWithType.vb: ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)(Of String, String)))
 - uid: LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*
   name: DeleteMessagesFromQueueAsync
   href: sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.ILambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_ILambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_
@@ -11952,11 +11952,11 @@ references:
   name: DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
   href: sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_System_String_System_Collections_Generic_IEnumerable_System_ValueTuple_System_String_System_String___
   commentId: M:LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})
-  name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
+  name.vb: DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)(Of String, String)))
   fullName: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable<System.ValueTuple<System.String, System.String>>)
   fullName.vb: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(System.String, System.Collections.Generic.IEnumerable(Of System.ValueTuple(Of System.String, System.String)))
   nameWithType: LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable<(String MessageId, String ReceiptHandle)>)
-  nameWithType.vb: LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)))
+  nameWithType.vb: LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync(String, IEnumerable(Of (MessageId As String, ReceiptHandle As String)(Of String, String)))
 - uid: LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.DeleteMessagesFromQueueAsync*
   name: DeleteMessagesFromQueueAsync
   href: sdk/LambdaSharp.SimpleQueueService/LambdaSharp.SimpleQueueService.LambdaQueueFunctionDependencyProvider.html#LambdaSharp_SimpleQueueService_LambdaQueueFunctionDependencyProvider_DeleteMessagesFromQueueAsync_

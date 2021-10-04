@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Interface IDynamoTable
@@ -787,7 +787,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">virtual Task&lt;TRecord&gt; QuerySingleAsync&lt;TRecord&gt;(IDynamoQueryClause&lt;TRecord&gt; queryClause, bool consistentRead = false, CancellationToken cancellationToken = default(CancellationToken))
+    <pre><code class="lang-csharp hljs">virtual async Task&lt;TRecord&gt; QuerySingleAsync&lt;TRecord&gt;(IDynamoQueryClause&lt;TRecord&gt; queryClause, bool consistentRead = false, CancellationToken cancellationToken = default(CancellationToken))
     where TRecord : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

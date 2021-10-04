@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class ALambdaFinalizerFunction
@@ -357,7 +357,7 @@ satisfy its required dependencies.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task CreateDeploymentAsync(FinalizerProperties request, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task CreateDeploymentAsync(FinalizerProperties request, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -406,7 +406,7 @@ satisfy its required dependencies.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task DeleteDeploymentAsync(FinalizerProperties current, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task DeleteDeploymentAsync(FinalizerProperties current, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,7 +456,7 @@ when AWS CloudFormation attempts to create a custom resource.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessCreateResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed override async Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessCreateResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -511,7 +511,7 @@ when AWS CloudFormation attempts to delete a custom resource.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessDeleteResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed override async Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessDeleteResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -566,7 +566,7 @@ when AWS CloudFormation attempts to update a custom resource.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessUpdateResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed override async Task&lt;Response&lt;FinalizerAttributes&gt;&gt; ProcessUpdateResourceAsync(Request&lt;FinalizerProperties&gt; request, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,7 +620,7 @@ when AWS CloudFormation attempts to update a custom resource.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Task UpdateDeploymentAsync(FinalizerProperties current, FinalizerProperties previous, CancellationToken cancellationToken)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual async Task UpdateDeploymentAsync(FinalizerProperties current, FinalizerProperties previous, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -17,7 +17,7 @@
    | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Build serverless applications with .NET on AWS">
     <meta name="keywords" content="lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.58.4.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Class ALambdaApiGatewayFunction
@@ -857,7 +857,7 @@ Lambda function. This is the last of three methods that are invoked to initializ
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task InitializeEpilogueAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override async Task InitializeEpilogueAsync()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -885,7 +885,7 @@ for initialization. This is the first of three methods that are invoked to initi
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override Task InitializePrologueAsync(ILambdaConfigSource envSource)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override async Task InitializePrologueAsync(ILambdaConfigSource envSource)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -931,7 +931,7 @@ provides specific behavior for this base class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;APIGatewayProxyResponse&gt; ProcessMessageAsync(APIGatewayProxyRequest request)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;APIGatewayProxyResponse&gt; ProcessMessageAsync(APIGatewayProxyRequest request)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -975,7 +975,7 @@ a <span class="xref">Amazon.Lambda.APIGatewayEvents.APIGatewayProxyRequest</span
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override sealed Task&lt;Stream&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed override async Task&lt;Stream&gt; ProcessMessageStreamAsync(Stream stream)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
