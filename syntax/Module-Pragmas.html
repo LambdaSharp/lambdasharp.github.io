@@ -16,7 +16,7 @@
     <meta name="title" content="Pragmas Section - Module | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="LambdaSharp module configuration pragmas">
     <meta name="keywords" content="module, pragma, section, configuration, syntax, yaml, cloudformation, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="Pragmas Section - Module | LambdaSharp - Serverless .NET for AWS">
@@ -158,6 +158,11 @@
 <td>(none)</td>
 </tr>
 <tr>
+<td><code>Module::RestApi::LoggingLevel</code></td>
+<td>Expression for setting REST API logging level.</td>
+<td><code>INFO</code></td>
+</tr>
+<tr>
 <td><code>Module::RestApi::StageName</code></td>
 <td>Expression for setting the REST API stage name.</td>
 <td><code>LATEST</code></td>
@@ -178,11 +183,6 @@
 <td>(none)</td>
 </tr>
 <tr>
-<td><code>Module::WebSocket</code></td>
-<td>Expression for the WebSocket ID.</td>
-<td>(none)</td>
-</tr>
-<tr>
 <td><code>Module::WebSocket::StageName</code></td>
 <td>Expression for setting the WebSocket stage name.</td>
 <td><code>LATEST</code></td>
@@ -196,6 +196,11 @@
 <td><code>Module::WebSocket.RouteSelectionExpression</code></td>
 <td>Expression for determining the WebSocket route.</td>
 <td><code>$request.body.action</code></td>
+</tr>
+<tr>
+<td><code>Module::WebSocket</code></td>
+<td>Expression for the WebSocket ID.</td>
+<td>(none)</td>
 </tr>
 </tbody>
 </table>

@@ -7273,6 +7273,57 @@ references:
   isSpec: "True"
   fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoEnumConverter.ToAttributeValue
   nameWithType: DynamoEnumConverter.ToAttributeValue
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter
+  name: DynamoFloatConverter
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html
+  commentId: T:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter
+  nameWithType: DynamoFloatConverter
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_CanConvert_System_Type_
+  commentId: M:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert(System.Type)
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert(System.Type)
+  nameWithType: DynamoFloatConverter.CanConvert(Type)
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert*
+  name: CanConvert
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_CanConvert_
+  commentId: Overload:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert
+  isSpec: "True"
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.CanConvert
+  nameWithType: DynamoFloatConverter.CanConvert
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber(System.String,System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  name: FromNumber(String, Type, DynamoSerializerOptions)
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_FromNumber_System_String_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_
+  commentId: M:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber(System.String,System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber(System.String, System.Type, LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  nameWithType: DynamoFloatConverter.FromNumber(String, Type, DynamoSerializerOptions)
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber*
+  name: FromNumber
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_FromNumber_
+  commentId: Overload:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber
+  isSpec: "True"
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.FromNumber
+  nameWithType: DynamoFloatConverter.FromNumber
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.Instance
+  name: Instance
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_Instance
+  commentId: F:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.Instance
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.Instance
+  nameWithType: DynamoFloatConverter.Instance
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue(System.Object,System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  name: ToAttributeValue(Object, Type, DynamoSerializerOptions)
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_ToAttributeValue_System_Object_System_Type_LambdaSharp_DynamoDB_Serialization_DynamoSerializerOptions_
+  commentId: M:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue(System.Object,System.Type,LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue(System.Object, System.Type, LambdaSharp.DynamoDB.Serialization.DynamoSerializerOptions)
+  nameWithType: DynamoFloatConverter.ToAttributeValue(Object, Type, DynamoSerializerOptions)
+- uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue*
+  name: ToAttributeValue
+  href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.html#LambdaSharp_DynamoDB_Serialization_Converters_DynamoFloatConverter_ToAttributeValue_
+  commentId: Overload:LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue
+  isSpec: "True"
+  fullName: LambdaSharp.DynamoDB.Serialization.Converters.DynamoFloatConverter.ToAttributeValue
+  nameWithType: DynamoFloatConverter.ToAttributeValue
 - uid: LambdaSharp.DynamoDB.Serialization.Converters.DynamoGuidConverter
   name: DynamoGuidConverter
   href: sdk/LambdaSharp.DynamoDB.Serialization/LambdaSharp.DynamoDB.Serialization.Converters.DynamoGuidConverter.html

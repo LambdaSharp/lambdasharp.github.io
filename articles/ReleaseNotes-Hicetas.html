@@ -16,7 +16,7 @@
     <meta name="title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
     <meta name="description" content="Release notes for LambdaSharp &quot;Hicetas&quot; (v0.8)">
     <meta name="keywords" content="release, notes, hicetas, lambdasharp, lambda sharp, aws, serverless, .net, dotnet, .net core, dotnetcore, c#, c sharp">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     <meta name="robots" content="index,follow">
   
     <meta property="og:title" content="LambdaSharp &quot;Hicetas&quot; Release (v0.8) | LambdaSharp - Serverless .NET for AWS">
@@ -193,6 +193,24 @@
 <li>Fixed an issue with processing the Lambda report lines in the CloudWatch logs.</li>
 </ul>
 <h2 id="releases">Releases</h2>
+<h3 id="v0835---tbd">(v0.8.3.5) - TBD</h3>
+<h4 id="features">Features</h4>
+<ul>
+<li><p>Syntax</p>
+<ul>
+<li>Added <code>Module::RestApi::LoggingLevel</code> pragma override to set the logging level for the REST API.</li>
+</ul>
+</li>
+<li><p>SDK</p>
+<ul>
+<li>Updated package referenecs to latest compatible versions.
+<ul>
+<li>NOTE: <code>System.Text.Json</code> has been updated to <code>6.0.2</code>, which has obsoleted the <code>IgnoreNullValues</code> property in favor of <code>DefaultIgnoreCondition</code> in the <code>JsonSerializerOptions</code> class.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="v0834---2021-07-15">(v0.8.3.4) - 2021-07-15</h3>
 <h4 id="fixes-2">Fixes</h4>
 <ul>
@@ -212,7 +230,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features">Features</h4>
+<h4 id="features-1">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -255,7 +273,7 @@
 </li>
 </ul>
 <h3 id="v0831---2021-05-28">(v0.8.3.1) - 2021-05-28</h3>
-<h4 id="features-1">Features</h4>
+<h4 id="features-2">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -278,7 +296,7 @@
 </li>
 </ul>
 <h3 id="v0830---2021-05-18">(v0.8.3.0) - 2021-05-18</h3>
-<h4 id="features-2">Features</h4>
+<h4 id="features-3">Features</h4>
 <ul>
 <li><p>All</p>
 <ul>
@@ -319,7 +337,7 @@
 </li>
 </ul>
 <h3 id="v0824---2021-04-30">(v0.8.2.4) - 2021-04-30</h3>
-<h3 id="features-3">Features</h3>
+<h3 id="features-4">Features</h3>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -364,7 +382,7 @@
 </li>
 </ul>
 <h3 id="v0823---2021-04-01">(v0.8.2.3) - 2021-04-01</h3>
-<h4 id="features-4">Features</h4>
+<h4 id="features-5">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -420,7 +438,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-5">Features</h4>
+<h4 id="features-6">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -524,7 +542,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="features-6">Features</h4>
+<h4 id="features-7">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -549,7 +567,7 @@
 </li>
 <li><p>Syntax</p>
 <ul>
-<li>Added <code>Module::RestApi::CorsOrigin</code> override to specify an expression as the <em>CORS Origin</em> header value. The <em>CORS Origin</em> header value is automatically added to all REST API responses.</li>
+<li>Added <code>Module::RestApi::CorsOrigin</code> pragma override to specify an expression as the <em>CORS Origin</em> header value. The <em>CORS Origin</em> header value is automatically added to all REST API responses.</li>
 <li>Added <code>Stack</code> as the declaration keyword for nested stacks. Previously the keyword was <code>Nested</code>, which remains supported for backwards compatibility.</li>
 </ul>
 </li>
@@ -561,7 +579,7 @@
 </li>
 </ul>
 <h3 id="v0816---2020-12-28">(v0.8.1.6) - 2020-12-28</h3>
-<h4 id="features-7">Features</h4>
+<h4 id="features-8">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -578,7 +596,7 @@
 </li>
 </ul>
 <h3 id="v0815---2020-12-26">(v0.8.1.5) - 2020-12-26</h3>
-<h4 id="features-8">Features</h4>
+<h4 id="features-9">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -623,7 +641,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-9">Features</h4>
+<h4 id="features-10">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -675,7 +693,7 @@
 </li>
 </ul>
 <h3 id="v0811---2020-08-31">(v0.8.1.1) - 2020-08-31</h3>
-<h4 id="features-10">Features</h4>
+<h4 id="features-11">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -697,7 +715,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-11">Features</h4>
+<h4 id="features-12">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -735,7 +753,7 @@
 </li>
 </ul>
 <h3 id="v0809---2020-08-31">(v0.8.0.9) - 2020-08-31</h3>
-<h4 id="features-12">Features</h4>
+<h4 id="features-13">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -773,7 +791,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="features-13">Features</h4>
+<h4 id="features-14">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -799,7 +817,7 @@
 </li>
 </ul>
 <h3 id="v0806---2020-07-14">(v0.8.0.6) - 2020-07-14</h3>
-<h4 id="features-14">Features</h4>
+<h4 id="features-15">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -827,7 +845,7 @@
 </li>
 </ul>
 <h3 id="v0805---2020-07-02">(v0.8.0.5) - 2020-07-02</h3>
-<h4 id="features-15">Features</h4>
+<h4 id="features-16">Features</h4>
 <ul>
 <li>CLI
 <ul>
@@ -851,7 +869,7 @@
 </li>
 </ul>
 <h3 id="v0804---2020-07-01">(v0.8.0.4) - 2020-07-01</h3>
-<h4 id="features-16">Features</h4>
+<h4 id="features-17">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -900,7 +918,7 @@
 </li>
 </ul>
 <h3 id="v0803---2020-06-19">(v0.8.0.3) - 2020-06-19</h3>
-<h4 id="features-17">Features</h4>
+<h4 id="features-18">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
@@ -936,7 +954,7 @@
 </li>
 </ul>
 <h3 id="v0802---2020-06-02">(v0.8.0.2) - 2020-06-02</h3>
-<h4 id="features-18">Features</h4>
+<h4 id="features-19">Features</h4>
 <ul>
 <li><p>CLI</p>
 <ul>
